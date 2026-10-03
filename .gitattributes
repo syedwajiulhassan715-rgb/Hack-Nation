@@ -1,0 +1,14 @@
+# Source files: LF everywhere so outputs are byte-identical across machines.
+* text=auto eol=lf
+*.ps1 text eol=crlf
+
+# The starter pack is evidence: span offsets and checksums refer to its exact bytes.
+# Never convert line endings in it.
+data/starter/** -text
+data/STARTER_CHECKSUMS.sha256 -text
+
+# Binary
+*.pdf binary
+*.zip binary
+*.png binary
+*.jpg binary

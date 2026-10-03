@@ -1,0 +1,21 @@
+# Pipeline settings. No law facts belong in this file (CLAUDE.md golden rule 1).
+
+default_as_of: "2026-10-01"     # default query date from the participant guide
+disclaimer: "Not legal advice."
+
+llm:
+  provider: anthropic
+  model: null                   # set in phase 3, before the first extraction run
+  temperature: 0
+  prompt_version: extract_v1
+
+paths:
+  starter: data/starter
+  supplement: data/supplement
+  manifest: data/starter/corpus/corpus_manifest.csv
+  addresses: data/starter/data/sample_addresses.csv
+  schema: data/starter/schema/rule_record.schema.json
+  change_tests: data/starter/dev/change_tests.json
+  cache: cache/llm
+  outputs: outputs
+  scores: scores

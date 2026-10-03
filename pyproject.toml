@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "navigator"
+version = "0.1.0"
+description = "Rental Housing Law Navigator: corpus -> cited rule records -> address-level answers. Not legal advice."
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.6",
+    "jsonschema>=4.21",
+    "pyyaml>=6.0",
+    "httpx>=0.27",
+    "fastapi>=0.110",
+    "uvicorn>=0.29",
+]
+
+[project.optional-dependencies]
+# LLM client is only needed for extract/explain (phase 3+); kept optional so
+# smoke tests and the API run without it.
+llm = ["anthropic>=0.40"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+navigator = "navigator.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["navigator*"]
+
+[tool.setuptools.package-data]
+navigator = ["extract/prompts/*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "smoke: fail-closed checks with no network and no LLM",
+]

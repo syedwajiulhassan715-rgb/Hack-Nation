@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+build/
+dist/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Raw downloads kept locally; the unpacked pack lives in data/starter/
+*.zip
+/file (3).pdf
+/mit-rental-housing-law-navigator-challenge-v5-participant-no-scoring-no-hour16.pdf
+
+# Frontend
+web/node_modules/
+web/dist/
+web/.vercel/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Note: cache/llm/ and outputs/ are committed on purpose (reproducibility).
