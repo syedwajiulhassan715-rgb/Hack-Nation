@@ -1,0 +1,208 @@
+"""Self-evaluation harness (BACKEND_PLAN.md 4). The pack has no scoring script.
+
+Independent of the pipeline on purpose: it validates the written files against the
+official JSON schema and the corpus text directly, not through navigator's models.
+Writes scores/eval_latest.txt and appends scores/history.jsonl.
+Exits 1 if a must-be-100% check (format, grounding) fails.
+"""
+from __future__ import annotations
+
+import datetime as dt
+import json
+import re
+import subprocess
+import sys
+import unicodedata
+from pathlib import Path
+from typing import Any
+
+import jsonschema
+
+from navigator import settings, starter
+
+RESULTS = {"applies", "unknown", "superseded", "not_yet_effective", "pending"}
+LOOKUP_ROW_KEYS = {"team_rule_id", "result", "explanation", "conflict_flag"}
+CHANGE_KEYS = {"affected_address_ids", "conflict_flag_address_ids", "notes"}
+
+NOT_YET = [
+    ("3", "Brief recall checklist", 3),
+    ("4", "Gold set (rules + addresses)", 3),
+    ("5", "Change tests T1-T5 expected behavior", 6),
+    ("6", "Coverage matrix", 3),
+    ("7", "Jurisdiction check", 4),
+    ("8", "Determinism (two cached runs byte-identical)", 5),
+]
+
+
+def _norm(text: str) -> str:
+    return re.sub(r"\s+", " ", unicodedata.normalize("NFC", text)).strip()
+
+
+def _load(path: Path) -> tuple[Any, str | None]:
+    if not path.is_file():
+        return None, "missing"
+    try:
+        return json.loads(path.read_text(encoding="utf-8")), None
+    except json.JSONDecodeError as exc:
+        return None, f"invalid JSON: {exc}"
+
+
+class Report:
+    def __init__(self) -> None:
+        self.lines: list[str] = []
+        self.metrics: dict[str, Any] = {}
+        self.hard_fail = False
+
+    def check(self, key: str, label: str, ok: bool, detail: str = "", hard: bool = True) -> None:
+        self.metrics[key] = ok
+        if hard and not ok:
+            self.hard_fail = True
+        self.lines.append(f"  [{'PASS' if ok else 'FAIL'}] {label}{(' - ' + detail) if detail else ''}")
+
+    def ratio(self, key: str, label: str, num: int, den: int, must_be_full: bool) -> None:
+        self.metrics[key] = {"num": num, "den": den}
+        if den == 0:
+            self.lines.append(f"  [n/a ] {label}: 0/0")
+            return
+        ok = num == den
+        if must_be_full and not ok:
+            self.hard_fail = True
+        tag = "PASS" if ok else ("FAIL" if must_be_full else "    ")
+        self.lines.append(f"  [{tag}] {label}: {num}/{den} ({100 * num / den:.1f}%)")
+
+
+def evaluate(out_dir: Path) -> Report:
+    rep = Report()
+    rules_doc, rules_err = _load(out_dir / "rules.json")
+    lookups_doc, lookups_err = _load(out_dir / "lookups.json")
+    changes_doc, changes_err = _load(out_dir / "changes.json")
+    address_ids = starter.address_ids()
+    manifest = starter.manifest()
+
+    # ---------------------------------------------------------- 1. format
+    rep.lines.append("[1] Format validity (must be 100%)")
+    rules: list[dict] = []
+    if rules_err:
+        rep.check("rules_file", "rules.json readable", False, rules_err)
+    else:
+        shape_ok = isinstance(rules_doc, dict) and set(rules_doc) == {"rules"} and isinstance(rules_doc["rules"], list)
+        rep.check("rules_shape", 'rules.json is {"rules": [...]}', shape_ok)
+        rules = rules_doc["rules"] if shape_ok else []
+        validator = jsonschema.Draft202012Validator(starter.rule_schema())
+        valid = sum(1 for r in rules if not any(validator.iter_errors(r)))
+        rep.ratio("rules_schema_valid", "rule records valid against official schema", valid, len(rules), True)
+        ids = [r.get("team_rule_id") for r in rules]
+        rep.check("rules_unique_ids", "team_rule_id unique", len(ids) == len(set(ids)))
+    rules_by_id = {r.get("team_rule_id"): r for r in rules}
+
+    if lookups_err:
+        rep.check("lookups_file", "lookups.json readable", False, lookups_err)
+    else:
+        ok_shape = isinstance(lookups_doc, dict) and set(lookups_doc) == {"as_of", "lookups"}
+        rep.check("lookups_shape", 'lookups.json is {"as_of", "lookups"}', ok_shape)
+        lk = lookups_doc.get("lookups", {}) if ok_shape else {}
+        as_of = lookups_doc.get("as_of") if ok_shape else None
+        rep.check("lookups_as_of", "as_of is YYYY-MM-DD", bool(as_of and re.fullmatch(r"\d{4}-\d{2}-\d{2}", as_of)), str(as_of))
+        covered = len(set(lk) & set(address_ids))
+        rep.ratio("lookups_cover_all", "address ids covered", covered, len(address_ids), True)
+        rep.check("lookups_no_extra_ids", "no unknown address ids", not (set(lk) - set(address_ids)))
+        bad_rows, unknown_rules, failed_in_lookups = 0, 0, 0
+        for rows in lk.values():
+            for row in rows if isinstance(rows, list) else [None]:
+                if not isinstance(row, dict) or set(row) != LOOKUP_ROW_KEYS or row.get("result") not in RESULTS:
+                    bad_rows += 1
+                    continue
+                rule = rules_by_id.get(row["team_rule_id"])
+                if rule is None:
+                    unknown_rules += 1
+                elif rule.get("status") == "failed":
+                    failed_in_lookups += 1
+        rep.check("lookups_row_shape", "every row has exactly {team_rule_id, result, explanation, conflict_flag}", bad_rows == 0, f"{bad_rows} bad")
+        rep.check("lookups_rules_exist", "every row's rule is in rules.json", unknown_rules == 0, f"{unknown_rules} unknown")
+        rep.check("lookups_no_failed", "no failed rule appears in lookups", failed_in_lookups == 0)
+        rows_total = sum(len(v) for v in lk.values() if isinstance(v, list))
+        rep.metrics["lookup_rows_total"] = rows_total
+        rep.lines.append(f"  [info] lookup rows: {rows_total}; addresses with no rows: "
+                         f"{sum(1 for v in lk.values() if v == [])}")
+
+    if changes_err:
+        rep.check("changes_file", "changes.json readable", False, changes_err)
+    else:
+        test_ids = starter.change_test_ids()
+        rep.check("changes_all_tests", f"has all tests {test_ids}", isinstance(changes_doc, dict) and all(t in changes_doc for t in test_ids))
+        entries = [changes_doc.get(t) for t in test_ids] if isinstance(changes_doc, dict) else []
+        rep.check("changes_entry_shape", "each test has affected_address_ids, conflict_flag_address_ids, notes",
+                  all(isinstance(e, dict) and set(e) == CHANGE_KEYS for e in entries))
+        bad = [i for e in entries if isinstance(e, dict)
+               for k in ("affected_address_ids", "conflict_flag_address_ids")
+               for i in e.get(k, []) if i not in set(address_ids)]
+        rep.check("changes_ids_valid", "all listed ids are sample address ids", not bad, f"{len(bad)} unknown")
+
+    # ------------------------------------------------------- 2. grounding
+    rep.lines.append("[2] Grounding (must be 100%)")
+    text_cache: dict[str, str | None] = {}
+    found = 0
+    url_ok = 0
+    for r in rules:
+        did = r.get("source_doc_id")
+        if did not in text_cache:
+            raw = starter.doc_text(did) if did else None
+            if raw and raw.startswith("SOURCE:"):
+                raw = raw.split("\n", 3)[3] if raw.count("\n") >= 3 else ""  # body only, no header
+            text_cache[did] = _norm(raw) if raw else None
+        body = text_cache[did]
+        if body and r.get("quoted_span") and _norm(r["quoted_span"]) in body:
+            found += 1
+        if did in manifest and r.get("source_url") == manifest[did]["url"]:
+            url_ok += 1
+    rep.ratio("grounding_span_found", "quoted_span found in its source_doc_id text", found, len(rules), True)
+    rep.ratio("grounding_source_url", "source_url equals manifest url", url_ok, len(rules), True)
+
+    applies_ids = {row["team_rule_id"] for rows in (lookups_doc or {}).get("lookups", {}).values()
+                   if isinstance(rows, list) for row in rows
+                   if isinstance(row, dict) and row.get("result") == "applies"}
+    backed = sum(
+        1 for rid in applies_ids
+        if (r := rules_by_id.get(rid)) and r.get("quoted_span") and r.get("citation") and r.get("source_url")
+        and manifest.get(r.get("source_doc_id") or "", {}).get("retrieved_at")
+    )
+    rep.ratio("grounding_applies_backed", "rules behind 'applies' rows have span, citation, url, retrieval date",
+              backed, len(applies_ids), True)
+
+    for num, label, phase in NOT_YET:
+        rep.lines.append(f"[{num}] {label}: not measured yet (phase {phase})")
+    return rep
+
+
+def _git_commit() -> str | None:
+    try:
+        return subprocess.run(["git", "rev-parse", "--short", "HEAD"], capture_output=True,
+                              text=True, cwd=settings.REPO_ROOT, check=True).stdout.strip()
+    except (OSError, subprocess.CalledProcessError):
+        return None
+
+
+def run(out_dir: Path | None = None, scores_dir: Path | None = None) -> Report:
+    out_dir = out_dir or settings.path("outputs")
+    scores_dir = scores_dir or settings.path("scores")
+    stub = (out_dir / "STUB").exists()
+    rep = evaluate(out_dir)
+    now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    header = [
+        "Self-evaluation (team harness; the pack has no official scoring script). Not legal advice.",
+        f"generated_at {now}  commit {_git_commit()}  as_of default {settings.load()['default_as_of']}",
+    ]
+    if stub:
+        header.insert(0, "*** STUB OUTPUTS: pipeline not run; numbers below say nothing about answers ***")
+    header.append(f"overall hard checks: {'FAIL' if rep.hard_fail else 'PASS'}")
+    text = "\n".join(header + [""] + rep.lines) + "\n"
+
+    scores_dir.mkdir(parents=True, exist_ok=True)
+    (scores_dir / "eval_latest.txt").write_text(text, encoding="utf-8", newline="\n")
+    with (scores_dir / "history.jsonl").open("a", encoding="utf-8", newline="\n") as fh:
+        fh.write(json.dumps({"ts": now, "commit": _git_commit(), "stub": stub,
+                             "hard_fail": rep.hard_fail, "metrics": rep.metrics}) + "\n")
+    print(text, end="")
+    if rep.hard_fail:
+        sys.exit(1)
+    return rep

@@ -14,6 +14,7 @@ from navigator import settings
 
 # stage name -> (module, function, help, phase that implements it)
 STAGES: dict[str, tuple[str, str, str, int]] = {
+    "stubs": ("navigator.stubs", "run", "write empty, contract-valid stub outputs (marks outputs/STUB)", 1),
     "ingest": ("navigator.ingest.corpus", "run", "manifest + text files -> outputs/docs.jsonl", 2),
     "extract": ("navigator.extract.extract", "run", "LLM extraction (cached) -> outputs/candidates.jsonl", 3),
     "verify": ("navigator.verify.gates", "run", "gates + dates -> rules.json, rules_internal.json, rejects.jsonl", 3),

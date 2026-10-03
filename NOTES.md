@@ -30,6 +30,11 @@
   header (`2026-10-01 22:44 UTC`) is a cross-check, mismatches logged to the audit log.
 - **No `make` on the dev machine.** Every stage is `python -m navigator <stage>`; the
   Makefile and `run.ps1` are thin wrappers with the same target names.
+- **Penalty** (phase 1). The brief asks extraction to capture penalties, but the schema has no
+  field for it. Kept as internal `RuleInternal.penalty`, shown in UI/API, stripped from rules.json.
+- **Stub outputs** (phase 1). `python -m navigator stubs` writes contract-valid empty files
+  and an `outputs/STUB` marker; the eval report's first line then says STUB OUTPUTS. Empty
+  lookups mean "not computed", never "no rule applies". Real stages remove the marker.
 - **changes.json** always includes `conflict_flag_address_ids` (CONTRACT.md 4), even though
   the template omits it on T1.
 

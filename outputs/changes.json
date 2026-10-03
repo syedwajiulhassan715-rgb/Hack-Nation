@@ -1,0 +1,27 @@
+{
+  "T1": {
+    "affected_address_ids": [],
+    "conflict_flag_address_ids": [],
+    "notes": "STUB: pipeline not run yet; this is not a result."
+  },
+  "T2": {
+    "affected_address_ids": [],
+    "conflict_flag_address_ids": [],
+    "notes": "STUB: pipeline not run yet; this is not a result."
+  },
+  "T3": {
+    "affected_address_ids": [],
+    "conflict_flag_address_ids": [],
+    "notes": "STUB: pipeline not run yet; this is not a result."
+  },
+  "T4": {
+    "affected_address_ids": [],
+    "conflict_flag_address_ids": [],
+    "notes": "STUB: pipeline not run yet; this is not a result."
+  },
+  "T5": {
+    "affected_address_ids": [],
+    "conflict_flag_address_ids": [],
+    "notes": "STUB: pipeline not run yet; this is not a result."
+  }
+}

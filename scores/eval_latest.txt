@@ -1,0 +1,30 @@
+*** STUB OUTPUTS: pipeline not run; numbers below say nothing about answers ***
+Self-evaluation (team harness; the pack has no official scoring script). Not legal advice.
+generated_at 2026-10-03T23:33:36Z  commit e1679c3  as_of default 2026-10-01
+overall hard checks: PASS
+
+[1] Format validity (must be 100%)
+  [PASS] rules.json is {"rules": [...]}
+  [n/a ] rule records valid against official schema: 0/0
+  [PASS] team_rule_id unique
+  [PASS] lookups.json is {"as_of", "lookups"}
+  [PASS] as_of is YYYY-MM-DD - 2026-10-01
+  [PASS] address ids covered: 500/500 (100.0%)
+  [PASS] no unknown address ids
+  [PASS] every row has exactly {team_rule_id, result, explanation, conflict_flag} - 0 bad
+  [PASS] every row's rule is in rules.json - 0 unknown
+  [PASS] no failed rule appears in lookups
+  [info] lookup rows: 0; addresses with no rows: 500
+  [PASS] has all tests ['T1', 'T2', 'T3', 'T4', 'T5']
+  [PASS] each test has affected_address_ids, conflict_flag_address_ids, notes
+  [PASS] all listed ids are sample address ids - 0 unknown
+[2] Grounding (must be 100%)
+  [n/a ] quoted_span found in its source_doc_id text: 0/0
+  [n/a ] source_url equals manifest url: 0/0
+  [n/a ] rules behind 'applies' rows have span, citation, url, retrieval date: 0/0
+[3] Brief recall checklist: not measured yet (phase 3)
+[4] Gold set (rules + addresses): not measured yet (phase 3)
+[5] Change tests T1-T5 expected behavior: not measured yet (phase 6)
+[6] Coverage matrix: not measured yet (phase 3)
+[7] Jurisdiction check: not measured yet (phase 4)
+[8] Determinism (two cached runs byte-identical): not measured yet (phase 5)
