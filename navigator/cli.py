@@ -16,6 +16,7 @@ from navigator import settings
 STAGES: dict[str, tuple[str, str, str, int]] = {
     "stubs": ("navigator.stubs", "run", "write empty, contract-valid stub outputs (marks outputs/STUB)", 1),
     "ingest": ("navigator.ingest.corpus", "run", "manifest + text files -> outputs/docs.jsonl", 2),
+    "chunk": ("navigator.extract.chunk", "run", "docs.jsonl -> outputs/chunks.jsonl (deterministic)", 2),
     "extract": ("navigator.extract.extract", "run", "LLM extraction (cached) -> outputs/candidates.jsonl", 3),
     "verify": ("navigator.verify.gates", "run", "gates + dates -> rules.json, rules_internal.json, rejects.jsonl", 3),
     "geocode": ("navigator.geo.geocode", "run", "addresses -> outputs/parcels.json", 4),
@@ -24,7 +25,7 @@ STAGES: dict[str, tuple[str, str, str, int]] = {
     "summaries": ("navigator.explain.plain", "run", "plain-language answers -> outputs/summaries.json", 8),
     "eval": ("eval.run_eval", "run", "self-evaluation -> scores/eval_latest.txt, scores/history.jsonl", 1),
 }
-PIPELINE = ["ingest", "extract", "verify", "geocode", "lookups", "changes"]
+PIPELINE = ["ingest", "chunk", "extract", "verify", "geocode", "lookups", "changes"]
 
 
 def _run_stage(name: str, **kwargs) -> None:
@@ -44,6 +45,11 @@ def _run_stage(name: str, **kwargs) -> None:
 
 
 def main(argv: list[str] | None = None) -> int:
+    # The corpus has non-cp1252 characters (e.g. emoji in D084); Windows consoles
+    # default to cp1252 and would crash on print.
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8", errors="replace")
     parser = argparse.ArgumentParser(
         prog="navigator",
         description="Rental Housing Law Navigator pipeline. Not legal advice.",

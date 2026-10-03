@@ -35,6 +35,20 @@
 - **Stub outputs** (phase 1). `python -m navigator stubs` writes contract-valid empty files
   and an `outputs/STUB` marker; the eval report's first line then says STUB OUTPUTS. Empty
   lookups mean "not computed", never "no rule applies". Real stages remove the marker.
+- **Ingest checks** (phase 2). All 54 header SOURCE urls equal the manifest url and all 54
+  RETRIEVED times equal manifest `retrieved_at`; no CR line endings, no BOM. A future file
+  with a missing header or a different url is ingested as unavailable (fail closed).
+- **Character offsets are Python code points.** Only D084 has characters beyond U+FFFF
+  (2 emoji), where JS UTF-16 offsets would drift. Phase 7: the API also returns UTF-16
+  offsets (or the UI highlights by substring) so the highlight lands exactly.
+- **Chunking** (phase 2). Docs up to 24k chars are one chunk; 54 docs -> 70 chunks. Cuts
+  prefer a heading, then a blank line, then a numbered item, then a line break; weaker cuts
+  overlap ~2k chars. Navigation junk is only dropped from prompts when a short digit-free
+  line repeats 3+ times inside a block of 4+ short lines: a looser rule dropped SF rate-table
+  headers and wrapped sentence fragments. Now drops 1,847 chars, all menus/forms.
+- **LLM cache key** (phase 3) must include `chunker_version` and the chunk's char range as
+  well as text_sha256, chunk_id, prompt_version and model, so a chunking change can never
+  reuse a stale answer.
 - **changes.json** always includes `conflict_flag_address_ids` (CONTRACT.md 4), even though
   the template omits it on T1.
 

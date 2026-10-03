@@ -29,5 +29,5 @@ def run() -> None:
         tid: ChangeResult(affected_address_ids=[], conflict_flag_address_ids=[], notes=STUB_NOTE)
         for tid in starter.change_test_ids()
     })
-    marker_path().write_text(STUB_NOTE + "\n", encoding="utf-8")
+    marker_path().write_text(STUB_NOTE + "\n", encoding="utf-8", newline="\n")
     print("wrote stub rules.json, lookups.json, changes.json (outputs/STUB marker set)")
