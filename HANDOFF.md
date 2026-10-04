@@ -28,12 +28,12 @@ Not legal advice.
 - Imagery: USGS orthoimagery (public domain, zoom 16) unless `VITE_ESRI_API_KEY` is set, then
   Esri World Imagery (zoom 19, sharper). Esri's terms require an ArcGIS account, so only the
   keyed ArcGIS Location Platform endpoint is used, never the keyless one.
-- API NOT live yet (USER TODO): dashboard.render.com > New > Blueprint > repo Hack-Nation
-  (`render.yaml`); set `NAVIGATOR_CORS_ORIGINS=https://rental-law-navigator.vercel.app`; then
-  rebuild the frontend with `VITE_API_BASE` = the Render URL (https). Free Render sleeps
-  after ~15 min; the frontend retries `/health` and falls back to bundled data.
-  `NAVIGATOR_DISABLE_INGEST=1` stays on in public. Show live extraction locally:
-  `python -m navigator rerun-live <file> --jurisdiction "City, ST"`.
+- API LIVE on Render (free): https://rental-law-navigator-api.onrender.com (Blueprint from
+  `render.yaml`, auto-deploys from main, `NAVIGATOR_CORS_ORIGINS` set to the Vercel URL,
+  `NAVIGATOR_DISABLE_INGEST=1`). The frontend is built with
+  `VITE_API_BASE=https://rental-law-navigator-api.onrender.com`; keep that in every rebuild.
+  Free Render sleeps after ~15 min idle (first request ~30-60 s): open `/health` before a demo.
+  Show live extraction locally: `python -m navigator rerun-live <file> --jurisdiction "City, ST"`.
 
 ## Open items
 - USER TODO: ArcGIS Location Platform API key (basemaps privilege, referrer-restricted to the
