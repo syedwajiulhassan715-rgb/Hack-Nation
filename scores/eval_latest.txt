@@ -1,6 +1,5 @@
-*** STUB OUTPUTS: pipeline not run; numbers below say nothing about answers ***
 Self-evaluation (team harness; the pack has no official scoring script). Not legal advice.
-generated_at 2026-10-04T00:34:14Z  commit 56b8b48  as_of default 2026-10-01
+generated_at 2026-10-04T00:54:44Z  commit cb2a889  as_of default 2026-10-01
 overall hard checks: PASS
 
 [1] Format validity (must be 100%)
@@ -14,14 +13,14 @@ overall hard checks: PASS
   [PASS] every row has exactly {team_rule_id, result, explanation, conflict_flag} - 0 bad
   [PASS] every row's rule is in rules.json - 0 unknown
   [PASS] no failed rule appears in lookups
-  [info] lookup rows: 0; addresses with no rows: 500
+  [info] lookup rows: 22503; addresses with no rows: 0
   [PASS] has all tests ['T1', 'T2', 'T3', 'T4', 'T5']
   [PASS] each test has affected_address_ids, conflict_flag_address_ids, notes
   [PASS] all listed ids are sample address ids - 0 unknown
 [2] Grounding (must be 100%)
   [PASS] quoted_span found in its source_doc_id text: 184/184 (100.0%)
   [PASS] source_url equals manifest url: 184/184 (100.0%)
-  [n/a ] rules behind 'applies' rows have span, citation, url, retrieval date: 0/0
+  [PASS] rules behind 'applies' rows have span, citation, url, retrieval date: 160/160 (100.0%)
 [3] Brief recall checklist (laws the briefs name; misses count only with text in corpus)
   [PASS] checklist laws found: 19/19 (100.0%)
   [info] not found: jc-algorithmic (no text in corpus), hoboken-algorithmic (no text in corpus)

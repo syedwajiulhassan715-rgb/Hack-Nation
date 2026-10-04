@@ -81,6 +81,25 @@
 - **STUB marker** stays until `lookups` writes real results: rules.json alone being real does
   not make the empty lookups meaningful.
 
+- **Legal city** (phase 4). The Census incorporated place containing the geocoded point
+  (coordinates lookup, Public_AR_Current / Current_Current). In NJ and MA the county
+  subdivision must agree, else the row is flagged. `postal_city` is used only as a
+  low-confidence fallback when geocoding fails, and only if it is a corpus city.
+- **Geocoder match acceptance** (phase 4). A match is kept only if its house number falls
+  inside the input's house number or range; input ZIPs are unreliable (e.g. 11219 for Newark).
+- **NJ MOD-IV unit tokens** (phase 4, resolves open question 4). A standalone `<n>U` token is
+  a unit count; "/"-separated buildings are summed. Glued `<n>UG` forms, "1OU" and bare style
+  codes give no range (fail closed) until a MOD-IV data dictionary defines them. Column vs
+  description disagreement widens the range to cover both and flags review.
+- **Uncheckable exemptions** (phase 5). Exemptions that depend only on facts the data never
+  has (owner occupancy, subsidy, dormitory, owner type) are presumed absent when that is the
+  only thing leaving coverage undecided; they are listed under not_checked and lower
+  confidence. Switch: `PRESUME_UNCHECKABLE_EXEMPTIONS_ABSENT` in `navigator/engine/coverage.py`.
+- **Precedence is text-driven only** (phase 5, `navigator/engine/precedence.py`). Unresolvable
+  interactions set conflict_flag on both rows rather than choosing a winner.
+- **Low jurisdiction confidence** (phase 5). City rules are `unknown`, and state rules that
+  defer to them are `unknown` ("may be superseded") rather than `applies`.
+
 ## Open questions
 
 1. **Berkeley ch. 13.63 effective date.** D001 contains no effective date; the second
@@ -109,3 +128,10 @@
    which re-extracts all 70 chunks (prompt version is in the cache key). Resolved: `extract_v2`
    adds a rule for title-only bill pages (one record, quote = verbatim title, nothing
    inferred); full re-extraction on Opus.
+8. **"5B-64U/5B-64U-G" sums to 128** (phase 4). May be one 64-unit building listed twice;
+   fail-closed alternative is the range 64-128.
+9. **Boston neighborhood rows with no house number** (A0098, A0128, A0295, A0376, A0380).
+   Could resolve to Boston from the postal neighborhood name, but that is a name-based rule;
+   left as state-only (`city: null`, needs_review) for now.
+10. **Conflict flags** (phase 5). 3,280 of 22,503 lookup rows are conflict-flagged on real
+   parcels; the preemption patterns pair same-category rules broadly. Review after phase 6.
