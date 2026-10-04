@@ -412,7 +412,7 @@ def run(out_dir: Path | None = None) -> None:
     if out_dir is None:
         scores = settings.path("scores")
         scores.mkdir(parents=True, exist_ok=True)
-        (scores / "changes_report.txt").write_text(report, encoding="utf-8")
+        (scores / "changes_report.txt").write_text(report, encoding="utf-8", newline=chr(10))
     for tid, (_, o) in results.items():
         audit.log("changes", f"{tid}: {len(o.affected)} affected, {len(o.conflicts)} conflict-flagged",
                   checks={c.name: c.passed for c in o.checks})
