@@ -19,6 +19,7 @@ Three beats, each answering a judge's question:
 | Beat | Judge's question | What proves it |
 |---|---|---|
 | 1. A building | "Does it actually work, and can I trust it?" | Superseded + conflict rows, the highlighted sentence |
+| 1b. Ask Locus | "Can I just ask it something?" | Cited answer in plain words; refuses a question no rule covers |
 | 2. The hard cases | "Did you handle the traps in the data?" | Mailing city ≠ legal city; *unknown* resolves live |
 | 3. The machine | "Is it really automated and tested?" | Live extraction + quote check; T1–T5 all pass |
 
@@ -41,6 +42,9 @@ Do these in order. Tick each one.
 - [ ] Do Not Disturb on; close Slack, mail and other notifications.
 - [ ] Phone hotspot ready as backup internet.
 - [ ] Backup video of this exact run recorded and open in a player (see [Plan B](#plan-b)).
+      A ready-made 57 s narrated cut is in `assets/demo/locus-demo.mp4`.
+- [ ] Ask Locus once on `1733 N Cherokee` ("Can I be evicted without a reason?") to check it
+      answers, then close the building.
 - [ ] Practice the two searches once so the browser remembers them:
       `1733 N Cherokee` and `227 Cypress`.
 
@@ -62,7 +66,7 @@ slowly, keep talking — never wait in silence.
 | Terminal is showing. **Press Enter** on the prepared command. | "Rules here aren't typed in by us. I've just started our extractor live on the Berkeley algorithmic-pricing ordinance — straight from the corpus text. We'll come back to it." |
 | **Alt+Tab** to the browser (globe + intro card). | "This is Locus. Pick any building — see which housing laws apply, traced to the sentence." |
 
-### 0:12 – 0:45 · Beat 1: one building, fully explained
+### 0:12 – 0:40 · Beat 1: one building, fully explained
 
 | Do | Say | Screen shows |
 |---|---|---|
@@ -73,7 +77,18 @@ slowly, keep talking — never wait in silence.
 | **Click the citation** on the right of the rent row (`City of Los Angeles Rent Stabilization Ordinance`). | "And every answer opens the official text — this is the exact sentence, with the date we retrieved it and what we could and couldn't check." | Source drawer: highlighted sentence, *Retrieved*, *Reasoning boundary* |
 | **Esc** to close. | | |
 
-### 0:45 – 1:08 · Beat 2: the traps in the data
+### 0:40 – 0:55 · Beat 1b: Ask Locus
+
+Same building. The **Ask Locus about this building** bar sits just under *California ›
+Los Angeles*.
+
+| Do | Say | Screen shows |
+|---|---|---|
+| Click **Ask Locus about this building**. Type **`Can I be evicted without a reason?`**, press **Enter**. | "You can also just ask, in your own words — English or Spanish." | Loci thinks, then: `In Los Angeles, 22 rules answer this about eviction…` with cited cards |
+| Point at a card's citation and the *Conflict* chip. | "Every answer is built only from this building's verified rules — same quote, same citation, and the conflict is still flagged. No chatbot is making things up." | `Los Angeles Rent Stabilization Ordinance (RSO)` · `Retrieved Oct 1, 2026` |
+| Type **`what is the weather on mars?`**, **Enter**. | "And when no rule covers the question, it says so instead of guessing." | Loci tilts its head: `I can only answer from the laws Locus has for this building…` |
+
+### 0:55 – 1:15 · Beat 2: the traps in the data
 
 | Do | Say | Screen shows |
 |---|---|---|
@@ -82,14 +97,14 @@ slowly, keep talking — never wait in silence.
 | In **Year built**, type **`1995`**, click **Check again**. | "If you know it, type it in…" | |
 | Point at the box again (≈5 s). | "…and ten answers are decided on the spot." | `year built` and `certificate of occupancy` disappear from the box |
 
-### 1:08 – 1:28 · Beat 3a: time and the official tests
+### 1:15 – 1:30 · Beat 3a: time and the official tests
 
 | Do | Say | Screen shows |
 |---|---|---|
 | Click the **Rent-setting software** filter (top). Drag the **date slider** from 2025 into **2026**. | "Laws change over time. Drag the date: California's new algorithmic-pricing law switches on, January 1, 2026." | Beacons recolor as the date crosses 2026-01-01 |
 | **Ctrl+2** (Change tests tab). | "All five official change tests from the organizers' test file run automatically — every check passes." | `T1 … PASS 250/250`; scroll once to show T2–T5 |
 
-### 1:28 – 1:45 · Beat 3b: back to the machine
+### 1:30 – 1:45 · Beat 3b: back to the machine
 
 | Do | Say | Screen shows |
 |---|---|---|
@@ -129,6 +144,7 @@ Say them only if a judge asks "how do you know it's right?" — the demo itself 
 |---|---|
 | "Couldn't the LLM hallucinate a law?" | "It can propose, but it can't store: every rule's quote must be found word-for-word in the source document, or it's rejected and logged." |
 | "Is there an LLM when I click?" | "No. The model runs only at build time. Clicks hit precomputed JSON and a deterministic engine with unit tests." |
+| "Is Ask Locus a chatbot?" | "No model writes the answer. It matches your question to a topic, then shows this building's own verified rules with their quotes. If nothing matches, it says so — and it works offline." |
 | "How do you handle missing data?" | "Fail closed: *unknown*, with the missing fact named. Never 'does not apply' when we're not sure." |
 | "How did you get the legal city?" | "Census Geocoder places and county subdivisions — Dorchester resolves to Boston, San Ysidro to San Diego." |
 | "What about laws that aren't passed yet?" | "Enacted, not-yet-effective, pending and failed are kept separate. Pending bills never count as law; the struck Massachusetts ballot question never produces a rent cap." |
@@ -167,6 +183,8 @@ python -m navigator extract --docs D001 --no-cache; python -m navigator verify  
 | The map stays blank / Wi-Fi drops | Switch to the phone hotspot; if still blank, play the backup video and narrate it with the same script. |
 | The extraction errors (no credit, no network) | Say "here's the same run from rehearsal" and show the saved terminal output or the `Add a new law` panel, then move on. Never debug on stage. |
 | You fall behind at 1:30 | Skip Beat 3a's slider; go straight to the terminal, then close. |
+| Short on time before Beat 1b | Skip the Mars question; one cited answer is enough. |
+| No time for a live demo at all | Play `assets/demo/locus-demo.mp4` (57 s, narrated). |
 
 Record the backup video with Win+Alt+R (Xbox Game Bar) during your final rehearsal.
 
