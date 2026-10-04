@@ -8,6 +8,7 @@ Exits 1 if a must-be-100% check (format, grounding) fails.
 from __future__ import annotations
 
 import datetime as dt
+import importlib
 import json
 import re
 import subprocess
@@ -29,10 +30,11 @@ CATEGORIES = ["rent_increase_limits", "just_cause_eviction", "security_deposits"
               "application_screening_fees", "screening_restrictions", "algorithmic_rent_setting"]
 CAT_ABBR = ["rent", "jcause", "deposit", "appfee", "screen", "algo"]
 
-NOT_YET = [
-    ("4", "Gold set (rules + addresses)", 3),
-    ("7", "Jurisdiction check", 4),
-    ("8", "Determinism (two cached runs byte-identical)", 5),
+# optional sections, each a module with section(rep, out_dir); absent module = not measured
+SECTIONS = [
+    ("4", "Gold set (rules + addresses)", "eval.gold_eval"),
+    ("7", "Jurisdiction check", "eval.jurisdiction_check"),
+    ("8", "Determinism (two cached runs byte-identical)", "eval.determinism"),
 ]
 
 
@@ -209,8 +211,15 @@ def evaluate(out_dir: Path) -> Report:
     rep.lines.append(f"  [info] rules: {len(rules)}; by status {dict(sorted(status_counts.items()))}; red cells: {len(red)}")
 
     _change_checks(rep, out_dir)
-    for num, label, phase in NOT_YET:
-        rep.lines.append(f"[{num}] {label}: not measured yet (phase {phase})")
+    for num, label, module in SECTIONS:
+        try:
+            mod = importlib.import_module(module)
+        except ModuleNotFoundError as exc:
+            if exc.name != module:
+                raise
+            rep.lines.append(f"[{num}] {label}: not measured yet ({module} not built)")
+            continue
+        mod.section(rep, out_dir)
     return rep
 
 
