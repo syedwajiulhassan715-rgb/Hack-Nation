@@ -72,15 +72,18 @@ def load_parcels(path: Path | None = None) -> list[dict[str, Any]]:
 
 # ------------------------------------------------------------------ engine
 
-_REL_CACHE: dict[tuple, list[precedence.Relation]] = {}
+_REL_CACHE: dict[tuple, tuple[list[RuleInternal], list[precedence.Relation]]] = {}
 
 
 def _relations(rules: list[RuleInternal]) -> list[precedence.Relation]:
+    # The entry keeps the rule objects alive, so their id()s cannot be reused by a new
+    # list and return stale relations.
     key = tuple((r.team_rule_id, id(r)) for r in rules)
-    if key not in _REL_CACHE:
+    hit = _REL_CACHE.get(key)
+    if hit is None:
         _REL_CACHE.clear()
-        _REL_CACHE[key] = precedence.relations(rules)
-    return _REL_CACHE[key]
+        _REL_CACHE[key] = hit = (list(rules), precedence.relations(rules))
+    return hit[1]
 
 
 class _Row:
