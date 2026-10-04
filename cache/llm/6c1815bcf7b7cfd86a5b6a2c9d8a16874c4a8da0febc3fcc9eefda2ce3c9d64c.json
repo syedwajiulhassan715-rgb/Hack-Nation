@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "d46e4d000ed240abf0fa10ab2268157371526fdb5dd3685dd6c067b5b25961a0",
+  "previous_sha": "0fedbfedb8d50d6dc303d3baf361c5a78328544cf681cb36447ea4a762ff6989",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2215,
+  "output_tokens": 95
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord may use any reasonable standard to choose tenants if it applies equally and uniformly to all applicants, including you.",
+  "answer_owner": "You may use any reasonable standard to select tenants only if you apply it equally and uniformly to all applicants."
+ }
+}

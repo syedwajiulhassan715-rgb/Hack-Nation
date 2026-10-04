@@ -1,0 +1,181 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_es_v1",
+  "system": "You translate short plain-language lines from a rental housing law app into neutral Latin American Spanish, using \"usted\". The app shows the quoted law and \"Not legal advice.\" next to each line.\n\nTranslate each sentence faithfully as one sentence. Keep every number, date, percentage and dollar amount exactly as written (digits stay digits; do not spell numbers out). Add nothing and leave nothing out. Do not add exemptions or any way to avoid a rule. Keep it short: at most 26 words. Return JSON with one entry per id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant_es",
+       "answer_owner_es"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0161",
+    "answer_tenant": "A buyout agreement offering you less than the relocation assistance available to you is void.",
+    "answer_owner": "Your buyout agreements must be for more than the relocation assistance available to the tenant."
+   },
+   {
+    "team_rule_id": "r-0162",
+    "answer_tenant": "Your landlord may not use algorithm-based tools that recommend or set rental prices.",
+    "answer_owner": "You may not use algorithm-based tools that recommend or set rental prices."
+   },
+   {
+    "team_rule_id": "r-0163",
+    "answer_tenant": "Your landlord may not use algorithmic devices to set rents or manage occupancy levels for residential units.",
+    "answer_owner": "You may not sell or use algorithmic devices to set rents or manage occupancy levels for residential units."
+   },
+   {
+    "team_rule_id": "r-0164",
+    "answer_tenant": null,
+    "answer_owner": "You must have a just cause as the dominant motive to evict a tenant from a covered unit."
+   },
+   {
+    "team_rule_id": "r-0165",
+    "answer_tenant": "Your landlord must pay $8,245.00 per tenant in relocation for owner/relative move-in, demolition, temporary capital improvement or rehabilitation evictions.",
+    "answer_owner": "You must pay $8,245.00 per tenant in relocation for owner/relative move-in, demolition, temporary capital improvement or rehabilitation evictions."
+   },
+   {
+    "team_rule_id": "r-0166",
+    "answer_tenant": "Your landlord must pay you $11,110.05 per tenant in relocation if you are evicted under the Ellis Act.",
+    "answer_owner": "You must pay $11,110.05 per tenant in relocation when you evict tenants under the Ellis Act."
+   },
+   {
+    "team_rule_id": "r-0167",
+    "answer_tenant": "Your landlord must pay you $11,110.05 per tenant in relocation if you are evicted under the Ellis Act.",
+    "answer_owner": "You must pay $11,110.05 per tenant in relocation when you evict tenants under the Ellis Act."
+   },
+   {
+    "team_rule_id": "r-0168",
+    "answer_tenant": "Your annual allowable rent increase for a rent-controlled unit is 1.6% from March 1, 2026 through February 28, 2027.",
+    "answer_owner": "Your annual allowable increase for rent-controlled units is 1.6% from March 1, 2026 through February 28, 2027."
+   },
+   {
+    "team_rule_id": "r-0169",
+    "answer_tenant": "Your allowable annual rent increase is 1.6% for March 1, 2026 – February 28, 2027.",
+    "answer_owner": "Your allowable annual rent increase is 1.6% for March 1, 2026 – February 28, 2027."
+   },
+   {
+    "team_rule_id": "r-0170",
+    "answer_tenant": "You are protected in affordable housing decisions if you have an arrest or conviction history.",
+    "answer_owner": "You must follow protections for residents with arrest or conviction history in affordable housing decisions."
+   },
+   {
+    "team_rule_id": "r-0171",
+    "answer_tenant": "Your security deposit interest rate is 4.2% for March 1, 2026 – February 28, 2027.",
+    "answer_owner": "Your security deposit interest rate is 4.2% for March 1, 2026 – February 28, 2027."
+   },
+   {
+    "team_rule_id": "r-0172",
+    "answer_tenant": "Your landlord must have a valid reason to evict you.",
+    "answer_owner": "You must have a valid reason to evict a tenant."
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1852,
+  "output_tokens": 1512
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0161",
+    "answer_tenant_es": "Un acuerdo de compra que le ofrezca menos que la asistencia de reubicación disponible para usted es nulo.",
+    "answer_owner_es": "Sus acuerdos de compra deben ser por más que la asistencia de reubicación disponible para el inquilino."
+   },
+   {
+    "team_rule_id": "r-0162",
+    "answer_tenant_es": "Su arrendador no puede usar herramientas basadas en algoritmos que recomienden o fijen precios de alquiler.",
+    "answer_owner_es": "Usted no puede usar herramientas basadas en algoritmos que recomienden o fijen precios de alquiler."
+   },
+   {
+    "team_rule_id": "r-0163",
+    "answer_tenant_es": "Su arrendador no puede usar dispositivos algorítmicos para fijar alquileres o administrar los niveles de ocupación de unidades residenciales.",
+    "answer_owner_es": "Usted no puede vender ni usar dispositivos algorítmicos para fijar alquileres o administrar los niveles de ocupación de unidades residenciales."
+   },
+   {
+    "team_rule_id": "r-0164",
+    "answer_tenant_es": null,
+    "answer_owner_es": "Usted debe tener una causa justificada como motivo dominante para desalojar a un inquilino de una unidad cubierta."
+   },
+   {
+    "team_rule_id": "r-0165",
+    "answer_tenant_es": "Su arrendador debe pagar $8,245.00 por inquilino en reubicación en desalojos por mudanza del propietario o familiar, demolición, mejora de capital temporal o rehabilitación.",
+    "answer_owner_es": "Usted debe pagar $8,245.00 por inquilino en reubicación en desalojos por mudanza del propietario o familiar, demolición, mejora de capital temporal o rehabilitación."
+   },
+   {
+    "team_rule_id": "r-0166",
+    "answer_tenant_es": "Su arrendador debe pagarle $11,110.05 por inquilino en reubicación si usted es desalojado bajo la Ley Ellis.",
+    "answer_owner_es": "Usted debe pagar $11,110.05 por inquilino en reubicación cuando desaloje inquilinos bajo la Ley Ellis."
+   },
+   {
+    "team_rule_id": "r-0167",
+    "answer_tenant_es": "Su arrendador debe pagarle $11,110.05 por inquilino en reubicación si usted es desalojado bajo la Ley Ellis.",
+    "answer_owner_es": "Usted debe pagar $11,110.05 por inquilino en reubicación cuando desaloje inquilinos bajo la Ley Ellis."
+   },
+   {
+    "team_rule_id": "r-0168",
+    "answer_tenant_es": "El aumento anual permitido de alquiler para su unidad con control de alquileres es 1.6% del 1 de marzo de 2026 al 28 de febrero de 2027.",
+    "answer_owner_es": "Su aumento anual permitido para unidades con control de alquileres es 1.6% del 1 de marzo de 2026 al 28 de febrero de 2027."
+   },
+   {
+    "team_rule_id": "r-0169",
+    "answer_tenant_es": "Su aumento anual permitido de alquiler es 1.6% del 1 de marzo de 2026 al 28 de febrero de 2027.",
+    "answer_owner_es": "Su aumento anual permitido de alquiler es 1.6% del 1 de marzo de 2026 al 28 de febrero de 2027."
+   },
+   {
+    "team_rule_id": "r-0170",
+    "answer_tenant_es": "Usted está protegido en las decisiones de vivienda asequible si tiene antecedentes de arresto o condena.",
+    "answer_owner_es": "Usted debe cumplir las protecciones para residentes con antecedentes de arresto o condena en las decisiones de vivienda asequible."
+   },
+   {
+    "team_rule_id": "r-0171",
+    "answer_tenant_es": "La tasa de interés de su depósito de seguridad es 4.2% del 1 de marzo de 2026 al 28 de febrero de 2027.",
+    "answer_owner_es": "La tasa de interés de su depósito de seguridad es 4.2% del 1 de marzo de 2026 al 28 de febrero de 2027."
+   },
+   {
+    "team_rule_id": "r-0172",
+    "answer_tenant_es": "Su arrendador debe tener un motivo válido para desalojarlo.",
+    "answer_owner_es": "Usted debe tener un motivo válido para desalojar a un inquilino."
+   }
+  ]
+ }
+}

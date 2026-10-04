@@ -1,0 +1,181 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_es_v1",
+  "system": "You translate short plain-language lines from a rental housing law app into neutral Latin American Spanish, using \"usted\". The app shows the quoted law and \"Not legal advice.\" next to each line.\n\nTranslate each sentence faithfully as one sentence. Keep every number, date, percentage and dollar amount exactly as written (digits stay digits; do not spell numbers out). Add nothing and leave nothing out. Do not add exemptions or any way to avoid a rule. Keep it short: at most 26 words. Return JSON with one entry per id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant_es",
+       "answer_owner_es"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0043",
+    "answer_tenant": "No one may ask about your race, color, national origin, sex, age, or marital status when you seek to rent.",
+    "answer_owner": "You must not make or cause any inquiry about an applicant's race, color, national origin, sex, age, or marital status."
+   },
+   {
+    "team_rule_id": "r-0044",
+    "answer_tenant": "Your landlord cannot discriminate against you for receiving public assistance or a housing subsidy.",
+    "answer_owner": "You must not discriminate against a tenant for receiving public assistance or a housing subsidy, including rental assistance."
+   },
+   {
+    "team_rule_id": "r-0045",
+    "answer_tenant": "Your landlord can require only first month's rent, last month's rent, a security deposit, and key and lock cost upfront.",
+    "answer_owner": "You must not require more than first month's rent, last month's rent, security deposit, and key and lock cost upfront."
+   },
+   {
+    "team_rule_id": "r-0046",
+    "answer_tenant": "Your landlord's fee in lieu of a security deposit cannot total more than 1 month's rent.",
+    "answer_owner": "You must limit the total of any fee in lieu of a security deposit to 1 month's rent."
+   },
+   {
+    "team_rule_id": "r-0047",
+    "answer_tenant": "Your landlord must give you a receipt for your security deposit showing the amount, recipient, date, and premises description.",
+    "answer_owner": "You must give the tenant a receipt when you receive a security deposit, showing amount, receiver, date, and premises description."
+   },
+   {
+    "team_rule_id": "r-0048",
+    "answer_tenant": "Your landlord must give you a separate written statement of the premises' present condition after accepting your security deposit.",
+    "answer_owner": "You must give the tenant a separate written statement of the premises' present condition after accepting a security deposit."
+   },
+   {
+    "team_rule_id": "r-0049",
+    "answer_tenant": "Your landlord must hold your security deposit in a separate, interest-bearing bank account located within the commonwealth.",
+    "answer_owner": "You must hold any security deposit you receive in a separate, interest-bearing bank account located within the commonwealth."
+   },
+   {
+    "team_rule_id": "r-0050",
+    "answer_tenant": "Your landlord must pay you interest at five per cent per year, or any lesser amount the bank paid.",
+    "answer_owner": "You must pay the tenant interest at five per cent per year, or any lesser amount the bank paid."
+   },
+   {
+    "team_rule_id": "r-0051",
+    "answer_tenant": "Your landlord must return your security deposit or any balance within thirty days after your tenancy ends.",
+    "answer_owner": "You must return the tenant's security deposit or any balance within thirty days after the tenancy ends."
+   },
+   {
+    "team_rule_id": "r-0052",
+    "answer_tenant": "Your landlord must return the deposit balance you are owed, with any interest, within thirty days after your tenancy ends.",
+    "answer_owner": "You must return the tenant's deposit balance, together with any interest, within thirty days after the tenancy ends."
+   },
+   {
+    "team_rule_id": "r-0053",
+    "answer_tenant": "Your landlord's successor must notify you within forty-five days from the transfer date that your rental advance was credited.",
+    "answer_owner": "You, as successor, must notify the tenant within forty-five days from the transfer date that their rental advance was credited."
+   },
+   {
+    "team_rule_id": "r-0055",
+    "answer_tenant": "Your landlord cannot require an application or similar fee that exceeds $50.",
+    "answer_owner": "You must not require an application or similar fee exceeding $50 to apply to lease a residential rental property."
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1881,
+  "output_tokens": 4877
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0043",
+    "answer_tenant_es": "Nadie puede preguntarle sobre su raza, color, origen nacional, sexo, edad o estado civil cuando usted busca alquilar.",
+    "answer_owner_es": "Usted no debe hacer ni provocar preguntas sobre raza, color, origen nacional, sexo, edad o estado civil de un solicitante."
+   },
+   {
+    "team_rule_id": "r-0044",
+    "answer_tenant_es": "Su arrendador no puede discriminarlo por recibir asistencia pública o un subsidio de vivienda.",
+    "answer_owner_es": "Usted no debe discriminar a un inquilino por recibir asistencia pública o un subsidio de vivienda, incluida la asistencia para el alquiler."
+   },
+   {
+    "team_rule_id": "r-0045",
+    "answer_tenant_es": "Su arrendador solo puede exigir por adelantado el alquiler del primer y del último mes, un depósito de seguridad y el costo de llaves y cerradura.",
+    "answer_owner_es": "Usted no debe exigir por adelantado más que alquiler del primer y último mes, depósito de seguridad y costo de llaves y cerradura."
+   },
+   {
+    "team_rule_id": "r-0046",
+    "answer_tenant_es": "La tarifa de su arrendador en lugar de un depósito de seguridad no puede sumar más de 1 mes de alquiler.",
+    "answer_owner_es": "Usted debe limitar el total de cualquier tarifa en lugar de un depósito de seguridad a 1 mes de alquiler."
+   },
+   {
+    "team_rule_id": "r-0047",
+    "answer_tenant_es": "Su arrendador debe darle un recibo de su depósito de seguridad que indique el monto, quién lo recibió, la fecha y la descripción del inmueble.",
+    "answer_owner_es": "Usted debe dar al inquilino un recibo al recibir un depósito de seguridad, con el monto, el receptor, la fecha y la descripción del inmueble."
+   },
+   {
+    "team_rule_id": "r-0048",
+    "answer_tenant_es": "Su arrendador debe darle una declaración escrita separada del estado actual del inmueble después de aceptar su depósito de seguridad.",
+    "answer_owner_es": "Usted debe dar al inquilino una declaración escrita separada del estado actual del inmueble después de aceptar un depósito de seguridad."
+   },
+   {
+    "team_rule_id": "r-0049",
+    "answer_tenant_es": "Su arrendador debe mantener su depósito de seguridad en una cuenta bancaria separada que genere intereses, ubicada dentro del Commonwealth.",
+    "answer_owner_es": "Usted debe mantener todo depósito de seguridad que reciba en una cuenta bancaria separada que genere intereses, ubicada dentro del Commonwealth."
+   },
+   {
+    "team_rule_id": "r-0050",
+    "answer_tenant_es": "Su arrendador debe pagarle intereses del cinco por ciento anual, o cualquier monto menor que haya pagado el banco.",
+    "answer_owner_es": "Usted debe pagar al inquilino intereses del cinco por ciento anual, o cualquier monto menor que haya pagado el banco."
+   },
+   {
+    "team_rule_id": "r-0051",
+    "answer_tenant_es": "Su arrendador debe devolverle su depósito de seguridad o cualquier saldo dentro de treinta días después de que termine su arrendamiento.",
+    "answer_owner_es": "Usted debe devolver al inquilino su depósito de seguridad o cualquier saldo dentro de treinta días después de que termine el arrendamiento."
+   },
+   {
+    "team_rule_id": "r-0052",
+    "answer_tenant_es": "Su arrendador debe devolverle el saldo del depósito que se le debe, con cualquier interés, dentro de treinta días después de que termine su arrendamiento.",
+    "answer_owner_es": "Usted debe devolver el saldo del depósito del inquilino, junto con cualquier interés, dentro de treinta días después de que termine el arrendamiento."
+   },
+   {
+    "team_rule_id": "r-0053",
+    "answer_tenant_es": "El sucesor de su arrendador debe notificarle, dentro de cuarenta y cinco días desde la fecha de transferencia, que su adelanto de alquiler fue acreditado.",
+    "answer_owner_es": "Usted, como sucesor, debe notificar al inquilino, dentro de cuarenta y cinco días desde la fecha de transferencia, que su adelanto de alquiler fue acreditado."
+   },
+   {
+    "team_rule_id": "r-0055",
+    "answer_tenant_es": "Su arrendador no puede exigir una tarifa de solicitud o similar que exceda $50.",
+    "answer_owner_es": "Usted no debe exigir una tarifa de solicitud o similar superior a $50 para solicitar el arrendamiento de una propiedad residencial."
+   }
+  ]
+ }
+}

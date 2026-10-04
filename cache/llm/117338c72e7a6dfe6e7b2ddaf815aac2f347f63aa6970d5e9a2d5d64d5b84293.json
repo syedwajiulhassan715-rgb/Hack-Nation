@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "ac106dbf900459041bf2e0ffce734c0135262ac7eee234d154800385cffb3586",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1654,
+  "output_tokens": 706
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord's deadline under this rule is no later than 21 calendar days after you vacate the premises.",
+  "answer_owner": "You must act no later than 21 calendar days after your tenant has vacated the premises."
+ }
+}

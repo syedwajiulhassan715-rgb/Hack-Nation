@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "06c6f121af549d535e1ff4aa8a50a34ddf5934a28110d12a4970aa9626598d15",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1583,
+  "output_tokens": 100
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord may file for eviction if you keep failing to pay rent or often pay late after a written Notice to Cease.",
+  "answer_owner": "You must serve a Notice to Quit at least one month before filing an eviction suit for continual nonpayment or habitual late rent."
+ }
+}

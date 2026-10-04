@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "b22ff21ac90c1d9f28d4356d8afc28f5b8038b379fe5f205fe6c5ceebc325939",
+  "english_sha": "ae47d6f819eaf1e6aa16001896c14575cbe749c07213005390fde143d2dfd372",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 762,
+  "output_tokens": 1106
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador puede aumentar su renta hasta 1.6% (1 de marzo de 2026 – 28 de febrero de 2027).",
+  "answer_owner_es": "Usted puede aumentar la renta hasta 1.6% (1 de marzo de 2026 – 28 de febrero de 2027)."
+ }
+}

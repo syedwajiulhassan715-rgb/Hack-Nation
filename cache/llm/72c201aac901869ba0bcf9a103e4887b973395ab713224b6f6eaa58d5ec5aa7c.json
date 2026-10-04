@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "90a9d21537fbd29bebfb4e03852c1dbc694dae98e05ed7354a4ce5b934fe481b",
+  "previous_sha": "97b865245fcd13cc9c273a6b7604168b4443f4b44137a47be02b8969959b2d66",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2166,
+  "output_tokens": 87
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "You cannot be evicted for unpaid rent if you used it to keep utilities your landlord should have paid.",
+  "answer_owner": "You may not evict a tenant who used unpaid rent to keep utilities running that you failed to pay."
+ }
+}

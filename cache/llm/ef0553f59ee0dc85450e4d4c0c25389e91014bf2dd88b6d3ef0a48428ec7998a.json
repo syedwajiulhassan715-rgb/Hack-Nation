@@ -1,0 +1,21 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "a3b05ed94f445962f92194f99f494dc2f05f3cc642147b379f9820e3cef5d614",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1407,
+  "output_tokens": 104
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "A pending proposal would address algorithmic rent fixing in the rental housing market, which could affect how your rent is set; it is not law.",
+  "answer_owner": "If passed, this proposed bill would address algorithmic rent fixing in the rental housing market, which would bear on how you set rent."
+ }
+}

@@ -1,0 +1,229 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_v1",
+  "system": "You write the plain-language line for a rental housing law app. The app always shows the quoted law, its citation and \"Not legal advice.\" next to your sentence.\n\nFor each rule you get its quoted text (the only source of law you may use) and a few structured fields. Write two sentences:\n- answer_tenant: addressed to a tenant (\"you\" = the tenant).\n- answer_owner: addressed to the landlord or property owner (\"you\" = the owner).\n\nRules for every sentence:\n1. One sentence, at most 20 words, containing \"you\" or \"your\".\n2. Start with the answer itself (e.g. \"Your landlord must...\", \"You must...\", \"You can...\"). No preamble such as \"Under this law\", \"This rule\" or \"According to\".\n3. Use only what the quoted text says. Add no facts, conditions, deadlines or remedies that are not in it. If the quote is too thin to say anything useful (for example only a bill title), return null for that sentence.\n4. Numbers, dates, percentages and dollar amounts: copy them exactly as they appear in the quote or key_value. Never compute, convert, round or combine them. If unsure, leave the number out.\n5. Owner sentences state obligations or prohibitions only. Never mention exemptions, exceptions, how a rule might not apply, or any way to avoid, get around or work around a rule. Tenant sentences state rights and protections, also without exemption talk.\n6. Status: \"pending\" means a bill or proposal that is not law, so say it is proposed and would apply only if enacted; \"not_yet_effective\" means enacted but not yet in effect, so say it is not in effect yet (no date unless the quote states it); \"in_force\" is present tense.\n7. Do not name the jurisdiction or the citation; the app shows them. Do not give legal advice, promise outcomes or say anyone is compliant.\n\nReturn JSON with one entry per rule id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant",
+       "answer_owner"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0061",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Eviction for disorderly conduct",
+    "key_value": "Notice to Quit at least three days prior to filing",
+    "quoted_span": "If after given written Notice to Cease disorderly conduct, the tenant continues the disorderly conduct and that conduct destroys the peace and quiet of the other tenants living in the building or neighborhood, the landlord may file a suite for eviction. A Notice to Quit must be served on the tenant at least three days prior to filing a suit for eviction (N.J.S.A. 2A:18-61.1(b))."
+   },
+   {
+    "team_rule_id": "r-0062",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Eviction for damage or destruction to the property",
+    "key_value": "Notice to Quit at least three days before filing",
+    "quoted_span": "The tenant may be evicted if they have intentionally or by reason of gross negligence caused or allowed destruction, damage, or injury to the property."
+   },
+   {
+    "team_rule_id": "r-0063",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Eviction for damage or destruction to the property",
+    "key_value": "Notice to Quit at least three days prior to filing",
+    "quoted_span": "The tenant may be evicted if they have intentionally or by reason of gross negligence caused or allowed destruction, damage, or injury to the property."
+   },
+   {
+    "team_rule_id": "r-0064",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Eviction for substantial violation of landlord's rules and regulations",
+    "key_value": "Notice to Quit at least one month before filing",
+    "quoted_span": "A Notice to Quit must be served on the tenant at least one month prior to filing the suit for eviction. In addition, any notices must be given on or before the start of a new month (N.J.S.A. 2A:18-61.1(d))."
+   },
+   {
+    "team_rule_id": "r-0065",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Eviction for breach of lease covenants or agreements",
+    "key_value": "Notice to Quit at least one month prior to filing",
+    "quoted_span": "If the tenant continues to substantially violate or breach the reasonable covenants or agreements contained in the lease, after given written Notice to Cease violating or breaching those covenants or agreements and if the landlord has reserved a right of re-entry in the lease, the landlord may file a suit for eviction. A Notice to Quit must be served on the tenant at least one month prior to filing the suit for this type of eviction."
+   },
+   {
+    "team_rule_id": "r-0066",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Eviction for failure to pay rent increase",
+    "key_value": "Notice to Quit at least one month prior to filing",
+    "quoted_span": "If a tenant fails to pay rent after being given notice of a rent increase and a Notice to Quit, the landlord may file a suit for eviction. The rent increase must not be unconscionable and must comply with all other laws or municipal ordinances, including rent control."
+   },
+   {
+    "team_rule_id": "r-0067",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Eviction for health and safety violations or removal from rental market",
+    "key_value": "Notice to Quit at least three months before filing",
+    "quoted_span": "A Notice to Quit must be served on the tenant at least three months before filing a suit for eviction. The tenant can’t be evicted until relocation assistance is provided."
+   },
+   {
+    "team_rule_id": "r-0068",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Relocation assistance for illegal occupancy evictions",
+    "key_value": "six times the tenant’s monthly rent",
+    "quoted_span": "Any tenant evicted under G 3) (illegal occupancy) is entitled to relocation assistance in an amount equal to six times the tenant’s monthly rent."
+   },
+   {
+    "team_rule_id": "r-0069",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Eviction to permanently retire property from residential use",
+    "key_value": "Notice to Quit at least 18 months prior to filing",
+    "quoted_span": "If the landlord wants to permanently retire a building or mobile home park from residential use, provided the circumstances covered under section (G) above do not apply, the landlord may file suit for eviction. A Notice to Quit must be served on the tenant at least 18 months prior to filing the suit for eviction."
+   },
+   {
+    "team_rule_id": "r-0070",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Eviction for refusal to accept reasonable lease changes",
+    "key_value": "Notice to Quit at least one month before filing",
+    "quoted_span": "If after written notice the tenant refuses to accept those changes the landlord may file a suit for eviction and the court will determine if the proposed changes are reasonable."
+   },
+   {
+    "team_rule_id": "r-0071",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Eviction for continuous nonpayment or habitual late payment",
+    "key_value": "Notice to Quit at least one month before filing",
+    "quoted_span": "If the tenant continuously fails to pay rent or habitually pays late, after written Notice to Cease, the landlord may file a suit for eviction. A Notice to Quit must be served on the tenant at least one month before filing a suit for eviction (N.J.S.A. 2A:18-61.1(j))."
+   },
+   {
+    "team_rule_id": "r-0072",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Eviction for conversion to condominium, cooperative or fee simple ownership",
+    "key_value": "Notice to Quit at least three years before filing",
+    "quoted_span": "A Notice to Quit must be ser ved on the tenant at least three years before filing a suit for eviction. No legal action may be taken until the lease expires (N.J.S.A. 2A:18-61.1(k))."
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 3279,
+  "output_tokens": 8646
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0061",
+    "answer_tenant": "Your landlord must serve a Notice to Quit at least three days prior to filing for disorderly conduct eviction.",
+    "answer_owner": "You must serve a Notice to Quit at least three days prior to filing an eviction suit for disorderly conduct."
+   },
+   {
+    "team_rule_id": "r-0062",
+    "answer_tenant": "You can be evicted if you intentionally or through gross negligence cause or allow damage to the property.",
+    "answer_owner": null
+   },
+   {
+    "team_rule_id": "r-0063",
+    "answer_tenant": "You can be evicted if you intentionally or through gross negligence cause or allow damage to the property.",
+    "answer_owner": null
+   },
+   {
+    "team_rule_id": "r-0064",
+    "answer_tenant": "Your landlord must serve you a Notice to Quit at least one month prior to filing an eviction suit.",
+    "answer_owner": "You must serve a Notice to Quit at least one month prior to filing the eviction suit."
+   },
+   {
+    "team_rule_id": "r-0065",
+    "answer_tenant": "Your landlord must serve a Notice to Quit at least one month prior to filing a lease-breach eviction suit.",
+    "answer_owner": "You must serve a Notice to Quit at least one month prior to filing this type of eviction suit."
+   },
+   {
+    "team_rule_id": "r-0066",
+    "answer_tenant": "Your landlord's rent increase must not be unconscionable and must follow all other laws, including rent control.",
+    "answer_owner": "Your rent increase must not be unconscionable and must comply with all other laws, including rent control."
+   },
+   {
+    "team_rule_id": "r-0067",
+    "answer_tenant": "Your landlord must serve a Notice to Quit at least three months before filing, and provide relocation assistance before eviction.",
+    "answer_owner": "You must serve a Notice to Quit at least three months before filing, and provide relocation assistance before evicting."
+   },
+   {
+    "team_rule_id": "r-0068",
+    "answer_tenant": "You are entitled to relocation assistance equal to six times your monthly rent if evicted for illegal occupancy.",
+    "answer_owner": "You must provide relocation assistance equal to six times the tenant’s monthly rent for an illegal occupancy eviction."
+   },
+   {
+    "team_rule_id": "r-0069",
+    "answer_tenant": "Your landlord must serve a Notice to Quit at least 18 months before filing to permanently retire the building.",
+    "answer_owner": "You must serve a Notice to Quit at least 18 months before filing to permanently retire the building."
+   },
+   {
+    "team_rule_id": "r-0070",
+    "answer_tenant": "A court will determine whether the proposed changes are reasonable if your landlord files suit after you refuse.",
+    "answer_owner": "You must give written notice of proposed changes before filing an eviction suit."
+   },
+   {
+    "team_rule_id": "r-0071",
+    "answer_tenant": "Your landlord must serve a Notice to Quit at least one month before filing an eviction suit.",
+    "answer_owner": "You must give written Notice to Cease and serve a Notice to Quit at least one month before filing."
+   },
+   {
+    "team_rule_id": "r-0072",
+    "answer_tenant": "No legal action can be taken against you until your lease expires.",
+    "answer_owner": "You must serve a Notice to Quit at least three years before filing an eviction suit."
+   }
+  ]
+ }
+}

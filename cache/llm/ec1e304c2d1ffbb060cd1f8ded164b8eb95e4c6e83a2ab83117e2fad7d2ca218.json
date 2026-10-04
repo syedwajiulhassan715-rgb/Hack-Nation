@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "03c9d8256ab80b244e5dd34fb3ff51427cb491b229b29532d8fa28114ac20424",
+  "english_sha": "60f1231fd80ff1e3e6d5723ae4df510d41a9c53fd7314b309b2fdf37ea8d4895",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 783,
+  "output_tokens": 1324
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Un aviso escrito que termine su arrendamiento por causa justificada debe incluir los datos requeridos, certificados bajo pena de perjurio.",
+  "answer_owner_es": "Su aviso escrito de terminación por causa justificada debe incluir todos los datos requeridos, certificados bajo pena de perjurio."
+ }
+}

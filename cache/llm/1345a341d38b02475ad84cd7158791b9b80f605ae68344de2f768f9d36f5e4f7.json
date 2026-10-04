@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "b7b7db0f8549ac4f34e4e48231b10da59307c2d96159cb30f64b2382ebe72033",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1667,
+  "output_tokens": 88
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "If your landlord takes action against you based on criminal history, they must give you written notice and a chance to respond.",
+  "answer_owner": "If you take action against an applicant or tenant based on criminal history, you must give them written notice and a chance to respond."
+ }
+}

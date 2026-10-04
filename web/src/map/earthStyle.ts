@@ -1,14 +1,29 @@
 // "Earth" basemap: aerial imagery on a 3D globe with terrain, sky and the OpenFreeMap labels
 // on top. Every source is open and allows browser use:
-//   - imagery: USGS The National Map orthoimagery (USDA NAIP), public domain, CORS open,
-//     tiles to zoom 16 (MapLibre over-zooms beyond that)
+//   - imagery: Esri World Imagery (0.3-0.5 m, tiles to zoom 19) when VITE_ESRI_API_KEY is set.
+//     Esri's terms require an ArcGIS account, so the keyed ArcGIS Location Platform endpoint is
+//     used, never the keyless one. Without a key: USGS The National Map orthoimagery (USDA
+//     NAIP), public domain, tiles to zoom 16 (MapLibre over-zooms beyond that)
 //   - terrain: AWS Terrain Tiles (Mapzen terrarium encoding), open data, CORS open
 //   - labels + building footprints: OpenFreeMap (OpenStreetMap, ODbL)
 // If the label style is unreachable (offline demo), loadNightStyle's plain fallback is used.
 import type { LayerSpecification, StyleSpecification } from 'maplibre-gl'
 import { minimalNightStyle, STYLE_URL } from './nightStyle'
 
-const IMAGERY = 'https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}'
+const USGS = 'https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}'
+const ESRI = 'https://ibasemaps-api.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
+const ESRI_KEY = (import.meta.env.VITE_ESRI_API_KEY as string | undefined)?.trim()
+
+/** Imagery tile source: Esri with an API key, else USGS. */
+export function imagerySource(key = ESRI_KEY) {
+  return key
+    ? {
+        tiles: [`${ESRI}?token=${encodeURIComponent(key)}`],
+        maxzoom: 19,
+        attribution: 'Powered by Esri | Source: Esri, Vantor, Earthstar Geographics, and the GIS User Community',
+      }
+    : { tiles: [USGS], maxzoom: 16, attribution: 'Imagery: USDA, USGS The National Map' }
+}
 const TERRAIN = 'https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png'
 
 export const TERRAIN_EXAGGERATION = 1.15
@@ -47,13 +62,7 @@ export function earthStyle(base: StyleSpecification): StyleSpecification {
     projection: { type: 'globe' },
     sources: {
       ...Object.fromEntries(Object.entries(base.sources).filter(([, s]) => s.type === 'vector')),
-      imagery: {
-        type: 'raster',
-        tiles: [IMAGERY],
-        tileSize: 256,
-        maxzoom: 16,
-        attribution: 'Imagery: USDA, USGS The National Map',
-      },
+      imagery: { type: 'raster', tileSize: 256, ...imagerySource() },
       terrain: {
         type: 'raster-dem',
         tiles: [TERRAIN],

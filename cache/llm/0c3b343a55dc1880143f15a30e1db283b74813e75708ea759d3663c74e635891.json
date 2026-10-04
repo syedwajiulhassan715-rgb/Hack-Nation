@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "6da245500870f2d7cfaa40a296c20bebbbe03ee352fff34a11bb75d664d0674b",
+  "english_sha": "ac190a7ea31e08b311e880179978cf6e9668ebc47dfe3e8ddfe8726a99ab8723",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 783,
+  "output_tokens": 2364
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Si su arrendador vive en la vivienda de dos o tres familias, solo puede desalojarlo con orden judicial de desalojo.",
+  "answer_owner_es": "No puede desalojar a inquilinos de su vivienda de dos o tres familias donde vive sin orden judicial de desalojo."
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair2",
+  "rule_sha": "efb44d04e9c1bbbb077c0a022b4d824b3dd27624ed237862b28a404cf6a73f56",
+  "english_sha": "abf91ef09829ef9f6216311e86a9ef738244fc74223774540f1ceae72ba3e2c9",
+  "previous_sha": "77ae4cd28a9875ccbbd93a23c9d98b6ee1076820f5fcb6a8526db65be35e963f",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1378,
+  "output_tokens": 526
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador puede deber de $500 a $2,000 por infracción por retener deliberadamente su depósito cuando usted recibe asistencia.",
+  "answer_owner_es": "Usted no puede retener deliberadamente el depósito de un inquilino asistido; puede deber de $500 a $2,000 por infracción."
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "3fe66c7bc0f801e84b8a63906094ccfc07b10210e723b2c41655341c920b6e06",
+  "previous_sha": "58cabe050526a5b0f64a2c50b69e30b9f9452bdcdf06ecc1a057ad16c7aca82b",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1998,
+  "output_tokens": 77
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord cannot charge you a screening fee if they know or should know no unit is available.",
+  "answer_owner": "You may not charge an applicant a screening fee when you know or should know no unit is available soon."
+ }
+}

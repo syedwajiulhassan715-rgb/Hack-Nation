@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "fd5bbf54a8a2d310bd10f0744dad8b8464b5a34d19a6d70ca698c4c3ef151974",
+  "english_sha": "6de67747e1e8c0daf9afffdb7e44472ac991a5afb8170f7db4613835461253db",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 855,
+  "output_tokens": 2833
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Solo puede retirarse su oferta condicional por antecedentes penales si es necesario para un interés sustancial, legítimo y no discriminatorio.",
+  "answer_owner_es": "Solo puede retirar su oferta condicional por antecedentes penales si es necesario para un interés sustancial, legítimo y no discriminatorio."
+ }
+}

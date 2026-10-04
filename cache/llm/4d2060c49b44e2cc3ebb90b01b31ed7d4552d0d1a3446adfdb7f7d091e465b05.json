@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "5b2cdd8976385ed3538c17280394db266e1d425f7f8e86bfab57c9045a216885",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1603,
+  "output_tokens": 500
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord must make relocation payments to you if you are evicted under the Ellis Act.",
+  "answer_owner": "You must make relocation payments to tenants you evict under the Ellis Act."
+ }
+}

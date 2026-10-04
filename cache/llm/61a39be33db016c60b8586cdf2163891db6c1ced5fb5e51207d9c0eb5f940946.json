@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "c45f0b3f1d3ab6ffc42dc3de11da2887516a985f3a0f0307b6a0448c867f7fee",
+  "english_sha": "e6d384c0956d475df1ec62a15de45de72994f7acb00bb1a5f7770394b33d0719",
+  "previous_sha": "564fdc063e35fb48032b91ead5df8af0c7cec59aaad2866d7a790106b78c1588",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1249,
+  "output_tokens": 77
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": null,
+  "answer_owner_es": "Usted debe darle a su inquilino los datos del depósito por escrito dentro de 30 días de recibirlo y en cada pago anual de intereses."
+ }
+}

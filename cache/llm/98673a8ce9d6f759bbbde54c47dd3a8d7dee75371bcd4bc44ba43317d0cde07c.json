@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "54073b53f557872d7fa77f0bb44678eab69378ae6f95f911fa471f63f4988e2c",
+  "previous_sha": "a5aabe19c30c23da65bb31d6487c0af7ed3e1a212ce30e3519122aa8a19cb7a4",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2220,
+  "output_tokens": 87
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord can evict you for nonpayment only if you owe at least one month of Fair Market Rent.",
+  "answer_owner": "You may evict for nonpayment only if the tenant owes at least one month of Fair Market Rent."
+ }
+}

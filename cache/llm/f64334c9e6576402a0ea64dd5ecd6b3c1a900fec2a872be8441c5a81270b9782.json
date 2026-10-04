@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "e151087368a53f45773f2e59cb7404ae4ea9c574ff7e920879e95125d55116c5",
+  "english_sha": "f50f09ae5e7cb24b83ad0cb77ac490f45673d10e9c745d835824e74ecfe023e3",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 828,
+  "output_tokens": 820
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Usted o su arrendador pueden terminar un arrendamiento a voluntad con aviso escrito de tres meses, a veces menos.",
+  "answer_owner_es": "Usted debe dar a su inquilino aviso escrito de tres meses para terminar un arrendamiento a voluntad, a veces menos."
+ }
+}

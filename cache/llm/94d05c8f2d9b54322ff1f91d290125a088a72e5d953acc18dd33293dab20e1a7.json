@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "8a9c1d637c2ff9c629a16cf811de5f6b0eb778d8e7ae4bb491aa4633c0e271a6",
+  "english_sha": "5dc6746b716e735cd73947188c4d60e7671a72d7239af2c0e898470658c6965c",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 777,
+  "output_tokens": 359
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador solo puede solicitar aumentos de renta por mejoras de capital terminadas, no por las planeadas.",
+  "answer_owner_es": "Usted solo puede solicitar aumentos de renta por mejoras de capital terminadas, no por las planeadas."
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "8baa72df9a246ea8f415a7f79da5cadf67b57240d2b195aeecc17bea399765d2",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1629,
+  "output_tokens": 692
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord cannot require you to pay more than listed amounts at or before your tenancy starts.",
+  "answer_owner": "You may not require a tenant to pay more than the listed amounts at or before tenancy starts."
+ }
+}

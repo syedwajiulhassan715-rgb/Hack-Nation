@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "0a41e301bb613dfeeae7e9662fea9659c5a0b3c345947c9a27e0b3a16996231a",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1602,
+  "output_tokens": 776
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your security deposit and accrued interest must be transferred to your landlord's successor, who becomes liable for returning it.",
+  "answer_owner": "You must transfer the security deposit and accrued interest to your successor, who then becomes liable for returning it."
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "9ec5cd7a4a76305be42e6d44a6cea7b557136986151d3a590f40de3f06409074",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1606,
+  "output_tokens": 1180
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord's annual rent increases are regulated if your unit falls under the city's Rent Stabilization Ordinance.",
+  "answer_owner": "You must follow the city's Rent Stabilization Ordinance limits on annual rent increases for units it covers."
+ }
+}

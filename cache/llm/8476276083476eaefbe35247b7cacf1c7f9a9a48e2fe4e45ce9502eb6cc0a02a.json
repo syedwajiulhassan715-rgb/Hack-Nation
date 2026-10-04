@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "9999dffae309ca61db9e6f9002a1e68fb23b944d4755aea8fc2b46120ebe790d",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1552,
+  "output_tokens": 98
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord cannot raise your rent in the middle of your lease; the old lease must end and a new lease must include the higher rent.",
+  "answer_owner": "You cannot raise rent mid-lease; you must end the old lease, and the new lease must contain the increased rent."
+ }
+}

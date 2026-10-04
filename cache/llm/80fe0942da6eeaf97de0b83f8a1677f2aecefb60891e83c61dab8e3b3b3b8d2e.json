@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "03571898dc82d14180c13e81f32618ad24370d42c1587e4a06b30e9f3c4280d0",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1680,
+  "output_tokens": 746
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "If you don't pay rent due under a written lease, your landlord can end it with fourteen days' written notice.",
+  "answer_owner": "You must give your tenant fourteen days' written notice to quit to end a written lease over unpaid rent."
+ }
+}

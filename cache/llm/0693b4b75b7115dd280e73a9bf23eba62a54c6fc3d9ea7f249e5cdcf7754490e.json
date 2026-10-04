@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "870d57eab334827f2c4370d06a4dc5b3470d1f54ed4b2d323abef2b3b4a56818",
+  "english_sha": "691e79097f9a82cee3bb5d6e72fa66847e9d8b62a1bdbaa55d203045225b3c6d",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 759,
+  "output_tokens": 112
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador puede deducir de su depósito de garantía solo las cantidades razonablemente necesarias para los fines permitidos.",
+  "answer_owner_es": "Usted puede deducir de un depósito de garantía solo la cantidad razonablemente necesaria para los fines permitidos."
+ }
+}

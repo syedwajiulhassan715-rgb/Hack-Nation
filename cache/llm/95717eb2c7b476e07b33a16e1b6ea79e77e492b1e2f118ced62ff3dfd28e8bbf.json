@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "25a741b52d421cd2656ddcf9e1e56a096f6a260c62e9e9abcf6db3048d9fc160",
+  "english_sha": "f758cfdbe661bc580e302bd1514fee645e32af320e23c4d0dd42cef249cb8dfc",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 877,
+  "output_tokens": 3523
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su renta no puede subir más de 5% más el cambio del costo de vida, o 10%, en 12 meses.",
+  "answer_owner_es": "No puede subir su renta más de 5% más el cambio del costo de vida, o 10%, en 12 meses."
+ }
+}

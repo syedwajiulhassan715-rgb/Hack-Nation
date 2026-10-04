@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "118508d46787a255a032dbbf0588bb00d2528c9dad3a77d6087017089786a506",
+  "english_sha": "f5d08db5304b507d1c2693b788d20cb48b9e1001b07160507a3ab67f308e89ca",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 763,
+  "output_tokens": 636
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador debe tener el pago disponible dentro de 15 días de entregarle el aviso escrito de desalojo.",
+  "answer_owner_es": "Usted debe tener el pago disponible dentro de 15 días de entregar el aviso escrito de desalojo."
+ }
+}

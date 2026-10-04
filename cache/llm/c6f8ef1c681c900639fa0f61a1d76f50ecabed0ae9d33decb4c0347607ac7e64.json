@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "77d20f54e6ce228018f9e978ed7b740882cc5a14127bae1bef6ef72c8ced4fc0",
+  "english_sha": "fe5bf2b620d36d0a1153e161f147f167b786904c8d6de09603162345d89d0441",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 767,
+  "output_tokens": 106
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Después de una oferta condicional, su arrendador solo puede considerar ciertos antecedentes penales en su historial.",
+  "answer_owner_es": "Después de una oferta condicional, usted solo puede considerar ciertos antecedentes penales en el historial de un solicitante."
+ }
+}

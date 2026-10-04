@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "96b31d669fed58a34e4e7cc3025d6596d96b5321840cf114409f8c47d2f4e26d",
+  "english_sha": "0a56c4dadc42bf74ed8d18a79ba04936fac8f69fb0e72f3d75511521c3fc119d",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 754,
+  "output_tokens": 484
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Usted puede ser desalojado si causa o permite daños, destrucción o lesiones a la propiedad, intencionalmente o por negligencia grave.",
+  "answer_owner_es": null
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "f1e1241391793a84c80998e1efbc2a0d8fada7bb617406dcd5951ee2467486e0",
+  "previous_sha": "05b497d5390a300b319448c10102111a7a9422f875d4b1f75b08a96f23dae54d",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2123,
+  "output_tokens": 405
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord may file for eviction if you continue disorderly conduct that destroys others' peace after a written notice.",
+  "answer_owner": "You must serve a Notice to Quit at least three days before filing an eviction suit for continued disorderly conduct."
+ }
+}

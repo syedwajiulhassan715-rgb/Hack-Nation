@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "3d957b06a4b908ea441247540ed2f20e63fc984ae11f9bf766c2e7f2d66f11a0",
+  "english_sha": "f666c4c6ea2c78518b937860458c05a0a3b75dd1058c71b328ad8a2914c71669",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 832,
+  "output_tokens": 1130
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador no puede aumentar la renta 10% por un dependiente adicional, pero sí por un inquilino adicional.",
+  "answer_owner_es": "Usted no puede imponer un aumento adicional de renta del 10% cuando se agrega un dependiente al arrendamiento."
+ }
+}

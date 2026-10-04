@@ -80,7 +80,7 @@ facts: docs/CONTRACT.md (wins over this file).
   text_available, body_offset, text}` in `outputs/docs.jsonl`. The manifest `sha256` does
   not match the text files (it hashes the original capture, see NOTES.md): store it as
   `source_sha256`, compute our own `text_sha256` and use that for integrity and cache keys.
-- Documents without text (link-only, check-terms, empty D056) are recorded with
+- Documents without text (link-only, check-terms, D056 with no text after a 403) are recorded with
   `text_available=false`; never extracted; may appear in the UI as "further reading".
 - If `data/supplement/manifest.csv` exists, ingest it the same way with
   `capture=manual`.

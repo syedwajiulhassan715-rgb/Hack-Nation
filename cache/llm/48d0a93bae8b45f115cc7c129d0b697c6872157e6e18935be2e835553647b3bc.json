@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "0258315667114efcbf15fc6d05ae3b3b33fc1ce0df6eb15305b491015c2a73ef",
+  "english_sha": "7c5a3796b118623b48a716ef21e8af4ab7690ff8b862ab114da702772bf382e1",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 713,
+  "output_tokens": 74
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": null,
+  "answer_owner_es": "A partir del 1 de julio de 2024, usted solo puede cobrar un mes de renta por unidades sin amueblar y amuebladas."
+ }
+}

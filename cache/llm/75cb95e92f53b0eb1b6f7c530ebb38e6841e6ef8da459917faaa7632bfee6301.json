@@ -1,0 +1,21 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "151f7442b1f192d99d6d81bbf5d179c6d4cd0771c062138575a2c94eec54f04b",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1605,
+  "output_tokens": 118
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Under current law, it is unlawful to use or distribute a common pricing algorithm as part of a contract, trust combination, or conspiracy to restrain trade.",
+  "answer_owner": "You may not use or distribute a common pricing algorithm as part of a contract, trust combination, or conspiracy to restrain trade or commerce."
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "365faa66ded8468aa1634b16e7f3db58c19b0aceb68a65dfdd4c271089ee2449",
+  "english_sha": "5ca42b65686fab6e4d3c4d889fbc759848913e92438637612bc172f9e34258a0",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 766,
+  "output_tokens": 124
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su vivienda de alquiler no puede estar sujeta a la vez a una ordenanza local de causa justa y a la ley estatal de causa justa.",
+  "answer_owner_es": "Usted no puede tener una propiedad sujeta a la vez a una ordenanza local de causa justa y a la ley estatal de causa justa."
+ }
+}

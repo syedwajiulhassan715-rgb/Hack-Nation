@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "40347d57209f547d424f8567b8a098cec4da843c69ce071e6f3796027163f7da",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1594,
+  "output_tokens": 122
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord must give you a three-day written Notice to Quit before evicting you for disorderly or destructive conduct, or for violating written rules or lease terms.",
+  "answer_owner": "You must give a three-day written Notice to Quit before evicting a tenant for disorderly or destructive conduct, or for violating written rules or lease provisions."
+ }
+}

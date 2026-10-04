@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "254979d03d1915a2e27cdb98631458392579f327e67dbb76998f2e825f83c1d7",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1613,
+  "output_tokens": 96
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "If your landlord's successor takes over, they must notify you within forty-five days that your last month's rent advance was credited to them.",
+  "answer_owner": "If you take over a unit as successor, you must notify the tenant within forty-five days that their rent advance was credited to you."
+ }
+}

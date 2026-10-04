@@ -1,0 +1,229 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_v1",
+  "system": "You write the plain-language line for a rental housing law app. The app always shows the quoted law, its citation and \"Not legal advice.\" next to your sentence.\n\nFor each rule you get its quoted text (the only source of law you may use) and a few structured fields. Write two sentences:\n- answer_tenant: addressed to a tenant (\"you\" = the tenant).\n- answer_owner: addressed to the landlord or property owner (\"you\" = the owner).\n\nRules for every sentence:\n1. One sentence, at most 20 words, containing \"you\" or \"your\".\n2. Start with the answer itself (e.g. \"Your landlord must...\", \"You must...\", \"You can...\"). No preamble such as \"Under this law\", \"This rule\" or \"According to\".\n3. Use only what the quoted text says. Add no facts, conditions, deadlines or remedies that are not in it. If the quote is too thin to say anything useful (for example only a bill title), return null for that sentence.\n4. Numbers, dates, percentages and dollar amounts: copy them exactly as they appear in the quote or key_value. Never compute, convert, round or combine them. If unsure, leave the number out.\n5. Owner sentences state obligations or prohibitions only. Never mention exemptions, exceptions, how a rule might not apply, or any way to avoid, get around or work around a rule. Tenant sentences state rights and protections, also without exemption talk.\n6. Status: \"pending\" means a bill or proposal that is not law, so say it is proposed and would apply only if enacted; \"not_yet_effective\" means enacted but not yet in effect, so say it is not in effect yet (no date unless the quote states it); \"in_force\" is present tense.\n7. Do not name the jurisdiction or the citation; the app shows them. Do not give legal advice, promise outcomes or say anyone is compliant.\n\nReturn JSON with one entry per rule id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant",
+       "answer_owner"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0073",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Eviction for owner occupancy or sale to occupying buyer",
+    "key_value": "Notice to Quit at least two months prior to filing",
+    "quoted_span": "The landlord may file for eviction, if the owner of a building with three residential units or less seeks to personally occupy a unit, or has contracted to sell the residential unit to a buyer who wishes to personally occupy it and the contract fo r sale calls for the unit to be vacant at the time of closing. A Notice to Quit must be served on the tenant at least two months prior to filing suit for eviction."
+   },
+   {
+    "team_rule_id": "r-0074",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Eviction upon termination of employment-based tenancy",
+    "key_value": "Notice to Quit three days prior to filing",
+    "quoted_span": "A Notice to Quit must be served on the tenant three days prior to filing a suit for eviction (N.J.S.A. 2A:18-61.1(m))."
+   },
+   {
+    "team_rule_id": "r-0075",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Eviction for drug offense committed on the property",
+    "key_value": "Notice to Quit at least three days prior to filing",
+    "quoted_span": "No eviction suit may be brought more than two years after : the juvenile was found to be delinquent; conviction of the person; of after the person’s release from incarceration , whichever is later. A Notice to Quit must be served on the tenant at least three days prior to filing suit for eviction (N.J.S.A. 2A:18-61.1(n))."
+   },
+   {
+    "team_rule_id": "r-0076",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Eviction for assault or threats against the landlord, family or employees",
+    "key_value": "Notice to Quit at least three days prior to filing",
+    "quoted_span": "The landlord may file for eviction, if the tenant has been convicted of or pleaded guilty to, or if a juvenile has been found by the court to be delinquent due to an offense involving assault or terrorist threats against the landlord, a member of the landl ord’s family or an employee of the landlord."
+   },
+   {
+    "team_rule_id": "r-0077",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Eviction after civil liability for criminal activities",
+    "key_value": "Notice to Quit at least three days prior to filing",
+    "quoted_span": "The landlord may file for eviction, if the tenant is found by a civil court proceeding (not criminal) to be liable fo r involvement in theft of property located on the premises, involvement in assaults or terrorist threats against the landlord, a member of the landlord’s family or an employee of the landlord, or involved in illegal drug activities that takes place on the premises and that tenant has not in connection with his sentence for the drug offense either (1) successfully completed or (2) been admitted to and continues during probation participation towards completion of a drug rehabilitation program."
+   },
+   {
+    "team_rule_id": "r-0078",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Eviction for conviction for theft of property",
+    "key_value": "Notice to Quit at least three days prior to filing",
+    "quoted_span": "The landlord may file for eviction, if the tenant has been convicted of or pleaded guilty to, or if a juvenile has been found to be delinquent by the Court due to an offense involving theft of property from the landlord or from tenants residing in the same building or complex."
+   },
+   {
+    "team_rule_id": "r-0079",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Eviction for human trafficking",
+    "key_value": null,
+    "quoted_span": "The landlord may file for eviction, if the tenant in a civil action is found to have committed a violation of the human trafficking provisions set forth in section 1 of P.L. 2005, c.77 (2C:13-8) within or upon the leased premises , building, or complex of the building and land appurtenant thereto, or the mobile home park, in which those premises are located, or, being the tenant or lessee of such leased premises, knowingly harbors or harbored a person engaged in human trafficking, or permits or permitted such a person to occupy those premises for residential purposes, whether continuously or intermittently."
+   },
+   {
+    "team_rule_id": "r-0080",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Evictions for owner-occupied two- and three-family dwellings",
+    "key_value": "three (3) month notice for at will or year-to-year tenancy; one (1) month notice for month-to-month",
+    "quoted_span": "Tenants of landlord-occupied two- and three-family dwellings can be removed only when a court issues an order for eviction."
+   },
+   {
+    "team_rule_id": "r-0081",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Three-day Notice to Quit for disorderly, destructive or rule-violating conduct",
+    "key_value": "three-day written Notice to Quit",
+    "quoted_span": "A three-day written Notice to Quit is required for any of the causes described as disorderly, destructive or violative of written rules or lease provisions (N.J.S.A. 2A:18-61.2(a))."
+   },
+   {
+    "team_rule_id": "r-0082",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Lease-expiration eviction in owner-occupied two- or three-family dwellings",
+    "key_value": "three-month notice (at will or year-to-year); one-month notice (month-to-month)",
+    "quoted_span": "In addition to the causes listed above, a tenant residing in an owner- occupied two- or three-family dwelling may be evicted if the landlord can show that the tenant is staying after the expiration of the lease and the landlord has given the tenant a written notice for delivery of possession of the property. Under this cause of not renewing the lease, a three-month notice to quit must be given if an at will tenancy or year -to year tenancy exists. A one-month notice to quit is required for a month-to-month tenancy."
+   },
+   {
+    "team_rule_id": "r-0083",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Rooming and boarding house evictions",
+    "key_value": "at least three (3) working days' notice to the County Welfare Board",
+    "quoted_span": "require owners of rooming and boarding houses to follow the good causes and notice requirements of the Eviction Law when evicting residents, except if otherwise ordered by the Bureau (N.J.A.C. 5:27-3.3(c))."
+   },
+   {
+    "team_rule_id": "r-0084",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Rooming and boarding house evictions",
+    "key_value": "at least three (3) working days’ notice to the County Welfare Board",
+    "quoted_span": "There is a further requirement that the owner give at least three (3) working days’ notice to the County Welfare Board before starting the eviction action for any resident (N.J.A.C. 5:26-3.4(c))."
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 3614,
+  "output_tokens": 6237
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0073",
+    "answer_tenant": "Your landlord must serve you a Notice to Quit at least two months before filing for owner-occupancy eviction.",
+    "answer_owner": "You must serve a Notice to Quit at least two months before filing an owner-occupancy eviction suit."
+   },
+   {
+    "team_rule_id": "r-0074",
+    "answer_tenant": "Your landlord must serve you a Notice to Quit three days prior to filing a suit for eviction.",
+    "answer_owner": "You must serve the tenant a Notice to Quit three days prior to filing a suit for eviction."
+   },
+   {
+    "team_rule_id": "r-0075",
+    "answer_tenant": "Your landlord must serve a Notice to Quit at least three days before filing a drug-offense eviction suit.",
+    "answer_owner": "You must serve a Notice to Quit at least three days before filing a drug-offense eviction suit."
+   },
+   {
+    "team_rule_id": "r-0076",
+    "answer_tenant": "Your landlord must serve a Notice to Quit at least three days before filing eviction over assault or threats.",
+    "answer_owner": "You must serve a Notice to Quit at least three days before filing eviction over assault or threats."
+   },
+   {
+    "team_rule_id": "r-0077",
+    "answer_tenant": "Your landlord must serve a Notice to Quit at least three days before filing eviction after a civil liability finding.",
+    "answer_owner": "You must serve a Notice to Quit at least three days before filing eviction after a civil liability finding."
+   },
+   {
+    "team_rule_id": "r-0078",
+    "answer_tenant": "Your landlord must serve a Notice to Quit at least three days before filing eviction over theft of property.",
+    "answer_owner": "You must serve a Notice to Quit at least three days before filing eviction over theft of property."
+   },
+   {
+    "team_rule_id": "r-0079",
+    "answer_tenant": null,
+    "answer_owner": null
+   },
+   {
+    "team_rule_id": "r-0080",
+    "answer_tenant": "You can be removed from a landlord-occupied two- or three-family dwelling only when a court issues an eviction order.",
+    "answer_owner": "You must have a court eviction order to remove a tenant from your landlord-occupied two- or three-family dwelling."
+   },
+   {
+    "team_rule_id": "r-0081",
+    "answer_tenant": "Your landlord must give you a three-day written Notice to Quit for disorderly, destructive or rule-violating conduct.",
+    "answer_owner": "You must serve a three-day written Notice to Quit for disorderly, destructive or rule-violating conduct."
+   },
+   {
+    "team_rule_id": "r-0082",
+    "answer_tenant": "Your landlord must give a three-month notice to quit for at-will or year-to-year tenancies, one-month for month-to-month.",
+    "answer_owner": "You must give a three-month notice to quit for at-will or year-to-year tenancies, one-month for month-to-month."
+   },
+   {
+    "team_rule_id": "r-0083",
+    "answer_tenant": "Your rooming or boarding house owner must follow the Eviction Law's good cause and notice requirements when evicting you.",
+    "answer_owner": "You must follow the Eviction Law's good cause and notice requirements when evicting rooming or boarding house residents."
+   },
+   {
+    "team_rule_id": "r-0084",
+    "answer_tenant": "Your landlord must give the County Welfare Board at least three (3) working days' notice before starting your eviction.",
+    "answer_owner": "You must give the County Welfare Board at least three (3) working days' notice before starting an eviction action."
+   }
+  ]
+ }
+}

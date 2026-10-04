@@ -4,7 +4,7 @@
 
 - Both supplied zips are byte-identical; the pack is unpacked once to `data/starter/`
   (65 files). `data/STARTER_CHECKSUMS.sha256` + `tests/test_starter_pack.py` keep it read-only.
-- Manifest: 87 rows = 54 with text + 23 link-only + 9 check-terms + D056 (empty, 403).
+- Manifest: 87 rows = 54 with text + 23 link-only + 9 check-terms + D056 (no text: capture failed with HTTP 403).
 - Every text file starts `SOURCE:` / `RETRIEVED:` / blank line.
 - Addresses: CA 250, NJ 140, MA 110; missing year built 98/106/8; missing units 43/139/60.
   Only A0107 and A0432 (both Los Angeles) are built in 1978; none in 1979.
@@ -156,8 +156,8 @@
   coverage_conditions and quoted_span; never exemptions (owner text must not describe them)
   or effective dates (dates may only come from the quote). Failed rules get no call.
 - **Guard-driven repair** (phase 8). Up to 2 rewrite calls for fixable guard failures
-  (length, form); evasion wording is never repaired, only dropped. Kept: 173 tenant, 161
-  owner, 170/158 Spanish of 184 (run 2026-10-04, ~$4.80).
+  (length, form); evasion wording is never repaired, only dropped. Kept counts are generated:
+  see the "Plain-language answers kept" row in the METHOD.md metrics block (`python -m navigator eval`).
 - **Guards check form and numbers, not meaning.** Known false positives: Spanish "evitar"
   (prevent) and "exención" (rent waiver) are dropped; "one" counts as a number. A spot check
   found r-0034's tenant answer paraphrasing the quote loosely; summaries are UI text shown

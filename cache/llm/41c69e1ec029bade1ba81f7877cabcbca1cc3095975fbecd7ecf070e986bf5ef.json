@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "8a9c1d637c2ff9c629a16cf811de5f6b0eb778d8e7ae4bb491aa4633c0e271a6",
+  "previous_sha": "091ae453874cafd85c73f1be73293b1e115309733c1f430747c24431b5bea4d9",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2101,
+  "output_tokens": 76
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord can only petition for rent increases for completed capital improvements, not planned ones.",
+  "answer_owner": "You may only petition for rent increases for completed capital improvements, not for planned ones."
+ }
+}

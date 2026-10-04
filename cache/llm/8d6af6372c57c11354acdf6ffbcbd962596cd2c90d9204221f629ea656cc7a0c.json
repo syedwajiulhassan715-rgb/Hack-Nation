@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "b891ecb16b7495f28db3d46b390d3482b0e2c20873e5d7217cb302e2b7281da9",
+  "english_sha": "a795b14fa1e5debd9ff0b9020f27d6034a800f5059b6f93ffa76e4f5393c4031",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 836,
+  "output_tokens": 82
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": null,
+  "answer_owner_es": "Usted debe darle al inquilino un recibo al recibir un depósito de seguridad, indicando el monto, quién lo recibe, la fecha y la propiedad."
+ }
+}

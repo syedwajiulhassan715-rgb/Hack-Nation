@@ -1,0 +1,181 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_es_v1",
+  "system": "You translate short plain-language lines from a rental housing law app into neutral Latin American Spanish, using \"usted\". The app shows the quoted law and \"Not legal advice.\" next to each line.\n\nTranslate each sentence faithfully as one sentence. Keep every number, date, percentage and dollar amount exactly as written (digits stay digits; do not spell numbers out). Add nothing and leave nothing out. Do not add exemptions or any way to avoid a rule. Keep it short: at most 26 words. Return JSON with one entry per id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant_es",
+       "answer_owner_es"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0120",
+    "answer_tenant": "Your landlord can petition for a rent increase only for completed capital improvements, not planned ones.",
+    "answer_owner": "You cannot petition for rent increases based on planned capital improvements, only completed ones."
+   },
+   {
+    "team_rule_id": "r-0121",
+    "answer_tenant": "Your annual general adjustment (AGA) approved by the Board can be no more than 5%.",
+    "answer_owner": "Your annual general adjustment (AGA) approved by the Board can be no more than 5%."
+   },
+   {
+    "team_rule_id": "r-0122",
+    "answer_tenant": "Your landlord cannot raise the 2025 permanent rent ceiling by 1.0% before January 1, 2026.",
+    "answer_owner": "Your 2025 permanent rent ceiling increase of 1.0% cannot take effect before January 1, 2026."
+   },
+   {
+    "team_rule_id": "r-0124",
+    "answer_tenant": "Your housing provider cannot ask about or use criminal history in applications, tenant selection, or decisions.",
+    "answer_owner": "You must not ask about or use criminal history or background checks in advertising, applications, tenant selection, or decisions."
+   },
+   {
+    "team_rule_id": "r-0125",
+    "answer_tenant": "Your landlord must give you written notice and a chance to respond when acting on criminal history.",
+    "answer_owner": "You must give an applicant or tenant written notice and a chance to respond when acting on criminal history."
+   },
+   {
+    "team_rule_id": "r-0126",
+    "answer_tenant": "Your landlord must pay you yearly security deposit interest, prorated if you move out early, in covered units.",
+    "answer_owner": "You must pay tenants yearly security deposit interest, prorated if they move out early, in covered units."
+   },
+   {
+    "team_rule_id": "r-0127",
+    "answer_tenant": "Your landlord cannot end your tenancy without just cause and must provide relocation assistance for no-fault evictions.",
+    "answer_owner": "You must not terminate a tenancy without just cause and must provide relocation assistance for no-fault evictions."
+   },
+   {
+    "team_rule_id": "r-0128",
+    "answer_tenant": "Your landlord cannot evict you for unpaid rent unless you owe more than the Fair Market Rent for your unit.",
+    "answer_owner": "You may not evict a tenant for unpaid rent unless the amount owed is higher than the Fair Market Rent."
+   },
+   {
+    "team_rule_id": "r-0129",
+    "answer_tenant": "Your landlord must file any eviction notice issued to you with LAHD within three (3) business days of serving you.",
+    "answer_owner": "You must file every eviction notice with LAHD within three (3) business days of serving the tenant."
+   },
+   {
+    "team_rule_id": "r-0131",
+    "answer_tenant": "Your landlord must give you a 30-day and 60-day written notice, and some evictions require 120-day notice.",
+    "answer_owner": "You must give the tenant a 30-day and 60-day written notice, and some evictions require 120-day notice."
+   },
+   {
+    "team_rule_id": "r-0132",
+    "answer_tenant": "Your landlord can serve a termination notice only after filing the Declaration with LAHD.",
+    "answer_owner": "You must file the Declaration with LAHD before serving notice, then file a copy no later than 3 days after."
+   },
+   {
+    "team_rule_id": "r-0133",
+    "answer_tenant": "Your landlord must give you relocation assistance of one month’s rent, as a monetary payment or credit.",
+    "answer_owner": "You must pay one month’s rent in effect when you served the written notice, as a payment or credit."
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1873,
+  "output_tokens": 3596
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0120",
+    "answer_tenant_es": "Su arrendador solo puede solicitar un aumento de renta por mejoras de capital completadas, no por las planificadas.",
+    "answer_owner_es": "Usted no puede solicitar aumentos de renta basados en mejoras de capital planificadas, solo en las completadas."
+   },
+   {
+    "team_rule_id": "r-0121",
+    "answer_tenant_es": "Su ajuste general anual (AGA) aprobado por la Junta no puede ser mayor que 5%.",
+    "answer_owner_es": "Su ajuste general anual (AGA) aprobado por la Junta no puede ser mayor que 5%."
+   },
+   {
+    "team_rule_id": "r-0122",
+    "answer_tenant_es": "Su arrendador no puede aumentar el límite permanente de renta de 2025 en 1.0% antes del 1 de enero de 2026.",
+    "answer_owner_es": "Su aumento de 1.0% al límite permanente de renta de 2025 no puede entrar en vigor antes del 1 de enero de 2026."
+   },
+   {
+    "team_rule_id": "r-0124",
+    "answer_tenant_es": "Su proveedor de vivienda no puede preguntar sobre antecedentes penales ni usarlos en solicitudes, selección de inquilinos o decisiones.",
+    "answer_owner_es": "Usted no debe preguntar sobre ni usar antecedentes penales o verificaciones de antecedentes en publicidad, solicitudes, selección de inquilinos o decisiones."
+   },
+   {
+    "team_rule_id": "r-0125",
+    "answer_tenant_es": "Su arrendador debe darle aviso por escrito y la oportunidad de responder cuando actúe con base en antecedentes penales.",
+    "answer_owner_es": "Usted debe dar a un solicitante o inquilino aviso por escrito y la oportunidad de responder cuando actúe con base en antecedentes penales."
+   },
+   {
+    "team_rule_id": "r-0126",
+    "answer_tenant_es": "Su arrendador debe pagarle intereses anuales sobre el depósito de garantía, prorrateados si usted se muda antes, en unidades cubiertas.",
+    "answer_owner_es": "Usted debe pagar a los inquilinos intereses anuales sobre el depósito de garantía, prorrateados si se mudan antes, en unidades cubiertas."
+   },
+   {
+    "team_rule_id": "r-0127",
+    "answer_tenant_es": "Su arrendador no puede terminar su inquilinato sin causa justificada y debe brindar asistencia de reubicación en desalojos sin culpa.",
+    "answer_owner_es": "Usted no debe terminar un inquilinato sin causa justificada y debe brindar asistencia de reubicación en desalojos sin culpa."
+   },
+   {
+    "team_rule_id": "r-0128",
+    "answer_tenant_es": "Su arrendador no puede desalojarlo por renta impaga a menos que usted deba más que la Renta de Mercado Justa de su unidad.",
+    "answer_owner_es": "Usted no puede desalojar a un inquilino por renta impaga a menos que el monto adeudado sea mayor que la Renta de Mercado Justa."
+   },
+   {
+    "team_rule_id": "r-0129",
+    "answer_tenant_es": "Su arrendador debe presentar ante LAHD todo aviso de desalojo que le entregue dentro de tres (3) días hábiles después de notificárselo.",
+    "answer_owner_es": "Usted debe presentar cada aviso de desalojo ante LAHD dentro de tres (3) días hábiles después de notificar al inquilino."
+   },
+   {
+    "team_rule_id": "r-0131",
+    "answer_tenant_es": "Su arrendador debe darle un aviso por escrito de 30 días y de 60 días, y algunos desalojos requieren aviso de 120 días.",
+    "answer_owner_es": "Usted debe dar al inquilino un aviso por escrito de 30 días y de 60 días, y algunos desalojos requieren aviso de 120 días."
+   },
+   {
+    "team_rule_id": "r-0132",
+    "answer_tenant_es": "Su arrendador solo puede notificarle un aviso de terminación después de presentar la Declaración ante LAHD.",
+    "answer_owner_es": "Usted debe presentar la Declaración ante LAHD antes de notificar el aviso y luego presentar una copia a más tardar 3 días después."
+   },
+   {
+    "team_rule_id": "r-0133",
+    "answer_tenant_es": "Su arrendador debe darle asistencia de reubicación equivalente a la renta de un mes, como pago monetario o crédito.",
+    "answer_owner_es": "Usted debe pagar la renta de un mes vigente cuando notificó el aviso por escrito, como pago o crédito."
+   }
+  ]
+ }
+}

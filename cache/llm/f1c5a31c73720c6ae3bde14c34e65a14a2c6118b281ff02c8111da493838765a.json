@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "1dde202a2b32f6811dbe788c9d71f555cb7fed9d818d78bfcc9099b711adb640",
+  "english_sha": "9fb6784ddda14dd8c8feab6c7e7b26e49a85b8d5d072a50540c03c9510799abf",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 755,
+  "output_tokens": 1094
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador está sujeto al control de alquileres en la mayoría de unidades de propiedades multifamiliares construidas antes de 1980.",
+  "answer_owner_es": "Usted debe cumplir el control de alquileres en la mayoría de sus unidades de propiedades multifamiliares construidas antes de 1980."
+ }
+}

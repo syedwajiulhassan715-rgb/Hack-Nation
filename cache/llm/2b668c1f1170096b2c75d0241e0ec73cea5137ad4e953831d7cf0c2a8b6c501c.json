@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "4aac2537d2050ad7a334999376bae2ff33ad5caf6101443e2a1f5a62df6755ad",
+  "english_sha": "d505d300ff8d4e8251927d3009f8af3f616338a4ea81798c976cb66b5757bc79",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 778,
+  "output_tokens": 532
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador no puede terminar su arrendamiento sin causa justificada, y debe dar asistencia de reubicación en desalojos sin culpa.",
+  "answer_owner_es": "Usted no puede terminar un arrendamiento sin causa justificada, y debe dar asistencia de reubicación en desalojos sin culpa."
+ }
+}

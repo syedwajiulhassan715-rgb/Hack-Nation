@@ -1,0 +1,229 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_v1",
+  "system": "You write the plain-language line for a rental housing law app. The app always shows the quoted law, its citation and \"Not legal advice.\" next to your sentence.\n\nFor each rule you get its quoted text (the only source of law you may use) and a few structured fields. Write two sentences:\n- answer_tenant: addressed to a tenant (\"you\" = the tenant).\n- answer_owner: addressed to the landlord or property owner (\"you\" = the owner).\n\nRules for every sentence:\n1. One sentence, at most 20 words, containing \"you\" or \"your\".\n2. Start with the answer itself (e.g. \"Your landlord must...\", \"You must...\", \"You can...\"). No preamble such as \"Under this law\", \"This rule\" or \"According to\".\n3. Use only what the quoted text says. Add no facts, conditions, deadlines or remedies that are not in it. If the quote is too thin to say anything useful (for example only a bill title), return null for that sentence.\n4. Numbers, dates, percentages and dollar amounts: copy them exactly as they appear in the quote or key_value. Never compute, convert, round or combine them. If unsure, leave the number out.\n5. Owner sentences state obligations or prohibitions only. Never mention exemptions, exceptions, how a rule might not apply, or any way to avoid, get around or work around a rule. Tenant sentences state rights and protections, also without exemption talk.\n6. Status: \"pending\" means a bill or proposal that is not law, so say it is proposed and would apply only if enacted; \"not_yet_effective\" means enacted but not yet in effect, so say it is not in effect yet (no date unless the quote states it); \"in_force\" is present tense.\n7. Do not name the jurisdiction or the citation; the app shows them. Do not give legal advice, promise outcomes or say anyone is compliant.\n\nReturn JSON with one entry per rule id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant",
+       "answer_owner"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0085",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Owner-occupancy eviction: six-month occupancy requirement",
+    "key_value": "at least six (6) months owner occupancy",
+    "quoted_span": "If instead the landlord permits personal occupancy of the unit by another tenant or registration of conversion of the property to a condominium or cooperative, the landlord is liable to the former tenant for three (3) times the damages suffered plus attorney fees and costs"
+   },
+   {
+    "team_rule_id": "r-0086",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Removal from residential use: five-year bar",
+    "key_value": "five (5) years",
+    "quoted_span": "When a tenant vacates a dwelling unit after having been given notice that the landlord seeks to permanently board up or demolish the building or to permanently retire it from residential use, the landlord must not use this property for residential use for a period of five (5) years."
+   },
+   {
+    "team_rule_id": "r-0087",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "90-day notice to quit after foreclosure purchase for owner occupancy",
+    "key_value": "90-day notice to quit",
+    "quoted_span": "Before a tenant can be evicted due to foreclosure, the landlord must provide the tenant with a 90 -day notice to qui t when the foreclosed property has been purchased by a buyer who wants to personally occupy it as his or her primary residence."
+   },
+   {
+    "team_rule_id": "r-0088",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Senior Citizens and Disabled Protected Tenancy Act",
+    "key_value": "40 years protection; income not more than three (3) times county average per person income or $50,000.00, whichever is greater",
+    "quoted_span": "Tenants may be protected from eviction for 40 years if their family income is not more than three (3) times the average per person income in their county or $50,000.00, whichever is greater (N.J.S.A. 2A:18-61.28)."
+   },
+   {
+    "team_rule_id": "r-0089",
+    "category": "rent_increase_limits",
+    "level": "state",
+    "status": "in_force",
+    "title": "Newly Constructed Multiple Dwellings Law – exemption from local rent control",
+    "key_value": "30 years following completion of construction",
+    "quoted_span": "Under the Newly Constructed Multiple Dwellings Law ( N.J.S.A. 2A:42 -84.5), newly constructed multiple dwellings shall be exempt from any local rent control ordinances for a period of 30 years following completion of construction of the building."
+   },
+   {
+    "team_rule_id": "r-0090",
+    "category": "rent_increase_limits",
+    "level": "state",
+    "status": "in_force",
+    "title": "Anti-Eviction Act – unconscionable rent increase limit",
+    "key_value": null,
+    "quoted_span": "The increase in rent must not be unconscionable; it must not be so unreasonable as to shock the conscience of a fair and honest person and must comply with any municipal ordinances governing rent increases."
+   },
+   {
+    "team_rule_id": "r-0091",
+    "category": "rent_increase_limits",
+    "level": "state",
+    "status": "in_force",
+    "title": "No rent increases to cover condominium/cooperative conversion costs",
+    "key_value": null,
+    "quoted_span": "If a building is converted to a condominium or cooperative form of ownership, or to fee simple ownership of units, rents may not be increased to cover cos ts resulting solely from the conversion (N.J.S.A. 2A:18-61.31)."
+   },
+   {
+    "team_rule_id": "r-0092",
+    "category": "rent_increase_limits",
+    "level": "state",
+    "status": "in_force",
+    "title": "NJHMFA-controlled rents exempt from municipal rent control",
+    "key_value": null,
+    "quoted_span": "Likewise, rents fixed and controlled by the New Jersey Housing and Mortgage Finance Agency (NJHMFA) in projects it finances are not subject to municipal rent control ordinances."
+   },
+   {
+    "team_rule_id": "r-0093",
+    "category": "screening_restrictions",
+    "level": "state",
+    "status": "in_force",
+    "title": "Fair Chance in Housing Act - no criminal record inquiry before conditional offer",
+    "key_value": null,
+    "quoted_span": "A housing provider shall not make any oral or written inquiry regarding an applicant’s criminal record prior to making a conditional offer."
+   },
+   {
+    "team_rule_id": "r-0094",
+    "category": "screening_restrictions",
+    "level": "state",
+    "status": "in_force",
+    "title": "Fair Chance in Housing Act - criminal history disclosure before application fee",
+    "key_value": null,
+    "quoted_span": "Prior to accepting any application fee, a housing provider shall disclose in writing to the applicant:"
+   },
+   {
+    "team_rule_id": "r-0095",
+    "category": "screening_restrictions",
+    "level": "state",
+    "status": "in_force",
+    "title": "Fair Chance in Housing Act - prohibited criminal record types",
+    "key_value": null,
+    "quoted_span": "A housing provider shall not, either before or after the issuance of a conditional offer, evaluate an applicant based on any of the following types of criminal records:"
+   },
+   {
+    "team_rule_id": "r-0096",
+    "category": "screening_restrictions",
+    "level": "state",
+    "status": "in_force",
+    "title": "Fair Chance in Housing Act - lookback periods after conditional offer",
+    "key_value": "First degree: within six years; second or third degree: within four years; fourth degree: within one year immediately preceding the conditional offer",
+    "quoted_span": "After the issuance of a conditional offer to an applicant, a housing provider may only consider a criminal record in the applicant’s history that:"
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 3103,
+  "output_tokens": 7349
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0085",
+    "answer_tenant": "Your landlord is liable for three (3) times your damages plus attorney fees and costs if another tenant occupies.",
+    "answer_owner": "You owe a former tenant three (3) times damages plus attorney fees and costs if you let another tenant occupy."
+   },
+   {
+    "team_rule_id": "r-0086",
+    "answer_tenant": "Your landlord must not use the property residentially for five (5) years after you vacate following demolition or retirement notice.",
+    "answer_owner": "You must not use the property residentially for five (5) years after a tenant vacates following demolition or retirement notice."
+   },
+   {
+    "team_rule_id": "r-0087",
+    "answer_tenant": "Your landlord must give you a 90-day notice to quit before foreclosure eviction if the buyer wants to live there.",
+    "answer_owner": "You must give the tenant a 90-day notice to quit before foreclosure eviction if the buyer wants to live there."
+   },
+   {
+    "team_rule_id": "r-0088",
+    "answer_tenant": "You may be protected from eviction for 40 years if your family income is not above the stated limit.",
+    "answer_owner": "You may be unable to evict a tenant for 40 years if family income is within the stated limit."
+   },
+   {
+    "team_rule_id": "r-0089",
+    "answer_tenant": null,
+    "answer_owner": null
+   },
+   {
+    "team_rule_id": "r-0090",
+    "answer_tenant": "Your rent increase must not be unconscionable and must comply with any municipal ordinances governing rent increases.",
+    "answer_owner": "Your rent increase must not be unconscionable and must comply with any municipal ordinances governing rent increases."
+   },
+   {
+    "team_rule_id": "r-0091",
+    "answer_tenant": "Your landlord may not raise your rent to cover costs resulting solely from a condominium or cooperative conversion.",
+    "answer_owner": "You may not raise rents to cover costs resulting solely from a condominium or cooperative conversion."
+   },
+   {
+    "team_rule_id": "r-0092",
+    "answer_tenant": null,
+    "answer_owner": null
+   },
+   {
+    "team_rule_id": "r-0093",
+    "answer_tenant": "Your housing provider must not ask about your criminal record before making you a conditional offer.",
+    "answer_owner": "You must not make any oral or written inquiry about an applicant's criminal record before making a conditional offer."
+   },
+   {
+    "team_rule_id": "r-0094",
+    "answer_tenant": "Your housing provider must give you a written disclosure before accepting any application fee from you.",
+    "answer_owner": "You must give the applicant a written disclosure before accepting any application fee."
+   },
+   {
+    "team_rule_id": "r-0095",
+    "answer_tenant": "Your housing provider must not evaluate you based on the listed types of criminal records, before or after a conditional offer.",
+    "answer_owner": "You must not evaluate an applicant based on the listed types of criminal records, before or after a conditional offer."
+   },
+   {
+    "team_rule_id": "r-0096",
+    "answer_tenant": "After a conditional offer, your housing provider may consider only criminal records that meet the listed conditions.",
+    "answer_owner": "You must consider only criminal records that meet the listed conditions after a conditional offer."
+   }
+  ]
+ }
+}

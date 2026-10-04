@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "5b05c4fb79f5969f7cbb1ee82365f31cc569c466c5bd72f88a59f1293434e422",
+  "english_sha": "93a0fa743117a540115ea956c25704442f66e92b21d1d09d8be43dbcccedefa7",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 859,
+  "output_tokens": 118
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Los intereses de su depósito de garantía le pertenecen a usted y deben pagarse en efectivo o acreditarse al alquiler.",
+  "answer_owner_es": "Usted debe pagar al inquilino los intereses generados por el depósito de garantía en efectivo o acreditarlos al alquiler."
+ }
+}

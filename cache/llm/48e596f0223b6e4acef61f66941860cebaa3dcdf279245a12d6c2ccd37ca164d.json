@@ -1,0 +1,181 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_es_v1",
+  "system": "You translate short plain-language lines from a rental housing law app into neutral Latin American Spanish, using \"usted\". The app shows the quoted law and \"Not legal advice.\" next to each line.\n\nTranslate each sentence faithfully as one sentence. Keep every number, date, percentage and dollar amount exactly as written (digits stay digits; do not spell numbers out). Add nothing and leave nothing out. Do not add exemptions or any way to avoid a rule. Keep it short: at most 26 words. Return JSON with one entry per id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant_es",
+       "answer_owner_es"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0081",
+    "answer_tenant": "Your landlord must give you a three-day written Notice to Quit for disorderly, destructive or rule-violating conduct.",
+    "answer_owner": "You must serve a three-day written Notice to Quit for disorderly, destructive or rule-violating conduct."
+   },
+   {
+    "team_rule_id": "r-0082",
+    "answer_tenant": "Your landlord must give a three-month notice to quit for at-will or year-to-year tenancies, one-month for month-to-month.",
+    "answer_owner": "You must give a three-month notice to quit for at-will or year-to-year tenancies, one-month for month-to-month."
+   },
+   {
+    "team_rule_id": "r-0083",
+    "answer_tenant": "Your rooming or boarding house owner must follow the Eviction Law's good cause and notice requirements when evicting you.",
+    "answer_owner": "You must follow the Eviction Law's good cause and notice requirements when evicting rooming or boarding house residents."
+   },
+   {
+    "team_rule_id": "r-0084",
+    "answer_tenant": "Your landlord must give the County Welfare Board at least three (3) working days' notice before starting your eviction.",
+    "answer_owner": "You must give the County Welfare Board at least three (3) working days' notice before starting an eviction action."
+   },
+   {
+    "team_rule_id": "r-0085",
+    "answer_tenant": "Your landlord is liable for three (3) times your damages plus attorney fees and costs if another tenant occupies.",
+    "answer_owner": "You owe a former tenant three (3) times damages plus attorney fees and costs if you let another tenant occupy."
+   },
+   {
+    "team_rule_id": "r-0086",
+    "answer_tenant": "Your landlord must not use the property residentially for five (5) years after you vacate following demolition or retirement notice.",
+    "answer_owner": "You must not use the property residentially for five (5) years after a tenant vacates following demolition or retirement notice."
+   },
+   {
+    "team_rule_id": "r-0087",
+    "answer_tenant": "Your landlord must give you a 90-day notice to quit before foreclosure eviction if the buyer wants to live there.",
+    "answer_owner": "You must give the tenant a 90-day notice to quit before foreclosure eviction if the buyer wants to live there."
+   },
+   {
+    "team_rule_id": "r-0088",
+    "answer_tenant": "You may be protected from eviction for 40 years if your family income is not above the stated limit.",
+    "answer_owner": "You may be unable to evict a tenant for 40 years if family income is within the stated limit."
+   },
+   {
+    "team_rule_id": "r-0090",
+    "answer_tenant": "Your rent increase must not be unconscionable and must comply with any municipal ordinances governing rent increases.",
+    "answer_owner": "Your rent increase must not be unconscionable and must comply with any municipal ordinances governing rent increases."
+   },
+   {
+    "team_rule_id": "r-0091",
+    "answer_tenant": "Your landlord may not raise your rent to cover costs resulting solely from a condominium or cooperative conversion.",
+    "answer_owner": "You may not raise rents to cover costs resulting solely from a condominium or cooperative conversion."
+   },
+   {
+    "team_rule_id": "r-0093",
+    "answer_tenant": "Your housing provider must not ask about your criminal record before making you a conditional offer.",
+    "answer_owner": "You must not make any oral or written inquiry about an applicant's criminal record before making a conditional offer."
+   },
+   {
+    "team_rule_id": "r-0094",
+    "answer_tenant": "Your housing provider must give you a written disclosure before accepting any application fee from you.",
+    "answer_owner": "You must give the applicant a written disclosure before accepting any application fee."
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1893,
+  "output_tokens": 5097
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0081",
+    "answer_tenant_es": "Su arrendador debe entregarle un aviso escrito de desalojo (Notice to Quit) de tres días por conducta desordenada, destructiva o que infrinja las reglas.",
+    "answer_owner_es": "Usted debe entregar un aviso escrito de desalojo (Notice to Quit) de tres días por conducta desordenada, destructiva o que infrinja las reglas."
+   },
+   {
+    "team_rule_id": "r-0082",
+    "answer_tenant_es": "Su arrendador debe dar aviso de desalojo: tres meses si es a voluntad o de año a año, un mes si es de mes a mes.",
+    "answer_owner_es": "Usted debe dar aviso de desalojo: tres meses si es a voluntad o de año a año, un mes si es de mes a mes."
+   },
+   {
+    "team_rule_id": "r-0083",
+    "answer_tenant_es": "El dueño de su casa de hospedaje o pensión debe cumplir los requisitos de causa justificada y aviso de la Ley de Desalojo al desalojarlo.",
+    "answer_owner_es": "Usted debe cumplir los requisitos de causa justificada y aviso de la Ley de Desalojo al desalojar a residentes de casas de hospedaje o pensiones."
+   },
+   {
+    "team_rule_id": "r-0084",
+    "answer_tenant_es": "Su arrendador debe notificar a la Junta de Bienestar del Condado con al menos tres (3) días hábiles antes de iniciar su desalojo.",
+    "answer_owner_es": "Usted debe notificar a la Junta de Bienestar del Condado con al menos tres (3) días hábiles antes de iniciar una acción de desalojo."
+   },
+   {
+    "team_rule_id": "r-0085",
+    "answer_tenant_es": "Su arrendador es responsable de tres (3) veces sus daños más honorarios de abogado y costos si otro inquilino ocupa la propiedad.",
+    "answer_owner_es": "Usted debe a un inquilino anterior tres (3) veces los daños más honorarios de abogado y costos si permite que otro inquilino ocupe la propiedad."
+   },
+   {
+    "team_rule_id": "r-0086",
+    "answer_tenant_es": "Su arrendador no debe usar la propiedad como vivienda durante cinco (5) años después de que usted desocupe tras un aviso de demolición o retiro.",
+    "answer_owner_es": "Usted no debe usar la propiedad como vivienda durante cinco (5) años después de que un inquilino desocupe tras un aviso de demolición o retiro."
+   },
+   {
+    "team_rule_id": "r-0087",
+    "answer_tenant_es": "Su arrendador debe darle un aviso de desalojo de 90 días antes del desalojo por ejecución hipotecaria si el comprador quiere vivir allí.",
+    "answer_owner_es": "Usted debe dar al inquilino un aviso de desalojo de 90 días antes del desalojo por ejecución hipotecaria si el comprador quiere vivir allí."
+   },
+   {
+    "team_rule_id": "r-0088",
+    "answer_tenant_es": "Usted puede estar protegido contra el desalojo durante 40 años si el ingreso de su familia no supera el límite indicado.",
+    "answer_owner_es": "Es posible que usted no pueda desalojar a un inquilino durante 40 años si el ingreso familiar está dentro del límite indicado."
+   },
+   {
+    "team_rule_id": "r-0090",
+    "answer_tenant_es": "Su aumento de renta no debe ser abusivo y debe cumplir las ordenanzas municipales que regulen los aumentos de renta.",
+    "answer_owner_es": "Su aumento de renta no debe ser abusivo y debe cumplir las ordenanzas municipales que regulen los aumentos de renta."
+   },
+   {
+    "team_rule_id": "r-0091",
+    "answer_tenant_es": "Su arrendador no puede aumentar su renta para cubrir costos que resulten únicamente de la conversión a condominio o cooperativa.",
+    "answer_owner_es": "Usted no puede aumentar las rentas para cubrir costos que resulten únicamente de la conversión a condominio o cooperativa."
+   },
+   {
+    "team_rule_id": "r-0093",
+    "answer_tenant_es": "Su proveedor de vivienda no debe preguntarle sobre sus antecedentes penales antes de hacerle una oferta condicional.",
+    "answer_owner_es": "Usted no debe hacer ninguna consulta oral o escrita sobre los antecedentes penales de un solicitante antes de hacer una oferta condicional."
+   },
+   {
+    "team_rule_id": "r-0094",
+    "answer_tenant_es": "Su proveedor de vivienda debe entregarle una divulgación por escrito antes de aceptar de usted cualquier cargo por solicitud.",
+    "answer_owner_es": "Usted debe entregar al solicitante una divulgación por escrito antes de aceptar cualquier cargo por solicitud."
+   }
+  ]
+ }
+}

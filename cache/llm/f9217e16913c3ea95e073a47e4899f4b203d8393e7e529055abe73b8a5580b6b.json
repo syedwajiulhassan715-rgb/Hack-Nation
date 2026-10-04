@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "3120ec7e7c8dbbea4b3a77a3ef2dce381469957f52176b2e434d254e80e1c57c",
+  "english_sha": "5581f9f84359d58c21f3c2b34c10e11c35009afe82aab2b99b71b1d6dd8687f8",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 753,
+  "output_tokens": 112
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Antes de aceptar cualquier tarifa de solicitud, su arrendador debe darle cierta información por escrito.",
+  "answer_owner_es": "Usted debe dar al solicitante ciertas divulgaciones por escrito antes de aceptar cualquier tarifa de solicitud."
+ }
+}

@@ -136,7 +136,7 @@ or failed). Matcher output goes to `config/test_rule_map.yaml`; a human reviews 
   UI highlight works on the stored file.
 - **Only 54 of 87 documents have text.** 23 are `link-only` (law firms, news), 9 are
   `check-terms` code-publisher pages (ecode360, amlegal, gocodebook) with no text, and
-  D056 (MA CORI regulation) is an empty file (403 on capture). Extract from the 54 only.
+  D056 (MA CORI regulation) has no text file (capture failed with HTTP 403; empty `text_file`). Extract from the 54 only.
 - Several documents are web pages with navigation junk; some are official summaries that
   quote statutes (e.g. D067, the NJ DCA Truth in Renting guide, 160 KB, contains
   N.J.S.A. 46:8-21.2 and 2A:18-61.1 text). Rules extracted from a summary cite the

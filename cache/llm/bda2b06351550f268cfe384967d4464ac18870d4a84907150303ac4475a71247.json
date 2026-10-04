@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "b0a0afbe260a84d138b47d2a2d90cbd203094ebb82bf2e4b921c8091c07ae45f",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1814,
+  "output_tokens": 103
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord must give you a Notice of Tenants’ Rights and Resources at the same time as your Notice to Quit.",
+  "answer_owner": "You must deliver a Notice of Tenants’ Rights and Resources to your tenant at the same time as the Notice to Quit."
+ }
+}

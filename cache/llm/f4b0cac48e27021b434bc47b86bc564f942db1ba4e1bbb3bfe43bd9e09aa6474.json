@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "9765a42e58c560b677f831122712961fd86eac05b6d5193390b7633b056abc95",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1684,
+  "output_tokens": 589
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord's direct payment to you must equal two months of actual rent under your lease.",
+  "answer_owner": "You must make a direct payment to the tenant equal to two months of actual rent under the lease."
+ }
+}

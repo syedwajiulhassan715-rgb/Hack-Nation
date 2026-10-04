@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "a8508a7b26b3477090cee8f5cdd996fa9c4c161086d114a4afe5f72e6de8a426",
+  "english_sha": "0dbe84ce6016ab1d578069d4d6c24954f56a718e006d620dcb9c404dd8d70c5f",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 801,
+  "output_tokens": 125
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Usted podría estar protegido contra el desalojo durante 40 años si los ingresos de su familia están dentro del límite de ingresos de la ley.",
+  "answer_owner_es": "A usted se le podría prohibir desalojar a inquilinos durante 40 años si los ingresos de su familia están dentro del límite de ingresos."
+ }
+}

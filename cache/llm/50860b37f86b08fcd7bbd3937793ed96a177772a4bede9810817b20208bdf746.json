@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "0a41e301bb613dfeeae7e9662fea9659c5a0b3c345947c9a27e0b3a16996231a",
+  "english_sha": "216be499bf9fb9e97517d1e39f45ba3ef445ee38d4236540fc2fde70182f7102",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 839,
+  "output_tokens": 472
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su depósito de seguridad y los intereses acumulados deben transferirse al sucesor de su arrendador, quien será responsable de devolverlo.",
+  "answer_owner_es": "Usted debe transferir el depósito de seguridad y los intereses acumulados a su sucesor, quien entonces será responsable de devolverlo."
+ }
+}

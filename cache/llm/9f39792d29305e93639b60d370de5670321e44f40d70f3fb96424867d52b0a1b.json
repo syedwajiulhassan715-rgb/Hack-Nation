@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "71cd06e8a6d9d8d276286fa37790e6300b523192880dc5e98adf31a001340491",
+  "previous_sha": "ee3f8648f069cad4233a1549e424da3624b3ba70b248014aa8fde45efeaa5f12",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2145,
+  "output_tokens": 79
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your new owner must tell you in English and Spanish within 10 business days that you need not move.",
+  "answer_owner": "You must tell tenants in English and Spanish within 10 business days after the sale that they need not move."
+ }
+}

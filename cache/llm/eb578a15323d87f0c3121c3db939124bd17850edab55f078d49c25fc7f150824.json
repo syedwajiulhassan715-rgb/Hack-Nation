@@ -1,0 +1,21 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "6f70292928857e939e696fc266d6edf5a36253f6f773d1ff3ceb9408e3d4f830",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2143,
+  "output_tokens": 129
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord can't raise your rent more than 5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower, over any 12-month period.",
+  "answer_owner": "You may not raise the gross rental rate more than 5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower, in 12 months."
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "e151087368a53f45773f2e59cb7404ae4ea9c574ff7e920879e95125d55116c5",
+  "previous_sha": "4d9bc29759265ca6b714de20e4b7f65907d8cabc86d31781dfddcab2e3834af0",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2166,
+  "output_tokens": 1041
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Either you or your landlord can end an at-will tenancy with three months' written notice, sometimes less.",
+  "answer_owner": "You must give your tenant three months' written notice to end an at-will tenancy, sometimes less."
+ }
+}

@@ -1,0 +1,229 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_v1",
+  "system": "You write the plain-language line for a rental housing law app. The app always shows the quoted law, its citation and \"Not legal advice.\" next to your sentence.\n\nFor each rule you get its quoted text (the only source of law you may use) and a few structured fields. Write two sentences:\n- answer_tenant: addressed to a tenant (\"you\" = the tenant).\n- answer_owner: addressed to the landlord or property owner (\"you\" = the owner).\n\nRules for every sentence:\n1. One sentence, at most 20 words, containing \"you\" or \"your\".\n2. Start with the answer itself (e.g. \"Your landlord must...\", \"You must...\", \"You can...\"). No preamble such as \"Under this law\", \"This rule\" or \"According to\".\n3. Use only what the quoted text says. Add no facts, conditions, deadlines or remedies that are not in it. If the quote is too thin to say anything useful (for example only a bill title), return null for that sentence.\n4. Numbers, dates, percentages and dollar amounts: copy them exactly as they appear in the quote or key_value. Never compute, convert, round or combine them. If unsure, leave the number out.\n5. Owner sentences state obligations or prohibitions only. Never mention exemptions, exceptions, how a rule might not apply, or any way to avoid, get around or work around a rule. Tenant sentences state rights and protections, also without exemption talk.\n6. Status: \"pending\" means a bill or proposal that is not law, so say it is proposed and would apply only if enacted; \"not_yet_effective\" means enacted but not yet in effect, so say it is not in effect yet (no date unless the quote states it); \"in_force\" is present tense.\n7. Do not name the jurisdiction or the citation; the app shows them. Do not give legal advice, promise outcomes or say anyone is compliant.\n\nReturn JSON with one entry per rule id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant",
+       "answer_owner"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0109",
+    "category": "application_screening_fees",
+    "level": "city",
+    "status": "in_force",
+    "title": "Notification of state law limitation on tenant screening fees",
+    "key_value": null,
+    "quoted_span": "When an owner or the owner’s agent gets a request to rent residential property in Berkeley from an applicant and the owner charges a fee to purchase a consumer credit report and to validate, review, or otherwise process an application, the owner must provide, either in the rental application or in a separate disclosure before receiving the fee, a clear and conspicuous tenant screening fee rights statement and a statement of the maximum fee cap permitted under"
+   },
+   {
+    "team_rule_id": "r-0110",
+    "category": "application_screening_fees",
+    "level": "city",
+    "status": "in_force",
+    "title": "Prohibition of non-refundable application fees associated with existing tenancies",
+    "key_value": null,
+    "quoted_span": "An owner of residential rental property (or the owner’s agent) cannot charge a non-refundable fee to any existing tenant for the purpose of renewing a tenancy, in whole or in part, including any fee associated with the departure of a roommate or to request to add or replace a roommate in a pre-existing household."
+   },
+   {
+    "team_rule_id": "r-0111",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Owner move-in eviction relocation assistance (Rent Stabilization and Good Cause for Eviction Ordinance)",
+    "key_value": "Standard payment $19,413; additional payment for qualifying households $6,471 (effective January 1, 2026)",
+    "quoted_span": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction."
+   },
+   {
+    "team_rule_id": "r-0112",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Ellis Act eviction relocation assistance (Ellis Implementation Ordinance)",
+    "key_value": "Standard payment $19,413; additional payment for qualifying households $6,471 (effective January 1, 2026)",
+    "quoted_span": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market."
+   },
+   {
+    "team_rule_id": "r-0113",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Minimum rental debt for nonpayment eviction (Measure BB)",
+    "key_value": "Rental debt >= one month of Fair Market Rent for a unit of equivalent size (Oakland-Fremont, CA HUD Metro FMR)",
+    "quoted_span": "For a landlord to evict a tenant for nonpayment of rent, the tenant must owe an amount of rental debt equal to or greater than one month of the Fair Market Rent (FMR) value for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR as determined by the US Department of Housing and Urban Development for the fiscal year in which the rent is demanded."
+   },
+   {
+    "team_rule_id": "r-0114",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "No eviction for refusing to sign a substantially similar lease (Measure BB)",
+    "key_value": null,
+    "quoted_span": "A landlord cannot evict a tenant for failing to sign a substantially similar lease upon expiration of a fixed-term lease."
+   },
+   {
+    "team_rule_id": "r-0115",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Requirements for eviction based on breach of a material lease term (Measure BB)",
+    "key_value": null,
+    "quoted_span": "The landlord’s notice to the tenant to stop the violation (which is required before the landlord can serve an eviction notice) must specify the lease term, and describe the violation and resulting harm in enough detail for a reasonable person to understand."
+   },
+   {
+    "team_rule_id": "r-0116",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Required Rent Board information in termination notices (Measure BB)",
+    "key_value": null,
+    "quoted_span": "Any notice terminating a tenancy must contain a statement that advice about the notice is available from the Rent Board, the current phone number for the Rent Board’s Housing counseling services, and the current address of the Rent Board’s website."
+   },
+   {
+    "team_rule_id": "r-0117",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Filing eviction notices and lawsuits with the Rent Board (Measure BB)",
+    "key_value": "Within three business days of service",
+    "quoted_span": "The landlord must file with the Rent Board a copy of any notice to terminate a tenancy, notice to quit, and summons and complaint no later than three business days after the tenant was served with the document."
+   },
+   {
+    "team_rule_id": "r-0118",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Mandatory annual adjustment of owner move-in relocation assistance (Measure BB)",
+    "key_value": null,
+    "quoted_span": "The Rent Board must make inflationary adjustments to owner move-in eviction relocation assistance amounts each year."
+   },
+   {
+    "team_rule_id": "r-0119",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Rent Stabilization and Eviction for Just Cause Ordinance – just cause coverage",
+    "key_value": null,
+    "quoted_span": "Guide to Coverage under Berkeley’s Rent Stabilization and Eviction for Just Cause Ordinance"
+   },
+   {
+    "team_rule_id": "r-0120",
+    "category": "rent_increase_limits",
+    "level": "city",
+    "status": "in_force",
+    "title": "Capital improvement rent increase petitions limited to completed improvements (Measure BB)",
+    "key_value": null,
+    "quoted_span": "Landlords can only file a petition for rent increases for completed capital improvements (they can no longer petition to have rent increases preliminarily authorized for planned capital improvements)."
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 3264,
+  "output_tokens": 5893
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0109",
+    "answer_tenant": "Your landlord must give you a screening fee rights statement and fee cap statement before receiving the fee.",
+    "answer_owner": "You must give applicants a clear screening fee rights statement and fee cap statement before receiving a screening fee."
+   },
+   {
+    "team_rule_id": "r-0110",
+    "answer_tenant": "Your landlord cannot charge you a non-refundable fee to renew your tenancy, including for roommate changes.",
+    "answer_owner": "You cannot charge an existing tenant a non-refundable fee to renew a tenancy, including for roommate departures or additions."
+   },
+   {
+    "team_rule_id": "r-0111",
+    "answer_tenant": "Your landlord must pay you relocation assistance if evicting you for an owner move-in.",
+    "answer_owner": "You must pay your tenant relocation assistance in an owner move-in eviction."
+   },
+   {
+    "team_rule_id": "r-0112",
+    "answer_tenant": "Your landlord must pay you relocation assistance if evicting you to remove the property from the rental housing market.",
+    "answer_owner": "You must pay relocation assistance to tenants evicted so you can remove the property from the rental housing market."
+   },
+   {
+    "team_rule_id": "r-0113",
+    "answer_tenant": "Your landlord can evict you for unpaid rent only if you owe at least one month's Fair Market Rent.",
+    "answer_owner": "You cannot evict for nonpayment unless your tenant owes at least one month's Fair Market Rent."
+   },
+   {
+    "team_rule_id": "r-0114",
+    "answer_tenant": "Your landlord cannot evict you for failing to sign a substantially similar lease when your fixed-term lease expires.",
+    "answer_owner": "You cannot evict a tenant for failing to sign a substantially similar lease when a fixed-term lease expires."
+   },
+   {
+    "team_rule_id": "r-0115",
+    "answer_tenant": "Your landlord's notice to stop a lease violation must name the lease term and describe the violation and harm in detail.",
+    "answer_owner": "You must specify the lease term and describe the violation and resulting harm in your notice to stop it."
+   },
+   {
+    "team_rule_id": "r-0116",
+    "answer_tenant": "Any notice ending your tenancy must say Rent Board advice is available and list its counseling phone number and website.",
+    "answer_owner": "You must include in any termination notice a Rent Board advice statement, its counseling phone number, and its website address."
+   },
+   {
+    "team_rule_id": "r-0117",
+    "answer_tenant": "Your landlord must file notices and court papers served on you with the Rent Board within three business days.",
+    "answer_owner": "You must file eviction notices and summons and complaints with the Rent Board within three business days of service."
+   },
+   {
+    "team_rule_id": "r-0118",
+    "answer_tenant": "Your relocation assistance in an owner move-in eviction must be adjusted for inflation by the Rent Board each year.",
+    "answer_owner": "Owner move-in relocation assistance you pay must be adjusted for inflation by the Rent Board each year."
+   },
+   {
+    "team_rule_id": "r-0119",
+    "answer_tenant": null,
+    "answer_owner": null
+   },
+   {
+    "team_rule_id": "r-0120",
+    "answer_tenant": "Your landlord can petition for a rent increase only for completed capital improvements, not planned ones.",
+    "answer_owner": "You cannot petition for rent increases based on planned capital improvements, only completed ones."
+   }
+  ]
+ }
+}

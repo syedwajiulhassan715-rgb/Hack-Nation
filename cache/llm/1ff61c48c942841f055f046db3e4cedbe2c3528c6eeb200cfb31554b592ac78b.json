@@ -1,0 +1,229 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_v1",
+  "system": "You write the plain-language line for a rental housing law app. The app always shows the quoted law, its citation and \"Not legal advice.\" next to your sentence.\n\nFor each rule you get its quoted text (the only source of law you may use) and a few structured fields. Write two sentences:\n- answer_tenant: addressed to a tenant (\"you\" = the tenant).\n- answer_owner: addressed to the landlord or property owner (\"you\" = the owner).\n\nRules for every sentence:\n1. One sentence, at most 20 words, containing \"you\" or \"your\".\n2. Start with the answer itself (e.g. \"Your landlord must...\", \"You must...\", \"You can...\"). No preamble such as \"Under this law\", \"This rule\" or \"According to\".\n3. Use only what the quoted text says. Add no facts, conditions, deadlines or remedies that are not in it. If the quote is too thin to say anything useful (for example only a bill title), return null for that sentence.\n4. Numbers, dates, percentages and dollar amounts: copy them exactly as they appear in the quote or key_value. Never compute, convert, round or combine them. If unsure, leave the number out.\n5. Owner sentences state obligations or prohibitions only. Never mention exemptions, exceptions, how a rule might not apply, or any way to avoid, get around or work around a rule. Tenant sentences state rights and protections, also without exemption talk.\n6. Status: \"pending\" means a bill or proposal that is not law, so say it is proposed and would apply only if enacted; \"not_yet_effective\" means enacted but not yet in effect, so say it is not in effect yet (no date unless the quote states it); \"in_force\" is present tense.\n7. Do not name the jurisdiction or the citation; the app shows them. Do not give legal advice, promise outcomes or say anyone is compliant.\n\nReturn JSON with one entry per rule id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant",
+       "answer_owner"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0157",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Requirements Upon Termination of Tenancy for At-Fault Just Cause",
+    "key_value": null,
+    "quoted_span": "Before a landlord issues a notice to terminate a tenancy for at-fault just cause that is a curable lease violation, the landlord shall first give written notice of the violation including a description of the violation and an opportunity to cure the violation under California Code of Civil Procedure section 1161(3), as may be amended."
+   },
+   {
+    "team_rule_id": "r-0158",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Notice to Tenant for No-Fault Just Cause Termination",
+    "key_value": "at least 30 or 60 days prior to the proposed date of termination",
+    "quoted_span": "The landlord shall give written notice to the tenant at least 30 or 60 days prior to the proposed date of termination as required by California Civil Code section 1946.1, as may be amended, in no less than 12-point font."
+   },
+   {
+    "team_rule_id": "r-0159",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Relocation Assistance for Termination of Tenancy for No-Fault Just Cause",
+    "key_value": "two months of actual rent under the tenant's lease in effect at the date of the notice; three months if the tenant is a senior or disabled",
+    "quoted_span": "Unless section 98.0706(c)(1)(A)(ii) applies, the direct payment to the tenant shall be in an amount equal to two months of actual rent under the tenant’s lease in effect at the date of the notice."
+   },
+   {
+    "team_rule_id": "r-0160",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Right to Offer to Renew After No-Fault Just Cause Termination",
+    "key_value": "within five years of the date the tenant was evicted",
+    "quoted_span": "If a residential rental property is offered for rent or lease for residential purposes within five years of the date the tenant was evicted under sections 98.0704(b)(1), (3), or (4), landlord shall first offer to lease the residential rental property in writing to the tenant displaced from that unit by the no-fault just cause termination if the tenant:"
+   },
+   {
+    "team_rule_id": "r-0161",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Buyout Agreements",
+    "key_value": "greater than the amount of relocation assistance available to the tenant in section 98.0706(c)",
+    "quoted_span": "Buyout agreements must be for an amount that is greater than the amount of relocation assistance available to the tenant in section 98.0706(c). A buyout agreement for less than the amount of relocation assistance owed to the tenant violates this Division and is void."
+   },
+   {
+    "team_rule_id": "r-0162",
+    "category": "algorithmic_rent_setting",
+    "level": "city",
+    "status": "in_force",
+    "title": "San Francisco ban on algorithm-based rent-setting tools",
+    "key_value": null,
+    "quoted_span": "In July 2024, the San Francisco Board of Supervisors approved legislation to ban property owners and managers from using algorithm-based tools that recommend or set rental prices."
+   },
+   {
+    "team_rule_id": "r-0163",
+    "category": "algorithmic_rent_setting",
+    "level": "city",
+    "status": "in_force",
+    "title": "Prohibition on algorithmic devices to set rents (Rent Ordinance Section 37.10C)",
+    "key_value": null,
+    "quoted_span": "The law prohibits the sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco."
+   },
+   {
+    "team_rule_id": "r-0164",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Rent Ordinance just cause eviction requirement",
+    "key_value": "17 just cause reasons under Ordinance Section 37.9(a)",
+    "quoted_span": "In order to evict a tenant from a rental unit covered by the Rent Ordinance, a landlord must have a \"just cause\" reason that is the dominant motive for pursuing the eviction. Note that the mere expiration of a rental agreement or a change in ownership does not constitute \"just cause\" for eviction."
+   },
+   {
+    "team_rule_id": "r-0165",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Relocation payments for owner/relative move-in, demolition/permanent removal, temporary capital improvement, or substantial rehabilitation evictions",
+    "key_value": "Notices served 3/01/26 – 2/28/27: $8,245.00 per tenant; maximum $24,733.00 per unit; plus $5,497.00 for each elderly (60 years or older) or disabled tenant or household with minor child(ren)",
+    "quoted_span": "Relocation Payments for Evictions based on Owner/Relative Move-in OR Demolition/Permanent Removal of Unit from Housing Use OR Temporary Capital Improvement Work* OR Substantial Rehabilitation"
+   },
+   {
+    "team_rule_id": "r-0166",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Relocation payments for Ellis Act evictions",
+    "key_value": "Notices served 3/01/26 – 2/28/27: $11,110.05 per tenant; maximum $33,330.13 per unit; plus $7,443.90 for each elderly (62 years or older) or disabled tenant",
+    "quoted_span": "Relocation payments for tenants evicted under the Ellis Act"
+   },
+   {
+    "team_rule_id": "r-0167",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Ellis Act Relocation Payments",
+    "key_value": "$11,110.05 per tenant; maximum $33,330.13 per unit; plus $7,443.90 per elderly or disabled tenant",
+    "quoted_span": "Relocation payments for tenants evicted under the Ellis Act"
+   },
+   {
+    "team_rule_id": "r-0168",
+    "category": "rent_increase_limits",
+    "level": "city",
+    "status": "in_force",
+    "title": "Annual Allowable Rent Increase (3/1/26 - 2/28/27)",
+    "key_value": "1.6% (tenant's base rent x .016)",
+    "quoted_span": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%."
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 3391,
+  "output_tokens": 8669
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0157",
+    "answer_tenant": "Your landlord must give you written notice and a chance to cure a curable violation before a termination notice.",
+    "answer_owner": "You must give the tenant written notice of a curable violation and a chance to cure before a termination notice."
+   },
+   {
+    "team_rule_id": "r-0158",
+    "answer_tenant": "Your landlord must give you written notice at least 30 or 60 days before the proposed termination date.",
+    "answer_owner": "You must give the tenant written notice at least 30 or 60 days before the proposed termination date."
+   },
+   {
+    "team_rule_id": "r-0159",
+    "answer_tenant": "Your landlord must pay you two months of actual rent, or three months if you are a senior or disabled.",
+    "answer_owner": "You must pay tenants two months of actual rent, or three months if a tenant is a senior or disabled."
+   },
+   {
+    "team_rule_id": "r-0160",
+    "answer_tenant": "Your landlord must first offer you the unit in writing if you qualify and it is re-rented within five years.",
+    "answer_owner": "You must first offer the unit in writing to a qualifying displaced tenant if it is re-rented within five years."
+   },
+   {
+    "team_rule_id": "r-0161",
+    "answer_tenant": "A buyout agreement offering you less than the relocation assistance available to you is void.",
+    "answer_owner": "Your buyout agreements must be for more than the relocation assistance available to the tenant."
+   },
+   {
+    "team_rule_id": "r-0162",
+    "answer_tenant": "Your landlord may not use algorithm-based tools that recommend or set rental prices.",
+    "answer_owner": "You may not use algorithm-based tools that recommend or set rental prices."
+   },
+   {
+    "team_rule_id": "r-0163",
+    "answer_tenant": "Your landlord may not use algorithmic devices to set rents or manage occupancy levels for residential units.",
+    "answer_owner": "You may not sell or use algorithmic devices to set rents or manage occupancy levels for residential units."
+   },
+   {
+    "team_rule_id": "r-0164",
+    "answer_tenant": "Your landlord needs a dominant just cause to evict you from a covered unit; lease expiration alone is not enough.",
+    "answer_owner": "You must have a just cause as the dominant motive to evict a tenant from a covered unit."
+   },
+   {
+    "team_rule_id": "r-0165",
+    "answer_tenant": "Your landlord must pay $8,245.00 per tenant in relocation for owner/relative move-in, demolition, temporary capital improvement or rehabilitation evictions.",
+    "answer_owner": "You must pay $8,245.00 per tenant in relocation for owner/relative move-in, demolition, temporary capital improvement or rehabilitation evictions."
+   },
+   {
+    "team_rule_id": "r-0166",
+    "answer_tenant": "Your landlord must pay you $11,110.05 per tenant in relocation if you are evicted under the Ellis Act.",
+    "answer_owner": "You must pay $11,110.05 per tenant in relocation when you evict tenants under the Ellis Act."
+   },
+   {
+    "team_rule_id": "r-0167",
+    "answer_tenant": "Your landlord must pay you $11,110.05 per tenant in relocation if you are evicted under the Ellis Act.",
+    "answer_owner": "You must pay $11,110.05 per tenant in relocation when you evict tenants under the Ellis Act."
+   },
+   {
+    "team_rule_id": "r-0168",
+    "answer_tenant": "Your annual allowable rent increase for a rent-controlled unit is 1.6% from March 1, 2026 through February 28, 2027.",
+    "answer_owner": "Your annual allowable increase for rent-controlled units is 1.6% from March 1, 2026 through February 28, 2027."
+   }
+  ]
+ }
+}

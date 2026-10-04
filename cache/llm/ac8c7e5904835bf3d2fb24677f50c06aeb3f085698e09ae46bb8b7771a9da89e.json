@@ -1,0 +1,229 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_v1",
+  "system": "You write the plain-language line for a rental housing law app. The app always shows the quoted law, its citation and \"Not legal advice.\" next to your sentence.\n\nFor each rule you get its quoted text (the only source of law you may use) and a few structured fields. Write two sentences:\n- answer_tenant: addressed to a tenant (\"you\" = the tenant).\n- answer_owner: addressed to the landlord or property owner (\"you\" = the owner).\n\nRules for every sentence:\n1. One sentence, at most 20 words, containing \"you\" or \"your\".\n2. Start with the answer itself (e.g. \"Your landlord must...\", \"You must...\", \"You can...\"). No preamble such as \"Under this law\", \"This rule\" or \"According to\".\n3. Use only what the quoted text says. Add no facts, conditions, deadlines or remedies that are not in it. If the quote is too thin to say anything useful (for example only a bill title), return null for that sentence.\n4. Numbers, dates, percentages and dollar amounts: copy them exactly as they appear in the quote or key_value. Never compute, convert, round or combine them. If unsure, leave the number out.\n5. Owner sentences state obligations or prohibitions only. Never mention exemptions, exceptions, how a rule might not apply, or any way to avoid, get around or work around a rule. Tenant sentences state rights and protections, also without exemption talk.\n6. Status: \"pending\" means a bill or proposal that is not law, so say it is proposed and would apply only if enacted; \"not_yet_effective\" means enacted but not yet in effect, so say it is not in effect yet (no date unless the quote states it); \"in_force\" is present tense.\n7. Do not name the jurisdiction or the citation; the app shows them. Do not give legal advice, promise outcomes or say anyone is compliant.\n\nReturn JSON with one entry per rule id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant",
+       "answer_owner"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0001",
+    "category": "algorithmic_rent_setting",
+    "level": "state",
+    "status": "in_force",
+    "title": "Cartwright Act: ban on using or distributing a common pricing algorithm as part of a conspiracy",
+    "key_value": null,
+    "quoted_span": "(a) It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter."
+   },
+   {
+    "team_rule_id": "r-0002",
+    "category": "algorithmic_rent_setting",
+    "level": "state",
+    "status": "in_force",
+    "title": "Cartwright Act: ban on coercing adoption of common pricing algorithm recommendations",
+    "key_value": null,
+    "quoted_span": "(b) It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state."
+   },
+   {
+    "team_rule_id": "r-0003",
+    "category": "application_screening_fees",
+    "level": "state",
+    "status": "in_force",
+    "title": "Tenant screening fee cap and receipt/refund duties (Civil Code 1950.6)",
+    "key_value": "$68.96 maximum screening fee for 2026",
+    "quoted_span": "Prospective tenants should expect to receive a copy of their credit report within 7 days of receipt by the landlord, a receipt for the fee paid and an itemized list of any out-of-pocket expenses and time spent by the landlord on the screening, and a refund of any unused portion of the fee."
+   },
+   {
+    "team_rule_id": "r-0004",
+    "category": "application_screening_fees",
+    "level": "state",
+    "status": "in_force",
+    "title": "No screening fee without an available unit; return of fee to applicants not selected (Civil Code 1950.6)",
+    "key_value": null,
+    "quoted_span": "The landlord cannot charge a prospective tenant a screening fee if no rental unit is actually available. The landlord must also return a screening fee to any applicant not selected, or have a policy under which they: (1) review applications in the order received and the first qualified applicant gets the unit, and (2) do not charge a screening fee to any applicant not considered."
+   },
+   {
+    "team_rule_id": "r-0005",
+    "category": "application_screening_fees",
+    "level": "state",
+    "status": "in_force",
+    "title": "Application screening fee cap",
+    "key_value": "Actual out-of-pocket costs, but in no case greater than $30 per applicant; may be adjusted annually commensurate with an increase in the Consumer Price Index, beginning on January 1, 1998",
+    "quoted_span": "In no case shall the amount of the application screening fee charged by the landlord or their agent be greater than thirty dollars ($30) per applicant. The thirty dollar ($30) application screening fee may be adjusted annually by the landlord or their agent commensurate with an increase in the Consumer Price Index, beginning on January 1, 1998."
+   },
+   {
+    "team_rule_id": "r-0006",
+    "category": "application_screening_fees",
+    "level": "state",
+    "status": "in_force",
+    "title": "No screening fee when no unit is available",
+    "key_value": null,
+    "quoted_span": "A landlord or their agent shall not charge an applicant an application screening fee when they know or should have known that no rental unit is available at that time or will be available within a reasonable period of time."
+   },
+   {
+    "team_rule_id": "r-0007",
+    "category": "application_screening_fees",
+    "level": "state",
+    "status": "in_force",
+    "title": "Screening fee allowed only with first-come process or refund process",
+    "key_value": "Refund to non-selected applicants within 7 days of selecting an applicant or 30 days of submission, whichever occurs first (alternative to first-come process)",
+    "quoted_span": "(2) A landlord or their agent may charge an applicant an application screening fee only if the landlord or their agent, at the time the application screening fee is collected, offers any of the following:"
+   },
+   {
+    "team_rule_id": "r-0008",
+    "category": "application_screening_fees",
+    "level": "state",
+    "status": "in_force",
+    "title": "Itemized receipt for screening fee",
+    "key_value": null,
+    "quoted_span": "(d) The landlord or their agent shall provide, personally, or by mail, the applicant with a receipt for the fee paid by the applicant, which receipt shall itemize the out-of-pocket expenses and time spent by the landlord or their agent to obtain and process the information about the applicant."
+   },
+   {
+    "team_rule_id": "r-0009",
+    "category": "application_screening_fees",
+    "level": "state",
+    "status": "in_force",
+    "title": "Refund of unused screening fee",
+    "key_value": null,
+    "quoted_span": "the landlord or their agent shall return any amount of the screening fee that is not used for the purposes authorized by this section to the applicant."
+   },
+   {
+    "team_rule_id": "r-0010",
+    "category": "application_screening_fees",
+    "level": "state",
+    "status": "in_force",
+    "title": "Copy of consumer credit report to applicant",
+    "key_value": "within seven days of receiving the report",
+    "quoted_span": "(f) If an application screening fee has been paid by the applicant, the landlord or their agent shall provide a copy of the consumer credit report to the applicant who is the subject of that report by personal delivery, mail, or email within seven days of the landlord or their agent receiving the report."
+   },
+   {
+    "team_rule_id": "r-0011",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Just cause requirement for termination of tenancy (Civil Code 1946.2)",
+    "key_value": "Just cause required after 12 months of continuous and lawful occupancy (or 24 months for at least one tenant when adult tenants are added)",
+    "quoted_span": "Notwithstanding any other law, after a tenant has continuously and lawfully occupied a residential real property for 12 months, the owner of the residential real property shall not terminate a tenancy without just cause, which shall be stated in the written notice to terminate tenancy."
+   },
+   {
+    "team_rule_id": "r-0012",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Opportunity to cure before termination for curable lease violation",
+    "key_value": null,
+    "quoted_span": "If the violation is not cured within the time period set forth in the notice, a three-day notice to quit without an opportunity to cure may thereafter be served to terminate the tenancy."
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 3330,
+  "output_tokens": 9289
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0001",
+    "answer_tenant": "Your protections include a ban on using or distributing a common pricing algorithm in a conspiracy to restrain trade.",
+    "answer_owner": "You must not use or distribute a common pricing algorithm as part of a conspiracy to restrain trade or commerce."
+   },
+   {
+    "team_rule_id": "r-0002",
+    "answer_tenant": "Your protections include a ban on coercing others to adopt prices recommended by a common pricing algorithm.",
+    "answer_owner": "You must not coerce another person to adopt prices recommended by a common pricing algorithm you use or distribute."
+   },
+   {
+    "team_rule_id": "r-0003",
+    "answer_tenant": "You should get your credit report within 7 days of the landlord receiving it, a receipt, and any unused-fee refund.",
+    "answer_owner": "You should give applicants their credit report within 7 days of receiving it, an itemized receipt, and unused-fee refunds."
+   },
+   {
+    "team_rule_id": "r-0004",
+    "answer_tenant": "You cannot be charged a screening fee if no rental unit is actually available.",
+    "answer_owner": "You cannot charge a prospective tenant a screening fee if no rental unit is actually available."
+   },
+   {
+    "team_rule_id": "r-0005",
+    "answer_tenant": "Your application screening fee cannot be greater than $30 per applicant, subject to annual Consumer Price Index adjustment.",
+    "answer_owner": "You cannot charge an application screening fee over $30 per applicant, as adjusted annually for Consumer Price Index increases."
+   },
+   {
+    "team_rule_id": "r-0006",
+    "answer_tenant": "You cannot be charged a screening fee when the landlord knows or should know no unit is available.",
+    "answer_owner": "You cannot charge an applicant a screening fee when you know or should know no rental unit is available."
+   },
+   {
+    "team_rule_id": "r-0007",
+    "answer_tenant": "Your landlord can charge a screening fee only if they offer specified options when collecting it.",
+    "answer_owner": "You can charge a screening fee only if you offer specified options when collecting it."
+   },
+   {
+    "team_rule_id": "r-0008",
+    "answer_tenant": "You are entitled to a receipt for the fee you paid, itemizing the landlord's out-of-pocket expenses and time spent.",
+    "answer_owner": "You must give the applicant a receipt for the fee, itemizing your out-of-pocket expenses and time spent processing their information."
+   },
+   {
+    "team_rule_id": "r-0009",
+    "answer_tenant": "You are entitled to a refund of any part of your screening fee not used for authorized purposes.",
+    "answer_owner": "You must return to the applicant any part of the screening fee not used for authorized purposes."
+   },
+   {
+    "team_rule_id": "r-0010",
+    "answer_tenant": "Your landlord must give you your credit report within seven days of receiving it if you paid a screening fee.",
+    "answer_owner": "You must give a fee-paying applicant a copy of their credit report within seven days of receiving it."
+   },
+   {
+    "team_rule_id": "r-0011",
+    "answer_tenant": "Your landlord cannot end your tenancy without just cause, stated in writing, after 12 months of continuous, lawful occupancy.",
+    "answer_owner": "You cannot terminate a tenancy without just cause, stated in the written notice, after 12 months of continuous, lawful occupancy."
+   },
+   {
+    "team_rule_id": "r-0012",
+    "answer_tenant": "You have the time period in the notice to cure the violation before a three-day notice to quit may follow.",
+    "answer_owner": "You must allow the notice's time period to cure the violation before serving a three-day notice to quit."
+   }
+  ]
+ }
+}

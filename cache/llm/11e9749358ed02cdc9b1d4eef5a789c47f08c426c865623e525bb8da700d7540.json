@@ -1,0 +1,229 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_v1",
+  "system": "You write the plain-language line for a rental housing law app. The app always shows the quoted law, its citation and \"Not legal advice.\" next to your sentence.\n\nFor each rule you get its quoted text (the only source of law you may use) and a few structured fields. Write two sentences:\n- answer_tenant: addressed to a tenant (\"you\" = the tenant).\n- answer_owner: addressed to the landlord or property owner (\"you\" = the owner).\n\nRules for every sentence:\n1. One sentence, at most 20 words, containing \"you\" or \"your\".\n2. Start with the answer itself (e.g. \"Your landlord must...\", \"You must...\", \"You can...\"). No preamble such as \"Under this law\", \"This rule\" or \"According to\".\n3. Use only what the quoted text says. Add no facts, conditions, deadlines or remedies that are not in it. If the quote is too thin to say anything useful (for example only a bill title), return null for that sentence.\n4. Numbers, dates, percentages and dollar amounts: copy them exactly as they appear in the quote or key_value. Never compute, convert, round or combine them. If unsure, leave the number out.\n5. Owner sentences state obligations or prohibitions only. Never mention exemptions, exceptions, how a rule might not apply, or any way to avoid, get around or work around a rule. Tenant sentences state rights and protections, also without exemption talk.\n6. Status: \"pending\" means a bill or proposal that is not law, so say it is proposed and would apply only if enacted; \"not_yet_effective\" means enacted but not yet in effect, so say it is not in effect yet (no date unless the quote states it); \"in_force\" is present tense.\n7. Do not name the jurisdiction or the citation; the app shows them. Do not give legal advice, promise outcomes or say anyone is compliant.\n\nReturn JSON with one entry per rule id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant",
+       "answer_owner"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0025",
+    "category": "screening_restrictions",
+    "level": "state",
+    "status": "in_force",
+    "title": "Aggregate income standard for co-residents",
+    "key_value": null,
+    "quoted_span": "(n) To use a financial or income standard in the rental of housing that fails to account for the aggregate income of persons residing together or proposing to reside together on the same basis as the aggregate income"
+   },
+   {
+    "team_rule_id": "r-0026",
+    "category": "screening_restrictions",
+    "level": "state",
+    "status": "in_force",
+    "title": "Income standard for applicants with government rent subsidy",
+    "key_value": null,
+    "quoted_span": "(A) Use a financial or income standard in assessing eligibility for the rental of housing that is not based on the portion of the rent to be paid by the tenant."
+   },
+   {
+    "team_rule_id": "r-0027",
+    "category": "screening_restrictions",
+    "level": "state",
+    "status": "in_force",
+    "title": "Credit history alternative evidence for subsidized applicants",
+    "key_value": null,
+    "quoted_span": "(II) Reasonably consider that alternative evidence in lieu of the person’s credit history in determining whether to offer the rental accommodation to the applicant."
+   },
+   {
+    "team_rule_id": "r-0028",
+    "category": "security_deposits",
+    "level": "state",
+    "status": "in_force",
+    "title": "Security deposit cap (Assembly Bill 12)",
+    "key_value": "one month's rent",
+    "quoted_span": "Starting July 1, 2024, many landlords may only charge one month's rent for unfurnished and furnished units"
+   },
+   {
+    "team_rule_id": "r-0029",
+    "category": "security_deposits",
+    "level": "state",
+    "status": "in_force",
+    "title": "Security deposit cap of one month's rent",
+    "key_value": "one month’s rent, in addition to any rent for the first month",
+    "quoted_span": "(1) Except as provided in paragraph (2), (3), or (5), a landlord shall not demand or receive security, however denominated, in an amount or value in excess of an amount equal to one month’s rent, in addition to any rent for the first month paid on or before initial occupancy."
+   },
+   {
+    "team_rule_id": "r-0030",
+    "category": "security_deposits",
+    "level": "state",
+    "status": "in_force",
+    "title": "Service member higher security disclosure and return",
+    "key_value": null,
+    "quoted_span": "(4) On or after April 1, 2025, if a landlord or its agent charges a service member who rents residential property in which the service member will reside a higher than standard or advertised security pursuant to paragraph (1) due to the credit history, credit score, housing history, or other factor related to the tenant, the landlord shall provide the tenant with a written statement, on or before the date the lease is signed, of the amount of the higher security and an explanation why the higher security amount is being charged."
+   },
+   {
+    "team_rule_id": "r-0031",
+    "category": "security_deposits",
+    "level": "state",
+    "status": "in_force",
+    "title": "Small landlord security deposit cap of two months' rent",
+    "key_value": "two months’ rent, in addition to any rent for the first month",
+    "quoted_span": "(5) (A) Notwithstanding paragraph (1), a landlord shall not demand or receive security, however denominated, in an amount or value in excess of an amount equal to two months’ rent, in addition to any rent for the first month paid on or before initial occupancy if the landlord meets both of the following requirements:"
+   },
+   {
+    "team_rule_id": "r-0032",
+    "category": "security_deposits",
+    "level": "state",
+    "status": "in_force",
+    "title": "Limits on deductions from security",
+    "key_value": null,
+    "quoted_span": "(A) The landlord shall not assert a claim against the tenant or the security for damages to the premises or any defective conditions that preexisted the tenancy, for ordinary wear and tear or the effects thereof, whether the wear and tear preexisted the tenancy or occurred during the tenancy, or for the cumulative effects of ordinary wear and tear occurring during any one or more tenancies."
+   },
+   {
+    "team_rule_id": "r-0033",
+    "category": "security_deposits",
+    "level": "state",
+    "status": "in_force",
+    "title": "Initial move-out inspection notice",
+    "key_value": null,
+    "quoted_span": "(f) (1) Within a reasonable time after notification of either party’s intention to terminate the tenancy, or before the end of the lease term, the landlord shall notify the tenant in writing of the tenant’s option to request an initial inspection and of the tenant’s right to be present at the inspection."
+   },
+   {
+    "team_rule_id": "r-0034",
+    "category": "security_deposits",
+    "level": "state",
+    "status": "in_force",
+    "title": "Photographs of unit for security deductions",
+    "key_value": null,
+    "quoted_span": "(2) Beginning April 1, 2025, the landlord shall take photographs of the unit within a reasonable time after the possession of the unit is returned to the landlord, but prior to any repairs or cleanings for which the landlord will make a deduction from or claim against the security deposit pursuant to this section, and shall also take photographs of the unit within a reasonable time after such repairs or cleanings are completed."
+   },
+   {
+    "team_rule_id": "r-0035",
+    "category": "security_deposits",
+    "level": "state",
+    "status": "in_force",
+    "title": "Return of security and itemized statement within 21 days",
+    "key_value": "21 calendar days after the tenant has vacated the premises",
+    "quoted_span": "(h) (1) No later than 21 calendar days after the tenant has vacated the premises, but not earlier than the time that either the landlord or the tenant provides a notice to terminate the tenancy under Section 1946 or 1946.1, Section 1161 of the Code of Civil Procedure, or not earlier than 60 calendar days prior to the expiration of a fixed-term lease, the landlord shall furnish the tenant, a copy of an itemized statement indicating the basis for, and the amount of, any security received and the disposition of the security, and shall return any remaining portion of the security to the tenant as follows:"
+   },
+   {
+    "team_rule_id": "r-0036",
+    "category": "security_deposits",
+    "level": "state",
+    "status": "in_force",
+    "title": "Transfer or return of security on termination of landlord's interest",
+    "key_value": null,
+    "quoted_span": "(i) Upon termination of the landlord’s interest in the premises, whether by sale, assignment, death, appointment of receiver, or otherwise, the landlord or the landlord’s agent shall, within a reasonable time, do one of the following acts, either of which shall relieve the landlord of further liability with respect to the security held:"
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 3340,
+  "output_tokens": 9966
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0025",
+    "answer_tenant": "Your landlord cannot use an income standard that ignores the combined income of people living or proposing to live together.",
+    "answer_owner": "You cannot use an income standard that fails to account for the combined income of people residing together."
+   },
+   {
+    "team_rule_id": "r-0026",
+    "answer_tenant": null,
+    "answer_owner": null
+   },
+   {
+    "team_rule_id": "r-0027",
+    "answer_tenant": null,
+    "answer_owner": null
+   },
+   {
+    "team_rule_id": "r-0028",
+    "answer_tenant": "Many landlords may charge you only one month’s rent as security for furnished or unfurnished units from July 1, 2024.",
+    "answer_owner": "You may only charge one month’s rent as a security deposit for unfurnished and furnished units from July 1, 2024."
+   },
+   {
+    "team_rule_id": "r-0029",
+    "answer_tenant": "Your landlord cannot demand or receive security above one month’s rent, in addition to any rent for the first month.",
+    "answer_owner": "You cannot demand or receive security above one month’s rent, in addition to any rent for the first month."
+   },
+   {
+    "team_rule_id": "r-0030",
+    "answer_tenant": "If you are a service member, your landlord must give a written statement of any higher security amount and why.",
+    "answer_owner": "If you charge a service member higher security, you must give a written statement of the amount and reason."
+   },
+   {
+    "team_rule_id": "r-0031",
+    "answer_tenant": "Your landlord cannot demand security above two months’ rent plus any first month’s rent if they meet both listed requirements.",
+    "answer_owner": "You cannot demand security above two months’ rent plus any first month’s rent if you meet both listed requirements."
+   },
+   {
+    "team_rule_id": "r-0032",
+    "answer_tenant": "Your landlord cannot claim against you or your security for preexisting damage or ordinary wear and tear.",
+    "answer_owner": "You cannot claim against the tenant or the security for preexisting damage or ordinary wear and tear."
+   },
+   {
+    "team_rule_id": "r-0033",
+    "answer_tenant": "Your landlord must notify you in writing of your option to request an initial inspection and right to be present.",
+    "answer_owner": "You must notify the tenant in writing of the option to request an initial inspection and to be present."
+   },
+   {
+    "team_rule_id": "r-0034",
+    "answer_tenant": "Your landlord must photograph the unit before and after any repairs or cleanings they deduct from your security deposit.",
+    "answer_owner": "You must photograph the unit before and after any repairs or cleanings you deduct from the security deposit."
+   },
+   {
+    "team_rule_id": "r-0035",
+    "answer_tenant": "Your landlord must give you an itemized statement and return any remaining security within 21 calendar days after you vacate.",
+    "answer_owner": "You must give the tenant an itemized statement and return remaining security within 21 calendar days after the tenant vacates."
+   },
+   {
+    "team_rule_id": "r-0036",
+    "answer_tenant": null,
+    "answer_owner": null
+   }
+  ]
+ }
+}

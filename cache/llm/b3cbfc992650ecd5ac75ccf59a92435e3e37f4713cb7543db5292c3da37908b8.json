@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "6b2a29157ae79a342113e2c92a5dae773bb335c2fb4d2fad2beb2bf4993a9379",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1593,
+  "output_tokens": 98
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord cannot discriminate against or harass you because of your race, sex, disability, source of income, or other listed characteristics.",
+  "answer_owner": "You may not discriminate against or harass any person because of race, sex, disability, source of income, or other listed characteristics."
+ }
+}

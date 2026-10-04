@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "74e77a152e923fed011c3bf9f6520e79bdb9586c556398ea7b5f65d9890da3bf",
+  "english_sha": "ce43f78099be546982bea15fb7ef79fad1aeeb18b6b858ec395ee2bb464c763c",
+  "previous_sha": "b605bf75700a2db53cc97269c3a7077ce01c38ca445c6d0499b23c629d1d1093",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1348,
+  "output_tokens": 584
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Usted debería recibir su informe de crédito en 7 días, un recibo detallado y reembolso de toda cuota no usada.",
+  "answer_owner_es": "Usted debe usar un informe de evaluación reutilizable siempre que un posible inquilino se lo entregue."
+ }
+}

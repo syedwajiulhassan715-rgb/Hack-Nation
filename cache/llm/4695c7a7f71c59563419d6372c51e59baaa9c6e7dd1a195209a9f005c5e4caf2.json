@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "1aa49df8ef54f0cbbbb15634d5855ae5e12e98185f158f6b5a9a3a7db64f52de",
+  "english_sha": "b51fc2f7b6455ca1429a9c1cc29c0dacb84d9e82e8cecd8f43b86f02ac6afbe3",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 760,
+  "output_tokens": 1141
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su ayuda de reubicación o renta condonada equivale a un mes de la renta que pagaba cuando su arrendador avisó.",
+  "answer_owner_es": null
+ }
+}

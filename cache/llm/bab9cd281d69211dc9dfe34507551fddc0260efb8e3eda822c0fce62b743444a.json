@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "21e9ba70afe8841f6baa52aa4a31e21d51411d2adab7cb94e3ff2112c50ade60",
+  "previous_sha": "bf2dfca7875958f572f7beaf0db047f4fa94778cdd1afb19be47ec5e6a0a5335",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2203,
+  "output_tokens": 85
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord cannot judge your application based on certain criminal records, whether before or after a conditional offer.",
+  "answer_owner": "You may not evaluate an applicant based on certain criminal records, either before or after a conditional offer."
+ }
+}

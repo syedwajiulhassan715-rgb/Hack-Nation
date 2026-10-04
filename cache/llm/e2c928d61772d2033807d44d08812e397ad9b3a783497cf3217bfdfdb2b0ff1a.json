@@ -1,0 +1,181 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_es_v1",
+  "system": "You translate short plain-language lines from a rental housing law app into neutral Latin American Spanish, using \"usted\". The app shows the quoted law and \"Not legal advice.\" next to each line.\n\nTranslate each sentence faithfully as one sentence. Keep every number, date, percentage and dollar amount exactly as written (digits stay digits; do not spell numbers out). Add nothing and leave nothing out. Do not add exemptions or any way to avoid a rule. Keep it short: at most 26 words. Return JSON with one entry per id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant_es",
+       "answer_owner_es"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0013",
+    "answer_tenant": "Your relocation assistance or rent waiver equals one month of your rent in effect when notice was issued.",
+    "answer_owner": "Your relocation assistance or rent waiver must equal one month of the tenant's rent in effect when you issued notice."
+   },
+   {
+    "team_rule_id": "r-0014",
+    "answer_tenant": "Your notification or lease provision must be in no less than 12-point type.",
+    "answer_owner": "Your notification or lease provision must be in no less than 12-point type and include the required content."
+   },
+   {
+    "team_rule_id": "r-0015",
+    "answer_tenant": "Your local just cause ordinance applies if it was adopted on or before September 1, 2019.",
+    "answer_owner": "You must follow a local ordinance requiring just cause for termination if adopted on or before September 1, 2019."
+   },
+   {
+    "team_rule_id": "r-0016",
+    "answer_tenant": "You receive $446.00/day plus actual moving expenses per tenant household for temporary displacement of less than 20 days.",
+    "answer_owner": "You must pay $446.00/day plus actual moving expenses per tenant household for temporary displacement of less than 20 days."
+   },
+   {
+    "team_rule_id": "r-0017",
+    "answer_tenant": "Your rent cannot rise over 12 months more than 5 percent plus cost-of-living change, or 10 percent, whichever is lower.",
+    "answer_owner": "You cannot raise rent over 12 months more than 5 percent plus cost-of-living change, or 10 percent, whichever is lower."
+   },
+   {
+    "team_rule_id": "r-0018",
+    "answer_tenant": "Your rent increases are limited to 5% plus percentage change in cost of living, or 10%, whichever is lower.",
+    "answer_owner": "You cannot raise rent more than 5% plus the percentage change in cost of living, or 10%, whichever is lower."
+   },
+   {
+    "team_rule_id": "r-0019",
+    "answer_tenant": "Your landlord must give you 30 days' written advance notice of rent increases of less than 10%.",
+    "answer_owner": "You must give tenants 30 days' written advance notice of rent increases of less than 10%."
+   },
+   {
+    "team_rule_id": "r-0020",
+    "answer_tenant": "You are protected from discrimination based on how you will pay rent, such as vouchers, benefits, or wages.",
+    "answer_owner": "You cannot discriminate against tenants based on how they will pay rent, including vouchers, disability benefits, or wages."
+   },
+   {
+    "team_rule_id": "r-0021",
+    "answer_tenant": "Housing providers cannot consider arrests without conviction, sealed or expunged records, or juvenile justice records about you.",
+    "answer_owner": "You cannot consider arrests without conviction, sealed or expunged records, or juvenile records, or ban everyone with criminal history."
+   },
+   {
+    "team_rule_id": "r-0022",
+    "answer_tenant": "A conviction-based denial of your application must be directly related to your ability to be a good tenant.",
+    "answer_owner": "Your denial based on a conviction must be directly related to the applicant's ability to be a good tenant."
+   },
+   {
+    "team_rule_id": "r-0023",
+    "answer_tenant": "Owners cannot discriminate against or harass you because of race, religion, sex, source of income, disability, or other listed traits.",
+    "answer_owner": "You cannot discriminate against or harass anyone because of race, religion, sex, source of income, disability, or other listed traits."
+   },
+   {
+    "team_rule_id": "r-0024",
+    "answer_tenant": "Owners cannot make written or oral inquiries about your race, religion, sex, national origin, disability, or other listed traits.",
+    "answer_owner": "You cannot make written or oral inquiries about a person's race, religion, sex, national origin, disability, or other listed traits."
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1935,
+  "output_tokens": 3922
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0013",
+    "answer_tenant_es": "Su asistencia de reubicación o exención de renta equivale a un mes de su renta vigente cuando se emitió el aviso.",
+    "answer_owner_es": "Su asistencia de reubicación o exención de renta debe equivaler a un mes de la renta vigente del inquilino cuando usted emitió el aviso."
+   },
+   {
+    "team_rule_id": "r-0014",
+    "answer_tenant_es": "Su notificación o disposición del contrato de arrendamiento debe estar en letra de no menos de 12 puntos.",
+    "answer_owner_es": "Su notificación o disposición del contrato de arrendamiento debe estar en letra de no menos de 12 puntos e incluir el contenido requerido."
+   },
+   {
+    "team_rule_id": "r-0015",
+    "answer_tenant_es": "La ordenanza local de causa justa se aplica si fue adoptada el 1 de septiembre de 2019 o antes.",
+    "answer_owner_es": "Usted debe cumplir una ordenanza local que exija causa justa para la terminación, si fue adoptada el 1 de septiembre de 2019 o antes."
+   },
+   {
+    "team_rule_id": "r-0016",
+    "answer_tenant_es": "Usted recibe $446.00/día más los gastos reales de mudanza por hogar inquilino por desplazamiento temporal de menos de 20 días.",
+    "answer_owner_es": "Usted debe pagar $446.00/día más los gastos reales de mudanza por hogar inquilino por desplazamiento temporal de menos de 20 días."
+   },
+   {
+    "team_rule_id": "r-0017",
+    "answer_tenant_es": "Su renta no puede subir en 12 meses más de 5% más el cambio en el costo de vida, o 10%, lo que sea menor.",
+    "answer_owner_es": "Usted no puede subir la renta en 12 meses más de 5% más el cambio en el costo de vida, o 10%, lo que sea menor."
+   },
+   {
+    "team_rule_id": "r-0018",
+    "answer_tenant_es": "Sus aumentos de renta se limitan a 5% más el cambio porcentual en el costo de vida, o 10%, lo que sea menor.",
+    "answer_owner_es": "Usted no puede subir la renta más de 5% más el cambio porcentual en el costo de vida, o 10%, lo que sea menor."
+   },
+   {
+    "team_rule_id": "r-0019",
+    "answer_tenant_es": "Su arrendador debe darle aviso previo por escrito de 30 días sobre aumentos de renta de menos de 10%.",
+    "answer_owner_es": "Usted debe dar a los inquilinos aviso previo por escrito de 30 días sobre aumentos de renta de menos de 10%."
+   },
+   {
+    "team_rule_id": "r-0020",
+    "answer_tenant_es": "Usted está protegido contra la discriminación por la forma en que pagará la renta, como vales, beneficios o salarios.",
+    "answer_owner_es": "Usted no puede discriminar a los inquilinos por la forma en que pagarán la renta, incluidos vales, beneficios por discapacidad o salarios."
+   },
+   {
+    "team_rule_id": "r-0021",
+    "answer_tenant_es": "Los proveedores de vivienda no pueden considerar arrestos sin condena, registros sellados o eliminados, ni registros de justicia juvenil sobre usted.",
+    "answer_owner_es": "Usted no puede considerar arrestos sin condena, registros sellados o eliminados, ni registros juveniles, ni prohibir el acceso a todas las personas con antecedentes penales."
+   },
+   {
+    "team_rule_id": "r-0022",
+    "answer_tenant_es": "El rechazo de su solicitud basado en una condena debe estar directamente relacionado con su capacidad de ser un buen inquilino.",
+    "answer_owner_es": "Su rechazo basado en una condena debe estar directamente relacionado con la capacidad del solicitante de ser un buen inquilino."
+   },
+   {
+    "team_rule_id": "r-0023",
+    "answer_tenant_es": "Los propietarios no pueden discriminarlo ni acosarlo por raza, religión, sexo, fuente de ingresos, discapacidad u otras características enumeradas.",
+    "answer_owner_es": "Usted no puede discriminar ni acosar a nadie por raza, religión, sexo, fuente de ingresos, discapacidad u otras características enumeradas."
+   },
+   {
+    "team_rule_id": "r-0024",
+    "answer_tenant_es": "Los propietarios no pueden hacer preguntas escritas u orales sobre su raza, religión, sexo, origen nacional, discapacidad u otras características enumeradas.",
+    "answer_owner_es": "Usted no puede hacer preguntas escritas u orales sobre la raza, religión, sexo, origen nacional, discapacidad u otras características enumeradas de una persona."
+   }
+  ]
+ }
+}

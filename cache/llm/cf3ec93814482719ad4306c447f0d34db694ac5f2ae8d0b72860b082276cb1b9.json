@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "3aa69f8a96c0769b43e4b8d30887353c023b3ad867e2b90bcbe6a15b6394afe6",
+  "previous_sha": "19c08c7d45626c36ff6c18e0a594e1d32661b73b77d75f0afd43c609a2cfbaf4",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2038,
+  "output_tokens": 94
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Any lease term that conflicts with the security deposit law, or your waiver of it, is void and unenforceable.",
+  "answer_owner": "You cannot enforce lease terms that conflict with the security deposit law, or any tenant's waiver of its provisions."
+ }
+}

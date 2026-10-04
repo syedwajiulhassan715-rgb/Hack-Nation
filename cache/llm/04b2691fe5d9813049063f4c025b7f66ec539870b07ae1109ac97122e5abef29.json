@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "f4e5a6c9772b6d316c267a4bf656b068b137f7ac30eadc40199c64eaba94a27d",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1706,
+  "output_tokens": 122
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "If your landlord demolishes your Protected Unit for new construction within 5 years after filing the notice with LAHD, you are entitled to relocation under the RPO.",
+  "answer_owner": "You must comply with the RPO's relocation requirements if you demolish a Protected Unit for new construction within 5 years after filing the notice with LAHD."
+ }
+}

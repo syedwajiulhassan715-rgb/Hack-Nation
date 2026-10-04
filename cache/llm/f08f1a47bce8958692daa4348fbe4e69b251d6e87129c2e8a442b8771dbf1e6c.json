@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "105513f4bc25c7ce4bd4436d1792b4d12dc311a052115ecde986a3b20312a16f",
+  "english_sha": "d1d7f267d8639ec09b4c30d07f24482a219cee8a3d42aae424214b9c28decdf2",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 786,
+  "output_tokens": 853
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador debe entregarle un Notice to Quit al menos tres días antes de presentar una demanda de desalojo.",
+  "answer_owner_es": "Usted debe entregar a su inquilino un Notice to Quit al menos tres días antes de demandar por desalojo."
+ }
+}

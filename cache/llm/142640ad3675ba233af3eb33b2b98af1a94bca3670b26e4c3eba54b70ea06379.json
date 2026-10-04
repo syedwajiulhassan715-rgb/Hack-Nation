@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "c09afcc3827e6f6c8fb6a5659601b04ba966f10110917ed76f6edd5eafbd5455",
+  "previous_sha": "507d4b33a51015fb294573253fb136b7bb888ee1683a464fcd77fdba6d1481a5",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2366,
+  "output_tokens": 93
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Once it takes effect, your landlord will be barred from paying for or using a coordinator's services, such as rent software.",
+  "answer_owner": "Once it takes effect, you may not pay for, subscribe to, or otherwise use the services of a coordinator."
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "1f1003e1ae67182b00bf98a7237ef18483b97e80ab6bf52398a26e6f3dcd8cd5",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1664,
+  "output_tokens": 558
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "A pending proposal would ban selling your landlord coordinated pricing algorithms that set or recommend rents.",
+  "answer_owner": null
+ }
+}

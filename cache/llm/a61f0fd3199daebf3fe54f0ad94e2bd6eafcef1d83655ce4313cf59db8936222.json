@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair2",
+  "rule_sha": "169c37ce3a9b95ff48cee76a2fc3766e7b723dbeb9f34135a250ad45a35e5b07",
+  "english_sha": "c5580b476a660d8cb54c40300e523cb00bb74b8f981acd01edf1142a5cad41ac",
+  "previous_sha": "b610ea8230a76358c80441ae0c2260b4378067d2c191093a52a6267c018474d6",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1366,
+  "output_tokens": 1517
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador puede deber tres veces su depósito, más cinco por ciento de interés y costos legales, por infracciones.",
+  "answer_owner_es": "Usted debe pagar tres veces el depósito, más cinco por ciento de interés y costos legales, si infringe las reglas."
+ }
+}

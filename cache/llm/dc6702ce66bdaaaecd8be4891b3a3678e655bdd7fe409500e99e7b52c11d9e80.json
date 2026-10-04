@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "bd6aab7decf66e0bc9d3e9e1f56e7d62ce800e4106c2c36611d6f47a9ff01788",
+  "english_sha": "817ca17e457497ee8c599213668044dc25561aa3c23eddca3a33cc996aa861f7",
+  "previous_sha": "0453d467d5ea5090d8796cb605a1b916569360d1aa64fe0e8488034ddc5eb836",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1291,
+  "output_tokens": 771
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "El aviso o la cláusula del contrato de arrendamiento de su arrendador debe tener letra de al menos 12 puntos.",
+  "answer_owner_es": "Su aviso o cláusula de arrendamiento debe tener letra de al menos 12 puntos e incluir los elementos requeridos."
+ }
+}

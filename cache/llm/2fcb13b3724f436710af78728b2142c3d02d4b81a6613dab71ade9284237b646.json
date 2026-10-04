@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "baa622c623df0f2145737146963761dbee29d8bd360192824c8a63049bd9ea4f",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1542,
+  "output_tokens": 497
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord cannot bring an eviction action under this subsection more than two years after the alleged violation has ended.",
+  "answer_owner": "You cannot bring a removal action under this subsection more than two years after the alleged violation has terminated."
+ }
+}

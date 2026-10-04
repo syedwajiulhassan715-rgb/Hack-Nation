@@ -1,0 +1,181 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_es_v1",
+  "system": "You translate short plain-language lines from a rental housing law app into neutral Latin American Spanish, using \"usted\". The app shows the quoted law and \"Not legal advice.\" next to each line.\n\nTranslate each sentence faithfully as one sentence. Keep every number, date, percentage and dollar amount exactly as written (digits stay digits; do not spell numbers out). Add nothing and leave nothing out. Do not add exemptions or any way to avoid a rule. Keep it short: at most 26 words. Return JSON with one entry per id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant_es",
+       "answer_owner_es"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0068",
+    "answer_tenant": "You are entitled to relocation assistance equal to six times your monthly rent if evicted for illegal occupancy.",
+    "answer_owner": "You must provide relocation assistance equal to six times the tenant’s monthly rent for an illegal occupancy eviction."
+   },
+   {
+    "team_rule_id": "r-0069",
+    "answer_tenant": "Your landlord must serve a Notice to Quit at least 18 months before filing to permanently retire the building.",
+    "answer_owner": "You must serve a Notice to Quit at least 18 months before filing to permanently retire the building."
+   },
+   {
+    "team_rule_id": "r-0070",
+    "answer_tenant": "A court will determine whether the proposed changes are reasonable if your landlord files suit after you refuse.",
+    "answer_owner": "You must give written notice of proposed changes before filing an eviction suit."
+   },
+   {
+    "team_rule_id": "r-0071",
+    "answer_tenant": "Your landlord must serve a Notice to Quit at least one month before filing an eviction suit.",
+    "answer_owner": "You must give written Notice to Cease and serve a Notice to Quit at least one month before filing."
+   },
+   {
+    "team_rule_id": "r-0072",
+    "answer_tenant": "No legal action can be taken against you until your lease expires.",
+    "answer_owner": "You must serve a Notice to Quit at least three years before filing an eviction suit."
+   },
+   {
+    "team_rule_id": "r-0073",
+    "answer_tenant": "Your landlord must serve you a Notice to Quit at least two months before filing for owner-occupancy eviction.",
+    "answer_owner": "You must serve a Notice to Quit at least two months before filing an owner-occupancy eviction suit."
+   },
+   {
+    "team_rule_id": "r-0074",
+    "answer_tenant": "Your landlord must serve you a Notice to Quit three days prior to filing a suit for eviction.",
+    "answer_owner": "You must serve the tenant a Notice to Quit three days prior to filing a suit for eviction."
+   },
+   {
+    "team_rule_id": "r-0075",
+    "answer_tenant": "Your landlord must serve a Notice to Quit at least three days before filing a drug-offense eviction suit.",
+    "answer_owner": "You must serve a Notice to Quit at least three days before filing a drug-offense eviction suit."
+   },
+   {
+    "team_rule_id": "r-0076",
+    "answer_tenant": "Your landlord must serve a Notice to Quit at least three days before filing eviction over assault or threats.",
+    "answer_owner": "You must serve a Notice to Quit at least three days before filing eviction over assault or threats."
+   },
+   {
+    "team_rule_id": "r-0077",
+    "answer_tenant": "Your landlord must serve a Notice to Quit at least three days before filing eviction after a civil liability finding.",
+    "answer_owner": "You must serve a Notice to Quit at least three days before filing eviction after a civil liability finding."
+   },
+   {
+    "team_rule_id": "r-0078",
+    "answer_tenant": "Your landlord must serve a Notice to Quit at least three days before filing eviction over theft of property.",
+    "answer_owner": "You must serve a Notice to Quit at least three days before filing eviction over theft of property."
+   },
+   {
+    "team_rule_id": "r-0080",
+    "answer_tenant": "You can be removed from a landlord-occupied two- or three-family dwelling only when a court issues an eviction order.",
+    "answer_owner": "You must have a court eviction order to remove a tenant from your landlord-occupied two- or three-family dwelling."
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1844,
+  "output_tokens": 3124
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0068",
+    "answer_tenant_es": "Usted tiene derecho a asistencia de reubicación equivalente a seis veces su renta mensual si es desalojado por ocupación ilegal.",
+    "answer_owner_es": "Usted debe proporcionar asistencia de reubicación equivalente a seis veces la renta mensual del inquilino en un desalojo por ocupación ilegal."
+   },
+   {
+    "team_rule_id": "r-0069",
+    "answer_tenant_es": "Su arrendador debe entregar un Aviso de Desocupación al menos 18 meses antes de presentar la demanda para retirar permanentemente el edificio.",
+    "answer_owner_es": "Usted debe entregar un Aviso de Desocupación al menos 18 meses antes de presentar la demanda para retirar permanentemente el edificio."
+   },
+   {
+    "team_rule_id": "r-0070",
+    "answer_tenant_es": "Un tribunal determinará si los cambios propuestos son razonables si su arrendador presenta una demanda después de que usted los rechace.",
+    "answer_owner_es": "Usted debe dar aviso por escrito de los cambios propuestos antes de presentar una demanda de desalojo."
+   },
+   {
+    "team_rule_id": "r-0071",
+    "answer_tenant_es": "Su arrendador debe entregar un Aviso de Desocupación al menos un mes antes de presentar una demanda de desalojo.",
+    "answer_owner_es": "Usted debe dar un Aviso de Cese por escrito y entregar un Aviso de Desocupación al menos un mes antes de presentar la demanda."
+   },
+   {
+    "team_rule_id": "r-0072",
+    "answer_tenant_es": "No se puede tomar ninguna acción legal en su contra hasta que venza su contrato de arrendamiento.",
+    "answer_owner_es": "Usted debe entregar un Aviso de Desocupación al menos tres años antes de presentar una demanda de desalojo."
+   },
+   {
+    "team_rule_id": "r-0073",
+    "answer_tenant_es": "Su arrendador debe entregarle un Aviso de Desocupación al menos dos meses antes de presentar un desalojo por ocupación del propietario.",
+    "answer_owner_es": "Usted debe entregar un Aviso de Desocupación al menos dos meses antes de presentar una demanda de desalojo por ocupación del propietario."
+   },
+   {
+    "team_rule_id": "r-0074",
+    "answer_tenant_es": "Su arrendador debe entregarle un Aviso de Desocupación tres días antes de presentar una demanda de desalojo.",
+    "answer_owner_es": "Usted debe entregar al inquilino un Aviso de Desocupación tres días antes de presentar una demanda de desalojo."
+   },
+   {
+    "team_rule_id": "r-0075",
+    "answer_tenant_es": "Su arrendador debe entregar un Aviso de Desocupación al menos tres días antes de presentar una demanda de desalojo por delito de drogas.",
+    "answer_owner_es": "Usted debe entregar un Aviso de Desocupación al menos tres días antes de presentar una demanda de desalojo por delito de drogas."
+   },
+   {
+    "team_rule_id": "r-0076",
+    "answer_tenant_es": "Su arrendador debe entregar un Aviso de Desocupación al menos tres días antes de presentar un desalojo por agresión o amenazas.",
+    "answer_owner_es": "Usted debe entregar un Aviso de Desocupación al menos tres días antes de presentar un desalojo por agresión o amenazas."
+   },
+   {
+    "team_rule_id": "r-0077",
+    "answer_tenant_es": "Su arrendador debe entregar un Aviso de Desocupación al menos tres días antes de presentar un desalojo después de una determinación de responsabilidad civil.",
+    "answer_owner_es": "Usted debe entregar un Aviso de Desocupación al menos tres días antes de presentar un desalojo después de una determinación de responsabilidad civil."
+   },
+   {
+    "team_rule_id": "r-0078",
+    "answer_tenant_es": "Su arrendador debe entregar un Aviso de Desocupación al menos tres días antes de presentar un desalojo por robo de propiedad.",
+    "answer_owner_es": "Usted debe entregar un Aviso de Desocupación al menos tres días antes de presentar un desalojo por robo de propiedad."
+   },
+   {
+    "team_rule_id": "r-0080",
+    "answer_tenant_es": "Solo se le puede retirar de una vivienda de dos o tres familias ocupada por el arrendador cuando un tribunal emita una orden de desalojo.",
+    "answer_owner_es": "Usted debe tener una orden judicial de desalojo para retirar a un inquilino de su vivienda de dos o tres familias ocupada por el arrendador."
+   }
+  ]
+ }
+}

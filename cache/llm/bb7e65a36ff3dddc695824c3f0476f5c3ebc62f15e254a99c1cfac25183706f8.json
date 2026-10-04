@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "cf0f4ec4d22bf15d3dfd99b3cb00aa311697188c3938c184b867e505aeb579f4",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1664,
+  "output_tokens": 668
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "A pending proposal would make it unlawful to sell, license or otherwise provide an algorithmic device to your landlord.",
+  "answer_owner": "If passed, this proposed bill would bar you from selling, licensing or otherwise providing an algorithmic device to a landlord."
+ }
+}

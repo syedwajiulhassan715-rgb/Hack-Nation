@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "d3f52579020ecd04e6d3cb5ac801a20f49b2ffe8ed2e218e843e06f4d7e89e26",
+  "previous_sha": "6e9ba92de168f44c698f810262feb8e25c10a08026c70b0f82c41265d92b7e85",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2221,
+  "output_tokens": 90
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord must pay you interest of five per cent per year on a deposit held a year or longer.",
+  "answer_owner": "You must pay your tenant five per cent yearly interest, or the lesser bank amount, on deposits held a year or longer."
+ }
+}

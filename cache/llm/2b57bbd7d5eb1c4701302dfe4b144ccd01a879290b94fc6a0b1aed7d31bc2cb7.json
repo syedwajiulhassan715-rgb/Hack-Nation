@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "bf8d53bc04ce619de728f2eb0e97c58b22f5f32a70cb604f4c7c114027053842",
+  "english_sha": "3a816ff839d6996b786c83bb747e99e2de66d725eb8a277093f500b929d28eb8",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 787,
+  "output_tokens": 699
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Lo que usted paga por renunciar al depósito de seguridad, más el depósito, no puede superar 1 mes de renta.",
+  "answer_owner_es": "Usted no puede cobrar en total más de 1 mes de renta entre cuotas de renuncia y depósito de seguridad."
+ }
+}

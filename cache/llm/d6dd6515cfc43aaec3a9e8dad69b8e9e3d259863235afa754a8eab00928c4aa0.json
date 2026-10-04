@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "f35ef6fe0961d765c9b648ff7225f17e53065fb6548dd0c61dd1b12def9e7f00",
+  "previous_sha": "cdfc2ce7c8bebdf7d0001385ed2f9deaac8e5018d3f62ebe1b27973598311fe5",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2213,
+  "output_tokens": 82
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord must make your security deposit plus any interest available within 15 business days after the lease ends.",
+  "answer_owner": "You must make the deposit and interest available within 15 business days and give written pickup notice within three business days."
+ }
+}

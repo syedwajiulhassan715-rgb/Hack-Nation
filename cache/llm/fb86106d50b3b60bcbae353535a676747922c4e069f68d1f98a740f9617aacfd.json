@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "bf2ace5fdf68d5e5f942703871195b1577e83d02417f2f7eba03c95577d55bed",
+  "english_sha": "99a4a152cf787724070e6401f66affb29137f76f85099594926c8555ab7c63c3",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 910,
+  "output_tokens": 2231
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Si demuelen su unidad para reemplazarla con construcción nueva, su hogar de bajos ingresos debe recibir pago de reubicación.",
+  "answer_owner_es": "Usted debe pagar reubicación a hogares de bajos ingresos desplazados por demolición cuando reemplazará las unidades con construcción nueva."
+ }
+}

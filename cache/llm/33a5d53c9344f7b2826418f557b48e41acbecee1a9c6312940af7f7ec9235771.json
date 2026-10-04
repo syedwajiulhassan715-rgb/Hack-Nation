@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "6cd67ee94b8e3fedb7436668c1ad4a0acc56d2950aa553f9c39938343c4f8544",
+  "english_sha": "1848779d2e15560fdb3d17e8ca929d835fb958aa749a6625b1f751ac7f347ffb",
+  "previous_sha": "d093f2d9ab0814f53352586bffb1ba725e77a5c6accc8e7d50c30bbfe95855b7",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1315,
+  "output_tokens": 673
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador debe entregarle un Aviso de Desalojo al menos un mes antes de presentar este tipo de demanda.",
+  "answer_owner_es": "Usted debe entregar al inquilino un Aviso de Desalojo al menos un mes antes de presentar este tipo de demanda."
+ }
+}

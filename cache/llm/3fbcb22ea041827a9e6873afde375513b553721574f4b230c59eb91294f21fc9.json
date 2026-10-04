@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "baa622c623df0f2145737146963761dbee29d8bd360192824c8a63049bd9ea4f",
+  "english_sha": "62edb37d0b84f2c3cd3cc6cf1359a2e3cf85bb9432dd1c942d82822af1be3187",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 796,
+  "output_tokens": 746
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador no puede iniciar un desalojo bajo esta subsección más de dos años después de terminada la presunta violación.",
+  "answer_owner_es": "Usted no puede iniciar un desalojo bajo esta subsección más de dos años después de terminada la presunta violación."
+ }
+}

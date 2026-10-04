@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "3606541c8e16ce7fa2299808ed6f3884622a00440e9025dfc7468535bdee4640",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1472,
+  "output_tokens": 96
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your lease cannot call your security deposit \"nonrefundable,\" because current law forbids that wording in leases and rental agreements.",
+  "answer_owner": "You may not put a provision in your lease or rental agreement calling any security \"nonrefundable.\""
+ }
+}

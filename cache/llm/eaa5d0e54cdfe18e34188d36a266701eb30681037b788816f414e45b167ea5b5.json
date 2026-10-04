@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "e20d8bfa3ab01388225e80ae080a450478eb588d515691cf74339adc33ca1038",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1641,
+  "output_tokens": 125
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord's notice ending your tenancy for a lease breach must clearly describe the breach, and they cannot evict you for breaches causing no actual harm.",
+  "answer_owner": "You must clearly describe the alleged breach in your termination notice, show the tenant's behavior was unreasonable, and may not evict for breaches causing no actual harm."
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "ca7474330965b4f81599cc1fdef1496d60edc8a96d03e4c8f4b062c0917a4799",
+  "english_sha": "5eab918be783cf105d7527b680200ee009b7209656aaac27029e4e646af52eff",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 818,
+  "output_tokens": 1848
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador debe devolverle el depósito de seguridad o saldo, con intereses, dentro de treinta días tras terminar su arrendamiento.",
+  "answer_owner_es": "Usted debe devolver el depósito de seguridad del inquilino o saldo, con intereses, en treinta días tras finalizar el arrendamiento."
+ }
+}

@@ -1,0 +1,181 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_es_v1",
+  "system": "You translate short plain-language lines from a rental housing law app into neutral Latin American Spanish, using \"usted\". The app shows the quoted law and \"Not legal advice.\" next to each line.\n\nTranslate each sentence faithfully as one sentence. Keep every number, date, percentage and dollar amount exactly as written (digits stay digits; do not spell numbers out). Add nothing and leave nothing out. Do not add exemptions or any way to avoid a rule. Keep it short: at most 26 words. Return JSON with one entry per id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant_es",
+       "answer_owner_es"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0025",
+    "answer_tenant": "Your landlord cannot use an income standard that ignores the combined income of people living or proposing to live together.",
+    "answer_owner": "You cannot use an income standard that fails to account for the combined income of people residing together."
+   },
+   {
+    "team_rule_id": "r-0028",
+    "answer_tenant": "Many landlords may charge you only one month’s rent as security for furnished or unfurnished units from July 1, 2024.",
+    "answer_owner": "You may only charge one month’s rent as a security deposit for unfurnished and furnished units from July 1, 2024."
+   },
+   {
+    "team_rule_id": "r-0029",
+    "answer_tenant": "Your landlord cannot demand or receive security above one month’s rent, in addition to any rent for the first month.",
+    "answer_owner": "You cannot demand or receive security above one month’s rent, in addition to any rent for the first month."
+   },
+   {
+    "team_rule_id": "r-0030",
+    "answer_tenant": "If you are a service member, your landlord must give a written statement of any higher security amount and why.",
+    "answer_owner": "If you charge a service member higher security, you must give a written statement of the amount and reason."
+   },
+   {
+    "team_rule_id": "r-0031",
+    "answer_tenant": "Your landlord cannot demand security above two months’ rent plus any first month’s rent if they meet both listed requirements.",
+    "answer_owner": "You cannot demand security above two months’ rent plus any first month’s rent if you meet both listed requirements."
+   },
+   {
+    "team_rule_id": "r-0032",
+    "answer_tenant": "Your landlord cannot claim against you or your security for preexisting damage or ordinary wear and tear.",
+    "answer_owner": "You cannot claim against the tenant or the security for preexisting damage or ordinary wear and tear."
+   },
+   {
+    "team_rule_id": "r-0033",
+    "answer_tenant": "Your landlord must notify you in writing of your option to request an initial inspection and right to be present.",
+    "answer_owner": "You must notify the tenant in writing of the option to request an initial inspection and to be present."
+   },
+   {
+    "team_rule_id": "r-0034",
+    "answer_tenant": "Your landlord must photograph the unit before and after any repairs or cleanings they deduct from your security deposit.",
+    "answer_owner": "You must photograph the unit before and after any repairs or cleanings you deduct from the security deposit."
+   },
+   {
+    "team_rule_id": "r-0035",
+    "answer_tenant": "Your landlord must give you an itemized statement and return any remaining security within 21 calendar days after you vacate.",
+    "answer_owner": "You must give the tenant an itemized statement and return remaining security within 21 calendar days after the tenant vacates."
+   },
+   {
+    "team_rule_id": "r-0037",
+    "answer_tenant": "Your lease cannot contain a provision calling any security \"nonrefundable.\"",
+    "answer_owner": "You must not put a provision in a lease or rental agreement calling any security \"nonrefundable.\""
+   },
+   {
+    "team_rule_id": "r-0040",
+    "answer_tenant": "You pay a broker fee only if you originally engaged and contracted with the broker.",
+    "answer_owner": "You must not require a tenant to pay a broker fee unless the tenant originally engaged the broker."
+   },
+   {
+    "team_rule_id": "r-0042",
+    "answer_tenant": "No one may ask about your race, color, national origin, sex, age, or marital status when you seek to rent.",
+    "answer_owner": "You must not make or cause any inquiry about an applicant's race, color, national origin, sex, age, or marital status."
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1852,
+  "output_tokens": 1617
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0025",
+    "answer_tenant_es": "Su arrendador no puede usar un estándar de ingresos que ignore los ingresos combinados de las personas que viven juntas o proponen vivir juntas.",
+    "answer_owner_es": "Usted no puede usar un estándar de ingresos que no tenga en cuenta los ingresos combinados de las personas que residen juntas."
+   },
+   {
+    "team_rule_id": "r-0028",
+    "answer_tenant_es": "Muchos arrendadores pueden cobrarle solo el alquiler de un mes como garantía por unidades amuebladas o sin amueblar a partir del 1 de julio de 2024.",
+    "answer_owner_es": "Usted solo puede cobrar el alquiler de un mes como depósito de garantía por unidades sin amueblar y amuebladas a partir del 1 de julio de 2024."
+   },
+   {
+    "team_rule_id": "r-0029",
+    "answer_tenant_es": "Su arrendador no puede exigir ni recibir una garantía superior al alquiler de un mes, además de cualquier alquiler del primer mes.",
+    "answer_owner_es": "Usted no puede exigir ni recibir una garantía superior al alquiler de un mes, además de cualquier alquiler del primer mes."
+   },
+   {
+    "team_rule_id": "r-0030",
+    "answer_tenant_es": "Si usted es miembro del servicio militar, su arrendador debe darle una declaración escrita de cualquier monto de garantía mayor y su motivo.",
+    "answer_owner_es": "Si usted cobra una garantía mayor a un miembro del servicio militar, debe darle una declaración escrita del monto y del motivo."
+   },
+   {
+    "team_rule_id": "r-0031",
+    "answer_tenant_es": "Su arrendador no puede exigir una garantía superior a dos meses de alquiler más cualquier alquiler del primer mes si cumple ambos requisitos indicados.",
+    "answer_owner_es": "Usted no puede exigir una garantía superior a dos meses de alquiler más cualquier alquiler del primer mes si cumple ambos requisitos indicados."
+   },
+   {
+    "team_rule_id": "r-0032",
+    "answer_tenant_es": "Su arrendador no puede reclamarle a usted ni a su garantía por daños preexistentes ni por el desgaste normal.",
+    "answer_owner_es": "Usted no puede reclamar contra el inquilino ni contra la garantía por daños preexistentes ni por el desgaste normal."
+   },
+   {
+    "team_rule_id": "r-0033",
+    "answer_tenant_es": "Su arrendador debe notificarle por escrito su opción de solicitar una inspección inicial y su derecho a estar presente.",
+    "answer_owner_es": "Usted debe notificar al inquilino por escrito la opción de solicitar una inspección inicial y de estar presente."
+   },
+   {
+    "team_rule_id": "r-0034",
+    "answer_tenant_es": "Su arrendador debe fotografiar la unidad antes y después de cualquier reparación o limpieza que deduzca de su depósito de garantía.",
+    "answer_owner_es": "Usted debe fotografiar la unidad antes y después de cualquier reparación o limpieza que deduzca del depósito de garantía."
+   },
+   {
+    "team_rule_id": "r-0035",
+    "answer_tenant_es": "Su arrendador debe entregarle una declaración detallada y devolverle la garantía restante dentro de 21 días calendario después de que usted desocupe.",
+    "answer_owner_es": "Usted debe entregar al inquilino una declaración detallada y devolver la garantía restante dentro de 21 días calendario después de que el inquilino desocupe."
+   },
+   {
+    "team_rule_id": "r-0037",
+    "answer_tenant_es": "Su contrato de arrendamiento no puede contener una disposición que declare cualquier garantía como \"no reembolsable\".",
+    "answer_owner_es": "Usted no debe incluir en un contrato de arrendamiento o alquiler una disposición que declare cualquier garantía como \"no reembolsable\"."
+   },
+   {
+    "team_rule_id": "r-0040",
+    "answer_tenant_es": "Usted paga una tarifa de corredor solo si usted contrató originalmente al corredor.",
+    "answer_owner_es": "Usted no debe exigir a un inquilino que pague una tarifa de corredor, a menos que el inquilino haya contratado originalmente al corredor."
+   },
+   {
+    "team_rule_id": "r-0042",
+    "answer_tenant_es": "Nadie puede preguntarle sobre su raza, color, origen nacional, sexo, edad o estado civil cuando usted busca alquilar.",
+    "answer_owner_es": "Usted no debe hacer ni provocar ninguna consulta sobre la raza, el color, el origen nacional, el sexo, la edad o el estado civil de un solicitante."
+   }
+  ]
+ }
+}

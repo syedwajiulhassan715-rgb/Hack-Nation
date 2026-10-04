@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "bd23fbc33868d256579416c3eea3e8aa0eccb0ad53f5872065d4f3df9de8a5e7",
+  "english_sha": "ac649e1f9d78ce56fef0e4dc6d99f22bec48ae908535f55f49c03ca5183eb7bc",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 813,
+  "output_tokens": 1382
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Si pagó una tarifa de evaluación, su arrendador debe darle su informe de crédito dentro de siete días de recibirlo.",
+  "answer_owner_es": "Si un solicitante pagó una tarifa de evaluación, debe darle su informe de crédito dentro de siete días de recibirlo."
+ }
+}

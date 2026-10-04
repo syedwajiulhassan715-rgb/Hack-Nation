@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "977b245648bad904f235a04b6ede626ac8c0fd6214033cae91b30a66f0caa833",
+  "english_sha": "5be46362f3939106637b4e3514a31720cc6aa02d539b8b0539748c9c2edf6524",
+  "previous_sha": "ddeaf46e8435be42fc37b20fe07168a575d256b3b8d88e0e7dcb74148b9997c9",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1302,
+  "output_tokens": 405
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Antes de transferir voluntariamente su interés en la propiedad, su arrendador debe entregar a su sucesor una declaración por escrito.",
+  "answer_owner_es": "Antes de transferir voluntariamente su interés en la propiedad, usted debe entregar a su sucesor una declaración por escrito."
+ }
+}

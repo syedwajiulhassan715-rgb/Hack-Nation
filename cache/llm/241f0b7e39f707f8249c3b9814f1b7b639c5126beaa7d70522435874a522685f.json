@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "ab2be0783b65fa7033b67c41251a1a9f4dd1ec7bf27848eb720ad96915ee05a3",
+  "english_sha": "ff19ca363ac58b08e02edf305eb805312eb07e68b7439c323a67cd4921271e46",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 774,
+  "output_tokens": 701
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "El estándar de ingresos de su arrendador debe contar los ingresos combinados de quienes viven o planean vivir juntos.",
+  "answer_owner_es": "Usted no puede usar un estándar de ingresos que no cuente los ingresos combinados de las personas que viven juntas."
+ }
+}

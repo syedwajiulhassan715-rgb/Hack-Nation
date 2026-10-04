@@ -1,0 +1,151 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_es_v1",
+  "system": "You translate short plain-language lines from a rental housing law app into neutral Latin American Spanish, using \"usted\". The app shows the quoted law and \"Not legal advice.\" next to each line.\n\nTranslate each sentence faithfully as one sentence. Keep every number, date, percentage and dollar amount exactly as written (digits stay digits; do not spell numbers out). Add nothing and leave nothing out. Do not add exemptions or any way to avoid a rule. Keep it short: at most 26 words. Return JSON with one entry per id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant_es",
+       "answer_owner_es"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0173",
+    "answer_tenant": "Your landlord cannot end your tenancy without just cause stated in a written notice after 30 days.",
+    "answer_owner": "You cannot terminate a tenancy without just cause stated in a written notice after 30 days."
+   },
+   {
+    "team_rule_id": "r-0174",
+    "answer_tenant": "Your rent increase cannot exceed 3% of your current rent or 80% of the CPI change, whichever is less.",
+    "answer_owner": "Your rent increase cannot exceed 3% of the current rent or 80% of the CPI change, whichever is less."
+   },
+   {
+    "team_rule_id": "r-0175",
+    "answer_tenant": "Your rent increase cannot exceed the lower of 3% per year or 80% of the Consumer Price Index change.",
+    "answer_owner": "Your rent increase cannot exceed the lower of 3% per year or 80% of the Consumer Price Index change."
+   },
+   {
+    "team_rule_id": "r-0176",
+    "answer_tenant": "Your landlord must give you a Notice of Tenant's Rights and Resources when planning to end your tenancy agreement.",
+    "answer_owner": "You must give renters a Notice of Tenant's Rights and Resources when planning to end a tenancy agreement."
+   },
+   {
+    "team_rule_id": "r-0177",
+    "answer_tenant": "Your landlord must use an online form to provide your contact information and upload a copy of your notice.",
+    "answer_owner": "You must use an online form to provide tenant contact information and upload your Notice to Quit or Non-renewal."
+   },
+   {
+    "team_rule_id": "r-0178",
+    "answer_tenant": "Your landlord must give you a Notice of Tenants' Rights and Resources when starting eviction or declining renewal.",
+    "answer_owner": "You must give tenants a Notice of Tenants' Rights and Resources when starting eviction or declining renewal."
+   },
+   {
+    "team_rule_id": "r-0180",
+    "answer_tenant": "Housing providers receiving DND funding will not deny you housing under a blanket arrest or conviction policy.",
+    "answer_owner": "If you receive DND funding, you must not use a blanket policy denying housing over arrests or convictions."
+   },
+   {
+    "team_rule_id": "r-0181",
+    "answer_tenant": "Your credit history may only replace missing rental history when judging your ability to pay rent.",
+    "answer_owner": "You may use an applicant's credit history only in place of rental history, when rental history is unavailable."
+   },
+   {
+    "team_rule_id": "r-0183",
+    "answer_tenant": "Any standard used to select applicants must be applied equally and uniformly to you and all other applicants.",
+    "answer_owner": "You must apply any standard you use to select applicants equally and uniformly to all applicants."
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1555,
+  "output_tokens": 2699
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0173",
+    "answer_tenant_es": "Su arrendador no puede terminar su arrendamiento sin causa justificada indicada en un aviso por escrito después de 30 días.",
+    "answer_owner_es": "Usted no puede terminar un arrendamiento sin causa justificada indicada en un aviso por escrito después de 30 días."
+   },
+   {
+    "team_rule_id": "r-0174",
+    "answer_tenant_es": "Su aumento de renta no puede exceder el 3% de su renta actual o el 80% del cambio en el CPI, lo que sea menor.",
+    "answer_owner_es": "Su aumento de renta no puede exceder el 3% de la renta actual o el 80% del cambio en el CPI, lo que sea menor."
+   },
+   {
+    "team_rule_id": "r-0175",
+    "answer_tenant_es": "Su aumento de renta no puede exceder el menor entre el 3% anual o el 80% del cambio en el Índice de Precios al Consumidor.",
+    "answer_owner_es": "Su aumento de renta no puede exceder el menor entre el 3% anual o el 80% del cambio en el Índice de Precios al Consumidor."
+   },
+   {
+    "team_rule_id": "r-0176",
+    "answer_tenant_es": "Su arrendador debe entregarle un Aviso de Derechos y Recursos del Inquilino cuando planee terminar su contrato de arrendamiento.",
+    "answer_owner_es": "Usted debe entregar a los inquilinos un Aviso de Derechos y Recursos del Inquilino cuando planee terminar un contrato de arrendamiento."
+   },
+   {
+    "team_rule_id": "r-0177",
+    "answer_tenant_es": "Su arrendador debe usar un formulario en línea para proporcionar su información de contacto y subir una copia de su aviso.",
+    "answer_owner_es": "Usted debe usar un formulario en línea para proporcionar la información de contacto del inquilino y subir su Aviso para Desocupar o de No Renovación."
+   },
+   {
+    "team_rule_id": "r-0178",
+    "answer_tenant_es": "Su arrendador debe entregarle un Aviso de Derechos y Recursos de los Inquilinos al iniciar un desalojo o negarse a renovar.",
+    "answer_owner_es": "Usted debe entregar a los inquilinos un Aviso de Derechos y Recursos de los Inquilinos al iniciar un desalojo o negarse a renovar."
+   },
+   {
+    "team_rule_id": "r-0180",
+    "answer_tenant_es": "Los proveedores de vivienda que reciben fondos del DND no le negarán vivienda bajo una política general de arrestos o condenas.",
+    "answer_owner_es": "Si usted recibe fondos del DND, no debe usar una política general que niegue vivienda por arrestos o condenas."
+   },
+   {
+    "team_rule_id": "r-0181",
+    "answer_tenant_es": "Su historial crediticio solo puede sustituir un historial de alquiler faltante al evaluar su capacidad de pagar la renta.",
+    "answer_owner_es": "Usted solo puede usar el historial crediticio de un solicitante en lugar del historial de alquiler, cuando este no esté disponible."
+   },
+   {
+    "team_rule_id": "r-0183",
+    "answer_tenant_es": "Cualquier criterio usado para seleccionar solicitantes debe aplicarse de manera igual y uniforme a usted y a todos los demás solicitantes.",
+    "answer_owner_es": "Usted debe aplicar cualquier criterio que use para seleccionar solicitantes de manera igual y uniforme a todos los solicitantes."
+   }
+  ]
+ }
+}

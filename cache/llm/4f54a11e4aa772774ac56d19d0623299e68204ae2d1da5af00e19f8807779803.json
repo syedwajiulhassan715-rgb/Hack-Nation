@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "80dc94d57a22396e13c20084709821778d1e86822d194d6245b05cbfa1c87148",
+  "english_sha": "337f233c2896e52e8a3b5fd44026e0a84a820af16d45ab732762ee443e39cc09",
+  "previous_sha": "48dc36ec19353ea248a7ae30e499cb4d40fcce0635f52349618f0575c6d30247",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1318,
+  "output_tokens": 906
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Si incendio, inundación, condenación o evacuación lo desplazan, su arrendador debe devolverle el depósito de seguridad en 5 días hábiles.",
+  "answer_owner_es": "Debe devolver el depósito de seguridad en 5 días hábiles si incendio, inundación, condenación o evacuación desplazan a su inquilino."
+ }
+}

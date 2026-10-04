@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "deec90647b02f7ebc986b49682159470db318fd811da455f7068659774ce8104",
+  "previous_sha": "81fa4fdcd5f02b4e5cf95950f79de2311b0baad1e26fdf72ed1476faaed20942",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2172,
+  "output_tokens": 84
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord cannot require you to take a drug or alcohol test or request consent for treatment facility records.",
+  "answer_owner": "You may not require applicants to take a drug or alcohol test or request consent for treatment facility records."
+ }
+}

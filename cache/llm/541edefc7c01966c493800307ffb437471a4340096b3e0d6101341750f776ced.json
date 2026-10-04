@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "fd5bbf54a8a2d310bd10f0744dad8b8464b5a34d19a6d70ca698c4c3ef151974",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1756,
+  "output_tokens": 973
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord may withdraw a conditional offer over your criminal record only if necessary for a substantial, legitimate, nondiscriminatory interest.",
+  "answer_owner": "You may not withdraw a conditional offer over criminal record unless necessary for a substantial, legitimate, nondiscriminatory interest."
+ }
+}

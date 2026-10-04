@@ -1,0 +1,229 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_v1",
+  "system": "You write the plain-language line for a rental housing law app. The app always shows the quoted law, its citation and \"Not legal advice.\" next to your sentence.\n\nFor each rule you get its quoted text (the only source of law you may use) and a few structured fields. Write two sentences:\n- answer_tenant: addressed to a tenant (\"you\" = the tenant).\n- answer_owner: addressed to the landlord or property owner (\"you\" = the owner).\n\nRules for every sentence:\n1. One sentence, at most 20 words, containing \"you\" or \"your\".\n2. Start with the answer itself (e.g. \"Your landlord must...\", \"You must...\", \"You can...\"). No preamble such as \"Under this law\", \"This rule\" or \"According to\".\n3. Use only what the quoted text says. Add no facts, conditions, deadlines or remedies that are not in it. If the quote is too thin to say anything useful (for example only a bill title), return null for that sentence.\n4. Numbers, dates, percentages and dollar amounts: copy them exactly as they appear in the quote or key_value. Never compute, convert, round or combine them. If unsure, leave the number out.\n5. Owner sentences state obligations or prohibitions only. Never mention exemptions, exceptions, how a rule might not apply, or any way to avoid, get around or work around a rule. Tenant sentences state rights and protections, also without exemption talk.\n6. Status: \"pending\" means a bill or proposal that is not law, so say it is proposed and would apply only if enacted; \"not_yet_effective\" means enacted but not yet in effect, so say it is not in effect yet (no date unless the quote states it); \"in_force\" is present tense.\n7. Do not name the jurisdiction or the citation; the app shows them. Do not give legal advice, promise outcomes or say anyone is compliant.\n\nReturn JSON with one entry per rule id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant",
+       "answer_owner"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0121",
+    "category": "rent_increase_limits",
+    "level": "city",
+    "status": "in_force",
+    "title": "Annual General Adjustment (AGA) cap of 5% (Measure BB)",
+    "key_value": "Maximum AGA is 5%",
+    "quoted_span": "The maximum AGA is 5%. This means that, if the formula in the Rent Ordinance results in an AGA that is greater than 5%, the AGA approved by the Board for that year can be no more than 5%."
+   },
+   {
+    "team_rule_id": "r-0122",
+    "category": "rent_increase_limits",
+    "level": "city",
+    "status": "in_force",
+    "title": "2026 Annual General Adjustment (AGA) Order (Rent Board Regulation 1148)",
+    "key_value": "1.0% (65% of the increase in the Consumer Price Index (CPI) for All Urban Consumers in the Bay Area)",
+    "quoted_span": "At its regular meeting on October 16, 2025, the Berkeley Rent Stabilization Board adopted the Annual General Adjustment (AGA) Order for Year 2026 which will allow eligible landlords to increase the 2025 permanent rent ceilings by 1.0% no earlier than January 1, 2026."
+   },
+   {
+    "team_rule_id": "r-0123",
+    "category": "rent_increase_limits",
+    "level": "city",
+    "status": "in_force",
+    "title": "Rent Stabilization and Eviction for Just Cause Ordinance – rent control coverage",
+    "key_value": null,
+    "quoted_span": "Most units in multifamily properties built before 1980** Fully Covered Yes Yes Yes Yes"
+   },
+   {
+    "team_rule_id": "r-0124",
+    "category": "screening_restrictions",
+    "level": "city",
+    "status": "in_force",
+    "title": "Ronald V. Dellums Fair Chance Access to Housing Ordinance",
+    "key_value": null,
+    "quoted_span": "The Fair Chance Access to Housing Ordinance prohibits rental housing providers in Berkeley from asking about and using criminal history and/or criminal background checks in their rental housing advertising, applications, tenant selection process, or decision-making."
+   },
+   {
+    "team_rule_id": "r-0125",
+    "category": "screening_restrictions",
+    "level": "city",
+    "status": "in_force",
+    "title": "Fair Chance Ordinance - Written Notice and Opportunity to Respond",
+    "key_value": null,
+    "quoted_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond."
+   },
+   {
+    "team_rule_id": "r-0126",
+    "category": "security_deposits",
+    "level": "city",
+    "status": "in_force",
+    "title": "Security deposit interest (Berkeley Rent Ordinance)",
+    "key_value": null,
+    "quoted_span": "For tenancies in units fully or partially covered by Berkeley's Rent Ordinance, landlords must pay tenants interest on their security deposit at the end of each year and a prorated amount if the tenant moves out before the end of the year."
+   },
+   {
+    "team_rule_id": "r-0127",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Just Cause Ordinance (JCO)",
+    "key_value": null,
+    "quoted_span": "It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions."
+   },
+   {
+    "team_rule_id": "r-0128",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Evictions for Non-Payment of Rent threshold",
+    "key_value": "Amount owed must exceed the Fair Market Rent (FMR) for the unit's bedroom size",
+    "quoted_span": "Effective March 27, 2023, landlords may not evict a tenant who falls behind in rent unless the tenant owes an amount higher than the Fair Market Rent (FMR). The FMR depends on the bedroom size of the rental unit."
+   },
+   {
+    "team_rule_id": "r-0129",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Eviction Notices Filed with LAHD",
+    "key_value": "three (3) business days",
+    "quoted_span": "Applies to all JCO & RSO rental properties – All eviction notices issued to tenants in the City of Los Angeles must be filed with LAHD within three (3) business days of service on the tenant."
+   },
+   {
+    "team_rule_id": "r-0130",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Filing of eviction notices with LAHD",
+    "key_value": "Within three (3) business days of service on the tenant",
+    "quoted_span": "must be filed with the Los Angeles Housing Department (LAHD) within"
+   },
+   {
+    "team_rule_id": "r-0131",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "RSO legal reasons for eviction and no-fault eviction requirements",
+    "key_value": "30-day and 60-day written notice (some evictions require 120-day notice or up to a 1-year extension)",
+    "quoted_span": "Give the tenant a 30-day and 60-day written notice (some evictions require 120-day notice or up to a 1-year extension)."
+   },
+   {
+    "team_rule_id": "r-0132",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "No-fault eviction relocation assistance and Declaration of Intent to Evict filing (RSO & JCO)",
+    "key_value": null,
+    "quoted_span": "Failure to file the Landlord Declaration with the LAHD makes the eviction a violation of the RSO or JCO. Notices to terminate tenancy can only be served on the tenant after the landlord files the Declaration with LAHD, and a copy of the notice must be filed with LAHD no later than 3 days after it is served."
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 3177,
+  "output_tokens": 5997
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0121",
+    "answer_tenant": "Your annual general adjustment (AGA) approved by the Board can be no more than 5%.",
+    "answer_owner": "Your annual general adjustment (AGA) approved by the Board can be no more than 5%."
+   },
+   {
+    "team_rule_id": "r-0122",
+    "answer_tenant": "Your landlord cannot raise the 2025 permanent rent ceiling by 1.0% before January 1, 2026.",
+    "answer_owner": "Your 2025 permanent rent ceiling increase of 1.0% cannot take effect before January 1, 2026."
+   },
+   {
+    "team_rule_id": "r-0123",
+    "answer_tenant": null,
+    "answer_owner": null
+   },
+   {
+    "team_rule_id": "r-0124",
+    "answer_tenant": "Your housing provider cannot ask about or use criminal history in applications, tenant selection, or decisions.",
+    "answer_owner": "You must not ask about or use criminal history or background checks in advertising, applications, tenant selection, or decisions."
+   },
+   {
+    "team_rule_id": "r-0125",
+    "answer_tenant": "Your landlord must give you written notice and a chance to respond when acting on criminal history.",
+    "answer_owner": "You must give an applicant or tenant written notice and a chance to respond when acting on criminal history."
+   },
+   {
+    "team_rule_id": "r-0126",
+    "answer_tenant": "Your landlord must pay you yearly security deposit interest, prorated if you move out early, in covered units.",
+    "answer_owner": "You must pay tenants yearly security deposit interest, prorated if they move out early, in covered units."
+   },
+   {
+    "team_rule_id": "r-0127",
+    "answer_tenant": "Your landlord cannot end your tenancy without just cause and must provide relocation assistance for no-fault evictions.",
+    "answer_owner": "You must not terminate a tenancy without just cause and must provide relocation assistance for no-fault evictions."
+   },
+   {
+    "team_rule_id": "r-0128",
+    "answer_tenant": "Your landlord cannot evict you for unpaid rent unless you owe more than the Fair Market Rent for your unit.",
+    "answer_owner": "You may not evict a tenant for unpaid rent unless the amount owed is higher than the Fair Market Rent."
+   },
+   {
+    "team_rule_id": "r-0129",
+    "answer_tenant": "Your landlord must file any eviction notice issued to you with LAHD within three (3) business days of serving you.",
+    "answer_owner": "You must file every eviction notice with LAHD within three (3) business days of serving the tenant."
+   },
+   {
+    "team_rule_id": "r-0130",
+    "answer_tenant": null,
+    "answer_owner": null
+   },
+   {
+    "team_rule_id": "r-0131",
+    "answer_tenant": "Your landlord must give you a 30-day and 60-day written notice, and some evictions require 120-day notice.",
+    "answer_owner": "You must give the tenant a 30-day and 60-day written notice, and some evictions require 120-day notice."
+   },
+   {
+    "team_rule_id": "r-0132",
+    "answer_tenant": "Your landlord can serve a termination notice only after filing the Declaration with LAHD.",
+    "answer_owner": "You must file the Declaration with LAHD before serving notice, then file a copy no later than 3 days after."
+   }
+  ]
+ }
+}

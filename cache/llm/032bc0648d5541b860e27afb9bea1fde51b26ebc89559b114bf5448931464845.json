@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "830ef4e265f7015ba4641d6ac85cfa1aa39f77e63d94d7147f6c1c9aeadba7dd",
+  "english_sha": "b16f3b062e2c0f9c5e9a20155a8d77b2c18c778e3969a11dc22fc1a91be921bb",
+  "previous_sha": "9c25b1d595f998b829f2ad9d52636d8cc13945c53d5b2fff746c9e1246c15ab7",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1325,
+  "output_tokens": 2444
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador debe avisarle por escrito mínimo 30 o 60 días antes de terminar, en letra mínima de 12 puntos.",
+  "answer_owner_es": "Debe avisar por escrito a su inquilino mínimo 30 o 60 días antes de terminar, letra mínima de 12 puntos."
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair2",
+  "rule_sha": "719bfc908677ef3ab9da15aa8977c64093b3c1bf46032c034fca0da8e1ffd6f4",
+  "previous_sha": "8b115cae36160fa660b77735b02e50e8c43ff0e77e129a7f83eb9b91b31d70ec",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2280,
+  "output_tokens": 99
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "If your landlord ends your tenancy without fault, you get 3 months of relocation assistance or your final 3 months' rent waived.",
+  "answer_owner": "You must provide 3 months of relocation assistance or waive the final 3 months of rent for no-fault terminations."
+ }
+}

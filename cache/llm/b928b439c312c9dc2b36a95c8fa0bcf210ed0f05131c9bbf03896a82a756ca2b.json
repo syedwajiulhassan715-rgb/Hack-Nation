@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "5b05c4fb79f5969f7cbb1ee82365f31cc569c466c5bd72f88a59f1293434e422",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1718,
+  "output_tokens": 544
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Interest on your security deposit belongs to you and must be paid in cash or credited toward rent.",
+  "answer_owner": "You must pay the tenant interest earned on the security deposit in cash or credit it toward rent."
+ }
+}

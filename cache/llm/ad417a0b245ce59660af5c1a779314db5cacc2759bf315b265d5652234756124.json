@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "8408edfb05514abd2ba3b0b951cfc94bddeae937a32e8b24e8aaeedb5245e761",
+  "english_sha": "5b2795e1bbaed074eb237b784ef2a0ab1afa9f4bceb495c19b9cbb9e18454e7a",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 805,
+  "output_tokens": 130
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador debe pagarle intereses sobre su depósito de garantía cada año, de forma proporcional si usted se muda antes de fin de año.",
+  "answer_owner_es": "Usted debe pagar a sus inquilinos intereses sobre su depósito de garantía cada año, de forma proporcional si se mudan antes de fin de año."
+ }
+}

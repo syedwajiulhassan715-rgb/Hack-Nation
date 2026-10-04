@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "25a64c89abf3538ea9f5a17c8eebaf9991b9d22f589cc3b17746eb674b45fec0",
+  "english_sha": "ef0593437397c7b09ed4a29af84222b7c3f81f9c1eb801dd6e75caf52be2d8dc",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 770,
+  "output_tokens": 414
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "La discriminación es ilegal cuando usted alquila, compra, vende u obtiene financiamiento para vivienda en Boston.",
+  "answer_owner_es": "Usted no puede discriminar al alquilar, comprar, vender u obtener financiamiento para cualquier vivienda en Boston."
+ }
+}

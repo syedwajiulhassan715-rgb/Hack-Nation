@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "ab2be0783b65fa7033b67c41251a1a9f4dd1ec7bf27848eb720ad96915ee05a3",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1513,
+  "output_tokens": 703
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord's income standard must count the combined income of people who live or plan to live together.",
+  "answer_owner": "You may not use an income standard that fails to count the combined income of people residing together."
+ }
+}

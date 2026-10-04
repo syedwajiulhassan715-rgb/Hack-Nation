@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "75812d1d4002ec3ff3a6463f5b563b12625497616008f2118c62b5ba591bb182",
+  "previous_sha": "0da74c140f6def568fc6772a248e8ac97bf9d749b72afe8d1f6807de371072cf",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2725,
+  "output_tokens": 713
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "If you don't fix a violation within the notice's time limit, your landlord may serve a three-day notice to quit.",
+  "answer_owner": "You may not serve a three-day notice to quit until the violation stays uncured past the notice's time period."
+ }
+}

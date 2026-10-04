@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "57e2f0d0c96cdddae02bc6d2fbee980af445769f6e965d7b7ea2c879b039184c",
+  "previous_sha": "f9290613751c4d598176dde188780e6aec5586d936d7260d19aa88d2ee006606",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2174,
+  "output_tokens": 97
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Starting July 1, 2024, your landlord may only charge you one month's rent for unfurnished and furnished units.",
+  "answer_owner": "Starting July 1, 2024, you may only charge one month's rent as a security deposit for unfurnished and furnished units."
+ }
+}

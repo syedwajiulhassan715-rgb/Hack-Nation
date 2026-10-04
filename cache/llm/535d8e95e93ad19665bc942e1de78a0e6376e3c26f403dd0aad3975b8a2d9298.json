@@ -1,0 +1,181 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_es_v1",
+  "system": "You translate short plain-language lines from a rental housing law app into neutral Latin American Spanish, using \"usted\". The app shows the quoted law and \"Not legal advice.\" next to each line.\n\nTranslate each sentence faithfully as one sentence. Keep every number, date, percentage and dollar amount exactly as written (digits stay digits; do not spell numbers out). Add nothing and leave nothing out. Do not add exemptions or any way to avoid a rule. Keep it short: at most 26 words. Return JSON with one entry per id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant_es",
+       "answer_owner_es"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0149",
+    "answer_tenant": "Your landlord can't add a 10% increase for an additional dependent, effective February 2, 2026.",
+    "answer_owner": "You can no longer add a 10% increase for an additional dependent, effective February 2, 2026."
+   },
+   {
+    "team_rule_id": "r-0150",
+    "answer_tenant": "Your annual rent increase on an RSO unit is 3%, effective July 1, 2025, through June 30, 2026.",
+    "answer_owner": "You must limit annual rent increases for RSO units to 3%, effective July 1, 2025, through June 30, 2026."
+   },
+   {
+    "team_rule_id": "r-0151",
+    "answer_tenant": "Your landlord can no longer include any additional percentage increase for utilities, beginning February 2, 2026.",
+    "answer_owner": "You can no longer include any additional percentage increase for utilities, beginning February 2, 2026."
+   },
+   {
+    "team_rule_id": "r-0152",
+    "answer_tenant": "A proposal would make it unlawful to sell, license, or provide an algorithmic device to your landlord, if enacted.",
+    "answer_owner": "A proposal would make it unlawful to sell, license, or provide you an algorithmic device, if enacted."
+   },
+   {
+    "team_rule_id": "r-0153",
+    "answer_tenant": "A proposal would bar your landlord from using an algorithmic device to set rental rates or occupancy levels, if enacted.",
+    "answer_owner": "A proposal would bar you from using an algorithmic device to set rental rates or occupancy levels, if enacted."
+   },
+   {
+    "team_rule_id": "r-0154",
+    "answer_tenant": "Your landlord cannot terminate your tenancy without just cause.",
+    "answer_owner": "You cannot terminate a tenancy without just cause."
+   },
+   {
+    "team_rule_id": "r-0155",
+    "answer_tenant": "Your landlord's intended occupant must move in within 90 days after you vacate and stay at least 12 continuous months.",
+    "answer_owner": "Your intended occupant must move in within 90 days after the tenant leaves, staying at least 12 continuous months."
+   },
+   {
+    "team_rule_id": "r-0156",
+    "answer_tenant": "Your landlord's written termination notice for this just cause must include items certified under penalty of perjury.",
+    "answer_owner": "Your written notice terminating a tenancy for this just cause must include items certified under penalty of perjury."
+   },
+   {
+    "team_rule_id": "r-0157",
+    "answer_tenant": "Your landlord must give you written notice and a chance to cure a curable violation before a termination notice.",
+    "answer_owner": "You must give the tenant written notice of a curable violation and a chance to cure before a termination notice."
+   },
+   {
+    "team_rule_id": "r-0158",
+    "answer_tenant": "Your landlord must give you written notice at least 30 or 60 days before the proposed termination date.",
+    "answer_owner": "You must give the tenant written notice at least 30 or 60 days before the proposed termination date."
+   },
+   {
+    "team_rule_id": "r-0159",
+    "answer_tenant": "Your landlord must pay you two months of actual rent, or three months if you are a senior or disabled.",
+    "answer_owner": "You must pay tenants two months of actual rent, or three months if a tenant is a senior or disabled."
+   },
+   {
+    "team_rule_id": "r-0160",
+    "answer_tenant": "Your landlord must first offer you the unit in writing if you qualify and it is re-rented within five years.",
+    "answer_owner": "You must first offer the unit in writing to a qualifying displaced tenant if it is re-rented within five years."
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1862,
+  "output_tokens": 3930
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0149",
+    "answer_tenant_es": "Su arrendador no puede añadir un aumento del 10% por un dependiente adicional, a partir del 2 de febrero de 2026.",
+    "answer_owner_es": "Usted ya no puede añadir un aumento del 10% por un dependiente adicional, a partir del 2 de febrero de 2026."
+   },
+   {
+    "team_rule_id": "r-0150",
+    "answer_tenant_es": "Su aumento anual de renta en una unidad RSO es del 3%, con vigencia del 1 de julio de 2025 al 30 de junio de 2026.",
+    "answer_owner_es": "Debe limitar los aumentos anuales de renta de unidades RSO al 3%, con vigencia del 1 de julio de 2025 al 30 de junio de 2026."
+   },
+   {
+    "team_rule_id": "r-0151",
+    "answer_tenant_es": "Su arrendador ya no puede incluir ningún aumento porcentual adicional por servicios públicos, a partir del 2 de febrero de 2026.",
+    "answer_owner_es": "Usted ya no puede incluir ningún aumento porcentual adicional por servicios públicos, a partir del 2 de febrero de 2026."
+   },
+   {
+    "team_rule_id": "r-0152",
+    "answer_tenant_es": "Una propuesta haría ilegal vender, otorgar licencia o proporcionar un dispositivo algorítmico a su arrendador, si se promulga.",
+    "answer_owner_es": "Una propuesta haría ilegal venderle, otorgarle licencia o proporcionarle a usted un dispositivo algorítmico, si se promulga."
+   },
+   {
+    "team_rule_id": "r-0153",
+    "answer_tenant_es": "Una propuesta prohibiría a su arrendador usar un dispositivo algorítmico para fijar tarifas de alquiler o niveles de ocupación, si se promulga.",
+    "answer_owner_es": "Una propuesta le prohibiría a usted usar un dispositivo algorítmico para fijar tarifas de alquiler o niveles de ocupación, si se promulga."
+   },
+   {
+    "team_rule_id": "r-0154",
+    "answer_tenant_es": "Su arrendador no puede terminar su arrendamiento sin causa justificada.",
+    "answer_owner_es": "Usted no puede terminar un arrendamiento sin causa justificada."
+   },
+   {
+    "team_rule_id": "r-0155",
+    "answer_tenant_es": "El ocupante previsto por su arrendador debe mudarse dentro de 90 días después de que usted desocupe y permanecer al menos 12 meses continuos.",
+    "answer_owner_es": "Su ocupante previsto debe mudarse dentro de 90 días después de que el inquilino se vaya y permanecer al menos 12 meses continuos."
+   },
+   {
+    "team_rule_id": "r-0156",
+    "answer_tenant_es": "El aviso escrito de terminación de su arrendador por esta causa justificada debe incluir elementos certificados bajo pena de perjurio.",
+    "answer_owner_es": "Su aviso escrito para terminar un arrendamiento por esta causa justificada debe incluir elementos certificados bajo pena de perjurio."
+   },
+   {
+    "team_rule_id": "r-0157",
+    "answer_tenant_es": "Su arrendador debe darle aviso por escrito y la oportunidad de subsanar una infracción subsanable antes de un aviso de terminación.",
+    "answer_owner_es": "Usted debe dar al inquilino aviso por escrito de una infracción subsanable y la oportunidad de subsanarla antes de un aviso de terminación."
+   },
+   {
+    "team_rule_id": "r-0158",
+    "answer_tenant_es": "Su arrendador debe darle aviso por escrito al menos 30 o 60 días antes de la fecha de terminación propuesta.",
+    "answer_owner_es": "Usted debe dar al inquilino aviso por escrito al menos 30 o 60 días antes de la fecha de terminación propuesta."
+   },
+   {
+    "team_rule_id": "r-0159",
+    "answer_tenant_es": "Su arrendador debe pagarle dos meses de renta real, o tres meses si usted es adulto mayor o discapacitado.",
+    "answer_owner_es": "Usted debe pagar a los inquilinos dos meses de renta real, o tres meses si un inquilino es adulto mayor o discapacitado."
+   },
+   {
+    "team_rule_id": "r-0160",
+    "answer_tenant_es": "Su arrendador debe ofrecerle primero la unidad por escrito si usted califica y se vuelve a alquilar dentro de cinco años.",
+    "answer_owner_es": "Usted debe ofrecer primero la unidad por escrito a un inquilino desplazado que califique si se vuelve a alquilar dentro de cinco años."
+   }
+  ]
+ }
+}

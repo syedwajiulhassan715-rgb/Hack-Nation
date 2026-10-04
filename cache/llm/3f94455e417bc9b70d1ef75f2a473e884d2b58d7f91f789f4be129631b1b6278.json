@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "ac106dbf900459041bf2e0ffce734c0135262ac7eee234d154800385cffb3586",
+  "english_sha": "ad5fbc8a586995a6c18a919e35ed5fdf7f7216f5160d22c21ab4210cc2146f34",
+  "previous_sha": "8e07472046d1cfa0cb22c1b18001b53a685139608aaac0ca1b3af2ff86a2d533",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1356,
+  "output_tokens": 307
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "El plazo de su arrendador vence a más tardar 21 días calendario después de que usted desocupe la vivienda.",
+  "answer_owner_es": "Usted debe actuar a más tardar 21 días calendario después de que su inquilino haya desocupado la vivienda."
+ }
+}

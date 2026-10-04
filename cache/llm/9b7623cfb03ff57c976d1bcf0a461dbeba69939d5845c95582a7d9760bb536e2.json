@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "ff5104432c4b18629c5d33ab23b8c55a5a4afe411f6f4d5d113db719d639f2c8",
+  "english_sha": "db09a20be46916db4124b795c115e580125f7a9d9ac4f2edef45c857979b22c3",
+  "previous_sha": "e44f6da201c108b37ff5ceb9f2b4af8f3a0000449222aced8578c0f628338ff1",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1285,
+  "output_tokens": 500
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador no puede desalojarlo ni negarse a renovar su contrato de arrendamiento, escrito o verbal, sin causa justificada.",
+  "answer_owner_es": "Usted no puede desalojar a un inquilino ni negarse a renovar un contrato escrito o verbal sin causa justificada."
+ }
+}

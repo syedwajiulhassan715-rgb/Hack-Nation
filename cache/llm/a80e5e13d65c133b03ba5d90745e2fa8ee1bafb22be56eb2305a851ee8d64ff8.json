@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "8d6f6835224133dbadc3990cf70710783978853a162bad292a4c45bb8c290cb1",
+  "previous_sha": "ff322d3fcabfa22cb816d6178ae39e1ed7eb626facd46d88b361144e512307f2",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2168,
+  "output_tokens": 96
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord cannot charge you or your deposit for damage that existed before your tenancy or ordinary wear and tear.",
+  "answer_owner": "You may not claim against your tenant or deposit for preexisting damage, defects, or ordinary wear and tear."
+ }
+}

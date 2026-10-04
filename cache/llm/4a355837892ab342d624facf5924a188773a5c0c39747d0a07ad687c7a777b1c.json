@@ -1,0 +1,229 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_v1",
+  "system": "You write the plain-language line for a rental housing law app. The app always shows the quoted law, its citation and \"Not legal advice.\" next to your sentence.\n\nFor each rule you get its quoted text (the only source of law you may use) and a few structured fields. Write two sentences:\n- answer_tenant: addressed to a tenant (\"you\" = the tenant).\n- answer_owner: addressed to the landlord or property owner (\"you\" = the owner).\n\nRules for every sentence:\n1. One sentence, at most 20 words, containing \"you\" or \"your\".\n2. Start with the answer itself (e.g. \"Your landlord must...\", \"You must...\", \"You can...\"). No preamble such as \"Under this law\", \"This rule\" or \"According to\".\n3. Use only what the quoted text says. Add no facts, conditions, deadlines or remedies that are not in it. If the quote is too thin to say anything useful (for example only a bill title), return null for that sentence.\n4. Numbers, dates, percentages and dollar amounts: copy them exactly as they appear in the quote or key_value. Never compute, convert, round or combine them. If unsure, leave the number out.\n5. Owner sentences state obligations or prohibitions only. Never mention exemptions, exceptions, how a rule might not apply, or any way to avoid, get around or work around a rule. Tenant sentences state rights and protections, also without exemption talk.\n6. Status: \"pending\" means a bill or proposal that is not law, so say it is proposed and would apply only if enacted; \"not_yet_effective\" means enacted but not yet in effect, so say it is not in effect yet (no date unless the quote states it); \"in_force\" is present tense.\n7. Do not name the jurisdiction or the citation; the app shows them. Do not give legal advice, promise outcomes or say anyone is compliant.\n\nReturn JSON with one entry per rule id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant",
+       "answer_owner"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0133",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Relocation assistance for JCO single-family dwellings owned by natural persons",
+    "key_value": "One month’s rent",
+    "quoted_span": "When the residential real property is a single-family dwelling subject to the JCO and the owner is a natural person, including natural persons who hold properties in a trust or registered legal entity controlled by that natural person, who owns no more than four dwelling units and a single-family home on a separate lot in the City of Los Angeles: one month’s rent that was in effect when the landlord served the written notice to terminate the tenancy, as either a monetary payment or credit."
+   },
+   {
+    "team_rule_id": "r-0134",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Reduced relocation assistance for Mom and Pop properties",
+    "key_value": "Eligible household $10,550; Qualified household $21,250",
+    "quoted_span": "The reduced fee for Mom and Pop properties applies only for evictions for occupancy by the owner or an eligible relative and only if all of the following conditions exist:"
+   },
+   {
+    "team_rule_id": "r-0135",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Relocation assistance amounts for no-fault evictions (Chart A)",
+    "key_value": "Eligible: $11,000 / $14,400; Qualified: $23,150 / $27,400 (Effective July 1, 2026 through June 30, 2027)",
+    "quoted_span": "The relocation amounts above apply if a tenant is displaced for a no-fault reason described on page 1 of this bulletin."
+   },
+   {
+    "team_rule_id": "r-0136",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Timing and method of relocation assistance payments",
+    "key_value": "Within fifteen (15) days of service of the written notice",
+    "quoted_span": "Payment shall be made available within fifteen (15) days of service of the written notice of eviction; however,"
+   },
+   {
+    "team_rule_id": "r-0137",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Termination for demolition for new construction of a Protected Unit",
+    "key_value": null,
+    "quoted_span": "A landlord terminating a tenancy to demolish for new construction is required to pay relocation assistance and to file a Declaration of Intent to Evict or Notice of Intent to Withdraw Units From Rental Housing Use with the Los Angeles Housing Department (LAHD) prior to evicting tenants from units covered by the Rent Stabilization Ordinance (RSO) or the Just Cause Ordinance (JCO)."
+   },
+   {
+    "team_rule_id": "r-0138",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Resident Protections Ordinance occupant protections",
+    "key_value": "6-month notice to move out",
+    "quoted_span": "The RPO’s occupant protections include: 1) Right to Relocation, 2) Right to Remain in the unit up to 6 months prior to start of construction activities, which includes a 6-month notice to move out, 3) Right to Return to the same unit if the demolition does not proceed, 4) Right of First Refusal to the new building for some tenants and 5) Tenant Notification Requirements."
+   },
+   {
+    "team_rule_id": "r-0139",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Resident Protections Ordinance relocation requirements and standardized payments",
+    "key_value": "Extremely Low Income $115,480; Very Low Income $96,750; Low Income $87,450 (Effective July 1, 2026 through June 30, 2027)",
+    "quoted_span": "Owners who demolish a Protected Unit for the purpose of new construction within 5 years after the filing of the Notice of Intent to Withdraw or Declaration of Intent to Evict with LAHD are required to comply with relocation requirements under the RPO. Failure to comply with the RPO may result in financial penalties starting at $250,000 per displaced unit and withholding of LAHD permit clearances."
+   },
+   {
+    "team_rule_id": "r-0140",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "RSO/JCO Relocation Assistance Amounts (Chart A)",
+    "key_value": "Eligible Tenant $11,000 / $14,400; Qualified Tenant $23,150 / $27,400",
+    "quoted_span": "Eligible Tenant $11,000 $14,400"
+   },
+   {
+    "team_rule_id": "r-0141",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Option 3 Individualized Relocation - Initial RSO/JCO Payment",
+    "key_value": "within 15 days of filing",
+    "quoted_span": "In addition to complying with relocation amounts under Option 3, the owner is required to pay tenants the RSO or JCO relocation amounts within 15 days of filing the Notice of Intent to Withdraw or the Declaration of Intent to Evict, which will be supplemented only if the owner’s private consultant determines it is required under State law."
+   },
+   {
+    "team_rule_id": "r-0142",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Relocation for Demolition for New Construction (RPO/HCA)",
+    "key_value": null,
+    "quoted_span": "Tenants being displaced for new construction should receive a minimum of the RSO or JCO amounts to be increased only if the HCA or RPO requir e it."
+   },
+   {
+    "team_rule_id": "r-0143",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Timing of Relocation Assistance Payments and Escrow Option",
+    "key_value": "within fifteen (15) days of service of the written notice of eviction",
+    "quoted_span": "Payments shall be made available within fifteen (15) days of service of the written notice of eviction; however, the landlord may, at the landlord's sole discretion and at the landlord's cost, elect to pay the monetary relocation benefits through an escrow account. The monies must be placed in the escrow account within the required 15-day period."
+   },
+   {
+    "team_rule_id": "r-0144",
+    "category": "just_cause_eviction",
+    "level": "city",
+    "status": "in_force",
+    "title": "Relocation Offset for Accumulated Rent",
+    "key_value": null,
+    "quoted_span": "A landlord may offset the tenant's accumulated rent against any relocation assistance, unless the relocation assistance is owed because a termination of tenancy is required by a governmental agency order to vacate or comply issued for an unpermitted dwelling."
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 3458,
+  "output_tokens": 7170
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0133",
+    "answer_tenant": "Your landlord must give you relocation assistance of one month’s rent, as a monetary payment or credit.",
+    "answer_owner": "You must pay one month’s rent in effect when you served the written notice, as a payment or credit."
+   },
+   {
+    "team_rule_id": "r-0134",
+    "answer_tenant": null,
+    "answer_owner": null
+   },
+   {
+    "team_rule_id": "r-0135",
+    "answer_tenant": "Your landlord must pay relocation assistance if you are displaced for a no-fault reason.",
+    "answer_owner": "You must pay relocation assistance when you displace a tenant for a no-fault reason."
+   },
+   {
+    "team_rule_id": "r-0136",
+    "answer_tenant": "Your landlord must make your relocation payment available within fifteen (15) days of serving the written eviction notice.",
+    "answer_owner": "You must make relocation payment available within fifteen (15) days of serving the written notice of eviction."
+   },
+   {
+    "team_rule_id": "r-0137",
+    "answer_tenant": "Your landlord must pay relocation assistance and file with LAHD before evicting you to demolish for new construction.",
+    "answer_owner": "You must pay relocation assistance and file a required notice with LAHD before evicting tenants to demolish for new construction."
+   },
+   {
+    "team_rule_id": "r-0138",
+    "answer_tenant": "You have the right to relocation and to a 6-month notice to move out.",
+    "answer_owner": "You must provide tenants relocation and a 6-month notice to move out."
+   },
+   {
+    "team_rule_id": "r-0139",
+    "answer_tenant": "Your owner must follow RPO relocation rules if your Protected Unit is demolished for new construction within 5 years after filing.",
+    "answer_owner": "You must follow relocation requirements if you demolish a Protected Unit for new construction within 5 years after filing."
+   },
+   {
+    "team_rule_id": "r-0140",
+    "answer_tenant": null,
+    "answer_owner": null
+   },
+   {
+    "team_rule_id": "r-0141",
+    "answer_tenant": "Your owner must pay you the RSO or JCO relocation amounts within 15 days of filing the required notice.",
+    "answer_owner": "You must pay tenants the RSO or JCO relocation amounts within 15 days of filing the required notice."
+   },
+   {
+    "team_rule_id": "r-0142",
+    "answer_tenant": "You should receive at least the RSO or JCO relocation amounts if you are displaced for new construction.",
+    "answer_owner": "You should pay displaced tenants at least the RSO or JCO relocation amounts when demolishing for new construction."
+   },
+   {
+    "team_rule_id": "r-0143",
+    "answer_tenant": "Your landlord must make relocation payments available to you within fifteen (15) days of serving the written notice of eviction.",
+    "answer_owner": "You must make relocation payments available within fifteen (15) days of serving the written notice of eviction."
+   },
+   {
+    "team_rule_id": "r-0144",
+    "answer_tenant": "Your landlord cannot offset accumulated rent against relocation assistance owed due to a government order on an unpermitted dwelling.",
+    "answer_owner": "You cannot offset a tenant's accumulated rent against relocation assistance owed due to a government order on an unpermitted dwelling."
+   }
+  ]
+ }
+}

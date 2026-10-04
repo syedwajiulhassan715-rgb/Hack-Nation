@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "fa9b67da8170277e95443ba5c23d4f727a6f5d38ef557b8ee84b2736b2c941bb",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1722,
+  "output_tokens": 1155
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "At lease start, your landlord can't require more than two and one-half times monthly rent, including deposit and first month.",
+  "answer_owner": "You may not require over two and one-half times monthly rent at lease start, including deposit and first month."
+ }
+}

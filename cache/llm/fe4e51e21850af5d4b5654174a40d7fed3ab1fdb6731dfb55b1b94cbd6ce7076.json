@@ -1,0 +1,181 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_es_v1",
+  "system": "You translate short plain-language lines from a rental housing law app into neutral Latin American Spanish, using \"usted\". The app shows the quoted law and \"Not legal advice.\" next to each line.\n\nTranslate each sentence faithfully as one sentence. Keep every number, date, percentage and dollar amount exactly as written (digits stay digits; do not spell numbers out). Add nothing and leave nothing out. Do not add exemptions or any way to avoid a rule. Keep it short: at most 26 words. Return JSON with one entry per id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant_es",
+       "answer_owner_es"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0107",
+    "answer_tenant": "A proposed law would make it unlawful to sell landlords coordinated pricing algorithms recommending your rent, but only if enacted.",
+    "answer_owner": "A proposed law would make it unlawful to sell or license coordinated pricing algorithms to landlords like you, if enacted."
+   },
+   {
+    "team_rule_id": "r-0108",
+    "answer_tenant": "If enacted, a proposed law would bar landlords from using coordinated pricing algorithms to set your rent or occupancy levels.",
+    "answer_owner": "If enacted, a proposed law would bar you from using coordinated pricing algorithms to set rents or occupancy levels."
+   },
+   {
+    "team_rule_id": "r-0109",
+    "answer_tenant": "Your landlord must give you a screening fee rights statement and fee cap statement before receiving the fee.",
+    "answer_owner": "You must give applicants a clear screening fee rights statement and fee cap statement before receiving a screening fee."
+   },
+   {
+    "team_rule_id": "r-0110",
+    "answer_tenant": "Your landlord cannot charge you a non-refundable fee to renew your tenancy, including for roommate changes.",
+    "answer_owner": "You cannot charge an existing tenant a non-refundable fee to renew a tenancy, including for roommate departures or additions."
+   },
+   {
+    "team_rule_id": "r-0111",
+    "answer_tenant": "Your landlord must pay you relocation assistance if evicting you for an owner move-in.",
+    "answer_owner": "You must pay your tenant relocation assistance in an owner move-in eviction."
+   },
+   {
+    "team_rule_id": "r-0112",
+    "answer_tenant": "Your landlord must pay you relocation assistance if evicting you to remove the property from the rental housing market.",
+    "answer_owner": "You must pay relocation assistance to tenants evicted so you can remove the property from the rental housing market."
+   },
+   {
+    "team_rule_id": "r-0113",
+    "answer_tenant": "Your landlord can evict you for unpaid rent only if you owe at least one month's Fair Market Rent.",
+    "answer_owner": "You cannot evict for nonpayment unless your tenant owes at least one month's Fair Market Rent."
+   },
+   {
+    "team_rule_id": "r-0114",
+    "answer_tenant": "Your landlord cannot evict you for failing to sign a substantially similar lease when your fixed-term lease expires.",
+    "answer_owner": "You cannot evict a tenant for failing to sign a substantially similar lease when a fixed-term lease expires."
+   },
+   {
+    "team_rule_id": "r-0115",
+    "answer_tenant": null,
+    "answer_owner": "You must specify the lease term and describe the violation and resulting harm in your notice to stop it."
+   },
+   {
+    "team_rule_id": "r-0116",
+    "answer_tenant": "Any notice ending your tenancy must say Rent Board advice is available and list its counseling phone number and website.",
+    "answer_owner": "You must include in any termination notice a Rent Board advice statement, its counseling phone number, and its website address."
+   },
+   {
+    "team_rule_id": "r-0117",
+    "answer_tenant": "Your landlord must file notices and court papers served on you with the Rent Board within three business days.",
+    "answer_owner": "You must file eviction notices and summons and complaints with the Rent Board within three business days of service."
+   },
+   {
+    "team_rule_id": "r-0118",
+    "answer_tenant": "Your relocation assistance in an owner move-in eviction must be adjusted for inflation by the Rent Board each year.",
+    "answer_owner": "Owner move-in relocation assistance you pay must be adjusted for inflation by the Rent Board each year."
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1882,
+  "output_tokens": 4198
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0107",
+    "answer_tenant_es": "Una ley propuesta haría ilegal vender a los arrendadores algoritmos de precios coordinados que recomiendan su renta, pero solo si se promulga.",
+    "answer_owner_es": "Una ley propuesta haría ilegal vender o licenciar algoritmos de precios coordinados a arrendadores como usted, si se promulga."
+   },
+   {
+    "team_rule_id": "r-0108",
+    "answer_tenant_es": "Si se promulga, una ley propuesta prohibiría a los arrendadores usar algoritmos de precios coordinados para fijar su renta o niveles de ocupación.",
+    "answer_owner_es": "Si se promulga, una ley propuesta le prohibiría a usted usar algoritmos de precios coordinados para fijar rentas o niveles de ocupación."
+   },
+   {
+    "team_rule_id": "r-0109",
+    "answer_tenant_es": "Su arrendador debe entregarle una declaración de derechos sobre la tarifa de evaluación y una declaración del límite de la tarifa antes de recibirla.",
+    "answer_owner_es": "Usted debe entregar a los solicitantes una declaración clara de derechos sobre la tarifa de evaluación y otra sobre el límite de la tarifa antes de recibirla."
+   },
+   {
+    "team_rule_id": "r-0110",
+    "answer_tenant_es": "Su arrendador no puede cobrarle una tarifa no reembolsable por renovar su arrendamiento, incluso por cambios de compañeros de cuarto.",
+    "answer_owner_es": "Usted no puede cobrar a un inquilino actual una tarifa no reembolsable por renovar un arrendamiento, incluso por salidas o incorporaciones de compañeros de cuarto."
+   },
+   {
+    "team_rule_id": "r-0111",
+    "answer_tenant_es": "Su arrendador debe pagarle asistencia de reubicación si lo desaloja para que el propietario se mude.",
+    "answer_owner_es": "Usted debe pagar a su inquilino asistencia de reubicación en un desalojo para mudanza del propietario."
+   },
+   {
+    "team_rule_id": "r-0112",
+    "answer_tenant_es": "Su arrendador debe pagarle asistencia de reubicación si lo desaloja para retirar la propiedad del mercado de vivienda de alquiler.",
+    "answer_owner_es": "Usted debe pagar asistencia de reubicación a los inquilinos desalojados para que usted retire la propiedad del mercado de vivienda de alquiler."
+   },
+   {
+    "team_rule_id": "r-0113",
+    "answer_tenant_es": "Su arrendador solo puede desalojarlo por renta impaga si usted debe al menos un mes de la Renta de Mercado Justa.",
+    "answer_owner_es": "Usted no puede desalojar por falta de pago a menos que su inquilino deba al menos un mes de la Renta de Mercado Justa."
+   },
+   {
+    "team_rule_id": "r-0114",
+    "answer_tenant_es": "Su arrendador no puede desalojarlo por no firmar un contrato sustancialmente similar cuando vence su contrato de plazo fijo.",
+    "answer_owner_es": "Usted no puede desalojar a un inquilino por no firmar un contrato sustancialmente similar cuando vence un contrato de plazo fijo."
+   },
+   {
+    "team_rule_id": "r-0115",
+    "answer_tenant_es": null,
+    "answer_owner_es": "Usted debe especificar el plazo del contrato y describir la infracción y el daño resultante en su aviso para que cese."
+   },
+   {
+    "team_rule_id": "r-0116",
+    "answer_tenant_es": "Todo aviso que termine su arrendamiento debe indicar que hay asesoría de la Junta de Alquileres y enumerar su teléfono de orientación y su sitio web.",
+    "answer_owner_es": "Usted debe incluir en todo aviso de terminación una declaración sobre la asesoría de la Junta de Alquileres, su teléfono de orientación y su dirección web."
+   },
+   {
+    "team_rule_id": "r-0117",
+    "answer_tenant_es": "Su arrendador debe presentar ante la Junta de Alquileres, dentro de tres días hábiles, los avisos y documentos judiciales que se le notificaron a usted.",
+    "answer_owner_es": "Usted debe presentar ante la Junta de Alquileres los avisos de desalojo y las citaciones y demandas dentro de tres días hábiles de la notificación."
+   },
+   {
+    "team_rule_id": "r-0118",
+    "answer_tenant_es": "La Junta de Alquileres debe ajustar cada año por inflación su asistencia de reubicación en un desalojo para mudanza del propietario.",
+    "answer_owner_es": "La Junta de Alquileres debe ajustar por inflación cada año la asistencia de reubicación que usted paga por mudanza del propietario."
+   }
+  ]
+ }
+}

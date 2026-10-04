@@ -1,0 +1,229 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_v1",
+  "system": "You write the plain-language line for a rental housing law app. The app always shows the quoted law, its citation and \"Not legal advice.\" next to your sentence.\n\nFor each rule you get its quoted text (the only source of law you may use) and a few structured fields. Write two sentences:\n- answer_tenant: addressed to a tenant (\"you\" = the tenant).\n- answer_owner: addressed to the landlord or property owner (\"you\" = the owner).\n\nRules for every sentence:\n1. One sentence, at most 20 words, containing \"you\" or \"your\".\n2. Start with the answer itself (e.g. \"Your landlord must...\", \"You must...\", \"You can...\"). No preamble such as \"Under this law\", \"This rule\" or \"According to\".\n3. Use only what the quoted text says. Add no facts, conditions, deadlines or remedies that are not in it. If the quote is too thin to say anything useful (for example only a bill title), return null for that sentence.\n4. Numbers, dates, percentages and dollar amounts: copy them exactly as they appear in the quote or key_value. Never compute, convert, round or combine them. If unsure, leave the number out.\n5. Owner sentences state obligations or prohibitions only. Never mention exemptions, exceptions, how a rule might not apply, or any way to avoid, get around or work around a rule. Tenant sentences state rights and protections, also without exemption talk.\n6. Status: \"pending\" means a bill or proposal that is not law, so say it is proposed and would apply only if enacted; \"not_yet_effective\" means enacted but not yet in effect, so say it is not in effect yet (no date unless the quote states it); \"in_force\" is present tense.\n7. Do not name the jurisdiction or the citation; the app shows them. Do not give legal advice, promise outcomes or say anyone is compliant.\n\nReturn JSON with one entry per rule id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant",
+       "answer_owner"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0013",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Relocation assistance or rent waiver for no-fault just cause terminations",
+    "key_value": "One month of the tenant's rent in effect when the notice to terminate was issued",
+    "quoted_span": "The amount of relocation assistance or rent waiver shall be equal to one month of the tenant’s rent that was in effect when the owner issued the notice to terminate the tenancy."
+   },
+   {
+    "team_rule_id": "r-0014",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Required notice to tenants of rent cap and just cause protections",
+    "key_value": null,
+    "quoted_span": "The notification or lease provision shall be in no less than 12-point type, and shall include the following:"
+   },
+   {
+    "team_rule_id": "r-0015",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Just cause for termination of tenancy (Civil Code 1946.2): local ordinance interaction and exemptions",
+    "key_value": null,
+    "quoted_span": "(A) Residential real property subject to a local ordinance requiring just cause for termination of a residential tenancy adopted on or before September 1, 2019, in which case the local ordinance shall apply."
+   },
+   {
+    "team_rule_id": "r-0016",
+    "category": "just_cause_eviction",
+    "level": "state",
+    "status": "in_force",
+    "title": "Relocation Payments for Temporary Displacement Under 20 Days",
+    "key_value": "$446.00/day (plus actual moving expenses) per tenant household",
+    "quoted_span": "*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C."
+   },
+   {
+    "team_rule_id": "r-0017",
+    "category": "rent_increase_limits",
+    "level": "state",
+    "status": "in_force",
+    "title": "Statewide rent cap (Civil Code Section 1947.12)",
+    "key_value": "5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower",
+    "quoted_span": "Subject to subdivision (b), an owner of residential real property shall not, over the course of any 12-month period, increase the gross rental rate for a dwelling or a unit more than 5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower, of the lowest gross rental rate charged for that dwelling or unit at any time during the 12 months prior to the effective date of the increase."
+   },
+   {
+    "team_rule_id": "r-0018",
+    "category": "rent_increase_limits",
+    "level": "state",
+    "status": "in_force",
+    "title": "California Tenant Protection Act of 2019 (AB 1482) rent cap",
+    "key_value": "5% plus the percentage change in the cost of living for the region, or 10%, whichever is lower",
+    "quoted_span": "rent increases are limited to no more than 5% plus the percentage change in the cost of living for the region in which the property is located, or 10% whichever is lower)."
+   },
+   {
+    "team_rule_id": "r-0019",
+    "category": "rent_increase_limits",
+    "level": "state",
+    "status": "in_force",
+    "title": "Advance Notice of Rent Increases",
+    "key_value": "30 days' written notice for increases of less than 10%",
+    "quoted_span": "State law requires landlords to provide 30 days' written advance notice of rent increases of less than 10%."
+   },
+   {
+    "team_rule_id": "r-0020",
+    "category": "screening_restrictions",
+    "level": "state",
+    "status": "in_force",
+    "title": "Source of income discrimination prohibition (FEHA)",
+    "key_value": null,
+    "quoted_span": "No. California law protects tenants from discrimination based on how a tenant will be paying rent (“source of income”). This includes the State of California’s COVID-19 Rent Relief Program, Housing Choice (Section 8) vouchers, (SSI) social security disability benefits, or wages earned from a job."
+   },
+   {
+    "team_rule_id": "r-0021",
+    "category": "screening_restrictions",
+    "level": "state",
+    "status": "in_force",
+    "title": "Criminal history screening limits (FEHA)",
+    "key_value": null,
+    "quoted_span": "Housing providers cannot consider some types of criminal history including arrests that did not lead to a conviction, records that are sealed or expunged, or records or matters processed in the juvenile justice system. Housing providers are also prohibited from having “blanket bans” of all people with a criminal history."
+   },
+   {
+    "team_rule_id": "r-0022",
+    "category": "screening_restrictions",
+    "level": "state",
+    "status": "in_force",
+    "title": "Criminal conviction-based application denials",
+    "key_value": null,
+    "quoted_span": "If a housing provider intends to deny someone’s application based on a criminal conviction, it must be directly-related to someone’s ability to be a good tenant and to not be a threat to the health and safety of others and the property. In determining whether a criminal conviction is directly-related, a housing provider should consider the nature and severity of the crime and the amount of time that has passed since the criminal conduct occurred."
+   },
+   {
+    "team_rule_id": "r-0023",
+    "category": "screening_restrictions",
+    "level": "state",
+    "status": "in_force",
+    "title": "Housing discrimination prohibition, including source of income",
+    "key_value": null,
+    "quoted_span": "(a) For the owner of any housing accommodation to discriminate against or harass any person because of the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information of that person."
+   },
+   {
+    "team_rule_id": "r-0024",
+    "category": "screening_restrictions",
+    "level": "state",
+    "status": "in_force",
+    "title": "Prohibited inquiries of prospective renters or buyers",
+    "key_value": null,
+    "quoted_span": "(b) For the owner of any housing accommodation to make or to cause to be made any written or oral inquiry concerning the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, disability, veteran or military status, or genetic information of any person"
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 3261,
+  "output_tokens": 7669
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0013",
+    "answer_tenant": "Your relocation assistance or rent waiver equals one month of your rent in effect when notice was issued.",
+    "answer_owner": "Your relocation assistance or rent waiver must equal one month of the tenant's rent in effect when you issued notice."
+   },
+   {
+    "team_rule_id": "r-0014",
+    "answer_tenant": "Your notification or lease provision must be in no less than 12-point type.",
+    "answer_owner": "Your notification or lease provision must be in no less than 12-point type and include the required content."
+   },
+   {
+    "team_rule_id": "r-0015",
+    "answer_tenant": "Your local just cause ordinance applies if it was adopted on or before September 1, 2019.",
+    "answer_owner": "You must follow a local ordinance requiring just cause for termination if adopted on or before September 1, 2019."
+   },
+   {
+    "team_rule_id": "r-0016",
+    "answer_tenant": "You receive $446.00/day plus actual moving expenses per tenant household for temporary displacement of less than 20 days.",
+    "answer_owner": "You must pay $446.00/day plus actual moving expenses per tenant household for temporary displacement of less than 20 days."
+   },
+   {
+    "team_rule_id": "r-0017",
+    "answer_tenant": "Your rent cannot rise over 12 months more than 5 percent plus cost-of-living change, or 10 percent, whichever is lower.",
+    "answer_owner": "You cannot raise rent over 12 months more than 5 percent plus cost-of-living change, or 10 percent, whichever is lower."
+   },
+   {
+    "team_rule_id": "r-0018",
+    "answer_tenant": "Your rent increases are limited to 5% plus percentage change in cost of living, or 10%, whichever is lower.",
+    "answer_owner": "You cannot raise rent more than 5% plus the percentage change in cost of living, or 10%, whichever is lower."
+   },
+   {
+    "team_rule_id": "r-0019",
+    "answer_tenant": "Your landlord must give you 30 days' written advance notice of rent increases of less than 10%.",
+    "answer_owner": "You must give tenants 30 days' written advance notice of rent increases of less than 10%."
+   },
+   {
+    "team_rule_id": "r-0020",
+    "answer_tenant": "You are protected from discrimination based on how you will pay rent, such as vouchers, benefits, or wages.",
+    "answer_owner": "You cannot discriminate against tenants based on how they will pay rent, including vouchers, disability benefits, or wages."
+   },
+   {
+    "team_rule_id": "r-0021",
+    "answer_tenant": "Housing providers cannot consider arrests without conviction, sealed or expunged records, or juvenile justice records about you.",
+    "answer_owner": "You cannot consider arrests without conviction, sealed or expunged records, or juvenile records, or ban everyone with criminal history."
+   },
+   {
+    "team_rule_id": "r-0022",
+    "answer_tenant": "A conviction-based denial of your application must be directly related to your ability to be a good tenant.",
+    "answer_owner": "Your denial based on a conviction must be directly related to the applicant's ability to be a good tenant."
+   },
+   {
+    "team_rule_id": "r-0023",
+    "answer_tenant": "Owners cannot discriminate against or harass you because of race, religion, sex, source of income, disability, or other listed traits.",
+    "answer_owner": "You cannot discriminate against or harass anyone because of race, religion, sex, source of income, disability, or other listed traits."
+   },
+   {
+    "team_rule_id": "r-0024",
+    "answer_tenant": "Owners cannot make written or oral inquiries about your race, religion, sex, national origin, disability, or other listed traits.",
+    "answer_owner": "You cannot make written or oral inquiries about a person's race, religion, sex, national origin, disability, or other listed traits."
+   }
+  ]
+ }
+}

@@ -1,0 +1,181 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_es_v1",
+  "system": "You translate short plain-language lines from a rental housing law app into neutral Latin American Spanish, using \"usted\". The app shows the quoted law and \"Not legal advice.\" next to each line.\n\nTranslate each sentence faithfully as one sentence. Keep every number, date, percentage and dollar amount exactly as written (digits stay digits; do not spell numbers out). Add nothing and leave nothing out. Do not add exemptions or any way to avoid a rule. Keep it short: at most 26 words. Return JSON with one entry per id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant_es",
+       "answer_owner_es"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0095",
+    "answer_tenant": null,
+    "answer_owner": "You must not evaluate an applicant based on the listed types of criminal records, before or after a conditional offer."
+   },
+   {
+    "team_rule_id": "r-0096",
+    "answer_tenant": "After a conditional offer, your housing provider may consider only criminal records that meet the listed conditions.",
+    "answer_owner": "You must consider only criminal records that meet the listed conditions after a conditional offer."
+   },
+   {
+    "team_rule_id": "r-0097",
+    "answer_tenant": "A conditional offer can be withdrawn over your criminal record only if necessary for a substantial, legitimate, nondiscriminatory interest.",
+    "answer_owner": "You may withdraw a conditional offer over an applicant's criminal record only if necessary for a substantial, legitimate, nondiscriminatory interest."
+   },
+   {
+    "team_rule_id": "r-0098",
+    "answer_tenant": "You are protected from housing ads that explicitly say applicants arrested or convicted of crimes won't be considered.",
+    "answer_owner": "You must not knowingly publish a housing ad explicitly refusing to consider applicants arrested or convicted of crimes."
+   },
+   {
+    "team_rule_id": "r-0099",
+    "answer_tenant": "Your housing provider cannot require a drug or alcohol test or ask your consent for drug treatment facility information.",
+    "answer_owner": "You must not require applicants to take drug or alcohol tests or request consent for drug treatment facility information."
+   },
+   {
+    "team_rule_id": "r-0100",
+    "answer_tenant": "You are entitled to equal treatment when renting, regardless of race, disability, source of lawful income, and other listed traits.",
+    "answer_owner": "You must treat renters equally regardless of race, disability, source of lawful income, and other listed traits."
+   },
+   {
+    "team_rule_id": "r-0101",
+    "answer_tenant": "Your landlord cannot deny you an apartment based solely on a lawful income source like a Section 8 HUD voucher.",
+    "answer_owner": "You cannot deny a lawful Section 8 HUD voucher recipient an apartment based solely on that source of lawful income."
+   },
+   {
+    "team_rule_id": "r-0102",
+    "answer_tenant": "Your deposit cannot exceed one and one-half times one month's rent, and yearly increases cannot exceed 10% of it.",
+    "answer_owner": null
+   },
+   {
+    "team_rule_id": "r-0103",
+    "answer_tenant": "Your landlord cannot require over two and one-half times monthly rent at lease inception, including deposit and first month's rent.",
+    "answer_owner": "You cannot require more than two and one-half times monthly rent at lease inception, including deposit and first month's rent."
+   },
+   {
+    "team_rule_id": "r-0104",
+    "answer_tenant": "Your landlord with ten or less units must put your deposit in an insured, interest-bearing bank account.",
+    "answer_owner": "You must deposit security money for ten or less units in an insured, interest-bearing bank or savings and loan account."
+   },
+   {
+    "team_rule_id": "r-0105",
+    "answer_tenant": "Your landlord must return your security deposit, plus interest earned less deductions, within 30 days after your tenancy ends.",
+    "answer_owner": "You must return the security deposit, plus interest earned less deductions, within 30 days after the tenancy ends."
+   },
+   {
+    "team_rule_id": "r-0106",
+    "answer_tenant": "Your landlord must return your security deposit within five (5) business days after fire, flood, condemnation, or evacuation displaces you.",
+    "answer_owner": "You must return a deposit within five (5) business days after fire, flood, condemnation, or evacuation displaces the tenant."
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1896,
+  "output_tokens": 4236
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0095",
+    "answer_tenant_es": null,
+    "answer_owner_es": "Usted no debe evaluar a un solicitante según los tipos de antecedentes penales indicados, ni antes ni después de una oferta condicional."
+   },
+   {
+    "team_rule_id": "r-0096",
+    "answer_tenant_es": "Después de una oferta condicional, su proveedor de vivienda solo puede considerar los antecedentes penales que cumplan las condiciones indicadas.",
+    "answer_owner_es": "Usted debe considerar solo los antecedentes penales que cumplan las condiciones indicadas después de una oferta condicional."
+   },
+   {
+    "team_rule_id": "r-0097",
+    "answer_tenant_es": "Una oferta condicional puede retirarse por sus antecedentes penales solo si es necesario para un interés sustancial, legítimo y no discriminatorio.",
+    "answer_owner_es": "Usted puede retirar una oferta condicional por los antecedentes penales de un solicitante solo si es necesario para un interés sustancial, legítimo y no discriminatorio."
+   },
+   {
+    "team_rule_id": "r-0098",
+    "answer_tenant_es": "Usted está protegido contra anuncios de vivienda que digan explícitamente que no se considerarán solicitantes arrestados o condenados por delitos.",
+    "answer_owner_es": "Usted no debe publicar a sabiendas un anuncio de vivienda que se niegue explícitamente a considerar solicitantes arrestados o condenados por delitos."
+   },
+   {
+    "team_rule_id": "r-0099",
+    "answer_tenant_es": "Su proveedor de vivienda no puede exigirle una prueba de drogas o alcohol ni pedir su consentimiento para información sobre centros de tratamiento de drogas.",
+    "answer_owner_es": "Usted no debe exigir a los solicitantes pruebas de drogas o alcohol ni pedir consentimiento para información sobre centros de tratamiento de drogas."
+   },
+   {
+    "team_rule_id": "r-0100",
+    "answer_tenant_es": "Usted tiene derecho a igualdad de trato al alquilar, sin importar raza, discapacidad, fuente de ingresos lícitos y otras características indicadas.",
+    "answer_owner_es": "Usted debe tratar por igual a quienes alquilan, sin importar raza, discapacidad, fuente de ingresos lícitos y otras características indicadas."
+   },
+   {
+    "team_rule_id": "r-0101",
+    "answer_tenant_es": "Su arrendador no puede negarle un apartamento basándose únicamente en una fuente de ingresos lícita, como un voucher de la Sección 8 de HUD.",
+    "answer_owner_es": "Usted no puede negar un apartamento a un beneficiario de un voucher de la Sección 8 de HUD basándose únicamente en esa fuente de ingresos lícita."
+   },
+   {
+    "team_rule_id": "r-0102",
+    "answer_tenant_es": "Su depósito no puede exceder una vez y media el alquiler de un mes, y los aumentos anuales no pueden exceder el 10% de este.",
+    "answer_owner_es": null
+   },
+   {
+    "team_rule_id": "r-0103",
+    "answer_tenant_es": "Su arrendador no puede exigir más de dos veces y media el alquiler mensual al inicio del contrato, incluidos el depósito y el primer mes.",
+    "answer_owner_es": "Usted no puede exigir más de dos veces y media el alquiler mensual al inicio del contrato, incluidos el depósito y el primer mes."
+   },
+   {
+    "team_rule_id": "r-0104",
+    "answer_tenant_es": "Su arrendador con diez o menos unidades debe poner su depósito en una cuenta bancaria asegurada que genere intereses.",
+    "answer_owner_es": "Usted debe depositar el dinero de garantía de diez o menos unidades en una cuenta bancaria o de ahorros y préstamos asegurada que genere intereses."
+   },
+   {
+    "team_rule_id": "r-0105",
+    "answer_tenant_es": "Su arrendador debe devolverle su depósito de garantía, más los intereses ganados menos las deducciones, dentro de 30 días después de que termine su arrendamiento.",
+    "answer_owner_es": "Usted debe devolver el depósito de garantía, más los intereses ganados menos las deducciones, dentro de 30 días después de que termine el arrendamiento."
+   },
+   {
+    "team_rule_id": "r-0106",
+    "answer_tenant_es": "Su arrendador debe devolverle su depósito de garantía dentro de cinco (5) días hábiles después de que un incendio, inundación, condena o evacuación lo desplace.",
+    "answer_owner_es": "Usted debe devolver un depósito dentro de cinco (5) días hábiles después de que un incendio, inundación, condena o evacuación desplace al inquilino."
+   }
+  ]
+ }
+}

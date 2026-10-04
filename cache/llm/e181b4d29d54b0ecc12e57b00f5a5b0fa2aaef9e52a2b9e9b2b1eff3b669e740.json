@@ -1,0 +1,229 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_v1",
+  "system": "You write the plain-language line for a rental housing law app. The app always shows the quoted law, its citation and \"Not legal advice.\" next to your sentence.\n\nFor each rule you get its quoted text (the only source of law you may use) and a few structured fields. Write two sentences:\n- answer_tenant: addressed to a tenant (\"you\" = the tenant).\n- answer_owner: addressed to the landlord or property owner (\"you\" = the owner).\n\nRules for every sentence:\n1. One sentence, at most 20 words, containing \"you\" or \"your\".\n2. Start with the answer itself (e.g. \"Your landlord must...\", \"You must...\", \"You can...\"). No preamble such as \"Under this law\", \"This rule\" or \"According to\".\n3. Use only what the quoted text says. Add no facts, conditions, deadlines or remedies that are not in it. If the quote is too thin to say anything useful (for example only a bill title), return null for that sentence.\n4. Numbers, dates, percentages and dollar amounts: copy them exactly as they appear in the quote or key_value. Never compute, convert, round or combine them. If unsure, leave the number out.\n5. Owner sentences state obligations or prohibitions only. Never mention exemptions, exceptions, how a rule might not apply, or any way to avoid, get around or work around a rule. Tenant sentences state rights and protections, also without exemption talk.\n6. Status: \"pending\" means a bill or proposal that is not law, so say it is proposed and would apply only if enacted; \"not_yet_effective\" means enacted but not yet in effect, so say it is not in effect yet (no date unless the quote states it); \"in_force\" is present tense.\n7. Do not name the jurisdiction or the citation; the app shows them. Do not give legal advice, promise outcomes or say anyone is compliant.\n\nReturn JSON with one entry per rule id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant",
+       "answer_owner"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0037",
+    "category": "security_deposits",
+    "level": "state",
+    "status": "in_force",
+    "title": "Prohibition on nonrefundable security",
+    "key_value": null,
+    "quoted_span": "(n) A lease or rental agreement shall not contain a provision characterizing any security as “nonrefundable.”"
+   },
+   {
+    "team_rule_id": "r-0038",
+    "category": "algorithmic_rent_setting",
+    "level": "state",
+    "status": "pending",
+    "title": "An Act relative to preventing algorithmic rent fixing in the rental housing market",
+    "key_value": null,
+    "quoted_span": "An Act relative to preventing algorithmic rent fixing in the rental housing market"
+   },
+   {
+    "team_rule_id": "r-0039",
+    "category": "algorithmic_rent_setting",
+    "level": "state",
+    "status": "pending",
+    "title": "An Act prohibiting algorithmic rent setting (S.2983)",
+    "key_value": null,
+    "quoted_span": "An Act prohibiting algorithmic rent setting"
+   },
+   {
+    "team_rule_id": "r-0040",
+    "category": "application_screening_fees",
+    "level": "state",
+    "status": "in_force",
+    "title": "Broker fee paid only by party who engaged the broker",
+    "key_value": null,
+    "quoted_span": "Any fee shall only be paid by the party, lessor or tenant who originally engaged and entered into a contract with the licensed broker or salesperson."
+   },
+   {
+    "team_rule_id": "r-0041",
+    "category": "rent_increase_limits",
+    "level": "state",
+    "status": "in_force",
+    "title": "General prohibition on local rent control; exception",
+    "key_value": null,
+    "quoted_span": "No city or town may enact, maintain or enforce rent control of any kind, except that any city or town that accepts this chapter may adopt rent control regulation that provides:"
+   },
+   {
+    "team_rule_id": "r-0042",
+    "category": "screening_restrictions",
+    "level": "state",
+    "status": "in_force",
+    "title": "Prohibited inquiries of rental applicants (unlawful practices)",
+    "key_value": null,
+    "quoted_span": "(c) to cause to be made any written or oral inquiry or record concerning the race, religious creed, color, national origin, sex, gender identity, sexual orientation, which shall not include persons whose sexual orientation involves minor children as the sex object, age, genetic information, ancestry or marital status of the person seeking to rent or lease or buy any such accommodation, or concerning the fact that such person is a veteran or a member of the armed forces or because such person is blind or hearing impaired or has any other handicap."
+   },
+   {
+    "team_rule_id": "r-0043",
+    "category": "screening_restrictions",
+    "level": "state",
+    "status": "in_force",
+    "title": "Prohibited inquiries of persons seeking to rent (Section 4, subsection 7(c))",
+    "key_value": null,
+    "quoted_span": "(c) to cause to be made any written or oral inquiry or record concerning the race, color, religious creed, national origin, sex, gender identity, sexual orientation, which shall not include persons whose sexual orientation involves minor children as the sex object, age, genetic information, ancestry, marital status, veteran status or membership in the armed services, blindness, hearing impairment or other handicap or because such person possesses a trained dog guide as a consequence of blindness or hearing impairment, of the person seeking to rent or lease or buy any such accommodation or land; provided, however, that this subsection shall not apply to the leasing of a single apartment or flat in a two family dwelling, the other occupancy unit of which is occupied by the owner as his residence."
+   },
+   {
+    "team_rule_id": "r-0044",
+    "category": "screening_restrictions",
+    "level": "state",
+    "status": "in_force",
+    "title": "Public assistance and housing subsidy discrimination (Section 4, subsection 10)",
+    "key_value": null,
+    "quoted_span": "10. For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program."
+   },
+   {
+    "team_rule_id": "r-0045",
+    "category": "security_deposits",
+    "level": "state",
+    "status": "in_force",
+    "title": "Limit on payments at or before start of tenancy (security deposit cap)",
+    "key_value": "Security deposit equal to the first month's rent; total upfront limited to first month's rent + last month's rent + security deposit + key and lock cost",
+    "quoted_span": "(b) At or prior to the commencement of any tenancy, no lessor or agent of the lessor may require a tenant or prospective tenant to pay, to the lessor or to an agent of the lessor, any amount in excess of the following:"
+   },
+   {
+    "team_rule_id": "r-0046",
+    "category": "security_deposits",
+    "level": "state",
+    "status": "in_force",
+    "title": "Fee in lieu of security deposit",
+    "key_value": "Total fee (and any deposit) not to exceed 1 month's rent",
+    "quoted_span": "(C) limit the total sum of the fee or recurring payments, regardless of the duration of the lease and any extensions thereto, to an amount not to exceed 1 month's rent;"
+   },
+   {
+    "team_rule_id": "r-0047",
+    "category": "security_deposits",
+    "level": "state",
+    "status": "in_force",
+    "title": "Security deposit receipt",
+    "key_value": null,
+    "quoted_span": "Any lessor or his agent who receives a security deposit from a tenant or prospective tenant shall give said tenant or prospective tenant at the time of receiving such security deposit a receipt indicating the amount of such security deposit, the name of the person receiving it and, in the case of an agent, the name of the lessor for whom such security deposit is received, the date on which it is received, and a description of the premises leased or rented."
+   },
+   {
+    "team_rule_id": "r-0048",
+    "category": "security_deposits",
+    "level": "state",
+    "status": "in_force",
+    "title": "Statement of condition",
+    "key_value": null,
+    "quoted_span": "Any lessor of residential real property, or his agent, who accepts a security deposit from a tenant or prospective tenant shall, upon receipt of such security deposit, or within ten days after commencement of the tenancy, whichever is later, furnish to such tenant or prospective tenant a separate written statement of the present condition of the premises to be leased or rented."
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 3324,
+  "output_tokens": 5308
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0037",
+    "answer_tenant": "Your lease cannot contain a provision calling any security \"nonrefundable.\"",
+    "answer_owner": "You must not put a provision in a lease or rental agreement calling any security \"nonrefundable.\""
+   },
+   {
+    "team_rule_id": "r-0038",
+    "answer_tenant": null,
+    "answer_owner": null
+   },
+   {
+    "team_rule_id": "r-0039",
+    "answer_tenant": null,
+    "answer_owner": null
+   },
+   {
+    "team_rule_id": "r-0040",
+    "answer_tenant": "You pay a broker fee only if you originally engaged and contracted with the broker.",
+    "answer_owner": "You must not require a tenant to pay a broker fee unless the tenant originally engaged the broker."
+   },
+   {
+    "team_rule_id": "r-0041",
+    "answer_tenant": null,
+    "answer_owner": null
+   },
+   {
+    "team_rule_id": "r-0042",
+    "answer_tenant": "No one may ask about your race, color, national origin, sex, age, or marital status when you seek to rent.",
+    "answer_owner": "You must not make or cause any inquiry about an applicant's race, color, national origin, sex, age, or marital status."
+   },
+   {
+    "team_rule_id": "r-0043",
+    "answer_tenant": "No one may ask about your race, color, national origin, sex, age, or marital status when you seek to rent.",
+    "answer_owner": "You must not make or cause any inquiry about an applicant's race, color, national origin, sex, age, or marital status."
+   },
+   {
+    "team_rule_id": "r-0044",
+    "answer_tenant": "Your landlord cannot discriminate against you for receiving public assistance or a housing subsidy.",
+    "answer_owner": "You must not discriminate against a tenant for receiving public assistance or a housing subsidy, including rental assistance."
+   },
+   {
+    "team_rule_id": "r-0045",
+    "answer_tenant": "Your landlord can require only first month's rent, last month's rent, a security deposit, and key and lock cost upfront.",
+    "answer_owner": "You must not require more than first month's rent, last month's rent, security deposit, and key and lock cost upfront."
+   },
+   {
+    "team_rule_id": "r-0046",
+    "answer_tenant": "Your landlord's fee in lieu of a security deposit cannot total more than 1 month's rent.",
+    "answer_owner": "You must limit the total of any fee in lieu of a security deposit to 1 month's rent."
+   },
+   {
+    "team_rule_id": "r-0047",
+    "answer_tenant": "Your landlord must give you a receipt for your security deposit showing the amount, recipient, date, and premises description.",
+    "answer_owner": "You must give the tenant a receipt when you receive a security deposit, showing amount, receiver, date, and premises description."
+   },
+   {
+    "team_rule_id": "r-0048",
+    "answer_tenant": "Your landlord must give you a separate written statement of the premises' present condition after accepting your security deposit.",
+    "answer_owner": "You must give the tenant a separate written statement of the premises' present condition after accepting a security deposit."
+   }
+  ]
+ }
+}

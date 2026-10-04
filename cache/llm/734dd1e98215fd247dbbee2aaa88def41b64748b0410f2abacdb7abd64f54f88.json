@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "c45f0b3f1d3ab6ffc42dc3de11da2887516a985f3a0f0307b6a0448c867f7fee",
+  "previous_sha": "bd66501e2a92d042256914181520f4a5c166c6fdb669acf593c8311a48a61cd3",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2246,
+  "output_tokens": 86
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord must tell you in writing where your deposit is held within 30 days and at each annual interest payment.",
+  "answer_owner": "You must give your tenant written deposit details within 30 days of receipt and at each annual interest payment."
+ }
+}

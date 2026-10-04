@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "efb44d04e9c1bbbb077c0a022b4d824b3dd27624ed237862b28a404cf6a73f56",
+  "previous_sha": "425a80e19577b09698d3c9c3976c0001fe274a9f68daab63c291edd99c6c8e3c",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2304,
+  "output_tokens": 97
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord can owe $500 to $2,000 per offense for willfully withholding your deposit when you receive assistance.",
+  "answer_owner": "You may not willfully withhold an assisted tenant's deposit; each offense can cost you $500 to $2,000."
+ }
+}

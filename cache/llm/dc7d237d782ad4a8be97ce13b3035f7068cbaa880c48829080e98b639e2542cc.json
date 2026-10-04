@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "977b245648bad904f235a04b6ede626ac8c0fd6214033cae91b30a66f0caa833",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1542,
+  "output_tokens": 533
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Before your landlord voluntarily transfers their interest in the premises, they must give their successor a written statement.",
+  "answer_owner": "You must give your successor in interest a written statement before voluntarily transferring your interest in the premises."
+ }
+}

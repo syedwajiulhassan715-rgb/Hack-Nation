@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "bf2ace5fdf68d5e5f942703871195b1577e83d02417f2f7eba03c95577d55bed",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1705,
+  "output_tokens": 863
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your lower income household must receive a relocation payment if displaced by demolition of your unit for replacement new construction.",
+  "answer_owner": "You must pay relocation to lower income households displaced by demolition when you will replace the units with new construction."
+ }
+}

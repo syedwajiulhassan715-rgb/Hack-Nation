@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "0a3d67a0248378a2979c70ff24a0fb9ef7d46f5d25f43c68916909e1c08dab5e",
+  "english_sha": "1ae363dd955eed35047542a9fe127f5084f04999d78495c41ac5384c400c0170",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 841,
+  "output_tokens": 804
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Si su arrendador hace deducciones de su depósito, debe darle una declaración escrita detallada con documentos de respaldo.",
+  "answer_owner_es": "Si usted deduce del depósito, debe darle al inquilino una declaración escrita detallada con copias de documentos de respaldo."
+ }
+}

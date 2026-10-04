@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "0108d92d5d0e948a546aa422be95b5ab3937536c8cd022d3f7a9251a746f041f",
+  "english_sha": "ee989cf229de49d5d51c89a4f1f5f26e68ac31c8abff4ac925ea78c80ae3616a",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 805,
+  "output_tokens": 6426
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Tarifa reducida Mom-and-Pop le aplica solo a desalojos por ocupación del propietario o familiar elegible con todas las condiciones.",
+  "answer_owner_es": "Usted puede usar tarifa reducida Mom-and-Pop solo en desalojos por ocupación del propietario o familiar elegible con todas las condiciones."
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "80264c53dfc380e80759e14a0f92810574f66aa9eaa27c726d7bd1a4f81505fe",
+  "english_sha": "be8761c4f228d8691c71e72434d07c963ef4d8c4a15faa3f9244bc15c225a0b8",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 850,
+  "output_tokens": 1772
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador no puede cobrarle cargos no reembolsables por renovar su alquiler, incluso por salida, adición o reemplazo de compañeros.",
+  "answer_owner_es": "Usted no puede cobrar a inquilinos actuales tarifas de renovación no reembolsables, incluso por salida, adición o reemplazo de compañeros."
+ }
+}

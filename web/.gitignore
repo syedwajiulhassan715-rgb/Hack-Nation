@@ -23,3 +23,5 @@ public/data/
 
 .vercel
 .env*
+
+!.env.example

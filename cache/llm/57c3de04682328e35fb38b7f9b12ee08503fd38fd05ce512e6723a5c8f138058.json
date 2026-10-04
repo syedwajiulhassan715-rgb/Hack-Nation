@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "6ff941ee6c6e1c8218215e8c2284ccdee2825a80322d2cda8fff64f36283874b",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2431,
+  "output_tokens": 105
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "After you have lived in your home continuously and lawfully for 12 months, your landlord needs just cause, stated in a written notice, to end your tenancy.",
+  "answer_owner": "You may not end a tenancy without just cause once the tenant has lived there 12 months, and you must state it in writing."
+ }
+}

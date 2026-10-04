@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "f1e1241391793a84c80998e1efbc2a0d8fada7bb617406dcd5951ee2467486e0",
+  "english_sha": "9f188d64faa8ac433a652d30345a3df56acc93b61a75e7bad83e5e05dc05eb5f",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 881,
+  "output_tokens": 1530
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador puede pedir su desalojo si, tras aviso escrito, usted sigue con conducta desordenada que destruye la paz ajena.",
+  "answer_owner_es": "Usted debe entregar un aviso de desocupación al menos tres días antes de demandar el desalojo por conducta desordenada continua."
+ }
+}

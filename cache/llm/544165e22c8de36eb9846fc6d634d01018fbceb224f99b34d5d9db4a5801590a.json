@@ -1,0 +1,181 @@
+{
+ "key_parts": {
+  "stage": "summaries",
+  "summary_prompt_version": "summaries_es_v1",
+  "system": "You translate short plain-language lines from a rental housing law app into neutral Latin American Spanish, using \"usted\". The app shows the quoted law and \"Not legal advice.\" next to each line.\n\nTranslate each sentence faithfully as one sentence. Keep every number, date, percentage and dollar amount exactly as written (digits stay digits; do not spell numbers out). Add nothing and leave nothing out. Do not add exemptions or any way to avoid a rule. Keep it short: at most 26 words. Return JSON with one entry per id given, in the same order.",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "answers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "team_rule_id": {
+        "type": "string"
+       },
+       "answer_tenant_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "answer_owner_es": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "team_rule_id",
+       "answer_tenant_es",
+       "answer_owner_es"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "answers"
+   ],
+   "additionalProperties": false
+  },
+  "input": [
+   {
+    "team_rule_id": "r-0135",
+    "answer_tenant": "Your landlord must pay relocation assistance if you are displaced for a no-fault reason.",
+    "answer_owner": "You must pay relocation assistance when you displace a tenant for a no-fault reason."
+   },
+   {
+    "team_rule_id": "r-0136",
+    "answer_tenant": "Your landlord must make your relocation payment available within fifteen (15) days of serving the written eviction notice.",
+    "answer_owner": "You must make relocation payment available within fifteen (15) days of serving the written notice of eviction."
+   },
+   {
+    "team_rule_id": "r-0137",
+    "answer_tenant": "Your landlord must pay relocation assistance and file with LAHD before evicting you to demolish for new construction.",
+    "answer_owner": "You must pay relocation assistance and file a required notice with LAHD before evicting tenants to demolish for new construction."
+   },
+   {
+    "team_rule_id": "r-0138",
+    "answer_tenant": "You have the right to relocation and to a 6-month notice to move out.",
+    "answer_owner": "You must provide tenants relocation and a 6-month notice to move out."
+   },
+   {
+    "team_rule_id": "r-0139",
+    "answer_tenant": null,
+    "answer_owner": "You must follow relocation requirements if you demolish a Protected Unit for new construction within 5 years after filing."
+   },
+   {
+    "team_rule_id": "r-0141",
+    "answer_tenant": "Your owner must pay you the RSO or JCO relocation amounts within 15 days of filing the required notice.",
+    "answer_owner": "You must pay tenants the RSO or JCO relocation amounts within 15 days of filing the required notice."
+   },
+   {
+    "team_rule_id": "r-0142",
+    "answer_tenant": "You should receive at least the RSO or JCO relocation amounts if you are displaced for new construction.",
+    "answer_owner": "You should pay displaced tenants at least the RSO or JCO relocation amounts when demolishing for new construction."
+   },
+   {
+    "team_rule_id": "r-0143",
+    "answer_tenant": "Your landlord must make relocation payments available to you within fifteen (15) days of serving the written notice of eviction.",
+    "answer_owner": "You must make relocation payments available within fifteen (15) days of serving the written notice of eviction."
+   },
+   {
+    "team_rule_id": "r-0144",
+    "answer_tenant": "Your landlord cannot offset accumulated rent against relocation assistance owed due to a government order on an unpermitted dwelling.",
+    "answer_owner": "You cannot offset a tenant's accumulated rent against relocation assistance owed due to a government order on an unpermitted dwelling."
+   },
+   {
+    "team_rule_id": "r-0146",
+    "answer_tenant": "Your rent may be increased once every 12 months by the allowable rent increase percentage.",
+    "answer_owner": "You must limit rent increases to once every 12 months, by the allowable rent increase percentage."
+   },
+   {
+    "team_rule_id": "r-0147",
+    "answer_tenant": "Your landlord can no longer include an additional percentage increase for utilities, effective February 2, 2026.",
+    "answer_owner": "You can no longer include an additional percentage increase for utilities, effective February 2, 2026."
+   },
+   {
+    "team_rule_id": "r-0148",
+    "answer_tenant": "Rent increases for your RSO unit are prohibited from March 30, 2020, through January 31, 2024.",
+    "answer_owner": "You may not increase rent on RSO units from March 30, 2020, through January 31, 2024."
+   }
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1830,
+  "output_tokens": 3122
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answers": [
+   {
+    "team_rule_id": "r-0135",
+    "answer_tenant_es": "Su arrendador debe pagar asistencia de reubicación si usted es desplazado por una razón sin culpa.",
+    "answer_owner_es": "Usted debe pagar asistencia de reubicación cuando desplaza a un inquilino por una razón sin culpa."
+   },
+   {
+    "team_rule_id": "r-0136",
+    "answer_tenant_es": "Su arrendador debe poner a su disposición su pago de reubicación dentro de 15 días después de entregar el aviso escrito de desalojo.",
+    "answer_owner_es": "Usted debe poner a disposición el pago de reubicación dentro de 15 días después de entregar el aviso escrito de desalojo."
+   },
+   {
+    "team_rule_id": "r-0137",
+    "answer_tenant_es": "Su arrendador debe pagar asistencia de reubicación y hacer una presentación ante LAHD antes de desalojarlo para demoler por nueva construcción.",
+    "answer_owner_es": "Usted debe pagar asistencia de reubicación y presentar un aviso requerido ante LAHD antes de desalojar a inquilinos para demoler por nueva construcción."
+   },
+   {
+    "team_rule_id": "r-0138",
+    "answer_tenant_es": "Usted tiene derecho a reubicación y a un aviso de 6 meses para mudarse.",
+    "answer_owner_es": "Usted debe proporcionar a los inquilinos reubicación y un aviso de 6 meses para mudarse."
+   },
+   {
+    "team_rule_id": "r-0139",
+    "answer_tenant_es": null,
+    "answer_owner_es": "Usted debe cumplir los requisitos de reubicación si demuele una Unidad Protegida para nueva construcción dentro de 5 años después de la presentación."
+   },
+   {
+    "team_rule_id": "r-0141",
+    "answer_tenant_es": "Su propietario debe pagarle los montos de reubicación de RSO o JCO dentro de 15 días después de presentar el aviso requerido.",
+    "answer_owner_es": "Usted debe pagar a los inquilinos los montos de reubicación de RSO o JCO dentro de 15 días después de presentar el aviso requerido."
+   },
+   {
+    "team_rule_id": "r-0142",
+    "answer_tenant_es": "Usted debería recibir al menos los montos de reubicación de RSO o JCO si es desplazado por nueva construcción.",
+    "answer_owner_es": "Usted debería pagar a los inquilinos desplazados al menos los montos de reubicación de RSO o JCO al demoler por nueva construcción."
+   },
+   {
+    "team_rule_id": "r-0143",
+    "answer_tenant_es": "Su arrendador debe poner a su disposición los pagos de reubicación dentro de 15 días después de entregar el aviso escrito de desalojo.",
+    "answer_owner_es": "Usted debe poner a disposición los pagos de reubicación dentro de 15 días después de entregar el aviso escrito de desalojo."
+   },
+   {
+    "team_rule_id": "r-0144",
+    "answer_tenant_es": "Su arrendador no puede compensar la renta acumulada con la asistencia de reubicación adeudada debido a una orden gubernamental sobre una vivienda sin permiso.",
+    "answer_owner_es": "Usted no puede compensar la renta acumulada de un inquilino con la asistencia de reubicación adeudada debido a una orden gubernamental sobre una vivienda sin permiso."
+   },
+   {
+    "team_rule_id": "r-0146",
+    "answer_tenant_es": "Su renta puede aumentarse una vez cada 12 meses según el porcentaje permitido de aumento de renta.",
+    "answer_owner_es": "Usted debe limitar los aumentos de renta a una vez cada 12 meses, según el porcentaje permitido de aumento de renta."
+   },
+   {
+    "team_rule_id": "r-0147",
+    "answer_tenant_es": "Su arrendador ya no puede incluir un aumento porcentual adicional por servicios públicos, a partir del 2 de febrero de 2026.",
+    "answer_owner_es": "Usted ya no puede incluir un aumento porcentual adicional por servicios públicos, a partir del 2 de febrero de 2026."
+   },
+   {
+    "team_rule_id": "r-0148",
+    "answer_tenant_es": "Se prohíben los aumentos de renta de su unidad RSO desde el 30 de marzo de 2020 hasta el 31 de enero de 2024.",
+    "answer_owner_es": "Usted no puede aumentar la renta de unidades RSO desde el 30 de marzo de 2020 hasta el 31 de enero de 2024."
+   }
+  ]
+ }
+}

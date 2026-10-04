@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "cf0f4ec4d22bf15d3dfd99b3cb00aa311697188c3938c184b867e505aeb579f4",
+  "english_sha": "c5c7a8458e6b0f2c9f8af093af0d7c462726d778d892258281e23d355221f685",
+  "previous_sha": "dd77491296abb60cacbfd2e399174663f8106aaabbb30147ce6b907bb8b61ec2",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1320,
+  "output_tokens": 540
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Una propuesta pendiente haría ilegal vender, otorgar licencias o proporcionar de otro modo un dispositivo algorítmico a su arrendador.",
+  "answer_owner_es": "Si se aprueba, este proyecto le prohibiría vender, licenciar o proporcionar de otro modo un dispositivo algorítmico a un arrendador."
+ }
+}

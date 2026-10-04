@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "ae803de2907445e847d35c27b532ff2a67da5b49d78ba2ea2787a17e7e58e2cd",
+  "english_sha": "784f84e33ef2533cc4033369a075a805c7abad943d2f6a5a55b967a63c26a8b0",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 847,
+  "output_tokens": 1064
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador no puede considerar arrestos sin condena, registros sellados, eliminados o juveniles, ni imponer prohibiciones generales por antecedentes penales.",
+  "answer_owner_es": "Usted no puede considerar arrestos sin condena, registros sellados, eliminados o juveniles, ni prohibir a todos con antecedentes penales."
+ }
+}

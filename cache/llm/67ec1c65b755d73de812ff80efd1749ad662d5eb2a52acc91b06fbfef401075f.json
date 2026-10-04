@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "702f7c6f3dbab3002bfd02f66587b37e4e9eda03438ddd1159939cf266abefd1",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1700,
+  "output_tokens": 90
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord cannot ask you anything, orally or in writing, about your criminal record before making you a conditional offer.",
+  "answer_owner": "You may not make any oral or written inquiry about an applicant's criminal record before making a conditional offer."
+ }
+}

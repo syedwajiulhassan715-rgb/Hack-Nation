@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "af0f3fd18d5fe42b080494d955e9f7c7c94617e81d4d991a8f1a7038ec278191",
+  "english_sha": "ba3c2e458e7a24c4e6b78909d2579cda76c522783803601dda5559e8192190dd",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 806,
+  "output_tokens": 160
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Cuando entre en vigor, cierta conducta algorítmica de su arrendador para inflar los alquileres será ilegal conforme a la Ley Antimonopolio de Nueva Jersey.",
+  "answer_owner_es": "Cuando entre en vigor, usted no deberá incurrir en cierta conducta algorítmica de inflación de alquileres que infrinja la Ley Antimonopolio de Nueva Jersey."
+ }
+}

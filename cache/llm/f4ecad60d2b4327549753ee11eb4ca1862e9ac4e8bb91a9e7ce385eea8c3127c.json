@@ -1,0 +1,21 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "796e5e94710c7afc6997da2c383c92626f115d2f75ef8ef92eb83231621ac84f",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1599,
+  "output_tokens": 122
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Under current law, you should expect a copy of your credit report within 7 days of receipt, a receipt with itemized expenses and time spent, and a refund of any unused fee.",
+  "answer_owner": "You must give applicants a copy of their credit report within 7 days of receipt, an itemized receipt for the fee, and a refund of any unused portion."
+ }
+}

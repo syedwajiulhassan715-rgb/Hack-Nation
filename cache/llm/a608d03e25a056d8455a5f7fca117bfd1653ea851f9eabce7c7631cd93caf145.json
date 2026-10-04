@@ -1,0 +1,21 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "af0f3fd18d5fe42b080494d955e9f7c7c94617e81d4d991a8f1a7038ec278191",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1657,
+  "output_tokens": 2416
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Once it takes effect, certain algorithmic rent-inflation conduct by your landlord will be unlawful under the New Jersey Antitrust Act.",
+  "answer_owner": "Once it takes effect, you must not engage in certain algorithmic rent-inflation conduct that violates the New Jersey Antitrust Act."
+ }
+}

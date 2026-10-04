@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "debbe46916955ce13432381956c46b8c91326d6096583b6efcc4d78be79c7815",
+  "english_sha": "8a7cc87bdc1d951472aec46c604fff5869e1342813f296ae32c637a9a20f9e79",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 863,
+  "output_tokens": 657
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador debe fotografiar la unidad antes y después de reparaciones o limpiezas que deduzca de su depósito de seguridad.",
+  "answer_owner_es": "Usted debe fotografiar la unidad antes y después de reparaciones o limpiezas que deducirá del depósito de seguridad."
+ }
+}

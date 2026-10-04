@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "995f8a6776f49627af2cec749c69fdb22502a83d14919571bf1c444b60940773",
+  "previous_sha": "cc49a51523dcd247b50b58bd600c9adb441e7aadfba26ca6402a5eaa35bcd421",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2100,
+  "output_tokens": 76
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord must notify you in writing that you can request an initial inspection and be present for it.",
+  "answer_owner": "You must notify your tenant in writing of their option to request an initial inspection and to be present."
+ }
+}

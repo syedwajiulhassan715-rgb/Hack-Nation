@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "4646a8f12a626f3f76b45ba81d2d110eed20ff195822ea119502ef9029572648",
+  "english_sha": "34f2c5fe483b5a055ee487ecfdaf40ac71c20709af4d15f2fd6251ba494a1a36",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 783,
+  "output_tokens": 613
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador debe ofrecerle una inspección de recorrido durante las últimas dos semanas de su arrendamiento.",
+  "answer_owner_es": "Usted debe ofrecer una inspección de recorrido en las últimas dos semanas del arrendamiento para identificar reparaciones o limpieza necesarias."
+ }
+}

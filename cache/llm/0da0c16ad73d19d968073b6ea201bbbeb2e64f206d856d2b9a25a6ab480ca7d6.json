@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "f3f54c4d4bb69228fe6e28859b29d664034df2698ce082ad679c080953dc8737",
+  "previous_sha": "b0b7667b6f1fa0154a5c1731a057113aabdb614ebd6960b0dcfc5cc3f8bfbe32",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2270,
+  "output_tokens": 103
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord must attach a form on repayment agreements, rental assistance and eviction rules to a written nonpayment notice to quit.",
+  "answer_owner": "You must attach a form on repayment agreements, rental assistance and eviction rules to any written nonpayment notice to quit."
+ }
+}

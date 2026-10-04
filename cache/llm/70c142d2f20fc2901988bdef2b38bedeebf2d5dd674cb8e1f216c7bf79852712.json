@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "04eeeb07d248a4ca8a72f85484bdb0896ce784321e4895f24bca91e783756f14",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1926,
+  "output_tokens": 90
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your annual general rent adjustment can be no more than 5%, even if the formula would produce a higher number.",
+  "answer_owner": "You cannot raise rent through the annual general adjustment by more than 5%, even if the formula gives a higher number."
+ }
+}

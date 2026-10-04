@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "1c1b479186acf24745d02dfc6964f34aa07c92af51f57df74f1c9fbe1d01e7b7",
+  "english_sha": "0c729b58ae8d1d52fd269ce61cb4856dad0cc1273d60029a574e151a60464c0b",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 835,
+  "output_tokens": 857
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su depósito no puede superar un mes y medio de alquiler, y sus aumentos anuales no pueden superar el 10%.",
+  "answer_owner_es": "Usted no puede cobrar un depósito superior a un mes y medio de alquiler ni aumentarlo anualmente más del 10%."
+ }
+}

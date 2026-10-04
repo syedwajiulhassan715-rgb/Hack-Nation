@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "08cb9cfa265d0d0941806b9d2346b8574a4c53c8795aec748311163eea6d1903",
+  "english_sha": "a62f3796fc0163a460bfc6f8629e69586b4eb1bf30d46cffbb2b8d7c6a2cf6ad",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 790,
+  "output_tokens": 2169
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Regla vigente: no podían subirle la renta del 30 de marzo de 2020 al 31 de enero de 2024.",
+  "answer_owner_es": "Regla vigente: usted no puede subir la renta del 30 de marzo de 2020 al 31 de enero de 2024."
+ }
+}

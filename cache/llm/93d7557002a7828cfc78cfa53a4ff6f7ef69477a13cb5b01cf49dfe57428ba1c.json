@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair2",
+  "rule_sha": "e20d8bfa3ab01388225e80ae080a450478eb588d515691cf74339adc33ca1038",
+  "previous_sha": "596b80dabbb18b184d0cb5b0f5b13bd9f2a487a28c0b51451a2e72141ef35e2b",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2164,
+  "output_tokens": 102
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord's notice must clearly describe the lease breach, and they cannot evict you for breaches causing no actual harm.",
+  "answer_owner": "You must clearly describe the breach in your notice, show unreasonable tenant behavior, and may not evict for harmless breaches."
+ }
+}
