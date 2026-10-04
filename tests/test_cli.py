@@ -23,7 +23,7 @@ def test_help_runs(capsys):
 def test_unbuilt_stage_fails_loudly(capsys):
     # Fail closed: a stage that does not exist yet must exit non-zero, not print "done".
     # Update the stage name here when its phase lands.
-    assert cli.main(["geocode"]) == 2
+    assert cli.main(["summaries"]) == 2
     assert "not implemented" in capsys.readouterr().err
 
 

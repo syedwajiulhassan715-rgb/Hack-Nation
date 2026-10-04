@@ -1,0 +1,11 @@
+{
+ "request": {
+  "endpoint": "locations/onelineaddress",
+  "params": {
+   "address": "90 KENSINGTON AVE, Jersey City, NJ 07302",
+   "benchmark": "Public_AR_Current",
+   "format": "json"
+  }
+ },
+ "response": "{\"result\":{\"input\":{\"address\":{\"address\":\"90 KENSINGTON AVE, Jersey City, NJ 07302\"},\"benchmark\":{\"isDefault\":true,\"benchmarkDescription\":\"Public Address Ranges - Current Benchmark\",\"id\":\"4\",\"benchmarkName\":\"Public_AR_Current\"}},\"addressMatches\":[{\"tigerLine\":{\"side\":\"R\",\"tigerLineId\":\"59604196\"},\"coordinates\":{\"x\":-74.075287274906,\"y\":40.723144945194},\"addressComponents\":{\"zip\":\"07304\",\"streetName\":\"KENSINGTON\",\"preType\":\"\",\"city\":\"JERSEY CITY\",\"preDirection\":\"\",\"suffixDirection\":\"\",\"fromAddress\":\"82\",\"state\":\"NJ\",\"suffixType\":\"AVE\",\"toAddress\":\"198\",\"suffixQualifier\":\"\",\"preQualifier\":\"\"},\"matchedAddress\":\"90 KENSINGTON AVE, JERSEY CITY, NJ, 07304\"},{\"tigerLine\":{\"side\":\"R\",\"tigerLineId\":\"59604191\"},\"coordinates\":{\"x\":-74.0786679641,\"y\":40.724803794028},\"addressComponents\":{\"zip\":\"07306\",\"streetName\":\"KENSINGTON\",\"preType\":\"\",\"city\":\"JERSEY CITY\",\"preDirection\":\"\",\"suffixDirection\":\"\",\"fromAddress\":\"2\",\"state\":\"NJ\",\"suffixType\":\"AVE\",\"toAddress\":\"178\",\"suffixQualifier\":\"\",\"preQualifier\":\"\"},\"matchedAddress\":\"90 KENSINGTON AVE, JERSEY CITY, NJ, 07306\"}]}}"
+}

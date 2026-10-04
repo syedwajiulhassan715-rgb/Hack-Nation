@@ -1,0 +1,11 @@
+{
+ "request": {
+  "endpoint": "locations/onelineaddress",
+  "params": {
+   "address": "322 Western Ave, Cambridge, MA",
+   "benchmark": "Public_AR_Current",
+   "format": "json"
+  }
+ },
+ "response": "{\"result\":{\"input\":{\"address\":{\"address\":\"322 Western Ave, Cambridge, MA\"},\"benchmark\":{\"isDefault\":true,\"benchmarkDescription\":\"Public Address Ranges - Current Benchmark\",\"id\":\"4\",\"benchmarkName\":\"Public_AR_Current\"}},\"addressMatches\":[{\"tigerLine\":{\"side\":\"L\",\"tigerLineId\":\"86869673\"},\"coordinates\":{\"x\":-71.113348085886,\"y\":42.364468228676},\"addressComponents\":{\"zip\":\"02139\",\"streetName\":\"WESTERN\",\"preType\":\"\",\"city\":\"CAMBRIDGE\",\"preDirection\":\"\",\"suffixDirection\":\"\",\"fromAddress\":\"316\",\"state\":\"MA\",\"suffixType\":\"AVE\",\"toAddress\":\"338\",\"suffixQualifier\":\"\",\"preQualifier\":\"\"},\"matchedAddress\":\"322 WESTERN AVE, CAMBRIDGE, MA, 02139\"}]}}"
+}

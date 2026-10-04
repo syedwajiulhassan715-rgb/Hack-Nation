@@ -1,0 +1,11 @@
+{
+ "request": {
+  "endpoint": "locations/onelineaddress",
+  "params": {
+   "address": "600 JACKSON, Hoboken, NJ 07030",
+   "benchmark": "Public_AR_Current",
+   "format": "json"
+  }
+ },
+ "response": "{\"result\":{\"input\":{\"address\":{\"address\":\"600 JACKSON, Hoboken, NJ 07030\"},\"benchmark\":{\"isDefault\":true,\"benchmarkDescription\":\"Public Address Ranges - Current Benchmark\",\"id\":\"4\",\"benchmarkName\":\"Public_AR_Current\"}},\"addressMatches\":[{\"tigerLine\":{\"side\":\"L\",\"tigerLineId\":\"59605363\"},\"coordinates\":{\"x\":-74.039281685445,\"y\":40.745283626731},\"addressComponents\":{\"zip\":\"07030\",\"streetName\":\"JACKSON\",\"preType\":\"\",\"city\":\"HOBOKEN\",\"preDirection\":\"\",\"suffixDirection\":\"\",\"fromAddress\":\"600\",\"state\":\"NJ\",\"suffixType\":\"ST\",\"toAddress\":\"998\",\"suffixQualifier\":\"\",\"preQualifier\":\"\"},\"matchedAddress\":\"600 JACKSON ST, HOBOKEN, NJ, 07030\"}]}}"
+}

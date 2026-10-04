@@ -1,0 +1,11 @@
+{
+ "request": {
+  "endpoint": "locations/onelineaddress",
+  "params": {
+   "address": "5164 3RD ST, San Francisco, CA",
+   "benchmark": "Public_AR_Current",
+   "format": "json"
+  }
+ },
+ "response": "{\"result\":{\"input\":{\"address\":{\"address\":\"5164 3RD ST, San Francisco, CA\"},\"benchmark\":{\"isDefault\":true,\"benchmarkDescription\":\"Public Address Ranges - Current Benchmark\",\"id\":\"4\",\"benchmarkName\":\"Public_AR_Current\"}},\"addressMatches\":[{\"tigerLine\":{\"side\":\"R\",\"tigerLineId\":\"192290952\"},\"coordinates\":{\"x\":-122.392090570269,\"y\":37.731288264664},\"addressComponents\":{\"zip\":\"94124\",\"streetName\":\"3RD\",\"preType\":\"\",\"city\":\"SAN FRANCISCO\",\"preDirection\":\"\",\"suffixDirection\":\"\",\"fromAddress\":\"5138\",\"state\":\"CA\",\"suffixType\":\"ST\",\"toAddress\":\"5188\",\"suffixQualifier\":\"\",\"preQualifier\":\"\"},\"matchedAddress\":\"5164 3RD ST, SAN FRANCISCO, CA, 94124\"}]}}"
+}

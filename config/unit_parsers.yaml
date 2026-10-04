@@ -1,0 +1,97 @@
+# use_description -> units_min / units_max (CONTRACT.md 7, BACKEND_PLAN.md 2.6).
+#
+# These patterns read each assessor data set's own coding of building size. They are a
+# data dictionary, not law: no legal threshold appears here. Used only when the `units`
+# column is empty (when it is present they are a cross-check; see navigator/geo/units.py).
+#
+# Tried in order; the first parser whose `pattern` matches (re.search) decides. A parser
+# limited to `states` is skipped for other states. Anything unmatched gives no range
+# (fail closed: unit predicates evaluate to UNKNOWN). Every pattern below was checked by
+# hand against the distinct use_description values in data/starter/data/sample_addresses.csv.
+#
+# Kinds: range (min/max = fixed int or {group: n, add: k}), none (reviewed: no count),
+# sum_tokens (NJ MOD-IV building description; see NJ notes below).
+
+parsers:
+  # ---- California ---------------------------------------------------------------
+  - id: plus_units_suffix           # "Alameda County use code (5+ units)",
+    kind: range                     # "SANDAG asr_landuse 14-16 (5+ units)" (14-16 is the
+    pattern: '\((\d+)\+ units\)$'   # land-use code, not a unit range: matched first)
+    states: [CA]
+    min: {group: 1}
+
+  - id: la_five_or_more             # LA County eGIS "Five or more apartments"
+    kind: range
+    pattern: '^Five or more apartments$'
+    states: [CA]
+    min: 5
+
+  - id: sf_a_to_b_units             # DataSF "Apartment 5 to 14 Units", "Flats 5 to 14 units",
+    kind: range                     # "Flat & Store 5 to 14 units"
+    pattern: '(?i)^(?:Apartment|Flats?|Flat & Store) (\d+) to (\d+) units$'
+    states: [CA]
+    min: {group: 1}
+    max: {group: 2}
+
+  - id: sf_units_or_more            # DataSF "Apartment 15 Units or more"
+    kind: range
+    pattern: '(?i)^Apartment (\d+) units or more$'
+    states: [CA]
+    min: {group: 1}
+
+  - id: sf_units_or_less            # DataSF "TIC Bldg 4 units or less"
+    kind: range
+    pattern: '(?i)^TIC Bldg (\d+) units or less$'
+    states: [CA]
+    max: {group: 1}
+
+  # ---- Massachusetts ------------------------------------------------------------
+  - id: boston_apt_range            # Boston "APT 7-30 UNITS"
+    kind: range
+    pattern: '^APT (\d+)-(\d+) UNITS$'
+    states: [MA]
+    min: {group: 1}
+    max: {group: 2}
+
+  - id: boston_no_count             # "SUBSD HOUSING S- 8" (8 is Section 8, not units),
+    kind: none                      # "LUXURY APARTMENT", "ELDERLY HOME"
+    pattern: '^(?:SUBSD HOUSING S- ?8|LUXURY APARTMENT|ELDERLY HOME)$'
+    states: [MA]
+
+  - id: cambridge_a_to_b            # Cambridge "4-8-UNIT-APT"
+    kind: range
+    pattern: '^(?:MXD )?(\d+)-(\d+)-UNIT-APT$'
+    states: [MA]
+    min: {group: 1}
+    max: {group: 2}
+
+  - id: cambridge_more_than         # Cambridge ">8-UNIT-APT", "MXD >8-UNIT-APT": more than 8
+    kind: range
+    pattern: '^(?:MXD )?>(\d+)-UNIT-APT$'
+    states: [MA]
+    min: {group: 1, add: 1}
+
+  # ---- New Jersey (MOD-IV building description) -----------------------------------
+  - id: nj_class_label_only         # "Apartments (class 4C)": a class label, no count
+    kind: none
+    pattern: '^Apartments \(class 4C\)$'
+    states: [NJ]
+
+  # Clear tokens are "<n>U" standing alone between separators ("3S-B-A-22U" -> 22,
+  # "5B-10U-H-BA" -> 10). Several buildings are joined by "/" ("3B-7U/4B-24U-G" -> 31);
+  # a "/" between digits is a fraction ("4 1/2B-10U-BA"), not a separator.
+  #
+  # Ambiguous (NOTES.md open question 4), no range:
+  # - "<n>U" glued to a following letter: "3SB2UG", "3SF3UG", "3SB1UG", "2.5SF4UG",
+  #   "USCB16UG", "3SB-2UG". The glued form ("2UG": 2 units? 2 units + garage? a
+  #   garage count?) follows the story/style code with no separator, unlike every
+  #   clear token, and no MOD-IV data dictionary in the starter pack defines it. Kept
+  #   unparsed until one does.
+  # - "1OU" (letter O where a digit is expected, "5B-1OU"): typo, no range.
+  - id: nj_mod_iv_units
+    kind: sum_tokens
+    pattern: '\dU|\dOU'
+    states: [NJ]
+    split: '(?<!\d)/|/(?!\d)'
+    token: '(?:^|[-/ ])(\d+)U(?=$|[-/])'
+    ambiguous: '\d+U[A-Z]|\dOU'
