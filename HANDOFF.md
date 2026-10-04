@@ -25,8 +25,9 @@ Not legal advice.
   - Redeploy: `cd web && vercel build --prod && vercel deploy --prebuilt --prod --yes`
     (builds locally because the build reads ../outputs). Env for the build: see
     `web/.env.example` (`VITE_API_BASE`, `VITE_ESRI_API_KEY`).
-- Imagery: USGS orthoimagery (public domain, zoom 16) unless `VITE_ESRI_API_KEY` is set, then
-  Esri World Imagery (zoom 19, sharper). Esri's terms require an ArcGIS account, so only the
+- Imagery: Esri World Imagery (zoom 19) is LIVE, key in `web/.env.local` (git-ignored, with
+  `VITE_API_BASE`; `vercel build` reads it). Without the key the build falls back to USGS
+  orthoimagery (public domain, zoom 16). Esri's terms require an ArcGIS account, so only the
   keyed ArcGIS Location Platform endpoint is used, never the keyless one.
 - API LIVE on Render (free): https://rental-law-navigator-api.onrender.com (Blueprint from
   `render.yaml`, auto-deploys from main, `NAVIGATOR_CORS_ORIGINS` set to the Vercel URL,
@@ -36,8 +37,9 @@ Not legal advice.
   Show live extraction locally: `python -m navigator rerun-live <file> --jurisdiction "City, ST"`.
 
 ## Open items
-- USER TODO: ArcGIS Location Platform API key (basemaps privilege, referrer-restricted to the
-  Vercel domain) for the sharper imagery.
+- USER TODO: in the ArcGIS key's Settings, confirm the referrer restriction
+  (`https://rental-law-navigator.vercel.app`): on 2026-10-04 a request with no referrer still
+  got tiles. Rotate the key after the hackathon (it was shared in a chat session).
 - USER TODO: remove the 16 old agent worktrees in `.claude/worktrees/` (all branches merged
   into main). Their uncommitted drafts are archived in `../worktree-backup-2026-10-04.tar.gz`
   and their LLM cache entries were copied into `cache/llm/`. Command:
