@@ -156,4 +156,12 @@ tracking are plain Python with unit tests.
 Add its official pages to `data/supplement/` (one page at a time, same header) and its Census
 place to `config/jurisdictions.yaml`, then rerun the pipeline. No code changes.
 
+## License
+
+Code: [MIT](LICENSE), copyright (c) 2026 Team Locus. The license covers this repository's
+code only. The legal texts and sample addresses in `data/` come from the hackathon
+participant pack and their official sources and keep their own terms; map imagery, terrain
+and labels are used under their providers' terms (USGS, Esri, AWS Terrain Tiles,
+OpenStreetMap/OpenFreeMap), as credited on the map.
+
 *Not legal advice. Summaries of law here are for building a prototype.*

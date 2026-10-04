@@ -48,7 +48,6 @@ Not legal advice.
   paraphrase); review `config/test_rule_map.yaml` (set `reviewed: true`).
 - Screening-fee $ figure from a Berkeley page (D005) shown as a CA key_value (flag it).
 - FAIR Act `interaction` empty in the rights label.
-- No LICENSE file (team decision).
 - A0352 Newark geocoder tie; 5 Boston rows without a house number.
 - Demo: rehearse the 90-second path (FRONTEND_PLAN.md section 8) and `rerun-live`.
 - Hour-20 rule: after the freeze, fixes only, no refactors.
