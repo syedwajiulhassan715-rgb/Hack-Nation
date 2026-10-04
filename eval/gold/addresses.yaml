@@ -1,0 +1,490 @@
+# Gold addresses (BACKEND_PLAN.md 4.4). EVALUATION DATA ONLY: the pipeline never reads this file.
+#
+# DRAFT. Written from data/starter/data/sample_addresses.csv and the corpus text only, never
+# from outputs/ (parcels.json, lookups.json). A human must check every entry, ideally with
+# the Census Geocoder for the legal city, before the numbers count; until `reviewed_by` is
+# set, eval/gold_eval.py labels all numbers "draft gold, unreviewed".
+#
+# Fields per entry:
+#   address_id    from the CSV
+#   state         expected state
+#   legal_city    "City, ST" | "none" (no corpus city) | "uncertain" (cannot tell without
+#                 geocoding; skipped in the city metric) - with city_reason
+#   facts         the CSV facts the expectations rely on (copied for the reviewer)
+#   results       expected lookup result per gold rule (ids from rules.yaml) on 2026-10-01:
+#                 applies | unknown | superseded | not_yet_effective | pending | absent
+#                 ("absent" = no row in lookups.json). Optional also_ok: [alternatives].
+#
+# Reading conventions (CONTRACT.md 7, from the law text):
+#   - "certificate of occupancy within the previous 15 years" (Civ. Code 1947.12(d)(4),
+#     SDMC 98.0703(k)): D040 gives the rolling rule (built 2006 -> covered from 2021-01-01),
+#     so on 2026-10-01 built <= 2011 is covered, built >= 2012 is exempt, missing is unknown.
+#   - LA RSO: "first built on or before October 1, 1978" (D041); built 1978 or missing -> unknown.
+#   - SF rent increase limits: units first certified after June 13, 1979 are exempt (D079).
+#   - Berkeley rent control: multifamily built before 1980 (D009); missing year -> unknown.
+#   - A state rent cap is "superseded" where local rent control limits increases to less
+#     (1947.12(d)(3)): SF 1.6% (D080), LA RSO.
+#   - Rules whose gold status is pending give "pending" for every covered address.
+#   - Unit ranges come from `units` or clear `<n>U` tokens in use_description; conflicting or
+#     unclear values leave unit-based tests unknown.
+status: draft
+reviewed_by: null
+reviewed_at: null
+as_of: '2026-10-01'
+note: >-
+  Draft gold set written from the address CSV and corpus text by the team's agent. Legal
+  cities are not geocoded; each needs a human check (Census Geocoder) before review.
+
+addresses:
+  # ------------------------------------------------------------------ Los Angeles
+  - address_id: A0001
+    state: CA
+    legal_city: Los Angeles, CA
+    facts: {year_built: 1927, units: 32}
+    results:
+      - {rule: g-la-rso-increase, expected: applies, reason: 'built 1927, on or before 1978-10-01; 32-unit apartment'}
+      - {rule: g-ca-rent-cap, expected: superseded, reason: 'RSO limits increases below 5%+CPI (1947.12(d)(3))'}
+      - {rule: g-la-jco, expected: absent, reason: 'JCO covers properties not regulated by the RSO'}
+      - {rule: g-ca-ab325, expected: applies, reason: 'statewide, in force since 2026-01-01'}
+      - {rule: g-ca-deposit, expected: applies, reason: '32 units: the small-landlord two-month exception cannot apply'}
+      - {rule: g-sf-algorithmic, expected: absent, reason: 'San Francisco rule, Los Angeles address'}
+  - address_id: A0248
+    state: CA
+    legal_city: Los Angeles, CA
+    facts: {year_built: 1923, units: 24}
+    results:
+      - {rule: g-la-rso-increase, expected: applies, reason: 'built 1923, RSO'}
+      - {rule: g-ca-rent-cap, expected: superseded, reason: 'RSO building'}
+      - {rule: g-santa-ana-rent-cap, expected: absent, reason: 'Santa Ana rule, Los Angeles address'}
+  - address_id: A0445
+    state: CA
+    legal_city: Los Angeles, CA
+    facts: {year_built: 1977, units: 25}
+    results:
+      - {rule: g-la-rso-increase, expected: applies, reason: 'built 1977, the year before the cutoff year (year built, not certificate of occupancy)'}
+      - {rule: g-ca-rent-cap, expected: superseded, reason: 'RSO building'}
+  - address_id: A0107
+    state: CA
+    legal_city: Los Angeles, CA
+    facts: {year_built: 1978, units: 20}
+    results:
+      - {rule: g-la-rso-increase, expected: unknown, reason: 'built in the cutoff year 1978; certificate of occupancy date decides'}
+      - {rule: g-la-jco, expected: unknown, reason: 'JCO applies only if the RSO does not'}
+      - {rule: g-ca-rent-cap, expected: unknown, reason: 'superseded if RSO, applies if not'}
+  - address_id: A0432
+    state: CA
+    legal_city: Los Angeles, CA
+    facts: {year_built: 1978, units: 23}
+    results:
+      - {rule: g-la-rso-increase, expected: unknown, reason: 'built in the cutoff year 1978'}
+      - {rule: g-ca-rent-cap, expected: unknown, reason: 'depends on RSO coverage'}
+  - address_id: A0315
+    state: CA
+    legal_city: Los Angeles, CA
+    facts: {year_built: 1990, units: 8}
+    results:
+      - {rule: g-la-rso-increase, expected: absent, reason: 'built 1990, after 1978-10-01'}
+      - {rule: g-la-jco, expected: applies, reason: 'non-RSO building in Los Angeles'}
+      - {rule: g-ca-rent-cap, expected: applies, reason: 'built 1990, over 15 years; no local rent control; 8-unit apartment'}
+  - address_id: A0045
+    state: CA
+    legal_city: Los Angeles, CA
+    facts: {year_built: 1987, units: 65, zip: '91331'}
+    results:
+      - {rule: g-ca-rent-cap, expected: applies, reason: 'built 1987, no RSO, over 15 years'}
+      - {rule: g-la-jco, expected: applies, reason: 'non-RSO building'}
+  - address_id: A0437
+    state: CA
+    legal_city: Los Angeles, CA
+    facts: {year_built: 2004, units: 20}
+    results:
+      - {rule: g-ca-rent-cap, expected: applies, reason: 'built 2004, covered since 2019 on the rolling 15-year rule'}
+  - address_id: A0405
+    state: CA
+    legal_city: Los Angeles, CA
+    facts: {year_built: 2008, units: 6}
+    results:
+      - {rule: g-ca-rent-cap, expected: applies, reason: 'built 2008, covered from 2023-01-01 on the rolling rule'}
+      - {rule: g-la-jco, expected: applies, reason: 'non-RSO building; JCO can apply to newer buildings'}
+  - address_id: A0022
+    state: CA
+    legal_city: Los Angeles, CA
+    facts: {year_built: 2012, units: 5}
+    results:
+      - {rule: g-ca-rent-cap, expected: absent, reason: 'built 2012: certificate of occupancy within the previous 15 years'}
+      - {rule: g-la-jco, expected: applies, reason: 'JCO has no 15-year exemption (D040)'}
+  - address_id: A0210
+    state: CA
+    legal_city: Los Angeles, CA
+    facts: {year_built: 2016, units: 9}
+    results:
+      - {rule: g-ca-rent-cap, expected: absent, reason: 'built 2016, within 15 years'}
+  - address_id: A0492
+    state: CA
+    legal_city: Los Angeles, CA
+    facts: {year_built: 2019, units: 131}
+    results:
+      - {rule: g-ca-rent-cap, expected: absent, reason: 'built 2019, within 15 years'}
+      - {rule: g-ca-deposit, expected: applies, reason: '131 units'}
+  - address_id: A0285
+    state: CA
+    legal_city: Los Angeles, CA
+    facts: {year_built: null, units: 8}
+    results:
+      - {rule: g-la-rso-increase, expected: unknown, reason: 'year built missing'}
+      - {rule: g-ca-rent-cap, expected: unknown, reason: 'year built missing'}
+  - address_id: A0353
+    state: CA
+    legal_city: Los Angeles, CA
+    facts: {year_built: null, units: null, use_description: Five or more apartments}
+    results:
+      - {rule: g-la-rso-increase, expected: unknown, reason: 'year built missing'}
+      - {rule: g-ca-deposit, expected: applies, reason: '5+ units from use_description: the small-landlord exception cannot apply'}
+      - {rule: g-ca-screening-fee, expected: applies, reason: 'statewide, no unit or age condition'}
+
+  # ------------------------------------------------------------------ San Francisco
+  - address_id: A0156
+    state: CA
+    legal_city: San Francisco, CA
+    facts: {year_built: 1927, units: 9}
+    results:
+      - {rule: g-sf-annual-increase, expected: applies, reason: 'built 1927, before June 13, 1979'}
+      - {rule: g-ca-rent-cap, expected: superseded, reason: 'SF rent control limits increases to 1.6%'}
+      - {rule: g-sf-just-cause, expected: applies, reason: 'covered by the Rent Ordinance'}
+      - {rule: g-sf-algorithmic, expected: applies, reason: 'residential unit in San Francisco'}
+      - {rule: g-ca-just-cause, expected: superseded, also_ok: [absent], reason: '1946.2(g): a local just cause ordinance adopted before 2019-09-01 applies instead'}
+      - {rule: g-la-jco, expected: absent, reason: 'Los Angeles rule, San Francisco address'}
+  - address_id: A0382
+    state: CA
+    legal_city: San Francisco, CA
+    facts: {year_built: 1964, units: 10}
+    results:
+      - {rule: g-sf-annual-increase, expected: applies, reason: 'built 1964'}
+      - {rule: g-ca-rent-cap, expected: superseded, reason: 'SF rent control building'}
+  - address_id: A0439
+    state: CA
+    legal_city: San Francisco, CA
+    facts: {year_built: 1988, units: 7}
+    results:
+      - {rule: g-sf-annual-increase, expected: absent, reason: 'built 1988: certified after June 13, 1979, exempt from rent increase limits (D079)'}
+      - {rule: g-ca-rent-cap, expected: applies, reason: 'built 1988, over 15 years, no local rent control'}
+      - {rule: g-sf-just-cause, expected: applies, reason: 'D079: post-1979 units are still subject to the eviction provisions'}
+  - address_id: A0357
+    state: CA
+    legal_city: San Francisco, CA
+    facts: {year_built: 1997, units: 29}
+    results:
+      - {rule: g-sf-annual-increase, expected: absent, reason: 'built 1997'}
+      - {rule: g-ca-rent-cap, expected: applies, reason: 'built 1997, over 15 years'}
+  - address_id: A0081
+    state: CA
+    legal_city: San Francisco, CA
+    facts: {year_built: 2005, units: 69}
+    results:
+      - {rule: g-ca-rent-cap, expected: applies, reason: 'built 2005, over 15 years'}
+  - address_id: A0105
+    state: CA
+    legal_city: San Francisco, CA
+    facts: {year_built: 2019, units: 7}
+    results:
+      - {rule: g-ca-rent-cap, expected: absent, reason: 'built 2019, within 15 years'}
+      - {rule: g-sf-annual-increase, expected: absent, reason: 'built 2019'}
+      - {rule: g-sf-just-cause, expected: applies, reason: 'new construction still under eviction provisions'}
+  - address_id: A0106
+    state: CA
+    legal_city: San Francisco, CA
+    facts: {year_built: null, units: 60}
+    results:
+      - {rule: g-sf-annual-increase, expected: unknown, reason: 'year built missing'}
+      - {rule: g-ca-rent-cap, expected: unknown, reason: 'year built missing'}
+      - {rule: g-sf-algorithmic, expected: applies, reason: 'residential unit in San Francisco'}
+
+  # ------------------------------------------------------------------ San Diego
+  - address_id: A0274
+    state: CA
+    legal_city: San Diego, CA
+    facts: {year_built: null, units: 6}
+    results:
+      - {rule: g-ca-rent-cap, expected: unknown, reason: 'year built missing (15-year exemption)'}
+      - {rule: g-sd-just-cause, expected: unknown, reason: 'year built missing (98.0703(k) 15-year exemption)'}
+      - {rule: g-sd-algorithmic, expected: pending, also_ok: [applies], reason: 'gold status pending (proposal text)'}
+      - {rule: g-ca-ab325, expected: applies, reason: 'statewide'}
+  - address_id: A0322
+    state: CA
+    legal_city: San Diego, CA
+    city_reason: 'postal city San Ysidro is a community inside the City of San Diego (ZIP 92173)'
+    facts: {year_built: null, units: 31, postal_city: San Ysidro}
+    results:
+      - {rule: g-sd-just-cause, expected: unknown, reason: 'year built missing'}
+      - {rule: g-ca-rent-cap, expected: unknown, reason: 'year built missing'}
+      - {rule: g-ca-ab325, expected: applies, reason: 'statewide'}
+  - address_id: A0167
+    state: CA
+    legal_city: San Diego, CA
+    facts: {year_built: null, units: 20}
+    results:
+      - {rule: g-ca-deposit, expected: applies, reason: '20 units'}
+      - {rule: g-berkeley-aga, expected: absent, reason: 'Berkeley rule, San Diego address'}
+
+  # ------------------------------------------------------------------ Berkeley
+  - address_id: A0197
+    state: CA
+    legal_city: Berkeley, CA
+    facts: {year_built: null, units: null, use_description: 'Alameda County use code (5+ units)'}
+    results:
+      - {rule: g-berkeley-aga, expected: unknown, reason: 'year built missing; rent control covers multifamily built before 1980'}
+      - {rule: g-ca-rent-cap, expected: unknown, reason: 'year built missing'}
+      - {rule: g-berkeley-algorithmic, expected: pending, also_ok: [applies], reason: 'gold status pending (first reading only)'}
+      - {rule: g-ca-deposit, expected: applies, reason: '5+ units from use_description'}
+  - address_id: A0430
+    state: CA
+    legal_city: Berkeley, CA
+    facts: {year_built: null, units: null, use_description: 'Alameda County use code (5+ units)'}
+    results:
+      - {rule: g-berkeley-aga, expected: unknown, reason: 'year built missing'}
+      - {rule: g-sf-annual-increase, expected: absent, reason: 'San Francisco rule, Berkeley address'}
+  - address_id: A0091
+    state: CA
+    legal_city: Berkeley, CA
+    facts: {year_built: null, units: null, use_description: 'Alameda County use code (5+ units)'}
+    results:
+      - {rule: g-berkeley-aga, expected: unknown, reason: 'year built missing'}
+      - {rule: g-ca-ab325, expected: applies, reason: 'statewide'}
+
+  # ------------------------------------------------------------------ Jersey City
+  - address_id: A0394
+    state: NJ
+    legal_city: Jersey City, NJ
+    facts: {year_built: 1912, units: null, use_description: 3S-B-A-13U-H}
+    results:
+      - {rule: g-jc-rent-control, expected: applies, reason: '13 units (from 13U), built 1912; only 1-4 unit properties exempt'}
+      - {rule: g-nj-fair-act, expected: not_yet_effective, reason: 'effective 2027-07-01'}
+      - {rule: g-nj-app-fee, expected: applies, reason: '13 units: not a one- or two-family dwelling'}
+      - {rule: g-nj-deposit, expected: applies, reason: '13 units: not an owner-occupied two- or three-family dwelling'}
+      - {rule: g-ca-rent-cap, expected: absent, reason: 'California rule, NJ address'}
+  - address_id: A0042
+    state: NJ
+    legal_city: Jersey City, NJ
+    facts: {year_built: 1912, units: null, use_description: 2S-B-A-6U}
+    results:
+      - {rule: g-jc-rent-control, expected: applies, reason: '6 units, built 1912'}
+      - {rule: g-nj-anti-eviction, expected: applies, reason: '6 units: not owner-occupied with two or fewer rental units'}
+      - {rule: g-nj-fair-chance, expected: applies, reason: '6 units: not owner-occupied premises of four or fewer units'}
+  - address_id: A0108
+    state: NJ
+    legal_city: Jersey City, NJ
+    city_reason: 'ZIP 07030 is Hoboken''s, but MOD-IV municipality is Jersey City and NJ ZIPs in this file are unreliable (owner mailing ZIPs such as 11219 appear). Needs a geocoder check.'
+    facts: {year_built: null, units: null, use_description: 3S-B-D-6U-H, zip: '07030'}
+    results:
+      - {rule: g-nj-app-fee, expected: applies, reason: '6 units'}
+      - {rule: g-nj-fair-act, expected: not_yet_effective, reason: 'statewide, effective 2027-07-01'}
+  - address_id: A0186
+    state: NJ
+    legal_city: Jersey City, NJ
+    facts: {year_built: null, units: null, use_description: 3S-F-D-5U-NH}
+    results:
+      - {rule: g-nj-app-fee, expected: applies, reason: '5 units'}
+      - {rule: g-nj-fair-chance, expected: applies, reason: '5 units'}
+  - address_id: A0415
+    state: NJ
+    legal_city: Jersey City, NJ
+    facts: {year_built: null, units: null, use_description: 4S-B-A-46U-H}
+    results:
+      - {rule: g-nj-deposit, expected: applies, reason: '46 units'}
+      - {rule: g-nj-fair-act, expected: not_yet_effective, reason: 'statewide'}
+
+  # ------------------------------------------------------------------ Hoboken
+  - address_id: A0002
+    state: NJ
+    legal_city: Hoboken, NJ
+    facts: {year_built: 2001, units: null, use_description: 6B-20U-G}
+    results:
+      - {rule: g-nj-app-fee, expected: applies, reason: '20 units'}
+      - {rule: g-nj-fair-act, expected: not_yet_effective, reason: 'statewide'}
+      - {rule: g-jc-rent-control, expected: absent, reason: 'Jersey City rule, Hoboken address'}
+  - address_id: A0227
+    state: NJ
+    legal_city: Hoboken, NJ
+    facts: {year_built: 2010, units: 2, use_description: 13B-93U-2C-G}
+    results:
+      - {rule: g-nj-app-fee, expected: unknown, reason: 'units column says 2 (exempt two-family?) but description says 93U: conflicting facts'}
+      - {rule: g-nj-fair-act, expected: not_yet_effective, reason: 'statewide'}
+  - address_id: A0040
+    state: NJ
+    legal_city: Hoboken, NJ
+    facts: {year_built: null, units: null, use_description: 3B-7U/4B-24U-G}
+    results:
+      - {rule: g-nj-app-fee, expected: applies, reason: '7 + 24 = 31 units'}
+      - {rule: g-nj-deposit, expected: applies, reason: 'at least 7 units in either building'}
+  - address_id: A0261
+    state: NJ
+    legal_city: Hoboken, NJ
+    facts: {year_built: null, units: null, use_description: 5B-1OU}
+    results:
+      - {rule: g-nj-app-fee, expected: unknown, reason: '"1OU" (letter O) is not a clear unit token'}
+      - {rule: g-nj-fair-act, expected: not_yet_effective, reason: 'statewide'}
+  - address_id: A0119
+    state: NJ
+    legal_city: Hoboken, NJ
+    facts: {year_built: null, units: null, use_description: 2F-4U/2F-2U}
+    results:
+      - {rule: g-nj-app-fee, expected: applies, reason: '4 + 2 = 6 units: not a one- or two-family dwelling'}
+
+  # ------------------------------------------------------------------ Newark
+  - address_id: A0003
+    state: NJ
+    legal_city: Newark, NJ
+    city_reason: 'ZIP 11219 (Brooklyn) is an owner mailing ZIP; MOD-IV municipality is Newark'
+    facts: {year_built: null, units: null, use_description: 4SB}
+    results:
+      - {rule: g-nj-app-fee, expected: unknown, reason: 'no unit count in the data'}
+      - {rule: g-nj-fair-act, expected: not_yet_effective, reason: 'statewide'}
+      - {rule: g-jc-rent-control, expected: absent, reason: 'Jersey City rule, Newark address'}
+  - address_id: A0371
+    state: NJ
+    legal_city: Newark, NJ
+    facts: {year_built: null, units: null, use_description: USCB16UG}
+    results:
+      - {rule: g-nj-app-fee, expected: unknown, reason: '"16UG" is a glued token; no reviewed parser (NOTES open question 4)'}
+      - {rule: g-nj-fair-act, expected: not_yet_effective, reason: 'statewide'}
+  - address_id: A0020
+    state: NJ
+    legal_city: Newark, NJ
+    facts: {year_built: null, units: null, use_description: Apartments (class 4C)}
+    results:
+      - {rule: g-nj-app-fee, expected: unknown, reason: 'no unit count'}
+      - {rule: g-nj-fair-chance, expected: unknown, reason: 'owner-occupied <=4 units exemption cannot be ruled out without a unit count'}
+  - address_id: A0331
+    state: NJ
+    legal_city: Newark, NJ
+    facts: {year_built: 1910, units: null, use_description: 2.5SF4UG}
+    results:
+      - {rule: g-nj-fair-act, expected: not_yet_effective, reason: 'statewide'}
+      - {rule: g-ma-deposit, expected: absent, reason: 'Massachusetts rule, NJ address'}
+
+  # ------------------------------------------------------------------ Boston
+  - address_id: A0444
+    state: MA
+    legal_city: Boston, MA
+    facts: {year_built: 1899, units: null, use_description: APT 7-30 UNITS}
+    results:
+      - {rule: g-ma-s2983, expected: pending, reason: 'bill in committee'}
+      - {rule: g-ma-h5222, expected: pending, reason: 'bill in committee'}
+      - {rule: g-ma-deposit, expected: applies, reason: 'statewide, no unit or age condition'}
+      - {rule: g-boston-hsna, expected: applies, reason: 'any landlord in Boston'}
+      - {rule: g-cambridge-source-of-income, expected: absent, reason: 'Cambridge rule, Boston address'}
+      - {rule: g-boston-h3744, expected: absent, also_ok: [pending], reason: 'petition not enacted (study order); failed rules never appear in lookups'}
+  - address_id: A0211
+    state: MA
+    legal_city: Boston, MA
+    facts: {year_built: 1899, units: null, use_description: APT 7-30 UNITS}
+    results:
+      - {rule: g-ma-public-assistance, expected: applies, reason: 'statewide rental accommodations'}
+      - {rule: g-boston-fair-housing, expected: applies, reason: 'housing in the City of Boston'}
+  - address_id: A0467
+    state: MA
+    legal_city: Boston, MA
+    facts: {year_built: 1923, units: null, use_description: SUBSD HOUSING S- 8}
+    results:
+      - {rule: g-ma-s2983, expected: pending, reason: 'bill in committee'}
+      - {rule: g-boston-hsna, expected: applies, reason: 'any landlord in Boston'}
+  - address_id: A0134
+    state: MA
+    legal_city: Boston, MA
+    city_reason: 'postal city Dorchester is a Boston neighborhood'
+    facts: {year_built: 1899, postal_city: Dorchester}
+    results:
+      - {rule: g-boston-hsna, expected: applies, reason: 'Boston address'}
+      - {rule: g-ma-h5222, expected: pending, reason: 'bill in committee'}
+  - address_id: A0144
+    state: MA
+    legal_city: Boston, MA
+    city_reason: 'postal city Roxbury is a Boston neighborhood'
+    facts: {year_built: 1910, postal_city: Roxbury}
+    results:
+      - {rule: g-boston-hsna, expected: applies, reason: 'Boston address'}
+  - address_id: A0354
+    state: MA
+    legal_city: Boston, MA
+    city_reason: 'postal city East Boston is a Boston neighborhood'
+    facts: {year_built: 1899, postal_city: East Boston}
+    results:
+      - {rule: g-boston-hsna, expected: applies, reason: 'Boston address'}
+      - {rule: g-cambridge-source-of-income, expected: absent, reason: 'Cambridge rule'}
+  - address_id: A0048
+    state: MA
+    legal_city: Boston, MA
+    city_reason: 'postal city Brighton is a Boston neighborhood'
+    facts: {year_built: 1899, postal_city: Brighton}
+    results:
+      - {rule: g-boston-hsna, expected: applies, reason: 'Boston address'}
+  - address_id: A0310
+    state: MA
+    legal_city: Boston, MA
+    city_reason: 'postal city Allston is a Boston neighborhood'
+    facts: {year_built: 1900, postal_city: Allston}
+    results:
+      - {rule: g-boston-fair-housing, expected: applies, reason: 'Boston address'}
+  - address_id: A0242
+    state: MA
+    legal_city: Boston, MA
+    city_reason: 'postal city Hyde Park is a Boston neighborhood'
+    facts: {year_built: 1960, postal_city: Hyde Park}
+    results:
+      - {rule: g-boston-hsna, expected: applies, reason: 'Boston address'}
+  - address_id: A0312
+    state: MA
+    legal_city: Boston, MA
+    city_reason: 'postal city Mattapan is a Boston neighborhood'
+    facts: {year_built: 1965, postal_city: Mattapan}
+    results:
+      - {rule: g-ma-deposit, expected: applies, reason: 'statewide'}
+  - address_id: A0036
+    state: MA
+    legal_city: Boston, MA
+    city_reason: 'postal city South Boston is a Boston neighborhood'
+    facts: {year_built: 2019, postal_city: South Boston}
+    results:
+      - {rule: g-boston-hsna, expected: applies, reason: 'Boston address'}
+  - address_id: A0093
+    state: MA
+    legal_city: Boston, MA
+    city_reason: 'postal city Jamaica Plain is a Boston neighborhood'
+    facts: {year_built: 2004, postal_city: Jamaica Plain, use_description: ELDERLY HOME}
+    results:
+      - {rule: g-ma-s2983, expected: pending, reason: 'bill in committee'}
+  - address_id: A0098
+    state: MA
+    legal_city: Boston, MA
+    city_reason: 'no house number (WILLOWWOOD ST), so geocoding may fail; Dorchester lies wholly inside Boston, so the city is known by name. A fail-closed empty city counts as unresolved, not wrong.'
+    facts: {year_built: null, street_address: WILLOWWOOD ST, postal_city: Dorchester}
+    results:
+      - {rule: g-ma-s2983, expected: pending, reason: 'state bill, city not needed'}
+      - {rule: g-ma-deposit, expected: applies, reason: 'statewide'}
+      - {rule: g-boston-hsna, expected: applies, reason: 'Boston address (unknown if the city is left unresolved)'}
+  - address_id: A0376
+    state: MA
+    legal_city: Boston, MA
+    city_reason: 'no house number (ST JAMES ST); Roxbury lies wholly inside Boston'
+    facts: {year_built: null, street_address: ST JAMES ST, postal_city: Roxbury}
+    results:
+      - {rule: g-ma-h5222, expected: pending, reason: 'state bill'}
+
+  # ------------------------------------------------------------------ Cambridge
+  - address_id: A0043
+    state: MA
+    legal_city: Cambridge, MA
+    facts: {year_built: 1920, units: 6}
+    results:
+      - {rule: g-cambridge-source-of-income, expected: applies, reason: 'housing in Cambridge'}
+      - {rule: g-boston-hsna, expected: absent, reason: 'Boston rule, Cambridge address'}
+      - {rule: g-ma-s2983, expected: pending, reason: 'bill in committee'}
+      - {rule: g-ma-deposit, expected: applies, reason: 'statewide'}
+  - address_id: A0199
+    state: MA
+    legal_city: uncertain
+    city_reason: 'Listed as Cambridge with no ZIP; "Bay State Rd" is best known as a Boston (Back Bay) street. Needs a geocoder check before it can be scored.'
+    facts: {year_built: 2012, units: 5}
+    results:
+      - {rule: g-ma-s2983, expected: pending, reason: 'state bill, any MA address'}
+      - {rule: g-ma-deposit, expected: applies, reason: 'statewide'}
