@@ -52,6 +52,16 @@ NTH_DAY_AFTER = re.compile(
 RANGE_SEP = re.compile(r"^\s*(?:,?\s*(?:through|thru|to|until)|[–—-])\s*$", re.I)
 IMMEDIATELY = re.compile(r"\btake effect immediately\b", re.I)
 CHAPTERED = re.compile(r"\bchaptered\b", re.I)
+# a bill-history line such as "10/06/25 - Chaptered" (leginfo bill pages)
+CHAPTER_LINE = re.compile(r"^[ \t]*\d{1,2}/\d{1,2}/\d{2,4}[ \t]*-[ \t]*Chaptered\b[^\n]*$", re.M)
+
+
+def chaptering_record(text: str) -> str | None:
+    """The verbatim bill-history line recording chaptering, if the document has exactly
+    one with a parseable date. Used as an anchor only when the model gave none."""
+    lines = {m.group(0).strip() for m in CHAPTER_LINE.finditer(text)}
+    dated = {ln for ln in lines if parse_anchor(ln)}
+    return dated.pop() if len(dated) == 1 else None
 
 
 @dataclass

@@ -14,12 +14,12 @@
       "exemptions": "\"Person\" does not include the end consumer of a product or service.",
       "overrides": [],
       "interaction": null,
-      "effective_date": null,
+      "effective_date": "2026-01-01",
       "citation": "Business and Professions Code Section 16729(a) (AB 325, Chapter 338)",
       "source_doc_id": "D022",
       "source_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB325",
       "quoted_span": "(a) It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.",
-      "confidence": 0.8,
+      "confidence": 0.65,
       "conflict_flag": false,
       "conflict_note": null,
       "span_start": 3785,
@@ -28,13 +28,15 @@
       "retrieved_at": "2026-10-01T22:35Z",
       "penalty": "The legislative digest states that violation of the Cartwright Act is punishable as a crime.",
       "effective_date_phrase": null,
-      "effective_date_anchor": null,
-      "effective_date_method": "not_stated",
+      "effective_date_anchor": "10/06/25 - Chaptered",
+      "effective_date_method": "ca_default_jan1_next_year(chaptered)",
       "predicates": null,
-      "needs_review": false,
-      "review_reasons": [],
+      "needs_review": true,
+      "review_reasons": [
+        "California default effective date for non-urgency statutes (not stated in the source text)"
+      ],
       "notes": [
-        "effective date not stated in source text"
+        "date anchor taken from the document's bill history: '10/06/25 - Chaptered'"
       ],
       "provenance": [
         {
@@ -70,12 +72,12 @@
       "exemptions": "\"Person\" does not include the end consumer of a product or service.",
       "overrides": [],
       "interaction": null,
-      "effective_date": null,
+      "effective_date": "2026-01-01",
       "citation": "Business and Professions Code Section 16729(b) (AB 325, Chapter 338)",
       "source_doc_id": "D022",
       "source_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB325",
       "quoted_span": "(b) It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.",
-      "confidence": 0.8,
+      "confidence": 0.65,
       "conflict_flag": false,
       "conflict_note": null,
       "span_start": 4004,
@@ -84,13 +86,15 @@
       "retrieved_at": "2026-10-01T22:35Z",
       "penalty": "The legislative digest states that violation of the Cartwright Act is punishable as a crime.",
       "effective_date_phrase": null,
-      "effective_date_anchor": null,
-      "effective_date_method": "not_stated",
+      "effective_date_anchor": "10/06/25 - Chaptered",
+      "effective_date_method": "ca_default_jan1_next_year(chaptered)",
       "predicates": null,
-      "needs_review": false,
-      "review_reasons": [],
+      "needs_review": true,
+      "review_reasons": [
+        "California default effective date for non-urgency statutes (not stated in the source text)"
+      ],
       "notes": [
-        "effective date not stated in source text"
+        "date anchor taken from the document's bill history: '10/06/25 - Chaptered'"
       ],
       "provenance": [
         {

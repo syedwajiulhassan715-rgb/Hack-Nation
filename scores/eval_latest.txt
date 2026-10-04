@@ -1,5 +1,5 @@
 Self-evaluation (team harness; the pack has no official scoring script). Not legal advice.
-generated_at 2026-10-04T00:54:44Z  commit cb2a889  as_of default 2026-10-01
+generated_at 2026-10-04T01:18:41Z  commit 28493e9  as_of default 2026-10-01
 overall hard checks: PASS
 
 [1] Format validity (must be 100%)
@@ -39,7 +39,26 @@ overall hard checks: PASS
   Hoboken, NJ              0       0       0       0       0       0
   Jersey City, NJ          1       0       0       0       0       0
   [info] rules: 184; by status {'in_force': 176, 'not_yet_effective': 1, 'pending': 7}; red cells: 0
+[5] Change tests T1-T5 expected behavior (assertions from dev/change_tests.json)
+  T1: 250 affected, 0 conflict-flagged
+    [PASS] not_yet_effective on 2025-12-31 for every CA address - 250/250
+    [PASS] applies on 2026-01-02 for every CA address - 250/250
+  T2: 90 affected, 0 conflict-flagged
+    [n/a ] HOB-ALG-01 only for Hoboken, NJ addresses - no rule text; boundary gives 40 addresses
+    [n/a ] JC-ALG-01 only for Jersey City, NJ addresses - no rule text; boundary gives 50 addresses
+    [PASS] no affected address outside the named cities - 0 outside
+  T3: 140 affected, 90 conflict-flagged
+    [PASS] not_yet_effective on 2026-10-01 for every NJ address - 140/140
+    [PASS] applies on 2027-07-02 for every NJ address - 140/140
+  T4: 110 affected, 0 conflict-flagged
+    [PASS] mapped bills are not in force - in force: none
+    [PASS] reported as pending for every address in a corpus city - 105/105
+    [PASS] affected if enacted = every in-scope address - 110/110
+  T5: 0 affected, 0 conflict-flagged
+    [n/a ] measure recorded as failed - no citable text in the corpus
+    [PASS] measure never appears in lookups - absent
+    [PASS] no rent_increase_limits rule from a city ordinance or an unenacted measure reported as applying - none
+  [info] checks: 10 pass, 0 fail, 3 not checkable (no source text)
 [4] Gold set (rules + addresses): not measured yet (phase 3)
-[5] Change tests T1-T5 expected behavior: not measured yet (phase 6)
 [7] Jurisdiction check: not measured yet (phase 4)
 [8] Determinism (two cached runs byte-identical): not measured yet (phase 5)

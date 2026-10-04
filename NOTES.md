@@ -100,6 +100,26 @@
 - **Low jurisdiction confidence** (phase 5). City rules are `unknown`, and state rules that
   defer to them are `unknown` ("may be superseded") rather than `applies`.
 
+- **Chaptering line as a date anchor** (phase 6). The prompt asks for an anchor only with a
+  relative phrase, so AB 325 (D022) came out `in_force` with no date and T1 could not be shown.
+  Verify now takes the document's own bill-history line (`10/06/25 - Chaptered`, verbatim,
+  exactly one dated line) when the model gave no phrase and no anchor; `dates.resolve` still
+  decides whether a statutory default applies (CA state only). r-0001/r-0002 -> 2026-01-01,
+  `needs_review`. No re-extraction (deterministic, verify only).
+- **Change-test matcher** (phase 6). `config/test_rule_map.yaml` is generated with
+  `reviewed: false`; set `reviewed: true` after one human check and it is used as-is. City
+  prefixes resolve against manifest cities (initials or name start, must be unique).
+  MA-ALG-P1/P2 match {r-0038, r-0039} as a set: the pairing is not decidable from the ids.
+- **Test ids with no source text but a resolvable city** (phase 6, T2/T3). Fail closed means
+  "cannot rule out", not "does not apply": T2 affected = addresses whose legal city is Hoboken
+  or Jersey City (boundary only, rules absent from rules.json/lookups.json); T3 conflict ids =
+  those addresses covered by the FAIR Act on 2027-07-02, flagged for human review. Notes say
+  so on every entry. Unresolved-city addresses are added only if their postal city names the city.
+- **T5 and M.G.L. c.40P** (phase 6). r-0041 (category rent_increase_limits) applies to all MA
+  addresses; its text bars local rent control and is not a cap. The T5 check fails on a city
+  rent rule or an unenacted measure reported as applying; r-0041 is listed in the notes for review.
+  IP 25-21 has no text, so it is not recorded as failed (needs a citable span).
+
 ## Open questions
 
 1. **Berkeley ch. 13.63 effective date.** D001 contains no effective date; the second
@@ -116,6 +136,8 @@
    pattern is listed and reviewed in `config/unit_parsers.yaml`.
 5. **CA AB 325 effective date** comes only from the CA default (Jan 1 after chaptering
    10/06/25), which is not stated in the corpus text. Lower confidence + `needs_review`.
+   Phase 6: now resolved to 2026-01-01 from D022's chaptering line (see Decisions). SB 763
+   (named in T1's title) has no text in the corpus.
 6. **Berkeley ch. 13.63 status** (phase 3). D001 (Ordinance 7,992-N.S.) only records the first
    reading ("passed to print", November 18, 2025); the adoption vote and the guide's March 1,
    2026 date are not in the supplied text. Extraction marks it `pending` (bill_or_proposal),
@@ -135,3 +157,6 @@
    left as state-only (`city: null`, needs_review) for now.
 10. **Conflict flags** (phase 5). 3,280 of 22,503 lookup rows are conflict-flagged on real
    parcels; the preemption patterns pair same-category rules broadly. Review after phase 6.
+11. **T2/T3 boundary-only answers** (phase 6). If organizers want `affected_address_ids` to
+   be empty when the rule text is missing, flip `track_boundary`/conflict handling; current
+   choice lists the city's addresses with an explicit "no source text" note.

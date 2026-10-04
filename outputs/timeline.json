@@ -8869,6 +8869,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -8997,6 +9012,21 @@
             "team_rule_id": "r-0150",
             "from": "not_yet_effective",
             "to": "unknown"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
           }
         ]
       },
@@ -9133,6 +9163,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -9261,6 +9306,21 @@
             "team_rule_id": "r-0150",
             "from": "not_yet_effective",
             "to": "unknown"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
           }
         ]
       },
@@ -9407,6 +9467,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -9539,6 +9614,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -9655,6 +9745,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -9803,6 +9908,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -9929,6 +10049,21 @@
           },
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -10067,6 +10202,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -10185,6 +10335,21 @@
             "team_rule_id": "r-0150",
             "from": "not_yet_effective",
             "to": "unknown"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
           }
         ]
       },
@@ -10331,6 +10496,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -10447,6 +10627,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -10585,6 +10780,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -10711,6 +10921,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -10859,6 +11084,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -10977,6 +11217,21 @@
             "team_rule_id": "r-0150",
             "from": "not_yet_effective",
             "to": "unknown"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
           }
         ]
       },
@@ -11123,6 +11378,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -11239,6 +11509,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -11377,6 +11662,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -11505,6 +11805,21 @@
             "team_rule_id": "r-0150",
             "from": "not_yet_effective",
             "to": "unknown"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
           }
         ]
       },
@@ -11641,6 +11956,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -11767,6 +12097,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -11905,6 +12250,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -12031,6 +12391,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -12179,6 +12554,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -12311,6 +12701,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -12429,6 +12834,21 @@
             "team_rule_id": "r-0150",
             "from": "not_yet_effective",
             "to": "unknown"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
           }
         ]
       },
@@ -12565,6 +12985,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -12697,6 +13132,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -12823,6 +13273,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -12971,6 +13436,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -13087,6 +13567,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -13225,6 +13720,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -13357,6 +13867,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -13483,6 +14008,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -13631,6 +14171,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -13763,6 +14318,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -13881,6 +14451,21 @@
             "team_rule_id": "r-0150",
             "from": "not_yet_effective",
             "to": "unknown"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
           }
         ]
       },
@@ -14011,6 +14596,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -14149,6 +14749,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -14275,6 +14890,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -14423,6 +15053,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -14539,6 +15184,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -14677,6 +15337,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -14803,6 +15478,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -14941,6 +15631,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -15067,6 +15772,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -15205,6 +15925,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -15331,6 +16066,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -15479,6 +16229,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -15595,6 +16360,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -15727,6 +16507,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -15875,6 +16670,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -15993,6 +16803,21 @@
             "team_rule_id": "r-0150",
             "from": "not_yet_effective",
             "to": "unknown"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
           }
         ]
       },
@@ -16129,6 +16954,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -16255,6 +17095,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -16403,6 +17258,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -16519,6 +17389,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -16667,6 +17552,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -16799,6 +17699,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -16917,6 +17832,21 @@
             "team_rule_id": "r-0150",
             "from": "not_yet_effective",
             "to": "unknown"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
           }
         ]
       },
@@ -17053,6 +17983,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -17185,6 +18130,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -17313,6 +18273,21 @@
             "team_rule_id": "r-0150",
             "from": "not_yet_effective",
             "to": "unknown"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
           }
         ]
       },
@@ -17459,6 +18434,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -17577,6 +18567,21 @@
             "team_rule_id": "r-0150",
             "from": "not_yet_effective",
             "to": "unknown"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
           }
         ]
       },
@@ -17707,6 +18712,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -17855,6 +18875,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -17987,6 +19022,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -18105,6 +19155,21 @@
             "team_rule_id": "r-0150",
             "from": "not_yet_effective",
             "to": "unknown"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
           }
         ]
       },
@@ -18251,6 +19316,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -18367,6 +19447,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -18505,6 +19600,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -18637,6 +19747,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -18763,6 +19888,21 @@
         "changes": [
           {
             "team_rule_id": "r-0150",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -18911,6 +20051,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -19043,6 +20198,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-02-02",
         "changes": [
           {
@@ -19161,6 +20331,21 @@
             "team_rule_id": "r-0150",
             "from": "not_yet_effective",
             "to": "unknown"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
           }
         ]
       },
@@ -19293,6 +20478,21 @@
             "team_rule_id": "r-0150",
             "from": "not_yet_effective",
             "to": "unknown"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
           }
         ]
       },
@@ -19444,6 +20644,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -19545,6 +20760,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -19658,6 +20888,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -19759,6 +21004,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -19872,6 +21132,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -19973,6 +21248,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -20086,6 +21376,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -20187,6 +21492,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -20300,6 +21620,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -20401,6 +21736,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -20514,6 +21864,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -20615,6 +21980,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -20728,6 +22108,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -20829,6 +22224,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -20942,6 +22352,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -21043,6 +22468,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -21156,6 +22596,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -21257,6 +22712,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -21370,6 +22840,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -21471,6 +22956,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -21584,6 +23084,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -21685,6 +23200,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -21798,6 +23328,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -21899,6 +23444,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -22012,6 +23572,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -22113,6 +23688,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -22226,6 +23816,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -22327,6 +23932,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -22440,6 +24060,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -22541,6 +24176,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -22654,6 +24304,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -22755,6 +24420,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -22868,6 +24548,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -22969,6 +24664,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -23082,6 +24792,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -23183,6 +24908,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -23296,6 +25036,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -23397,6 +25152,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -23510,6 +25280,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -23611,6 +25396,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -23724,6 +25524,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -23825,6 +25640,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -23938,6 +25768,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -24039,6 +25884,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -24152,6 +26012,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -24253,6 +26128,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -24366,6 +26256,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -24467,6 +26372,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -24580,6 +26500,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -24687,6 +26622,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -24751,6 +26701,16 @@
       {
         "date": "2026-01-01",
         "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
           {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
@@ -24835,6 +26795,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -24931,6 +26906,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -25014,6 +26999,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -25110,6 +27110,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -25193,6 +27203,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -25296,6 +27321,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -25387,6 +27427,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -25490,6 +27545,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -25581,6 +27651,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -25684,6 +27769,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -25775,6 +27875,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -25878,6 +27993,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -25969,6 +28099,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -26072,6 +28217,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -26163,6 +28323,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -26266,6 +28441,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -26357,6 +28547,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -26460,6 +28665,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -26557,6 +28777,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -26647,6 +28882,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -26728,6 +28973,16 @@
       {
         "date": "2026-01-01",
         "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
           {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
@@ -26812,6 +29067,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -26908,6 +29178,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -26991,6 +29271,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -27094,6 +29389,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -27184,6 +29494,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -27267,6 +29587,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -27363,6 +29698,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -27446,6 +29791,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -27549,6 +29909,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -27640,6 +30015,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -27743,6 +30133,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -27834,6 +30239,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -27937,6 +30357,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -28027,6 +30462,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -28108,6 +30553,16 @@
       {
         "date": "2026-01-01",
         "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
           {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
@@ -28192,6 +30647,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -28288,6 +30758,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -28370,6 +30850,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -28451,6 +30941,16 @@
       {
         "date": "2026-01-01",
         "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
           {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
@@ -28535,6 +31035,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -28631,6 +31146,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -28713,6 +31238,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -28794,6 +31329,16 @@
       {
         "date": "2026-01-01",
         "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
           {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
@@ -28878,6 +31423,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -28974,6 +31534,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -29057,6 +31627,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -29160,6 +31745,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -29257,6 +31857,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -29347,6 +31962,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -29430,6 +32055,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -29533,6 +32173,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -29624,6 +32279,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -29727,6 +32397,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -29824,6 +32509,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -29914,6 +32614,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -29997,6 +32707,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -30100,6 +32825,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -30190,6 +32930,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -30273,6 +33023,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -30376,6 +33141,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -30473,6 +33253,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -30563,6 +33358,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -30644,6 +33449,16 @@
       {
         "date": "2026-01-01",
         "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
           {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
@@ -30728,6 +33543,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -30831,6 +33661,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -30921,6 +33766,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -31004,6 +33859,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -31107,6 +33977,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -31197,6 +34082,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -31280,6 +34175,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -31376,6 +34286,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -31459,6 +34379,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -31562,6 +34497,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -31652,6 +34602,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -31734,6 +34694,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -31815,6 +34785,16 @@
       {
         "date": "2026-01-01",
         "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
           {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
@@ -31899,6 +34879,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -32002,6 +34997,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -32092,6 +35102,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -32175,6 +35195,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -32271,6 +35306,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -32354,6 +35399,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -32457,6 +35517,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -32547,6 +35622,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -32630,6 +35715,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -32733,6 +35833,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -32823,6 +35938,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -32904,6 +36029,16 @@
       {
         "date": "2026-01-01",
         "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
           {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
@@ -32988,6 +36123,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -33091,6 +36241,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -33181,6 +36346,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -33264,6 +36439,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -33367,6 +36557,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -33457,6 +36662,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -33540,6 +36755,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -33643,6 +36873,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -33734,6 +36979,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -33837,6 +37097,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -33927,6 +37202,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -34010,6 +37295,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -34106,6 +37406,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -34189,6 +37499,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -34285,6 +37610,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -34368,6 +37703,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -34471,6 +37821,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -34562,6 +37927,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -34665,6 +38045,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -34762,6 +38157,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -34852,6 +38262,16 @@
         "date": "2026-01-01",
         "changes": [
           {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
             "to": "applies"
@@ -34933,6 +38353,16 @@
       {
         "date": "2026-01-01",
         "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
           {
             "team_rule_id": "r-0111",
             "from": "not_yet_effective",
@@ -35017,6 +38447,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -35120,6 +38565,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -35211,6 +38671,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -35314,6 +38789,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -35405,6 +38895,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }
@@ -35508,6 +39013,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -35605,6 +39125,21 @@
         ]
       },
       {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -35696,6 +39231,21 @@
           },
           {
             "team_rule_id": "r-0034",
+            "from": "not_yet_effective",
+            "to": "applies"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "changes": [
+          {
+            "team_rule_id": "r-0001",
+            "from": "not_yet_effective",
+            "to": "applies"
+          },
+          {
+            "team_rule_id": "r-0002",
             "from": "not_yet_effective",
             "to": "applies"
           }

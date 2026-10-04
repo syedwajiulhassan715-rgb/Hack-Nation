@@ -111,3 +111,24 @@ def test_status_on(hint, eff, as_of, expected):
 def test_nth_month_wraps_year():
     assert dates.first_day_of_nth_month_after(dt.date(2026, 7, 20), 12) == dt.date(2027, 7, 1)
     assert dates.first_day_of_nth_month_after(dt.date(2026, 11, 30), 3) == dt.date(2027, 2, 1)
+
+
+# ------------------------------------------------------------------ chaptering line (document anchor)
+
+
+def test_chaptering_record_single_dated_line():
+    text = "Bill history\n10/06/25 - Chaptered\n09/12/25 - Enrolled\n"
+    rec = dates.chaptering_record(text)
+    assert rec == "10/06/25 - Chaptered"
+    res = r(None, rec, jurisdiction="CA")
+    assert res.date == "2026-01-01" and res.method == "ca_default_jan1_next_year(chaptered)"
+    assert res.review_reasons  # a default not stated in the text is always flagged
+
+
+def test_chaptering_record_needs_a_date_and_exactly_one_line():
+    assert dates.chaptering_record("cross-reference chaptered bills") is None
+    assert dates.chaptering_record("10/06/25 - Chaptered\n10/07/24 - Chaptered") is None
+
+
+def test_chaptering_anchor_gives_no_date_outside_ca():
+    assert r(None, "10/06/25 - Chaptered", jurisdiction="NJ").date is None

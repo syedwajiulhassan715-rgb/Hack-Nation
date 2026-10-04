@@ -1,0 +1,160 @@
+{
+  "generated_at": "2026-10-04T01:18:40Z",
+  "mapping_reviewed": false,
+  "tests": {
+    "T1": {
+      "title": "California AB 325 / SB 763 takes effect",
+      "type": "as_of",
+      "expected_behavior": "not_yet_effective before, applies after, for every CA address.",
+      "affected": 250,
+      "conflicts": 0,
+      "checks": [
+        {
+          "name": "not_yet_effective on 2025-12-31 for every CA address",
+          "passed": true,
+          "detail": "250/250"
+        },
+        {
+          "name": "applies on 2026-01-02 for every CA address",
+          "passed": true,
+          "detail": "250/250"
+        }
+      ],
+      "notes": [
+        "CA-ALG-01 -> r-0001 (Business and Professions Code Section 16729(a) (AB 325, Chapter 338); D022; status in_force on the default date; effective 2026-01-01); r-0002 (Business and Professions Code Section 16729(b) (AB 325, Chapter 338); D022; status in_force on the default date; effective 2026-01-01)",
+        "as-of dates used: 2025-12-31 -> 2026-01-02",
+        "affected (result changes for a mapped rule): 250 (Berkeley, CA 40, Los Angeles, CA 80, San Diego, CA 50, San Francisco, CA 80)",
+        "r-0001 status: not_yet_effective on 2025-12-31, in_force on 2026-01-02",
+        "r-0002 status: not_yet_effective on 2025-12-31, in_force on 2026-01-02",
+        "r-0001 needs review: California default effective date for non-urgency statutes (not stated in the source text)",
+        "r-0002 needs review: California default effective date for non-urgency statutes (not stated in the source text)"
+      ]
+    },
+    "T2": {
+      "title": "Hoboken vs Jersey City local algorithmic bans",
+      "type": "boundary",
+      "expected_behavior": "HOB-ALG-01 only for Hoboken addresses; JC-ALG-01 only for Jersey City addresses; neither for Newark.",
+      "affected": 90,
+      "conflicts": 0,
+      "checks": [
+        {
+          "name": "HOB-ALG-01 only for Hoboken, NJ addresses",
+          "passed": null,
+          "detail": "no rule text; boundary gives 40 addresses"
+        },
+        {
+          "name": "JC-ALG-01 only for Jersey City, NJ addresses",
+          "passed": null,
+          "detail": "no rule text; boundary gives 50 addresses"
+        },
+        {
+          "name": "no affected address outside the named cities",
+          "passed": true,
+          "detail": "0 outside"
+        }
+      ],
+      "notes": [
+        "HOB-ALG-01 -> no match (no enacted algorithmic_rent_setting rule for Hoboken, NJ was extracted from the corpus)",
+        "JC-ALG-01 -> no match (no enacted algorithmic_rent_setting rule for Jersey City, NJ was extracted from the corpus)",
+        "as-of date used: 2026-10-01",
+        "HOB-ALG-01: no source text in the corpus, so it is not in rules.json or lookups.json; affected lists the 40 addresses whose legal city is Hoboken, NJ (boundary only; the rule's own coverage could not be checked)",
+        "JC-ALG-01: no source text in the corpus, so it is not in rules.json or lookups.json; affected lists the 50 addresses whose legal city is Jersey City, NJ (boundary only; the rule's own coverage could not be checked)",
+        "affected: 90 (Hoboken, NJ 40, Jersey City, NJ 50)",
+        "legal city unresolved, not checked: A0352"
+      ]
+    },
+    "T3": {
+      "title": "NJ FAIR Act: enacted, not yet effective; possible preemption",
+      "type": "as_of",
+      "expected_behavior": "not_yet_effective on 2026-10-01, applies on 2027-07-02 for every NJ address; Jersey City and Hoboken addresses carry a conflict flag for human review.",
+      "affected": 140,
+      "conflicts": 90,
+      "checks": [
+        {
+          "name": "not_yet_effective on 2026-10-01 for every NJ address",
+          "passed": true,
+          "detail": "140/140"
+        },
+        {
+          "name": "applies on 2027-07-02 for every NJ address",
+          "passed": true,
+          "detail": "140/140"
+        }
+      ],
+      "notes": [
+        "NJ-ALG-01 -> r-0054 (P.L. 2026, c.043 (A3497 1R ACS), section 4; D069; status not_yet_effective on the default date; effective 2027-07-01)",
+        "as-of dates used: 2026-10-01 -> 2027-07-02",
+        "affected (result changes for a mapped rule): 140 (Hoboken, NJ 40, Jersey City, NJ 50, NJ (legal city unresolved) 1, Newark, NJ 49)",
+        "r-0054 status: not_yet_effective on 2026-10-01, in_force on 2027-07-02",
+        "conflict_with JC-ALG-01 -> no match (no enacted algorithmic_rent_setting rule for Jersey City, NJ was extracted from the corpus)",
+        "conflict_with HOB-ALG-01 -> no match (no enacted algorithmic_rent_setting rule for Hoboken, NJ was extracted from the corpus)",
+        "JC-ALG-01: no source text in the corpus; the 50 addresses in Jersey City, NJ covered by the mapped rule on 2027-07-02 are flagged for human review because the test names a possible conflict we cannot rule out",
+        "HOB-ALG-01: no source text in the corpus; the 40 addresses in Hoboken, NJ covered by the mapped rule on 2027-07-02 are flagged for human review because the test names a possible conflict we cannot rule out",
+        "engine conflict flags on mapped rules on 2027-07-02: 0 addresses"
+      ]
+    },
+    "T4": {
+      "title": "Massachusetts pending bills S.2983 and H.5222",
+      "type": "pending",
+      "expected_behavior": "Reported as pending (not in force) for every Boston and Cambridge address; affected set = all MA addresses if enacted.",
+      "affected": 110,
+      "conflicts": 0,
+      "checks": [
+        {
+          "name": "mapped bills are not in force",
+          "passed": true,
+          "detail": "in force: none"
+        },
+        {
+          "name": "reported as pending for every address in a corpus city",
+          "passed": true,
+          "detail": "105/105"
+        },
+        {
+          "name": "affected if enacted = every in-scope address",
+          "passed": true,
+          "detail": "110/110"
+        }
+      ],
+      "notes": [
+        "MA-ALG-P1 -> r-0038 (H.5222; D045; status pending on the default date; effective not stated); r-0039 (Bill S.2983; D046; status pending on the default date; effective not stated)",
+        "MA-ALG-P2 -> r-0038 (H.5222; D045; status pending on the default date; effective not stated); r-0039 (Bill S.2983; D046; status pending on the default date; effective not stated)",
+        "several organizer ids share one pool of our rules; matched as a set (the one-to-one pairing is not decidable from the ids)",
+        "as-of date used: 2026-10-01",
+        "affected if enacted (coverage not ruled out): 110 (Boston, MA 55, Cambridge, MA 50, MA (legal city unresolved) 5)",
+        "lookups.json reports these bills as pending (not in force); affected is hypothetical"
+      ]
+    },
+    "T5": {
+      "title": "Massachusetts rent-control ballot question struck",
+      "type": "negative",
+      "expected_behavior": "No rent cap reported for any Boston or Cambridge address; IP 25-21 recorded as failed. Affected set is empty.",
+      "affected": 0,
+      "conflicts": 0,
+      "checks": [
+        {
+          "name": "measure recorded as failed",
+          "passed": null,
+          "detail": "no citable text in the corpus"
+        },
+        {
+          "name": "measure never appears in lookups",
+          "passed": true,
+          "detail": "absent"
+        },
+        {
+          "name": "no rent_increase_limits rule from a city ordinance or an unenacted measure reported as applying",
+          "passed": true,
+          "detail": "none"
+        }
+      ],
+      "notes": [
+        "MA-RENT-P1 -> no match (no pending or failed rent_increase_limits rule for MA was extracted from the corpus)",
+        "as-of date used: 2026-10-01",
+        "the measure has no text in the corpus, so it cannot be recorded as failed (a failed record needs a citable span); it is absent from rules.json and lookups.json",
+        "state rule r-0041 (M.G.L. c. 40P, § 4) is in the lookups for 110 addresses; its requirement reads: \"No city or town may enact, maintain or enforce rent control of any kind. The exception is a city or town that accepts Chapter 40P, which may adopt rent control \" (review: not a cap from the measure)",
+        "affected is empty: a measure that did not pass changes no result"
+      ]
+    }
+  }
+}

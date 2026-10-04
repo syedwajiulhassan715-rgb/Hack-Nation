@@ -1,0 +1,30 @@
+Change tests T1-T5 (dev/change_tests.json). Not legal advice.
+generated_at 2026-10-04T01:18:40Z
+
+T1 California AB 325 / SB 763 takes effect [as_of]: 250 affected, 0 conflict-flagged
+  expected: not_yet_effective before, applies after, for every CA address.
+  [PASS] not_yet_effective on 2025-12-31 for every CA address - 250/250
+  [PASS] applies on 2026-01-02 for every CA address - 250/250
+
+T2 Hoboken vs Jersey City local algorithmic bans [boundary]: 90 affected, 0 conflict-flagged
+  expected: HOB-ALG-01 only for Hoboken addresses; JC-ALG-01 only for Jersey City addresses; neither for Newark.
+  [N/A ] HOB-ALG-01 only for Hoboken, NJ addresses - no rule text; boundary gives 40 addresses
+  [N/A ] JC-ALG-01 only for Jersey City, NJ addresses - no rule text; boundary gives 50 addresses
+  [PASS] no affected address outside the named cities - 0 outside
+
+T3 NJ FAIR Act: enacted, not yet effective; possible preemption [as_of]: 140 affected, 90 conflict-flagged
+  expected: not_yet_effective on 2026-10-01, applies on 2027-07-02 for every NJ address; Jersey City and Hoboken addresses carry a conflict flag for human review.
+  [PASS] not_yet_effective on 2026-10-01 for every NJ address - 140/140
+  [PASS] applies on 2027-07-02 for every NJ address - 140/140
+
+T4 Massachusetts pending bills S.2983 and H.5222 [pending]: 110 affected, 0 conflict-flagged
+  expected: Reported as pending (not in force) for every Boston and Cambridge address; affected set = all MA addresses if enacted.
+  [PASS] mapped bills are not in force - in force: none
+  [PASS] reported as pending for every address in a corpus city - 105/105
+  [PASS] affected if enacted = every in-scope address - 110/110
+
+T5 Massachusetts rent-control ballot question struck [negative]: 0 affected, 0 conflict-flagged
+  expected: No rent cap reported for any Boston or Cambridge address; IP 25-21 recorded as failed. Affected set is empty.
+  [N/A ] measure recorded as failed - no citable text in the corpus
+  [PASS] measure never appears in lookups - absent
+  [PASS] no rent_increase_limits rule from a city ordinance or an unenacted measure reported as applying - none

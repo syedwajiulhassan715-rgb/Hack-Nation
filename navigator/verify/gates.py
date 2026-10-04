@@ -90,6 +90,11 @@ def check_candidate(c: dict[str, Any], doc: Doc, valid_jur: set[str]) -> tuple[d
                 f"effective-date phrase is more than {DATE_WINDOW} chars from the quote")
     if anchor and anchor.strip() not in text and not find_span(text, anchor, doc.body_offset):
         reasons.append("effective-date anchor not found in source text")
+    # no date words from the model: the document's own chaptering line can still anchor
+    # a statutory default (dates.resolve decides whether one exists)
+    doc_anchor = None
+    if not phrase and not anchor and c.get("status_hint") == "enacted":
+        doc_anchor = dates.chaptering_record(text[doc.body_offset:])
 
     # numbers must come from the source: the headline near the span, the rest from the
     # document (statutes put exemptions and penalties in other subdivisions)
@@ -121,7 +126,8 @@ def check_candidate(c: dict[str, Any], doc: Doc, valid_jur: set[str]) -> tuple[d
         notes.append(f"state rule taken from a {doc.jurisdiction} source")
 
     return {"jur": jur, "start": start, "end": end, "match": match, "predicates": predicates,
-            "reasons": reasons, "notes": notes, "penalty": penalty, "quote": text[start:end]}, None
+            "reasons": reasons, "notes": notes, "penalty": penalty, "quote": text[start:end],
+            "doc_anchor": doc_anchor}, None
 
 
 # ---------------------------------------------------------------- merging
@@ -189,16 +195,29 @@ def merge(items: list[dict[str, Any]]) -> list[list[dict[str, Any]]]:
 # ---------------------------------------------------------------- build rules
 
 
+def _resolve_date(c: dict[str, Any], v: dict[str, Any]) -> tuple[dates.DateResult, str | None]:
+    """Resolve with the model's anchor; if it gave none, try the document's chaptering line
+    and keep it only when a rule actually used it."""
+    kw = dict(jurisdiction=v["jur"], level=c["level"], status_hint=c["status_hint"])
+    res = dates.resolve(c.get("effective_date_phrase"), c.get("effective_date_anchor"), **kw)
+    if res.date is None and v.get("doc_anchor"):
+        alt = dates.resolve(c.get("effective_date_phrase"), v["doc_anchor"], **kw)
+        if alt.date is not None:
+            return alt, v["doc_anchor"]
+    return res, c.get("effective_date_anchor")
+
+
 def build_rule(group: list[dict[str, Any]], as_of: str) -> RuleInternal:
     best = min(group, key=_rank)
     c, v = best["c"], best["v"]
     reasons = list(v["reasons"])
     penalty = v["penalty"]
 
-    res = dates.resolve(c.get("effective_date_phrase"), c.get("effective_date_anchor"),
-                        jurisdiction=v["jur"], level=c["level"], status_hint=c["status_hint"])
+    res, anchor = _resolve_date(c, v)
     reasons += res.review_reasons
     notes = list(v["notes"]) + res.notes
+    if anchor != c.get("effective_date_anchor"):
+        notes.append(f"date anchor taken from the document's bill history: {anchor!r}")
     penalty += res.confidence_penalty
 
     # same law, other sources: different status hints or dates are conflicts for review
@@ -211,9 +230,7 @@ def build_rule(group: list[dict[str, Any]], as_of: str) -> RuleInternal:
     for it in group:
         if it is best:
             continue
-        r2 = dates.resolve(it["c"].get("effective_date_phrase"), it["c"].get("effective_date_anchor"),
-                           jurisdiction=it["v"]["jur"], level=it["c"]["level"],
-                           status_hint=it["c"]["status_hint"])
+        r2, _ = _resolve_date(it["c"], it["v"])
         # A conflict needs two stated effective dates; a rate period's start is not one.
         periods = ("date_range_start",)
         if res.date and r2.date and r2.date != res.date \
@@ -260,7 +277,7 @@ def build_rule(group: list[dict[str, Any]], as_of: str) -> RuleInternal:
         retrieved_at=c["retrieved_at"],
         penalty=c.get("penalty"),
         effective_date_phrase=c.get("effective_date_phrase"),
-        effective_date_anchor=c.get("effective_date_anchor"),
+        effective_date_anchor=anchor,
         effective_date_method=res.method,
         predicates=v["predicates"],
         needs_review=bool(reasons or conflict_notes),

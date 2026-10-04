@@ -31,7 +31,6 @@ CAT_ABBR = ["rent", "jcause", "deposit", "appfee", "screen", "algo"]
 
 NOT_YET = [
     ("4", "Gold set (rules + addresses)", 3),
-    ("5", "Change tests T1-T5 expected behavior", 6),
     ("7", "Jurisdiction check", 4),
     ("8", "Determinism (two cached runs byte-identical)", 5),
 ]
@@ -209,9 +208,29 @@ def evaluate(out_dir: Path) -> Report:
     rep.metrics["rules_by_status"] = status_counts
     rep.lines.append(f"  [info] rules: {len(rules)}; by status {dict(sorted(status_counts.items()))}; red cells: {len(red)}")
 
+    _change_checks(rep, out_dir)
     for num, label, phase in NOT_YET:
         rep.lines.append(f"[{num}] {label}: not measured yet (phase {phase})")
     return rep
+
+
+def _change_checks(rep: Report, out_dir: Path) -> None:
+    """[5] the change tracker's explicit assertions (outputs/changes_internal.json)."""
+    doc, err = _load(out_dir / "changes_internal.json")
+    if doc is None:
+        rep.lines.append(f"[5] Change tests T1-T5 expected behavior: not measured ({err})")
+        return
+    rep.lines.append("[5] Change tests T1-T5 expected behavior (assertions from dev/change_tests.json)")
+    counts = {True: 0, False: 0, None: 0}
+    for tid, t in doc["tests"].items():
+        rep.lines.append(f"  {tid}: {t['affected']} affected, {t['conflicts']} conflict-flagged")
+        for c in t["checks"]:
+            counts[c["passed"]] += 1
+            tag = {True: "PASS", False: "FAIL", None: "n/a "}[c["passed"]]
+            rep.lines.append(f"    [{tag}] {c['name']} - {c['detail']}")
+    rep.metrics["change_checks"] = {"pass": counts[True], "fail": counts[False], "not_checkable": counts[None]}
+    rep.lines.append(f"  [info] checks: {counts[True]} pass, {counts[False]} fail, "
+                     f"{counts[None]} not checkable (no source text)")
 
 
 def _checklist() -> list[dict[str, Any]]:
