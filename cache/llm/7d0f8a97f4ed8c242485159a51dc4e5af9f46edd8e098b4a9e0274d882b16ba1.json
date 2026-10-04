@@ -1,0 +1,133 @@
+{
+ "key_parts": {
+  "text_sha256": "31b7db7b0e637435a30b1c9bf6db06d8e1a4b748e335bceeaa9232da266e6f04",
+  "chunk_id": "D043-c002",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   22126,
+   34722
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 8401,
+  "output_tokens": 4834
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "Los Angeles, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "RSO/JCO Relocation Assistance Amounts (Chart A)",
+    "requirement": "Landlords must pay relocation assistance per unit at the RSO or JCO amounts. Eligible tenants receive $11,000 (less than 3 years) or $14,400 (3 or more years or low income); qualified tenants receive $23,150 or $27,400.",
+    "key_value": "Eligible Tenant $11,000 / $14,400; Qualified Tenant $23,150 / $27,400",
+    "coverage_text": "Tenants of units subject to the RSO or JCO being displaced; amounts depend on qualified or eligible status, length of tenancy and income. Paid per unit, not per tenant.",
+    "predicates_json": null,
+    "exemptions": "Single family dwellings that are not lower income may be entitled to one month’s equivalent of rent for relocation payment depending on various factors.",
+    "citation": "LAHD Relocation Assistance Bulletin, Chart A: RSO or JCO Amounts",
+    "penalty": null,
+    "quoted_span": "Eligible Tenant $11,000 $14,400",
+    "effective_date_phrase": "Effective July 1, 2026 through June 30, 2027",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "Los Angeles, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "JCO Relocation for Single Family Dwellings Owned by Natural Persons",
+    "requirement": "For a single-family dwelling subject to the JCO owned by a natural person who owns no more than four dwelling units and a single-family home on a separate lot in the City, relocation assistance is one month's rent in effect when the termination notice was served, as a payment or credit.",
+    "key_value": "one month’s rent",
+    "coverage_text": "Single-family dwellings subject to the JCO where the owner is a natural person (including via a trust or controlled legal entity) who owns no more than four dwelling units and a single-family home on a separate lot in the City of Los Angeles.",
+    "predicates_json": "{\"all\": [{\"fact\": \"units\", \"op\": \"==\", \"value\": 1}, {\"fact\": \"owner_type\", \"op\": \"==\", \"value\": \"natural person\"}, {\"fact\": \"owner_units_owned\", \"op\": \"<=\", \"value\": 4}]}",
+    "exemptions": null,
+    "citation": "LAMC 165.06.A.(6)",
+    "penalty": null,
+    "quoted_span": "one month’s rent that was in effect when the landlord served the written notice to terminate the tenancy, as either a monetary payment or credit.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": "The Los Angeles Municipal Code Section 151.30(E) shall not apply."
+   },
+   {
+    "jurisdiction": "Los Angeles, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Timing of Relocation Assistance Payments and Escrow Option",
+    "requirement": "Relocation payments must be made available within fifteen (15) days of service of the written notice of eviction, or the landlord may elect to deposit them in an escrow account within the same 15-day period. Payments are split equally pro rata among multiple tenants and the higher amount applies if more than one amount applies.",
+    "key_value": "within fifteen (15) days of service of the written notice of eviction",
+    "coverage_text": "Landlords owing relocation assistance under the City Ordinances (RSO/JCO).",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "RAC Regulations, Section 960.00",
+    "penalty": "In an action by the landlord to recover possession, the tenant may raise as an affirmative defense the failure of the landlord to provide relocation assistance; tenant may file a complaint with LAHD or seek a private right of action.",
+    "quoted_span": "Payments shall be made available within fifteen (15) days of service of the written notice of eviction; however, the landlord may, at the landlord's sole discretion and at the landlord's cost, elect to pay the monetary relocation benefits through an escrow account. The monies must be placed in the escrow account within the required 15-day period.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "Los Angeles, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Option 3 Individualized Relocation - Initial RSO/JCO Payment",
+    "requirement": "Under Option 3, the owner must pay tenants the RSO or JCO relocation amounts within 15 days of filing the Notice of Intent to Withdraw or the Declaration of Intent to Evict, supplemented only if the private consultant determines State law requires it.",
+    "key_value": "within 15 days of filing",
+    "coverage_text": "Owners choosing Option 3 (individualized relocation) when filing a Notice of Intent to Withdraw or Declaration of Intent to Evict.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "LAHD Relocation Assistance Bulletin, Option 3: Individualized Relocation",
+    "penalty": null,
+    "quoted_span": "In addition to complying with relocation amounts under Option 3, the owner is required to pay tenants the RSO or JCO relocation amounts within 15 days of filing the Notice of Intent to Withdraw or the Declaration of Intent to Evict, which will be supplemented only if the owner’s private consultant determines it is required under State law.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": "Note, relocation payment above the RSO or JCO amount under Option 3 is regulated by state law."
+   },
+   {
+    "jurisdiction": "Los Angeles, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Relocation for Demolition for New Construction (RPO/HCA)",
+    "requirement": "Lower income households displaced for demolition of their units to be replaced with new construction must receive relocation consistent with public-entity relocation benefits, and tenants displaced for new construction should receive at least the RSO or JCO amounts.",
+    "key_value": null,
+    "coverage_text": "Lower income households displaced for the purpose of demolition of their units where the owner will replace the units with new construction.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "Government Code 66300.6(b)(4)(A); Resident Protections Ordinance (RPO)",
+    "penalty": null,
+    "quoted_span": "Tenants being displaced for new construction should receive a minimum of the RSO or JCO amounts to be increased only if the HCA or RPO requir e it.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "Los Angeles, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Relocation Offset for Accumulated Rent",
+    "requirement": "A landlord may offset the tenant's accumulated rent against relocation assistance, except when the relocation is owed because a governmental agency order to vacate or comply was issued for an unpermitted dwelling.",
+    "key_value": null,
+    "coverage_text": "Landlords owing relocation assistance under the RSO or JCO.",
+    "predicates_json": null,
+    "exemptions": "No offset where termination of tenancy is required by a governmental agency order to vacate or comply issued for an unpermitted dwelling.",
+    "citation": "LAMC 151.09.G,5., 165.06.J.",
+    "penalty": null,
+    "quoted_span": "A landlord may offset the tenant's accumulated rent against any relocation assistance, unless the relocation assistance is owed because a termination of tenancy is required by a governmental agency order to vacate or comply issued for an unpermitted dwelling.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "key_parts": {
+  "text_sha256": "fdd8d7fca42103cf630c3a9a4ed217150eb17a6e180edd80c1d845ca5e8aa1fe",
+  "chunk_id": "D023-c002",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   22226,
+   24988
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 4625,
+  "output_tokens": 1591
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Just cause for termination of tenancy (Civil Code 1946.2): local ordinance interaction and exemptions",
+    "requirement": "The state just cause section does not apply to residential real property subject to a local just cause ordinance adopted on or before September 1, 2019, or adopted or amended after that date that is more protective than this section; in those cases the local ordinance applies. Any waiver of rights under this section is void.",
+    "key_value": null,
+    "coverage_text": "Residential real property, meaning any dwelling or unit intended for human habitation, including units in a mobilehome park, except property covered by a qualifying local just cause ordinance and homeowners of a mobilehome.",
+    "predicates_json": null,
+    "exemptions": "Residential real property subject to a local just cause ordinance adopted on or before September 1, 2019; residential real property subject to a local just cause ordinance adopted or amended after September 1, 2019 that is more protective than this section; a homeowner of a mobilehome as defined in Section 798.9.",
+    "citation": "Civil Code Section 1946.2 (Amended by Stats. 2025, Ch. 203, Sec. 1. (AB 1529))",
+    "penalty": "The Attorney General, and the city attorney or county counsel where the rental unit is located, may seek injunctive relief based on violations of this section.",
+    "quoted_span": "(A) Residential real property subject to a local ordinance requiring just cause for termination of a residential tenancy adopted on or before September 1, 2019, in which case the local ordinance shall apply.",
+    "effective_date_phrase": "This section shall become operative on April 1, 2024.",
+    "effective_date_anchor": null,
+    "interaction_text": "A residential real property shall not be subject to both a local ordinance requiring just cause for termination of a residential tenancy and this section."
+   }
+  ]
+ }
+}

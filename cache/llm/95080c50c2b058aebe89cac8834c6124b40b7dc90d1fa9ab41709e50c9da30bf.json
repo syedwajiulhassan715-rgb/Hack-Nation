@@ -1,0 +1,61 @@
+{
+ "key_parts": {
+  "text_sha256": "bddd7d3ab24d2717a0393cf879bad9a849af3aa10dd2e426bc9da34dcd19c5e3",
+  "chunk_id": "D009-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   155,
+   2677
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 4782,
+  "output_tokens": 3037
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "Berkeley, CA",
+    "level": "city",
+    "category": "rent_increase_limits",
+    "status_hint": "enacted",
+    "title": "Rent Stabilization and Eviction for Just Cause Ordinance – rent control coverage",
+    "requirement": "Rent control applies to most units in multifamily properties built before 1980, to single-family homes with tenancies that began before 1996, and to rooming houses. New construction that received a Certificate of Occupancy after June 1980, single-family homes with tenancies that began on or after January 1, 1996, most condominiums, and certain HUD-subsidized units are registered but not rent controlled.",
+    "key_value": null,
+    "coverage_text": "Fully covered: most units in multifamily properties built before 1980; single family homes with current tenancies that began before 1996; rooming houses (single-family homes with five or more rooms rented out individually with separate leases). Includes units with Housing Choice Voucher (Section 8), Shelter Plus Care, VASH Voucher, LIHTC, California Community Housing Agency, HOME, City of Berkeley Housing Trust Fund and Mental Health Safety Act subsidies.",
+    "predicates_json": "{\"all\":[{\"fact\":\"certificate_of_occupancy_date\",\"op\":\"<\",\"value\":\"1980-07-01\"},{\"not\":{\"fact\":\"dormitory_or_institutional\",\"op\":\"==\",\"value\":true}},{\"not\":{\"fact\":\"shared_living_with_owner\",\"op\":\"==\",\"value\":true}}]}",
+    "exemptions": "Not rent controlled: new construction built with a Certificate of Occupancy after June 1980; single-family homes with tenancies beginning on or after January 1, 1996; most condominiums; units with Section 202 or Section 811 subsidies; units with Rental Supplement Program, Section 8 Loan Management Set Aside or Project-based Section 8 subsidies in a project with a HUD-insured or HUD-held mortgage. Fully exempt: Golden Duplexes (owner-occupied on December 31, 1979 and currently owner-occupied); units where the owner shares a kitchen or bath with the tenant and lived on the property when the tenancy started; tenancies started after Nov 7, 2018 on properties where one unit is an ADU and either unit is owner-occupied; university rental units such as dormitories; nonprofit cooperatives.",
+    "citation": "Berkeley’s Rent Stabilization and Eviction for Just Cause Ordinance",
+    "penalty": null,
+    "quoted_span": "Most units in multifamily properties built before 1980** Fully Covered Yes Yes Yes Yes",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "Berkeley, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Rent Stabilization and Eviction for Just Cause Ordinance – just cause coverage",
+    "requirement": "Just cause for eviction protections apply to both fully and partially covered units, including new construction, single-family homes, most condominiums and subsidized units; only the listed exempt unit types are not covered.",
+    "key_value": null,
+    "coverage_text": "Fully and partially covered units: multifamily units built before 1980, rooming houses, new construction with a Certificate of Occupancy after June 1980, single-family homes regardless of tenancy start date, most condominiums, and units with listed government subsidies.",
+    "predicates_json": "{\"all\":[{\"not\":{\"fact\":\"dormitory_or_institutional\",\"op\":\"==\",\"value\":true}},{\"not\":{\"fact\":\"shared_living_with_owner\",\"op\":\"==\",\"value\":true}}]}",
+    "exemptions": "Golden Duplexes (duplex owner-occupied on December 31, 1979 and currently with an owner living in one unit); units where the owner shares a kitchen or bath with the tenant if the owner lived on the property when the tenancy started; tenancies started after Nov 7, 2018 on properties where one unit is an ADU and either unit is owner-occupied; university rental units such as dormitories; nonprofit cooperatives.",
+    "citation": "Berkeley’s Rent Stabilization and Eviction for Just Cause Ordinance",
+    "penalty": null,
+    "quoted_span": "Guide to Coverage under Berkeley’s Rent Stabilization and Eviction for Just Cause Ordinance",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

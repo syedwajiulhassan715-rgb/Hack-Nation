@@ -1,0 +1,61 @@
+{
+ "key_parts": {
+  "text_sha256": "7f24d692c68f42ed2ab11a2d1f8e060a951f8cf6a3974b4e8090e63081ad6f17",
+  "chunk_id": "D001-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   140,
+   8000
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 6606,
+  "output_tokens": 1845
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "Berkeley, CA",
+    "level": "city",
+    "category": "algorithmic_rent_setting",
+    "status_hint": "bill_or_proposal",
+    "title": "Prohibition on sale of coordinated pricing algorithms",
+    "requirement": "It is unlawful to sell, license, or otherwise provide to Berkeley landlords any coordinated pricing algorithm that sets or recommends rents or occupancy levels for residential dwelling units in Berkeley.",
+    "key_value": null,
+    "coverage_text": "Sellers and providers of coordinated pricing algorithms that use Competitor Data (nonpublic data less than 90 days old on other properties) to recommend rents, fees, occupancy rates or other rental contract terms for residential dwelling units in Berkeley.",
+    "predicates_json": null,
+    "exemptions": "The definition excludes (a) products that publish rental data in an aggregated and anonymous manner without recommending rent prices, fees, or occupancy rates or other terms for future leases; (b) products used to establish rent or income limits under affordable housing guidelines; (c) products or processes used for market research for project financing, appraisal, or research, testing, or training for software development.",
+    "citation": "Berkeley Municipal Code 13.63.030(A); Ordinance No. 7,992-N.S.",
+    "penalty": "City Attorney may sue for damages, injunctive relief, restitution/return of illegal profits, and/or civil penalties of up to $1,000 per violation, plus attorney's fees and costs if the City prevails.",
+    "quoted_span": "It shall be unlawful to sell, license, or otherwise provide to City of Berkeley landlords any coordinated pricing algorithm that sets or recommends rents or occupancy levels that may be achieved for residential dwelling units in the City of Berkeley.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "Berkeley, CA",
+    "level": "city",
+    "category": "algorithmic_rent_setting",
+    "status_hint": "bill_or_proposal",
+    "title": "Prohibition on landlord use of coordinated pricing algorithms",
+    "requirement": "It is unlawful for a landlord to use a coordinated pricing algorithm when setting rents or occupancy levels for residential dwelling units in Berkeley. Each separate month of violation and each separate unit for which the algorithm was used is a separate violation.",
+    "key_value": null,
+    "coverage_text": "Landlords setting rents or occupancy levels for residential dwelling units in the City of Berkeley using a coordinated pricing algorithm.",
+    "predicates_json": null,
+    "exemptions": "The definition excludes (a) products that publish rental data in an aggregated and anonymous manner without recommending rent prices, fees, or occupancy rates or other terms for future leases; (b) products used to establish rent or income limits under affordable housing guidelines; (c) products or processes used for market research for project financing, appraisal, or research, testing, or training for software development.",
+    "citation": "Berkeley Municipal Code 13.63.030(B); Ordinance No. 7,992-N.S.",
+    "penalty": "City Attorney or an aggrieved tenant may sue for injunctive relief, damages, and/or civil penalties of up to $1,000 per violation; the prevailing party gets reasonable attorney's fees and costs (tenant or City Attorney).",
+    "quoted_span": "It shall be unlawful for a landlord to use a coordinated pricing algorithm described in subsection A when setting rents or occupancy levels for residential dwelling units in the City of Berkeley.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

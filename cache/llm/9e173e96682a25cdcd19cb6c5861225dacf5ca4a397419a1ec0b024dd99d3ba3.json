@@ -1,0 +1,61 @@
+{
+ "key_parts": {
+  "text_sha256": "f24c21cb2b32330c0f2f112f066d02b784887a8552cc3777ea96f1d53dd0171f",
+  "chunk_id": "D052-c002",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   20323,
+   26126
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 5489,
+  "output_tokens": 2224
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "MA",
+    "level": "state",
+    "category": "security_deposits",
+    "status_hint": "enacted",
+    "title": "Security deposit return and forfeiture of right to retain",
+    "requirement": "A lessor forfeits the right to retain any part of the security deposit if he fails to hold it in an account as required, fails to give an itemized list of damages within thirty days after the occupancy ends, uses or enforces lease terms or waivers that conflict with this section, fails to transfer the deposit to a successor, or fails to return the deposit balance with interest within thirty days after the tenancy ends. Lease provisions or tenant waivers that conflict with this section are void and unenforceable.",
+    "key_value": "Return within thirty days after termination of the tenancy",
+    "coverage_text": "Lessors holding a security deposit for a residential tenancy.",
+    "predicates_json": null,
+    "exemptions": "The section does not apply to any lease, rental, occupancy or tenancy of one hundred days or less in duration which is for a vacation or recreational purpose.",
+    "citation": "M.G.L. c. 186, § 15B(6)-(9)",
+    "penalty": "Forfeiture of the right to retain any portion of the deposit or to counterclaim for damage; for failures under clauses (a), (d) or (e), damages equal to three times the deposit or balance owed plus interest at five per cent from the due date, court costs and reasonable attorney's fees.",
+    "quoted_span": "(e) fails to return to the tenant the security deposit or balance thereof to which the tenant is entitled after deducting therefrom any sums in accordance with the provisions of this section, together with any interest thereon, within thirty days after termination of the tenancy.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "MA",
+    "level": "state",
+    "category": "security_deposits",
+    "status_hint": "enacted",
+    "title": "Transfer of last month's rent advance to successor in interest",
+    "requirement": "When a lessor holding rent paid in advance for the last month transfers his interest, the advance and accrued interest must be credited to the successor, who becomes liable to the tenant. The successor must notify the tenant in writing within forty-five days of the transfer, including name, business address and business telephone number of the lessor and any agent.",
+    "key_value": "Written notice within forty-five days from the date of transfer",
+    "coverage_text": "Lessors who receive rent in advance for the last month of tenancy and transfer their interest in the dwelling unit, and their successors in interest.",
+    "predicates_json": null,
+    "exemptions": "Granting a mortgage is not a transfer of interest. The liability does not apply to a city or town acquiring title under chapter sixty, or to a foreclosing mortgagee or mortgagee in possession that is a financial institution chartered by the commonwealth or the United States. The section does not apply to vacation or recreational tenancies of one hundred days or less.",
+    "citation": "M.G.L. c. 186, § 15B(7A)",
+    "penalty": null,
+    "quoted_span": "The successor in interest shall, within forty-five days from the date of said transfer, notify the tenant who made such rental advance that such rental advance was so credited, and that such successor has assumed responsibility therefor pursuant to the foregoing provision.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "key_parts": {
+  "text_sha256": "c678b42f8fc6ecfc7c7a6b1bdf6c68aec877daa80a53d62d5d2ca8176c967d7b",
+  "chunk_id": "D057-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   129,
+   2756
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 4663,
+  "output_tokens": 883
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "MA",
+    "level": "state",
+    "category": "application_screening_fees",
+    "status_hint": "enacted",
+    "title": "Broker fee paid only by party who engaged the broker",
+    "requirement": "A licensed broker or salesperson may contract solely with a prospective tenant or solely with a landlord or landlord's agent, and any fee may be paid only by the party (lessor or tenant) who originally engaged and contracted with the broker or salesperson.",
+    "key_value": null,
+    "coverage_text": "Fees for finding dwelling accommodations charged by licensed real estate brokers or salespersons to prospective tenants or landlords.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "General Law Chapter 112, Section 87DDD 1/2, as amended by 2025, 9, Sec. 43",
+    "penalty": null,
+    "quoted_span": "Any fee shall only be paid by the party, lessor or tenant who originally engaged and entered into a contract with the licensed broker or salesperson.",
+    "effective_date_phrase": "effective August 1, 2025",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

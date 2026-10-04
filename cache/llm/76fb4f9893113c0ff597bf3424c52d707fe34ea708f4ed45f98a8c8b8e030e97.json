@@ -1,0 +1,115 @@
+{
+ "key_parts": {
+  "text_sha256": "511f8074b8f4959161fb4c7ec922c8fa963735b47c13d852b8a09ca42b922ecf",
+  "chunk_id": "D027-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   138,
+   10847
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 7318,
+  "output_tokens": 3418
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Housing discrimination prohibition, including source of income",
+    "requirement": "The owner of any housing accommodation may not discriminate against or harass any person because of protected characteristics, including source of income.",
+    "key_value": null,
+    "coverage_text": "Owners of any housing accommodation.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "Government Code 12955(a)",
+    "penalty": null,
+    "quoted_span": "(a) For the owner of any housing accommodation to discriminate against or harass any person because of the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information of that person.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Prohibited inquiries of prospective renters or buyers",
+    "requirement": "The owner of any housing accommodation may not make, or cause to be made, any written or oral inquiry about listed protected characteristics of a person seeking to purchase, rent or lease housing. An inquiry about the level or source of income is not source-of-income discrimination.",
+    "key_value": null,
+    "coverage_text": "Owners of any housing accommodation, as to persons seeking to purchase, rent or lease housing.",
+    "predicates_json": null,
+    "exemptions": "A written or oral inquiry concerning the level or source of income does not constitute discrimination based on source of income.",
+    "citation": "Government Code 12955(b)",
+    "penalty": null,
+    "quoted_span": "(b) For the owner of any housing accommodation to make or to cause to be made any written or oral inquiry concerning the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, disability, veteran or military status, or genetic information of any person",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": "(2) For the purposes of this section, it shall not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income."
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Aggregate income standard for co-residents",
+    "requirement": "A financial or income standard used in renting housing must account for the aggregate income of persons residing or proposing to reside together on the same basis as the aggregate income of married persons.",
+    "key_value": null,
+    "coverage_text": "Rental of housing.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "Government Code 12955(n)",
+    "penalty": null,
+    "quoted_span": "(n) To use a financial or income standard in the rental of housing that fails to account for the aggregate income of persons residing together or proposing to reside together on the same basis as the aggregate income",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Income standard for applicants with government rent subsidy",
+    "requirement": "Where there is a government rent subsidy, a financial or income standard used to assess rental eligibility must be based on the portion of the rent to be paid by the tenant.",
+    "key_value": null,
+    "coverage_text": "Rental housing applications in instances in which there is a government rent subsidy.",
+    "predicates_json": null,
+    "exemptions": "Does not limit the owner's ability to request information or documentation to verify employment, to request landlord references, or to verify the identity of a person.",
+    "citation": "Government Code 12955(o)(1)(A)",
+    "penalty": null,
+    "quoted_span": "(A) Use a financial or income standard in assessing eligibility for the rental of housing that is not based on the portion of the rent to be paid by the tenant.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Credit history alternative evidence for subsidized applicants",
+    "requirement": "Where there is a government rent subsidy, a housing provider using credit history must offer the applicant the option of providing lawful, verifiable alternative evidence of ability to pay the tenant's portion of rent, give reasonable time to respond, and reasonably consider that evidence in lieu of credit history.",
+    "key_value": null,
+    "coverage_text": "Rental housing applications in instances in which there is a government rent subsidy.",
+    "predicates_json": null,
+    "exemptions": "Does not limit the owner's ability to request information or documentation to verify employment, to request landlord references, or to verify the identity of a person.",
+    "citation": "Government Code 12955(o)(1)(B)",
+    "penalty": null,
+    "quoted_span": "(II) Reasonably consider that alternative evidence in lieu of the person’s credit history in determining whether to offer the rental accommodation to the applicant.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

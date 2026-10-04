@@ -55,8 +55,10 @@
 - **Model per stage** (phase 3). Default LLM model is `claude-sonnet-5-5` (half Opus's
   per-token price); `llm.stages.<stage>` overrides it. Extraction stays on `claude-opus-5-5`
   because the full-corpus run is cached on it (model is in the cache key, so switching
-  re-calls all 70 chunks). Switch extraction only after `make eval` on the 3-doc slice
-  shows Sonnet matching it.
+  re-calls all 70 chunks). Trial (2026-10-04, prompt extract_v2, docs D001 D024 D045 D046
+  D069 D081, both models through the real verify gates): Opus 7/7 candidates; Sonnet missed
+  the CA rent cap (D024) entirely and left the NJ FAIR Act date unresolved (missed the
+  "approved" anchor, which T3 depends on). Extraction stays on Opus.
 - **Determinism** (phase 3). Effort `high`, structured JSON output
   (`output_config.format`). These models reject `temperature`, so the
   CLAUDE.md "temperature 0" cannot be sent; determinism comes from the disk cache in
@@ -104,4 +106,6 @@
 7. **MA H.5222 (D045) not extracted** (phase 3). Same page shape as S.2983 (D046, extracted):
    a bill page whose only substantive text is its title. The prompt does not say what to do
    with title-only bill pages, so the model was inconsistent. Fix needs prompt `extract_v2`,
-   which re-extracts all 70 chunks (prompt version is in the cache key).
+   which re-extracts all 70 chunks (prompt version is in the cache key). Resolved: `extract_v2`
+   adds a rule for title-only bill pages (one record, quote = verbatim title, nothing
+   inferred); full re-extraction on Opus.

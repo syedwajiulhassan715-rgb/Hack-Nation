@@ -1,0 +1,133 @@
+{
+ "key_parts": {
+  "text_sha256": "35ec54ef926471876977b9cad3f0db7ff5b77393bd0baad03ed30125949f8e7a",
+  "chunk_id": "D026-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   139,
+   7184
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 6173,
+  "output_tokens": 3932
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "application_screening_fees",
+    "status_hint": "enacted",
+    "title": "Application screening fee cap",
+    "requirement": "An application screening fee may not exceed the landlord's actual out-of-pocket costs of gathering information about the applicant, and in no case may it be greater than thirty dollars ($30) per applicant. The $30 amount may be adjusted annually commensurate with an increase in the Consumer Price Index, beginning on January 1, 1998.",
+    "key_value": "Actual out-of-pocket costs, but in no case greater than $30 per applicant; may be adjusted annually commensurate with an increase in the Consumer Price Index, beginning on January 1, 1998",
+    "coverage_text": "Landlords (owners of residential rental property) or their agents who charge applicants, including guarantors or cosignors, a fee to screen a request to rent residential property.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "CIV 1950.6",
+    "penalty": null,
+    "quoted_span": "In no case shall the amount of the application screening fee charged by the landlord or their agent be greater than thirty dollars ($30) per applicant. The thirty dollar ($30) application screening fee may be adjusted annually by the landlord or their agent commensurate with an increase in the Consumer Price Index, beginning on January 1, 1998.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": "(k) The application screening fee shall not be considered an “advance fee” as that term is used in Section 10026 of the Business and Professions Code, and shall not be considered “security” as that term is used in Section 1950.5."
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "application_screening_fees",
+    "status_hint": "enacted",
+    "title": "No screening fee when no unit is available",
+    "requirement": "A landlord or their agent may not charge an application screening fee when they know or should have known that no rental unit is available at that time or will be available within a reasonable period of time.",
+    "key_value": null,
+    "coverage_text": "Landlords (owners of residential rental property) or their agents charging application screening fees.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "CIV 1950.6(c)(1)",
+    "penalty": null,
+    "quoted_span": "A landlord or their agent shall not charge an applicant an application screening fee when they know or should have known that no rental unit is available at that time or will be available within a reasonable period of time.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "application_screening_fees",
+    "status_hint": "enacted",
+    "title": "Screening fee allowed only with first-come process or refund process",
+    "requirement": "A landlord may charge a screening fee only if, when collecting it, the landlord offers either a process that considers completed applications in order received, approves the first qualifying applicant and charges only when the application is actually considered (with refund within seven days for inadvertent concurrent collections), or a process that returns the entire fee to any non-selected applicant within 7 days of selecting a tenant or 30 days of submission, whichever occurs first.",
+    "key_value": "Refund to non-selected applicants within 7 days of selecting an applicant or 30 days of submission, whichever occurs first (alternative to first-come process)",
+    "coverage_text": "Landlords (owners of residential rental property) or their agents charging application screening fees.",
+    "predicates_json": null,
+    "exemptions": "A landlord is not required to refund a screening fee to an applicant whose application is denied, after consideration, because the applicant does not meet the landlord's established screening criteria (under the first-come process).",
+    "citation": "CIV 1950.6(c)(2)",
+    "penalty": null,
+    "quoted_span": "(2) A landlord or their agent may charge an applicant an application screening fee only if the landlord or their agent, at the time the application screening fee is collected, offers any of the following:",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "application_screening_fees",
+    "status_hint": "enacted",
+    "title": "Itemized receipt for screening fee",
+    "requirement": "The landlord or their agent must give the applicant a receipt for the screening fee, personally or by mail (or by email if agreed), itemizing the out-of-pocket expenses and time spent obtaining and processing the applicant's information.",
+    "key_value": null,
+    "coverage_text": "Landlords (owners of residential rental property) or their agents charging application screening fees.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "CIV 1950.6(d)",
+    "penalty": null,
+    "quoted_span": "(d) The landlord or their agent shall provide, personally, or by mail, the applicant with a receipt for the fee paid by the applicant, which receipt shall itemize the out-of-pocket expenses and time spent by the landlord or their agent to obtain and process the information about the applicant.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "application_screening_fees",
+    "status_hint": "enacted",
+    "title": "Refund of unused screening fee",
+    "requirement": "If the landlord or their agent does not perform a personal reference check or does not obtain a consumer credit report, they must return any portion of the screening fee not used for authorized purposes to the applicant.",
+    "key_value": null,
+    "coverage_text": "Landlords (owners of residential rental property) or their agents charging application screening fees.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "CIV 1950.6(e)",
+    "penalty": null,
+    "quoted_span": "the landlord or their agent shall return any amount of the screening fee that is not used for the purposes authorized by this section to the applicant.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "application_screening_fees",
+    "status_hint": "enacted",
+    "title": "Copy of consumer credit report to applicant",
+    "requirement": "If an applicant paid a screening fee, the landlord or their agent must provide the applicant a copy of their consumer credit report by personal delivery, mail, or email within seven days of receiving the report.",
+    "key_value": "within seven days of receiving the report",
+    "coverage_text": "Landlords (owners of residential rental property) or their agents who collected an application screening fee.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "CIV 1950.6(f)",
+    "penalty": null,
+    "quoted_span": "(f) If an application screening fee has been paid by the applicant, the landlord or their agent shall provide a copy of the consumer credit report to the applicant who is the subject of that report by personal delivery, mail, or email within seven days of the landlord or their agent receiving the report.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "key_parts": {
+  "text_sha256": "9af3e5eba834b37a5115fef298f5e2a1c1fc0b93c1d69500aea9d6bc7ee24b93",
+  "chunk_id": "D047-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   95,
+   3212
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 4823,
+  "output_tokens": 214
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "MA",
+    "level": "state",
+    "category": "algorithmic_rent_setting",
+    "status_hint": "bill_or_proposal",
+    "title": "An Act prohibiting algorithmic rent setting",
+    "requirement": "The bill would prohibit algorithmic rent setting.",
+    "key_value": null,
+    "coverage_text": null,
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "Senate, No. 2983",
+    "penalty": null,
+    "quoted_span": "An Act prohibiting algorithmic rent setting",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

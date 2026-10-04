@@ -1,0 +1,61 @@
+{
+ "key_parts": {
+  "text_sha256": "21d92128daede668d6f1a824528ead345982ddf043a32e4fb5d80dd8adbcdce9",
+  "chunk_id": "D016-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   80,
+   24029
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 10905,
+  "output_tokens": 1723
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Source of income discrimination prohibition (FEHA)",
+    "requirement": "Housing providers may not refuse to rent to someone, or discriminate in terms, conditions or advertising, because of how the tenant will pay rent (source of income), including Housing Choice (Section 8) vouchers, SSI benefits, rent relief or wages.",
+    "key_value": null,
+    "coverage_text": "Most providers of housing and housing-related services, such as landlords, tenant screening companies, property management companies and real estate agents, for most housing accommodations in California.",
+    "predicates_json": null,
+    "exemptions": "When an owner occupies a home and rents to one additional person, the owner may exclude applicants based on protected characteristics, but still cannot make, print or publish discriminatory statements, notices or advertisements.",
+    "citation": "Fair Employment and Housing Act (FEHA)",
+    "penalty": "Remedies include recovery of out-of-pocket losses, an injunction, access to the denied housing, damages for emotional distress, civil penalties or punitive damages, and attorney's fees.",
+    "quoted_span": "No. California law protects tenants from discrimination based on how a tenant will be paying rent (“source of income”). This includes the State of California’s COVID-19 Rent Relief Program, Housing Choice (Section 8) vouchers, (SSI) social security disability benefits, or wages earned from a job.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Criminal history screening limits (FEHA)",
+    "requirement": "Housing providers may check an applicant's criminal history but cannot consider arrests that did not lead to a conviction, sealed or expunged records, or juvenile justice records, and cannot have blanket bans on all people with a criminal history. A denial based on a conviction must be directly related to the applicant's ability to be a good tenant and not threaten health and safety or property.",
+    "key_value": null,
+    "coverage_text": "Housing providers screening applicants in California, including screening done by third parties such as tenant screening companies.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "Fair Employment and Housing Act (FEHA)",
+    "penalty": "Remedies include recovery of out-of-pocket losses, an injunction, access to the denied housing, damages for emotional distress, civil penalties or punitive damages, and attorney's fees.",
+    "quoted_span": "Housing  providers cannot consider some types of criminal history including arrests that did not lead to a conviction, records that are sealed or expunged, or records or matters processed in the juvenile justice system. Housing providers are also prohibited from having “blanket bans” of all people with a criminal history.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

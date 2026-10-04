@@ -1,0 +1,43 @@
+{
+ "key_parts": {
+  "text_sha256": "8bc537dfe4d0e00b829147ae82ba11d40bef8a2b0696f487c417ca517673bba7",
+  "chunk_id": "D045-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   83,
+   2751
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 4615,
+  "output_tokens": 242
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "MA",
+    "level": "state",
+    "category": "algorithmic_rent_setting",
+    "status_hint": "bill_or_proposal",
+    "title": "An Act relative to preventing algorithmic rent fixing in the rental housing market",
+    "requirement": "The bill, as titled, would prevent algorithmic rent fixing in the rental housing market.",
+    "key_value": null,
+    "coverage_text": null,
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "Bill H.5222",
+    "penalty": null,
+    "quoted_span": "An Act relative to preventing algorithmic rent fixing in the rental housing market",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

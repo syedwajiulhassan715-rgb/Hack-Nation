@@ -128,12 +128,16 @@ def check_candidate(c: dict[str, Any], doc: Doc, valid_jur: set[str]) -> tuple[d
 
 CITE_SECTION = re.compile(r"\d+[A-Za-z]?(?:[.:\-]\d+[A-Za-z]?)+")
 CITE_BILL = re.compile(r"\b([A-Z]{1,3})\.?\s?(\d{2,5})\b")
+# "Senate, No. 2983" / "House Bill No. 5222": chamber word -> its initial, as in "S.2983"
+CITE_CHAMBER = re.compile(r"\b(Senate|House|Assembly)\b[\s,]*(?:Bill\s*)?No\.?\s*(\d{2,5})\b", re.I)
 
 
 def citation_key(citation: str) -> str:
     """Core identifier of a citation, so differently written cites of one law match."""
     if m := CITE_SECTION.search(citation):
         return m.group(0).lower()
+    if m := CITE_CHAMBER.search(citation):
+        return (m.group(1)[0] + m.group(2)).lower()
     if m := CITE_BILL.search(citation):
         return (m.group(1) + m.group(2)).lower()
     return re.sub(r"[^a-z0-9]", "", citation.lower())

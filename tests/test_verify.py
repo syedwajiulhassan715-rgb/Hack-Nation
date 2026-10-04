@@ -67,6 +67,8 @@ def test_citation_key_matches_different_spellings():
     assert gates.citation_key("Civil Code Section 1947.12 (Stats. 2023)") == \
         gates.citation_key("Cal. Civ. Code § 1947.12") == "1947.12"
     assert gates.citation_key("Bill S.2983") == gates.citation_key("S 2983") == "s2983"
+    assert gates.citation_key("Senate, No. 2983") == "s2983"
+    assert gates.citation_key("House Bill No. 5222") == gates.citation_key("H.5222") == "h5222"
 
 
 def _item(doc, start, end, cite="Sec. 1.2", cat="security_deposits", jur="NJ", cid="x"):

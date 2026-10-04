@@ -1,0 +1,43 @@
+{
+ "key_parts": {
+  "text_sha256": "1fdbfb48743a46429c3f47dbd8d08c665739202361661e1a2f19b94bb0ec43a6",
+  "chunk_id": "D069-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   95,
+   10354
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 7144,
+  "output_tokens": 1907
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "algorithmic_rent_setting",
+    "status_hint": "enacted",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "requirement": "Makes it unlawful, as a violation of the New Jersey Antitrust Act, for a rental property owner or its agent to pay for or use the services of a coordinator (operator of algorithmic revenue management software or an algorithmic device performing a coordinating function). It also bars coordinators from facilitating agreements that restrict competition, bars two or more persons from engaging in or facilitating parallel pricing coordination, and bars any person from performing a coordinating function.",
+    "key_value": null,
+    "coverage_text": "Rental property owners (persons owning one or more rental residential dwelling units, directly or indirectly) and their agents, representatives or subcontractors; coordinators; and any person performing a coordinating function, with respect to residential dwelling units used as a primary residence in the State.",
+    "predicates_json": null,
+    "exemptions": "Residential dwelling units do not include inpatient medical care, licensed long-term care, or detention or correctional facilities. A coordinating function does not include research, statistical analysis or testing not used to set or recommend rents or lease terms; free public rent estimates; real estate brokerage databases available on equal terms that do not set or recommend prices or collect competitively sensitive information for that purpose; or government entities setting or limiting rents through affordability controls. An algorithmic device does not include a spreadsheet operating without artificial intelligence that requires human analysis, or a database that only queries unprocessed stored data.",
+    "citation": "P.L. 2026, c.043 (A3497 1R ACS), section 4",
+    "penalty": "Violation of the New Jersey Antitrust Act, P.L.1970, c.73; sections 6 through 17 of P.L.1970, c.73 (C.56:9-6 through 9-17) apply to violations.",
+    "quoted_span": "It shall be unlawful and a violation of the “New Jersey Antitrust Act,” P.L.1970, c.73 (C.56:9-1 et seq.) for:",
+    "effective_date_phrase": "This act shall take effect on the first day of the twelfth month next following the date of enactment.",
+    "effective_date_anchor": "approved July 20, 2026",
+    "interaction_text": "A municipality shall be prohibited from enacting an ordinance that conflicts with this act."
+   }
+  ]
+ }
+}

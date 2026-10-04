@@ -1,0 +1,43 @@
+{
+ "key_parts": {
+  "text_sha256": "ce40e4d452c15e43e1bb07e7f03f7bd2bd738b2da614d1d21b7826f7e581e01c",
+  "chunk_id": "D029-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   103,
+   12459
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 7617,
+  "output_tokens": 1296
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "Cambridge, MA",
+    "level": "city",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Cambridge Fair Housing Ordinance - tenant selection and discrimination in renting",
+    "requirement": "Landlords, sellers and rental agents may not discriminate in viewing or renting an apartment or in the terms and conditions of tenancy based on protected categories, including source of income (which includes Section 8 and public benefits). They may use any reasonable standard to select applicants, such as ability to pay the rent and ability to care for the apartment and respect others' rights, as long as the standard is applied equally and uniformly to all applicants.",
+    "key_value": null,
+    "coverage_text": "Landlords, sellers and rental agents in real estate transactions in Cambridge, including viewing or renting an apartment and terms and conditions of tenancy.",
+    "predicates_json": "{\"not\": {\"all\": [{\"fact\": \"units\", \"op\": \"==\", \"value\": 2}, {\"fact\": \"owner_occupied\", \"op\": \"==\", \"value\": true}]}}",
+    "exemptions": "2-family dwellings when the owner lives there.",
+    "citation": "Cambridge Fair Housing Ordinance, chapter 14.04",
+    "penalty": "After hearing, the Commission may file a criminal complaint in District Court, levy civil fines of up to $300 for each violation, file a civil complaint in Superior Court seeking injunctive relief, and seek an award of damages, expenses and other relief.",
+    "quoted_span": "Under the law, landlords, sellers and rental agents may use any reasonable standard to determine which applicants are selected, as long as that standard is applied equally and uniformly to all applicants.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

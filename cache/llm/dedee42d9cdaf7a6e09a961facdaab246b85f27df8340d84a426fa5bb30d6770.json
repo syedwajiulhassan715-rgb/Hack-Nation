@@ -1,0 +1,133 @@
+{
+ "key_parts": {
+  "text_sha256": "a61f61a51b513b48a41cce48326e28861838a95e5e5a29cdedc41470d44ed505",
+  "chunk_id": "D067-c003",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   40740,
+   63428
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 11428,
+  "output_tokens": 5082
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "security_deposits",
+    "status_hint": "enacted",
+    "title": "Security Deposit Law - maximum deposit",
+    "requirement": "A landlord may not collect a security deposit of more than one and one-half times one month's rent, and any additional yearly deposit increase may not exceed 10% of the current deposit. A pet deposit combined with the regular deposit may not exceed one and one-half times one month's rent.",
+    "key_value": "1.5 times one month's rent; yearly increase max 10% of current deposit",
+    "coverage_text": "Most residential rental properties, including mobile homes.",
+    "predicates_json": "{\"all\": [{\"not\": {\"all\": [{\"fact\": \"owner_occupied\", \"op\": \"==\", \"value\": true}, {\"fact\": \"units\", \"op\": \"in\", \"value\": [2, 3]}]}}]}",
+    "exemptions": "Owner-occupied two- or three-family dwellings, unless the tenant sends a written request to the landlord to fulfill the Security Deposit Law, in which case it applies 30 days later.",
+    "citation": "N.J.S.A. 46:8-21.2",
+    "penalty": null,
+    "quoted_span": "The maximum-security deposit to be collected by the landlord cannot be more than one and one-half times one month’s rent ( N.J.S.A. 46:8-21.2 ). It can be less. Any additional yearly security deposit increase may not exceed 10% of the current security deposit.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "security_deposits",
+    "status_hint": "enacted",
+    "title": "Prepaid rent counts toward security deposit cap",
+    "requirement": "Prepaid funds held to secure future rents, including last month's rent, are part of the security deposit; at lease inception the landlord may require no more than two and one-half times the monthly rent, including the deposit and first month's rent.",
+    "key_value": "2.5 times monthly rent at lease inception (deposit plus first month's rent)",
+    "coverage_text": "Residential rental properties subject to the Security Deposit Law.",
+    "predicates_json": "{\"all\": [{\"not\": {\"all\": [{\"fact\": \"owner_occupied\", \"op\": \"==\", \"value\": true}, {\"fact\": \"units\", \"op\": \"in\", \"value\": [2, 3]}]}}]}",
+    "exemptions": "Owner-occupied two- or three-family dwellings, unless the tenant opts in by written request.",
+    "citation": "N.J.S.A. 46:8-21.2; Brownstone Arms v. Asher, 121 N.J. Super. 401 (1972); Reilly v. Weiss, 406 N.J. Super. 71 (2009)",
+    "penalty": null,
+    "quoted_span": "The landlord may only require one and one -half times the tenant’s monthly rent as security and the first month’s rent at the inception of the lease. That means the landlo rd may not require more than two and one-half times the monthly rent at the inception of the lease, this includes the security deposit and the first month’s rent.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "security_deposits",
+    "status_hint": "enacted",
+    "title": "Security deposit holding and interest",
+    "requirement": "A landlord who receives security deposit money for ten or less units must deposit it in an insured bank or savings and loan association located in New Jersey in an interest-bearing account; landlords with 10 or more units may alternatively use an insured money market fund of a New Jersey-based investment company. Interest belongs to the tenant.",
+    "key_value": null,
+    "coverage_text": "Landlords or designees receiving security deposit money for residential rentals.",
+    "predicates_json": null,
+    "exemptions": "Security deposits for seasonal use or rental (a term of not more than 125 consecutive days by a person with a permanent residence elsewhere).",
+    "citation": "N.J.S.A. 46:8-19",
+    "penalty": "If the tenant does not receive proper notice or is not paid interest as required, the tenant may give written notice that the security money plus interest at 7% per annum be applied to rent (N.J.S.A. 46:8-19.1 (c)).",
+    "quoted_span": "A landlord or designee who receives security deposit money for ten or less units must deposit that money in an insured bank or savings and loan association located in New Jersey in an interest-bearing account at the current interest rate at the time of deposit.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "security_deposits",
+    "status_hint": "enacted",
+    "title": "Return of security deposit after tenancy ends",
+    "requirement": "Within 30 days after the termination of a tenancy, a landlord must return the security deposit plus interest less deductions, with an itemized list of deductions sent by registered or certified mail.",
+    "key_value": "30 days",
+    "coverage_text": "Residential tenancies subject to the Security Deposit Law.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "N.J.S.A. 46:8-21.1",
+    "penalty": "The court may award the tenant double the amount wrongly withheld, together with court costs and reasonable attorney's fees.",
+    "quoted_span": "Within 30 days after the termination of a tenancy, a landlord must return the security deposit, plus interest earned less deductions, to the tenant ( N.J.S.A. 46:8-21.1).",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "security_deposits",
+    "status_hint": "enacted",
+    "title": "Return of security deposit after displacement",
+    "requirement": "Within five business days after a tenant is displaced by fire, flood, condemnation, or evacuation, the landlord must return the security deposit when a public official has posted a notice prohibiting occupancy or certified the displacement is expected to last longer than seven days.",
+    "key_value": "5 business days",
+    "coverage_text": "Tenants displaced by fire, flood, condemnation, or evacuation.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "N.J.S.A. 46:8-21.1",
+    "penalty": null,
+    "quoted_span": "Within five (5) business days after a tenant is displaced by fire, flood, condemnation, or evacuation, the landlord must return the security deposit. The law requires the return when either an authorized public official has posted a notice prohibiting occupancy or has certified that the displacement is expected to continue longer than seven (7) days.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "New Jersey Law Against Discrimination - source of lawful income",
+    "requirement": "Landlords may not discriminate in the rental of housing, including on the basis of source of lawful income, and must provide equal treatment regardless of the protected characteristics.",
+    "key_value": null,
+    "coverage_text": "All landlord-tenant relationships, with stated exceptions.",
+    "predicates_json": "{\"all\": [{\"not\": {\"all\": [{\"fact\": \"owner_occupied\", \"op\": \"==\", \"value\": true}, {\"fact\": \"units\", \"op\": \"==\", \"value\": 2}]}}, {\"not\": {\"all\": [{\"fact\": \"owner_occupied\", \"op\": \"==\", \"value\": true}, {\"fact\": \"units\", \"op\": \"==\", \"value\": 1}]}}]}",
+    "exemptions": "Two-family owner occupied dwellings, rooms in an owner or resident-occupied single home, and residences planned exclusively for and occupied by one sex, and age-restricted housing as it pertains to familial status.",
+    "citation": "N.J.S.A. 10:5-12(g) to -(h)",
+    "penalty": "Fines and penalties up to $10,000 for a first offense (N.J.S.A. 10:5-14.1a(a)); monetary damages and possible requirement to rent the unit to the complainant.",
+    "quoted_span": "The New Jersey Law Against Discrimination (LAD), N.J.S.A. 10:5-12(g) to -(h), prohibits discrimination when selling or renting property and requires equal treatment in the sale or rental of housing regardless of race, creed, color, national origin, ancestry, sex, marital status, civil union status, domestic partnership status, familial status, affectional or sexual orientation, gender  identity or expression, mental and physical disability, nationality, or source of lawful income.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

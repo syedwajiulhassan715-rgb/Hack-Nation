@@ -1,0 +1,61 @@
+{
+ "key_parts": {
+  "text_sha256": "49b8ad77c47ac7a12afc5a1451cc38e8d908b45f83c922cbd2ee2eb320b715f0",
+  "chunk_id": "D013-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   99,
+   6282
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 6425,
+  "output_tokens": 1433
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "Boston, MA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Housing Stability Notification Act – Notice of Tenants' Rights and Resources",
+    "requirement": "Any landlord planning to end a tenancy agreement must give the tenant a Notice of Tenants' Rights and Resources. The notice should be delivered at the same time as the Notice to Quit or Notice of Non-renewal of Lease.",
+    "key_value": null,
+    "coverage_text": "All landlords planning to end a tenancy agreement in Boston.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "Sec. 10-11.7",
+    "penalty": "Enforced by Inspectional Services Department: 1st offense warning; 2nd and subsequent offenses $300 per day. A violation does not halt the eviction process.",
+    "quoted_span": "The Housing Stability Notification Act requires any landlord to provide renters with a Notice of Tenant’s Rights and Resources when planning to end a tenancy agreement.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "Boston, MA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Housing Stability Notification Act – City notification of Notice to Quit / Non-renewal",
+    "requirement": "Landlords and foreclosing owners must complete the Notice to Quit / Non-renewal of Lease Submission Verification Form through the City's online portal, providing tenant contact information and a copy of the Notice to Quit or Notice of Non-renewal of Lease.",
+    "key_value": null,
+    "coverage_text": "Landlords and foreclosing owners ending a tenancy in Boston.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "Sec. 10-11.7",
+    "penalty": "Failure to submit this information may result in a fine up to $300 per day.",
+    "quoted_span": "Landlords must use this online form to provide tenant contact information and upload a copy of the Notice to Quit or Notice of Non-renewal of Lease.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "key_parts": {
+  "text_sha256": "eb9c42af2b9a5c220ca37816f409f0bd3ea92a002a973283e779fdb72de18bd7",
+  "chunk_id": "D024-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   140,
+   15873
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 9222,
+  "output_tokens": 2173
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "rent_increase_limits",
+    "status_hint": "enacted",
+    "title": "California statewide rent cap (Civil Code 1947.12, SB 567)",
+    "requirement": "An owner of residential real property may not, over any 12-month period, raise the gross rental rate by more than 5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower. A tenant who stays may not be given more than two increments of increase in a 12-month period, and the initial rent for a new tenancy is not subject to the cap.",
+    "key_value": "5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower, of the lowest gross rental rate charged in the 12 months prior to the effective date of the increase",
+    "coverage_text": "Residential real property, meaning any dwelling or unit intended for human habitation, including units in a mobilehome park, other than the exempt properties listed in the section.",
+    "predicates_json": "{\"all\":[{\"not\":{\"fact\":\"deed_restricted_affordable\",\"op\":\"==\",\"value\":true}},{\"not\":{\"fact\":\"government_owned_or_subsidized\",\"op\":\"==\",\"value\":true}},{\"not\":{\"fact\":\"dormitory_or_institutional\",\"op\":\"==\",\"value\":true}},{\"not\":{\"all\":[{\"fact\":\"separately_alienable\",\"op\":\"==\",\"value\":true},{\"fact\":\"owner_type\",\"op\":\"not_in\",\"value\":[\"REIT\",\"corporation\",\"LLC with a corporation member\",\"mobilehome park management\"]}]}},{\"not\":{\"all\":[{\"fact\":\"units\",\"op\":\"==\",\"value\":2},{\"fact\":\"owner_occupied\",\"op\":\"==\",\"value\":true}]}}]}",
+    "exemptions": "Deed-restricted or subsidized affordable housing; dormitories owned and operated by an institution of higher education or a K-12 school; housing under a public entity's rent or price control that limits annual increases to less than the state cap; housing issued a certificate of occupancy within the previous 15 years (unless a mobilehome); separately alienable property whose owner is not a REIT, corporation, LLC with a corporate member, or mobilehome park management and where written exemption notice was given; a two-unit property in which the owner occupies one unit as principal residence (neither unit an ADU or JADU); homeowners of a mobilehome.",
+    "citation": "Cal. Civ. Code § 1947.12",
+    "penalty": "Owner is liable in a civil action for injunctive relief, damages equal to the excess rent, reasonable attorney's fees and costs at the court's discretion, and up to three times the excess if the owner acted willfully or with oppression, fraud, or malice; the Attorney General, city attorney or county counsel may enforce.",
+    "quoted_span": "Subject to subdivision (b), an owner of residential real property shall not, over the course of any 12-month period, increase the gross rental rate for a dwelling or a unit more than 5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower, of the lowest gross rental rate charged for that dwelling or unit at any time during the 12 months prior to the effective date of the increase.",
+    "effective_date_phrase": "This section shall become operative on April 1, 2024.",
+    "effective_date_anchor": null,
+    "interaction_text": "Nothing in this section authorizes a local government to establish limitations on any rental rate increases not otherwise permissible under Chapter 2.7 (commencing with Section 1954.50), or affects the existing authority of a local government to adopt or maintain rent controls or price controls consistent with that chapter."
+   }
+  ]
+ }
+}

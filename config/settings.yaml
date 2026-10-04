@@ -9,11 +9,11 @@ llm:
   effort: high                  # output_config.effort; these models reject temperature, so
                                 # determinism comes from the disk cache (NOTES.md)
   max_tokens: 32000
-  prompt_version: extract_v1
+  prompt_version: extract_v2
   stages:                       # per-stage overrides; the model is part of the cache key,
     extract:                    # so changing it re-calls every chunk
-      model: claude-opus-5-5    # cached full-corpus run (phase 3); switch only after
-                                # comparing `make eval` on the 3-doc slice
+      model: claude-opus-5-5    # trial 2026-10-04: Sonnet missed the CA rent cap and the
+                                # FAIR Act anchor on the slice, so extraction stays on Opus
 
 paths:
   starter: data/starter

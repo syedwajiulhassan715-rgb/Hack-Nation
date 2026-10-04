@@ -1,0 +1,61 @@
+{
+ "key_parts": {
+  "text_sha256": "31b29a40becda1c218d4f64aedcb56a44241857b0f5d8b451c7b20b5737edc1e",
+  "chunk_id": "D076-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   154,
+   23251
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 12355,
+  "output_tokens": 1999
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "San Diego, CA",
+    "level": "city",
+    "category": "algorithmic_rent_setting",
+    "status_hint": "bill_or_proposal",
+    "title": "Prohibition of Anti-Competitive Automated Rent Price-Fixing – landlord use ban",
+    "requirement": "Proposed ordinance would make it unlawful for a landlord to use an algorithmic device (software that performs calculations of nonpublic competitor data to advise on or recommend rental rates or occupancy levels) to set rental rates or occupancy levels for residential rental property. Each month a violation continues, and each residential rental property on which a device is used, is a separate violation.",
+    "key_value": "Civil penalties of up to $1,000 per violation",
+    "coverage_text": "Landlords of residential rental property in the City of San Diego who use algorithmic devices to set rental rates or occupancy levels.",
+    "predicates_json": null,
+    "exemptions": "Algorithmic device does not include software used to publish reports from aggregated historical nonpublic competitor data more than 90 days old, or from information available to the general public, that does not recommend rental rates or occupancy levels for future leases or renewals; or software used to establish rental rates or income limits in accordance with local, state, or federal affordable housing program guidelines.",
+    "citation": "San Diego Municipal Code §98.1103(b) (proposed, O-2025-107)",
+    "penalty": "A tenant may seek injunctive relief, damages, or civil penalties of up to $1,000 per violation in a civil action against a landlord; a prevailing tenant recovers costs and reasonable attorney's fees.",
+    "quoted_span": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates or occupancy levels for residential rental property.",
+    "effective_date_phrase": "This Ordinance will take effect and be in force on the thirtieth day from and after its final passage.",
+    "effective_date_anchor": null,
+    "interaction_text": "(b) The remedies under section 98.1104 are cumulative and are in addition to any other remedies in this Division or at law, statute, or ordinance."
+   },
+   {
+    "jurisdiction": "San Diego, CA",
+    "level": "city",
+    "category": "algorithmic_rent_setting",
+    "status_hint": "bill_or_proposal",
+    "title": "Prohibition of Anti-Competitive Automated Rent Price-Fixing – sale and licensing ban",
+    "requirement": "Proposed ordinance would make it unlawful for a person to sell, license, or otherwise provide an algorithmic device to a landlord.",
+    "key_value": null,
+    "coverage_text": "Any person selling, licensing, or otherwise providing algorithmic devices to landlords for residential rental property in the City of San Diego.",
+    "predicates_json": null,
+    "exemptions": "Algorithmic device does not include software used to publish reports from aggregated historical nonpublic competitor data more than 90 days old, or from information available to the general public, that does not recommend rental rates or occupancy levels for future leases or renewals; or software used to establish rental rates or income limits in accordance with local, state, or federal affordable housing program guidelines.",
+    "citation": "San Diego Municipal Code §98.1103(a) (proposed, O-2025-107)",
+    "penalty": null,
+    "quoted_span": "(a) It is unlawful for a person to sell, license, or otherwise provide an algorithmic device to a landlord.",
+    "effective_date_phrase": "This Ordinance will take effect and be in force on the thirtieth day from and after its final passage.",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

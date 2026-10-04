@@ -1,0 +1,43 @@
+{
+ "key_parts": {
+  "text_sha256": "6ea5313d0a656ab73b683e72b594cf143ee61bd6923ee1d9f3df46682248004d",
+  "chunk_id": "D046-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   83,
+   3200
+  ],
+  "prompt_version": "extract_v2",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 4817,
+  "output_tokens": 212
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "MA",
+    "level": "state",
+    "category": "algorithmic_rent_setting",
+    "status_hint": "bill_or_proposal",
+    "title": "An Act prohibiting algorithmic rent setting",
+    "requirement": "The bill would prohibit algorithmic rent setting.",
+    "key_value": null,
+    "coverage_text": null,
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "Bill S.2983",
+    "penalty": null,
+    "quoted_span": "An Act prohibiting algorithmic rent setting",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}
