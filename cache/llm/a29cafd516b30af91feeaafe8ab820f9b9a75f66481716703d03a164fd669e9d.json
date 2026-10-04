@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "96f2e1f6d9dbad154e9b4fd775279dc00dc9d6fe7c94d2a8eae98191112007c1",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1583,
+  "output_tokens": 105
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "If you continuously fail to pay rent or habitually pay late after a written Notice to Cease, your landlord may sue to evict you.",
+  "answer_owner": "You must serve a Notice to Quit at least one month before filing an eviction suit for continuous nonpayment or habitual late payment."
+ }
+}

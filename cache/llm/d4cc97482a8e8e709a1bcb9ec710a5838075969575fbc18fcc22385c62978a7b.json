@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "bde1a1569f7231383d67aff5a9083165630e97722526ff8d0c5d0cd89d7c50ef",
+  "previous_sha": "66325ec13868ed77d436bbd05424141468e9cc97faebcde7e155443c3b925e92",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2084,
+  "output_tokens": 463
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "You only pay a broker's fee if you originally hired and signed a contract with that broker.",
+  "answer_owner": "You may pay a broker's fee only if you originally hired and signed a contract with that broker."
+ }
+}

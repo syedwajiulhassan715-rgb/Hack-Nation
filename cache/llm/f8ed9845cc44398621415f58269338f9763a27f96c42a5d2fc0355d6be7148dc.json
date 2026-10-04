@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "2c5b9a834405ca743d30b9499ba92d802fe629a776339f7af6e09307ded42d66",
+  "english_sha": "40c8d3e5c9294949955d02247c128bdb422436960737037c4ee70a8f07c5f03b",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 858,
+  "output_tokens": 4542
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Tras un desplazamiento por incendio, inundación, condena o evacuación, su arrendador debe devolver su depósito en cinco (5) días hábiles.",
+  "answer_owner_es": "Usted debe devolver el depósito en cinco (5) días hábiles tras un desplazamiento por incendio, inundación, condena o evacuación."
+ }
+}

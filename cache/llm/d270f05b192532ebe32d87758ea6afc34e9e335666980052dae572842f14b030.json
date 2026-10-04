@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "796e5e94710c7afc6997da2c383c92626f115d2f75ef8ef92eb83231621ac84f",
+  "english_sha": "20627652de92c543eca908d72ad3273e26eda26a167a4a966928f26cbc12cd65",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 796,
+  "output_tokens": 1287
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": null,
+  "answer_owner_es": "Debe dar a los solicitantes su informe de crédito en 7 días, recibo detallado y reembolso de tarifas no usadas."
+ }
+}

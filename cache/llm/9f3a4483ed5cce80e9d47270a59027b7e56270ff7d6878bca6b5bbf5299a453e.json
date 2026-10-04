@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "334c9679fcfabe666f8d344ee95c846bf20707f4f4708aec993800fbc25b60c9",
+  "previous_sha": "eb56a6424399771e7db59e002524cdec25efe4233bc28b09c1a26b70aa433490",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2247,
+  "output_tokens": 105
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord cannot charge you a screening fee greater than $30 per applicant, adjusted annually with the Consumer Price Index.",
+  "answer_owner": "You cannot charge an application screening fee greater than $30 per applicant, adjusted annually with the Consumer Price Index."
+ }
+}

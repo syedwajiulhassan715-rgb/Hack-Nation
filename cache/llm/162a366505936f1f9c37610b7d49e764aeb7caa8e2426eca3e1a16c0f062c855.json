@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "dfe36fc9a547cc77c6f954c5426ca31746b0a6d7ab0829315403f638791dfd4d",
+  "previous_sha": "d0933371973d18746b731ef1ecab00688e5d875d42cf43e259e6bc6db9d131c8",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2134,
+  "output_tokens": 99
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "A pending proposal would make it unlawful for your landlord to use an algorithmic device to set rent or occupancy levels.",
+  "answer_owner": "If passed, this proposed ordinance would bar you from using an algorithmic device to set rental rates or occupancy levels."
+ }
+}

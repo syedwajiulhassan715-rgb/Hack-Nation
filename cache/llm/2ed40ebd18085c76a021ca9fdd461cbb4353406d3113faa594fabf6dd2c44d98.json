@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "190bc6a7ffea155dd00b710bf4f6286b094b2e67131d5f684589763daaec70cd",
+  "previous_sha": "b1ab4c811654c2801dcd5a2febe7e03a95be2b7981d01632afc64575ac5837dc",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2147,
+  "output_tokens": 638
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord must pay you interest of five per cent per year, or the lesser amount the bank paid.",
+  "answer_owner": "You must pay your tenant interest of five per cent per year, or the lesser amount the bank paid."
+ }
+}

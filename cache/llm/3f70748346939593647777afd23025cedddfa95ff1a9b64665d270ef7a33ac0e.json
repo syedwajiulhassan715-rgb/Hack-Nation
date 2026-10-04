@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "76e5a7571759769a8d13d5874094d6294ea52f08c29c51a257d5c9b72c6dba9f",
+  "previous_sha": "bae48ed6b2d66f468740242cfbab5c79045c1e5a602b67a446be7b1a178604dc",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2090,
+  "output_tokens": 92
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord can raise your rent by no more than 1.6% from March 1, 2026 through February 28, 2027.",
+  "answer_owner": "You can raise rent by no more than 1.6% from March 1, 2026 through February 28, 2027."
+ }
+}

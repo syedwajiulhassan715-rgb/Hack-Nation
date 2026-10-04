@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "a4c2970f2f44b55d36f1c04d660aac5de37b903962b53bcc8e9b69e098c99c47",
+  "previous_sha": "5c949acedfddfdc09be8545c3ded693715072685dbf3a48b0514072d4841b2ba",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2207,
+  "output_tokens": 89
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Before taking a screening fee, your landlord must give you a fee rights statement and the maximum fee cap.",
+  "answer_owner": "Before receiving a screening fee, you must give applicants a fee rights statement and the maximum fee cap."
+ }
+}

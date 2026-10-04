@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "b57bfe37416b28724e88fdad00bc2e7cd67a491539767cd868a1ebc2e7a056ba",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1724,
+  "output_tokens": 688
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "If you are displaced for a no-fault reason described in the bulletin, the listed relocation amounts apply.",
+  "answer_owner": "You must follow the relocation amounts when a tenant is displaced for a no-fault reason described in the bulletin."
+ }
+}

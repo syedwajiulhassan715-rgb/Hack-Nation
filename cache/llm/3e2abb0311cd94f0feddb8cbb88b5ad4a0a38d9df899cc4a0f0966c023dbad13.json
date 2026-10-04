@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "c0ba2dac016d5bb71cb05487d878db4456fbc71f7a57afda27a09b6e70ff8e67",
+  "english_sha": "2199cc99a969dc6954f40317a77de4e8bda232a989b799f20b5d15e3fb7aae18",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 836,
+  "output_tokens": 2000
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador debe darle un recibo detallado de gastos directos y tiempo dedicado a procesar su información de evaluación.",
+  "answer_owner_es": "Debe dar a cada solicitante un recibo de la tarifa de evaluación que detalle sus gastos directos y tiempo dedicado."
+ }
+}

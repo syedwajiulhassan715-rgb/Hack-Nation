@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "22023a5140b0d1dbab22a37e5c32a5741c69e81c3cc02442ebf9eac4eaa61110",
+  "english_sha": "a03b7b3b22d03a39494903d287a83e07afd27d838e980bd44e720048e8270703",
+  "previous_sha": "390bf0989e6e740cc216278bc53d7facef87aa552c8417d7f5cd8a27ceb2d072",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1382,
+  "output_tokens": 1898
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Para desalojarlo, el dueño de su casa de huéspedes debe cumplir con la Ley de Desalojo: causa justificada y aviso.",
+  "answer_owner_es": "Al desalojar a residentes de casas de huéspedes, usted debe cumplir con la Ley de Desalojo: causa justificada y aviso."
+ }
+}

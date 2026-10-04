@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "db0ae53086406e0c638fc36d0f246d0eb6ef7994e3557c4a3242921534f5eb94",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1805,
+  "output_tokens": 543
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord cannot knowingly publish an ad saying they won't consider applicants with arrests or convictions.",
+  "answer_owner": "You may not knowingly publish a housing ad saying you won't consider applicants with arrests or convictions."
+ }
+}

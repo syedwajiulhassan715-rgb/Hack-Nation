@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "c2feb487d370be92b1c5fe5f54187d5be55f148231fa5ff2401141b568139cd4",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1594,
+  "output_tokens": 88
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord can raise your rent by no more than 3% from July 1, 2025, through June 30, 2026.",
+  "answer_owner": "You can raise rent by no more than 3% from July 1, 2025, through June 30, 2026."
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "c520a2972b9e6bb6249d494b79805705dd9071def739ddea66fefda6d94db64d",
+  "english_sha": "4fd5ec764edb0a6864bbff3d05a53044329300a0bdb9f66480bf01475fb830cf",
+  "previous_sha": "3a4ff238f57e9a3d53c759a35f32833689d416592d1b706075393e3cfdbe43d5",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1323,
+  "output_tokens": 591
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador no puede cobrarle una tarifa de evaluación si sabe o debería saber que pronto no habrá unidad disponible.",
+  "answer_owner_es": "Usted no puede cobrar una tarifa de evaluación si sabe o debería saber que no hay ni habrá unidad disponible."
+ }
+}

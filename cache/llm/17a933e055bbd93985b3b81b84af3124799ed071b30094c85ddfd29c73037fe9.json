@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "345b46826b7fd58b0f5f2114373c8a2eca27db0db8285f5aeadd8ade2d30ee4a",
+  "english_sha": "821584f38ea2edddc2a7580b55a43431339b0998e994a477704267c87c004f4b",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 821,
+  "output_tokens": 70
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Pueden denegar su solicitud por una condena solo si se relaciona directamente con ser un buen inquilino y con la seguridad.",
+  "answer_owner_es": null
+ }
+}

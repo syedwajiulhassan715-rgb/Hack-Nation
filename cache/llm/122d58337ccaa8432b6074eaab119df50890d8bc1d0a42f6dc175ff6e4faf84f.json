@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "796e5e94710c7afc6997da2c383c92626f115d2f75ef8ef92eb83231621ac84f",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1656,
+  "output_tokens": 112
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord should give you a copy of your credit report within 7 days of receipt, an itemized fee receipt, and a refund of any unused fee.",
+  "answer_owner": "You must give applicants a copy of their credit report within 7 days of receipt, an itemized fee receipt, and a refund of unused fees."
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "4dc7f0abce4e14807f73034d5f514d30babdc5ff4e6411522c4b72fbc6eb9b81",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1792,
+  "output_tokens": 119
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "If your landlord demolishes your unit for new construction within 5 years after filing eviction notices, they must follow relocation requirements, or face penalties.",
+  "answer_owner": "You must follow relocation requirements if you demolish a unit for new construction within 5 years after filing; violations can bring penalties starting at $250,000 per unit."
+ }
+}

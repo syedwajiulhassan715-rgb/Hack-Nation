@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair2",
+  "rule_sha": "2bd1c7f96c65119bbdd479f93c0a58581ffba0bb135b27bd1ddc87c88835b582",
+  "english_sha": "bb243df5a02c2ab6a535ade2fe9c863d8c1ead11b0171b8ba8607c8b41c5bc30",
+  "previous_sha": "d7a4e84b5b26a7869824a78f90903f5f4c942ffb80d014bf1447ea1008ce9719",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1337,
+  "output_tokens": 1136
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Código Civil 1947.9 fija su pago de reubicación en desalojos temporales por mejoras de capital de menos de 20 días.",
+  "answer_owner_es": "Usted debe seguir el Código Civil 1947.9 en pagos de reubicación por desalojos temporales de menos de 20 días."
+ }
+}

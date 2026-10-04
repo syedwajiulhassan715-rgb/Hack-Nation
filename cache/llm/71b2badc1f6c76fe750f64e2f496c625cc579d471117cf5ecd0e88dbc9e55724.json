@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "0ce485897960a8f791764b21158ebdc4c457629f51b1bd87711ce1719e9805f2",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1837,
+  "output_tokens": 885
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord must give you one month's rent in effect when your termination notice was served, as payment or credit.",
+  "answer_owner": "You must give your tenant one month's rent in effect when you served the termination notice, as payment or credit."
+ }
+}

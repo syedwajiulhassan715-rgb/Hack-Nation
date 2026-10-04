@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "cd7e4fd49d1c25cd6376771a38ce5f6de011b5b2f65a7a4abaa1b18abe4347f4",
+  "english_sha": "812fbcb0db014cc086397c4a28a5f968e23eae558a620ec711514719df270d19",
+  "previous_sha": "4281c06842d48692f666f4e905096b837e7361d51963172c8a1169acfa10c9f6",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1366,
+  "output_tokens": 1842
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador debe avisar a la Junta de Bienestar del Condado mínimo 3 días hábiles antes de iniciar su desalojo.",
+  "answer_owner_es": "Usted debe avisar a la Junta de Bienestar del Condado al menos 3 días hábiles antes de iniciar un desalojo."
+ }
+}

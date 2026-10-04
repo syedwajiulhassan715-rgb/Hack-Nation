@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "f5cb677cb2965c0c41a1b61eaf76904ebf1a7012bc126dcdfe4a7e71d8579bc3",
+  "english_sha": "cedb3e9c5c19dcd53f509236d94f5ff3df24f545c9b0221c0685f94b626015cf",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 791,
+  "output_tokens": 128
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador puede seleccionar solicitantes con cualquier criterio razonable, aplicado de manera igual y uniforme a todos los solicitantes.",
+  "answer_owner_es": "Usted debe aplicar de manera igual y uniforme a todos los solicitantes cualquier criterio razonable que use para seleccionarlos."
+ }
+}

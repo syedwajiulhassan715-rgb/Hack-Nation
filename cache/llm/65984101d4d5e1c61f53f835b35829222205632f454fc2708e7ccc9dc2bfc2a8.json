@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "a4c2970f2f44b55d36f1c04d660aac5de37b903962b53bcc8e9b69e098c99c47",
+  "english_sha": "a1bfb924208f7e04c57c981d4fd29ebe0f796cc0cf470960136736576a28b3e5",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 872,
+  "output_tokens": 1917
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Antes de cobrar la tarifa de evaluación, su arrendador debe darle una declaración de derechos y el límite máximo.",
+  "answer_owner_es": "Antes de recibir la tarifa, usted debe darles a los solicitantes una declaración de derechos y el límite máximo."
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "fb9bc625457f5047d555017eaea7d85a35e4c1d8a52db8f4f5daee11ea72fb51",
+  "english_sha": "ec0ca8201dfed0e112c8e3d3e2e67242eb90c2bff8aa71155c7efa56d37e6818",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 804,
+  "output_tokens": 107
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador no puede exigirle que pague más de los montos permitidos al inicio del arrendamiento o antes.",
+  "answer_owner_es": "Usted no puede exigir a un inquilino que pague más de los montos permitidos al inicio del arrendamiento o antes."
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "87d08e709a217bae886c5a83463edf494ed485cc15a8b42d9a262017387e0252",
+  "previous_sha": "37450368795dc76be19d0b3cde5e42a3cc8e1a2ca16bb6d47f6372de1f0499b7",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2119,
+  "output_tokens": 91
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Any fee or recurring payments you pay instead of a security deposit cannot total more than 1 month's rent.",
+  "answer_owner": "You cannot charge fees or recurring payments totaling more than 1 month's rent in place of a security deposit."
+ }
+}

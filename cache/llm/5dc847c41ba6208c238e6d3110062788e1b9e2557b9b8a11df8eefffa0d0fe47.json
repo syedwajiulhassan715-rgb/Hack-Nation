@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "334c9679fcfabe666f8d344ee95c846bf20707f4f4708aec993800fbc25b60c9",
+  "english_sha": "060a30e6b9bf16fac2058d4cc101a1b54d62beb731eee97e5a47ded872f6c788",
+  "previous_sha": "1bc30a3e83ff31b0a28deca84ba7116e5a4278fa28f05250845dd18cfcef1440",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1381,
+  "output_tokens": 1008
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su tarifa de evaluación no puede superar $30 por solicitante, ajustada anualmente con el Índice de Precios al Consumidor.",
+  "answer_owner_es": "Usted no puede cobrar más de $30 por solicitante por evaluación, ajustados anualmente con el Índice de Precios al Consumidor."
+ }
+}

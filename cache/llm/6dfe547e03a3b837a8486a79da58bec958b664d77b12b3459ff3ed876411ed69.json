@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair2",
+  "rule_sha": "5bcd57bb3b8b291ad045b05676482c7a7116364e8f36c6af80d81369480cd53c",
+  "previous_sha": "b4c93ccc44304f63db7b67fc685996c5e829990dc6c9e19e552f6011e7ecfbe3",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1977,
+  "output_tokens": 93
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "A pending proposal would let Boston implement rent stabilization and eviction protections for tenants like you.",
+  "answer_owner": "If passed, this proposal would let Boston impose rent stabilization and tenant eviction protections that would bar you from some actions."
+ }
+}

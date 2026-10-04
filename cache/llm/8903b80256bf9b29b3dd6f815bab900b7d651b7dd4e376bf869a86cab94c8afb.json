@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "f49058d9c03a6eeb5297b56fb47fbc106483c3941c795c1fdb99ccc8ab969588",
+  "english_sha": "409ebe8b68d6bd36c00be74202b4632d0e32000e70878cd8844113a8da0e8a19",
+  "previous_sha": "315bfa42dafd844946acd75a3a609a3d20d39e0ff5d82faaeb67c02e5368f624",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1374,
+  "output_tokens": 744
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Al terminar el interés de su arrendador en la propiedad, este debe actuar sobre su depósito en un plazo razonable.",
+  "answer_owner_es": "Cuando termina su interés en la propiedad, usted debe actuar sobre el depósito retenido en un plazo razonable."
+ }
+}

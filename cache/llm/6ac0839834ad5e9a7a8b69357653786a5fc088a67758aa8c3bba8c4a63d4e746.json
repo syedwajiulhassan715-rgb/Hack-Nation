@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "1f1003e1ae67182b00bf98a7237ef18483b97e80ab6bf52398a26e6f3dcd8cd5",
+  "english_sha": "67f8a75f4375e3601a4b94b74715295d95ca210ebeee9955aaa81b80eabbfbf8",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 795,
+  "output_tokens": 332
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Una propuesta pendiente haría ilegal vender a su arrendador algoritmos de precios coordinados que fijan o recomiendan alquileres.",
+  "answer_owner_es": null
+ }
+}

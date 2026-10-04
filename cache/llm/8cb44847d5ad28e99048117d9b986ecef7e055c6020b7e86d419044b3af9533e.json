@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "37a60581f3ed10c7e604cda46b5adcf22803ae99c6131d4ae3b82203bf168395",
+  "english_sha": "c17fc2e3122604894f7aa0a6d9f9cc4db908c7d2a39ccbf3afe11bb56f404f2d",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 742,
+  "output_tokens": 117
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Que su arrendador le diga que no acepta asistencia para el alquiler es un ejemplo de discriminación en la vivienda.",
+  "answer_owner_es": "Usted no puede decirles a los inquilinos que no acepta asistencia para el alquiler, pues eso es discriminación en la vivienda."
+ }
+}

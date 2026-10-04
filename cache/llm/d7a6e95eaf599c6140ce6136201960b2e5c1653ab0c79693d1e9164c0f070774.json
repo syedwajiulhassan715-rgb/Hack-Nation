@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "1fd52409efdeabbedaddc6e45f4b1d8ea963e81880949fffc895f8c8751bd295",
+  "english_sha": "c6199cac1c164b978cca6d841a986ce2276f5fc8e3dcd925964cbcc93562cb9b",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 758,
+  "output_tokens": 78
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su ayuda para la reubicación o la exención de renta equivale a un mes de la renta que usted pagaba cuando su arrendador emitió el aviso.",
+  "answer_owner_es": null
+ }
+}

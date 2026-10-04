@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "06cc55211e2a54dbc373d43ab5e6e0eaa96b4a0f4b73be89e96dea6783b09000",
+  "previous_sha": "7e7706d19db2fb61c7d37b480de58c9514edf5342b1a5ef9774b9023dea78232",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2355,
+  "output_tokens": 99
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your housing provider cannot use a blanket policy denying you housing over arrests or convictions and must consider your application case-by-case.",
+  "answer_owner": "You may not have a blanket policy denying housing over arrests or convictions, and you must consider applicants case-by-case."
+ }
+}

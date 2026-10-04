@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "20542d4b7a497b98a082bbf513e4bfb291d52eb3e736c16b100e4d3f90647b28",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1589,
+  "output_tokens": 104
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your rent increase cannot be more than 3% of your current rent or 80% of the Consumer Price Index change, whichever is less.",
+  "answer_owner": "You cannot raise rent by more than 3% of the current rent or 80% of the Consumer Price Index change, whichever is less."
+ }
+}

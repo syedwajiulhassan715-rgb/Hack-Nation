@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "612ec68c993ffc1612635ed030b09ed01dd9b728b5740aa3772efefcbb3d21b6",
+  "english_sha": "c37237d7dc4b8ffe54f61f84ed40793e92dbf13c253670b4660c8a5bdcf8f1cb",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 907,
+  "output_tokens": 1843
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador no puede preguntar ni guardar registros sobre raza, religión, sexo, edad, estado civil, condición de veterano o discapacidad.",
+  "answer_owner_es": "Usted no puede preguntar ni registrar raza, religión, sexo, edad, estado civil, condición de veterano o discapacidad de un solicitante."
+ }
+}

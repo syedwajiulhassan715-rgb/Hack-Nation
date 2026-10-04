@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "4dc7f0abce4e14807f73034d5f514d30babdc5ff4e6411522c4b72fbc6eb9b81",
+  "english_sha": "a1b199bc0f8c1841176654828224111575e5782d30192cb77d2bcf10cb1bfbd4",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 880,
+  "output_tokens": 137
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador debe cumplir los requisitos de reubicación si demuele su unidad para nueva construcción dentro de 5 años después de presentar los avisos.",
+  "answer_owner_es": "Usted debe cumplir los requisitos de reubicación si demuele una Unidad Protegida para nueva construcción dentro de 5 años después de presentar el aviso."
+ }
+}

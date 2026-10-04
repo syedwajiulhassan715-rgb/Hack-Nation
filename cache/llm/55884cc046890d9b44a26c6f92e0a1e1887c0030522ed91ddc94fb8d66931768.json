@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "eb5a607176602fbed50bc2abf7f6a6be1085ec0592ed3222daed3ed7ddfe0854",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1595,
+  "output_tokens": 134
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": null,
+  "answer_owner": null
+ }
+}

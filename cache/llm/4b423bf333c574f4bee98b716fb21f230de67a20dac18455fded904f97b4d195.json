@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "a331d3509dd1da63f87d0f62d6a1cf514e912bdb714601dac24c578ab2a0fc26",
+  "previous_sha": "1c20bdedfdbb573493a3c8d7ecd686b70933eeaff68c758901b3696ed755b02d",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2113,
+  "output_tokens": 94
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "If you don't pay rent after a rent increase notice and a Notice to Quit, your landlord may file for eviction.",
+  "answer_owner": "Your rent increase must not be unconscionable and must comply with other laws, including rent control, before you file for eviction."
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "e4e078dbcafa3abe6e9f9b4856415d9056d447f999b7a80bdf565fcf1427031c",
+  "english_sha": "d8b8c2a5b362be499ec4920840a14369fd2102ede5f9a22760e674fbdbcabfba",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 778,
+  "output_tokens": 104
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador no puede usar herramientas basadas en algoritmos que recomienden o fijen precios de alquiler.",
+  "answer_owner_es": "Usted no puede usar herramientas basadas en algoritmos que recomienden o fijen precios de alquiler."
+ }
+}

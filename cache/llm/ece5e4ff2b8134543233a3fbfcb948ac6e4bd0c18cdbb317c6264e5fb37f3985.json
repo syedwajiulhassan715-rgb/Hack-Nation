@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair2",
+  "rule_sha": "040e653613a324734d8eb87ff0e89d653f948d8dfac41b2a26b5b5ec66d7a73c",
+  "previous_sha": "b76a2412be1f67fa761298f72970b2d612b3e5a56edea6bfc7f2b22e2db6a87c",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2206,
+  "output_tokens": 99
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord must give you a Notice of Tenants' Rights and Resources when starting eviction or not renewing your lease.",
+  "answer_owner": "You must give tenants a Notice of Tenants' Rights and Resources when you start eviction or decline lease renewal."
+ }
+}

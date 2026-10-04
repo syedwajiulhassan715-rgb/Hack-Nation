@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "9ee5c6b87b061cda5b3b9ae9f921e7055b42753602dac68fb8b7aa1bfa60bbd5",
+  "previous_sha": "7d534876f6d32dd3d5c74fafb51b5d527d9253a886cc441fafe64964df8a0314",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2100,
+  "output_tokens": 499
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord could not raise rent on Rent Stabilization Ordinance units from March 30, 2020, through January 31, 2024.",
+  "answer_owner": "You may not raise rent on Rent Stabilization Ordinance units from March 30, 2020, through January 31, 2024."
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "22023a5140b0d1dbab22a37e5c32a5741c69e81c3cc02442ebf9eac4eaa61110",
+  "english_sha": "a03b7b3b22d03a39494903d287a83e07afd27d838e980bd44e720048e8270703",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 820,
+  "output_tokens": 142
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "El dueño de su casa de huéspedes o pensión debe cumplir los requisitos de causa justificada y aviso de la Ley de Desalojo para desalojarlo.",
+  "answer_owner_es": "Usted debe cumplir los requisitos de causa justificada y aviso de la Ley de Desalojo al desalojar a residentes de casas de huéspedes o pensiones."
+ }
+}

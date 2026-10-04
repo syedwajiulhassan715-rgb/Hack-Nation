@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "190bc6a7ffea155dd00b710bf4f6286b094b2e67131d5f684589763daaec70cd",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1625,
+  "output_tokens": 106
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "If your landlord holds your security deposit for a year or longer, you are owed interest of five per cent per year, or less if the bank paid less.",
+  "answer_owner": "You must pay your tenant interest of five per cent per year, or the lesser amount the bank paid, at the end of each tenancy year."
+ }
+}
