@@ -8,7 +8,7 @@ results) are not typed here. See the generated block in [README.md](README.md) o
 
 ## 1. Source: the participant pack
 
-- MIT AI Hackathon x RealPage, participant pack v5 (no scoring script, no hour-16
+- Hack-Nation Global Hackathon (RealPage challenge), participant pack v5 (no scoring script, no hour-16
   document). It is unpacked once to `data/starter/` and treated as read-only:
   `data/STARTER_CHECKSUMS.sha256` lists all 65 files, and
   `tests/test_starter_pack.py::test_starter_pack_unchanged` fails if any byte changes.

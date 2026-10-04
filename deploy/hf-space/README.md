@@ -11,7 +11,7 @@ short_description: Cited answers on which housing rules apply to a building. Not
 
 # Rental Housing Law Navigator: API
 
-Read-only API for the MIT AI Hackathon x RealPage Rental Housing Law Navigator. It serves
+Read-only API for the Hack-Nation Global Hackathon (RealPage challenge) Rental Housing Law Navigator. It serves
 precomputed, cited answers from the project's committed outputs. No LLM calls are made, and
 document ingest is disabled here.
 

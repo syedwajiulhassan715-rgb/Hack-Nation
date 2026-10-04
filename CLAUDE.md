@@ -8,7 +8,7 @@ Read this file fully before any task. Then read, in this order:
 
 ## What we are building
 
-MIT AI Hackathon x RealPage: Rental Housing Law Navigator (participant pack v5,
+Hack-Nation Global Hackathon (RealPage challenge): Rental Housing Law Navigator (participant pack v5,
 no scoring script, no hour-16 document). For any sample address: which housing rules
 apply on the query date (default **2026-10-01**), and how the five supplied change cases
 affect the answer. Every answer cites the source text.
