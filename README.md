@@ -30,7 +30,7 @@
 </p>
 
 > **⚖️ Not legal advice.** Locus is a prototype built from a fixed public corpus for the
-> MIT AI Hackathon x RealPage. It is not a compliance certification. Every answer shows its
+> Hack-Nation Global Hackathon (RealPage challenge). It is not a compliance certification. Every answer shows its
 > as-of date, the source citation and the date the source was retrieved. See
 > **[SAFETY.md](SAFETY.md)**.
 
