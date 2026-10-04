@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "be6b75877fb41fb0345582f94e26ef76a0dc531055a9a2f6e205a880b4cc3bac",
+  "english_sha": "6f27d1646ee72d116458355222a28bfdc858689373c2a59891b2f22cca20e48d",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 974,
+  "output_tokens": 130
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador no puede preguntar ni registrar su raza, religión, sexo, edad o discapacidad cuando usted solicita alquilar.",
+  "answer_owner_es": "Usted no puede hacer indagaciones ni registros, escritos u orales, sobre la raza, religión, sexo, edad o discapacidad de un solicitante."
+ }
+}

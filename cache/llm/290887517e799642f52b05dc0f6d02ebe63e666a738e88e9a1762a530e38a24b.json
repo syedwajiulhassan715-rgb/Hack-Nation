@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair2",
+  "rule_sha": "1fd52409efdeabbedaddc6e45f4b1d8ea963e81880949fffc895f8c8751bd295",
+  "previous_sha": "123f177bceb246dc6fb4348829ebad847d85a326e746f34a20001892dcd35bd5",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2593,
+  "output_tokens": 87
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your relocation help or rent waiver equals one month of the rent you paid when your landlord issued the notice.",
+  "answer_owner": "You must give relocation help or a rent waiver equal to one month of rent in effect when you gave notice."
+ }
+}

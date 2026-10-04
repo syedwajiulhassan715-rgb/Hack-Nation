@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "8dc25221ee7a3285db1f3db2cc637444be7dc25643a8d0943e72ff9182e51a2a",
+  "english_sha": "8de680baa47a58e79aab0a3fc4e4fe94a611d5ebb2238433074538cd029bd081",
+  "previous_sha": "fde977e8fe53178375fb1c1ab026a07acbe21dfe1b4b9d73140ca107478c96ed",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1299,
+  "output_tokens": 124
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su historial de crédito solo puede usarse para evaluar si puede pagar el alquiler cuando no hay historial de alquiler.",
+  "answer_owner_es": "Usted solo puede usar el historial de crédito del solicitante para evaluar su capacidad de pagar el alquiler cuando no hay historial de alquiler."
+ }
+}

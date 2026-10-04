@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "1fbec9f20af0f561b57d8d6309bdd80833f3d7527cdec7f815e10bdc52ac93e0",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1803,
+  "output_tokens": 86
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "After 30 days, your landlord cannot end your tenancy without just cause, which must be stated in a written notice.",
+  "answer_owner": "After 30 days, you may not end a tenancy without just cause, which you must state in a written notice."
+ }
+}

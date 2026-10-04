@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "b6ac9548eb22ca464965ef59ea84c6a3da2d758b88ed121ff85482165e091c19",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1751,
+  "output_tokens": 478
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord must have a just cause reason as the dominant motive to evict you.",
+  "answer_owner": "You must have a just cause reason as your dominant motive to evict a tenant."
+ }
+}

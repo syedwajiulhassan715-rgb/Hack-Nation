@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "52709deba5a278eefdec9175051688aa01d3ed06cbb9d8f147f2fe14aa2898c9",
+  "previous_sha": "d049561258bcf78dcb8bdefa810d6b6bf184163ab198e18957ab247df02a49a9",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2214,
+  "output_tokens": 107
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord must pay you the RSO or JCO relocation amounts within 15 days of filing the eviction or withdrawal notice.",
+  "answer_owner": "You must pay tenants the RSO or JCO relocation amounts within 15 days of filing your withdrawal or eviction notice."
+ }
+}

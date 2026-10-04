@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "19236e0e0827b29f29108308580c3a53821318029cf3d708225bace547c9296b",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1738,
+  "output_tokens": 129
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord may file to evict you if a civil court finds you liable for theft on the premises, assaults or terrorist threats against the landlord, family or staff, or illegal drug activity.",
+  "answer_owner": "You may file for eviction only if a civil court finds your tenant liable for theft, assaults, terrorist threats, or illegal drug activity on the premises."
+ }
+}

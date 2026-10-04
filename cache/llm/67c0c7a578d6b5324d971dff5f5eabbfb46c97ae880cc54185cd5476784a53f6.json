@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "da41138133398f947481ba928c2fbad80a605ee659b8c57456890855e38531da",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1553,
+  "output_tokens": 438
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "A pending proposal would make it unlawful to sell, license, or otherwise provide your landlord with an algorithmic device.",
+  "answer_owner": null
+ }
+}

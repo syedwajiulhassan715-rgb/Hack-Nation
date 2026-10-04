@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "992bc19245ad3653a620d0931194fea844a74cf35a97c0c30f060c72c6520e37",
+  "previous_sha": "aee58e77de410a29acc84e482512e7163bc5dcc8866976007f3ae8ab453ce049",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2219,
+  "output_tokens": 1814
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Owner move-in requires that occupant move in within 90 days after you leave and stay at least 12 continuous months.",
+  "answer_owner": "You must have the occupant move in within 90 days after tenant leaves and stay at least 12 continuous months."
+ }
+}

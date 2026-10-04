@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "7da52d7d6196a2235bb681c28519afb6ab06c936d3a0903adce33411928cd746",
+  "english_sha": "f4aa2ac318d5fc5835d4f0c6982ee119e9eaf77318f351f4684f0c78eec58645",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 797,
+  "output_tokens": 2608
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador debe darle Aviso de Desocupación mínimo tres meses antes de demandar y ayuda de reubicación antes del desalojo.",
+  "answer_owner_es": "Usted debe dar Aviso de Desocupación mínimo tres meses antes de demandar y no puede desalojar sin ayuda de reubicación."
+ }
+}

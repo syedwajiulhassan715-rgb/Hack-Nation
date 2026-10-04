@@ -1,0 +1,1514 @@
+{
+ "generated_at": "2026-10-04T01:40:20Z",
+ "prompt_version": "summary_v1",
+ "model": "claude-sonnet-5-5",
+ "disclaimer": "Not legal advice.",
+ "summaries": {
+  "r-0001": {
+   "answer_tenant": "Your landlord cannot use or distribute a common pricing algorithm as part of a conspiracy to restrain trade.",
+   "answer_owner": "You may not use or distribute a common pricing algorithm as part of a contract, trust, or conspiracy restraining trade.",
+   "dropped": [],
+   "source_quote_sha": "e0538754238e33e4831f89c964586d20875f0a99192576f7ea9a0c6e4c327edf",
+   "answer_tenant_es": "Su arrendador no puede usar ni distribuir un algoritmo de precios común en una conspiración para restringir el comercio.",
+   "answer_owner_es": "Usted no puede usar ni distribuir algoritmos de precios comunes en contratos, fideicomisos o conspiraciones que restrinjan el comercio."
+  },
+  "r-0002": {
+   "answer_tenant": "It is unlawful to coerce others into adopting prices a common pricing algorithm recommends, which could affect your rent.",
+   "answer_owner": "You may not use a common pricing algorithm to coerce another person into adopting its recommended price or commercial term.",
+   "dropped": [],
+   "source_quote_sha": "78cacf9b3143cbef2d93be04f999e993aed60f656983f9811709fb790e9f5c66",
+   "answer_tenant_es": "Es ilegal coaccionar a otros a adoptar precios que recomienda un algoritmo común, lo que podría afectar su alquiler.",
+   "answer_owner_es": "No puede usar un algoritmo de precios común para coaccionar a alguien a adoptar su precio o término comercial recomendado."
+  },
+  "r-0003": {
+   "answer_tenant": null,
+   "answer_owner": "You must give applicants their credit report within 7 days, an itemized fee receipt, and any unused fee refunded.",
+   "dropped": [
+    "tenant: too_long:21_words"
+   ],
+   "source_quote_sha": "00d560997aec59459adb6de43ed4b53549ea70c7b29f463be4022c60a0d75fb4",
+   "answer_owner_es": "Debe dar a los solicitantes su informe de crédito en 7 días, recibo detallado y reembolso de tarifas no usadas."
+  },
+  "r-0004": {
+   "answer_tenant": "Your landlord cannot charge you a screening fee if no rental unit is actually available.",
+   "answer_owner": "You cannot charge a prospective tenant a screening fee if no rental unit is actually available.",
+   "dropped": [],
+   "source_quote_sha": "c878e49307daf41629acb58fecab1c8a8e42b868335b2f297f7ae1d5c5597bd4",
+   "answer_tenant_es": "Su arrendador no puede cobrarle una tarifa de evaluación si no hay ninguna unidad de alquiler realmente disponible.",
+   "answer_owner_es": "Usted no puede cobrar a un posible inquilino una tarifa de evaluación si no hay realmente una unidad disponible."
+  },
+  "r-0005": {
+   "answer_tenant": "Your landlord cannot charge you a screening fee greater than $30 per applicant, adjusted annually with the Consumer Price Index.",
+   "answer_owner": "You cannot charge an application screening fee greater than $30 per applicant, adjusted annually with the Consumer Price Index.",
+   "dropped": [],
+   "source_quote_sha": "52ac51efb083c3ec9533a60e9b1a5e04b414a8e667e2add2acf16f633d1aad33",
+   "answer_tenant_es": "Su tarifa de evaluación no puede superar $30 por solicitante, ajustada anualmente con el Índice de Precios al Consumidor.",
+   "answer_owner_es": "Usted no puede cobrar más de $30 por solicitante por evaluación, ajustados anualmente con el Índice de Precios al Consumidor."
+  },
+  "r-0006": {
+   "answer_tenant": "Your landlord cannot charge you a screening fee if they know or should know no unit is available soon.",
+   "answer_owner": "You may not charge a screening fee when you know or should know no unit is or will be available.",
+   "dropped": [],
+   "source_quote_sha": "b088f6b8f462b593b6e5242ac93b1345bba96058cbd44765c8bebde8b59e8fd9",
+   "answer_tenant_es": "Su arrendador no puede cobrarle una tarifa de evaluación si sabe o debería saber que pronto no habrá unidad disponible.",
+   "answer_owner_es": "Usted no puede cobrar una tarifa de evaluación si sabe o debería saber que no hay ni habrá unidad disponible."
+  },
+  "r-0007": {
+   "answer_tenant": "Your landlord may charge you an application screening fee only if, when collecting it, they offer a listed option.",
+   "answer_owner": "You may charge an application screening fee only if you offer a listed option when collecting it.",
+   "dropped": [],
+   "source_quote_sha": "1fd1c1c55ad5458fa937f763131c08217830f84a926c0f75a0a27da8ab3a8f7b",
+   "answer_tenant_es": "Su arrendador solo puede cobrarle una tarifa de evaluación de solicitud si, al cobrarla, ofrece una de las opciones indicadas.",
+   "answer_owner_es": "Usted solo puede cobrar una tarifa de evaluación de solicitud si, al cobrarla, ofrece una de las opciones indicadas."
+  },
+  "r-0008": {
+   "answer_tenant": "Your landlord must give you a receipt itemizing the out-of-pocket expenses and time spent processing your screening fee information.",
+   "answer_owner": "You must give each applicant a receipt for the screening fee itemizing your out-of-pocket expenses and time spent.",
+   "dropped": [],
+   "source_quote_sha": "6174b2bcc18736da3bf430df45ba26e18f91fd6565a3849d27001039ea0fde71",
+   "answer_tenant_es": "Su arrendador debe darle un recibo detallado de gastos directos y tiempo dedicado a procesar su información de evaluación.",
+   "answer_owner_es": "Debe dar a cada solicitante un recibo de la tarifa de evaluación que detalle sus gastos directos y tiempo dedicado."
+  },
+  "r-0009": {
+   "answer_tenant": "Your landlord or their agent must return to you any part of your screening fee not used for authorized purposes.",
+   "answer_owner": "You must return to the applicant any part of the screening fee that you did not use for authorized purposes.",
+   "dropped": [],
+   "source_quote_sha": "1aee8c11ab6d72d699c41e6e05c31e11c095a0452592166e60f3b61bea375dcf",
+   "answer_tenant_es": "Su arrendador o su agente debe devolverle toda parte de su tarifa de evaluación no usada para fines autorizados.",
+   "answer_owner_es": "Usted debe devolver al solicitante toda parte de la tarifa de evaluación que no haya usado para fines autorizados."
+  },
+  "r-0010": {
+   "answer_tenant": "If you paid a screening fee, your landlord must give you your credit report within seven days of receiving it.",
+   "answer_owner": "If an applicant paid a screening fee, you must give them their credit report within seven days of receiving it.",
+   "dropped": [],
+   "source_quote_sha": "0834e97c1db6ad37a719e97c6b76295692ae65177f2076e6830f368a0bedf2e7",
+   "answer_tenant_es": "Si usted pagó una tarifa de evaluación, su arrendador debe entregarle su informe de crédito en siete días de recibirlo.",
+   "answer_owner_es": "Si un solicitante pagó una tarifa de evaluación, usted debe entregarle su informe de crédito en siete días de recibirlo."
+  },
+  "r-0011": {
+   "answer_tenant": "After 12 months living there, your landlord cannot end your tenancy without just cause stated in the written notice.",
+   "answer_owner": "After a tenant's 12 months of occupancy, you may not end the tenancy without just cause stated in written notice.",
+   "dropped": [],
+   "source_quote_sha": "727106f241a9b2ccc38f0e2d3275d7a22c2a0ecd4a17de32722664180fe2b049",
+   "answer_tenant_es": "Tras 12 meses viviendo allí, su arrendador no puede terminar su arrendamiento sin causa justa indicada en el aviso escrito.",
+   "answer_owner_es": "Tras 12 meses de ocupación del inquilino, usted no puede terminar el arrendamiento sin causa justa indicada en aviso escrito."
+  },
+  "r-0012": {
+   "answer_tenant": "If you don't cure the violation within the notice's time, your landlord may serve a three-day notice to quit.",
+   "answer_owner": "You may serve a three-day notice to quit only if the violation isn't cured within the notice's time period.",
+   "dropped": [],
+   "source_quote_sha": "1ed778ac4f471f436347829150d4699812291c46f73539666b3691452555274f",
+   "answer_tenant_es": "Si no corrige la infracción en el plazo del aviso, su arrendador puede darle aviso de tres días para desalojar.",
+   "answer_owner_es": "Usted solo puede dar aviso de tres días para desalojar si no se corrige la infracción en el plazo."
+  },
+  "r-0013": {
+   "answer_tenant": "Your relocation help or rent waiver equals one month of the rent you paid when your landlord issued the notice.",
+   "answer_owner": null,
+   "dropped": [
+    "owner: too_long:21_words",
+    "tenant_es: evasion_wording:para la reubicación o la exen",
+    "tenant_es: too_long:26_words"
+   ],
+   "source_quote_sha": "c5c7ba8a640aacdc63389fe56a5c7c55dd89b4372b2b315cf367c290071aeb6d"
+  },
+  "r-0014": {
+   "answer_tenant": "Your landlord's notification or lease provision must be printed in no less than 12-point type.",
+   "answer_owner": "You must put any required notification or lease provision in no less than 12-point type.",
+   "dropped": [],
+   "source_quote_sha": "18f07e0a9c349178bd6b08ae94416646dea09a4d3e6e9af67384a4681c7a4fe0",
+   "answer_tenant_es": "La notificación o cláusula de arrendamiento de su arrendador debe estar en letra de no menos de 12 puntos.",
+   "answer_owner_es": "Usted debe poner toda notificación o cláusula del contrato de arrendamiento requerida en letra de no menos de 12 puntos."
+  },
+  "r-0015": {
+   "answer_tenant": "If a local just cause ordinance adopted on or before September 1, 2019 covers your home, that local ordinance applies.",
+   "answer_owner": "You must follow a local just cause ordinance adopted on or before September 1, 2019 that covers your property.",
+   "dropped": [],
+   "source_quote_sha": "217d5c24e5e10ec934855711cb88ac7cbb5e53d8a3e8116ae7531c5ac62c7688",
+   "answer_tenant_es": "Si una ordenanza local de causa justa, adoptada hasta el 1 de septiembre de 2019, cubre su vivienda, esa rige.",
+   "answer_owner_es": "Debe cumplir la ordenanza local de causa justa adoptada hasta el 1 de septiembre de 2019 que cubra su propiedad."
+  },
+  "r-0016": {
+   "answer_tenant": "Your relocation payment for temporary capital improvement evictions of less than 20 days is set by Civil Code Section 1947.9.",
+   "answer_owner": "You must follow Civil Code 1947.9 for relocation payment amounts in temporary capital improvement evictions of less than 20 days.",
+   "dropped": [],
+   "source_quote_sha": "5583aba13d7e6103db11e0d9149abc318beb4da6458e8bb4c606a48af6d88990",
+   "answer_tenant_es": "Código Civil 1947.9 fija su pago de reubicación en desalojos temporales por mejoras de capital de menos de 20 días.",
+   "answer_owner_es": "Usted debe seguir el Código Civil 1947.9 en pagos de reubicación por desalojos temporales de menos de 20 días."
+  },
+  "r-0017": {
+   "answer_tenant": "Your rent can rise at most 5 percent plus cost-of-living change, or 10 percent if lower, per 12 months.",
+   "answer_owner": "You cannot raise rent more than 5 percent plus cost-of-living change, or 10 percent if lower, per 12 months.",
+   "dropped": [],
+   "source_quote_sha": "dfe28d42f5f7d816efbdb6a711d9ca5180d220e0894aef591116a12335fbc97d",
+   "answer_tenant_es": "Su renta sube máximo 5% más el cambio del costo de vida, o 10% si es menor, cada 12 meses.",
+   "answer_owner_es": "No puede subir su renta más de 5% más costo de vida, o 10% si es menor, cada 12 meses."
+  },
+  "r-0018": {
+   "answer_tenant": "Your landlord can raise your rent by no more than 5% plus regional cost-of-living change, or 10%, whichever is lower.",
+   "answer_owner": "You can raise rent by no more than 5% plus the regional cost-of-living change, or 10%, whichever is lower.",
+   "dropped": [],
+   "source_quote_sha": "02c0e6d840b4c5578ad50f6d66c2d2f7fedc7ab11478a9d9c0143bbe1a79feb7",
+   "answer_tenant_es": "Su renta puede subir hasta 5% más el cambio del costo de vida regional, o 10%, lo que sea menor.",
+   "answer_owner_es": "Puede subir su renta hasta 5% más el cambio del costo de vida regional, o 10%, lo que sea menor."
+  },
+  "r-0019": {
+   "answer_tenant": "Your landlord must give you 30 days' written advance notice of a rent increase of less than 10%.",
+   "answer_owner": "You must give your tenant 30 days' written advance notice of a rent increase of less than 10%.",
+   "dropped": [],
+   "source_quote_sha": "4363fd4b4af4a22b1411f446b95e812147500ed44b78ff6148670961d3cf5215",
+   "answer_tenant_es": "Su arrendador debe darle 30 días de aviso previo por escrito sobre un aumento de renta menor del 10%.",
+   "answer_owner_es": "Usted debe dar a su inquilino 30 días de aviso escrito previo sobre aumentos de renta menores del 10%."
+  },
+  "r-0020": {
+   "answer_tenant": "Your landlord cannot discriminate against you based on how you will pay rent, including vouchers, disability benefits or wages.",
+   "answer_owner": "You may not discriminate against tenants based on how they will pay rent, including vouchers, disability benefits or wages.",
+   "dropped": [],
+   "source_quote_sha": "ae17ce40f192e743d793d21125b06d61bcb939a71bea75a895e3fe7239c52ab7",
+   "answer_tenant_es": "Su arrendador no puede discriminarlo según cómo usted pagará el alquiler, incluidos vales, beneficios por discapacidad o salarios.",
+   "answer_owner_es": "Usted no puede discriminar a los inquilinos según cómo pagarán el alquiler, incluidos vales, beneficios por discapacidad o salarios."
+  },
+  "r-0021": {
+   "answer_tenant": "Your landlord cannot consider non-conviction arrests, sealed, expunged or juvenile records, and cannot ban all applicants with criminal histories.",
+   "answer_owner": "You cannot consider non-conviction arrests, sealed, expunged or juvenile records, and cannot have blanket bans on applicants with criminal histories.",
+   "dropped": [],
+   "source_quote_sha": "3915bc7e12048c07e9c0f009ffefc6c073c32e6ad944a6e21e3008d8539ea822",
+   "answer_tenant_es": "Su arrendador no puede considerar arrestos sin condena, registros sellados, borrados o juveniles, ni excluir a todos con antecedentes penales.",
+   "answer_owner_es": "Usted no puede considerar arrestos sin condena, registros sellados, borrados o juveniles, ni excluir a todos con antecedentes penales."
+  },
+  "r-0022": {
+   "answer_tenant": "Your application can be denied over a conviction only if it directly relates to being a good tenant and safe.",
+   "answer_owner": null,
+   "dropped": [
+    "owner: too_long:21_words"
+   ],
+   "source_quote_sha": "aada3c6581d7141b48aa26fc6c27f5e16ab4f3fb5fd2f6169688cd42c337e8f5",
+   "answer_tenant_es": "Pueden denegar su solicitud por una condena solo si se relaciona directamente con ser buen inquilino y la seguridad."
+  },
+  "r-0023": {
+   "answer_tenant": "Your landlord cannot discriminate against or harass you because of race, religion, familial status, disability, or source of income.",
+   "answer_owner": "You may not discriminate against or harass anyone because of race, religion, familial status, disability, or source of income.",
+   "dropped": [],
+   "source_quote_sha": "11761de2a229b85247f2a009ddafb19dc5bb503804bd1359e1d348e4d809411e",
+   "answer_tenant_es": "Su arrendador no puede discriminarle ni acosarle por raza, religión, situación familiar, discapacidad o fuente de ingresos.",
+   "answer_owner_es": "Usted no puede discriminar ni acosar a nadie por raza, religión, situación familiar, discapacidad o fuente de ingresos."
+  },
+  "r-0024": {
+   "answer_tenant": "Your landlord cannot ask you, in writing or out loud, about your race, religion, sex, disability, or other listed traits.",
+   "answer_owner": "You may not ask, in writing or orally, about a person's race, sex, disability, or other listed traits.",
+   "dropped": [],
+   "source_quote_sha": "bec5227305c7b85dd1a42ccdf0df646628b1e712c3fa86e3de86cd1f6bafa2e5",
+   "answer_tenant_es": "Su arrendador no puede preguntarle, por escrito ni de palabra, sobre su raza, religión, sexo, discapacidad u otras características enumeradas.",
+   "answer_owner_es": "Usted no puede preguntar por escrito u oralmente sobre raza, sexo, discapacidad u otras características enumeradas de una persona."
+  },
+  "r-0025": {
+   "answer_tenant": "Your landlord's income standard must count the combined income of people living or planning to live together, like married couples.",
+   "answer_owner": "You may not use an income standard that ignores the combined income of people living or planning to live together.",
+   "dropped": [],
+   "source_quote_sha": "f7502c57be1d00cacbe6b4f87ca00b167140b03a78645046f2fb0a2904b7f293",
+   "answer_tenant_es": "Para evaluar ingresos, su arrendador debe contar el ingreso combinado de quienes viven o planean vivir juntos, como parejas casadas.",
+   "answer_owner_es": "Usted no puede usar un estándar de ingresos que ignore el ingreso combinado de quienes viven o planean vivir juntos."
+  },
+  "r-0026": {
+   "answer_tenant": "Your landlord cannot judge eligibility using an income standard not based on the portion of rent you pay.",
+   "answer_owner": "You may not assess rental eligibility using an income standard not based on the tenant's portion of the rent.",
+   "dropped": [],
+   "source_quote_sha": "be0844893ab8bf71f92de8a71bee73eb9345a52a811d6dce14908250727a0865",
+   "answer_tenant_es": "Su arrendador no puede evaluar la elegibilidad con un estándar de ingresos no basado en su parte del alquiler.",
+   "answer_owner_es": "Usted no puede evaluar la elegibilidad con un estándar de ingresos no basado en la parte del alquiler del inquilino."
+  },
+  "r-0027": {
+   "answer_tenant": null,
+   "answer_owner": "You must reasonably consider an applicant's alternative evidence instead of credit history when deciding whether to offer you the rental.",
+   "dropped": [
+    "tenant: too_long:21_words"
+   ],
+   "source_quote_sha": "8a6df64606523b4dfd993014c2dc00514ea78b49cfdd382c37568db2deede351",
+   "answer_owner_es": "Usted debe considerar razonablemente la evidencia alternativa del solicitante en vez del historial crediticio al decidir si ofrece el alquiler."
+  },
+  "r-0028": {
+   "answer_tenant": "Starting July 1, 2024, your landlord may only charge you one month's rent for unfurnished and furnished units.",
+   "answer_owner": "Starting July 1, 2024, you may only charge one month's rent for unfurnished and furnished units.",
+   "dropped": [],
+   "source_quote_sha": "ae6da27fe04c70800a362614baec5cdea72113bac0c783401c724e585bc1c2e6",
+   "answer_tenant_es": "Desde el 1 de julio de 2024, su arrendador solo puede cobrarle un mes de alquiler, con o sin muebles.",
+   "answer_owner_es": "Desde el 1 de julio de 2024, usted solo puede cobrar un mes de alquiler, con o sin muebles."
+  },
+  "r-0029": {
+   "answer_tenant": "Your landlord cannot demand or receive security of more than one month's rent, plus your first month's rent.",
+   "answer_owner": "You may not demand or receive security of more than one month's rent, plus the first month's rent.",
+   "dropped": [],
+   "source_quote_sha": "9241cb4c5e34db9bccc3ee2c62c37baa4c70b80ebbe597294f710447ca2fe521",
+   "answer_tenant_es": "Su arrendador no puede exigir ni recibir una garantía mayor a un mes de renta, más su primer mes.",
+   "answer_owner_es": "Usted no puede exigir ni recibir una garantía mayor a un mes de renta, más el primer mes de renta."
+  },
+  "r-0030": {
+   "answer_tenant": "As a service member, your landlord must give written notice of any higher security amount and why, by lease signing.",
+   "answer_owner": "You must give a service member a written statement of any higher security amount and the reason, by lease signing.",
+   "dropped": [],
+   "source_quote_sha": "ed8e107848817202483190496643d0a4443543447f5c3d4357f2b52e485c66ca",
+   "answer_tenant_es": "Como militar, su arrendador debe notificarle por escrito toda garantía mayor y el motivo, hasta la firma del contrato.",
+   "answer_owner_es": "Usted debe dar a un militar aviso escrito de cualquier garantía mayor y el motivo, hasta la firma del contrato."
+  },
+  "r-0031": {
+   "answer_tenant": "Your landlord cannot demand or receive security of more than two months' rent, plus any rent for the first month.",
+   "answer_owner": "You may not demand or receive security of more than two months' rent, plus any rent for the first month.",
+   "dropped": [],
+   "source_quote_sha": "d5aa95d4c6f8828134bbd9846831fa4ff2b79aaa043d5c7666a918f645964f5b",
+   "answer_tenant_es": "Su arrendador no puede exigir ni recibir depósito mayor a dos meses de renta, más la renta del primer mes.",
+   "answer_owner_es": "Usted no puede exigir ni recibir un depósito mayor a dos meses de renta, más la renta del primer mes."
+  },
+  "r-0032": {
+   "answer_tenant": "Your landlord cannot claim against you or your deposit for earlier damage or ordinary wear and tear.",
+   "answer_owner": "You may not claim against the tenant or deposit for preexisting damage or ordinary wear and tear.",
+   "dropped": [],
+   "source_quote_sha": "1d2648062755510990984018d2900b27896eb412a5b43ceb3976377cfaa4c3c8",
+   "answer_tenant_es": "Su arrendador no puede presentar reclamos contra usted ni contra su depósito por daños previos ni por el desgaste normal.",
+   "answer_owner_es": "Usted no puede presentar reclamos contra el inquilino ni contra el depósito por daños previos ni por el desgaste normal."
+  },
+  "r-0033": {
+   "answer_tenant": "Your landlord must tell you in writing that you can request an initial inspection and be present for it.",
+   "answer_owner": "You must tell your tenant in writing they can request an initial inspection and have the right to be present.",
+   "dropped": [],
+   "source_quote_sha": "31d9eb36f4c149eac0a006d069e4df5746dd52be67f883815c00fe5567a74577",
+   "answer_tenant_es": "Su arrendador debe informarle por escrito que usted puede solicitar una inspección inicial y estar presente en ella.",
+   "answer_owner_es": "Usted debe informar por escrito a su inquilino que puede solicitar una inspección inicial y tiene derecho a estar presente."
+  },
+  "r-0034": {
+   "answer_tenant": "Your landlord must photograph the unit before and after any repairs or cleanings deducted from your security deposit.",
+   "answer_owner": "You must photograph the unit before and after any repairs or cleanings you will deduct from the security deposit.",
+   "dropped": [],
+   "source_quote_sha": "3e2e09ed1a7a91b78dcf09396a37ae83ff637a457ec48a64400c47e4d0acef86",
+   "answer_tenant_es": "Su arrendador debe fotografiar la unidad antes y después de cualquier reparación o limpieza deducida de su depósito de seguridad.",
+   "answer_owner_es": "Usted debe fotografiar la unidad antes y después de cualquier reparación o limpieza que deducirá del depósito de seguridad."
+  },
+  "r-0035": {
+   "answer_tenant": "Your landlord must give you an itemized deposit statement and return what remains within 21 calendar days after you vacate.",
+   "answer_owner": "You must give your tenant an itemized deposit statement and return the remainder within 21 calendar days after they vacate.",
+   "dropped": [],
+   "source_quote_sha": "3532905eb2e05375160cebc436381422c344118e783c57be7397c200ac5df887",
+   "answer_tenant_es": "Su arrendador debe darle un desglose del depósito y devolverle el resto en 21 días calendario después de que desocupe.",
+   "answer_owner_es": "Debe darle a su inquilino un desglose y devolverle el resto del depósito en 21 días calendario tras su salida."
+  },
+  "r-0036": {
+   "answer_tenant": "When your landlord's interest in the property ends, your landlord must act on your security within a reasonable time.",
+   "answer_owner": "When your interest in the property ends, you must act on the held security within a reasonable time.",
+   "dropped": [],
+   "source_quote_sha": "057375aa8a37141e43703a0c06c944105f3ddf09339dcb7dc956f260d5d61a4c",
+   "answer_tenant_es": "Al terminar el interés de su arrendador en la propiedad, este debe actuar sobre su depósito en un plazo razonable.",
+   "answer_owner_es": "Cuando termina su interés en la propiedad, usted debe actuar sobre el depósito retenido en un plazo razonable."
+  },
+  "r-0037": {
+   "answer_tenant": "Your lease cannot call any security deposit \"nonrefundable,\" under current law.",
+   "answer_owner": "You may not include any provision in your lease or rental agreement calling a security \"nonrefundable.\"",
+   "dropped": [],
+   "source_quote_sha": "3627ae8ce12245e16f13e96bff13433ed9d33063b864f028ca1b3a83fd5768fe",
+   "answer_tenant_es": "Su contrato de arrendamiento no puede calificar ningún depósito de seguridad como \"no reembolsable\", según la ley actual.",
+   "answer_owner_es": "Usted no puede incluir en su contrato de arrendamiento o alquiler ninguna cláusula que califique una garantía como \"no reembolsable\"."
+  },
+  "r-0038": {
+   "answer_tenant": "A pending proposal would aim to prevent algorithmic rent fixing in the rental housing market, which could affect your rent.",
+   "answer_owner": "If passed, this proposed bill would bar you from algorithmic rent fixing in the rental housing market.",
+   "dropped": [
+    "tenant_es: evasion_wording:evitar"
+   ],
+   "source_quote_sha": "535d54ff80d7acad366954e18e65120100f9575738c482f8bb16f090fcd5e32b",
+   "answer_owner_es": "Si se aprueba, este proyecto de ley propuesto le prohibiría la fijación algorítmica de alquileres en el mercado de alquiler."
+  },
+  "r-0039": {
+   "answer_tenant": "A pending proposal would prohibit algorithmic rent setting, so your landlord could not use it to set your rent.",
+   "answer_owner": "If passed, this proposed bill would bar you from using algorithmic rent setting.",
+   "dropped": [],
+   "source_quote_sha": "01851d23b74314b513e5ee1e8747270f33e77c703cd6e9ddc5eddbb99dc04dde",
+   "answer_tenant_es": "Una propuesta pendiente prohibiría fijar alquileres con algoritmos, así que su arrendador no podría usarlos para fijar su alquiler.",
+   "answer_owner_es": "Si se aprueba, este proyecto de ley propuesto le prohibiría a usted usar algoritmos para fijar alquileres."
+  },
+  "r-0040": {
+   "answer_tenant": "You only pay a broker's fee if you originally hired and signed a contract with that broker.",
+   "answer_owner": "You may pay a broker's fee only if you originally hired and signed a contract with that broker.",
+   "dropped": [],
+   "source_quote_sha": "4c5ee091b23f929a61cbf49e8e12f5f6bfe5aae17a9540de20a16f0a13690460",
+   "answer_tenant_es": "Usted solo paga la comisión del corredor si usted contrató originalmente a ese corredor y firmó un contrato con él.",
+   "answer_owner_es": "Usted solo puede pagar la comisión si originalmente contrató a ese corredor y firmó un contrato con él."
+  },
+  "r-0041": {
+   "answer_tenant": "Your city or town generally cannot enact, maintain or enforce rent control of any kind, under current state law.",
+   "answer_owner": "You are generally not subject to local rent control, because cities and towns may not enact, maintain or enforce it.",
+   "dropped": [],
+   "source_quote_sha": "a75fbe012ce90669448a28dd0c066d5d26891ba5d99835b5f98c7deeac64edbf",
+   "answer_tenant_es": "Por ley estatal vigente, su ciudad o pueblo generalmente no puede aprobar, mantener ni aplicar ningún control de alquileres.",
+   "answer_owner_es": "Generalmente no le aplica el control de alquileres local, porque ciudades y pueblos no pueden aprobarlo, mantenerlo ni aplicarlo."
+  },
+  "r-0042": {
+   "answer_tenant": "Your landlord cannot ask or keep records about your race, religion, sex, age, marital status, veteran status, or handicap.",
+   "answer_owner": "You may not ask or keep records about an applicant's race, religion, sex, age, marital status, veteran status, or handicap.",
+   "dropped": [],
+   "source_quote_sha": "640002e5540a28a9de133cf7851c3e44e800eb9cde301a49117f6c2437b4dc18",
+   "answer_tenant_es": "Su arrendador no puede preguntar ni guardar registros sobre raza, religión, sexo, edad, estado civil, condición de veterano o discapacidad.",
+   "answer_owner_es": "Usted no puede preguntar ni registrar raza, religión, sexo, edad, estado civil, condición de veterano o discapacidad de un solicitante."
+  },
+  "r-0043": {
+   "answer_tenant": "Your landlord cannot ask about or record your race, religion, sex, age, or disability when you apply to rent.",
+   "answer_owner": "You may not make written or oral inquiries or records about an applicant's race, religion, sex, age, or disability.",
+   "dropped": [],
+   "source_quote_sha": "314f36853a40c8cb79552996d99bb94d896a67e3431092f71147a5a6296dec48",
+   "answer_tenant_es": "Su arrendador no puede preguntar ni registrar su raza, religión, sexo, edad o discapacidad cuando usted solicita alquilar.",
+   "answer_owner_es": "Usted no puede preguntar ni registrar, por escrito u oralmente, raza, religión, sexo, edad o discapacidad de un solicitante."
+  },
+  "r-0044": {
+   "answer_tenant": "Your landlord cannot discriminate against you for receiving public assistance or housing subsidies, or because of program requirements.",
+   "answer_owner": "You may not discriminate against anyone for receiving public assistance or housing subsidies, or because of program requirements.",
+   "dropped": [],
+   "source_quote_sha": "38ed9a1750b4f5628d896077e02418a2a465faa10e896ee31a4037fbf38c3bb7",
+   "answer_tenant_es": "Su arrendador no puede discriminarlo por recibir asistencia pública o subsidios de vivienda, ni por los requisitos de esos programas.",
+   "answer_owner_es": "Usted no puede discriminar a nadie por recibir asistencia pública o subsidios de vivienda, ni por requisitos del programa."
+  },
+  "r-0045": {
+   "answer_tenant": "Your landlord cannot require you to pay more than allowed amounts at or before your tenancy starts.",
+   "answer_owner": "You may not require a tenant to pay more than the allowed amounts at or before tenancy starts.",
+   "dropped": [],
+   "source_quote_sha": "89a7a0364dc79975a5b55a787860ef21f55c0e2fcded4453566fc2101fffbeb8",
+   "answer_tenant_es": "Su arrendador no puede exigirle que pague más de los montos permitidos al inicio del arrendamiento o antes.",
+   "answer_owner_es": "Usted no puede exigir a un inquilino que pague más de los montos permitidos al inicio del arrendamiento o antes."
+  },
+  "r-0046": {
+   "answer_tenant": "Any fee or recurring payments you pay instead of a security deposit cannot total more than 1 month's rent.",
+   "answer_owner": "You cannot charge fees or recurring payments totaling more than 1 month's rent in place of a security deposit.",
+   "dropped": [],
+   "source_quote_sha": "cda85cff312a42c0a1ac75d8877d581b698ee0709ce84686eb0c53dcfdbffe9a",
+   "answer_tenant_es": "Sus cuotas o pagos recurrentes en lugar de un depósito de seguridad no pueden superar 1 mes de alquiler.",
+   "answer_owner_es": "Usted no puede cobrar cuotas o pagos recurrentes que sumen más de 1 mes de alquiler en vez de depósito."
+  },
+  "r-0047": {
+   "answer_tenant": "Your landlord or their agent must give you a receipt when you pay a security deposit.",
+   "answer_owner": "You must give a receipt when you receive a security deposit, listing the amount, date, and premises.",
+   "dropped": [],
+   "source_quote_sha": "12a3495c8eadb70b82b08cce9ee0b4cab0bd42e6d6767196d4e4d3e44e7cafb7",
+   "answer_tenant_es": "Su arrendador o su agente debe darle un recibo cuando usted pague un depósito de garantía.",
+   "answer_owner_es": "Usted debe dar un recibo al recibir un depósito de garantía, indicando el monto, la fecha y el inmueble."
+  },
+  "r-0048": {
+   "answer_tenant": "Your landlord must give you a separate written statement of the premises' condition when taking your security deposit.",
+   "answer_owner": "You must give your tenant a separate written statement of the premises' condition when you accept a security deposit.",
+   "dropped": [],
+   "source_quote_sha": "226f2e4366c11cafb4266ebc95b7300fa17ea56422e14166be581e700075e6fa",
+   "answer_tenant_es": "Su arrendador debe darle una declaración escrita aparte sobre el estado de la propiedad al recibir su depósito de seguridad.",
+   "answer_owner_es": "Debe darle a su inquilino una declaración escrita aparte del estado de la propiedad al aceptar un depósito de seguridad."
+  },
+  "r-0049": {
+   "answer_tenant": "Your landlord must keep your deposit in a separate, interest-bearing bank account in the state, protected from their creditors.",
+   "answer_owner": "You must hold tenant deposits in a separate, interest-bearing in-state bank account, beyond the reach of your creditors.",
+   "dropped": [],
+   "source_quote_sha": "1e8cd5ca36de60185907c9be17b6df23c6bd6406e52c297b28ec3bdb4636d75d",
+   "answer_tenant_es": "Su arrendador debe mantener su depósito en una cuenta bancaria separada, con intereses, dentro del estado, protegida de sus acreedores.",
+   "answer_owner_es": "Debe guardar los depósitos de inquilinos en una cuenta bancaria separada, con intereses, en el estado, protegida de sus acreedores."
+  },
+  "r-0050": {
+   "answer_tenant": "Your landlord must pay you interest of five per cent per year, or the lesser amount the bank paid.",
+   "answer_owner": "You must pay your tenant interest of five per cent per year, or the lesser amount the bank paid.",
+   "dropped": [],
+   "source_quote_sha": "f0dbde506275329a4d1ee7469e27e19faffd08b91905f820ce34f0ad33a641a3",
+   "answer_tenant_es": "Su arrendador debe pagarle intereses de cinco por ciento al año, o la cantidad menor que pagó el banco.",
+   "answer_owner_es": "Debe pagar a su inquilino intereses de cinco por ciento al año, o la cantidad menor que pagó el banco."
+  },
+  "r-0051": {
+   "answer_tenant": "Your landlord must return your security deposit, or any balance of it, within thirty days after your tenancy ends.",
+   "answer_owner": "You must return the tenant's security deposit, or any balance, within thirty days after the tenancy ends.",
+   "dropped": [],
+   "source_quote_sha": "3800bb79aa867ab67f9577da552e3300775523fbe12f385b75df002bd7194f06",
+   "answer_tenant_es": "Su arrendador debe devolverle su depósito de seguridad, o cualquier saldo, dentro de treinta días después de terminar su arrendamiento.",
+   "answer_owner_es": "Usted debe devolver el depósito de seguridad del inquilino, o cualquier saldo, dentro de treinta días tras terminar el arrendamiento."
+  },
+  "r-0052": {
+   "answer_tenant": "Your landlord must return your security deposit balance, plus any interest, within thirty days after your tenancy ends.",
+   "answer_owner": "You must return the tenant's security deposit balance, plus any interest, within thirty days after the tenancy ends.",
+   "dropped": [],
+   "source_quote_sha": "d3ca394578f0ce5b4418d00c13d7796f2c4564010ff729b778535fb9652e7008",
+   "answer_tenant_es": "Su arrendador debe devolverle su depósito de seguridad restante, más intereses, dentro de treinta días tras terminar el arrendamiento.",
+   "answer_owner_es": "Debe devolver el depósito de seguridad restante de su inquilino, más intereses, dentro de treinta días tras terminar el arrendamiento."
+  },
+  "r-0053": {
+   "answer_tenant": "Your new landlord must tell you within forty-five days of the transfer that they've assumed responsibility for your rental advance.",
+   "answer_owner": "You must notify the tenant within forty-five days of the transfer that you assumed responsibility for their rental advance.",
+   "dropped": [],
+   "source_quote_sha": "3829510f4dfc1c6f1848179986dc092d49a5136a8068d5088e945a49a9844052",
+   "answer_tenant_es": "Su nuevo arrendador debe informarle, dentro de 45 días de la transferencia, que asumió responsabilidad por su renta adelantada.",
+   "answer_owner_es": "Usted debe notificar al inquilino, dentro de 45 días de la transferencia, que asumió responsabilidad por su renta adelantada."
+  },
+  "r-0054": {
+   "answer_tenant": "Once it takes effect, certain practices that algorithmically inflate your rent would be unlawful under the state antitrust act.",
+   "answer_owner": "Once it takes effect, you may not engage in conduct it lists as unlawful under the state antitrust act.",
+   "dropped": [],
+   "source_quote_sha": "cf82026509c424b0eca3e3580dfcec661edc48f6206494e86a500ebf6ebf75f5",
+   "answer_tenant_es": "Cuando entre en vigor, ciertas prácticas que inflan su alquiler mediante algoritmos serían ilegales según la ley estatal antimonopolio.",
+   "answer_owner_es": "Cuando entre en vigor, usted no podrá realizar las conductas que enumera como ilegales según la ley estatal antimonopolio."
+  },
+  "r-0055": {
+   "answer_tenant": "Your landlord or their agent cannot charge you an application or similar fee of more than $50 to rent.",
+   "answer_owner": "You may not require an application or similar fee over $50 to lease or sublease a residential rental property.",
+   "dropped": [],
+   "source_quote_sha": "5d5c088f2c5f0582b447375ec4a60849cc1ea65ae5dc46afd0978c344e3588b2",
+   "answer_tenant_es": "Su arrendador o su agente no puede cobrarle una tarifa de solicitud o similar de más de $50 para alquilar.",
+   "answer_owner_es": "Usted no puede exigir más de $50 en tarifa de solicitud o similar para arrendar o subarrendar una propiedad residencial."
+  },
+  "r-0056": {
+   "answer_tenant": "Your landlord cannot refuse to renew your lease, written or oral, unless they have good cause.",
+   "answer_owner": "You may not fail to renew a residential lease, written or oral, unless you have good cause.",
+   "dropped": [],
+   "source_quote_sha": "d5d5bb21206d9e10f709ffa5dcef8fcce3ecc0c00c012cf8da73e6e99c849d11",
+   "answer_tenant_es": "Su arrendador no puede negarse a renovar su contrato, escrito u oral, a menos que tenga una causa justificada.",
+   "answer_owner_es": "Usted no puede dejar de renovar un contrato residencial, escrito u oral, a menos que tenga una causa justificada."
+  },
+  "r-0057": {
+   "answer_tenant": "Your landlord cannot evict you just because your lease term has ended.",
+   "answer_owner": "You cannot evict a tenant just because the lease term has ended.",
+   "dropped": [],
+   "source_quote_sha": "38ac9feffdd01aaf0c6306418dea8c2adf1379bc9b53598867deafac3aa6e8f8",
+   "answer_tenant_es": "Su arrendador no puede desalojarlo solo porque haya terminado el plazo de su contrato de arrendamiento.",
+   "answer_owner_es": "Usted no puede desalojar a un inquilino solo porque haya terminado el plazo del contrato de arrendamiento."
+  },
+  "r-0058": {
+   "answer_tenant": "Your landlord cannot evict you or refuse to renew your written or oral lease without good cause.",
+   "answer_owner": "You may not evict a tenant or fail to renew a written or oral lease without good cause.",
+   "dropped": [],
+   "source_quote_sha": "215038936ab361aec002a045794b316984e1b3f1a74cf2006b2d75e52f82aca5",
+   "answer_tenant_es": "Su arrendador no puede desalojarlo ni negarse a renovar su contrato de arrendamiento escrito u oral sin causa justificada.",
+   "answer_owner_es": "Usted no puede desalojar a un inquilino ni negarse a renovar un contrato escrito u oral sin causa justificada."
+  },
+  "r-0059": {
+   "answer_tenant": "If you fail to pay rent, your landlord can immediately take legal action to evict you.",
+   "answer_owner": null,
+   "dropped": [
+    "owner: no_answer"
+   ],
+   "source_quote_sha": "9d21686183341c0479dc5eda2be6a6b2c6c5516c6730b6f8ae9cde1aeaf60a46",
+   "answer_tenant_es": "Si usted no paga el alquiler, su arrendador puede tomar de inmediato acciones legales para desalojarlo."
+  },
+  "r-0060": {
+   "answer_tenant": "You cannot be evicted for nonpayment if you used unpaid rent to keep utilities your landlord was responsible for paying.",
+   "answer_owner": "You may not evict a tenant for nonpayment if they used unpaid rent to keep utilities you failed to pay.",
+   "dropped": [],
+   "source_quote_sha": "a3d8176a2fe7fe4991aad7166d5a5a7dbe5b727463b8d719787d7d9c3739fa8a",
+   "answer_tenant_es": "No pueden desalojarlo por falta de pago si usó renta impaga para mantener servicios públicos que su arrendador debía pagar.",
+   "answer_owner_es": "No puede desalojar por falta de pago al inquilino que usó renta impaga para mantener servicios que usted no pagó."
+  },
+  "r-0061": {
+   "answer_tenant": "Your landlord must serve a Notice to Quit at least three days before filing for eviction over disorderly conduct.",
+   "answer_owner": "You must serve a Notice to Quit at least three days before filing for eviction over disorderly conduct.",
+   "dropped": [],
+   "source_quote_sha": "4aa6fb0c338019176d146faf00f45656218e4cb73a79bf2ded7ede920ae740e2",
+   "answer_tenant_es": "Su arrendador debe entregarle un Aviso de Desalojo al menos tres días antes de demandar el desalojo por conducta desordenada.",
+   "answer_owner_es": "Usted debe entregar un Aviso de Desalojo al menos tres días antes de demandar el desalojo por conducta desordenada."
+  },
+  "r-0062": {
+   "answer_tenant": "You may be evicted if you intentionally or through gross negligence cause or allow property damage, destruction, or injury.",
+   "answer_owner": null,
+   "dropped": [
+    "owner: no_answer"
+   ],
+   "source_quote_sha": "e50f153d6191de0e10094de2e63b2a7519d8f9cf574aeffee63c85639b8a6c40",
+   "answer_tenant_es": "Pueden desalojarlo si, intencionalmente o por negligencia grave, usted causa o permite destrucción, daños o lesiones a la propiedad."
+  },
+  "r-0063": {
+   "answer_tenant": "You can be evicted for intentionally or through gross negligence causing or allowing destruction, damage, or injury to the property.",
+   "answer_owner": null,
+   "dropped": [
+    "owner: no_answer"
+   ],
+   "source_quote_sha": "e50f153d6191de0e10094de2e63b2a7519d8f9cf574aeffee63c85639b8a6c40",
+   "answer_tenant_es": "Usted puede ser desalojado si causa o permite, intencionalmente o por negligencia grave, destrucción, daño o perjuicio a la propiedad."
+  },
+  "r-0064": {
+   "answer_tenant": "Your landlord must serve you a Notice to Quit at least one month before filing for eviction.",
+   "answer_owner": "You must serve the tenant a Notice to Quit at least one month before filing for eviction.",
+   "dropped": [],
+   "source_quote_sha": "6084f717a6b4350dccf0ed6efeb5dff2819c770630941f417e50a6cfa6baf5ed",
+   "answer_tenant_es": "Su arrendador debe entregarle un Notice to Quit al menos un mes antes de presentar la demanda de desalojo.",
+   "answer_owner_es": "Usted debe entregar al inquilino un Notice to Quit al menos un mes antes de presentar la demanda de desalojo."
+  },
+  "r-0065": {
+   "answer_tenant": null,
+   "answer_owner": "You must serve a Notice to Quit at least one month before filing an eviction suit for continued lease breaches.",
+   "dropped": [
+    "tenant: too_long:24_words"
+   ],
+   "source_quote_sha": "a870a6c216aa5db121b4d2887892b3fdda82a52b2ce228cf3a590bed0da6a20b",
+   "answer_owner_es": "Usted debe entregar un Aviso de Desocupación al menos un mes antes de demandar desalojo por incumplimientos continuos del contrato."
+  },
+  "r-0066": {
+   "answer_tenant": "If you don't pay rent after a rent increase notice and Notice to Quit, your landlord may file for eviction.",
+   "answer_owner": null,
+   "dropped": [
+    "owner: too_long:21_words"
+   ],
+   "source_quote_sha": "159a9dc87562e20b3b131e9b83da12ab044c0d74f64738b60267a1f9361c9bc3",
+   "answer_tenant_es": "Si usted no paga tras un aviso de aumento y un Aviso de Desalojo, su arrendador puede demandar su desalojo."
+  },
+  "r-0067": {
+   "answer_tenant": "Your landlord must serve a Notice to Quit at least three months before filing, and provide relocation assistance before eviction.",
+   "answer_owner": "You must serve a Notice to Quit at least three months before filing, and cannot evict before providing relocation assistance.",
+   "dropped": [],
+   "source_quote_sha": "79c821647740aeb98febe1dda8d77b36b335c37bdb109f24207f26eb7b743b25",
+   "answer_tenant_es": "Su arrendador debe darle Aviso de Desocupación mínimo tres meses antes de demandar y ayuda de reubicación antes del desalojo.",
+   "answer_owner_es": "Usted debe dar Aviso de Desocupación mínimo tres meses antes de demandar y no puede desalojar sin ayuda de reubicación."
+  },
+  "r-0068": {
+   "answer_tenant": "If you're evicted for illegal occupancy, you're entitled to relocation assistance equal to six times your monthly rent.",
+   "answer_owner": "You must provide relocation assistance equal to six times the monthly rent to a tenant you evict for illegal occupancy.",
+   "dropped": [],
+   "source_quote_sha": "a8d20ac06d2a7c4fe3248889282f46390fe14e8d45925d012537e3057d68afbd",
+   "answer_tenant_es": "Si lo desalojan por ocupación ilegal, usted tiene derecho a asistencia de reubicación equivalente a seis veces su renta mensual.",
+   "answer_owner_es": "Usted debe dar asistencia de reubicación equivalente a seis veces la renta mensual al inquilino que desaloje por ocupación ilegal."
+  },
+  "r-0069": {
+   "answer_tenant": "To permanently retire a building, your landlord must serve a Notice to Quit at least 18 months before suing.",
+   "answer_owner": "To permanently retire a building, you must serve a Notice to Quit at least 18 months before suing.",
+   "dropped": [],
+   "source_quote_sha": "b73e7dc5ea3a88092e41489acb1b46fd93e1ec1bc62a71e2718e1f168047a35a",
+   "answer_tenant_es": "Para retirar permanentemente un edificio, su arrendador debe entregarle un Aviso para Desocupar al menos 18 meses antes de demandar.",
+   "answer_owner_es": "Para retirar permanentemente un edificio, usted debe entregar un Aviso para Desocupar al menos 18 meses antes de demandar."
+  },
+  "r-0070": {
+   "answer_tenant": null,
+   "answer_owner": "You must give written notice of proposed changes before filing for eviction, and a court decides whether they're reasonable.",
+   "dropped": [
+    "tenant: too_long:21_words"
+   ],
+   "source_quote_sha": "bbda54b2a45815ddcc9444fabd98e7383c9738876d02a48d8e41da047051e0c5",
+   "answer_owner_es": "Usted debe avisar por escrito los cambios propuestos antes de pedir el desalojo, y un tribunal decide si son razonables."
+  },
+  "r-0071": {
+   "answer_tenant": "If you continuously fail to pay rent or habitually pay late after written notice, your landlord may file for eviction.",
+   "answer_owner": null,
+   "dropped": [
+    "owner: too_long:22_words"
+   ],
+   "source_quote_sha": "f4b225db9df41c06097dad84dbc1b3c43ed6e4e020fdc6cd4c3241d94f7a7764",
+   "answer_tenant_es": "Si no paga el alquiler continuamente o paga tarde habitualmente tras un aviso escrito, su arrendador puede demandar el desalojo."
+  },
+  "r-0072": {
+   "answer_tenant": "Your landlord must serve you a Notice to Quit at least three years before filing for eviction.",
+   "answer_owner": "You must serve the tenant a Notice to Quit at least three years before filing for eviction.",
+   "dropped": [],
+   "source_quote_sha": "0498365d2c7040cfa070702a97d1ecd837bcc84d2608f30467d68e179d250f88",
+   "answer_tenant_es": "Su arrendador debe entregarle un Aviso de Desalojo al menos tres años antes de presentar una demanda de desalojo.",
+   "answer_owner_es": "Usted debe entregar al inquilino un Aviso de Desalojo al menos tres años antes de presentar una demanda de desalojo."
+  },
+  "r-0073": {
+   "answer_tenant": "Your landlord must serve you a Notice to Quit at least two months before filing an owner-occupancy eviction.",
+   "answer_owner": "You must serve the tenant a Notice to Quit at least two months before filing an owner-occupancy eviction suit.",
+   "dropped": [],
+   "source_quote_sha": "f493c3bfcf9ea4fb3185eeb456be4ddafd1de87f5decfda9e7ee20de1b072aed",
+   "answer_tenant_es": "Su arrendador debe entregarle un Notice to Quit al menos dos meses antes de demandar por ocupación del propietario.",
+   "answer_owner_es": "Usted debe entregar al inquilino un Notice to Quit al menos dos meses antes de demandar por ocupación del propietario."
+  },
+  "r-0074": {
+   "answer_tenant": "Your landlord must serve you a Notice to Quit three days before filing an eviction suit against you.",
+   "answer_owner": "You must serve the tenant a Notice to Quit three days before filing an eviction suit.",
+   "dropped": [],
+   "source_quote_sha": "146efa3572f4b70a6c6bef75e872702983a3c5fb76d459165f0cfa569c27a5b9",
+   "answer_tenant_es": "Su arrendador debe entregarle un Notice to Quit tres días antes de presentar una demanda de desalojo en su contra.",
+   "answer_owner_es": "Usted debe entregar al inquilino un Notice to Quit tres días antes de presentar una demanda de desalojo."
+  },
+  "r-0075": {
+   "answer_tenant": "Your landlord must serve you a Notice to Quit at least three days before filing an eviction suit.",
+   "answer_owner": "You must serve your tenant a Notice to Quit at least three days before filing an eviction suit.",
+   "dropped": [],
+   "source_quote_sha": "3b17d63826e6889cab087b61346f07470fb7f3d8f9336322a354d332bc2eb981",
+   "answer_tenant_es": "Su arrendador debe entregarle un Notice to Quit al menos tres días antes de presentar una demanda de desalojo.",
+   "answer_owner_es": "Debe entregar a su inquilino un Notice to Quit al menos tres días antes de presentar una demanda de desalojo."
+  },
+  "r-0076": {
+   "answer_tenant": "Your landlord may seek eviction if you were convicted of assault or terrorist threats against them, their family or employees.",
+   "answer_owner": null,
+   "dropped": [
+    "owner: no_answer"
+   ],
+   "source_quote_sha": "2e0b4390d7ae841ce162d5914a05260acd220ed2718105e3cf307233d17a3567",
+   "answer_tenant_es": "Su arrendador puede pedir desalojarlo si usted fue condenado por agresión o amenazas terroristas contra él, su familia o empleados."
+  },
+  "r-0077": {
+   "answer_tenant": "Your landlord can file for eviction if a civil court finds you liable for theft, assaults, threats, or drug activity.",
+   "answer_owner": null,
+   "dropped": [
+    "owner: no_answer"
+   ],
+   "source_quote_sha": "9ad71616f18ae62367639d6ea448b2e86e24ca66b8e5a45c24bbfbd3329d45a0",
+   "answer_tenant_es": "Su arrendador puede solicitar el desalojo si un tribunal civil lo declara responsable de robo, agresiones, amenazas o drogas."
+  },
+  "r-0078": {
+   "answer_tenant": "Your landlord may file for eviction if you are convicted of theft from the landlord or other tenants.",
+   "answer_owner": null,
+   "dropped": [
+    "owner: no_answer"
+   ],
+   "source_quote_sha": "cd8e7c59710531f6cd13a164668e7f047883a39d316326813027fd451ee7f202",
+   "answer_tenant_es": "Su arrendador puede solicitar su desalojo si usted es condenado por robar al arrendador o a otros inquilinos."
+  },
+  "r-0079": {
+   "answer_tenant": "Your landlord may file to evict you if a civil action finds you committed human trafficking on the premises.",
+   "answer_owner": "You can file for eviction only if a civil action finds your tenant committed human trafficking on the premises.",
+   "dropped": [],
+   "source_quote_sha": "a3435a6c2c35c5b7ccb895ce86c1ca669ae1cf42e65d9962ea6762b6a524832a",
+   "answer_tenant_es": "Su arrendador puede solicitar su desalojo si una acción civil determina que usted cometió trata de personas en la propiedad.",
+   "answer_owner_es": "Puede solicitar el desalojo solo si una acción civil determina que su inquilino cometió trata de personas en la propiedad."
+  },
+  "r-0080": {
+   "answer_tenant": "In landlord-occupied two- and three-family dwellings, you can be removed only after a court orders eviction.",
+   "answer_owner": "You may not remove a tenant of a landlord-occupied two- or three-family dwelling without a court eviction order.",
+   "dropped": [],
+   "source_quote_sha": "cb74c5c5e4c5581d044d360426814c40c59da1c9970f8e125a53902693d0e072",
+   "answer_tenant_es": "En viviendas bifamiliares o trifamiliares ocupadas por el arrendador, usted solo puede ser desalojado por orden judicial de desalojo.",
+   "answer_owner_es": "Usted no puede desalojar a un inquilino de una vivienda bifamiliar o trifamiliar donde vive, sin orden judicial de desalojo."
+  },
+  "r-0081": {
+   "answer_tenant": "Your landlord must give you a three-day written Notice to Quit for disorderly, destructive, or rule-violating conduct.",
+   "answer_owner": "You must give a three-day written Notice to Quit for disorderly, destructive, or rule-violating tenant conduct.",
+   "dropped": [],
+   "source_quote_sha": "60e2d5f9f40349557c310957e5b09ffdfe57cb0f0c2022081f7abe0dab7aa5a8",
+   "answer_tenant_es": "Su arrendador debe darle aviso escrito de tres días para desocupar por conducta desordenada, destructiva o que viole las reglas.",
+   "answer_owner_es": "Usted debe dar un aviso escrito de tres días para desocupar por conducta desordenada, destructiva o que viole las reglas."
+  },
+  "r-0082": {
+   "answer_tenant": "Before evicting you for staying past your lease, your landlord must give written notice: three-month, or one-month if month-to-month.",
+   "answer_owner": "You must give written notice before evicting a tenant who stays past the lease: three-month, or one-month if month-to-month.",
+   "dropped": [
+    "owner_es: more_than_one_sentence"
+   ],
+   "source_quote_sha": "6645d077b2a21028afe5211ce6801a5ecfdd461f8aed197285a76ce58f760ed6",
+   "answer_tenant_es": "Su arrendador debe avisar por escrito para desalojarlo tras su contrato: tres meses, o un mes si es mensual."
+  },
+  "r-0083": {
+   "answer_tenant": "Your rooming or boarding house owner must follow the Eviction Law's good cause and notice requirements to evict you.",
+   "answer_owner": "You must follow the Eviction Law's good cause and notice requirements when evicting rooming or boarding house residents.",
+   "dropped": [],
+   "source_quote_sha": "7e1229a5dd4cfc455e2898d713d1a2bae3c85667dff6f21cf342c6ae48f45e14",
+   "answer_tenant_es": "Para desalojarlo, el dueño de su casa de huéspedes debe cumplir con la Ley de Desalojo: causa justificada y aviso.",
+   "answer_owner_es": "Al desalojar a residentes de casas de huéspedes, usted debe cumplir con la Ley de Desalojo: causa justificada y aviso."
+  },
+  "r-0084": {
+   "answer_tenant": "Your landlord must give the County Welfare Board at least three (3) working days’ notice before starting your eviction.",
+   "answer_owner": "You must give the County Welfare Board at least three (3) working days’ notice before starting an eviction action.",
+   "dropped": [],
+   "source_quote_sha": "5a1a37d1256228bec3a35b4af9a05ce872d99b1c51da7e9f69474bd7548794ea",
+   "answer_tenant_es": "Su arrendador debe avisar a la Junta de Bienestar del Condado mínimo 3 días hábiles antes de iniciar su desalojo.",
+   "answer_owner_es": "Usted debe avisar a la Junta de Bienestar del Condado al menos 3 días hábiles antes de iniciar un desalojo."
+  },
+  "r-0085": {
+   "answer_tenant": "Your landlord owes you three (3) times your damages plus attorney fees if they let another tenant occupy instead.",
+   "answer_owner": "You must pay three (3) times a former tenant's damages plus attorney fees if you let another tenant occupy.",
+   "dropped": [],
+   "source_quote_sha": "fe45dde96e2c5fb60affe4d6831d87f8c3959baeca6504101f229b6aef165e23",
+   "answer_tenant_es": "Su arrendador debe pagarle tres (3) veces sus daños más honorarios de abogado si deja ocupar a otro inquilino.",
+   "answer_owner_es": "Usted debe pagar tres (3) veces los daños del inquilino anterior más honorarios de abogado si permite que otro ocupe."
+  },
+  "r-0086": {
+   "answer_tenant": "After you vacate following a demolition or retirement notice, your landlord cannot use it residentially for five (5) years.",
+   "answer_owner": "After a tenant vacates following your notice, you must not use the property residentially for five (5) years.",
+   "dropped": [],
+   "source_quote_sha": "ebbb3b2b8e7474996beff2321efb0f1fb1df2d6e7bee0bc0332a6f4631adbbf0",
+   "answer_tenant_es": "Tras desocupar por un aviso de demolición o retiro, su arrendador no puede usarla como vivienda durante cinco (5) años.",
+   "answer_owner_es": "Si un inquilino desocupa tras su aviso, usted no debe usar la propiedad como vivienda durante cinco (5) años."
+  },
+  "r-0087": {
+   "answer_tenant": "Before evicting you after foreclosure, your landlord must give a 90-day notice to quit when the buyer will live there.",
+   "answer_owner": "You must give a tenant a 90-day notice to quit before foreclosure-based eviction when the buyer will live there.",
+   "dropped": [],
+   "source_quote_sha": "2084a38d4c5d528505d237de6067402aa8d58c5381ec858c88fe4f843abd95c2",
+   "answer_tenant_es": "Antes de desalojarle por ejecución hipotecaria, su arrendador debe avisarle con 90 días para desocupar si el comprador vivirá allí.",
+   "answer_owner_es": "Debe dar a su inquilino aviso de 90 días antes de desalojarlo por ejecución hipotecaria si el comprador vivirá allí."
+  },
+  "r-0088": {
+   "answer_tenant": "You may be protected from eviction for 40 years if your family income is within the legal limit.",
+   "answer_owner": "You may be barred from evicting tenants for 40 years if their family income is within the legal limit.",
+   "dropped": [],
+   "source_quote_sha": "63cdad74ba5fc0ae9ac17d9a8dca26ba9a875735b92fad64730e9bbd2164ea53",
+   "answer_tenant_es": "Usted podría estar protegido del desalojo por 40 años si los ingresos de su familia están dentro del límite legal.",
+   "answer_owner_es": "Usted podría tener prohibido desalojar a inquilinos por 40 años si sus ingresos familiares están dentro del límite legal."
+  },
+  "r-0089": {
+   "answer_tenant": null,
+   "answer_owner": null,
+   "dropped": [
+    "tenant: no_answer",
+    "owner: no_answer"
+   ],
+   "source_quote_sha": "7e71fc2de4f6b7b288d8035ca41d4a32ff0321acdb19dc04e0a6870f8b4c4a36"
+  },
+  "r-0090": {
+   "answer_tenant": "Your rent increase cannot be unconscionable, meaning shockingly unreasonable, and must follow any local rent increase ordinances.",
+   "answer_owner": "You may not impose an unconscionable rent increase, and you must follow any municipal ordinances governing rent increases.",
+   "dropped": [],
+   "source_quote_sha": "e8dd5866fdaca4a729b706a65bc9c7b986555ba98509fd8961719831147c6cc9",
+   "answer_tenant_es": "Su aumento de renta no puede ser abusivo (escandalosamente irrazonable) y debe seguir las ordenanzas locales sobre aumentos de renta.",
+   "answer_owner_es": "Usted no puede imponer un aumento de renta abusivo y debe cumplir las ordenanzas municipales sobre aumentos de renta."
+  },
+  "r-0091": {
+   "answer_tenant": "Your landlord cannot raise your rent to cover costs resulting solely from your building's condominium or cooperative conversion.",
+   "answer_owner": "You may not raise rents to cover costs resulting solely from converting your building to condominium or cooperative ownership.",
+   "dropped": [],
+   "source_quote_sha": "858093577c112a90f0292702042f6f59d63738de9ad592efc1dfe87889ec496b",
+   "answer_tenant_es": "Su arrendador no puede subir su renta por costos derivados solo de convertir su edificio en condominio o cooperativa.",
+   "answer_owner_es": "Usted no puede subir las rentas para cubrir costos derivados solo de convertir su edificio en condominio o cooperativa."
+  },
+  "r-0092": {
+   "answer_tenant": null,
+   "answer_owner": null,
+   "dropped": [
+    "tenant: no_answer",
+    "owner: no_answer"
+   ],
+   "source_quote_sha": "739231bb4e8acae82ebd3d3d2581f1e164adc2d49f7c66b5bc5fde7837805045"
+  },
+  "r-0093": {
+   "answer_tenant": "Your landlord cannot ask you, orally or in writing, about your criminal record before making you a conditional offer.",
+   "answer_owner": "You may not make any oral or written inquiry about an applicant's criminal record before making a conditional offer.",
+   "dropped": [],
+   "source_quote_sha": "620ff6a89d88637d73acf6240e8fc4ab16d6164a06a2d82c382c25073919cd68",
+   "answer_tenant_es": "Su arrendador no puede preguntarle, de forma oral o escrita, sobre sus antecedentes penales antes de hacerle una oferta condicional.",
+   "answer_owner_es": "Usted no puede preguntar, oral ni por escrito, sobre los antecedentes penales del solicitante antes de hacerle una oferta condicional."
+  },
+  "r-0094": {
+   "answer_tenant": "Before accepting any application fee from you, a housing provider must disclose certain information to you in writing.",
+   "answer_owner": "You must disclose certain information in writing to the applicant before accepting any application fee.",
+   "dropped": [],
+   "source_quote_sha": "d184846d112bcebb1b9e4327dbd7316b5cd21f99a3acf9e75a74f60a7e478e3b",
+   "answer_tenant_es": "Antes de aceptar cualquier cargo por solicitud de usted, el proveedor de vivienda debe informarle por escrito cierta información.",
+   "answer_owner_es": "Usted debe informar por escrito al solicitante cierta información antes de aceptar cualquier cargo por solicitud."
+  },
+  "r-0095": {
+   "answer_tenant": "Your landlord cannot evaluate you based on certain types of criminal records, whether before or after a conditional offer.",
+   "answer_owner": "You may not evaluate an applicant based on certain types of criminal records, before or after a conditional offer.",
+   "dropped": [],
+   "source_quote_sha": "1ecdd1d331a420f329251e89d084f6fb2a3bc7747dbb3a200816c5968ad75aed",
+   "answer_tenant_es": "Su arrendador no puede evaluarlo según ciertos tipos de antecedentes penales, ni antes ni después de una oferta condicional.",
+   "answer_owner_es": "Usted no puede evaluar a un solicitante según ciertos tipos de antecedentes penales, antes o después de una oferta condicional."
+  },
+  "r-0096": {
+   "answer_tenant": "After you get a conditional offer, your landlord may only consider certain parts of your criminal record.",
+   "answer_owner": "After you issue a conditional offer to an applicant, you may only consider certain criminal record history.",
+   "dropped": [],
+   "source_quote_sha": "78f0d7ae4b2e77365e62f73edaa00a2590342b0e852176cbbe3e5cae6574740d",
+   "answer_tenant_es": "Después de recibir una oferta condicional, su arrendador solo puede considerar ciertas partes de su historial penal.",
+   "answer_owner_es": "Después de emitir una oferta condicional a un solicitante, usted solo puede considerar cierto historial penal."
+  },
+  "r-0097": {
+   "answer_tenant": "Your landlord can withdraw a conditional offer over your criminal record only if truly necessary for a legitimate interest.",
+   "answer_owner": "You may withdraw a conditional offer over a criminal record only if necessary for a substantial, legitimate, nondiscriminatory interest.",
+   "dropped": [],
+   "source_quote_sha": "4ff18b594cf6bf03520c5d59f27058406ed843f9f8ba924a50e059b86e740687",
+   "answer_tenant_es": "Su arrendador solo puede retirar una oferta condicional por sus antecedentes penales si es realmente necesario para un interés legítimo.",
+   "answer_owner_es": "Usted solo puede retirar una oferta condicional por antecedentes penales si es necesario para un interés sustancial, legítimo, no discriminatorio."
+  },
+  "r-0098": {
+   "answer_tenant": "Your landlord cannot knowingly publish an ad saying they won't consider applicants with arrests or convictions.",
+   "answer_owner": "You may not knowingly publish a housing ad saying you won't consider applicants with arrests or convictions.",
+   "dropped": [],
+   "source_quote_sha": "134a97bb85892a6775f2dd660d9d8acba88c6c077ed8ba6ffc5c4eebff94559d",
+   "answer_tenant_es": "Su arrendador no puede publicar a sabiendas un anuncio que diga que no considerará solicitantes con arrestos o condenas.",
+   "answer_owner_es": "Usted no puede publicar a sabiendas un anuncio de vivienda que diga que no considerará solicitantes con arrestos o condenas."
+  },
+  "r-0099": {
+   "answer_tenant": "Your landlord cannot make you take a drug or alcohol test or ask consent for drug treatment records.",
+   "answer_owner": "You may not require applicants to take a drug or alcohol test or request consent for drug treatment records.",
+   "dropped": [],
+   "source_quote_sha": "10effe04dd2c756f8f8df8e2892af37947f32d7e3f55959f8c19354bfe8dee38",
+   "answer_tenant_es": "Su arrendador no puede exigirle pruebas de drogas o alcohol ni pedir consentimiento para registros de tratamiento de drogas.",
+   "answer_owner_es": "Usted no puede exigir a solicitantes pruebas de drogas o alcohol ni pedir consentimiento para registros de tratamiento de drogas."
+  },
+  "r-0100": {
+   "answer_tenant": "Your landlord cannot discriminate in renting housing and must treat you equally regardless of your source of lawful income.",
+   "answer_owner": "You may not discriminate when renting property, and you must treat applicants equally regardless of their source of lawful income.",
+   "dropped": [],
+   "source_quote_sha": "1122b1562b2624dd69c507e0660b7ea2b1c013531e22d43d08e8f9561eae2916",
+   "answer_tenant_es": "Su arrendador no puede discriminar al alquilar vivienda y debe tratarle igual sin importar su fuente de ingresos legales.",
+   "answer_owner_es": "Usted no puede discriminar al alquilar y debe tratar igual a los solicitantes sin importar su fuente de ingresos legales."
+  },
+  "r-0101": {
+   "answer_tenant": "Your landlord cannot deny you housing based solely on your lawful income source, like a Section 8 voucher.",
+   "answer_owner": "You cannot deny someone housing based solely on their lawful income source, like a Section 8 voucher.",
+   "dropped": [],
+   "source_quote_sha": "d12009643fc86c31d0a71899341a35064213b92df083890ade3775357510203f",
+   "answer_tenant_es": "Su arrendador no puede negarle vivienda únicamente por su fuente legal de ingresos, como un vale de la Sección 8.",
+   "answer_owner_es": "Usted no puede negar vivienda únicamente por la fuente legal de ingresos, como un vale de la Sección 8."
+  },
+  "r-0102": {
+   "answer_tenant": "Your deposit can't exceed one and one-half times one month's rent, with yearly increases capped at 10%.",
+   "answer_owner": "You cannot collect a deposit above one and one-half times one month's rent, and yearly increases may not exceed 10%.",
+   "dropped": [],
+   "source_quote_sha": "6a52eb873b7445a88dab899215169e6a3f38ae74bdcc89e025d35ace5a0892a9",
+   "answer_tenant_es": "Su depósito máximo es una vez y media la renta mensual, con aumentos anuales de hasta 10%.",
+   "answer_owner_es": "Usted no puede cobrar depósito superior a una vez y media la renta mensual, ni aumentos anuales superiores al 10%."
+  },
+  "r-0103": {
+   "answer_tenant": "Your deposit plus first month's rent can total no more than two and one-half times monthly rent at lease start.",
+   "answer_owner": "You cannot require deposit plus first month's rent totaling more than two and one-half times monthly rent at lease start.",
+   "dropped": [],
+   "source_quote_sha": "55793c0239a18f5c15b34e6e904afdae13237b892ac2b7d6326f1a21345a5329",
+   "answer_tenant_es": "Su depósito y la primera renta no pueden superar dos veces y media la renta mensual al iniciar el contrato.",
+   "answer_owner_es": "Usted no puede exigir depósito y primera renta que superen dos veces y media la renta mensual al inicio."
+  },
+  "r-0104": {
+   "answer_tenant": "Your landlord must keep your deposit in an insured, interest-bearing account at a New Jersey bank or savings and loan.",
+   "answer_owner": "You must deposit tenant security money in an insured, interest-bearing account at a New Jersey bank or savings and loan.",
+   "dropped": [],
+   "source_quote_sha": "32e5d00b6c9fa885591d0b998bbfcce08f7037bb37c5d571b3c6bc87bb163939",
+   "answer_tenant_es": "Su depósito debe estar en un banco o caja de ahorros de Nueva Jersey, en una cuenta asegurada con intereses.",
+   "answer_owner_es": "Usted debe depositar la fianza en un banco o caja de ahorros de Nueva Jersey, en cuenta asegurada con intereses."
+  },
+  "r-0105": {
+   "answer_tenant": "Your landlord must return your security deposit, plus interest earned less deductions, within 30 days after your tenancy ends.",
+   "answer_owner": "You must return the tenant's security deposit, plus interest earned less deductions, within 30 days after the tenancy ends.",
+   "dropped": [],
+   "source_quote_sha": "86cbbf4d91d1d8badbda0f33b3125a302edb69595b71bf0e1bc2fc2f1e3ac555",
+   "answer_tenant_es": "Su arrendador debe devolverle el depósito de garantía, más intereses ganados menos deducciones, en 30 días tras terminar su arrendamiento.",
+   "answer_owner_es": "Usted debe devolver el depósito del inquilino, más intereses ganados menos deducciones, en 30 días tras terminar el arrendamiento."
+  },
+  "r-0106": {
+   "answer_tenant": "Your landlord must return your security deposit within five (5) business days after fire, flood, condemnation, or evacuation displaces you.",
+   "answer_owner": "You must return the tenant's security deposit within five (5) business days after fire, flood, condemnation, or evacuation displaces them.",
+   "dropped": [],
+   "source_quote_sha": "c5327173f9579abdf9d61bca0c4adfd5f5c79823b9aeffe1a0502ee61f616869",
+   "answer_tenant_es": "Tras un desplazamiento por incendio, inundación, condena o evacuación, su arrendador debe devolver su depósito en cinco (5) días hábiles.",
+   "answer_owner_es": "Usted debe devolver el depósito en cinco (5) días hábiles tras un desplazamiento por incendio, inundación, condena o evacuación."
+  },
+  "r-0107": {
+   "answer_tenant": "A pending proposal would make selling coordinated pricing algorithms that set or recommend rents to your landlord unlawful.",
+   "answer_owner": null,
+   "dropped": [
+    "owner: no_answer"
+   ],
+   "source_quote_sha": "98f1a8bdc882bc6c4a64ee5588f950288926584aa8e8b3e5d564d9d6d8e4e7c9",
+   "answer_tenant_es": "Una propuesta pendiente haría ilegal vender a su arrendador algoritmos de precios coordinados que fijan o recomiendan alquileres."
+  },
+  "r-0108": {
+   "answer_tenant": "A pending proposal would make it unlawful for your landlord to use a coordinated pricing algorithm when setting your rent.",
+   "answer_owner": "If passed, this proposal would bar you from using a coordinated pricing algorithm to set rents or occupancy levels.",
+   "dropped": [],
+   "source_quote_sha": "fc877743e95f4f2a9a89a3eec44ba4b7ade4f1109afed03e71e8ad295501d908",
+   "answer_tenant_es": "Una propuesta pendiente haría ilegal que su arrendador use un algoritmo de precios coordinado al fijar su renta.",
+   "answer_owner_es": "Si se aprueba, esta propuesta le prohibiría usar un algoritmo de precios coordinado para fijar rentas o niveles de ocupación."
+  },
+  "r-0109": {
+   "answer_tenant": "Before taking a screening fee, your landlord must give you a fee rights statement and the maximum fee cap.",
+   "answer_owner": "Before receiving a screening fee, you must give applicants a fee rights statement and the maximum fee cap.",
+   "dropped": [],
+   "source_quote_sha": "df3d29d4c1a826534598672cf5c2c736f6436df457b8e39b117ee210f25c5f02",
+   "answer_tenant_es": "Antes de cobrar la tarifa de evaluación, su arrendador debe darle una declaración de derechos y el límite máximo.",
+   "answer_owner_es": "Antes de recibir la tarifa, usted debe darles a los solicitantes una declaración de derechos y el límite máximo."
+  },
+  "r-0110": {
+   "answer_tenant": "Your landlord cannot charge you a non-refundable fee to renew your tenancy, including roommate departure, addition or replacement fees.",
+   "answer_owner": "You cannot charge existing tenants a non-refundable renewal fee, including fees for a roommate's departure, addition or replacement.",
+   "dropped": [],
+   "source_quote_sha": "a65c23cd6ff04420cb02f6bc7c1a6b366b8371f5f65052feca72620dd603b46f",
+   "answer_tenant_es": "Su arrendador no puede cobrarle tarifas no reembolsables por renovar, incluso por salida, adición o reemplazo de compañeros de cuarto.",
+   "answer_owner_es": "Usted no puede cobrar a inquilinos actuales tarifas no reembolsables de renovación, incluso por salida, adición o reemplazo de compañeros."
+  },
+  "r-0111": {
+   "answer_tenant": "If your landlord evicts you for an owner move-in, your landlord must pay you relocation assistance.",
+   "answer_owner": "You must pay your tenant relocation assistance if you evict them for an owner move-in.",
+   "dropped": [],
+   "source_quote_sha": "1e4a1dc7a3a32ba7b0d56ca5cf23cf457594a91af123f345a5384ad48dcf9dec",
+   "answer_tenant_es": "Si su arrendador lo desaloja para mudarse él mismo a la vivienda, debe pagarle asistencia de reubicación.",
+   "answer_owner_es": "Usted debe pagar asistencia de reubicación a su inquilino si lo desaloja para mudarse usted mismo a la vivienda."
+  },
+  "r-0112": {
+   "answer_tenant": "If your landlord evicts you to remove the property from the rental market, you get the same relocation assistance payments.",
+   "answer_owner": "You must pay the same relocation assistance to tenants you evict to remove a property from the rental market.",
+   "dropped": [],
+   "source_quote_sha": "ddf253000f1ae5b98bad6dedde4e73d775e04091216ac693746519d7ccda19e8",
+   "answer_tenant_es": "Si le desalojan para retirar la propiedad del mercado de alquiler, recibe los mismos pagos de asistencia de reubicación.",
+   "answer_owner_es": "Usted debe pagar la misma asistencia de reubicación a inquilinos que desaloje para retirar una propiedad del mercado de alquiler."
+  },
+  "r-0113": {
+   "answer_tenant": "Your landlord can evict you for nonpayment only if you owe at least one month of Fair Market Rent.",
+   "answer_owner": "You may not evict for nonpayment unless your tenant owes at least one month of Fair Market Rent.",
+   "dropped": [],
+   "source_quote_sha": "b47c8c90b8b1f892a2b32dc9943b24a17e0a3fda82c561a8aab27557e58a29d5",
+   "answer_tenant_es": "Su arrendador solo puede desalojarlo por falta de pago si debe al menos un mes de Alquiler de Mercado Justo.",
+   "answer_owner_es": "Solo puede desalojar por falta de pago si su inquilino debe al menos un mes de Alquiler de Mercado Justo."
+  },
+  "r-0114": {
+   "answer_tenant": "Your landlord cannot evict you for not signing a substantially similar lease when your fixed-term lease expires.",
+   "answer_owner": "You cannot evict a tenant for failing to sign a substantially similar lease when a fixed-term lease expires.",
+   "dropped": [],
+   "source_quote_sha": "ca01fd6ca069fc37608c04546352f0510915b6a3d9676152ea8356c30affbc90",
+   "answer_tenant_es": "Su arrendador no puede desalojarlo por no firmar un arrendamiento sustancialmente similar cuando vence su arrendamiento de plazo fijo.",
+   "answer_owner_es": "Usted no puede desalojar al inquilino por no firmar un arrendamiento sustancialmente similar al vencer su arrendamiento de plazo fijo."
+  },
+  "r-0115": {
+   "answer_tenant": "Your landlord's notice to stop a violation must name the lease term and clearly describe the violation and harm.",
+   "answer_owner": "You must give a notice naming the lease term and clearly describing the violation and harm before serving eviction notice.",
+   "dropped": [],
+   "source_quote_sha": "c0de33b6916b2b41b2746664dbde8fbf07cbde913408c18cf693bfa17fd9ec87",
+   "answer_tenant_es": "El aviso de su arrendador para cesar la infracción debe nombrar la cláusula y describir claramente infracción y daño.",
+   "answer_owner_es": "Antes del aviso de desalojo, usted debe dar un aviso que nombre la cláusula y describa claramente infracción y daño."
+  },
+  "r-0116": {
+   "answer_tenant": "Your landlord's termination notice must say Rent Board advice is available and list its counseling phone number and website.",
+   "answer_owner": "You must include in any termination notice that Rent Board advice is available, plus its counseling phone number and website.",
+   "dropped": [],
+   "source_quote_sha": "020094667abfb7a21dfce95026ef960dcb2dadc73db99a502c9af346d2623795",
+   "answer_tenant_es": "El aviso de terminación de su arrendador debe decir que Rent Board asesora, con teléfono de consejería y sitio web.",
+   "answer_owner_es": "Usted debe indicar en todo aviso de terminación que Rent Board asesora, con su teléfono de consejería y sitio web."
+  },
+  "r-0117": {
+   "answer_tenant": null,
+   "answer_owner": null,
+   "dropped": [
+    "tenant: too_long:23_words",
+    "owner: too_long:22_words"
+   ],
+   "source_quote_sha": "5bd14ebe8ded8d12d25333942ee5b8edf22a9164d43ccde3cb5a2f5b96ee0bba"
+  },
+  "r-0118": {
+   "answer_tenant": "Your owner move-in eviction relocation assistance amount is adjusted for inflation every year by the Rent Board.",
+   "answer_owner": null,
+   "dropped": [
+    "owner: no_answer"
+   ],
+   "source_quote_sha": "f8c5343861d303874ef2205a6986254be13d30c9ef697746dc8dd35ff7d90861",
+   "answer_tenant_es": "La Junta de Alquileres ajusta cada año por inflación su asistencia de reubicación por desalojo por mudanza del propietario."
+  },
+  "r-0119": {
+   "answer_tenant": "A coverage guide explains whether your rental falls under the rent stabilization and just cause eviction ordinance.",
+   "answer_owner": null,
+   "dropped": [
+    "owner: no_answer"
+   ],
+   "source_quote_sha": "d4172fe71b12c2d7a9379e76934dbcccd4d3921be0883309542d322ec21431ae",
+   "answer_tenant_es": "Una guía explica si su alquiler está cubierto por la ordenanza de estabilización de alquileres y desalojo por causa justa."
+  },
+  "r-0120": {
+   "answer_tenant": "Your landlord can only petition for a rent increase for capital improvements that are already completed, not for planned ones.",
+   "answer_owner": "You can only petition for a rent increase for completed capital improvements, not to preliminarily authorize increases for planned ones.",
+   "dropped": [],
+   "source_quote_sha": "93e28d63109740806c45c055e751243af6f2589baf27c99d005c403ffad65585",
+   "answer_tenant_es": "Su arrendador solo puede solicitar un aumento de renta por mejoras de capital ya terminadas, no por las planeadas.",
+   "answer_owner_es": "Usted solo puede pedir aumento de renta por mejoras de capital terminadas, no autorización previa de aumentos por mejoras planeadas."
+  },
+  "r-0121": {
+   "answer_tenant": "Your landlord's yearly general rent increase can be no more than 5%, even if the formula gives a higher number.",
+   "answer_owner": "You can raise rent by no more than 5% through the annual general adjustment, even if the formula gives more.",
+   "dropped": [],
+   "source_quote_sha": "ae3578383f102608943e81bf35375317fc53741c3bc2d809cfe7e0a068d390ae",
+   "answer_tenant_es": "El aumento general anual que le aplique su arrendador no puede pasar de 5%, aunque la fórmula dé más.",
+   "answer_owner_es": "Usted puede subir la renta no más de 5% con el ajuste general anual, aunque la fórmula dé más."
+  },
+  "r-0122": {
+   "answer_tenant": "Your landlord can raise your 2025 permanent rent ceiling by 1.0% no earlier than January 1, 2026.",
+   "answer_owner": "You can raise the 2025 permanent rent ceilings by no more than 1.0%, and no earlier than January 1, 2026.",
+   "dropped": [],
+   "source_quote_sha": "044ced40388dc1eefc76d4e0b6a6944af4c8ca28e5c6b08a8b602de8ee8ee21c",
+   "answer_tenant_es": "Su arrendador puede subir 1.0% su límite de renta permanente de 2025, no antes del 1 de enero de 2026.",
+   "answer_owner_es": "Usted puede aumentar los límites de renta permanentes de 2025 hasta 1.0%, no antes del 1 de enero de 2026."
+  },
+  "r-0123": {
+   "answer_tenant": "Rent control fully covers most units in multifamily properties built before 1980, and your landlord must follow it.",
+   "answer_owner": "You must follow rent control rules for most units in multifamily properties built before 1980, which are fully covered.",
+   "dropped": [],
+   "source_quote_sha": "0113470db307b0c44d0570815d6e06418b7c174395f508b5e472dce79a206461",
+   "answer_tenant_es": "El control de alquileres cubre totalmente la mayoría de unidades multifamiliares construidas antes de 1980, y su arrendador debe cumplirlo.",
+   "answer_owner_es": "Usted debe cumplir el control de alquileres, que cubre totalmente la mayoría de unidades multifamiliares construidas antes de 1980."
+  },
+  "r-0124": {
+   "answer_tenant": "Your landlord cannot ask about or use your criminal history or background checks when advertising, screening, or choosing tenants.",
+   "answer_owner": "You may not ask about or use criminal history or background checks in advertising, applications, tenant selection, or decision-making.",
+   "dropped": [],
+   "source_quote_sha": "6787a930ad888326d1461eff323bbe870c50e002ec9d8965c2d5f4097e81f429",
+   "answer_tenant_es": "Su arrendador no puede preguntar sobre su historial penal ni usar verificaciones de antecedentes al anunciar, evaluar o elegir inquilinos.",
+   "answer_owner_es": "Usted no puede preguntar ni usar historial penal o verificaciones de antecedentes en anuncios, solicitudes, selección de inquilinos o decisiones."
+  },
+  "r-0125": {
+   "answer_tenant": "Your landlord must give you written notice and a chance to respond before acting against you over criminal history.",
+   "answer_owner": "You must give applicants or tenants written notice and a chance to respond if you act on criminal history.",
+   "dropped": [],
+   "source_quote_sha": "cfdebffbf5b60b5fc34226d929ff8320f42f06671ad171faac77ba69051176e6",
+   "answer_tenant_es": "Su arrendador debe darle aviso por escrito y oportunidad de responder antes de actuar en su contra por antecedentes penales.",
+   "answer_owner_es": "Usted debe dar a solicitantes o inquilinos aviso por escrito y oportunidad de responder si actúa por sus antecedentes penales."
+  },
+  "r-0126": {
+   "answer_tenant": "Your landlord must pay you interest on your security deposit yearly, plus a prorated amount if you move out early.",
+   "answer_owner": "You must pay your tenant security deposit interest each year, plus a prorated amount if they move out early.",
+   "dropped": [],
+   "source_quote_sha": "109fbda7ec447815eab79ffaedb1b1cc5f4eda4e91e2c827dc27857838ffc629",
+   "answer_tenant_es": "Su arrendador debe pagarle intereses por su depósito de seguridad cada año, más una parte proporcional si se muda antes.",
+   "answer_owner_es": "Debe pagar a su inquilino intereses del depósito de seguridad cada año, más una parte proporcional si se muda antes."
+  },
+  "r-0127": {
+   "answer_tenant": "Your landlord cannot end your tenancy without just cause, and must pay you relocation assistance for no-fault evictions.",
+   "answer_owner": "You may not end a tenancy without just cause, and you must pay relocation assistance for no-fault evictions.",
+   "dropped": [],
+   "source_quote_sha": "d9e0b541a38f5e600ac8dd97c3e6b3a74b58cd66b08ab3cb45bf1a4fa73c93b4",
+   "answer_tenant_es": "Su arrendador no puede terminar su arrendamiento sin causa justificada y debe pagarle asistencia de reubicación por desalojos sin culpa.",
+   "answer_owner_es": "Usted no puede terminar un arrendamiento sin causa justificada y debe pagar asistencia de reubicación por desalojos sin culpa."
+  },
+  "r-0128": {
+   "answer_tenant": "Your landlord cannot evict you for unpaid rent unless you owe more than the Fair Market Rent for your unit.",
+   "answer_owner": "You may not evict a tenant for unpaid rent unless they owe more than the Fair Market Rent.",
+   "dropped": [],
+   "source_quote_sha": "86bd524c7aff9395b398d19bfca8e4d5abf85c2d111f8984f832f70f910e6a16",
+   "answer_tenant_es": "Su arrendador no puede desalojarlo por renta impaga salvo que deba más que el Fair Market Rent de su unidad.",
+   "answer_owner_es": "Usted no puede desalojar a un inquilino por renta impaga a menos que deba más que el Fair Market Rent."
+  },
+  "r-0129": {
+   "answer_tenant": "Your landlord must file any eviction notice with LAHD within three (3) business days of serving you.",
+   "answer_owner": "You must file every eviction notice with LAHD within three (3) business days of serving the tenant.",
+   "dropped": [],
+   "source_quote_sha": "5c06e487ec88d362203b997745a970abb1999c0d662a647788c856a2a081e8a4",
+   "answer_tenant_es": "Su arrendador debe presentar ante LAHD todo aviso de desalojo dentro de tres (3) días hábiles de notificarle.",
+   "answer_owner_es": "Usted debe presentar ante LAHD todo aviso de desalojo dentro de tres (3) días hábiles de notificarlo al inquilino."
+  },
+  "r-0130": {
+   "answer_tenant": "Your landlord must file eviction notices with the Los Angeles Housing Department within a required time period.",
+   "answer_owner": "You must file eviction notices with the Los Angeles Housing Department within the required time period.",
+   "dropped": [],
+   "source_quote_sha": "519a786c82a8344ae90beea238a693fba909d68a9d9d22c25bad6871ec37821c",
+   "answer_tenant_es": "Su arrendador debe presentar los avisos de desalojo al Departamento de Vivienda de Los Ángeles dentro de un plazo requerido.",
+   "answer_owner_es": "Usted debe presentar los avisos de desalojo al Departamento de Vivienda de Los Ángeles dentro del plazo requerido."
+  },
+  "r-0131": {
+   "answer_tenant": "Your landlord must give you 30-day and 60-day written notice, and some evictions require 120-day notice.",
+   "answer_owner": "You must give your tenant 30-day and 60-day written notice, and some evictions require 120-day notice.",
+   "dropped": [
+    "owner_es: more_than_one_sentence"
+   ],
+   "source_quote_sha": "26e0e48868bca3a90fa21ac095213a9c0b5a41a8519e7245b2d449629baa310f",
+   "answer_tenant_es": "Su arrendador debe darle aviso escrito de 30 y 60 días, y algunos desalojos requieren aviso de 120 días."
+  },
+  "r-0132": {
+   "answer_tenant": "Your landlord must file the Declaration with LAHD before serving your termination notice, then a copy within 3 days.",
+   "answer_owner": "You must file the Declaration with LAHD before serving a termination notice, then file a copy within 3 days.",
+   "dropped": [],
+   "source_quote_sha": "03058a217eb62bd3d11706ccf357903bd2f12cb4c6bf9cf75059567f318bbd52",
+   "answer_tenant_es": "Su arrendador debe presentar la Declaración ante LAHD antes de notificarle la terminación y luego una copia en 3 días.",
+   "answer_owner_es": "Usted debe presentar la Declaración ante LAHD antes de notificar una terminación y luego presentar una copia en 3 días."
+  },
+  "r-0133": {
+   "answer_tenant": "Your landlord must give you one month's rent in effect when your termination notice was served, as payment or credit.",
+   "answer_owner": "You must give your tenant one month's rent in effect when you served the termination notice, as payment or credit.",
+   "dropped": [],
+   "source_quote_sha": "c6312f188cc6dc8cb2198b3af0b5354b507ba113cd00617492b759a136ec6ebe",
+   "answer_tenant_es": "Su arrendador debe darle un mes de renta vigente al notificarle la terminación, como pago o crédito.",
+   "answer_owner_es": "Usted debe darle a su inquilino un mes de renta vigente al notificar la terminación, como pago o crédito."
+  },
+  "r-0134": {
+   "answer_tenant": "Your landlord's reduced Mom and Pop fee applies only to evictions for owner or eligible relative occupancy under set conditions.",
+   "answer_owner": null,
+   "dropped": [
+    "owner: no_answer"
+   ],
+   "source_quote_sha": "e7a7e7a7253384274ce3d30f6da7a5cb9354483dfb4a12d8f11101c6cfa7157d",
+   "answer_tenant_es": "La tarifa reducida Mom and Pop solo aplica a su desalojo por ocupación del dueño o pariente elegible, con condiciones."
+  },
+  "r-0135": {
+   "answer_tenant": "If you are displaced for a no-fault reason described in the bulletin, the listed relocation amounts apply.",
+   "answer_owner": "You must follow the relocation amounts when a tenant is displaced for a no-fault reason described in the bulletin.",
+   "dropped": [],
+   "source_quote_sha": "f80cf853947622f80c12499619d31cdad47c5d58f6b2365efe6c5517dbc530a7",
+   "answer_tenant_es": "Si usted es desplazado por una razón sin culpa descrita en el boletín, se aplican los montos de reubicación indicados.",
+   "answer_owner_es": "Usted debe seguir los montos de reubicación si un inquilino es desplazado por razones sin culpa descritas en el boletín."
+  },
+  "r-0136": {
+   "answer_tenant": "Your landlord must make your relocation payment available within fifteen (15) days of serving you the written eviction notice.",
+   "answer_owner": "You must make the relocation payment available within fifteen (15) days of serving the written notice of eviction.",
+   "dropped": [],
+   "source_quote_sha": "bd37e3aa1babb2af054f08994b7edfc64796603acea4a42d6d405d66d39a86bb",
+   "answer_tenant_es": "Su arrendador debe tener disponible su pago de reubicación dentro de 15 días de entregarle el aviso escrito de desalojo.",
+   "answer_owner_es": "Usted debe tener disponible el pago de reubicación dentro de 15 días de entregar el aviso escrito de desalojo."
+  },
+  "r-0137": {
+   "answer_tenant": null,
+   "answer_owner": null,
+   "dropped": [
+    "tenant: too_long:21_words",
+    "owner: too_long:21_words"
+   ],
+   "source_quote_sha": "d7149eca28ff26a5af1e6a343ffb60033a7a53f5b380f1063a42ede29218eb93"
+  },
+  "r-0138": {
+   "answer_tenant": "You have rights to relocation, to remain up to 6 months before construction, and to return if demolition doesn't proceed.",
+   "answer_owner": "You must provide occupants relocation, a 6-month move-out notice, and return rights if demolition does not proceed.",
+   "dropped": [],
+   "source_quote_sha": "a63430c13e69de7f21c8f69712bba96bbc43e9f13eeeffebf9ded107f52f365d",
+   "answer_tenant_es": "Usted tiene derecho a reubicación, a permanecer hasta 6 meses antes de construir y a regresar si no se demuele.",
+   "answer_owner_es": "Usted debe dar a los ocupantes reubicación, aviso de 6 meses para mudarse y regreso si no se demuele."
+  },
+  "r-0139": {
+   "answer_tenant": "Your landlord must follow relocation requirements if they demolish your unit for new construction within 5 years after filing notices.",
+   "answer_owner": "You must follow relocation requirements if you demolish a Protected Unit for new construction within 5 years after filing.",
+   "dropped": [],
+   "source_quote_sha": "610e44d9bc009de4cc26391e795d68f0a8c49a32ab57f68449954c7c3f9ab2f0",
+   "answer_tenant_es": "Su arrendador debe cumplir requisitos de reubicación si demuele su unidad para construir dentro de 5 años tras presentar avisos.",
+   "answer_owner_es": "Usted debe cumplir requisitos de reubicación si demuele una Unidad Protegida para construir dentro de 5 años tras presentar avisos."
+  },
+  "r-0140": {
+   "answer_tenant": "Your landlord's relocation assistance for an eligible tenant is listed as $11,000 or $14,400 under current law.",
+   "answer_owner": "You must pay relocation assistance of $11,000 or $14,400 to an eligible tenant.",
+   "dropped": [],
+   "source_quote_sha": "8b3069a4ef4154be22d93ff3fbc94152885568d3cd312c0b00053197a9496613",
+   "answer_tenant_es": "La asistencia de reubicación de su arrendador para un inquilino elegible figura como $11,000 o $14,400 en la ley vigente.",
+   "answer_owner_es": "Usted debe pagar asistencia de reubicación de $11,000 o $14,400 a un inquilino elegible."
+  },
+  "r-0141": {
+   "answer_tenant": null,
+   "answer_owner": "You must pay tenants the RSO or JCO relocation amounts within 15 days of filing your withdrawal or eviction notice.",
+   "dropped": [
+    "tenant: too_long:21_words"
+   ],
+   "source_quote_sha": "8ec464672c5cb2a074e4ae7306c90aea5da9bcb23ee5cffbc7fa826398b489d7",
+   "answer_owner_es": "Usted debe pagar a inquilinos montos RSO o JCO en 15 días de presentar su aviso de retiro o desalojo."
+  },
+  "r-0142": {
+   "answer_tenant": "If you are displaced for new construction, you should receive at least the RSO or JCO amounts.",
+   "answer_owner": "You must give tenants you displace for new construction at least the RSO or JCO relocation amounts.",
+   "dropped": [],
+   "source_quote_sha": "a9769435988c43020a9a1215f8191ece8c6b47b7fc40fe76775ed52fc22ac404",
+   "answer_tenant_es": "Si a usted lo desplazan por nueva construcción, debería recibir al menos los montos de la RSO o la JCO.",
+   "answer_owner_es": "Usted debe dar a inquilinos desplazados por nueva construcción al menos los montos de reubicación de RSO o JCO."
+  },
+  "r-0143": {
+   "answer_tenant": null,
+   "answer_owner": "You must make relocation payments available within 15 days of serving notice, or place them in escrow within that period.",
+   "dropped": [
+    "tenant: too_long:21_words"
+   ],
+   "source_quote_sha": "9d0f25fa8301dbf378894b604d5d681ec92d9d665a82f2fc94e1685438080ad1",
+   "answer_owner_es": "Usted debe poner a disposición los pagos de reubicación o depositarlos en custodia dentro de 15 días de la notificación."
+  },
+  "r-0144": {
+   "answer_tenant": "Your landlord may offset your accumulated rent against any relocation assistance owed to you.",
+   "answer_owner": null,
+   "dropped": [
+    "owner: no_answer"
+   ],
+   "source_quote_sha": "bbf269119823d1d0cc77212d80b4b6540fe02f74cbe19ef02816e58168f2a9b4",
+   "answer_tenant_es": "Su arrendador puede descontar su renta acumulada de cualquier asistencia de reubicación que se le deba."
+  },
+  "r-0145": {
+   "answer_tenant": "Your rent may be increased to the market rate if certain conditions involving you as the tenant are met.",
+   "answer_owner": null,
+   "dropped": [
+    "owner: no_answer"
+   ],
+   "source_quote_sha": "72fc55193f70315f7dc1c9f06ae8f98fb91bc31642265be958498f300806a2a1",
+   "answer_tenant_es": "Su renta puede aumentar al precio de mercado si usted, como inquilino, cumple ciertas condiciones."
+  },
+  "r-0146": {
+   "answer_tenant": "Your landlord can raise your rent only once every 12 months, and only by the allowable rent increase percentage.",
+   "answer_owner": "You may raise rent only once every 12 months, and only by the allowable rent increase percentage.",
+   "dropped": [],
+   "source_quote_sha": "0255fccc81a24ed9d837550faa070487f58746f54f73349782cb6575adce66c9",
+   "answer_tenant_es": "Su arrendador solo puede aumentar su renta una vez cada 12 meses y solo según el porcentaje de aumento permitido.",
+   "answer_owner_es": "Usted solo puede aumentar la renta una vez cada 12 meses y solo según el porcentaje de aumento permitido."
+  },
+  "r-0147": {
+   "answer_tenant": "Your landlord can no longer add an extra percentage increase to your rent for utilities, under current law.",
+   "answer_owner": "You may not include an additional percentage increase for utilities, effective February 2, 2026.",
+   "dropped": [],
+   "source_quote_sha": "a89e903cd04c1f08116d4613bb5bf608dd9a85db948e2c0b60a66d0124dc0063",
+   "answer_tenant_es": "Su arrendador ya no puede agregar a su alquiler un aumento porcentual adicional por servicios públicos, según la ley vigente.",
+   "answer_owner_es": "Usted no puede incluir un aumento porcentual adicional por servicios públicos, a partir del 2 de febrero de 2026."
+  },
+  "r-0148": {
+   "answer_tenant": "Your landlord could not raise rent on Rent Stabilization Ordinance units from March 30, 2020, through January 31, 2024.",
+   "answer_owner": "You may not raise rent on Rent Stabilization Ordinance units from March 30, 2020, through January 31, 2024.",
+   "dropped": [],
+   "source_quote_sha": "23738aa32bc263af48355245c6c41656f1c80d8d36fff46a858beb44107fa2a2",
+   "answer_tenant_es": "Su arrendador no pudo subir la renta RSO del 30 de marzo de 2020 al 31 de enero de 2024.",
+   "answer_owner_es": "Usted no puede subir rentas de unidades RSO del 30 de marzo de 2020 al 31 de enero de 2024."
+  },
+  "r-0149": {
+   "answer_tenant": "Your landlord cannot add a 10% increase for an added dependent, but may for an added non-dependent tenant.",
+   "answer_owner": "You may not charge a 10% increase for an additional dependent added to the tenancy.",
+   "dropped": [],
+   "source_quote_sha": "3efc042bad382eec78cd829cecf3e98a39957a0907266f42cb530078fa335c19",
+   "answer_tenant_es": "Su arrendador no puede añadir un aumento del 10% por un dependiente adicional, pero sí por un inquilino no dependiente.",
+   "answer_owner_es": "Usted no puede cobrar un aumento del 10% por un dependiente adicional agregado al arrendamiento."
+  },
+  "r-0150": {
+   "answer_tenant": "Your landlord can raise your rent by no more than 3% from July 1, 2025, through June 30, 2026.",
+   "answer_owner": "You can raise rent by no more than 3% from July 1, 2025, through June 30, 2026.",
+   "dropped": [],
+   "source_quote_sha": "9fe5ae4433ad175ddd43c2f667dc75fb04401120a1723dce54fe58cd39638113",
+   "answer_tenant_es": "Su arrendador puede subir su renta hasta 3% del 1 de julio de 2025 al 30 de junio de 2026.",
+   "answer_owner_es": "Usted puede subir la renta hasta 3% del 1 de julio de 2025 al 30 de junio de 2026."
+  },
+  "r-0151": {
+   "answer_tenant": "Your landlord can no longer add any extra percentage increase for utilities to your rent, beginning February 2, 2026.",
+   "answer_owner": "You may not include any additional percentage increase for utilities, beginning February 2, 2026.",
+   "dropped": [],
+   "source_quote_sha": "ef9e823b5a05f8764923882111ddcbd02adefa11b213f9f1b3d1c719160c2fe4",
+   "answer_tenant_es": "A partir del 2 de febrero de 2026, su arrendador ya no puede añadir aumento porcentual adicional por servicios públicos.",
+   "answer_owner_es": "A partir del 2 de febrero de 2026, usted no puede incluir ningún aumento porcentual adicional por servicios públicos."
+  },
+  "r-0152": {
+   "answer_tenant": "A pending proposal would make it unlawful to sell, license, or otherwise provide your landlord with an algorithmic device.",
+   "answer_owner": null,
+   "dropped": [
+    "owner: no_answer"
+   ],
+   "source_quote_sha": "a59d74ef6a584631b3c557fe1a2925c831016fb4c6a14fa19bdd9f96a14aa53e",
+   "answer_tenant_es": "Una propuesta pendiente haría ilegal vender, licenciar o proporcionar de otro modo un dispositivo algorítmico a su arrendador."
+  },
+  "r-0153": {
+   "answer_tenant": "A pending proposal would make it unlawful for your landlord to use an algorithmic device to set rent or occupancy.",
+   "answer_owner": "If passed, this proposed ordinance would bar you from using an algorithmic device to set rental rates or occupancy levels.",
+   "dropped": [],
+   "source_quote_sha": "9e08b4b85bd633bbd1ce6d8b1fcdccadbaa8093f12d542e481f5ba8343ae1334",
+   "answer_tenant_es": "Una propuesta pendiente haría ilegal que su arrendador use un dispositivo algorítmico para fijar el alquiler o la ocupación.",
+   "answer_owner_es": "Si se aprueba, esta ordenanza propuesta le prohibiría usar un dispositivo algorítmico para fijar alquileres o niveles de ocupación."
+  },
+  "r-0154": {
+   "answer_tenant": "Your landlord cannot end your tenancy without just cause, which includes at-fault just cause and no-fault just cause.",
+   "answer_owner": "You must not terminate a tenancy without just cause, which includes at-fault just cause and no-fault just cause.",
+   "dropped": [],
+   "source_quote_sha": "b4ef5da2c8109fe3700108f5012f3eb6ed0a31b14830188f8b0e54ce5ac60d51",
+   "answer_tenant_es": "Su arrendador no puede terminar su arrendamiento sin causa justa, que incluye causa justa con culpa y sin culpa.",
+   "answer_owner_es": "Usted no debe terminar un arrendamiento sin causa justa, que incluye causa justa con culpa y sin culpa."
+  },
+  "r-0155": {
+   "answer_tenant": "Owner move-in requires that occupant move in within 90 days after you leave and stay at least 12 continuous months.",
+   "answer_owner": "You must have the occupant move in within 90 days after tenant leaves and stay at least 12 continuous months.",
+   "dropped": [],
+   "source_quote_sha": "ff101ce4880057288bee3505f3adc503ed8c3b9ee492ee4b7cb1dfc0e5c4eae7",
+   "answer_tenant_es": "El ocupante debe mudarse dentro de 90 días tras su salida y quedarse al menos 12 meses seguidos.",
+   "answer_owner_es": "Su ocupante debe mudarse dentro de 90 días tras la salida del inquilino y quedarse al menos 12 meses seguidos."
+  },
+  "r-0156": {
+   "answer_tenant": "Your landlord's notice ending your tenancy for just cause must include required details certified under penalty of perjury.",
+   "answer_owner": "You must include all required details in a written just-cause termination notice, certified under penalty of perjury.",
+   "dropped": [],
+   "source_quote_sha": "e42e4eeb175d0b13a820e268720cdad9c37099c249001a0c611cf5e4113f34d8",
+   "answer_tenant_es": "Su arrendador debe incluir en el aviso de terminación por causa justa los datos requeridos, certificados bajo pena de perjurio.",
+   "answer_owner_es": "Usted debe incluir todo lo requerido en un aviso escrito de terminación por causa justa, certificado bajo pena de perjurio."
+  },
+  "r-0157": {
+   "answer_tenant": "Your landlord must give you written notice of a curable lease violation and a chance to fix it first.",
+   "answer_owner": "You must give written notice describing a curable lease violation and an opportunity to cure before terminating a tenancy.",
+   "dropped": [],
+   "source_quote_sha": "07db471e48a194db4737521065dbd557ee91d68bf07f7d5ed4e1d2b25a9bc4a9",
+   "answer_tenant_es": "Su arrendador debe darle primero un aviso por escrito de una violación corregible del contrato y la oportunidad de corregirla.",
+   "answer_owner_es": "Antes de terminar un arrendamiento, usted debe dar aviso escrito que describa la violación corregible y permita corregirla."
+  },
+  "r-0158": {
+   "answer_tenant": "Your landlord must give you written notice at least 30 or 60 days before termination, in 12-point font.",
+   "answer_owner": "You must give your tenant written notice at least 30 or 60 days before termination, in 12-point font.",
+   "dropped": [],
+   "source_quote_sha": "84c0bb8855ca0ff6f417150daec436f8b4c8cada020c39f8fd59bc13d077f486",
+   "answer_tenant_es": "Su arrendador debe avisarle por escrito al menos 30 o 60 días antes de terminar, en letra de 12 puntos.",
+   "answer_owner_es": "Usted debe avisar a su inquilino por escrito 30 o 60 días antes de terminar, en letra de 12 puntos."
+  },
+  "r-0159": {
+   "answer_tenant": "Your landlord's direct payment to you must equal two months of your actual rent under your lease at notice.",
+   "answer_owner": "You must pay a tenant two months of actual rent, based on their lease in effect at the notice date.",
+   "dropped": [],
+   "source_quote_sha": "72b9e6e82251396777aa28e9647a6426a2de5699b20c6cc040de8351f93d7c5f",
+   "answer_tenant_es": "Su arrendador debe pagarle directamente dos meses de su renta real, según su contrato vigente en la fecha del aviso.",
+   "answer_owner_es": "Usted debe pagar a un inquilino dos meses de renta real, según su contrato vigente en la fecha del aviso."
+  },
+  "r-0160": {
+   "answer_tenant": "If offered for rent within five years of your no-fault eviction, your landlord must first offer you a written lease.",
+   "answer_owner": "You must first offer a written lease to a no-fault evicted tenant if you re-rent within five years.",
+   "dropped": [],
+   "source_quote_sha": "33ab9a2beb3fad2cc4dbd32566d4fe7596c04de212a1082886ff375c86b45f38",
+   "answer_tenant_es": "Si se alquila dentro de cinco años de su desalojo sin culpa, su arrendador debe ofrecerle primero un contrato escrito.",
+   "answer_owner_es": "Usted debe ofrecer primero un contrato escrito al inquilino desalojado sin culpa si vuelve a alquilar dentro de cinco años."
+  },
+  "r-0161": {
+   "answer_tenant": "Your buyout agreement must be for more than the relocation assistance available to you, or it is void.",
+   "answer_owner": "You must make any buyout agreement for more than the tenant's available relocation assistance, or it is void.",
+   "dropped": [],
+   "source_quote_sha": "f757e5e887ff51a9ba1a7e94cf82eb08ba07d2c9f4cef054a8432f4b511e8a98",
+   "answer_tenant_es": "Su acuerdo de compra debe ser por más que la asistencia de reubicación disponible para usted, o es nulo.",
+   "answer_owner_es": "Usted debe hacer todo acuerdo de compra por más que la asistencia de reubicación disponible del inquilino, o es nulo."
+  },
+  "r-0162": {
+   "answer_tenant": "Your landlord cannot use algorithm-based tools that recommend or set rental prices.",
+   "answer_owner": "You may not use algorithm-based tools that recommend or set rental prices.",
+   "dropped": [],
+   "source_quote_sha": "31df00f1aa52e007c7a40fbb0f2bb466bc685761b83fea158709048ca45d0b45",
+   "answer_tenant_es": "Su arrendador no puede usar herramientas basadas en algoritmos que recomienden o fijen precios de alquiler.",
+   "answer_owner_es": "Usted no puede usar herramientas basadas en algoritmos que recomienden o fijen precios de alquiler."
+  },
+  "r-0163": {
+   "answer_tenant": "Your landlord is prohibited from using algorithmic devices to set your rent or manage occupancy levels for residential units.",
+   "answer_owner": "You may not sell or use algorithmic devices to set rents or manage occupancy levels for residential units.",
+   "dropped": [],
+   "source_quote_sha": "87262131231bb378722e9df297455bc93caa92487d5df70a6abd9040a5059809",
+   "answer_tenant_es": "Su arrendador tiene prohibido usar dispositivos algorítmicos para fijar su renta o administrar los niveles de ocupación de unidades residenciales.",
+   "answer_owner_es": "Usted no puede vender ni usar dispositivos algorítmicos para fijar rentas o administrar los niveles de ocupación de unidades residenciales."
+  },
+  "r-0164": {
+   "answer_tenant": "Your landlord must have a just cause reason as the dominant motive to evict you.",
+   "answer_owner": "You must have a just cause reason as your dominant motive to evict a tenant.",
+   "dropped": [],
+   "source_quote_sha": "ac398437147241d44cc5cce3ece98f6839dc2b6a4a5bd5245f1af974ea089f73",
+   "answer_tenant_es": "Su arrendador debe tener una causa justificada como motivo dominante para desalojarlo.",
+   "answer_owner_es": "Usted debe tener una causa justificada como motivo dominante para desalojar a un inquilino."
+  },
+  "r-0165": {
+   "answer_tenant": "Your landlord owes relocation payments for evictions based on owner or relative move-in, demolition, temporary capital improvement, or substantial rehabilitation.",
+   "answer_owner": "You must pay relocation payments for evictions based on owner or relative move-in, demolition, temporary capital improvement, or substantial rehabilitation.",
+   "dropped": [],
+   "source_quote_sha": "babf16fc46bc6ff47cfd348dc55c2d7cf6aadf664bc896e2c7baf861cef3c85f",
+   "answer_tenant_es": "Su arrendador debe pagar reubicación en desalojos por mudanza del dueño o familiar, demolición, mejoras capitales temporales o rehabilitación sustancial.",
+   "answer_owner_es": "Usted debe pagar reubicación en desalojos por mudanza del dueño o familiar, demolición, mejoras capitales temporales o rehabilitación sustancial."
+  },
+  "r-0166": {
+   "answer_tenant": "If your landlord evicts you under the Ellis Act, you are entitled to relocation payments.",
+   "answer_owner": "You must make relocation payments to tenants you evict under the Ellis Act.",
+   "dropped": [],
+   "source_quote_sha": "9014ec8e8e7c65c065a686817cc2c3b702ca4993b9c358b13dfa4295902f52c0",
+   "answer_tenant_es": "Si su arrendador lo desaloja bajo la Ley Ellis, usted tiene derecho a recibir pagos de reubicación.",
+   "answer_owner_es": "Usted debe hacer pagos de reubicación a los inquilinos que desaloje bajo la Ley Ellis."
+  },
+  "r-0167": {
+   "answer_tenant": "Current law provides relocation payments for tenants like you who are evicted under the Ellis Act.",
+   "answer_owner": "You must pay relocation payments to tenants you evict under the Ellis Act.",
+   "dropped": [],
+   "source_quote_sha": "9014ec8e8e7c65c065a686817cc2c3b702ca4993b9c358b13dfa4295902f52c0",
+   "answer_tenant_es": "La ley actual establece pagos de reubicación para inquilinos como usted que son desalojados bajo la Ley Ellis.",
+   "answer_owner_es": "Usted debe pagar los pagos de reubicación a los inquilinos que desaloje bajo la Ley Ellis."
+  },
+  "r-0168": {
+   "answer_tenant": "Your landlord can raise your rent by no more than 1.6% from March 1, 2026 through February 28, 2027.",
+   "answer_owner": "You can raise rent by no more than 1.6% from March 1, 2026 through February 28, 2027.",
+   "dropped": [],
+   "source_quote_sha": "d6dfcd134a7ec050954fcf9e36229a80a5d74b2d05c8ab34a9d957c683383ab1",
+   "answer_tenant_es": "Del 1 de marzo de 2026 al 28 de febrero de 2027, su arrendador puede subir su renta máximo 1.6%.",
+   "answer_owner_es": "Del 1 de marzo de 2026 al 28 de febrero de 2027, usted puede subir la renta como máximo 1.6%."
+  },
+  "r-0169": {
+   "answer_tenant": "Your landlord can raise your rent by no more than 1.6% for March 1, 2026 – February 28, 2027.",
+   "answer_owner": "You can charge no more than a 1.6% rent increase for March 1, 2026 – February 28, 2027.",
+   "dropped": [],
+   "source_quote_sha": "b48d43d1435ee833dc5a9b3e51daeb917633288f00eb27cbf4f67c1e36d8a12a",
+   "answer_tenant_es": "Su arrendador puede subir su renta hasta 1.6% del 1 de marzo de 2026 al 28 de febrero de 2027.",
+   "answer_owner_es": "Usted puede aumentar la renta hasta 1.6% del 1 de marzo de 2026 al 28 de febrero de 2027."
+  },
+  "r-0170": {
+   "answer_tenant": "Your arrest or conviction history is protected under current law when affordable housing decisions are made about you.",
+   "answer_owner": "You must follow the Fair Chance Ordinance's protections for residents with arrest or conviction history when making affordable housing decisions.",
+   "dropped": [],
+   "source_quote_sha": "0fe7a4009bc4fac481f8a487988710921a29606cd07df011c0780326da2dc7a4",
+   "answer_tenant_es": "La ley vigente protege su historial de arrestos o condenas en las decisiones sobre vivienda asequible que le afectan.",
+   "answer_owner_es": "Usted debe cumplir la Ordenanza Fair Chance al decidir sobre vivienda asequible para residentes con historial de arrestos o condenas."
+  },
+  "r-0171": {
+   "answer_tenant": "Your security deposit earns interest at 4.2% for March 1, 2026 – February 28, 2027.",
+   "answer_owner": "You must pay interest on tenants' security deposits at 4.2% for March 1, 2026 – February 28, 2027.",
+   "dropped": [],
+   "source_quote_sha": "03deb7c5beb40003a8f1b63fe71a2dca584dabda842c0a55ecac39ff3fcbdc6e",
+   "answer_tenant_es": "Su depósito de seguridad genera intereses del 4.2% del 1 de marzo de 2026 al 28 de febrero de 2027.",
+   "answer_owner_es": "Usted debe pagar 4.2% de interés sobre depósitos del 1 de marzo de 2026 al 28 de febrero de 2027."
+  },
+  "r-0172": {
+   "answer_tenant": "Your landlord must have a valid reason to evict you, like unpaid rent or breaking the lease.",
+   "answer_owner": "You must have a valid reason to evict a tenant, like unpaid rent or a lease violation.",
+   "dropped": [],
+   "source_quote_sha": "4b77bcce7ea674f9a7a3d4f493278c857ed4b3cfcb599506a2c81c36fc9383ba",
+   "answer_tenant_es": "Su arrendador debe tener una razón válida para desalojarlo, como falta de pago del alquiler o incumplimiento del contrato.",
+   "answer_owner_es": "Usted debe tener una razón válida para desalojar a un inquilino, como falta de pago o violación del contrato."
+  },
+  "r-0173": {
+   "answer_tenant": "After 30 days, your landlord cannot end your tenancy without just cause, which must be stated in a written notice.",
+   "answer_owner": "After 30 days, you may not end a tenancy without just cause, which you must state in a written notice.",
+   "dropped": [],
+   "source_quote_sha": "273b7d0338d67c014ca21791acabb1d65dbadb715cd1b1d6322437bd59763373",
+   "answer_tenant_es": "Tras 30 días, su arrendador no puede terminar su arrendamiento sin causa justa, que debe constar en un aviso escrito.",
+   "answer_owner_es": "Después de 30 días, usted no puede terminar un arrendamiento sin causa justa, que debe indicar en un aviso escrito."
+  },
+  "r-0174": {
+   "answer_tenant": "Your rent increase can't exceed 3% of your rent or 80% of the CPI change, whichever is less.",
+   "answer_owner": "You cannot raise rent by more than 3% or 80% of the CPI change, whichever is less.",
+   "dropped": [],
+   "source_quote_sha": "fd0b18dc6dcd5e0d32736273d4594ebc3ec42758f6544529919e4080489804a0",
+   "answer_tenant_es": "El aumento no puede superar el 3% de su renta o el 80% del cambio del IPC, el menor.",
+   "answer_owner_es": "Usted no puede aumentar la renta más del 3% o del 80% del cambio del IPC, el que sea menor."
+  },
+  "r-0175": {
+   "answer_tenant": "Your rent increases are limited to the lower of 3% per year or 80% of the Consumer Price Index change.",
+   "answer_owner": "You can raise rent by no more than the lower of 3% per year or 80% of CPI change.",
+   "dropped": [],
+   "source_quote_sha": "187bb0c393e49f2d03c70332cd4cc20e4dc8ad94f4297c78ea9c46752dd56530",
+   "answer_tenant_es": "Sus aumentos de renta se limitan al menor entre 3% por año u 80% del cambio del IPC.",
+   "answer_owner_es": "Usted no puede subir la renta más del menor entre 3% por año o 80% del cambio en el IPC."
+  },
+  "r-0176": {
+   "answer_tenant": "Your landlord must give you a Notice of Tenant's Rights and Resources when planning to end your tenancy agreement.",
+   "answer_owner": "You must give your renters a Notice of Tenant's Rights and Resources when you plan to end a tenancy agreement.",
+   "dropped": [],
+   "source_quote_sha": "e725b9933e9dfaf25466edf95106d67ea85e0b7929e3ce3af8a72df080df09c0",
+   "answer_tenant_es": "Su arrendador debe darle un Aviso de Derechos y Recursos del Inquilino cuando planee terminar su contrato de arrendamiento.",
+   "answer_owner_es": "Debe darles a sus inquilinos un Aviso de Derechos y Recursos del Inquilino cuando planee terminar un contrato de arrendamiento."
+  },
+  "r-0177": {
+   "answer_tenant": "Your landlord must use an online form to give the city your contact information and a copy of your notice.",
+   "answer_owner": "You must use the online form to provide tenant contact information and upload a copy of the notice.",
+   "dropped": [],
+   "source_quote_sha": "8c7fad5b9bac8bf76a62a9976a1433325a3fc47437a4500dc5223e36f975b124",
+   "answer_tenant_es": "Su arrendador debe dar a la ciudad, en un formulario en línea, sus datos de contacto y copia del aviso.",
+   "answer_owner_es": "Usted debe usar el formulario en línea para dar los datos de contacto del inquilino y subir copia del aviso."
+  },
+  "r-0178": {
+   "answer_tenant": "Your landlord must give you a Notice of Tenants' Rights and Resources when starting eviction or not renewing your lease.",
+   "answer_owner": "You must give tenants a Notice of Tenants' Rights and Resources when you start eviction or decline lease renewal.",
+   "dropped": [],
+   "source_quote_sha": "c3849fea8722d18b6a252047a89f6b7e889bb8999657c64b497422496d740a43",
+   "answer_tenant_es": "Su arrendador debe darle el Aviso de Derechos y Recursos de Inquilinos al iniciar un desalojo o no renovarle.",
+   "answer_owner_es": "Usted debe darles el Aviso de Derechos y Recursos de Inquilinos al iniciar un desalojo o no renovarles el contrato."
+  },
+  "r-0179": {
+   "answer_tenant": "A pending proposal would let Boston implement rent stabilization and eviction protections for tenants like you.",
+   "answer_owner": null,
+   "dropped": [
+    "owner: too_long:21_words"
+   ],
+   "source_quote_sha": "3c2f732c2a415789da671adfbf7d5a11de8189cc38f1811d0e43381524fc3052",
+   "answer_tenant_es": "Una propuesta pendiente permitiría a Boston implementar estabilización de alquileres y protecciones contra el desalojo para inquilinos como usted."
+  },
+  "r-0180": {
+   "answer_tenant": "Your housing provider cannot have a blanket policy denying you housing over arrests or convictions and must consider you case-by-case.",
+   "answer_owner": "You may not have a blanket policy denying housing over arrests or convictions, and you must consider applicants case-by-case.",
+   "dropped": [
+    "tenant_es: too_long:22_words",
+    "owner_es: too_long:22_words"
+   ],
+   "source_quote_sha": "d87a507984a499925a4071b592334e50ec187edb6542f6912842ff1de1507b21"
+  },
+  "r-0181": {
+   "answer_tenant": "Your credit history can only be used to judge your ability to pay rent if rental history is unavailable.",
+   "answer_owner": "You may use an applicant's credit history only when rental history is unavailable, to judge ability to pay rent.",
+   "dropped": [],
+   "source_quote_sha": "ae34de56330fcaff473de9cbb2a977578839aabfaab75b50111c4369c469deff",
+   "answer_tenant_es": "Su historial de crédito solo puede usarse para evaluar si puede pagar el alquiler cuando no hay historial de alquiler.",
+   "answer_owner_es": "Usted solo puede usar el crédito del solicitante para evaluar su capacidad de pago si no hay historial de alquiler."
+  },
+  "r-0182": {
+   "answer_tenant": "Your landlord telling you they don't accept rental assistance is an example of housing discrimination.",
+   "answer_owner": "You may not tell renters you don't accept rental assistance, as that is housing discrimination.",
+   "dropped": [],
+   "source_quote_sha": "1b7aa036a497f43e442d818e0902626bc97bb29395b60afa69acbd42befa8f75",
+   "answer_tenant_es": "Que su arrendador le diga que no acepta asistencia para el alquiler es un ejemplo de discriminación en la vivienda.",
+   "answer_owner_es": "Usted no puede decir a los inquilinos que no acepta asistencia de alquiler: es discriminación en la vivienda."
+  },
+  "r-0183": {
+   "answer_tenant": "Your landlord may select applicants using any reasonable standard, applied equally and uniformly to all applicants.",
+   "answer_owner": "You must apply any reasonable standard you use to select applicants equally and uniformly to all applicants.",
+   "dropped": [],
+   "source_quote_sha": "14d984569d55be82aee7f8a514fbf239e23087c81bb6c461fc38288bc50b02ac",
+   "answer_tenant_es": "Su arrendador puede seleccionar solicitantes con cualquier criterio razonable, aplicado de manera igual y uniforme a todos los solicitantes.",
+   "answer_owner_es": "Usted debe aplicar de manera igual y uniforme a todos los solicitantes cualquier criterio razonable que use para seleccionarlos."
+  },
+  "r-0184": {
+   "answer_tenant": null,
+   "answer_owner": null,
+   "dropped": [
+    "tenant: no_answer",
+    "owner: no_answer"
+   ],
+   "source_quote_sha": "c5678cbdf9d45c0f157fc87a9c002293006be2cc46c39aa7310f71915fb656b5"
+  }
+ }
+}

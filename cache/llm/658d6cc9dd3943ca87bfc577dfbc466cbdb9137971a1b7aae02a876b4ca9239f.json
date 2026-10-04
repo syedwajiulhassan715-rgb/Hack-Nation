@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "5c8ee1d0d58300e06dfa809bb7b0e560133fba25ea166fd23834c63de1c0b759",
+  "previous_sha": "e9d9a56974f1c98ed17a6ed845b386225bbda2178d56ede0a71a437dc38773d2",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2125,
+  "output_tokens": 107
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord cannot charge you a non-refundable fee to renew your tenancy, including roommate departure, addition or replacement fees.",
+  "answer_owner": "You cannot charge existing tenants a non-refundable renewal fee, including fees for a roommate's departure, addition or replacement."
+ }
+}

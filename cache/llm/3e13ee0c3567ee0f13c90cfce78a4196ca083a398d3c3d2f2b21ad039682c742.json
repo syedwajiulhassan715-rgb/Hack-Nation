@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "74d26850c269d9974a60cd499f261c4d21e6131cacd3006fcadacf54bcccf7a1",
+  "english_sha": "3a7213c38c984ee021e2f25cf8a5ed41ef1f15f866f98657498d3103ee0ba314",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 800,
+  "output_tokens": 1017
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Si una ordenanza local de causa justa, adoptada hasta el 1 de septiembre de 2019, cubre su vivienda, esa rige.",
+  "answer_owner_es": "Debe cumplir la ordenanza local de causa justa adoptada hasta el 1 de septiembre de 2019 que cubra su propiedad."
+ }
+}

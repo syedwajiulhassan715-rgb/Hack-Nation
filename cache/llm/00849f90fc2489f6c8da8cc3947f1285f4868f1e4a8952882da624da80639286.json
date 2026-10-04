@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "1e18654eb3bb8ca7923935194f7931cb09d9db4aa334e54d5e698fab2fe9dcd9",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1645,
+  "output_tokens": 588
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord must photograph the unit before and after any repairs or cleanings deducted from your security deposit.",
+  "answer_owner": "You must photograph the unit before and after any repairs or cleanings you will deduct from the security deposit."
+ }
+}

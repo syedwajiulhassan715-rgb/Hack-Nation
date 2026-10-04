@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "f8171ca54c4d8e4366e4760400461ef224202a4c05dc23f46ec177aab286fcd2",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1575,
+  "output_tokens": 94
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord cannot demand or receive a security deposit of more than one month's rent, in addition to your first month's rent.",
+  "answer_owner": "You may not demand or receive security of more than one month's rent, in addition to the first month's rent paid before move-in."
+ }
+}

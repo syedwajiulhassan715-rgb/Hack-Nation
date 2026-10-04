@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "d38beaf92ee1d904d2ab34ca1201ac60bc6418d8e92719bd711ad07e8ee8d790",
+  "english_sha": "a6d13396518918e2caf6d67f918288ea6b6dbb892dd24049593621002bf8a68b",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 785,
+  "output_tokens": 1111
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Por ley estatal vigente, su ciudad o pueblo generalmente no puede aprobar, mantener ni aplicar ningún control de alquileres.",
+  "answer_owner_es": "Generalmente no le aplica el control de alquileres local, porque ciudades y pueblos no pueden aprobarlo, mantenerlo ni aplicarlo."
+ }
+}

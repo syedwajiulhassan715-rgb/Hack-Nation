@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "f4b0c6303e413b56effdb2ae1168d20e8bbdcaa0e94b61af21f9d2aa4e754b75",
+  "english_sha": "9de5e329befa4a36fd0ade14ba35777912da2729f25cda63cfeba7e0e88c1f1c",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 800,
+  "output_tokens": 527
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Si lo desalojan por ocupación ilegal, usted tiene derecho a asistencia de reubicación equivalente a seis veces su renta mensual.",
+  "answer_owner_es": "Usted debe dar asistencia de reubicación equivalente a seis veces la renta mensual al inquilino que desaloje por ocupación ilegal."
+ }
+}

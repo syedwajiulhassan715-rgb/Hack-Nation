@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "5d94d0d19e8747b6d409bdd6e00581f0b6cebce90c67ad0ee23d4c8ffb8e0a13",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1733,
+  "output_tokens": 104
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord can raise your 2025 permanent rent ceiling by 1.0% no earlier than January 1, 2026.",
+  "answer_owner": "You can raise the 2025 permanent rent ceilings by no more than 1.0%, and no earlier than January 1, 2026."
+ }
+}

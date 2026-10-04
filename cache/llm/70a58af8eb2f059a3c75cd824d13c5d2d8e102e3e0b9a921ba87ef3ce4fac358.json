@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "6f343ad1da033248896442f11484cdc1b5ae54913d195e00e10aaaba4c4e714a",
+  "previous_sha": "00de001c3bf37949540f2474c30ec6b0bdc563b40bc3360d1fbeb5fff2f55b5e",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2336,
+  "output_tokens": 369
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord cannot discriminate in renting housing and must treat you equally regardless of your source of lawful income.",
+  "answer_owner": "You may not discriminate when renting property, and you must treat applicants equally regardless of their source of lawful income."
+ }
+}

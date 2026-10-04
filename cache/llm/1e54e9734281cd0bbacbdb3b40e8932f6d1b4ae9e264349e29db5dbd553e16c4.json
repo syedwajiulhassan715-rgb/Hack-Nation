@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "099674d6d7691a273fe95b6562e8847d00cecba0a9877c2737fca0da52172a63",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1600,
+  "output_tokens": 620
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord must keep your deposit in a separate, interest-bearing bank account in the state, protected from their creditors.",
+  "answer_owner": "You must hold tenant deposits in a separate, interest-bearing in-state bank account, beyond the reach of your creditors."
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair2",
+  "rule_sha": "567b1ca89275fa509b8a7053a54a1c0e8aa949d754792079b2d510453cd821f3",
+  "previous_sha": "f3736f5ccc254ba5976de658db8fe435f3719e1bdc5f5fba95e64999348a3222",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2172,
+  "output_tokens": 82
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord's direct payment to you must equal two months of your actual rent under your lease at notice.",
+  "answer_owner": "You must pay a tenant two months of actual rent, based on their lease in effect at the notice date."
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "c8ff3ae4aa522ab11b470193930c7f31508f4617a75e8b16f50480be6bfbbd29",
+  "english_sha": "3ff09e5f78c483fb27abfca62a699d664c12a48f613c450050012458152ed6ef",
+  "previous_sha": "39eeda8d270233bdebae6e59acf9964ef97dbd843038316f78bdc5e172c7c05d",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1486,
+  "output_tokens": 1926
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador debe darle un desglose del depósito y devolverle el resto en 21 días calendario después de que desocupe.",
+  "answer_owner_es": "Debe darle a su inquilino un desglose y devolverle el resto del depósito en 21 días calendario tras su salida."
+ }
+}

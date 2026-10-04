@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "b2ef2cfd955519848547e26b467d90db60b95608aa57fc832aaed79211f4fc95",
+  "previous_sha": "3329b95269c4717ebb5102bdffd472a5c2e3ecb9fca221caa1c25278409435aa",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2110,
+  "output_tokens": 266
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "If your landlord evicts you for an owner move-in, your landlord must pay you relocation assistance.",
+  "answer_owner": "You must pay your tenant relocation assistance if you evict them for an owner move-in."
+ }
+}

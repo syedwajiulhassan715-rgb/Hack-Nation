@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "04cfb4c0746131412c0d03bca8056529183ea279c051bbc26b31f86fa2f3f05e",
+  "english_sha": "9bcebbcc9a90bb3fec2e4ee645ab66c4dc6d911fa1cb446fa2ae9520a0f98cbe",
+  "previous_sha": "83e3ff8f73a1dcd7c9c624aa176d684f411a08372a9be1566305fd5cb1440587",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1361,
+  "output_tokens": 780
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador debe darle aviso escrito de tres días para desocupar por conducta desordenada, destructiva o que viole las reglas.",
+  "answer_owner_es": "Usted debe dar un aviso escrito de tres días para desocupar por conducta desordenada, destructiva o que viole las reglas."
+ }
+}

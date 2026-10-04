@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "96e115118dd3ef3ebb8f67d97114cd28d00ae6dda2c03fce0e67adced9cb96b8",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1633,
+  "output_tokens": 124
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord cannot consider arrests without a conviction, sealed or expunged records, or juvenile justice records, and cannot ban everyone with a criminal history.",
+  "answer_owner": "You may not consider arrests without a conviction, sealed or expunged records, or juvenile justice records, or have blanket bans on applicants with criminal histories."
+ }
+}

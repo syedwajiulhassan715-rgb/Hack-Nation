@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "583fb0df296f6ef243d0454249230ff6b7be6ba4f055db446de324649b261294",
+  "english_sha": "07a45b263b3eb8d5eacd696d2ec38afa514892c6c0bc0c89780c61873848d3f6",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 879,
+  "output_tokens": 478
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Una propuesta pendiente haría ilegal que su arrendador use un algoritmo de precios coordinado al fijar su renta.",
+  "answer_owner_es": "Si se aprueba, esta propuesta le prohibiría usar un algoritmo de precios coordinado para fijar rentas o niveles de ocupación."
+ }
+}

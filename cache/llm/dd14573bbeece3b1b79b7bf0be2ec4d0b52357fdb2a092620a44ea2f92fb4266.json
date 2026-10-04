@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "45d00afddfc5554dde9d4d53cf4a2d282bc18819ef9bafe718de537c2e648fd2",
+  "english_sha": "ed440fe552dcdc1b590824ec2b1a78c93bc8a50e2f67c37b38fb38bc73c11ba5",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 777,
+  "output_tokens": 667
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador debe darle aviso escrito de 30 y 60 días; algunos desalojos requieren aviso de 120 días.",
+  "answer_owner_es": "Usted debe darle a su inquilino aviso escrito de 30 y 60 días; algunos desalojos requieren aviso de 120 días."
+ }
+}

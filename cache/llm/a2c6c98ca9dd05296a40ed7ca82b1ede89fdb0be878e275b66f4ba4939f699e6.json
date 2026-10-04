@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "6a3c1222ca3f2193f073d6ec95830f8bbf623d97956b5b6ef09252c6003ae7f7",
+  "english_sha": "8c6cf8e9904a3b85877f27f64bb1aad621d2cf80ebf7d0541321d9000e4c65e0",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 848,
+  "output_tokens": 968
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Si se alquila dentro de cinco años de su desalojo sin culpa, su arrendador debe ofrecerle primero un contrato escrito.",
+  "answer_owner_es": "Usted debe ofrecer primero un contrato escrito al inquilino desalojado sin culpa si vuelve a alquilar dentro de cinco años."
+ }
+}

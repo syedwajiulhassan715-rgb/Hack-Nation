@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "f4b0c6303e413b56effdb2ae1168d20e8bbdcaa0e94b61af21f9d2aa4e754b75",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1592,
+  "output_tokens": 769
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "If you're evicted for illegal occupancy, you're entitled to relocation assistance equal to six times your monthly rent.",
+  "answer_owner": "You must provide relocation assistance equal to six times the monthly rent to a tenant you evict for illegal occupancy."
+ }
+}

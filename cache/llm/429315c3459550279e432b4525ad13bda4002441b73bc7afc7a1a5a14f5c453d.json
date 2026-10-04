@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "8fc47074ab2c659e020c8b14f44ebfc0f592179f289f12673eeba215502f95a5",
+  "english_sha": "307642a066217c558597b866c58c188d786d341a76c415c7e31bd366a404370e",
+  "previous_sha": "45d1eedee4767f7ee6f5ae04af4bf9a82b1229b5a28c237418d804a4f67d7bf0",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1354,
+  "output_tokens": 831
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador debe entregarle un Aviso de Desalojo al menos tres años antes de presentar una demanda de desalojo.",
+  "answer_owner_es": "Usted debe entregar al inquilino un Aviso de Desalojo al menos tres años antes de presentar una demanda de desalojo."
+ }
+}

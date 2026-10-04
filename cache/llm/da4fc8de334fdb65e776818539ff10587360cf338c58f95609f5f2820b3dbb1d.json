@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "5d94d0d19e8747b6d409bdd6e00581f0b6cebce90c67ad0ee23d4c8ffb8e0a13",
+  "english_sha": "9b5a7cec460ad59dc9adab2ded56192c9b627bc127baa8c8a94948e8aabadf55",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 863,
+  "output_tokens": 124
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador puede aumentar el límite de renta permanente de 2025 en un 1.0% no antes del 1 de enero de 2026.",
+  "answer_owner_es": "Usted puede aumentar los límites de renta permanentes de 2025 en no más de un 1.0%, y no antes del 1 de enero de 2026."
+ }
+}

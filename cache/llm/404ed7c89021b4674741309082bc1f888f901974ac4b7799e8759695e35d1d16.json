@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "43e7b96d0a021166bd7499a8d8070f5fcc21a55596d17a954d2abf8af891f877",
+  "english_sha": "dbdd202604f7fcbe3401a6a0e885b18e990b7431a4e2aefabbd8855e7eec97d8",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 779,
+  "output_tokens": 1625
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador no puede evaluar la elegibilidad con un estándar de ingresos no basado en su parte del alquiler.",
+  "answer_owner_es": "Usted no puede evaluar la elegibilidad con un estándar de ingresos no basado en la parte del alquiler del inquilino."
+ }
+}

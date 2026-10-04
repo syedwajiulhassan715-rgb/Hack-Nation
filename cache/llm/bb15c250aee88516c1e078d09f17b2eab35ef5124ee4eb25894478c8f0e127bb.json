@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "9ee5c6b87b061cda5b3b9ae9f921e7055b42753602dac68fb8b7aa1bfa60bbd5",
+  "english_sha": "b4683b1bf1df086f884b969a783167418bd0734b15117f523a6e04f68128b52d",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 807,
+  "output_tokens": 1623
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador no pudo subir la renta RSO del 30 de marzo de 2020 al 31 de enero de 2024.",
+  "answer_owner_es": "Usted no puede subir rentas de unidades RSO del 30 de marzo de 2020 al 31 de enero de 2024."
+ }
+}

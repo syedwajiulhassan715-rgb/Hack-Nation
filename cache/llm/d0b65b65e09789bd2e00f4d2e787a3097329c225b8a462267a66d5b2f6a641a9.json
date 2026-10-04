@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "6f70292928857e939e696fc266d6edf5a36253f6f773d1ff3ceb9408e3d4f830",
+  "english_sha": "d7f06a8c48b35df97e2beeacc36e181f5c1a2baf08b7c77056eef236f2aee7ef",
+  "previous_sha": "1a0836884669ef4707e231ce412f085771098d35486f1ff856edf535517236a8",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1383,
+  "output_tokens": 3316
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su renta sube máximo 5% más el cambio del costo de vida, o 10% si es menor, cada 12 meses.",
+  "answer_owner_es": "No puede subir su renta más de 5% más costo de vida, o 10% si es menor, cada 12 meses."
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "b2ef2cfd955519848547e26b467d90db60b95608aa57fc832aaed79211f4fc95",
+  "english_sha": "fee82d0843ab0878d03f76040d12c5321626a6e45128d55f3fd7dbd3ada6c825",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 781,
+  "output_tokens": 117
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Si su arrendador lo desaloja para mudarse él mismo a la vivienda, debe pagarle asistencia de reubicación.",
+  "answer_owner_es": "Usted debe pagar asistencia de reubicación a su inquilino si lo desaloja para mudarse usted mismo a la vivienda."
+ }
+}

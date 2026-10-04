@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "04fe770c36ef0c77555459d301e48e2761bcb51296cc02610d1a562a05aef6e5",
+  "english_sha": "ff2657c06134ba7c6321d2583bacd10727c75a60238e1663b22ba7af147e93c4",
+  "previous_sha": "015af5151307e1bb815bf6ecfb5e718eaec6df621717c7497b608625797c0305",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1257,
+  "output_tokens": 509
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "La notificación o cláusula de arrendamiento de su arrendador debe estar en letra de no menos de 12 puntos.",
+  "answer_owner_es": "Usted debe poner toda notificación o cláusula del contrato de arrendamiento requerida en letra de no menos de 12 puntos."
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "422c37e1d6eb1d135e1544fb65d7752c5d3ccbebcc8e201dedfd2ccbebbbc595",
+  "english_sha": "7ecada869138aa87cebf092141fd73e46714e8593bd11ea30f2b0902eb0d9c64",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 820,
+  "output_tokens": 975
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador no puede preguntar sobre su historial penal ni usar verificaciones de antecedentes al anunciar, evaluar o elegir inquilinos.",
+  "answer_owner_es": "Usted no puede preguntar ni usar historial penal o verificaciones de antecedentes en anuncios, solicitudes, selección de inquilinos o decisiones."
+ }
+}

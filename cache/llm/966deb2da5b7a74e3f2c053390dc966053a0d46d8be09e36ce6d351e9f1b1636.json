@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "3fda6ea2dea82c7246f82112429f959d42b23ca9e33753a15c05dd3f23fbce8a",
+  "previous_sha": "c33acd27ac5a87be0abb71983dfe07db35d09cf7510341ba88c1f3e6cba9bf58",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2148,
+  "output_tokens": 100
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord may not raise your rent to cover costs caused solely by converting your building to condominium or cooperative ownership.",
+  "answer_owner": "You may not raise rents to cover costs resulting solely from converting your building to condominium, cooperative or fee simple ownership."
+ }
+}

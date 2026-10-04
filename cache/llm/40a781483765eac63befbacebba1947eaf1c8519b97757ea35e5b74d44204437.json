@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "task": "es_repair",
+  "rule_sha": "77adc1509fe593da503d5549068c36efe455c519d4f0ba73e8d0f8dd0e7ad0dd",
+  "english_sha": "c5aab2e9821f085fbcae10efe6ed58b2bfe70b12cc0f21797a38031ab3dfde35",
+  "previous_sha": "b277bcf959ac1a0666805fe647f4d5c755f179b45b2335f9ff127742c31a10cc",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1352,
+  "output_tokens": 511
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador puede pedir su desalojo si una acción civil determina que usted cometió trata de personas en la propiedad.",
+  "answer_owner_es": null
+ }
+}

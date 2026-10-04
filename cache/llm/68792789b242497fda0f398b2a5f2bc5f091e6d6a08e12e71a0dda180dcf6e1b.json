@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "6f70292928857e939e696fc266d6edf5a36253f6f773d1ff3ceb9408e3d4f830",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2200,
+  "output_tokens": 121
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord cannot raise your rent in any 12-month period by more than 5 percent plus the cost-of-living change, or 10 percent, whichever is lower.",
+  "answer_owner": "You may not raise rent in any 12-month period by more than 5 percent plus the cost-of-living change, or 10 percent, whichever is lower."
+ }
+}

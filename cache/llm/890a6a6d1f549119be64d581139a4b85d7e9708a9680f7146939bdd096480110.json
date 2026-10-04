@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "7d5b4e34c9a684af2edf3a90438660f301984f641348cc07a11fcda508190201",
+  "previous_sha": "de6211ffd6eef9fcc0ea49832c828536f4f243e29d5a3a18a8a81c8296b3f72e",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2109,
+  "output_tokens": 97
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord must file a copy of any eviction notice or lawsuit served on you with the Rent Board within three business days.",
+  "answer_owner": "You must file a copy of any termination notice, notice to quit, or summons and complaint with the Rent Board within three business days."
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "en_repair",
+  "rule_sha": "9c0f40e98948dd6dc2356f58cf99a9458af8ccc911e123f6b55645a2e7f798db",
+  "previous_sha": "42db5ed55be8a29ef1531f763f44305aa3e400d3ebf62d9dcc64f42bbdb852f3",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 2133,
+  "output_tokens": 87
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord's notice to stop a violation must name the lease term and clearly describe the violation and harm.",
+  "answer_owner": "You must give a notice naming the lease term and clearly describing the violation and harm before serving eviction notice."
+ }
+}

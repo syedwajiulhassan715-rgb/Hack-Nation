@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "d4ff7e59ab7cfa75b9843bc638bdc28e22dafd64b491fb962b8e5ce99ec58ed9",
+  "english_sha": "ee7601e5c0618942c470ba6b37d41fa288c17f6b77474720d8b6235034c7cc57",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 834,
+  "output_tokens": 621
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Para retirar permanentemente un edificio, su arrendador debe entregarle un Aviso para Desocupar al menos 18 meses antes de demandar.",
+  "answer_owner_es": "Para retirar permanentemente un edificio, usted debe entregar un Aviso para Desocupar al menos 18 meses antes de demandar."
+ }
+}

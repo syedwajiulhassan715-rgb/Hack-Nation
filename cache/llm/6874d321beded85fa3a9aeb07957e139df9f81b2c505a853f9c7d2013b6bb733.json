@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "5ed794157d401feb15c172aa6e4caa54ce814a9e183f49272f4ccc98dbd57443",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1607,
+  "output_tokens": 484
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your rent may be increased to the market rate if certain conditions involving you as the tenant are met.",
+  "answer_owner": null
+ }
+}

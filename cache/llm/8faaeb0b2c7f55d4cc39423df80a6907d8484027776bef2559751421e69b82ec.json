@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "f8171ca54c4d8e4366e4760400461ef224202a4c05dc23f46ec177aab286fcd2",
+  "english_sha": "3991d2d5870e61877769fc649cf01fe10688b0d51896aa5d1671854c44e5fe4f",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 814,
+  "output_tokens": 665
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador no puede exigir ni recibir una garantía mayor a un mes de renta, más su primer mes.",
+  "answer_owner_es": "Usted no puede exigir ni recibir una garantía mayor a un mes de renta, más el primer mes de renta."
+ }
+}

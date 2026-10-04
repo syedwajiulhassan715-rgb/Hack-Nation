@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "c2d4d1f1d07977007e20729358318f0173b6b1cea9d99154fec6d62e506d9f2a",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1558,
+  "output_tokens": 700
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord must file eviction notices with the Los Angeles Housing Department within a required time period.",
+  "answer_owner": "You must file eviction notices with the Los Angeles Housing Department within the required time period."
+ }
+}

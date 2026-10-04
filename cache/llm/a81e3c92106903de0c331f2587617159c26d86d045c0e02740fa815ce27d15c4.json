@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "b1614497833836307ad20738b048c87f6dd8564eb6001f6aba0e5d8b50d7d3e6",
+  "english_sha": "754a0e156ca55102e2f3864a813805e23c31939254f195f6d2e1b0300ff7b030",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 769,
+  "output_tokens": 1904
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador debe dar a la ciudad, en un formulario en línea, sus datos de contacto y copia del aviso.",
+  "answer_owner_es": "Usted debe usar el formulario en línea para dar los datos de contacto del inquilino y subir copia del aviso."
+ }
+}

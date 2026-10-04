@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "a331d3509dd1da63f87d0f62d6a1cf514e912bdb714601dac24c578ab2a0fc26",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1596,
+  "output_tokens": 101
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "If you fail to pay rent after a rent increase notice and a Notice to Quit, your landlord may file for eviction.",
+  "answer_owner": "You may file for eviction only after giving notice of a rent increase and a Notice to Quit, and the increase must not be unconscionable."
+ }
+}

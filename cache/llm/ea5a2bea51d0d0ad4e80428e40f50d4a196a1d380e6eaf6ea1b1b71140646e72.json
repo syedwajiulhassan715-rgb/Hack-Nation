@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "c8ff3ae4aa522ab11b470193930c7f31508f4617a75e8b16f50480be6bfbbd29",
+  "english_sha": "3ff09e5f78c483fb27abfca62a699d664c12a48f613c450050012458152ed6ef",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 940,
+  "output_tokens": 126
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador debe darle una declaración detallada del depósito y devolverle el resto dentro de 21 días calendario después de que usted desocupe.",
+  "answer_owner_es": "Usted debe darle a su inquilino una declaración detallada del depósito y devolverle el resto dentro de 21 días calendario después de que desocupe."
+ }
+}

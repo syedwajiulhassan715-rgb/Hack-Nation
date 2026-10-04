@@ -1,0 +1,23 @@
+{
+ "key_parts": {
+  "task": "es",
+  "rule_sha": "b6ac9548eb22ca464965ef59ea84c6a3da2d758b88ed121ff85482165e091c19",
+  "english_sha": "bb0977b99ed91ea094baaa6ace5707a8c7e53ff09d668ed6ab417aec60442bb4",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 818,
+  "output_tokens": 88
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant_es": "Su arrendador debe tener una causa justificada como motivo dominante para desalojarlo.",
+  "answer_owner_es": "Usted debe tener una causa justificada como motivo dominante para desalojar a un inquilino."
+ }
+}

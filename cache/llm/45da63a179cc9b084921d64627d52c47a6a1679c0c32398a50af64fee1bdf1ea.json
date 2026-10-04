@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "c8ff3ae4aa522ab11b470193930c7f31508f4617a75e8b16f50480be6bfbbd29",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1693,
+  "output_tokens": 96
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord must give you an itemized statement of your security deposit and return what remains within 21 calendar days after you move out.",
+  "answer_owner": "You must give your tenant an itemized security statement and return any remaining deposit within 21 calendar days after they vacate."
+ }
+}

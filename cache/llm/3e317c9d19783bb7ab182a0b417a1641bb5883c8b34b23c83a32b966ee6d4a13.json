@@ -1,0 +1,22 @@
+{
+ "key_parts": {
+  "task": "en",
+  "rule_sha": "547173900431e97c765b1e9212902198a1ec542bb320f69f9a9e1f758d7c607d",
+  "stage": "summaries",
+  "prompt_version": "summary_v1",
+  "prompt_sha": "6c526c68470b7506ec1001c6343692abcbaf96742fc54960fd7c763fb8054daf",
+  "model": "claude-sonnet-5-5"
+ },
+ "model": "claude-sonnet-5-5",
+ "served_model": "claude-sonnet-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 1630,
+  "output_tokens": 117
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "answer_tenant": "Your landlord cannot discriminate against you based on how you will pay rent, including rent relief, Section 8 vouchers, disability benefits or job wages.",
+  "answer_owner": "You may not discriminate against tenants based on how they will pay rent, including rent relief, Section 8 vouchers, disability benefits or wages."
+ }
+}
