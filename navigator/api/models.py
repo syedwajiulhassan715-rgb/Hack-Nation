@@ -296,3 +296,15 @@ class AuditResponse(Envelope):
 class EvalResponse(Envelope):
     label: str
     report: str
+
+
+# ---------------------------------------------------------------- ingest
+
+
+class IngestRequest(BaseModel):
+    """A document in corpus format: `SOURCE: <url>`, `RETRIEVED: YYYY-MM-DD HH:MM UTC`, a blank
+    line, then the text (UTF-8, LF line endings)."""
+    text: str = Field(..., min_length=1, max_length=5_000_000)
+    jurisdiction: str | None = Field(None, description="'ST' or 'City, ST'; required unless a manifest "
+                                                      "row already has this SOURCE url")
+    live: bool = Field(False, description="bypass the LLM cache for this document (demo)")

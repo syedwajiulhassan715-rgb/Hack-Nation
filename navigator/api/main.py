@@ -11,13 +11,16 @@ from __future__ import annotations
 import datetime as dt
 import json
 import os
+import queue
+import tempfile
+import threading
 from typing import Any
 
 from fastapi import Depends, FastAPI, Path, Query, Request
 from fastapi.encoders import jsonable_encoder
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse, Response
+from fastapi.responses import JSONResponse, Response, StreamingResponse
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from navigator.api import service as svc
@@ -28,6 +31,7 @@ from navigator.api.models import (
     ErrorResponse,
     EvalResponse,
     HealthResponse,
+    IngestRequest,
     LookupRequest,
     LookupResult,
     ResolveResponse,
@@ -38,6 +42,7 @@ from navigator.api.models import (
     SnapshotsResponse,
     TimelineResponse,
 )
+from navigator.ingest import incremental
 from navigator.api.store import PRODUCERS, DataUnavailable, Store, now_utc
 
 ERRORS: dict[int | str, dict[str, Any]] = {
@@ -50,6 +55,17 @@ LOCAL_ORIGINS = r"^https?://(localhost|127\.0\.0\.1|\[::1\])(:\d+)?$"
 def _error(status: int, detail: Any) -> JSONResponse:
     return JSONResponse(status_code=status, content=jsonable_encoder(
         {"detail": detail, "disclaimer": svc.disclaimer(), "as_of": svc.default_as_of()}))
+
+
+_INGEST_LOCK = threading.Lock()   # the run rewrites every output and is not re-entrant
+
+
+def _cleanup(path: str | None) -> None:
+    if path:
+        try:
+            os.remove(path)
+        except OSError:
+            pass
 
 
 def create_app(store: Store | None = None) -> FastAPI:
@@ -259,13 +275,61 @@ def _routes(app: FastAPI) -> None:  # noqa: C901 (route table)
                 "label": "Self-evaluation (team harness; the pack has no official scoring script)",
                 "report": store.eval_report()}
 
-    @app.post("/ingest", status_code=501, responses={501: {"model": ErrorResponse}}, tags=["ingest"])
-    def ingest():
-        # TODO(phase: incremental ingest): wire to navigator.ingest.incremental once it lands
-        # (streamed progress events for a new document; the only request path allowed an LLM call).
-        return _error(501, "POST /ingest is not available yet: incremental ingest "
-                           "(navigator.ingest.incremental) is still being built. "
-                           "Use `python -m navigator ingest-doc <path>` when it lands.")
+    @app.post("/ingest", tags=["ingest"],
+              responses={200: {"content": {"application/x-ndjson": {}},
+                               "description": "one JSON progress event per line, then a final "
+                                              "'finished' or 'failed' line"},
+                         400: {"model": ErrorResponse}, 403: {"model": ErrorResponse},
+                         409: {"model": ErrorResponse}})
+    def ingest(body: IngestRequest):
+        """Add one document in corpus format and re-run extract > verify > lookups > changes.
 
+        The only request path that may call the LLM (CLAUDE.md golden rule 5 exception). The
+        header is validated before anything is written; one run at a time."""
+        if os.environ.get("NAVIGATOR_DISABLE_INGEST", "").strip() not in ("", "0"):
+            return _error(403, "POST /ingest is disabled on this deployment (NAVIGATOR_DISABLE_INGEST); "
+                               "use `python -m navigator ingest-doc <path>` locally")
+        if not _INGEST_LOCK.acquire(blocking=False):
+            return _error(409, "another document is being ingested; try again when it finishes")
+        tmp = None
+        try:
+            fd, tmp = tempfile.mkstemp(suffix=".txt", prefix="ingest-")
+            with os.fdopen(fd, "wb") as fh:
+                fh.write(body.text.encode("utf-8"))
+            incremental.validate_file(tmp)
+        except incremental.IngestError as exc:
+            _cleanup(tmp)
+            _INGEST_LOCK.release()
+            return _error(400, f"rejected at {exc.step}: {exc.reason}")
+        except Exception:
+            _cleanup(tmp)
+            _INGEST_LOCK.release()
+            raise
+
+        events: queue.Queue = queue.Queue()
+
+        def work() -> None:
+            try:
+                summary = incremental.run(tmp, live=body.live, progress=events.put,
+                                          jurisdiction=body.jurisdiction)
+                events.put({"status": "finished", "summary": summary})
+            except incremental.IngestError as exc:
+                code = 400 if exc.step in ("validate", "register") else 500
+                events.put({"status": "failed", "step": exc.step, "reason": exc.reason, "http_status": code})
+            except Exception as exc:  # report, never hang the stream
+                events.put({"status": "failed", "step": "unknown", "reason": repr(exc), "http_status": 500})
+            finally:
+                _cleanup(tmp)
+                _INGEST_LOCK.release()
+                events.put(None)
+
+        threading.Thread(target=work, name="ingest", daemon=True).start()
+
+        def stream():
+            while (ev := events.get()) is not None:
+                yield json.dumps({**jsonable_encoder(ev), "disclaimer": svc.disclaimer()},
+                                 ensure_ascii=False) + "\n"
+
+        return StreamingResponse(stream(), media_type="application/x-ndjson")
 
 app = create_app()

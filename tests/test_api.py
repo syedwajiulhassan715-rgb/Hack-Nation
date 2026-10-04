@@ -322,11 +322,66 @@ def test_audit_filters_stale_ids(synthetic):
     assert len(body["entries"]) == 3
 
 
-def test_eval_and_ingest(synthetic):
+def test_eval(synthetic):
     client, _ = synthetic
     assert client.get("/eval").json()["report"].startswith("Self-evaluation")
-    r = client.post("/ingest")
-    assert r.status_code == 501 and "incremental" in r.json()["detail"]
+
+
+GOOD_DOC = "SOURCE: https://example.invalid/law\nRETRIEVED: 2030-01-01 00:00 UTC\n\nA synthetic test body long enough.\n"
+
+
+def test_ingest_rejects_bad_header_before_writing(synthetic, monkeypatch):
+    client, _ = synthetic
+    from navigator.ingest import incremental
+
+    monkeypatch.setattr(incremental, "run", lambda *a, **k: pytest.fail("run must not start"))
+    r = client.post("/ingest", json={"text": "no header here at all, just text"})
+    assert r.status_code == 400 and "validate" in r.json()["detail"]
+    assert client.post("/ingest", json={}).status_code == 422
+
+
+def test_ingest_streams_progress_and_summary(synthetic, monkeypatch):
+    client, _ = synthetic
+    from navigator.ingest import incremental
+
+    def fake_run(path, live=False, progress=None, jurisdiction=None, doc_id=None):
+        assert live is True and jurisdiction == "ZZ"
+        for step in ("validate", "register"):
+            progress({"step": step, "status": "done"})
+        return {"doc_id": "S001", "rules_new": ["r-9"]}
+
+    monkeypatch.setattr(incremental, "run", fake_run)
+    r = client.post("/ingest", json={"text": GOOD_DOC, "jurisdiction": "ZZ", "live": True})
+    assert r.status_code == 200 and r.headers["content-type"].startswith("application/x-ndjson")
+    lines = [json.loads(x) for x in r.text.splitlines()]
+    assert [x.get("step") for x in lines[:2]] == ["validate", "register"]
+    assert lines[-1]["status"] == "finished" and lines[-1]["summary"]["doc_id"] == "S001"
+    assert all(x["disclaimer"] == "Not legal advice." for x in lines)
+
+
+def test_ingest_reports_step_failure(synthetic, monkeypatch):
+    client, _ = synthetic
+    from navigator.ingest import incremental
+
+    def failing(*a, **k):
+        raise incremental.IngestError("register", "jurisdiction required")
+
+    monkeypatch.setattr(incremental, "run", failing)
+    last = json.loads(client.post("/ingest", json={"text": GOOD_DOC}).text.splitlines()[-1])
+    assert (last["status"], last["step"], last["http_status"]) == ("failed", "register", 400)
+
+
+def test_ingest_one_at_a_time_and_can_be_disabled(synthetic, monkeypatch):
+    client, _ = synthetic
+    from navigator.api import main
+
+    assert main._INGEST_LOCK.acquire(blocking=False)
+    try:
+        assert client.post("/ingest", json={"text": GOOD_DOC}).status_code == 409
+    finally:
+        main._INGEST_LOCK.release()
+    monkeypatch.setenv("NAVIGATOR_DISABLE_INGEST", "1")
+    assert client.post("/ingest", json={"text": GOOD_DOC}).status_code == 403
 
 
 def test_missing_files_fail_closed(synthetic):
