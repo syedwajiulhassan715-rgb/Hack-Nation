@@ -120,6 +120,24 @@
   rent rule or an unenacted measure reported as applying; r-0041 is listed in the notes for review.
   IP 25-21 has no text, so it is not recorded as failed (needs a citable span).
 
+- **API serves precomputed files** (phase 7). Only the deterministic engine runs per request
+  (non-default `as_of`, POST /lookup with user facts). Missing or STUB outputs, or lookup rows
+  whose rule is missing from rules_internal.json, give 503, never an empty answer.
+- **Span offsets** (phase 7, resolves the "Character offsets" item). `/rule/{id}` returns both
+  code-point and UTF-16 offsets for the span and the text window.
+- **Summary answers in the API** (phase 7) are shown only if every number in them appears in
+  the quote (second guard after the summaries stage); otherwise `answer` is null and the UI
+  shows the quote.
+- **Audit lookup by provenance** (phase 7). Rule ids are reassigned on each verify run, so
+  `/audit` matches verify lines by the rule's provenance candidate ids, extract lines by chunk
+  id, ingest lines by document id.
+- **Category questions** ("How much can my rent go up?") are UI wording in
+  `navigator/api/service.py`, not law; owner wording describes obligations only.
+- **CORS**: localhost/127.0.0.1/[::1] on any port; deployed origins via `NAVIGATOR_CORS_ORIGINS`
+  (comma-separated). Put this in the README.
+- **Engine precedence cache** (phase 7). `_REL_CACHE` keyed on `id()` returned stale relations
+  when ids were reused (flaky smoke test); the entry now holds the rule list alive.
+
 ## Open questions
 
 1. **Berkeley ch. 13.63 effective date.** D001 contains no effective date; the second
@@ -160,3 +178,6 @@
 11. **T2/T3 boundary-only answers** (phase 6). If organizers want `affected_address_ids` to
    be empty when the rule text is missing, flip `track_boundary`/conflict handling; current
    choice lists the city's addresses with an explicit "no source text" note.
+12. **Arbitrary map clicks** (phase 7). `/resolve` and POST /lookup only resolve sample
+   addresses within 30 m (no network geocoding at request time). Decide whether the deployed
+   API may call the Census geocoder there (allowed source, but adds a network call per click).
