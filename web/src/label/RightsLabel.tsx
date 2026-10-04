@@ -12,6 +12,7 @@ import { LabelRow } from './LabelRow'
 import { NotesSection } from './NotesSection'
 import { ProposedSection } from './ProposedSection'
 import { StatusChip } from './StatusChip'
+import { AskPanel } from '../ask/AskPanel'
 
 interface Props {
   lookup: LookupResult | null
@@ -260,6 +261,7 @@ export function RightsLabel({ lookup, loading, error, role, onRole, level, onLev
                 </button>
               )}
             </nav>
+            <AskPanel lookup={lookup} role={role} />
             {lang === 'es' && <p className="lang-note">{t.langNote}</p>}
             <div className="rule-heavy" />
             <div className="col-head">

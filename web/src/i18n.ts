@@ -106,6 +106,9 @@ const EN = {
   conflictLine: 'Two laws disagree. A court would decide.',
   datesDisagree: 'Sources disagree on the date:',
   derivedYear: 'Based on year built, not the certificate of occupancy date',
+  // headline fix: an applying row whose quote reads as an exemption shows the engine's explanation
+  whyApplies: 'Why it applies here:',
+  exemptionQuoteNote: 'The source sentence describes an exemption. Tap to read it and check the details.',
   needsReview: 'Needs human review',
   confidenceReasons: 'Confidence reasons:',
   levelCity: 'City',
@@ -359,6 +362,9 @@ const ES: Strings = {
   conflictLine: 'Dos leyes no coinciden. Lo decidiría un tribunal.',
   datesDisagree: 'Las fuentes no coinciden en la fecha:',
   derivedYear: 'Según el año de construcción, no la fecha del certificado de ocupación',
+  // headline fix: an applying row whose quote reads as an exemption shows the engine's explanation
+  whyApplies: 'Por qué aplica aquí:',
+  exemptionQuoteNote: 'La oración de la fuente describe una exención. Tóquela para leerla y revisar los detalles.',
   needsReview: 'Requiere revisión humana',
   confidenceReasons: 'Motivos de confianza:',
   levelCity: 'Ciudad',

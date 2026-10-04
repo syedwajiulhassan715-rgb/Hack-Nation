@@ -71,7 +71,7 @@ def _main(rule: RuleInternal, d: Decision) -> str:
     if DERIVED_CO in cov.derived:
         used = [u for u in used if u != label("year_built")] + ["year built (as an estimate of the certificate-of-occupancy date)"]
     if used:
-        return f"{head} applies: the building's {join(used)} meet its coverage conditions"
+        return f"{head} applies: the building's {join(used)} {'meets' if len(used) == 1 else 'meet'} its coverage conditions"
     return f"{head} applies: its coverage conditions are met"
 
 

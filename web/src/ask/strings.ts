@@ -1,0 +1,72 @@
+// UI copy for "Ask Locus" (EN / ES). Fixed interface words only: no law text, citation,
+// threshold, date or rule name may be added here. Everything law-related shown in the panel
+// comes from AskAnswer / LookupRow fields.
+import type { Lang } from '../i18n'
+
+const EN = {
+  pill: 'Ask Locus about this building',
+  pillSub: 'Answers quote the law for this address',
+  collapse: 'Close Ask Locus',
+  title: 'Ask Locus',
+  intro: 'Ask in your own words. I only answer from the rules on this label, and I quote the sentence each answer comes from.',
+  inputLabel: 'Your question about this building',
+  placeholder: 'e.g. can my rent go up?',
+  send: 'Ask',
+  thinking: 'Reading the rules for this building…',
+  you: 'You',
+  locus: 'Locus',
+  understood: 'Understood as:',
+  quoteTag: 'Quote',
+  showSentence: 'Show the exact sentence',
+  hideSentence: 'Hide the exact sentence',
+  openSource: 'Open the source with this sentence highlighted',
+  retrieved: 'Retrieved',
+  retrievedMissing: 'retrieval date not recorded',
+  citationMissing: 'Citation missing',
+  conflict: 'Sources disagree: flagged for review',
+  asOf: 'As of',
+  notAdvice: 'Not legal advice.',
+  missing: 'These facts would change the answer:',
+  missingHint: (checkAgain: string) => `If an input is shown above, enter the fact and press “${checkAgain}”.`,
+  followUps: 'Ask next',
+  suggestions: 'Try asking',
+  thread: 'Conversation with Locus',
+  clear: 'Clear',
+  empty: 'Type a question to start.',
+}
+
+export type AskStrings = typeof EN
+
+const ES: AskStrings = {
+  pill: 'Pregúntale a Locus sobre este edificio',
+  pillSub: 'Las respuestas citan la ley para esta dirección',
+  collapse: 'Cerrar Pregúntale a Locus',
+  title: 'Pregúntale a Locus',
+  intro: 'Pregunta con tus propias palabras. Solo respondo con las reglas de esta etiqueta y cito la oración de la que sale cada respuesta.',
+  inputLabel: 'Tu pregunta sobre este edificio',
+  placeholder: 'p. ej. ¿pueden subirme la renta?',
+  send: 'Preguntar',
+  thinking: 'Leyendo las reglas de este edificio…',
+  you: 'Tú',
+  locus: 'Locus',
+  understood: 'Entendido como:',
+  quoteTag: 'Cita',
+  showSentence: 'Ver la oración exacta',
+  hideSentence: 'Ocultar la oración exacta',
+  openSource: 'Abrir la fuente con esta oración resaltada',
+  retrieved: 'Consultado',
+  retrievedMissing: 'fecha de consulta no registrada',
+  citationMissing: 'Falta la cita',
+  conflict: 'Las fuentes no coinciden: marcado para revisión',
+  asOf: 'Al',
+  notAdvice: 'No es asesoría legal.',
+  missing: 'Estos datos cambiarían la respuesta:',
+  missingHint: (checkAgain: string) => `Si arriba aparece un campo, escribe el dato y pulsa «${checkAgain}».`,
+  followUps: 'Pregunta después',
+  suggestions: 'Prueba a preguntar',
+  thread: 'Conversación con Locus',
+  clear: 'Borrar',
+  empty: 'Escribe una pregunta para empezar.',
+}
+
+export const ASK_STRINGS: Record<Lang, AskStrings> = { en: EN, es: ES }

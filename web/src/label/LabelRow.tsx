@@ -65,8 +65,15 @@ export function LabelRow({ row, question, sub = false }: Props) {
             title={low ? [t.confidenceReasons, ...row.confidence_reasons].join('\n') : undefined}
             lang={ans.isQuote ? 'en' : lang}
           >
-            {ans.isQuote ? `“${ans.text}”` : ans.text}
+            {ans.kind === 'quote' && `“${ans.text}”`}
+            {ans.kind === 'answer' && ans.text}
+            {ans.kind === 'explanation' && (
+              <>
+                <strong>{t.whyApplies}</strong> <span lang="en">{ans.text}</span>
+              </>
+            )}
           </p>
+          {ans.kind === 'explanation' && <p className="lrow-line fine">{t.exemptionQuoteNote}</p>}
           {row.result === 'unknown' && row.missing_facts.length > 0 && (
             <p className="lrow-line">
               {t.dependsOn} {row.missing_facts.map(factName).join(', ')}

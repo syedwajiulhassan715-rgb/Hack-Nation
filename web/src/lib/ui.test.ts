@@ -3,7 +3,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { countdown, daysBetween, prettyDate, snapToTick } from './dates'
 import { changeKind, testCategory } from './changes'
-import { answerText, categoryView } from './rows'
+import { answerText, categoryView, headlineScore } from './rows'
 import type { CategoryBlock, LookupRow } from '../api/types'
 
 describe('dates', () => {
@@ -72,6 +72,65 @@ describe('rows', () => {
     expect(v.superseded.map((x) => x.team_rule_id)).toEqual(['s'])
     expect(v.others).toEqual([])
     expect(categoryView(block, 'state').winner?.team_rule_id).toBe('s')
+  })
+
+  it('picks the headline that answers the question, without hiding or reclassifying rows', () => {
+    // Synthetic rows; wording only. The side rule sorts first, as the API may send it.
+    const block: CategoryBlock = {
+      category: 'security_deposits',
+      question: 'q',
+      no_rule_note: null,
+      rows: [
+        r({ team_rule_id: 'r-1', title: 'Penalty for withholding deposits', key_value: 'kv', answer: 'a' }),
+        r({ team_rule_id: 'r-2', title: 'Interest on deposits', answer: 'a' }),
+        r({ team_rule_id: 'r-3', title: 'Maximum deposit limit', key_value: "one month's rent", answer: 'a' }),
+        r({ team_rule_id: 'r-4', title: 'Maximum deposit limit', result: 'unknown', key_value: 'kv', answer: 'a' }),
+        r({ team_rule_id: 'r-5', title: 'Old rule', result: 'superseded' }),
+      ],
+    }
+    const v = categoryView(block, null)
+    expect(v.winner?.team_rule_id).toBe('r-3')
+    // every row is still shown, results untouched
+    expect([v.winner, ...v.others, ...v.superseded].map((x) => x?.team_rule_id).sort()).toEqual(['r-1', 'r-2', 'r-3', 'r-4', 'r-5'])
+    expect(v.others.map((x) => x.team_rule_id)).toEqual(['r-1', 'r-2', 'r-4'])
+    expect(v.winner?.result).toBe('applies')
+    // relevance never lifts a weaker result tier above 'applies'
+    const onlyUnknownRelevant = { ...block, rows: block.rows.filter((x) => x.team_rule_id !== 'r-3') }
+    expect(categoryView(onlyUnknownRelevant, null).winner?.result).toBe('applies')
+    expect(headlineScore(block.rows[2], 'security_deposits')).toBeGreaterThan(headlineScore(block.rows[0], 'security_deposits'))
+  })
+
+  it('breaks relevance ties by key value and answer, then city before state, then id', () => {
+    const block: CategoryBlock = {
+      category: 'algorithmic_rent_setting',
+      question: 'q',
+      no_rule_note: null,
+      rows: [
+        r({ team_rule_id: 'r-1', title: 'Pricing algorithm ban', level: 'state' }),
+        r({ team_rule_id: 'r-2', title: 'Pricing algorithm ban', level: 'state', answer: 'a' }),
+        r({ team_rule_id: 'r-3', title: 'Pricing algorithm ban', level: 'city', answer: 'a' }),
+      ],
+    }
+    expect(categoryView(block, null).winner?.team_rule_id).toBe('r-3')
+    expect(categoryView(block, 'state').winner?.team_rule_id).toBe('r-2')
+  })
+
+  it('shows the explanation, not an exemption sentence, for a row that applies without a summary', () => {
+    const exempt = r({
+      quoted_span: '(Please Note: All small properties are exempt from this chapter)',
+      explanation: 'The ordinance applies: the building meets its coverage conditions.',
+    })
+    const a = answerText(exempt)
+    expect(a.kind).toBe('explanation')
+    expect(a.isQuote).toBe(false)
+    expect(a.text).toBe('The ordinance applies: the building meets its coverage conditions.')
+    // a summary still wins; unknown rows and non-exemption quotes keep the quote
+    expect(answerText({ ...exempt, answer: 'plain' }).kind).toBe('answer')
+    expect(answerText({ ...exempt, result: 'unknown' }).kind).toBe('quote')
+    expect(answerText({ ...exempt, quoted_span: 'This section shall not apply to owner-occupied units.' }).kind).toBe('explanation')
+    expect(answerText({ ...exempt, quoted_span: 'A landlord shall return the deposit promptly.' }).kind).toBe('quote')
+    // no explanation to show: fall back to the quote rather than an empty headline
+    expect(answerText({ ...exempt, explanation: '' }).kind).toBe('quote')
   })
 })
 
