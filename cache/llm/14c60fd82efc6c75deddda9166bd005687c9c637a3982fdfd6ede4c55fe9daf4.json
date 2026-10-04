@@ -1,0 +1,97 @@
+{
+ "key_parts": {
+  "text_sha256": "31b7db7b0e637435a30b1c9bf6db06d8e1a4b748e335bceeaa9232da266e6f04",
+  "chunk_id": "D043-c002",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   22126,
+   34722
+  ],
+  "prompt_version": "extract_v5",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 9694,
+  "output_tokens": 3716
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "Los Angeles, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "RSO/JCO Relocation Assistance Amounts (Chart A)",
+    "requirement": "Landlords must pay RSO or JCO relocation assistance per unit. Eligible Tenants receive $11,000 (less than 3 years) or $14,400 (3 or more years or low income), and Qualified Tenants receive $23,150 or $27,400, for July 1, 2026 through June 30, 2027.",
+    "key_value": "Eligible Tenant: $11,000 (less than 3 years) / $14,400 (3 or more years or low income); Qualified Tenant: $23,150 (less than 3 years) / $27,400 (3 or more years or low income)",
+    "coverage_text": "Tenants of units under the RSO or JCO receiving relocation assistance. Payment is per unit, not per tenant. Qualified tenants are 62 or older, handicapped or disabled, or have minor dependent children. Low income means 80 percent or less of Area Median Income.",
+    "predicates_json": null,
+    "exemptions": "Single Family Dwellings that are not lower income may be entitled to one month’s equivalent of rent for relocation payment depending on various factors.",
+    "citation": "Relocation Assistance Bulletin B, Chart A (RSO or JCO Amounts)",
+    "penalty": "In an action by the landlord to recover possession of a rental unit, the tenant may raise as an affirmative defense the failure of the landlord to provide relocation assistance; tenant may file a complaint with LAHD or seek a private right of action.",
+    "quoted_span": "Eligible Tenant $11,000 $14,400",
+    "effective_date_phrase": "Effective July 1, 2026 through June 30, 2027 (Increases July 1st)",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "Los Angeles, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "JCO Relocation for Single Family Dwellings Owned by Natural Persons",
+    "requirement": "For a single-family dwelling subject to the JCO owned by a natural person who owns no more than four dwelling units and a single-family home on a separate lot, relocation is one month’s rent in effect when the termination notice was served, as a payment or credit.",
+    "key_value": "one month’s rent that was in effect when the landlord served the written notice to terminate the tenancy",
+    "coverage_text": "Single-family dwellings subject to the JCO whose owner is a natural person (including via trust or controlled entity) who owns no more than four dwelling units and a single-family home on a separate lot in the City of Los Angeles.",
+    "predicates_json": "{\"all\":[{\"fact\":\"units\",\"op\":\"==\",\"value\":1},{\"fact\":\"owner_type\",\"op\":\"==\",\"value\":\"natural person\"},{\"fact\":\"owner_units_owned\",\"op\":\"<=\",\"value\":4}]}",
+    "exemptions": null,
+    "citation": "LAMC 165.06.A.(6)",
+    "penalty": null,
+    "quoted_span": "one month’s rent that was in effect when the landlord served the written notice to terminate the tenancy, as either a monetary payment or credit.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": "The Los Angeles Municipal Code Section 151.30(E) shall not apply."
+   },
+   {
+    "jurisdiction": "Los Angeles, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Timing and Manner of Relocation Assistance Payment",
+    "requirement": "Relocation payments must be made available within fifteen (15) days of service of the written notice of eviction, split equally among multiple tenants, with the higher amount paid if more than one applies; the landlord may instead deposit the funds in an escrow account within the 15-day period, with escrow payments made within three (3) working days of a request.",
+    "key_value": "within fifteen (15) days of service of the written notice of eviction",
+    "coverage_text": "Landlords owing relocation assistance under the City Ordinances (RSO/JCO).",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "RAC Regulations, Section 960.00",
+    "penalty": null,
+    "quoted_span": "Payments shall be made available within fifteen (15) days of service of the written notice of eviction; however, the landlord may, at the landlord's sole discretion and at the landlord's cost, elect to pay the monetary relocation benefits through an escrow account.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "Los Angeles, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Relocation Offset for Accumulated Rent",
+    "requirement": "A landlord may offset the tenant's accumulated rent against relocation assistance, except when the assistance is owed because a governmental order to vacate or comply for an unpermitted dwelling requires the termination.",
+    "key_value": null,
+    "coverage_text": "Landlords owing relocation assistance under the RSO or JCO.",
+    "predicates_json": null,
+    "exemptions": "No offset when the relocation assistance is owed because a termination of tenancy is required by a governmental agency order to vacate or comply issued for an unpermitted dwelling.",
+    "citation": "LAMC 151.09.G,5., 165.06.J.",
+    "penalty": null,
+    "quoted_span": "A landlord may offset the tenant's accumulated rent against any relocation assistance, unless the relocation assistance is owed because a termination of tenancy is required by a governmental agency order to vacate or comply issued for an unpermitted dwelling.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

@@ -1,0 +1,79 @@
+{
+ "key_parts": {
+  "text_sha256": "a008c846fc4edd842994d8c5ea0367546e55319670e9687c5d1c7ccfdfa1ce40",
+  "chunk_id": "D003-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   86,
+   5927
+  ],
+  "prompt_version": "extract_v6",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 7285,
+  "output_tokens": 2588
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "Berkeley, CA",
+    "level": "city",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Ronald V. Dellums Fair Chance Access to Housing Ordinance - criminal history prohibition",
+    "requirement": "Rental housing providers may not ask about or use criminal history or criminal background checks in advertising, applications, tenant selection or decision-making. They may not refuse to rent, terminate a tenancy, demand a higher security deposit or rent, refuse to add an immediate family member, or otherwise treat applicants or tenants differently based on criminal history.",
+    "key_value": null,
+    "coverage_text": "Rental housing providers in Berkeley, with regard to current or prospective tenants.",
+    "predicates_json": "{\"not\": {\"all\": [{\"fact\": \"owner_occupied\", \"op\": \"==\", \"value\": true}, {\"fact\": \"units\", \"op\": \"<=\", \"value\": 3}]}}",
+    "exemptions": "Lifetime sex offenders; limited exemptions for public housing/Section 8 properties; owner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence; units under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9; units occupied by existing tenant(s) seeking to sublet or add/replace roommates.",
+    "citation": "BMC 13.106",
+    "penalty": "Administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+    "quoted_span": "The Fair Chance Access to Housing Ordinance prohibits rental housing providers in Berkeley from asking about and using criminal history and/or criminal background checks in their rental housing advertising, applications, tenant selection process, or decision-making.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "Berkeley, CA",
+    "level": "city",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Fair Chance Ordinance - written notice and opportunity to respond",
+    "requirement": "A landlord who takes any action against an applicant or tenant based on criminal history must provide the applicant or tenant with written notice and an opportunity to respond.",
+    "key_value": null,
+    "coverage_text": "Landlords taking action against an applicant or tenant based on criminal history.",
+    "predicates_json": "{\"not\": {\"all\": [{\"fact\": \"owner_occupied\", \"op\": \"==\", \"value\": true}, {\"fact\": \"units\", \"op\": \"<=\", \"value\": 3}]}}",
+    "exemptions": "Lifetime sex offenders; limited exemptions for public housing/Section 8 properties; owner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence; units under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9; units occupied by existing tenant(s) seeking to sublet or add/replace roommates.",
+    "citation": "BMC 13.106",
+    "penalty": "Administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+    "quoted_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "Berkeley, CA",
+    "level": "city",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Fair Chance Ordinance - Notice to Rental Applicants and Tenants posting",
+    "requirement": "Housing providers must include the Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control frequently visited by applicants.",
+    "key_value": null,
+    "coverage_text": "Housing providers in Berkeley.",
+    "predicates_json": "{\"not\": {\"all\": [{\"fact\": \"owner_occupied\", \"op\": \"==\", \"value\": true}, {\"fact\": \"units\", \"op\": \"<=\", \"value\": 3}]}}",
+    "exemptions": "Lifetime sex offenders; limited exemptions for public housing/Section 8 properties; owner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence; units under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9; units occupied by existing tenant(s) seeking to sublet or add/replace roommates.",
+    "citation": "BMC 13.106",
+    "penalty": null,
+    "quoted_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

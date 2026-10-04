@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T02:34:47Z",
+  "generated_at": "2026-10-04T03:10:43Z",
   "mapping_reviewed": false,
   "tests": {
     "T1": {
@@ -82,10 +82,10 @@
         }
       ],
       "notes": [
-        "NJ-ALG-01 -> r-0054 (P.L. 2026, c.043 (A3497 1R ACS), section 4; D069; status not_yet_effective on the default date; effective 2027-07-01)",
+        "NJ-ALG-01 -> r-0074 (P.L. 2026, c.043 (A3497 1R ACS); C.56:9-20 to 56:9-26; D069; status not_yet_effective on the default date; effective 2027-07-01)",
         "as-of dates used: 2026-10-01 -> 2027-07-02",
         "affected (result changes for a mapped rule): 140 (Hoboken, NJ 40, Jersey City, NJ 50, NJ (legal city unresolved) 1, Newark, NJ 49)",
-        "r-0054 status: not_yet_effective on 2026-10-01, in_force on 2027-07-02",
+        "r-0074 status: not_yet_effective on 2026-10-01, in_force on 2027-07-02",
         "conflict_with JC-ALG-01 -> no match (no enacted algorithmic_rent_setting rule for Jersey City, NJ was extracted from the corpus)",
         "conflict_with HOB-ALG-01 -> no match (no enacted algorithmic_rent_setting rule for Hoboken, NJ was extracted from the corpus)",
         "JC-ALG-01: no source text in the corpus; the 50 addresses in Jersey City, NJ covered by the mapped rule on 2027-07-02 are flagged for human review because the test names a possible conflict we cannot rule out",
@@ -117,8 +117,8 @@
         }
       ],
       "notes": [
-        "MA-ALG-P1 -> r-0038 (H.5222; D045; status pending on the default date; effective not stated); r-0039 (Bill S.2983; D046; status pending on the default date; effective not stated)",
-        "MA-ALG-P2 -> r-0038 (H.5222; D045; status pending on the default date; effective not stated); r-0039 (Bill S.2983; D046; status pending on the default date; effective not stated)",
+        "MA-ALG-P1 -> r-0046 (Bill H.5222; D045; status pending on the default date; effective not stated); r-0047 (Bill S.2983; D046; status pending on the default date; effective not stated)",
+        "MA-ALG-P2 -> r-0046 (Bill H.5222; D045; status pending on the default date; effective not stated); r-0047 (Bill S.2983; D046; status pending on the default date; effective not stated)",
         "several organizer ids share one pool of our rules; matched as a set (the one-to-one pairing is not decidable from the ids)",
         "as-of date used: 2026-10-01",
         "affected if enacted (coverage not ruled out): 110 (Boston, MA 55, Cambridge, MA 50, MA (legal city unresolved) 5)",
@@ -152,7 +152,7 @@
         "MA-RENT-P1 -> no match (no pending or failed rent_increase_limits rule for MA was extracted from the corpus)",
         "as-of date used: 2026-10-01",
         "the measure has no text in the corpus, so it cannot be recorded as failed (a failed record needs a citable span); it is absent from rules.json and lookups.json",
-        "state rule r-0041 (M.G.L. c. 40P, § 4) is in the lookups for 110 addresses; its requirement reads: \"No city or town may enact, maintain or enforce rent control of any kind. The exception is a city or town that accepts Chapter 40P, which may adopt rent control \" (review: not a cap from the measure)",
+        "state rule r-0054 (General Law - Part I, Title VII, Chapter 40P, Section 4) is in the lookups for 110 addresses; its requirement reads: \"No city or town may enact, maintain or enforce rent control of any kind. A city or town that accepts the chapter may adopt rent control only if it becomes volun\" (review: not a cap from the measure)",
         "affected is empty: a measure that did not pass changes no result"
       ]
     }

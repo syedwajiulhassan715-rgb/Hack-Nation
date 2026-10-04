@@ -38,7 +38,7 @@ tests:
         category: algorithmic_rent_setting
         status_class: enacted
         team_rule_ids:
-        - r-0054
+        - r-0074
     conflict_with:
       JC-ALG-01:
         jurisdiction: Jersey City, NJ
@@ -64,16 +64,16 @@ tests:
         category: algorithmic_rent_setting
         status_class: pending_or_failed
         team_rule_ids:
-        - r-0038
-        - r-0039
+        - r-0046
+        - r-0047
       MA-ALG-P2:
         jurisdiction: MA
         level: state
         category: algorithmic_rent_setting
         status_class: pending_or_failed
         team_rule_ids:
-        - r-0038
-        - r-0039
+        - r-0046
+        - r-0047
   T5:
     rule_ids:
       MA-RENT-P1:

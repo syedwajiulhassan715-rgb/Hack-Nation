@@ -1,0 +1,133 @@
+{
+ "key_parts": {
+  "text_sha256": "d1d4b9874a7c4b51a97cb81809e9ece2658f0f9e52898d904f90d48f3c1a140b",
+  "chunk_id": "D073-c002",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   22770,
+   39034
+  ],
+  "prompt_version": "extract_v6",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 11093,
+  "output_tokens": 4245
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "San Diego, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Notice to Tenant of Residential Tenant Protections",
+    "requirement": "Landlords of covered residential rental property must give tenants a written notice in at least 12-point font stating that local law requires a statement of cause in any termination notice, along with a copy of the Tenant Protection Guide. For tenancies existing before June 24, 2023, this was due within 90 days of June 24, 2023; for tenancies commencing or renewed on or after June 24, 2023, it must be included in the lease or a signed written notice.",
+    "key_value": null,
+    "coverage_text": "Residential rental property subject to Chapter 9, Article 8, Division 7.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "San Diego Municipal Code §98.0705",
+    "penalty": "A landlord’s failure to comply with any provision of this Division shall render void any notice of termination required by this Division.",
+    "quoted_span": "(a) A landlord of residential rental property subject to this Division shall provide written notice in no less than 12-point font to the tenant, and in a manner that complies with California Civil Code section 1632, as may be amended, that states as follows:",
+    "effective_date_phrase": "effective 6-24-2023.",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "San Diego, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Requirements Upon Termination for At-Fault Just Cause",
+    "requirement": "Before terminating for an at-fault curable lease violation, the landlord must give written notice of the violation and an opportunity to cure; if not cured, the landlord may serve a three-day notice to quit. The landlord must also notify the Commission no later than three business days after giving the tenant notice.",
+    "key_value": null,
+    "coverage_text": "Residential rental property subject to the San Diego Residential Tenant Protections Division where the landlord terminates for at-fault just cause.",
+    "predicates_json": null,
+    "exemptions": "The Commission notice requirement does not apply until 30 days after the Commission establishes a submission portal and gives public notice of it.",
+    "citation": "San Diego Municipal Code §98.0706(a)",
+    "penalty": "A landlord's failure to strictly comply with section 98.0706 shall render void any notice of termination required by section 98.0706.",
+    "quoted_span": "Before a landlord issues a notice to terminate a tenancy for at-fault just cause that is a curable lease violation, the landlord shall first give written notice of the violation including a description of the violation and an opportunity to cure the violation under California Code of Civil Procedure section 1161(3), as may be amended.",
+    "effective_date_phrase": "effective 6-24-2023.",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "San Diego, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Notice Requirements Upon Termination for No-Fault Just Cause",
+    "requirement": "For a no-fault termination, the landlord must give written notice at least 30 or 60 days before termination as required by Civil Code 1946.1, in at least 12-point font, describing the basis for termination, the tenant's right to relocation assistance and the right to an offer to renew if the unit is re-offered within five years. The landlord must also notify the Commission no later than three business days after giving the tenant notice.",
+    "key_value": "at least 30 or 60 days prior to the proposed date of termination",
+    "coverage_text": "Residential rental property subject to the San Diego Residential Tenant Protections Division where the landlord terminates for no-fault just cause.",
+    "predicates_json": null,
+    "exemptions": "The Commission notice requirement does not apply until 30 days after the Commission establishes a submission portal and gives public notice of it.",
+    "citation": "San Diego Municipal Code §98.0706(b)",
+    "penalty": "A landlord's failure to strictly comply with section 98.0706 shall render void any notice of termination required by section 98.0706.",
+    "quoted_span": "The landlord shall give written notice to the tenant at least 30 or 60 days prior to the proposed date of termination as required by California Civil Code section 1946.1, as may be amended, in no less than 12-point font.",
+    "effective_date_phrase": "effective 6-24-2023.",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "San Diego, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Relocation Assistance for No-Fault Just Cause Termination",
+    "requirement": "Regardless of tenant income or length of tenancy, the landlord must provide relocation assistance by direct payment (within 15 days of the notice) or rent waiver equal to two months of actual rent, or three months if the tenant is a senior or disabled. Relocation assistance is in addition to return of deposits and is credited against other relocation assistance required by federal, state or local law.",
+    "key_value": "two months of actual rent; three months of actual rent if the tenant is a senior or disabled",
+    "coverage_text": "Tenants of residential rental property subject to the Division whose tenancy is terminated for no-fault just cause, regardless of income or length of tenancy.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "San Diego Municipal Code §98.0706(c)",
+    "penalty": "Any landlord who fails to provide relocation assistance as required by section 98.0706(c) shall be liable to the tenant in a civil action for not less than three times the required relocation assistance and actual economic damages.",
+    "quoted_span": "Unless section 98.0706(c)(1)(A)(ii) applies, the direct payment to the tenant shall be in an amount equal to two months of actual rent under the tenant’s lease in effect at the date of the notice.",
+    "effective_date_phrase": "effective 6-24-2023.",
+    "effective_date_anchor": null,
+    "interaction_text": "Any relocation assistance required by this Division shall be credited against any other relocation assistance required by any federal, state, or other local law."
+   },
+   {
+    "jurisdiction": "San Diego, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Right of First Offer After No-Fault Eviction",
+    "requirement": "If the unit is offered for rent within five years of an eviction under sections 98.0704(b)(1), (3), or (4), the landlord must first offer it in writing to the displaced tenant who requested an offer in writing within 30 days of the termination notice and provided an address; the tenant has 30 days to accept.",
+    "key_value": "within five years; 30 days to accept",
+    "coverage_text": "Tenants displaced by no-fault just cause termination under sections 98.0704(b)(1), (3), or (4) who requested an offer and provided a mailing or email address.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "San Diego Municipal Code §98.0706(d)",
+    "penalty": "A landlord's failure to strictly comply with section 98.0706 shall render void any notice of termination required by section 98.0706.",
+    "quoted_span": "If a residential rental property is offered for rent or lease for residential purposes within five years of the date the tenant was evicted under sections 98.0704(b)(1), (3), or (4), landlord shall first offer to lease the residential rental property in writing to the tenant displaced from that unit by the no-fault just cause termination if the tenant:",
+    "effective_date_phrase": "effective 6-24-2023.",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "San Diego, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Buyout Agreements",
+    "requirement": "Before a buyout offer the landlord must give each tenant a written disclosure of their rights; buyout agreements must be in writing with required statements and must be for more than the relocation assistance available under section 98.0706(c), or they are void.",
+    "key_value": null,
+    "coverage_text": "Tenants of residential rental property subject to the Division offered buyout agreements.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "San Diego Municipal Code §98.0707",
+    "penalty": "A buyout agreement for less than the amount of relocation assistance owed to the tenant violates this Division and is void.",
+    "quoted_span": "Buyout agreements must be for an amount that is greater than the amount of relocation assistance available to the tenant in section 98.0706(c). A buyout agreement for less than the amount of relocation assistance owed to the tenant violates this Division and is void.",
+    "effective_date_phrase": "effective 6-24-2023.",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

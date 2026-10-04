@@ -1,0 +1,97 @@
+{
+ "key_parts": {
+  "text_sha256": "511f8074b8f4959161fb4c7ec922c8fa963735b47c13d852b8a09ca42b922ecf",
+  "chunk_id": "D027-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   138,
+   10847
+  ],
+  "prompt_version": "extract_v5",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 8611,
+  "output_tokens": 2911
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Source of income discrimination prohibition (FEHA housing)",
+    "requirement": "The owner of any housing accommodation may not discriminate against or harass any person because of that person's source of income or other listed protected characteristics. Making a written or oral inquiry about the level or source of income is not source-of-income discrimination.",
+    "key_value": null,
+    "coverage_text": "Owners of any housing accommodation. Source of income means lawful, verifiable income paid to a tenant, a tenant's representative, or a landlord on the tenant's behalf, including public assistance and housing subsidies such as Section 8 vouchers and HUD-VASH vouchers.",
+    "predicates_json": null,
+    "exemptions": "It is not source-of-income discrimination to make a written or oral inquiry concerning the level or source of income.",
+    "citation": "Government Code Section 12955(a), (p)",
+    "penalty": null,
+    "quoted_span": "(a) For the owner of any housing accommodation to discriminate against or harass any person because of the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information of that person.",
+    "effective_date_phrase": "Effective January 1, 2024.",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Aggregate income of persons residing together",
+    "requirement": "A housing provider may not use a financial or income standard in rental housing that fails to count the aggregate income of persons living or proposing to live together the same way it counts the aggregate income of married persons.",
+    "key_value": null,
+    "coverage_text": "Rental of housing.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "Government Code Section 12955(n)",
+    "penalty": null,
+    "quoted_span": "(n) To use a financial or income standard in the rental of housing that fails to account for the aggregate income of persons residing together or proposing to reside together on the same basis as the aggregate income",
+    "effective_date_phrase": "Effective January 1, 2024.",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Income standard based on tenant's portion of rent for subsidized applicants",
+    "requirement": "Where there is a government rent subsidy, a financial or income standard used to assess rental eligibility must be based on the portion of the rent to be paid by the tenant.",
+    "key_value": null,
+    "coverage_text": "Rental housing applicants in instances in which there is a government rent subsidy.",
+    "predicates_json": "{\"fact\": \"tenant_income_source\", \"op\": \"==\", \"value\": \"government rent subsidy\"}",
+    "exemptions": "Does not limit the owner's ability to request information or documentation to verify employment, to request landlord references, or to verify identity.",
+    "citation": "Government Code Section 12955(o)(1)(A)",
+    "penalty": null,
+    "quoted_span": "(A) Use a financial or income standard in assessing eligibility for the rental of housing that is not based on the portion of the rent to be paid by the tenant.",
+    "effective_date_phrase": "Effective January 1, 2024.",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Credit history alternative evidence for subsidized applicants",
+    "requirement": "Where there is a government rent subsidy, a housing provider may not use credit history in the application process without offering the applicant the option to provide lawful, verifiable alternative evidence of ability to pay the tenant's portion of rent; if the applicant elects to do so, the provider must give reasonable time to respond and reasonably consider that evidence in lieu of credit history.",
+    "key_value": null,
+    "coverage_text": "Rental accommodation applicants in instances in which there is a government rent subsidy.",
+    "predicates_json": "{\"fact\": \"tenant_income_source\", \"op\": \"==\", \"value\": \"government rent subsidy\"}",
+    "exemptions": "Does not limit the owner's ability to request information or documentation to verify employment, to request landlord references, or to verify identity.",
+    "citation": "Government Code Section 12955(o)(1)(B)",
+    "penalty": null,
+    "quoted_span": "(II) Reasonably consider that alternative evidence in lieu of the person’s credit history in determining whether to offer the rental accommodation to the applicant.",
+    "effective_date_phrase": "Effective January 1, 2024.",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

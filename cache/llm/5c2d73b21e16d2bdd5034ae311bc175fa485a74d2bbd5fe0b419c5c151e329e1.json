@@ -1,0 +1,43 @@
+{
+ "key_parts": {
+  "text_sha256": "e06aa61acf6ddb50631d5be3c89c4029caccb13c0dcc7be888e0e64f8b182c2e",
+  "chunk_id": "D066-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   88,
+   4152
+  ],
+  "prompt_version": "extract_v6",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 6638,
+  "output_tokens": 1064
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "application_screening_fees",
+    "status_hint": "enacted",
+    "title": "Residential rental property application fee not to exceed $50",
+    "requirement": "A landlord or its agent may not require an application or similar fee to lease or sublease a residential rental property that exceeds $50. The fee limit is adjusted each year by the Director of the Division of Consumer Affairs in proportion to the percent change in the Consumer Price Index, and only if that change is greater than zero.",
+    "key_value": "$50 per application, adjusted annually in direct proportion to the percent change in the Consumer Price Index over a 12-month period ending October 31 of the previous year",
+    "coverage_text": "Landlords and their agents requiring an application or similar fee to lease or sublease a residential rental property for dwelling purposes.",
+    "predicates_json": "{\"all\": [{\"fact\": \"units\", \"op\": \">=\", \"value\": 3}]}",
+    "exemptions": "Does not apply to a dwelling unit in a one-family or two-family dwelling offered for rent, or to a licensee of the New Jersey Real Estate Commission unless the licensee is the landlord of the residential rental property.",
+    "citation": "P.L. 2025, c.405 (C.46:8-18.1)",
+    "penalty": "Penalty of up to $500 for a first offense, up to $750 for a second offense, and up to $1,000 for each subsequent offense, collected through summary proceedings under the Penalty Enforcement Law of 1999; the amount wrongfully charged is taken from the collected penalty and remitted to the applicant or prospective tenant.",
+    "quoted_span": "A landlord, or agent thereof, shall not require an application or other similar fee to apply to lease or sublease a residential rental property for dwelling purposes, which exceeds $50.",
+    "effective_date_phrase": "This act shall take effect on the first day of the fourth month next following the date of enactment",
+    "effective_date_anchor": "Approved January 20, 2026.",
+    "interaction_text": null
+   }
+  ]
+ }
+}

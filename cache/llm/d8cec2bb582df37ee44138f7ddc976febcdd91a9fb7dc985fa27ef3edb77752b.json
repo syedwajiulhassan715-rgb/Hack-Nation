@@ -1,0 +1,43 @@
+{
+ "key_parts": {
+  "text_sha256": "1fdbfb48743a46429c3f47dbd8d08c665739202361661e1a2f19b94bb0ec43a6",
+  "chunk_id": "D069-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   95,
+   10354
+  ],
+  "prompt_version": "extract_v5",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 8437,
+  "output_tokens": 2069
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "algorithmic_rent_setting",
+    "status_hint": "enacted",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act – prohibition on coordinators and parallel pricing coordination",
+    "requirement": "It is unlawful and a violation of the New Jersey Antitrust Act for a rental property owner (or its agent, representative or subcontractor) to pay for or use the services of a coordinator, for a coordinator to facilitate agreements among rental property owners that restrict competition (including by performing a coordinating function), for two or more persons to engage in or facilitate parallel pricing coordination, or for any person to perform a coordinating function. A coordinator is anyone operating algorithmic revenue management software or an algorithmic device that performs a coordinating function, i.e. using competitively sensitive information of other owners or the same algorithm across owners to set or recommend rental prices, material lease terms or occupancy levels.",
+    "key_value": null,
+    "coverage_text": "Rental property owners (persons owning directly or indirectly one or more rental residential dwelling units), their agents, representatives and subcontractors, coordinators, and any person. Residential dwelling units are any house, apartment, accessory unit or other unit intended as a primary residence in New Jersey. Covered software is algorithmic revenue management software or an algorithmic device that performs a coordinating function.",
+    "predicates_json": "{\"all\": [{\"not\": {\"fact\": \"dormitory_or_institutional\", \"op\": \"==\", \"value\": true}}]}",
+    "exemptions": "Residential dwelling units exclude inpatient medical care, licensed long-term care, and detention or correctional facilities. An algorithmic device excludes a spreadsheet that operates without artificial intelligence and requires human analysis, and a database that only uses an algorithm to query unprocessed data. Coordinating function excludes use of competitively sensitive information solely for research, statistical analysis or testing not used to set or recommend terms; developing a rent estimate made available to the public at no cost; real estate brokerage databases available on equal terms that do not set or recommend prices or collect competitively sensitive information for that purpose; and a government entity setting or limiting rents through affordability controls. Coordinator excludes a government entity setting or limiting rents through affordability controls.",
+    "citation": "P.L.2026, c.43, §4 (C.56:9-20 to 56:9-26); Assembly Committee Substitute for Assembly, No. 3497",
+    "penalty": "Violation of the New Jersey Antitrust Act, P.L.1970, c.73; sections 6 through 17 of P.L.1970, c.73 (C.56:9-6 through 9-17) apply to a violation of section 4.",
+    "quoted_span": "a rental property owner, or any agent, representative, or subcontractor thereof, to receive, subscribe to, contract for, or otherwise exchange any form of consideration in return for the use of, the services of a coordinator;",
+    "effective_date_phrase": "This act shall take effect on the first day of the twelfth month next following the date of enactment.",
+    "effective_date_anchor": "approved July 20, 2026",
+    "interaction_text": "A municipality shall be prohibited from enacting an ordinance that conflicts with this act.  This subsection shall not be construed to prohibit the enactment of ordinances explicitly authorized or required by any other law."
+   }
+  ]
+ }
+}

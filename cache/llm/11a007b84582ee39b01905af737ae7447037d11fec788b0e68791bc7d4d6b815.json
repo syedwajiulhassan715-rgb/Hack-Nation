@@ -1,0 +1,97 @@
+{
+ "key_parts": {
+  "text_sha256": "f24c21cb2b32330c0f2f112f066d02b784887a8552cc3777ea96f1d53dd0171f",
+  "chunk_id": "D052-c002",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   20323,
+   26126
+  ],
+  "prompt_version": "extract_v6",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 6974,
+  "output_tokens": 2647
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "MA",
+    "level": "state",
+    "category": "security_deposits",
+    "status_hint": "enacted",
+    "title": "Return of security deposit and forfeiture of right to retain",
+    "requirement": "The lessor must return the security deposit or balance owed, with interest, within thirty days after termination of the tenancy. A lessor who fails to do so, fails to deposit the funds as required, fails to give an itemized list of damages within thirty days, uses conflicting lease provisions or waivers, or fails to transfer the deposit to a successor forfeits the right to retain any portion of the deposit.",
+    "key_value": "thirty (30) days after termination of the tenancy",
+    "coverage_text": "Lessors of residential premises holding a tenant's security deposit.",
+    "predicates_json": null,
+    "exemptions": "Does not apply to any lease, rental, occupancy or tenancy of one hundred days or less in duration which is for a vacation or recreational purpose.",
+    "citation": "G.L. c. 186, § 15B(6)",
+    "penalty": "Forfeiture of the right to retain any portion of the deposit or to counterclaim for damage; for failures under clauses (a), (d) or (e), damages of three times the deposit or balance owed plus interest at five per cent from the due date, court costs and reasonable attorney's fees.",
+    "quoted_span": "(e) fails to return to the tenant the security deposit or balance thereof to which the tenant is entitled after deducting therefrom any sums in accordance with the provisions of this section, together with any interest thereon, within thirty days after termination of the tenancy.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "MA",
+    "level": "state",
+    "category": "security_deposits",
+    "status_hint": "enacted",
+    "title": "Treble damages for security deposit violations",
+    "requirement": "If the lessor or agent fails to deposit the funds as required, fails to transfer the deposit to a successor, or fails to return the deposit within thirty days, the tenant is awarded three times the deposit or balance owed plus interest at five per cent, court costs and reasonable attorney's fees.",
+    "key_value": "three times the amount of such security deposit plus interest at five per cent",
+    "coverage_text": "Lessors and their agents holding a tenant's security deposit.",
+    "predicates_json": null,
+    "exemptions": "Does not apply to any lease, rental, occupancy or tenancy of one hundred days or less in duration which is for a vacation or recreational purpose.",
+    "citation": "G.L. c. 186, § 15B(7)",
+    "penalty": "Damages equal to three times the security deposit or balance owed plus interest at five per cent from the due date, together with court costs and reasonable attorney's fees.",
+    "quoted_span": "(7) If the lessor or his agent fails to comply with clauses (a), (d), or (e) of subsection 6, the tenant shall be awarded damages in an amount equal to three times the amount of such security deposit or balance thereof to which the tenant is entitled plus interest at the rate of five per cent from the date when such payment became due, together with court costs and reasonable attorney's fees.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "MA",
+    "level": "state",
+    "category": "security_deposits",
+    "status_hint": "enacted",
+    "title": "Transfer of last month's rent advance to successor",
+    "requirement": "A lessor who transfers the interest in a unit for which last month's rent was received in advance must credit the advance plus accrued interest to the successor, who becomes liable to the tenant and must notify the tenant in writing within forty-five days of the transfer.",
+    "key_value": "notice within forty-five (45) days from the date of transfer",
+    "coverage_text": "Lessors who receive rent in advance for the last month of tenancy and transfer their interest in the dwelling unit, and their successors in interest.",
+    "predicates_json": null,
+    "exemptions": "Granting a mortgage is not a transfer of interest. Successor liability does not apply to a city or town acquiring title under chapter sixty or to a foreclosing mortgagee or mortgagee in possession that is a state- or federally-chartered financial institution. The section does not apply to tenancies of one hundred days or less for a vacation or recreational purpose.",
+    "citation": "G.L. c. 186, § 15B(7A)",
+    "penalty": null,
+    "quoted_span": "The successor in interest shall, within forty-five days from the date of said transfer, notify the tenant who made such rental advance that such rental advance was so credited, and that such successor has assumed responsibility therefor pursuant to the foregoing provision.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "MA",
+    "level": "state",
+    "category": "security_deposits",
+    "status_hint": "enacted",
+    "title": "Conflicting lease provisions and waivers void",
+    "requirement": "Any lease provision that conflicts with the security deposit section, and any tenant or prospective tenant waiver of it, is void and unenforceable.",
+    "key_value": null,
+    "coverage_text": "Residential leases subject to the security deposit section.",
+    "predicates_json": null,
+    "exemptions": "Does not apply to any lease, rental, occupancy or tenancy of one hundred days or less in duration which is for a vacation or recreational purpose.",
+    "citation": "G.L. c. 186, § 15B(8)",
+    "penalty": null,
+    "quoted_span": "(8) Any provision of a lease which conflicts with any provision of this section and any waiver by a tenant or prospective tenant of any provision of this section shall be deemed to be against public policy and therefore void and unenforceable.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

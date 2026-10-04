@@ -1,0 +1,61 @@
+{
+ "key_parts": {
+  "text_sha256": "6c1a194983bb0ee7079919bb8ef0e77efcd35d73dd9795853024a6eaaf5b24de",
+  "chunk_id": "D051-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   119,
+   4064
+  ],
+  "prompt_version": "extract_v6",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 6429,
+  "output_tokens": 1903
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "MA",
+    "level": "state",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Notice to determine estate at will",
+    "requirement": "Either party may end a tenancy at will by written notice of three months; if rent is payable at periods of less than three months, notice equal to the interval between rent days or thirty days, whichever is longer, is sufficient. The notice may include an offer of a new tenancy on different terms without affecting its validity.",
+    "key_value": "three months' (3 months') written notice; if rent payable at periods of less than three months, the interval between rent days or thirty (30) days, whichever is longer",
+    "coverage_text": "Estates (tenancies) at will.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "General Law - Part II, Title I, Chapter 186, Section 12",
+    "penalty": null,
+    "quoted_span": "Section 12. Estates at will may be determined by either party by three months' notice in writing for that purpose given to the other party; and, if the rent reserved is payable at periods of less than three months, the time of such notice shall be sufficient if it is equal to the interval between the days of payment or thirty days, whichever is longer.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "MA",
+    "level": "state",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Notice to quit for nonpayment of rent and right to cure",
+    "requirement": "For nonpayment of rent by a tenant at will, fourteen days' written notice to quit is sufficient, but a tenant who has not received a similar notice within the prior twelve months can stop the termination by paying or tendering the full rent due within ten days of receiving the notice. The notice must contain a prescribed notification of this right.",
+    "key_value": "fourteen (14) days' notice to quit; cure by paying full rent due within ten (10) days if no similar notice in prior twelve (12) months",
+    "coverage_text": "Tenants at will who neglect or refuse to pay rent due.",
+    "predicates_json": null,
+    "exemptions": "The right to cure does not apply to a tenant who received a similar notice from the landlord within the twelve months preceding receipt of the notice.",
+    "citation": "General Law - Part II, Title I, Chapter 186, Section 12",
+    "penalty": "If the notice fails to contain the required notification, the tenant's time to pay or tender rent is extended to the day the answer is due in any action by the landlord to recover possession.",
+    "quoted_span": "In case of neglect or refusal to pay the rent due from a tenant at will, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the tenancy; provided, that the tenancy of a tenant who has not received a similar notice from the landlord within the twelve months next preceding the receipt of such notice shall not be determined if the tenant, within ten days after the receipt thereof, pays or tenders to the landlord, the landlord's attorney, or the person to whom the tenant customarily pays rent, the full amount of any rent due.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

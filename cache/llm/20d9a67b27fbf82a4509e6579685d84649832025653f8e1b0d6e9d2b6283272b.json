@@ -1,0 +1,61 @@
+{
+ "key_parts": {
+  "text_sha256": "0699980875e6bf3d797abd8b734db7d449b295173e33668cc655e3b394c084ed",
+  "chunk_id": "D022-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   125,
+   6577
+  ],
+  "prompt_version": "extract_v6",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 7404,
+  "output_tokens": 1712
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "algorithmic_rent_setting",
+    "status_hint": "enacted",
+    "title": "Cartwright Act: common pricing algorithm used in restraint of trade (AB 325)",
+    "requirement": "It is unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of the Cartwright Act.",
+    "key_value": null,
+    "coverage_text": "Any person who uses or distributes a common pricing algorithm, meaning any methodology, including a computer, software, or other technology, used by two or more persons, that uses competitor data to recommend, align, stabilize, set, or otherwise influence a price or commercial term. Distribution includes selling, licensing, providing access to, or otherwise making available by any means, including through a subscription or the sale of a service.",
+    "predicates_json": null,
+    "exemptions": "\"Person\" does not include the end consumer of a product or service.",
+    "citation": "Business and Professions Code Section 16729(a) (AB 325, Chapter 338)",
+    "penalty": "Violation of the Cartwright Act is punishable as a crime.",
+    "quoted_span": "(a) It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": "(c) Nothing in this section shall impair or limit the applicability of antitrust laws."
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "algorithmic_rent_setting",
+    "status_hint": "enacted",
+    "title": "Cartwright Act: coercion to adopt common pricing algorithm recommendations (AB 325)",
+    "requirement": "It is unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a price or commercial term recommended by the algorithm for the same or similar products or services in California.",
+    "key_value": null,
+    "coverage_text": "Any person who uses or distributes a common pricing algorithm, meaning any methodology, including a computer, software, or other technology, used by two or more persons, that uses competitor data to recommend, align, stabilize, set, or otherwise influence a price or commercial term (including level of service, availability, and output).",
+    "predicates_json": null,
+    "exemptions": "\"Person\" does not include the end consumer of a product or service.",
+    "citation": "Business and Professions Code Section 16729(b) (AB 325, Chapter 338)",
+    "penalty": "Violation of the Cartwright Act is punishable as a crime.",
+    "quoted_span": "(b) It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": "(c) Nothing in this section shall impair or limit the applicability of antitrust laws."
+   }
+  ]
+ }
+}

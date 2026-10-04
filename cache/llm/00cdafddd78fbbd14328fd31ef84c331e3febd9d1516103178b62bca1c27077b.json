@@ -1,0 +1,43 @@
+{
+ "key_parts": {
+  "text_sha256": "cdc077701a5c63533240e370c77ce86546bd2c8372d771433c52a98fadc48f19",
+  "chunk_id": "D050-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   119,
+   2401
+  ],
+  "prompt_version": "extract_v6",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 5954,
+  "output_tokens": 963
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "MA",
+    "level": "state",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Determination of lease for nonpayment of rent",
+    "requirement": "When a tenant under a written lease neglects or refuses to pay rent due, the landlord may end the lease with fourteen days' written notice to quit. The lease is not ended if the tenant pays or tenders all rent then due, with interest and costs of suit, on or before the day the answer is due in the landlord's possession action.",
+    "key_value": "fourteen (14) days' notice to quit",
+    "coverage_text": "Tenancies under a written lease where the tenant neglects or refuses to pay rent due.",
+    "predicates_json": null,
+    "exemptions": "If the nonpayment was caused by a failure or delay of the federal government, the commonwealth or any municipality, or their departments, agencies or authorities, in mailing or delivering a subsistence or rental payment, check or voucher (other than a salary payment), the court shall continue the hearing not less than seven days. If all rent due with interest and costs is tendered within that time, the court shall treat the tenancy as not terminated.",
+    "citation": "G.L. c. 186, § 11",
+    "penalty": null,
+    "quoted_span": "Section 11. Upon the neglect or refusal to pay the rent due under a written lease, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the lease, unless the tenant, on or before the day the answer is due, in an action by the landlord to recover possession of the premises, pays or tenders to the landlord or to his attorney all rent then due, with interest and costs of suit.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

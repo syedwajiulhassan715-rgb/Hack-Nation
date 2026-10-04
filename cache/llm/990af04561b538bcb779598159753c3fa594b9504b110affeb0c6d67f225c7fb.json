@@ -1,0 +1,133 @@
+{
+ "key_parts": {
+  "text_sha256": "a61f61a51b513b48a41cce48326e28861838a95e5e5a29cdedc41470d44ed505",
+  "chunk_id": "D067-c006",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   95230,
+   119128
+  ],
+  "prompt_version": "extract_v5",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 13344,
+  "output_tokens": 4408
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Anti-Eviction Act good cause requirement",
+    "requirement": "A residential landlord may not evict a tenant or fail to renew a written or oral lease without good cause, and must be able to prove the grounds in court.",
+    "key_value": null,
+    "coverage_text": "Most residential rental properties, including single-family homes, mobile homes and land in a mobile home park, apartment buildings, complexes, and rooming and boarding homes.",
+    "predicates_json": "{\"all\": [{\"not\": {\"all\": [{\"fact\": \"owner_occupied\", \"op\": \"==\", \"value\": true}, {\"fact\": \"units\", \"op\": \"in\", \"value\": [2, 3]}]}}]}",
+    "exemptions": "May not apply to two- or three-unit owner-occupied premises with two or fewer rental units. Does not apply to hotel guests, motel guests, or guest houses rented to a transient guest or seasonal tenant, but hotel and motel guests are covered if they have no alternate residence and reside there on a continual basis. Does not apply to a unit held in trust on behalf of a developmentally disabled immediate family member who permanently occupies the unit.",
+    "citation": "N.J.S.A. 2A:18-61.1 to 61.12",
+    "penalty": null,
+    "quoted_span": "No residential landlord may evict or fail to renew a lease, whether it is a written or an oral lease without good cause. The landlord must be able to prove in court that he has grounds for an eviction.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Written notice and Notice to Quit for good cause evictions",
+    "requirement": "Each cause for eviction, except nonpayment of rent, must be described in detail in a written notice to the tenant, and a Notice to Quit is required for all good cause evictions except for nonpayment of rent.",
+    "key_value": null,
+    "coverage_text": "Good cause evictions under the Anti-Eviction Act.",
+    "predicates_json": "{\"all\": [{\"not\": {\"all\": [{\"fact\": \"owner_occupied\", \"op\": \"==\", \"value\": true}, {\"fact\": \"units\", \"op\": \"in\", \"value\": [2, 3]}]}}]}",
+    "exemptions": "Eviction for nonpayment of rent.",
+    "citation": "N.J.S.A. 2A:18-61.2",
+    "penalty": null,
+    "quoted_span": "Each cause, except for nonpayment of rent, must be described in detail by the landlord in a written notice to the tenant.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Eviction for failure to pay rent",
+    "requirement": "A landlord may take legal action to evict for nonpayment of rent without prior notice, except that a 14-day notice must be given before filing if the tenant resides in federally subsidized housing. A tenant may not be evicted for nonpayment if the unpaid rent was used to continue utility services the landlord was responsible for and failed to pay.",
+    "key_value": "14-day notice for federally subsidized housing",
+    "coverage_text": "Tenants who fail to pay rent; notice requirement applies to tenants in federally subsidized housing.",
+    "predicates_json": "{\"all\": [{\"not\": {\"all\": [{\"fact\": \"owner_occupied\", \"op\": \"==\", \"value\": true}, {\"fact\": \"units\", \"op\": \"in\", \"value\": [2, 3]}]}}]}",
+    "exemptions": null,
+    "citation": "N.J.S.A. 2A:18-61.1(a)",
+    "penalty": null,
+    "quoted_span": "The landlord is not required to give the tenant notice before filing an eviction suit, except if the tenant resides in federally subsidized housing.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Eviction for disorderly conduct",
+    "requirement": "If a tenant continues disorderly conduct after a written Notice to Cease, the landlord may file for eviction; a Notice to Quit must be served at least three days before filing.",
+    "key_value": "Notice to Quit at least three days prior to filing",
+    "coverage_text": "Tenants who continue disorderly conduct that destroys the peace and quiet of other tenants or the neighborhood after a Notice to Cease.",
+    "predicates_json": "{\"all\": [{\"not\": {\"all\": [{\"fact\": \"owner_occupied\", \"op\": \"==\", \"value\": true}, {\"fact\": \"units\", \"op\": \"in\", \"value\": [2, 3]}]}}]}",
+    "exemptions": null,
+    "citation": "N.J.S.A. 2A:18-61.1(b)",
+    "penalty": null,
+    "quoted_span": "A Notice to Quit must be served on the tenant at least three days prior to filing a suit for eviction (N.J.S.A. 2A:18-61.1(b)).",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Eviction for damage or destruction to the property",
+    "requirement": "A tenant may be evicted for intentionally or through gross negligence causing or allowing destruction, damage, or injury to the property; a Notice to Quit must be served at least three days before filing.",
+    "key_value": "Notice to Quit at least three days prior to filing",
+    "coverage_text": "Tenants who intentionally or by gross negligence damage the property.",
+    "predicates_json": "{\"all\": [{\"not\": {\"all\": [{\"fact\": \"owner_occupied\", \"op\": \"==\", \"value\": true}, {\"fact\": \"units\", \"op\": \"in\", \"value\": [2, 3]}]}}]}",
+    "exemptions": null,
+    "citation": "N.J.S.A. 2A:18-61.1(c)",
+    "penalty": null,
+    "quoted_span": "The tenant may be evicted if they have intentionally or by reason of gross negligence caused or allowed destruction, damage, or injury to the property.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Eviction for substantial violation of landlord's rules and regulations",
+    "requirement": "If a tenant continues to substantially violate reasonable rules in the lease or accepted in writing after a written Notice to Cease, the landlord may file for eviction; a Notice to Quit must be served at least one month before filing, on or before the start of a new month.",
+    "key_value": "Notice to Quit at least one month prior to filing",
+    "coverage_text": "Tenants who continue substantially violating reasonable lease rules and regulations after a Notice to Cease.",
+    "predicates_json": "{\"all\": [{\"not\": {\"all\": [{\"fact\": \"owner_occupied\", \"op\": \"==\", \"value\": true}, {\"fact\": \"units\", \"op\": \"in\", \"value\": [2, 3]}]}}]}",
+    "exemptions": null,
+    "citation": "N.J.S.A. 2A:18-61.1(d)",
+    "penalty": null,
+    "quoted_span": "A Notice to Quit must be served on the tenant at least one month prior to filing the suit for eviction.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

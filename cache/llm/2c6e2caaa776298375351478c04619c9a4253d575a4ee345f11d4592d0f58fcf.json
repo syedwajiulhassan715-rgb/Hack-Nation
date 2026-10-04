@@ -1,0 +1,43 @@
+{
+ "key_parts": {
+  "text_sha256": "857cb50fde16e0027346c44f502b2f0d854aad4bca7cf0926a31cd54adad8159",
+  "chunk_id": "D068-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   95,
+   6814
+  ],
+  "prompt_version": "extract_v6",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 7499,
+  "output_tokens": 1336
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "NJ Law Against Discrimination - source of lawful income protection",
+    "requirement": "Housing discrimination based on the source of lawful income or source of lawful rent or mortgage payment a tenant or purchaser uses is prohibited. For example, a landlord cannot deny a lawful Section 8 HUD voucher recipient the right to rent an apartment based solely on that source of lawful income.",
+    "key_value": null,
+    "coverage_text": "The sale or rental of all property, including open land, whether for business or residential purposes, with listed exceptions.",
+    "predicates_json": "{\"all\": [{\"not\": {\"all\": [{\"fact\": \"units\", \"op\": \"==\", \"value\": 2}, {\"fact\": \"owner_occupied\", \"op\": \"==\", \"value\": true}]}}, {\"not\": {\"all\": [{\"fact\": \"units\", \"op\": \"==\", \"value\": 1}, {\"fact\": \"owner_occupied\", \"op\": \"==\", \"value\": true}]}}]}",
+    "exemptions": "The rental of a single apartment or flat in a two-family dwelling whose other unit is occupied by the owner as a residence; the rental of a room or rooms by the owner or occupant of a one-family dwelling occupied by him/her as a residence; preference given to persons of the same religion by a religious organization.",
+    "citation": "New Jersey Law Against Discrimination (LAD)",
+    "penalty": "A complaint may be filed with the Division on Civil Rights for free within 180 days of the alleged violation, or in New Jersey Superior Court within two years of the alleged violation.",
+    "quoted_span": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

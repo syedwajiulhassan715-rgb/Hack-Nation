@@ -1,0 +1,43 @@
+{
+ "key_parts": {
+  "text_sha256": "448b85d4e40d5f17d12acf18db20aab4b9337b2e196099fee46c65f46dae91cc",
+  "chunk_id": "D078-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   82,
+   7026
+  ],
+  "prompt_version": "extract_v6",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 7673,
+  "output_tokens": 728
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "San Francisco, CA",
+    "level": "city",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Fair Chance Ordinance (affordable housing)",
+    "requirement": "San Francisco's Fair Chance Ordinance protects residents with arrest or conviction history in affordable housing decisions.",
+    "key_value": null,
+    "coverage_text": "Affordable housing decisions involving residents with arrest or conviction history.",
+    "predicates_json": "{\"fact\": \"government_owned_or_subsidized\", \"op\": \"==\", \"value\": true}",
+    "exemptions": null,
+    "citation": "Fair Chance Ordinance",
+    "penalty": null,
+    "quoted_span": "San Francisco's Fair Chance Ordinance protects residents with arrest or conviction history in affordable housing decisions.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

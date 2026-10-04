@@ -1,0 +1,61 @@
+{
+ "key_parts": {
+  "text_sha256": "ac42593c79533c25223582de77eb5411d2f8ef501a0d027d2a61042b7e81d7ef",
+  "chunk_id": "D049-c002",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   21561,
+   44937
+  ],
+  "prompt_version": "extract_v5",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 11848,
+  "output_tokens": 2433
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "MA",
+    "level": "state",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Prohibition on discrimination against recipients of public assistance or housing subsidies",
+    "requirement": "Anyone furnishing rental accommodations may not discriminate against a person because they receive federal, state, or local public assistance or housing subsidies, including rental assistance or rental supplements. The same applies to discrimination because of any requirement of such a program.",
+    "key_value": null,
+    "coverage_text": "Any person furnishing credit, services or rental accommodations, with respect to recipients of public assistance or tenants receiving housing subsidies.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "G.L. c. 151B, § 4, subsection 10",
+    "penalty": null,
+    "quoted_span": "10. For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "MA",
+    "level": "state",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Prohibition on inquiries about protected characteristics of rental applicants",
+    "requirement": "Owners, lessees, brokers, managing agents and others with the right to rent covered housing accommodations may not make any written or oral inquiry or record about the protected characteristics of a person seeking to rent. Protected characteristics include race, color, religious creed, national origin, sex, gender identity, sexual orientation, age, genetic information, ancestry, marital status, veteran status, blindness, hearing impairment or other handicap.",
+    "key_value": null,
+    "coverage_text": "Owners, lessees, sublessees, real estate brokers, assignees or managing agents of other covered housing accommodations, their agents or employees, and condominium or housing cooperative unit owner organizations.",
+    "predicates_json": "{\"not\": {\"all\": [{\"fact\": \"units\", \"op\": \"==\", \"value\": 2}, {\"fact\": \"owner_occupied\", \"op\": \"==\", \"value\": true}]}}",
+    "exemptions": "Does not apply to leasing a single apartment or flat in a two family dwelling whose other unit is occupied by the owner as his residence. The word 'age' does not apply to minors or to residency in certain elderly housing developments and communities for persons 55 or 62 and over.",
+    "citation": "G.L. c. 151B, § 4, subsection 7(c)",
+    "penalty": null,
+    "quoted_span": "(c) to cause to be made any written or oral inquiry or record concerning the race, color, religious creed, national origin, sex, gender identity, sexual orientation, which shall not include persons whose sexual orientation involves minor children as the sex object, age, genetic information, ancestry, marital status, veteran status or membership in the armed services, blindness, hearing impairment or other handicap or because such person possesses a trained dog guide as a consequence of blindness or hearing impairment, of the person seeking to rent or lease or buy any such accommodation or land; provided, however, that this subsection shall not apply to the leasing of a single apartment or flat in a two family dwelling, the other occupancy unit of which is occupied by the owner as his residence.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

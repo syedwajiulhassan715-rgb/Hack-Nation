@@ -1,0 +1,43 @@
+{
+ "key_parts": {
+  "text_sha256": "a61f61a51b513b48a41cce48326e28861838a95e5e5a29cdedc41470d44ed505",
+  "chunk_id": "D067-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   101,
+   22483
+  ],
+  "prompt_version": "extract_v6",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 13439,
+  "output_tokens": 1322
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Good cause required to refuse lease renewal (Anti-Eviction Act)",
+    "requirement": "A landlord of residential rental property may not fail to renew any lease, written or oral, unless the landlord has good cause not to renew. Owner-occupied two- or three-family dwellings, motels or hotels, and transient or seasonal units are excepted.",
+    "key_value": null,
+    "coverage_text": "Landlords of residential rental properties, other than owner-occupied two- or three-family dwellings, motels or hotels, and transient or seasonal units; applies to written and oral leases.",
+    "predicates_json": "{\"all\": [{\"not\": {\"all\": [{\"fact\": \"owner_occupied\", \"op\": \"==\", \"value\": true}, {\"fact\": \"units\", \"op\": \"<=\", \"value\": 3}]}}, {\"not\": {\"fact\": \"dormitory_or_institutional\", \"op\": \"==\", \"value\": true}}]}",
+    "exemptions": "Owner-occupied two- or three-family dwellings, motels or hotels, transient units, and seasonal units.",
+    "citation": "N.J.S.A. 2A:18:61.3",
+    "penalty": null,
+    "quoted_span": "No landlord of residential rental properties except t hose in owner occupied two or three family dwellings, motels or hotels, transient, or seasonal units may fail to renew any lease, regardless of whether it is written or oral unless they have good cause not to renew the lease.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

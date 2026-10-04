@@ -1,0 +1,43 @@
+{
+ "key_parts": {
+  "text_sha256": "aaed5c3d1e3aacb57a1f9a8fa9e855ecaa857bdbedc3d7b99a1992e7fc0aed0f",
+  "chunk_id": "D012-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   132,
+   3988
+  ],
+  "prompt_version": "extract_v5",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 6324,
+  "output_tokens": 607
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "Boston, MA",
+    "level": "city",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Boston fair housing protection for rental assistance (source of income)",
+    "requirement": "In Boston it is illegal to discriminate in renting housing based on rental assistance; a landlord may not refuse to accept rental assistance such as Section 8 vouchers, social security disability vouchers and veterans vouchers.",
+    "key_value": null,
+    "coverage_text": "Renting, buying, selling, or securing financing for any housing in the City of Boston.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "Boston Fair Housing Regulations",
+    "penalty": null,
+    "quoted_span": "The landlord tells you they don't accept rental assistance.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

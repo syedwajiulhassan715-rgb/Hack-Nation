@@ -1,0 +1,97 @@
+{
+ "key_parts": {
+  "text_sha256": "764e9e3a023bd434458dfea8ffbb57e57d23e5f0a4939cc10948b9e495034d2f",
+  "chunk_id": "D083-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   130,
+   4656
+  ],
+  "prompt_version": "extract_v5",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 7212,
+  "output_tokens": 2857
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "San Francisco, CA",
+    "level": "city",
+    "category": "rent_increase_limits",
+    "status_hint": "enacted",
+    "title": "Allowable Annual Rent Increase",
+    "requirement": "For rent-controlled units, the allowable annual rent increase is 1.6% for March 1, 2026 – February 28, 2027.",
+    "key_value": "1.6%",
+    "coverage_text": "Units subject to the San Francisco Rent Board's allowable annual increase.",
+    "predicates_json": "{\"fact\": \"subject_to_local_rent_control\", \"op\": \"==\", \"value\": true}",
+    "exemptions": null,
+    "citation": "571 Allowable Annual Increases",
+    "penalty": null,
+    "quoted_span": "1.6% for March 1, 2026 – February 28, 2027",
+    "effective_date_phrase": "March 1, 2026 – February 28, 2027",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "San Francisco, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Relocation Payments for Owner/Relative Move-in, Demolition/Removal, Temporary Capital Improvement, or Substantial Rehabilitation Evictions",
+    "requirement": "For eviction notices served 3/01/26 – 2/28/27 based on owner/relative move-in, demolition/permanent removal, temporary capital improvement work, or substantial rehabilitation, the relocation amount is $8,245.00 per tenant, up to $24,733.00 per unit, plus $5,497.00 for each elderly (60 years or older) or disabled tenant or household with minor child(ren).",
+    "key_value": "$8,245.00 per tenant; maximum $24,733.00 per unit; plus $5,497.00 per elderly/disabled tenant or household with minor child(ren)",
+    "coverage_text": "Tenants evicted for owner/relative move-in, demolition/permanent removal of unit from housing use, temporary capital improvement work, or substantial rehabilitation.",
+    "predicates_json": null,
+    "exemptions": "Relocation payments for temporary capital improvement evictions for less than 20 days are governed by California Civil Code Section 1947.9 instead.",
+    "citation": "Rent Ordinance Section 37.9C",
+    "penalty": null,
+    "quoted_span": "Relocation Payments for Evictions based on Owner/Relative Move-in OR Demolition/Permanent Removal of Unit from Housing Use OR Temporary Capital Improvement Work* OR Substantial Rehabilitation",
+    "effective_date_phrase": "3/01/26 – 2/28/27",
+    "effective_date_anchor": null,
+    "interaction_text": "*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C."
+   },
+   {
+    "jurisdiction": "San Francisco, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Relocation Payments for Ellis Act Evictions",
+    "requirement": "For Ellis Act eviction notices served 3/01/26 – 2/28/27, the relocation amount is $11,110.05 per tenant, up to $33,330.13 per unit, plus $7,443.90 for each elderly (62 years or older) or disabled tenant.",
+    "key_value": "$11,110.05 per tenant; maximum $33,330.13 per unit; plus $7,443.90 per elderly or disabled tenant",
+    "coverage_text": "Tenants evicted under the Ellis Act.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "Rent Ordinance Section 37.9A",
+    "penalty": null,
+    "quoted_span": "Relocation payments for tenants evicted under the Ellis Act",
+    "effective_date_phrase": "3/01/26 – 2/28/27",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Relocation Payments for Temporary Displacement Less Than 20 Days",
+    "requirement": "For temporary capital improvement displacement of less than 20 days with notices served 3/01/26 – 2/28/27, the relocation amount is $446.00/day per tenant household plus actual moving expenses.",
+    "key_value": "$446.00/day (plus actual moving expenses)",
+    "coverage_text": "Tenant households temporarily displaced for capital improvement work for less than 20 days.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "California Civil Code Section 1947.9",
+    "penalty": null,
+    "quoted_span": "Relocation payments for temporary displacement for less than 20 days",
+    "effective_date_phrase": "3/01/26 – 2/28/27",
+    "effective_date_anchor": null,
+    "interaction_text": "*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C."
+   }
+  ]
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "key_parts": {
+  "text_sha256": "f24c21cb2b32330c0f2f112f066d02b784887a8552cc3777ea96f1d53dd0171f",
+  "chunk_id": "D052-c002",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   20323,
+   26126
+  ],
+  "prompt_version": "extract_v5",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 6782,
+  "output_tokens": 1925
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "MA",
+    "level": "state",
+    "category": "security_deposits",
+    "status_hint": "enacted",
+    "title": "Security deposit return and forfeiture",
+    "requirement": "A lessor forfeits the right to keep any part of the security deposit if he fails to hold it in an account as required, fails to give an itemized list of damages within thirty days after the occupancy ends, uses or enforces lease terms that conflict with this section or seeks a waiver of it, fails to transfer the deposit to a successor, or fails to return the deposit owed plus interest within thirty days after the tenancy ends. Lease provisions that conflict with this section, and tenant waivers of it, are void and unenforceable.",
+    "key_value": "Return within thirty days after termination of the tenancy",
+    "coverage_text": "Lessors holding a security deposit for residential tenancies.",
+    "predicates_json": null,
+    "exemptions": "Does not apply to any lease, rental, occupancy or tenancy of one hundred days or less in duration which is for a vacation or recreational purpose.",
+    "citation": "G.L. c. 186, § 15B(6)-(9)",
+    "penalty": "For failures under clauses (a), (d) or (e) of subsection 6, the tenant is awarded damages equal to three times the security deposit or balance owed, plus interest at five per cent from the due date, together with court costs and reasonable attorney's fees.",
+    "quoted_span": "(6) The lessor shall forfeit his right to retain any portion of the security deposit for any reason, or, in any action by a tenant to recover a security deposit, to counterclaim for any damage to the premises if he:",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "MA",
+    "level": "state",
+    "category": "security_deposits",
+    "status_hint": "enacted",
+    "title": "Transfer of last month's rent advance",
+    "requirement": "When a lessor who received last month's rent in advance transfers his interest, he must credit the rental advance with accrued interest to the successor, and the successor must notify the tenant in writing within forty-five days of the transfer that the advance was credited and the successor has assumed responsibility.",
+    "key_value": "Notice within forty-five days from the date of transfer",
+    "coverage_text": "Lessors who receive rent in advance for the last month of tenancy and transfer their interest in the dwelling unit, and their successors in interest.",
+    "predicates_json": null,
+    "exemptions": "Granting a mortgage is not a transfer of interest. The successor liability does not apply to a city or town acquiring title under chapter sixty, or to a foreclosing mortgagee or mortgagee in possession that is a financial institution chartered by the commonwealth or the United States. The section does not apply to vacation or recreational tenancies of one hundred days or less.",
+    "citation": "G.L. c. 186, § 15B(7A)",
+    "penalty": null,
+    "quoted_span": "The successor in interest shall, within forty-five days from the date of said transfer, notify the tenant who made such rental advance that such rental advance was so credited, and that such successor has assumed responsibility therefor pursuant to the foregoing provision.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

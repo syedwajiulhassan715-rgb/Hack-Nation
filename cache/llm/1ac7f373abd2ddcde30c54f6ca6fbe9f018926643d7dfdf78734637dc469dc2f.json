@@ -1,0 +1,133 @@
+{
+ "key_parts": {
+  "text_sha256": "31b7db7b0e637435a30b1c9bf6db06d8e1a4b748e335bceeaa9232da266e6f04",
+  "chunk_id": "D043-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   148,
+   24089
+  ],
+  "prompt_version": "extract_v6",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 14296,
+  "output_tokens": 5692
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "Los Angeles, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "No-fault eviction relocation assistance and Declaration of Intent to Evict (RSO & JCO)",
+    "requirement": "Before evicting a tenant for a not-at-fault reason from a unit covered by the RSO or JCO, the landlord must pay relocation assistance and file a Declaration of Intent to Evict with LAHD. Notices to terminate may be served only after the Declaration is filed, and a copy of the notice must be filed with LAHD no later than 3 days after service.",
+    "key_value": null,
+    "coverage_text": "Units covered by the Rent Stabilization Ordinance (RSO) or the Just Cause Ordinance (JCO). Not-at-fault reasons include occupancy by the landlord, listed relatives or a resident manager; demolition, conversion to commercial use or removal from rental use; a governmental Order to Vacate; HUD recovery before sale; Residential Hotel Unit conversion or demolition; conversion to affordable housing; and demolition or conversion to condominiums, stock cooperatives, community apartment projects, hotels or commercial uses regardless of RSO or JCO coverage.",
+    "predicates_json": null,
+    "exemptions": "Evictions for resident manager occupancy are allowed only if required by law or an affordable housing covenant, or a regulatory agreement.",
+    "citation": "Rent Stabilization Ordinance (RSO); Just Cause Ordinance (JCO); LAMC 151.09.A, 165.03",
+    "penalty": "Failure to file the Landlord Declaration with the LAHD makes the eviction a violation of the RSO or JCO.",
+    "quoted_span": "All tenant not- at-fault evictions require payment of relocation assistance and the filing of a Declaration of Intent to Evict form with the Los Angeles Housing Department (LAHD) before evicting tenants from units covered by the Rent Stabilization Ordinance (RSO) or the Just Cause Ordinance (JCO).",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "Los Angeles, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Relocation Assistance Amounts (Chart A)",
+    "requirement": "For a no-fault displacement, relocation assistance per unit is $11,000 for eligible households with less than 3 years tenancy and $14,400 for 3 or more years or low income; qualified households receive $23,150 and $27,400 respectively. Amounts increase every July 1st.",
+    "key_value": "Eligible: $11,000 (<3 years) / $14,400 (3+ years or low income at or below 80% AMI); Qualified: $23,150 / $27,400",
+    "coverage_text": "Tenants displaced for a no-fault reason from RSO or JCO units; qualified tenants are 62 or older, handicapped or disabled, or have minor dependent children.",
+    "predicates_json": null,
+    "exemptions": "Does not apply to demolition of a Protected Unit for new construction where the tenant is lower-income (80% AMI or lower). Landlords are exempt when evicting a resident manager to replace with another resident manager, or when required to evict due to hazardous conditions caused by a natural disaster not caused by landlord negligence. Landlord may offset accumulated rent unless the assistance is owed due to a governmental order to vacate or an order for an unpermitted dwelling.",
+    "citation": "LAMC 151.09.G, 165.06",
+    "penalty": "In an action by the landlord to recover possession, the tenant may raise as an affirmative defense the failure of the landlord to provide relocation assistance.",
+    "quoted_span": "The relocation amounts above apply if a tenant is displaced for a no-fault reason described on page 1 of this bulletin.",
+    "effective_date_phrase": "Effective July 1, 2026 through June 30, 2027",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "Los Angeles, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Mom and Pop reduced relocation assistance",
+    "requirement": "Mom and Pop properties may pay reduced relocation assistance ($10,550 eligible, $21,250 qualified) only for owner or eligible relative occupancy evictions when all listed conditions are met.",
+    "key_value": "Eligible Household $10,550; Qualified Household $21,250",
+    "coverage_text": "Building contains four or fewer rental units; landlord has not used the provision in the previous three years; landlord owns no more than four units of residential property and a single-family home on a separate lot in the City; eligible relative does not own residential property in the City.",
+    "predicates_json": "{\"all\": [{\"fact\": \"units\", \"op\": \"<=\", \"value\": 4}]}",
+    "exemptions": null,
+    "citation": "LAMC Section 151.30",
+    "penalty": null,
+    "quoted_span": "The reduced fee for Mom and Pop properties applies only for evictions for occupancy by the owner or an eligible relative and only if all of the following conditions exist:",
+    "effective_date_phrase": "Effective July 1, 2026 through June 30, 2027",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "Los Angeles, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Single Family Dwellings Owned by Natural Persons relocation (JCO)",
+    "requirement": "For a single-family dwelling subject to the JCO owned by a natural person who owns no more than four dwelling units and a single-family home on a separate lot in the City, relocation assistance is one month's rent in effect when the termination notice was served, as payment or credit.",
+    "key_value": "one month's rent",
+    "coverage_text": "Single-family dwellings subject to the JCO owned by a natural person (including via a trust or controlled entity) who owns no more than four dwelling units and a single-family home on a separate lot in the City of Los Angeles.",
+    "predicates_json": "{\"all\": [{\"fact\": \"separately_alienable\", \"op\": \"==\", \"value\": true}, {\"fact\": \"owner_type\", \"op\": \"==\", \"value\": \"natural person\"}]}",
+    "exemptions": null,
+    "citation": "LAMC 165.06.A.(6)",
+    "penalty": null,
+    "quoted_span": "The Los Angeles Municipal Code Section 151.30(E) shall not apply.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "Los Angeles, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Timing and manner of relocation assistance payments",
+    "requirement": "Relocation assistance must be made available within fifteen (15) days of service of the written notice of eviction, split pro rata among multiple tenants, with the higher amount paid if more than one applies. The landlord may instead deposit the funds in an escrow account within the 15-day period, with payments made within three (3) working days of a request.",
+    "key_value": "fifteen (15) days",
+    "coverage_text": "No-fault evictions requiring relocation assistance under the RSO or JCO.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "RAC Regulations, Section 960.00",
+    "penalty": null,
+    "quoted_span": "1. Payment shall be made available within fifteen (15) days of service of the written notice of eviction; however,",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "Los Angeles, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Resident Protections Ordinance relocation for demolition of Protected Units",
+    "requirement": "A landlord terminating tenancy to demolish a Protected Unit for new construction must file with LAHD, serve and file the notice within 3 business days, and pay relocation under the Housing Crisis Act or City law, whichever is higher; lower income households receive enhanced RPO standardized payments of $115,480 (extremely low), $96,750 (very low) or $87,450 (low income).",
+    "key_value": "Extremely Low Income $115,480; Very Low Income $96,750; Low Income $87,450",
+    "coverage_text": "Protected Units demolished for the purpose of new construction, including all RSO units; enhanced payments for lower income (80% AMI or lower) households.",
+    "predicates_json": null,
+    "exemptions": "The regular RSO or JCO relocation rules apply if the units to be demolished are not Protected Units or are not occupied by a lower income tenant.",
+    "citation": "Resident Protections Ordinance, Ordinances # 188481 and #188482",
+    "penalty": "Failure to comply with the RPO may result in financial penalties starting at $250,000 per displaced unit and withholding of LAHD permit clearances.",
+    "quoted_span": "Owners who demolish a Protected Unit for the purpose of new construction within 5 years after the filing of the Notice of Intent to Withdraw or Declaration of Intent to Evict with LAHD are required to comply with relocation requirements under the RPO.",
+    "effective_date_phrase": "effective 2/11/2025",
+    "effective_date_anchor": null,
+    "interaction_text": "Pay relocation assistance to tenants in compliance with the State law’s Housing Crisis Act (California Government Code Section 66300 et seq.) or the City laws, whichever is higher."
+   }
+  ]
+ }
+}

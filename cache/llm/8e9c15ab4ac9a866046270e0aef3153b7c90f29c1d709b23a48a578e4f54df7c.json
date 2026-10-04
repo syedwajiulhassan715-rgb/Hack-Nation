@@ -1,0 +1,115 @@
+{
+ "key_parts": {
+  "text_sha256": "a61f61a51b513b48a41cce48326e28861838a95e5e5a29cdedc41470d44ed505",
+  "chunk_id": "D067-c004",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   61515,
+   84169
+  ],
+  "prompt_version": "extract_v6",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 13155,
+  "output_tokens": 4715
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "rent_increase_limits",
+    "status_hint": "enacted",
+    "title": "Unconscionable rent increase prohibition (Anti-Eviction Act)",
+    "requirement": "A rent increase must not be unconscionable, meaning so unreasonable as to shock the conscience of a fair and honest person, and must comply with any municipal ordinances governing rent increases. Before evicting a tenant for nonpayment of an increased rent, the owner must first serve a valid notice to quit and notice of rent increase.",
+    "key_value": null,
+    "coverage_text": "Residential tenants facing a rent increase; where no municipal rent control exists, a judge decides in an eviction action whether the increase was unconscionable.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "N.J.S.A. 2A:18-61.1 et seq.",
+    "penalty": null,
+    "quoted_span": "The increase in rent must not be unconscionable; it must not be so unreasonable as to shock the conscience of a fair and honest person and must comply with any municipal ordinances governing rent increases.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": "must comply with any municipal ordinances governing rent increases"
+   },
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "rent_increase_limits",
+    "status_hint": "enacted",
+    "title": "No mid-lease rent increase; lease termination notice for rent increase",
+    "requirement": "A landlord cannot raise the rent mid-lease term; the old lease must be terminated with proper written notice and the tenant offered a new lease at the increased rent. The written notice must state that the tenant can remain by signing a new lease at the increased rent.",
+    "key_value": null,
+    "coverage_text": "Landlords seeking to increase rent on residential tenants.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "N.J.S.A. 2A:18-61.1(f)",
+    "penalty": null,
+    "quoted_span": "A landlord cannot raise the rent mid-lease term. The old lease must be terminated, and the new lease must have the increased rental payment.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "rent_increase_limits",
+    "status_hint": "enacted",
+    "title": "Newly Constructed Multiple Dwellings Law exemption from local rent control",
+    "requirement": "Newly constructed multiple dwellings are exempt from any local rent control ordinances for 30 years following completion of construction of the building.",
+    "key_value": "30 years following completion of construction",
+    "coverage_text": "Newly constructed multiple dwellings within 30 years after completion of construction.",
+    "predicates_json": "{\"fact\": \"certificate_of_occupancy_date\", \"op\": \">\", \"value\": {\"years_before_query_date\": 30}}",
+    "exemptions": null,
+    "citation": "N.J.S.A. 2A:42-84.5",
+    "penalty": null,
+    "quoted_span": "Under the Newly Constructed Multiple Dwellings Law ( N.J.S.A. 2A:42 -84.5), newly constructed multiple dwellings shall be exempt from any local rent control ordinances for a period of 30 years following completion of construction of the building.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": "newly constructed multiple dwellings shall be exempt from any local rent control ordinances for a period of 30 years following completion of construction of the building"
+   },
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "rent_increase_limits",
+    "status_hint": "enacted",
+    "title": "No rent increase for condominium/cooperative conversion costs",
+    "requirement": "If a building is converted to condominium, cooperative or fee simple ownership of units, rents may not be increased to cover costs resulting solely from the conversion. Rents may still be increased to cover the cost of new services or amenities.",
+    "key_value": null,
+    "coverage_text": "All tenants in a building converted to condominium, cooperative or fee simple ownership, regardless of eligibility for protected tenancy as senior citizens or disabled persons.",
+    "predicates_json": null,
+    "exemptions": "Increases to cover the cost of new services or amenities are not barred.",
+    "citation": "N.J.S.A. 2A:18-61.31",
+    "penalty": null,
+    "quoted_span": "If a building is converted to a condominium or cooperative form of ownership, or to fee simple ownership of units, rents may not be increased to cover cos ts resulting solely from the conversion (N.J.S.A. 2A:18-61.31).",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "NJ",
+    "level": "state",
+    "category": "application_screening_fees",
+    "status_hint": "enacted",
+    "title": "Credit report cost and rental application fees",
+    "requirement": "A landlord may charge a prospective tenant for the cost of a credit report and may request reasonable rental application fees or employment verification.",
+    "key_value": null,
+    "coverage_text": "Landlords screening prospective tenants.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "Credit Checks and Background Checks",
+    "penalty": null,
+    "quoted_span": "The landlord is allowed to charge the tenant for the cost of the report. The landlord may also request reasonable rental application fees or employment verification.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

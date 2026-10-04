@@ -1,0 +1,115 @@
+{
+ "key_parts": {
+  "text_sha256": "764e9e3a023bd434458dfea8ffbb57e57d23e5f0a4939cc10948b9e495034d2f",
+  "chunk_id": "D083-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   130,
+   4656
+  ],
+  "prompt_version": "extract_v6",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 7404,
+  "output_tokens": 3255
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "San Francisco, CA",
+    "level": "city",
+    "category": "rent_increase_limits",
+    "status_hint": "enacted",
+    "title": "Allowable Annual Rent Increase",
+    "requirement": "The Rent Board's allowable rent increase is 1.6% for March 1, 2026 – February 28, 2027.",
+    "key_value": "1.6%",
+    "coverage_text": "Units subject to the San Francisco Rent Board's allowable annual increase.",
+    "predicates_json": "{\"fact\": \"subject_to_local_rent_control\", \"op\": \"==\", \"value\": true}",
+    "exemptions": null,
+    "citation": "571 Allowable Annual Increases",
+    "penalty": null,
+    "quoted_span": "1.6% for March 1, 2026 – February 28, 2027",
+    "effective_date_phrase": "For March 1, 2026 - February 28, 2027",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "San Francisco, CA",
+    "level": "city",
+    "category": "security_deposits",
+    "status_hint": "enacted",
+    "title": "Security Deposit Interest Rate",
+    "requirement": "The security deposit interest rate is 4.2% for March 1, 2026 – February 28, 2027.",
+    "key_value": "4.2%",
+    "coverage_text": null,
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "572 Security Deposit Interest Rates",
+    "penalty": null,
+    "quoted_span": "4.2% for March 1, 2026 – February 28, 2027",
+    "effective_date_phrase": "For March 1, 2026 - February 28, 2027",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "San Francisco, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Relocation Payments (Rent Ordinance Section 37.9C)",
+    "requirement": "For evictions based on owner/relative move-in, demolition/permanent removal of unit from housing use, temporary capital improvement work or substantial rehabilitation, with eviction notices served 3/01/26 – 2/28/27, the relocation amount due is $8,245.00 per tenant, up to a maximum of $24,733.00 per unit, plus $5,497.00 for each elderly (60 years or older) or disabled tenant or household with minor child(ren).",
+    "key_value": "$8,245.00 per tenant; maximum $24,733.00 per unit; plus $5,497.00 for each elderly (60 years or older) or disabled tenant or household with minor child(ren)",
+    "coverage_text": "Tenants evicted based on owner/relative move-in, demolition/permanent removal of unit from housing use, temporary capital improvement work, or substantial rehabilitation.",
+    "predicates_json": null,
+    "exemptions": "Temporary capital improvement evictions for less than 20 days are governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C.",
+    "citation": "Rent Ordinance Section 37.9C",
+    "penalty": null,
+    "quoted_span": "Relocation Payments for Evictions based on Owner/Relative Move-in OR Demolition/Permanent Removal of Unit from Housing Use OR Temporary Capital Improvement Work* OR Substantial Rehabilitation",
+    "effective_date_phrase": "3/01/26 – 2/28/27",
+    "effective_date_anchor": null,
+    "interaction_text": "*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C."
+   },
+   {
+    "jurisdiction": "San Francisco, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Ellis Act Relocation Payments (37.9A)",
+    "requirement": "For tenants evicted under the Ellis Act with eviction notices served 3/01/26 – 2/28/27, the relocation amount due is $11,110.05 per tenant, up to a maximum of $33,330.13 per unit, plus $7,443.90 for each elderly (62 years or older) or disabled tenant.",
+    "key_value": "$11,110.05 per tenant; maximum $33,330.13 per unit; plus $7,443.90 for each elderly (62 years or older) or disabled tenant",
+    "coverage_text": "Tenants evicted under the Ellis Act.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "578 Multilingual Relocation Payments 37.9A",
+    "penalty": null,
+    "quoted_span": "Relocation payments for tenants evicted under the Ellis Act",
+    "effective_date_phrase": "3/01/26 – 2/28/27",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Relocation Payments for Temporary Displacement for Less Than 20 Days",
+    "requirement": "Relocation payments for temporary capital improvement evictions for less than 20 days are governed by California Civil Code Section 1947.9; for eviction notices served 3/01/26 – 2/28/27 the amount due per tenant household is $446.00/day (plus actual moving expenses).",
+    "key_value": "$446.00/day (plus actual moving expenses) per tenant household",
+    "coverage_text": "Tenant households temporarily displaced for less than 20 days for capital improvement work.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "California Civil Code Section 1947.9",
+    "penalty": null,
+    "quoted_span": "*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C.",
+    "effective_date_phrase": "3/01/26 – 2/28/27",
+    "effective_date_anchor": null,
+    "interaction_text": "governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C"
+   }
+  ]
+ }
+}
