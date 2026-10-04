@@ -15,6 +15,8 @@ import { beaconPoints, beaconPolygons, BEACON_HEIGHT_M, BEACON_RADIUS_M } from '
 import { loadNightStyle, vectorSourceId } from './nightStyle'
 import { animateSlabs } from './slabs'
 import { ripple } from './ripple'
+import { mapLib } from './maplib'
+import { useI18n } from '../i18n'
 
 export interface FlyRequest {
   lng: number
@@ -45,6 +47,8 @@ const reduced = () => typeof window !== 'undefined' && !!window.matchMedia?.('(p
 
 export function CityMap(props: Props) {
   const { parcels, snapshots, asOf, category, selectedId, lookup, highlightIds, pulseKey, fly, rippleAt } = props
+  const { t } = useI18n()
+  const [hover, setHover] = useState(false)
   const mapRef = useRef<MapRef | null>(null)
   const [style, setStyle] = useState<StyleSpecification | null>(null)
   const [loaded, setLoaded] = useState(false)
@@ -94,7 +98,7 @@ export function CityMap(props: Props) {
       source: 'beacon-pts',
       paint: {
         'circle-color': color,
-        'circle-radius': ['interpolate', ['linear'], ['zoom'], 3, 2.5, 10, 4, 15, 9],
+        'circle-radius': ['interpolate', ['linear'], ['zoom'], 3, 4, 8, 4.5, 10, 5, 15, 9],
         'circle-opacity': 0.85,
         'circle-blur': 0.2,
         'circle-stroke-color': token('--paper', '#F6F2E9'),
@@ -279,16 +283,19 @@ export function CityMap(props: Props) {
   const cityLevel = lookup?.jurisdiction_stack.find((j) => j.level === 'city')
   const stateLevel = lookup?.jurisdiction_stack.find((j) => j.level === 'state')
 
-  if (!style) return <div className="map-loading">Loading map…</div>
+  if (!style) return <div className="map-loading" role="status">{t.loadingMap}</div>
   return (
     <Map
       ref={mapRef}
+      mapLib={mapLib}
       initialViewState={{ longitude: -96, latitude: 38.5, zoom: 3.4, pitch: 0 }}
       mapStyle={style}
       onLoad={onLoad}
       onClick={onClick}
       interactiveLayerIds={loaded ? ['beacon-glow', 'beacons-3d'] : []}
-      cursor="auto"
+      cursor={hover ? 'pointer' : 'grab'}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
       attributionControl={{ compact: true }}
       maxPitch={70}
       style={{ position: 'absolute', inset: 0 }}
@@ -298,14 +305,14 @@ export function CityMap(props: Props) {
           <div className="slab-chips">
             {cityLevel ? (
               <button type="button" className="slab-chip city" onClick={() => props.onLevelChip('city')}>
-                {cityLevel.name} · {counts.city} {counts.city === 1 ? 'rule' : 'rules'}
+                {cityLevel.name} · {t.rules(counts.city)}
               </button>
             ) : (
-              <span className="slab-chip warn">City not confirmed</span>
+              <span className="slab-chip warn">{t.cityNotConfirmed}</span>
             )}
             {stateLevel && (
               <button type="button" className="slab-chip state" onClick={() => props.onLevelChip('state')}>
-                {stateLevel.name} · {counts.state} {counts.state === 1 ? 'rule' : 'rules'}
+                {stateLevel.name} · {t.rules(counts.state)}
               </button>
             )}
           </div>

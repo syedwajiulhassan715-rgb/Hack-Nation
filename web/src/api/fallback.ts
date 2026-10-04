@@ -36,6 +36,9 @@ export interface TimelineEntry {
 export interface Summary {
   tenant: string | null
   owner: string | null
+  /** Spanish answers (answer_tenant_es / answer_owner_es); null -> the UI shows the quote */
+  tenant_es?: string | null
+  owner_es?: string | null
   /** sha256 of the quoted_span the summary was written from (summaries.json source_quote_sha) */
   sha: string | null
 }
@@ -54,7 +57,7 @@ export async function verifiedSummaryIds(
   await Promise.all(
     rules.map(async (r) => {
       const s = summaries.get(r.team_rule_id)
-      if (!s || !s.sha || (!s.tenant && !s.owner)) return
+      if (!s || !s.sha || (!s.tenant && !s.owner && !s.tenant_es && !s.owner_es)) return
       if ((await sha256Hex(r.quoted_span)) === s.sha) ok.add(r.team_rule_id)
     }),
   )
@@ -84,6 +87,8 @@ export function normalizeSummaries(raw: unknown): Map<string, Summary> {
     out.set(id, {
       tenant: pick('answer_tenant', 'tenant', 'answer_tenant_en'),
       owner: pick('answer_owner', 'owner', 'answer_owner_en'),
+      tenant_es: pick('answer_tenant_es'),
+      owner_es: pick('answer_owner_es'),
       sha: typeof o.source_quote_sha === 'string' ? o.source_quote_sha : null,
     })
   }
@@ -96,6 +101,29 @@ export function normalizeSummaries(raw: unknown): Map<string, Summary> {
     for (const [id, v] of Object.entries(body as Record<string, unknown>)) take(id, v)
   }
   return out
+}
+
+const NUM = /\d[\d,]*(?:\.\d+)?/g
+
+/**
+ * Golden rule 7 (same check as the API): every number in a summary must appear in the quote
+ * it was written from, or the summary is not shown and the UI falls back to the quote.
+ */
+export function numbersGrounded(answer: string, span: string): boolean {
+  const flat = span.replace(/,/g, '')
+  for (const raw of answer.match(NUM) ?? []) {
+    const tok = raw.replace(/[,.]+$/, '')
+    if (!span.includes(tok) && !flat.includes(tok.replace(/,/g, ''))) return false
+  }
+  return true
+}
+
+/** The summary for a role and language, only if it passes the number guard. */
+export function pickAnswer(s: Summary | undefined, role: Role, lang: 'en' | 'es', span: string): string | null {
+  if (!s) return null
+  const text = lang === 'es' ? (role === 'owner' ? s.owner_es : s.tenant_es) : role === 'owner' ? s.owner : s.tenant
+  if (!text || !text.trim()) return null
+  return numbersGrounded(text, span) ? text : null
 }
 
 /**
@@ -185,10 +213,13 @@ export interface BuildInput {
   asOf: string
   defaultAsOf: string
   role: Role
+  /** answer language; English when omitted */
+  lang?: 'en' | 'es'
 }
 
 export function buildLookupResult(input: BuildInput): LookupResult {
   const { parcel, rows, timeline, rulesById, summaries, verifiedSummaries, asOf, defaultAsOf, role } = input
+  const lang = input.lang ?? 'en'
   const changesByRule = new Map<string, Array<{ date: string; from: string; to: string }>>()
   for (const e of timeline) {
     for (const c of e.changes) {
@@ -210,7 +241,7 @@ export function buildLookupResult(input: BuildInput): LookupResult {
       result,
       level: rule.level,
       title: rule.title,
-      answer: (role === 'owner' ? s?.owner : s?.tenant) ?? null,
+      answer: pickAnswer(s, role, lang, rule.quoted_span),
       explanation: r.explanation,
       key_value: rule.key_value ?? null,
       quoted_span: rule.quoted_span,
