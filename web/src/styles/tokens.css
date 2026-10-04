@@ -1,0 +1,36 @@
+/* Design tokens (FRONTEND_PLAN.md section 3). */
+:root {
+  /* Paper (label, drawers) */
+  --paper: #f6f2e9;
+  --paper-2: #ece6d8; /* row hover, input bg */
+  --ink: #111111; /* text, heavy rules */
+  --ink-2: #4a4a45; /* secondary text */
+  --ink-3: #8a877e; /* captions */
+
+  /* Night map */
+  --night-0: #0b0e13; /* background / land */
+  --night-1: #121820; /* water */
+  --night-2: #1f252e; /* roads */
+  --night-3: #2a3039; /* buildings */
+  --night-label: #6b7380; /* map labels */
+
+  /* Status (shared by label and beacons) */
+  --applies: #4f7cff; /* the one accent */
+  --superseded: #f2a33a; /* amber */
+  --low-conf: #f2a33a; /* amber, dotted underline variant */
+  --conflict: #e5484d; /* red, only for conflicts */
+  --unknown: #8a8f98; /* gray, always dashed */
+  --not-yet: #a78bfa; /* violet, with countdown */
+  --pending: rgba(79, 124, 255, 0.35); /* ghost of applies */
+  --none: #2a3039; /* no rule: same as buildings */
+  --highlight: rgba(255, 224, 102, 0.65); /* highlighter stroke on quoted span */
+
+  /* Law-stack slabs */
+  --slab-state: rgba(79, 124, 255, 0.22);
+  --slab-city: rgba(45, 212, 191, 0.26);
+
+  --chip-bg: rgba(11, 14, 19, 0.72);
+  --font-ui: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+}
