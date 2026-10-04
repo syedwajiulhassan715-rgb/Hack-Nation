@@ -123,10 +123,12 @@ No rule text, citation, threshold or date is typed into code — everything come
     <td><sub><b>English and Spanish.</b> Answers are translated; legal quotes stay in their original language.</sub></td>
   </tr>
   <tr>
-    <td colspan="2"><img src="assets/screens/05-change-tests.png" alt="Change tests page comparing expected and actual results"></td>
+    <td><img src="assets/screens/06-ask-locus.jpg" alt="Ask Locus: the Loci mascot answering an eviction question with cited rules"></td>
+    <td><img src="assets/screens/05-change-tests.png" alt="Change tests page comparing expected and actual results"></td>
   </tr>
   <tr>
-    <td colspan="2"><sub><b>Change tests.</b> T1–T5 side by side: what the test file expects, what Locus computed, and which addresses are affected or flagged for human review.</sub></td>
+    <td><sub><b>Ask Locus.</b> Ask in your own words. Loci answers only from this building's verified rules, each with its quote and citation, and says so when no rule covers the question.</sub></td>
+    <td><sub><b>Change tests.</b> T1–T5 side by side: what the test file expects, what Locus computed, and which addresses are affected or flagged for human review.</sub></td>
   </tr>
 </table>
 
