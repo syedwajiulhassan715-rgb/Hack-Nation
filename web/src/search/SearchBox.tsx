@@ -1,7 +1,8 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useId, useRef, useState } from 'react'
 import { Search } from 'lucide-react'
 import { search } from '../api/client'
 import type { SearchHit } from '../api/types'
+import { useI18n } from '../i18n'
 
 interface Props {
   onPick: (hit: SearchHit) => void
@@ -11,12 +12,14 @@ interface Props {
   autoFocus?: boolean
 }
 
-export function SearchBox({ onPick, onZip, placeholder = '123 Main St, Hoboken, NJ', variant = 'dark', autoFocus }: Props) {
+export function SearchBox({ onPick, onZip, placeholder, variant = 'dark', autoFocus }: Props) {
+  const { t } = useI18n()
   const [q, setQ] = useState('')
   const [hits, setHits] = useState<SearchHit[]>([])
   const [open, setOpen] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const seq = useRef(0)
+  const listId = useId()
 
   useEffect(() => {
     const n = ++seq.current
@@ -55,21 +58,46 @@ export function SearchBox({ onPick, onZip, placeholder = '123 Main St, Hoboken, 
           value={q}
           onChange={(e) => setQ(e.target.value)}
           onFocus={() => setOpen(true)}
-          placeholder={placeholder}
-          aria-label="Search an address or ZIP"
+          placeholder={placeholder ?? t.searchPlaceholder}
+          aria-label={t.searchLabel}
+          aria-controls={listId}
           autoFocus={autoFocus}
+          onKeyDown={(e) => {
+            if (e.key === 'Escape') setOpen(false)
+            if (e.key === 'ArrowDown') {
+              e.preventDefault()
+              document.getElementById(listId)?.querySelector('button')?.focus()
+            }
+          }}
         />
       </form>
       {open && q.trim().length >= 2 && (
-        <div className="search-results" role="listbox">
+        <div
+          className="search-results"
+          id={listId}
+          aria-live="polite"
+          onKeyDown={(e) => {
+            const btns = [...e.currentTarget.querySelectorAll('button')]
+            const i = btns.indexOf(document.activeElement as HTMLButtonElement)
+            if (e.key === 'ArrowDown' && i >= 0) {
+              e.preventDefault()
+              btns[Math.min(btns.length - 1, i + 1)]?.focus()
+            }
+            if (e.key === 'ArrowUp' && i >= 0) {
+              e.preventDefault()
+              if (i === 0) (e.currentTarget.previousElementSibling?.querySelector('input') as HTMLInputElement | null)?.focus()
+              else btns[i - 1]?.focus()
+            }
+            if (e.key === 'Escape') setOpen(false)
+          }}
+        >
           {error && <p className="fact-error">{error}</p>}
-          {!error && hits.length === 0 && <p className="muted">No sample building matches. Try a street name or ZIP.</p>}
-          {isZip && <p className="muted small">Sample buildings in this ZIP. Pick one to see its rules.</p>}
+          {!error && hits.length === 0 && <p className="muted">{t.searchNone}</p>}
+          {isZip && <p className="muted small">{t.searchZip}</p>}
           {hits.map((h) => (
             <button
               key={h.address_id}
               type="button"
-              role="option"
               onClick={() => {
                 onPick(h)
                 setOpen(false)

@@ -29,6 +29,13 @@
   --slab-state: rgba(79, 124, 255, 0.22);
   --slab-city: rgba(45, 212, 191, 0.26);
 
+  /* Text-safe variants (WCAG AA 4.5:1 for small text). Fills on the map keep the tokens above;
+     small chips with white text and captions on paper use these. */
+  --applies-ink: #3d63e0; /* white text 5.2:1 */
+  --conflict-ink: #c33035; /* white text 5.3:1 */
+  --ink-3-text: #6b685f; /* on paper 5.0:1 */
+  --night-text: #9aa2ad; /* on night-0 7:1 */
+
   --chip-bg: rgba(11, 14, 19, 0.72);
   --font-ui: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;

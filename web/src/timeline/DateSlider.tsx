@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Pause, Play, RotateCcw } from 'lucide-react'
 import { addDays, dayIndex, prettyDate, snapToTick } from '../lib/dates'
+import { useI18n } from '../i18n'
 
 export const SLIDER_MIN = '2024-01-01'
 export const SLIDER_MAX = '2028-12-31'
@@ -17,6 +18,7 @@ interface Props {
 }
 
 export function DateSlider({ value, defaultAsOf, globalTicks, buildingTicks, onPreview, onCommit }: Props) {
+  const { t, lang } = useI18n()
   const total = dayIndex(SLIDER_MIN, SLIDER_MAX)
   const [playing, setPlaying] = useState(false)
   const timer = useRef<number | null>(null)
@@ -32,7 +34,7 @@ export function DateSlider({ value, defaultAsOf, globalTicks, buildingTicks, onP
 
   useEffect(() => {
     if (!playing) return
-    const seq = ticks.filter((t) => t > value)
+    const seq = ticks.filter((d) => d > value)
     if (!seq.length) {
       setPlaying(false)
       return
@@ -53,14 +55,14 @@ export function DateSlider({ value, defaultAsOf, globalTicks, buildingTicks, onP
           type="button"
           className="icon-btn dark"
           onClick={() => {
-            if (!playing && !ticks.some((t) => t > value)) {
+            if (!playing && !ticks.some((d) => d > value)) {
               onPreview(ticks[0] ?? SLIDER_MIN)
               onCommit(ticks[0] ?? SLIDER_MIN)
             }
             setPlaying((p) => !p)
           }}
-          aria-label={playing ? 'Pause' : 'Play through key dates'}
-          title={playing ? 'Pause' : 'Play through key dates'}
+          aria-label={playing ? t.pause : t.play}
+          title={playing ? t.pause : t.play}
         >
           {playing ? <Pause size={18} /> : <Play size={18} />}
         </button>
@@ -72,22 +74,22 @@ export function DateSlider({ value, defaultAsOf, globalTicks, buildingTicks, onP
             onPreview(defaultAsOf)
             onCommit(defaultAsOf)
           }}
-          title="Reset to the default query date"
+          title={t.todayTitle}
         >
-          <RotateCcw size={14} /> Today
+          <RotateCcw size={14} aria-hidden /> {t.today}
         </button>
       </div>
       <div className="slider-track-wrap">
-        <div className="slider-readout" style={{ left: `${(pos / total) * 100}%` }}>
-          {prettyDate(value)}
+        <div className="slider-readout" style={{ left: `clamp(56px, ${(pos / total) * 100}%, calc(100% - 56px))` }}>
+          {prettyDate(value, lang)}
         </div>
         <div className="slider-ticks" aria-hidden>
-          {ticks.map((t) => (
+          {ticks.map((tk) => (
             <span
-              key={t}
-              className={`tick${bset.has(t) ? ' tick-b' : ''}`}
-              style={{ left: `${(dayIndex(SLIDER_MIN, t) / total) * 100}%` }}
-              title={prettyDate(t)}
+              key={tk}
+              className={`tick${bset.has(tk) ? ' tick-b' : ''}`}
+              style={{ left: `${(dayIndex(SLIDER_MIN, tk) / total) * 100}%` }}
+              title={prettyDate(tk, lang)}
             />
           ))}
         </div>
@@ -98,8 +100,8 @@ export function DateSlider({ value, defaultAsOf, globalTicks, buildingTicks, onP
           max={total}
           step={1}
           value={pos}
-          aria-label="As-of date"
-          aria-valuetext={prettyDate(value)}
+          aria-label={t.asOfDate}
+          aria-valuetext={prettyDate(value, lang)}
           onChange={(e) => {
             setPlaying(false)
             onPreview(fromIndex(Number(e.target.value)))

@@ -9,6 +9,10 @@ export default defineConfig({
   // maplibre-gl 6 loads its worker relative to its own module URL; pre-bundling moves the
   // module and breaks that, so serve it as-is.
   optimizeDeps: { exclude: ['maplibre-gl'] },
+  // maplibre-gl is one ~1 MB chunk (290 kB gzip) on its own; that is expected.
+  build: { chunkSizeWarningLimit: 1200 },
+  // MapLibre starts its worker as a module worker (see src/map/maplib.ts).
+  worker: { format: 'es' },
   server: {
     proxy: {
       '/api': {

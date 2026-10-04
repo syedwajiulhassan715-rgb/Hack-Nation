@@ -4,6 +4,8 @@ import { describe, expect, it } from 'vitest'
 import {
   buildLookupResult,
   normalizeSummaries,
+  numbersGrounded,
+  pickAnswer,
   resultAt,
   sha256Hex,
   sortRows,
@@ -211,5 +213,32 @@ describe('normalizeSummaries', () => {
     expect(normalizeSummaries(null).size).toBe(0)
     expect(normalizeSummaries([{ team_rule_id: 'r-1', answer_tenant: 't' }]).get('r-1')?.tenant).toBe('t')
     expect(normalizeSummaries({ 'r-2': { tenant: { en: 'x' } } }).get('r-2')?.tenant).toBe('x')
+  })
+})
+
+describe('Spanish answers and the number guard', () => {
+  const quote = 'The fee may not exceed 30 dollars, adjusted by 1,250 each year.'
+  const s = normalizeSummaries({
+    'r-1': {
+      answer_tenant: 'You pay at most 30.',
+      answer_owner: 'Charge at most 45.', // 45 is not in the quote
+      answer_tenant_es: 'Paga como máximo 30.',
+      answer_owner_es: null,
+      source_quote_sha: 'x',
+    },
+  }).get('r-1')
+
+  it('reads answer_*_es and picks by language', () => {
+    expect(pickAnswer(s, 'tenant', 'es', quote)).toBe('Paga como máximo 30.')
+    expect(pickAnswer(s, 'tenant', 'en', quote)).toBe('You pay at most 30.')
+  })
+  it('returns null (show the quote) when the Spanish answer is missing; never falls back to English', () => {
+    expect(pickAnswer(s, 'owner', 'es', quote)).toBeNull()
+  })
+  it('drops a summary whose numbers are not in the quote', () => {
+    expect(pickAnswer(s, 'owner', 'en', quote)).toBeNull()
+    expect(numbersGrounded('up to 1250 a year', quote)).toBe(true)
+    expect(numbersGrounded('up to 1,250.', quote)).toBe(true)
+    expect(numbersGrounded('4,2 %', quote)).toBe(false)
   })
 })
