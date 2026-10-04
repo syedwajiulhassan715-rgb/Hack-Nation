@@ -1,0 +1,31 @@
+# Census geography -> jurisdiction string used in the corpus manifest (`jurisdictions`).
+#
+# A place-name table, not law: it says which Census polygon carries which city name.
+# Built from the geocoder output in cache/geocode/ (Public_AR_Current / Current_Current)
+# and checked by hand against the 9 cities with addresses (CONTRACT.md 8). The code
+# re-checks every entry on each run: the jurisdiction must appear in the corpus manifest
+# and must equal the Census BASENAME + state abbreviation of the polygon it is keyed by.
+# A place that is not listed here resolves to `city: null` (state rules only) and is
+# flagged for review; Santa Ana has no addresses, so it has no entry.
+
+# States whose Census county subdivisions are municipalities (minor civil divisions):
+# there the county subdivision must name the same city as the incorporated place.
+cousub_crosscheck_states: [NJ, MA]
+
+places:                     # incorporated place GEOID (state FIPS + place FIPS)
+  "0606000": {census_name: "Berkeley city", jurisdiction: "Berkeley, CA"}
+  "0644000": {census_name: "Los Angeles city", jurisdiction: "Los Angeles, CA"}
+  "0666000": {census_name: "San Diego city", jurisdiction: "San Diego, CA"}
+  "0667000": {census_name: "San Francisco city", jurisdiction: "San Francisco, CA"}
+  "2507000": {census_name: "Boston city", jurisdiction: "Boston, MA"}
+  "2511000": {census_name: "Cambridge city", jurisdiction: "Cambridge, MA"}
+  "3432250": {census_name: "Hoboken city", jurisdiction: "Hoboken, NJ"}
+  "3436000": {census_name: "Jersey City city", jurisdiction: "Jersey City, NJ"}
+  "3451000": {census_name: "Newark city", jurisdiction: "Newark, NJ"}
+
+county_subdivisions:        # county subdivision GEOID (state + county + cousub FIPS)
+  "2501711000": {census_name: "Cambridge city", jurisdiction: "Cambridge, MA"}
+  "2502507000": {census_name: "Boston city", jurisdiction: "Boston, MA"}
+  "3401351000": {census_name: "Newark city", jurisdiction: "Newark, NJ"}
+  "3401732250": {census_name: "Hoboken city", jurisdiction: "Hoboken, NJ"}
+  "3401736000": {census_name: "Jersey City city", jurisdiction: "Jersey City, NJ"}

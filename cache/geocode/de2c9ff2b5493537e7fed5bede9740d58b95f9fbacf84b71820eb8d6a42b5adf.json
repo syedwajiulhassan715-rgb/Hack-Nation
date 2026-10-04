@@ -1,0 +1,11 @@
+{
+ "request": {
+  "endpoint": "locations/onelineaddress",
+  "params": {
+   "address": "521 S 17TH, Newark, NJ 07417",
+   "benchmark": "Public_AR_Current",
+   "format": "json"
+  }
+ },
+ "response": "{\"result\":{\"input\":{\"address\":{\"address\":\"521 S 17TH, Newark, NJ 07417\"},\"benchmark\":{\"isDefault\":true,\"benchmarkDescription\":\"Public Address Ranges - Current Benchmark\",\"id\":\"4\",\"benchmarkName\":\"Public_AR_Current\"}},\"addressMatches\":[{\"tigerLine\":{\"side\":\"R\",\"tigerLineId\":\"63485463\"},\"coordinates\":{\"x\":-74.20839765431,\"y\":40.738187740265},\"addressComponents\":{\"zip\":\"07103\",\"streetName\":\"17TH\",\"preType\":\"\",\"city\":\"NEWARK\",\"preDirection\":\"S\",\"suffixDirection\":\"\",\"fromAddress\":\"505\",\"state\":\"NJ\",\"suffixType\":\"ST\",\"toAddress\":\"547\",\"suffixQualifier\":\"\",\"preQualifier\":\"\"},\"matchedAddress\":\"521 S 17TH ST, NEWARK, NJ, 07103\"}]}}"
+}
