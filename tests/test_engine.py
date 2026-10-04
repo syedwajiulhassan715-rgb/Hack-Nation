@@ -142,6 +142,29 @@ def test_local_rent_control_status_is_never_presumed():
     assert cov(either, year=1950).value == UNKNOWN
 
 
+def test_local_rent_control_derived_from_city_rent_rules():
+    only_controlled = {"fact": "subject_to_local_rent_control", "op": "==", "value": True}
+    outside = {"not": only_controlled}
+    defining = rule("r-0001", level="city", jur=CITY,
+                    pred={"fact": "certificate_of_occupancy_date", "op": "<=", "value": "1960-05-05"})
+    annual = rule("r-0002", level="city", jur=CITY, pred=only_controlled)
+    other_cat = rule("r-0003", level="city", jur=CITY, cat="just_cause_eviction", pred=outside)
+    rules = [defining, annual, other_cat]
+    res = lambda **kw: {r.team_rule_id: r.result for r in lookup.evaluate_address(parcel(**kw), rules, AS_OF)}  # noqa: E731
+    assert res(year=1950, units=9) == {"r-0001": "applies", "r-0002": "applies"}
+    assert res(year=1990, units=9) == {"r-0003": "applies"}
+    assert res(year=1960, units=9) == {"r-0001": "unknown", "r-0002": "unknown", "r-0003": "unknown"}
+    assert res(year=None, units=9) == {"r-0001": "unknown", "r-0002": "unknown", "r-0003": "unknown"}
+    # no city rule states building conditions -> the status stays unknown
+    assert {r.result for r in lookup.evaluate_address(parcel(year=1950), [annual], AS_OF)} == {"unknown"}
+    # a rule conditioned only on facts the data lacks does not define rent control
+    vague = rule("r-0004", level="city", jur=CITY, pred={"not": {"fact": "owner_occupied", "op": "==", "value": True}})
+    assert {r.result for r in lookup.evaluate_address(parcel(year=1950), [vague, annual], AS_OF)
+            if r.team_rule_id == "r-0002"} == {"unknown"}
+    # unconfirmed legal city: never derived
+    assert res(year=1990, units=9, conf="low")["r-0003"] == "unknown"
+
+
 def test_lookup_passes_query_date_to_coverage():
     r = rule("r-0001", pred=ROLLING_EXEMPT)
     p = parcel(year=2024, units=10)
@@ -186,6 +209,15 @@ def test_low_jurisdiction_confidence_makes_city_rules_unknown():
     assert row.result == "unknown" and "legal city is not confirmed" in row.explanation
     (row,) = lookup.evaluate_address(parcel(conf="high"), rules, AS_OF)
     assert row.result == "applies"
+
+
+def test_medium_jurisdiction_confidence_confirms_city_with_penalty():
+    rules = [rule("r-0001", level="city", jur=CITY)]
+    (high,) = lookup.evaluate_address(parcel(conf="high"), rules, AS_OF)
+    (med,) = lookup.evaluate_address(parcel(conf="medium"), rules, AS_OF)
+    assert med.result == "applies"
+    assert med.confidence < high.confidence
+    assert any("non-exact geocoder match" in r for r in med.confidence_reasons)
 
 
 def test_no_predicate_rule_with_exemptions_lowers_confidence():

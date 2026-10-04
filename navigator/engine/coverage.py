@@ -9,6 +9,8 @@ Leaves:
 - `certificate_of_occupancy_date` op D: estimated from year built against D's year
   (built after -> FALSE, before -> TRUE "derived from year built", same year or missing ->
   UNKNOWN). D always comes from the rule's own predicate.
+- `subject_to_local_rent_control`: decided only when the engine derived it for this address
+  from the city's own rent-limit rules (Facts.local_rent_control, see lookup.py); else UNKNOWN.
 - facts the data does not have (owner type, owner occupancy, ...) -> UNKNOWN.
 - a date fact compared with `{"years_before_query_date": N}` (rolling conditions such as
   "certificate of occupancy within the previous N years"): D = query date minus N years,
@@ -40,6 +42,7 @@ TRUE, FALSE, UNKNOWN = "true", "false", "unknown"
 PRESUME_UNCHECKABLE_EXEMPTIONS_ABSENT = True
 
 DERIVED_CO = "certificate-of-occupancy date estimated from year built"
+LOCAL_RC = "subject_to_local_rent_control"
 
 
 @dataclass
@@ -239,6 +242,10 @@ def _leaf(node: dict[str, Any], f: Facts, presume: bool, as_of: str | None) -> _
         if f.use_description is None:
             return _R(UNKNOWN, missing={"use_description"})
         return _R(_plain(op, f.use_description, value), used={"use_description"})
+    if fact == LOCAL_RC and f.local_rent_control is not None and op in ("==", "!="):
+        basis = ", ".join(f.local_rent_control_basis)
+        return _R(_plain(op, f.local_rent_control, value), used={LOCAL_RC},
+                  derived={f"local rent-control status from the coverage of {basis}"})
     # Facts the data does not have (or unknown names, which verify should have dropped).
     if presume and fact in vocab.NOT_AVAILABLE and fact not in vocab.NOT_PRESUMED:
         return _R(_tri(_negative_form(op, value)), presumed={fact})

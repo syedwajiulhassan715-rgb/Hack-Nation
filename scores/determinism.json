@@ -1,6 +1,6 @@
 {
-  "ts": "2026-10-04T02:36:47Z",
-  "commit": "bd0e3a8",
+  "ts": "2026-10-04T03:40:05Z",
+  "commit": "93f3cd8",
   "tree_dirty": true,
   "excluded_fields": {
     "changes_internal.json": [
@@ -16,10 +16,10 @@
       "returncode": 0,
       "misses": [],
       "timings": {
-        "verify": 5.2,
-        "lookups": 22.6,
-        "changes": 4.4,
-        "summaries": 0.7
+        "verify": 8.6,
+        "lookups": 34.8,
+        "changes": 6.4,
+        "summaries": 0.9
       }
     },
     {
@@ -27,14 +27,14 @@
       "returncode": 0,
       "misses": [],
       "timings": {
-        "verify": 5.2,
-        "lookups": 22.6,
-        "changes": 4.4,
-        "summaries": 0.7
+        "verify": 11.4,
+        "lookups": 56.9,
+        "changes": 9.5,
+        "summaries": 1.0
       }
     }
   ],
-  "seconds": 66.5,
+  "seconds": 130.4,
   "guarded_paths_touched": [],
   "files": {
     "rules.json": "identical",

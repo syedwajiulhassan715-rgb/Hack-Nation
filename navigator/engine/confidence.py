@@ -19,6 +19,7 @@ P_NO_PRED_EXEMPTIONS = 0.1
 P_PRED_EXEMPTIONS = 0.05
 P_UNITS_FROM_DESCRIPTION = 0.05
 P_JURISDICTION_LOW = 0.2
+P_JURISDICTION_MEDIUM = 0.05
 P_STRICTER_NOT_COMPARED = 0.05
 P_UNKNOWN_SUPERSEDER = 0.05
 
@@ -49,6 +50,8 @@ def score(rule_confidence: float | None, f: Facts, cov: Coverage | None, *, leve
                 pen(P_NO_PRED_EXEMPTIONS, "listed exemptions not checked (no checkable predicates)")
     if level == "city" and not f.city_confirmed:
         pen(P_JURISDICTION_LOW, "legal city not confirmed")
+    elif level == "city" and f.jurisdiction_confidence == "medium":
+        pen(P_JURISDICTION_MEDIUM, "legal city from a non-exact geocoder match")
     if stricter_not_compared:
         pen(P_STRICTER_NOT_COMPARED, "whether the local limit is stricter was not compared")
     if superseder_unconfirmed:

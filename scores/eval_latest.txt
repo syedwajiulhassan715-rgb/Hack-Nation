@@ -1,5 +1,5 @@
 Self-evaluation (team harness; the pack has no official scoring script). Not legal advice.
-generated_at 2026-10-04T03:10:50Z  commit 0996a67  as_of default 2026-10-01
+generated_at 2026-10-04T03:40:12Z  commit 93f3cd8  as_of default 2026-10-01
 overall hard checks: PASS
 
 [1] Format validity (must be 100%)
@@ -13,14 +13,14 @@ overall hard checks: PASS
   [PASS] every row has exactly {team_rule_id, result, explanation, conflict_flag} - 0 bad
   [PASS] every row's rule is in rules.json - 0 unknown
   [PASS] no failed rule appears in lookups
-  [info] lookup rows: 27864; addresses with no rows: 0
+  [info] lookup rows: 27814; addresses with no rows: 0
   [PASS] has all tests ['T1', 'T2', 'T3', 'T4', 'T5']
   [PASS] each test has affected_address_ids, conflict_flag_address_ids, notes
   [PASS] all listed ids are sample address ids - 0 unknown
 [2] Grounding (must be 100%)
   [PASS] quoted_span found in its source_doc_id text: 227/227 (100.0%)
   [PASS] source_url equals manifest url: 227/227 (100.0%)
-  [PASS] rules behind 'applies' rows have span, citation, url, retrieval date: 177/177 (100.0%)
+  [PASS] rules behind 'applies' rows have span, citation, url, retrieval date: 180/180 (100.0%)
 [3] Brief recall checklist (laws the briefs name; misses count only with text in corpus)
   [PASS] checklist laws found: 19/19 (100.0%)
   [info] not found: jc-algorithmic (no text in corpus), hoboken-algorithmic (no text in corpus)
@@ -68,26 +68,14 @@ overall hard checks: PASS
   [    ] effective_date accuracy (matched rules) [draft gold, unreviewed]: 40/41 (97.6%)
   [info] key_value numbers present (key_value or requirement) [draft gold, unreviewed]: 10/10 (100.0%)
   [    ] address legal city [draft gold, unreviewed]: 54/56 (96.4%) (unresolved 2, wrong 0, gold uncertain 1, state 57/57 (100.0%))
-  [    ] address results [draft gold, unreviewed]: 103/132 (78.0%) (over-cautious unknown 27, missed rows 1 of which missed applies 1, wrong 1, not checkable 3)
-  [info] mismatches (33) [draft gold, unreviewed]:
+  [    ] address results [draft gold, unreviewed]: 119/132 (90.2%) (over-cautious unknown 11, missed rows 1 of which missed applies 1, wrong 1, not checkable 3)
+  [info] mismatches (17) [draft gold, unreviewed]:
     - rule g-cambridge-source-of-income (D029, Cambridge, MA, screening_restrictions): no matching rule
     - rule g-boston-hsna -> r-0219: effective_date expected '2020-11-06' got None
     - address A0098: legal city expected 'Boston, MA' got None (unresolved)
     - address A0376: legal city expected 'Boston, MA' got None (unresolved)
-    - address A0445 x g-la-rso-increase (r-0183): expected applies got unknown (over_cautious)
-    - address A0445 x g-ca-rent-cap (r-0018): expected superseded got unknown (over_cautious)
-    - address A0315 x g-la-jco (r-0164): expected applies got unknown (over_cautious)
-    - address A0315 x g-ca-rent-cap (r-0018): expected applies got unknown (over_cautious)
-    - address A0045 x g-ca-rent-cap (r-0018): expected applies got unknown (over_cautious)
-    - address A0045 x g-la-jco (r-0164): expected applies got unknown (over_cautious)
-    - address A0437 x g-ca-rent-cap (r-0018): expected applies got unknown (over_cautious)
-    - address A0405 x g-ca-rent-cap (r-0018): expected applies got unknown (over_cautious)
-    - address A0405 x g-la-jco (r-0164): expected applies got unknown (over_cautious)
-    - address A0022 x g-la-jco (r-0164): expected applies got unknown (over_cautious)
     - address A0156 x g-sf-annual-increase (r-0206): expected applies got unknown (over_cautious)
     - address A0156 x g-ca-rent-cap (r-0018): expected superseded got unknown (over_cautious)
-    - address A0156 x g-sf-just-cause (r-0201): expected applies got unknown (over_cautious)
-    - address A0156 x g-sf-algorithmic (r-0200): expected applies got unknown (over_cautious)
     - address A0156 x g-ca-just-cause (r-0012): expected superseded got unknown (over_cautious)
     - address A0382 x g-sf-annual-increase (r-0206): expected applies got unknown (over_cautious)
     - address A0382 x g-ca-rent-cap (r-0018): expected superseded got unknown (over_cautious)
@@ -97,11 +85,7 @@ overall hard checks: PASS
     - address A0357 x g-ca-rent-cap (r-0018): expected applies got unknown (over_cautious)
     - address A0081 x g-ca-rent-cap (r-0018): expected applies got unknown (over_cautious)
     - address A0105 x g-sf-annual-increase (r-0206): expected absent got unknown (over_cautious)
-    - address A0394 x g-jc-rent-control (r-0227): expected applies got unknown (over_cautious)
     - address A0020 x g-nj-fair-chance (r-0121): expected unknown got applies (wrong)
-    - address A0144 x g-boston-hsna (r-0219): expected applies got unknown (over_cautious)
-    - address A0310 x g-boston-fair-housing (r-0225): expected applies got unknown (over_cautious)
-    - address A0242 x g-boston-hsna (r-0219): expected applies got unknown (over_cautious)
     - address A0098 x g-boston-hsna (r-0219): expected applies got absent (missed)
 [7] Jurisdiction check (legal city from Census geographies, never postal city)
   [info] by state: CA 250, MA 110, NJ 140
@@ -131,10 +115,9 @@ overall hard checks: PASS
   [PASS] every address without a legal city is flagged needs_review
   [PASS] MA/NJ county subdivision agrees with legal city: 244/244 (100.0%)
     6 MA/NJ addresses have no county subdivision (not geocoded)
-  [PASS] lookup rows only from the address's own state and legal city (27864 rows)
+  [PASS] lookup rows only from the address's own state and legal city (27814 rows)
 [8] Determinism (two cached runs byte-identical; `python -m eval.determinism`)
-  [info] run 2026-10-04T02:36:47Z at commit bd0e3a8 (dirty tree), 66.5s; excluded fields: changes_internal.json:generated_at, summaries.json:generated_at
-  [info] stale: run at commit bd0e3a8, HEAD is 0996a67; re-run it
+  [info] run 2026-10-04T03:40:05Z at commit 93f3cd8 (dirty tree), 130.4s; excluded fields: changes_internal.json:generated_at, summaries.json:generated_at
     identical rules.json
     identical rules_internal.json
     identical rejects.jsonl
@@ -145,4 +128,4 @@ overall hard checks: PASS
     identical changes.json
     identical changes_internal.json
     identical summaries.json
-  [PASS] 10/10 files byte-identical (run 1 = run 2 = committed outputs/) [stale]
+  [PASS] 10/10 files byte-identical (run 1 = run 2 = committed outputs/)

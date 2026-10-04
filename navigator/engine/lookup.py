@@ -12,6 +12,9 @@ Per address, for each rule whose jurisdiction is the parcel's state or its legal
     pending -> pending;  not yet effective -> not_yet_effective
     in force: TRUE -> applies;  UNKNOWN -> unknown (missing fact named)
     city rule while the legal city is not confirmed -> unknown
+    `subject_to_local_rent_control` (a rule limited to rent-controlled units, or to units
+        outside rent control) is derived per address from the city's own rent-limit rules
+        that state building conditions (local_rent_control); otherwise it stays unknown
     precedence (precedence.py, from extracted text only):
         state rule that defers to local rules + a same-category city rule whose coverage
         was decided from building facts -> superseded; if that city rule's coverage could
@@ -25,6 +28,7 @@ import calendar
 import datetime as dt
 import json
 from collections import Counter
+from dataclasses import replace
 from pathlib import Path
 from typing import Any
 
@@ -34,6 +38,7 @@ from navigator.engine.coverage import FALSE, TRUE, Coverage
 from navigator.engine.explain_lookup import Decision, explain
 from navigator.engine.facts import Facts, parcel_facts
 from navigator.engine.status import status_on
+from navigator.schema import facts as vocab
 from navigator.schema.models import LookupRowInternal, RuleInternal
 from navigator.schema.writers import dump_json, write_lookups
 
@@ -186,6 +191,43 @@ def _finish(row: _Row, f: Facts, as_of: str, outside_cities: bool) -> LookupRowI
     )
 
 
+def rent_control_rules(rules: list[RuleInternal], f: Facts, as_of: str) -> list[RuleInternal]:
+    """The city's own in-force rent-limit rules whose extracted coverage states building
+    conditions (a fact the data has) and does not itself depend on rent-control status."""
+    if f.city is None or not f.city_confirmed:
+        return []
+    out = []
+    for r in rules:
+        if r.level != "city" or r.jurisdiction != f.city or r.category != "rent_increase_limits":
+            continue
+        if not r.predicates or status_on(r, as_of) != "in_force":
+            continue
+        named = coverage._facts_named(r.predicates)
+        if coverage.LOCAL_RC in named or not (named & set(vocab.AVAILABLE)):
+            continue
+        out.append(r)
+    return sorted(out, key=lambda r: r.team_rule_id)
+
+
+def local_rent_control(rules: list[RuleInternal], f: Facts, as_of: str) -> Facts:
+    """Facts with `subject_to_local_rent_control` derived from the extracted rules.
+
+    TRUE if one of rent_control_rules() covers the building, FALSE if every one of them
+    is decided not to, else left unknown (also when the city has no such rule). The answer
+    is never stronger than those rules' own lookups for this building.
+    """
+    basis = rent_control_rules(rules, f, as_of)
+    if not basis:
+        return f
+    values = {r.team_rule_id: coverage.evaluate(r.predicates, f, as_of).value for r in basis}
+    hits = [rid for rid, v in values.items() if v == TRUE]
+    if hits:
+        return replace(f, local_rent_control=True, local_rent_control_basis=tuple(hits))
+    if all(v == FALSE for v in values.values()):
+        return replace(f, local_rent_control=False, local_rent_control_basis=tuple(values))
+    return f
+
+
 def evaluate_address(parcel: dict, rules: list[RuleInternal], as_of: str) -> list[LookupRowInternal]:
     """Lookup rows (LookupRowInternal) for one parcels.json record on `as_of` (YYYY-MM-DD).
 
@@ -193,7 +235,7 @@ def evaluate_address(parcel: dict, rules: list[RuleInternal], as_of: str) -> lis
     sorted by team_rule_id. Pure: depends only on its arguments (and, for precedence
     scoping, the read-only corpus manifest).
     """
-    f = parcel_facts(parcel)
+    f = local_rent_control(rules, parcel_facts(parcel), as_of)
     rows: dict[str, _Row] = {}
     for rule in sorted(rules, key=lambda r: r.team_rule_id):
         if rule.jurisdiction == f.state or (f.city is not None and rule.jurisdiction == f.city):

@@ -26,6 +26,7 @@ from navigator.api.models import (
 )
 from navigator.api.store import DataUnavailable, Store
 from navigator.engine import lookup as engine
+from navigator.engine.facts import CONFIRMED_LEVELS
 from navigator.engine.status import status_on
 from navigator.schema.models import Category, LookupRowInternal, RuleInternal
 
@@ -256,7 +257,7 @@ def build_lookup(store: Store, parcel: dict[str, Any], rows: list[LookupRowInter
     rules = store.rules_file()["by_id"]
     aid = str(parcel["address_id"])
     state, city = str(parcel.get("state") or ""), parcel.get("city")
-    city_confirmed = parcel.get("jurisdiction_confidence") == "high"
+    city_confirmed = bool(parcel.get("city")) and parcel.get("jurisdiction_confidence") in CONFIRMED_LEVELS
 
     by_cat: dict[str, list[LookupRowOut]] = {c: [] for c in CATEGORIES}
     for row in rows:

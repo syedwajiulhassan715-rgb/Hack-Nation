@@ -27,6 +27,7 @@ LABELS = {
     "rent_amount": "rent amount",
     "tenant_income_source": "tenant's source of income",
     "unit_is_furnished": "whether the unit is furnished",
+    "subject_to_local_rent_control": "local rent-control status",
 }
 
 EXEMPTIONS_TEXT = "the rule's listed exemptions (text only, not all checkable)"
@@ -57,6 +58,10 @@ def _fact_value(fact: str, f: Facts) -> str | None:
         return f"year built {f.year_built}"
     if fact == "use_description" and f.use_description:
         return f"land-use description '{f.use_description}'"
+    if fact == "subject_to_local_rent_control" and f.local_rent_control is not None:
+        state = "covered" if f.local_rent_control else "not covered"
+        return (f"local rent control: {state} by the city's rent-limit rules "
+                f"{', '.join(f.local_rent_control_basis)} (derived from their coverage)")
     return None
 
 

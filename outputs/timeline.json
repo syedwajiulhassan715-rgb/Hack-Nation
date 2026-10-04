@@ -32,7 +32,7 @@
           {
             "team_rule_id": "r-0221",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -194,7 +194,7 @@
           {
             "team_rule_id": "r-0221",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -275,7 +275,7 @@
           {
             "team_rule_id": "r-0221",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -383,7 +383,7 @@
           {
             "team_rule_id": "r-0221",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -518,7 +518,7 @@
           {
             "team_rule_id": "r-0221",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -680,7 +680,7 @@
           {
             "team_rule_id": "r-0221",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -734,7 +734,7 @@
           {
             "team_rule_id": "r-0221",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -788,7 +788,7 @@
           {
             "team_rule_id": "r-0221",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -815,7 +815,7 @@
           {
             "team_rule_id": "r-0221",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -923,7 +923,7 @@
           {
             "team_rule_id": "r-0221",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -950,7 +950,7 @@
           {
             "team_rule_id": "r-0221",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -1004,7 +1004,7 @@
           {
             "team_rule_id": "r-0221",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -1139,7 +1139,7 @@
           {
             "team_rule_id": "r-0221",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -1382,7 +1382,7 @@
           {
             "team_rule_id": "r-0221",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -11032,7 +11032,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -11102,7 +11102,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -11139,7 +11139,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -11204,7 +11204,7 @@
           {
             "team_rule_id": "r-0018",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "superseded"
           }
         ]
       },
@@ -11239,7 +11239,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -11274,7 +11274,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -11284,7 +11284,7 @@
           {
             "team_rule_id": "r-0167",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -11339,12 +11339,12 @@
           {
             "team_rule_id": "r-0185",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -11364,12 +11364,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -11516,7 +11516,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -11586,7 +11586,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -11623,7 +11623,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -11688,7 +11688,7 @@
           {
             "team_rule_id": "r-0018",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "superseded"
           }
         ]
       },
@@ -11723,7 +11723,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -11758,7 +11758,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -11768,7 +11768,7 @@
           {
             "team_rule_id": "r-0167",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -11823,12 +11823,12 @@
           {
             "team_rule_id": "r-0185",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -11848,12 +11848,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -11865,7 +11865,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -11940,7 +11940,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -11971,11 +11971,6 @@
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -12025,16 +12020,6 @@
         ]
       },
       {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
-          }
-        ]
-      },
-      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -12050,12 +12035,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -12225,19 +12210,9 @@
         "date": "2025-07-01",
         "changes": [
           {
-            "team_rule_id": "r-0018",
-            "from": "applies",
-            "to": "unknown"
-          },
-          {
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -12283,16 +12258,6 @@
             "team_rule_id": "r-0011",
             "from": "not_yet_effective",
             "to": "applies"
-          }
-        ]
-      },
-      {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -12464,7 +12429,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -12534,7 +12499,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -12571,7 +12536,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -12671,7 +12636,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -12699,19 +12664,9 @@
         "date": "2025-07-01",
         "changes": [
           {
-            "team_rule_id": "r-0018",
-            "from": "applies",
-            "to": "unknown"
-          },
-          {
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -12761,16 +12716,6 @@
         ]
       },
       {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
-          }
-        ]
-      },
-      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -12786,12 +12731,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -12931,19 +12876,9 @@
         "date": "2025-07-01",
         "changes": [
           {
-            "team_rule_id": "r-0018",
-            "from": "applies",
-            "to": "unknown"
-          },
-          {
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -12989,16 +12924,6 @@
             "team_rule_id": "r-0011",
             "from": "not_yet_effective",
             "to": "applies"
-          }
-        ]
-      },
-      {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -13035,7 +12960,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -13135,7 +13060,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -13163,19 +13088,9 @@
         "date": "2025-07-01",
         "changes": [
           {
-            "team_rule_id": "r-0018",
-            "from": "applies",
-            "to": "unknown"
-          },
-          {
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -13225,16 +13140,6 @@
         ]
       },
       {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
-          }
-        ]
-      },
-      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -13250,12 +13155,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -13267,7 +13172,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -13332,7 +13237,7 @@
           {
             "team_rule_id": "r-0018",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "superseded"
           }
         ]
       },
@@ -13367,7 +13272,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -13402,7 +13307,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -13412,7 +13317,7 @@
           {
             "team_rule_id": "r-0167",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -13467,12 +13372,12 @@
           {
             "team_rule_id": "r-0185",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -13492,12 +13397,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -13637,19 +13542,9 @@
         "date": "2025-07-01",
         "changes": [
           {
-            "team_rule_id": "r-0018",
-            "from": "applies",
-            "to": "unknown"
-          },
-          {
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -13695,16 +13590,6 @@
             "team_rule_id": "r-0011",
             "from": "not_yet_effective",
             "to": "applies"
-          }
-        ]
-      },
-      {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -13876,7 +13761,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -13946,7 +13831,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -14118,7 +14003,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -14188,7 +14073,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -14360,7 +14245,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -14430,7 +14315,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -14595,19 +14480,9 @@
         "date": "2025-07-01",
         "changes": [
           {
-            "team_rule_id": "r-0018",
-            "from": "applies",
-            "to": "unknown"
-          },
-          {
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -14657,16 +14532,6 @@
         ]
       },
       {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
-          }
-        ]
-      },
-      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -14699,7 +14564,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -14799,7 +14664,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -14924,12 +14789,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -14941,7 +14806,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -15041,7 +14906,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -15069,19 +14934,9 @@
         "date": "2025-07-01",
         "changes": [
           {
-            "team_rule_id": "r-0018",
-            "from": "applies",
-            "to": "unknown"
-          },
-          {
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -15131,16 +14986,6 @@
         ]
       },
       {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
-          }
-        ]
-      },
-      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -15156,12 +15001,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -15308,7 +15153,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -15378,7 +15223,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -15550,7 +15395,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -15620,7 +15465,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -15657,7 +15502,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -15722,7 +15567,7 @@
           {
             "team_rule_id": "r-0018",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "superseded"
           }
         ]
       },
@@ -15757,7 +15602,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -15792,7 +15637,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -15802,7 +15647,7 @@
           {
             "team_rule_id": "r-0167",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -15857,12 +15702,12 @@
           {
             "team_rule_id": "r-0185",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -15882,12 +15727,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -15899,7 +15744,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -15964,7 +15809,7 @@
           {
             "team_rule_id": "r-0018",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "superseded"
           }
         ]
       },
@@ -15999,7 +15844,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -16034,7 +15879,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -16044,7 +15889,7 @@
           {
             "team_rule_id": "r-0167",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -16099,12 +15944,12 @@
           {
             "team_rule_id": "r-0185",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -16124,12 +15969,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -16276,7 +16121,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -16346,7 +16191,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -16518,7 +16363,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -16588,7 +16433,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -16760,7 +16605,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -16830,7 +16675,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -16995,19 +16840,9 @@
         "date": "2025-07-01",
         "changes": [
           {
-            "team_rule_id": "r-0018",
-            "from": "applies",
-            "to": "unknown"
-          },
-          {
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -17053,16 +16888,6 @@
             "team_rule_id": "r-0011",
             "from": "not_yet_effective",
             "to": "applies"
-          }
-        ]
-      },
-      {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -17099,7 +16924,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -17199,7 +17024,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -17227,19 +17052,9 @@
         "date": "2025-07-01",
         "changes": [
           {
-            "team_rule_id": "r-0018",
-            "from": "applies",
-            "to": "unknown"
-          },
-          {
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -17289,16 +17104,6 @@
         ]
       },
       {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
-          }
-        ]
-      },
-      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -17314,12 +17119,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -17331,7 +17136,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -17396,7 +17201,7 @@
           {
             "team_rule_id": "r-0018",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "superseded"
           }
         ]
       },
@@ -17431,7 +17236,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -17466,7 +17271,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -17476,7 +17281,7 @@
           {
             "team_rule_id": "r-0167",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -17531,12 +17336,12 @@
           {
             "team_rule_id": "r-0185",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -17556,12 +17361,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -17573,7 +17378,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -17638,7 +17443,7 @@
           {
             "team_rule_id": "r-0018",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "superseded"
           }
         ]
       },
@@ -17673,7 +17478,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -17708,7 +17513,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -17718,7 +17523,7 @@
           {
             "team_rule_id": "r-0167",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -17773,12 +17578,12 @@
           {
             "team_rule_id": "r-0185",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -17798,12 +17603,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -17815,7 +17620,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -17880,7 +17685,7 @@
           {
             "team_rule_id": "r-0018",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "superseded"
           }
         ]
       },
@@ -17915,7 +17720,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -17950,7 +17755,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -17960,7 +17765,7 @@
           {
             "team_rule_id": "r-0167",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -18015,12 +17820,12 @@
           {
             "team_rule_id": "r-0185",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -18040,12 +17845,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -18192,7 +17997,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -18262,7 +18067,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -18427,19 +18232,9 @@
         "date": "2025-07-01",
         "changes": [
           {
-            "team_rule_id": "r-0018",
-            "from": "applies",
-            "to": "unknown"
-          },
-          {
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -18485,16 +18280,6 @@
             "team_rule_id": "r-0011",
             "from": "not_yet_effective",
             "to": "applies"
-          }
-        ]
-      },
-      {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -18666,7 +18451,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -18736,7 +18521,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -18773,7 +18558,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -18838,7 +18623,7 @@
           {
             "team_rule_id": "r-0018",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "superseded"
           }
         ]
       },
@@ -18873,7 +18658,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -18908,7 +18693,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -18918,7 +18703,7 @@
           {
             "team_rule_id": "r-0167",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -18973,12 +18758,12 @@
           {
             "team_rule_id": "r-0185",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -18998,12 +18783,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -19392,7 +19177,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -19462,7 +19247,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -19605,11 +19390,6 @@
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -19655,16 +19435,6 @@
             "team_rule_id": "r-0011",
             "from": "not_yet_effective",
             "to": "applies"
-          }
-        ]
-      },
-      {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -19701,7 +19471,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -19801,7 +19571,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -19829,19 +19599,9 @@
         "date": "2025-07-01",
         "changes": [
           {
-            "team_rule_id": "r-0018",
-            "from": "applies",
-            "to": "unknown"
-          },
-          {
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -19891,16 +19651,6 @@
         ]
       },
       {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
-          }
-        ]
-      },
-      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -19916,12 +19666,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -19933,7 +19683,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -19998,7 +19748,7 @@
           {
             "team_rule_id": "r-0018",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "superseded"
           }
         ]
       },
@@ -20033,7 +19783,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -20068,7 +19818,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -20078,7 +19828,7 @@
           {
             "team_rule_id": "r-0167",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -20133,12 +19883,12 @@
           {
             "team_rule_id": "r-0185",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -20158,12 +19908,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -20417,7 +20167,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -20482,7 +20232,7 @@
           {
             "team_rule_id": "r-0018",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "superseded"
           }
         ]
       },
@@ -20517,7 +20267,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -20552,7 +20302,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -20562,7 +20312,7 @@
           {
             "team_rule_id": "r-0167",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -20617,12 +20367,12 @@
           {
             "team_rule_id": "r-0185",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -20642,12 +20392,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -20794,7 +20544,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -20864,7 +20614,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -20901,7 +20651,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -21001,7 +20751,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -21029,19 +20779,9 @@
         "date": "2025-07-01",
         "changes": [
           {
-            "team_rule_id": "r-0018",
-            "from": "applies",
-            "to": "unknown"
-          },
-          {
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -21091,16 +20831,6 @@
         ]
       },
       {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
-          }
-        ]
-      },
-      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -21116,12 +20846,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -21268,7 +20998,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -21338,7 +21068,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -21375,7 +21105,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -21475,7 +21205,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -21600,12 +21330,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -21752,7 +21482,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -21822,7 +21552,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -21859,7 +21589,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -21959,7 +21689,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -22084,12 +21814,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -22236,7 +21966,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -22306,7 +22036,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -22478,7 +22208,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -22548,7 +22278,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -22720,7 +22450,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -22790,7 +22520,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -22827,7 +22557,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -22927,7 +22657,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -22955,19 +22685,9 @@
         "date": "2025-07-01",
         "changes": [
           {
-            "team_rule_id": "r-0018",
-            "from": "applies",
-            "to": "unknown"
-          },
-          {
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -23017,16 +22737,6 @@
         ]
       },
       {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
-          }
-        ]
-      },
-      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -23042,12 +22752,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -23194,7 +22904,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -23264,7 +22974,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -23436,7 +23146,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -23506,7 +23216,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -23543,7 +23253,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -23618,7 +23328,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -23649,11 +23359,6 @@
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -23703,16 +23408,6 @@
         ]
       },
       {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
-          }
-        ]
-      },
-      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -23728,12 +23423,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -23745,7 +23440,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -23810,7 +23505,7 @@
           {
             "team_rule_id": "r-0018",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "superseded"
           }
         ]
       },
@@ -23845,7 +23540,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -23880,7 +23575,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -23890,7 +23585,7 @@
           {
             "team_rule_id": "r-0167",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -23945,12 +23640,12 @@
           {
             "team_rule_id": "r-0185",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -23970,12 +23665,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -24122,7 +23817,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -24192,7 +23887,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -24471,7 +24166,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -24571,7 +24266,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -24599,19 +24294,9 @@
         "date": "2025-07-01",
         "changes": [
           {
-            "team_rule_id": "r-0018",
-            "from": "applies",
-            "to": "unknown"
-          },
-          {
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -24661,16 +24346,6 @@
         ]
       },
       {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
-          }
-        ]
-      },
-      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -24686,12 +24361,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -24838,7 +24513,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -24908,7 +24583,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -25073,19 +24748,9 @@
         "date": "2025-07-01",
         "changes": [
           {
-            "team_rule_id": "r-0018",
-            "from": "applies",
-            "to": "unknown"
-          },
-          {
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -25131,16 +24796,6 @@
             "team_rule_id": "r-0011",
             "from": "not_yet_effective",
             "to": "applies"
-          }
-        ]
-      },
-      {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -25202,7 +24857,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -25302,7 +24957,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -25330,19 +24985,9 @@
         "date": "2025-07-01",
         "changes": [
           {
-            "team_rule_id": "r-0018",
-            "from": "applies",
-            "to": "unknown"
-          },
-          {
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -25392,16 +25037,6 @@
         ]
       },
       {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
-          }
-        ]
-      },
-      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -25417,12 +25052,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -25434,7 +25069,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -25499,7 +25134,7 @@
           {
             "team_rule_id": "r-0018",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "superseded"
           }
         ]
       },
@@ -25534,7 +25169,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -25569,7 +25204,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -25579,7 +25214,7 @@
           {
             "team_rule_id": "r-0167",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -25634,12 +25269,12 @@
           {
             "team_rule_id": "r-0185",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -25659,12 +25294,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -25676,7 +25311,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -25741,7 +25376,7 @@
           {
             "team_rule_id": "r-0018",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "superseded"
           }
         ]
       },
@@ -25776,7 +25411,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -25811,7 +25446,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -25821,7 +25456,7 @@
           {
             "team_rule_id": "r-0167",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -25876,12 +25511,12 @@
           {
             "team_rule_id": "r-0185",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -25901,12 +25536,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -25918,7 +25553,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -26018,7 +25653,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -26143,12 +25778,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -26160,7 +25795,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -26225,7 +25860,7 @@
           {
             "team_rule_id": "r-0018",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "superseded"
           }
         ]
       },
@@ -26260,7 +25895,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -26295,7 +25930,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -26305,7 +25940,7 @@
           {
             "team_rule_id": "r-0167",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -26360,12 +25995,12 @@
           {
             "team_rule_id": "r-0185",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -26385,12 +26020,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -26402,7 +26037,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -26502,7 +26137,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -26530,19 +26165,9 @@
         "date": "2025-07-01",
         "changes": [
           {
-            "team_rule_id": "r-0018",
-            "from": "applies",
-            "to": "unknown"
-          },
-          {
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -26592,16 +26217,6 @@
         ]
       },
       {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
-          }
-        ]
-      },
-      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -26617,12 +26232,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -26634,7 +26249,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -26734,7 +26349,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -26859,12 +26474,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -27011,7 +26626,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -27081,7 +26696,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -27246,19 +26861,9 @@
         "date": "2025-07-01",
         "changes": [
           {
-            "team_rule_id": "r-0018",
-            "from": "applies",
-            "to": "unknown"
-          },
-          {
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -27304,16 +26909,6 @@
             "team_rule_id": "r-0011",
             "from": "not_yet_effective",
             "to": "applies"
-          }
-        ]
-      },
-      {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -27478,19 +27073,9 @@
         "date": "2025-07-01",
         "changes": [
           {
-            "team_rule_id": "r-0018",
-            "from": "applies",
-            "to": "unknown"
-          },
-          {
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -27540,16 +27125,6 @@
         ]
       },
       {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
-          }
-        ]
-      },
-      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -27582,7 +27157,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -27647,7 +27222,7 @@
           {
             "team_rule_id": "r-0018",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "superseded"
           }
         ]
       },
@@ -27682,7 +27257,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -27717,7 +27292,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -27727,7 +27302,7 @@
           {
             "team_rule_id": "r-0167",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -27782,12 +27357,12 @@
           {
             "team_rule_id": "r-0185",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -27807,12 +27382,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -27824,7 +27399,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -27924,7 +27499,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -27952,19 +27527,9 @@
         "date": "2025-07-01",
         "changes": [
           {
-            "team_rule_id": "r-0018",
-            "from": "applies",
-            "to": "unknown"
-          },
-          {
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -28014,16 +27579,6 @@
         ]
       },
       {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
-          }
-        ]
-      },
-      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -28039,12 +27594,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -28191,7 +27746,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -28261,7 +27816,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -28298,7 +27853,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -28363,7 +27918,7 @@
           {
             "team_rule_id": "r-0018",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "superseded"
           }
         ]
       },
@@ -28398,7 +27953,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -28433,7 +27988,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -28443,7 +27998,7 @@
           {
             "team_rule_id": "r-0167",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -28498,12 +28053,12 @@
           {
             "team_rule_id": "r-0185",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -28523,12 +28078,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -28675,7 +28230,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -28745,7 +28300,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -28917,7 +28472,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -28987,7 +28542,7 @@
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -29024,7 +28579,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -29124,7 +28679,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -29152,19 +28707,9 @@
         "date": "2025-07-01",
         "changes": [
           {
-            "team_rule_id": "r-0018",
-            "from": "applies",
-            "to": "unknown"
-          },
-          {
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -29214,16 +28759,6 @@
         ]
       },
       {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
-          }
-        ]
-      },
-      {
         "date": "2026-03-01",
         "changes": [
           {
@@ -29239,12 +28774,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -29362,11 +28897,6 @@
             "team_rule_id": "r-0030",
             "from": "not_yet_effective",
             "to": "applies"
-          },
-          {
-            "team_rule_id": "r-0186",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -29412,16 +28942,6 @@
             "team_rule_id": "r-0011",
             "from": "not_yet_effective",
             "to": "applies"
-          }
-        ]
-      },
-      {
-        "date": "2026-02-02",
-        "changes": [
-          {
-            "team_rule_id": "r-0187",
-            "from": "not_yet_effective",
-            "to": "unknown"
           }
         ]
       },
@@ -29458,7 +28978,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -29523,7 +29043,7 @@
           {
             "team_rule_id": "r-0018",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "superseded"
           }
         ]
       },
@@ -29558,7 +29078,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -29593,7 +29113,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -29603,7 +29123,7 @@
           {
             "team_rule_id": "r-0167",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -29658,12 +29178,12 @@
           {
             "team_rule_id": "r-0185",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -29683,12 +29203,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -29700,7 +29220,7 @@
           {
             "team_rule_id": "r-0165",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -29765,7 +29285,7 @@
           {
             "team_rule_id": "r-0018",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "superseded"
           }
         ]
       },
@@ -29800,7 +29320,7 @@
           {
             "team_rule_id": "r-0177",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -29835,7 +29355,7 @@
           {
             "team_rule_id": "r-0186",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -29845,7 +29365,7 @@
           {
             "team_rule_id": "r-0167",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -29900,12 +29420,12 @@
           {
             "team_rule_id": "r-0185",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0187",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -29925,12 +29445,12 @@
           {
             "team_rule_id": "r-0175",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0178",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -31546,32 +31066,32 @@
           {
             "team_rule_id": "r-0193",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0194",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0195",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0196",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0197",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0198",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -33816,32 +33336,32 @@
           {
             "team_rule_id": "r-0193",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0194",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0195",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0196",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0197",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0198",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -38129,32 +37649,32 @@
           {
             "team_rule_id": "r-0193",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0194",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0195",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0196",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0197",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0198",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -40626,32 +40146,32 @@
           {
             "team_rule_id": "r-0193",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0194",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0195",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0196",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0197",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0198",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -47335,7 +46855,7 @@
           {
             "team_rule_id": "r-0200",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -47430,7 +46950,7 @@
           {
             "team_rule_id": "r-0205",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0206",
@@ -47445,7 +46965,7 @@
           {
             "team_rule_id": "r-0209",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -48395,7 +47915,7 @@
           {
             "team_rule_id": "r-0200",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -48490,7 +48010,7 @@
           {
             "team_rule_id": "r-0205",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0206",
@@ -48505,7 +48025,7 @@
           {
             "team_rule_id": "r-0209",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -52435,7 +51955,7 @@
           {
             "team_rule_id": "r-0200",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -52530,7 +52050,7 @@
           {
             "team_rule_id": "r-0205",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0206",
@@ -52545,7 +52065,7 @@
           {
             "team_rule_id": "r-0209",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -57530,7 +57050,7 @@
           {
             "team_rule_id": "r-0200",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -57625,7 +57145,7 @@
           {
             "team_rule_id": "r-0205",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0206",
@@ -57640,7 +57160,7 @@
           {
             "team_rule_id": "r-0209",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -58550,7 +58070,7 @@
           {
             "team_rule_id": "r-0200",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -58645,7 +58165,7 @@
           {
             "team_rule_id": "r-0205",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0206",
@@ -58660,7 +58180,7 @@
           {
             "team_rule_id": "r-0209",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -58954,7 +58474,7 @@
           {
             "team_rule_id": "r-0200",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -59049,7 +58569,7 @@
           {
             "team_rule_id": "r-0205",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0206",
@@ -59064,7 +58584,7 @@
           {
             "team_rule_id": "r-0209",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }
@@ -64922,7 +64442,7 @@
           {
             "team_rule_id": "r-0200",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       },
@@ -65017,7 +64537,7 @@
           {
             "team_rule_id": "r-0205",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           },
           {
             "team_rule_id": "r-0206",
@@ -65032,7 +64552,7 @@
           {
             "team_rule_id": "r-0209",
             "from": "not_yet_effective",
-            "to": "unknown"
+            "to": "applies"
           }
         ]
       }

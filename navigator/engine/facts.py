@@ -36,12 +36,15 @@ def _str(value: Any) -> str | None:
     return text or None
 
 
+CONFIRMED_LEVELS = ("high", "medium")   # jurisdiction_confidence values that confirm the legal city
+
+
 @dataclass(frozen=True)
 class Facts:
     address_id: str
     state: str
     city: str | None                       # legal city "City, ST", None if outside the 9 cities
-    jurisdiction_confidence: str           # "high" | "low"
+    jurisdiction_confidence: str           # "high" | "medium" | "low"
     jurisdiction_source: str | None
     postal_city: str | None
     year_built: int | None
@@ -50,6 +53,10 @@ class Facts:
     units_source: str | None               # "units" | "use_description" | None
     use_description: str | None
     review_reasons: tuple[str, ...] = field(default_factory=tuple)
+    # Derived by the engine (lookup.local_rent_control), never from the address data: whether
+    # the city's own rent-limit rules that state building conditions cover this building.
+    local_rent_control: bool | None = None
+    local_rent_control_basis: tuple[str, ...] = field(default_factory=tuple)
 
     @property
     def units_exact(self) -> int | None:
@@ -59,7 +66,9 @@ class Facts:
 
     @property
     def city_confirmed(self) -> bool:
-        return self.jurisdiction_confidence == "high"
+        # high: exact Census match; medium: Census match on a non-exact address form (decided
+        # 2026-10-04 to count as confirmed, with a confidence penalty); low: not geocoded
+        return self.city is not None and self.jurisdiction_confidence in CONFIRMED_LEVELS
 
     def missing(self) -> list[str]:
         out = []
@@ -89,8 +98,8 @@ def parcel_facts(parcel: dict[str, Any]) -> Facts:
     if lo is None and hi is None:
         source = None
     conf = _str(parcel.get("jurisdiction_confidence")) or "low"
-    if conf not in ("high", "low"):
-        conf = "low"
+    if conf not in ("high", "medium", "low"):
+        conf = "low"                       # unknown value: fail closed
     return Facts(
         address_id=str(parcel["address_id"]),
         state=str(parcel["state"]).strip(),
