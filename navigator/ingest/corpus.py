@@ -133,6 +133,17 @@ def read_manifest(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(fh))
 
 
+def manifest_rows() -> dict[str, dict[str, str]]:
+    """doc_id -> manifest row for the starter manifest plus data/supplement/manifest.csv
+    (CONTRACT.md 6). Used where a rule's source fields are checked against "the manifest"."""
+    rows = {r["doc_id"].strip(): r for r in read_manifest(settings.path("manifest"))}
+    supplement = settings.path("supplement") / "manifest.csv"
+    if supplement.is_file():
+        for r in read_manifest(supplement):
+            rows.setdefault(r["doc_id"].strip(), r)
+    return rows
+
+
 def load_all() -> list[Doc]:
     sources: list[tuple[Path, Literal["starter", "supplement"]]] = [(settings.path("manifest"), "starter")]
     supplement = settings.path("supplement") / "manifest.csv"

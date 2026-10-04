@@ -69,6 +69,8 @@ def main(argv: list[str] | None = None) -> int:
     ):
         p = sub.add_parser(name, help=help_text)
         p.add_argument("doc", help="path to a text file in corpus format (SOURCE:/RETRIEVED: header)")
+        p.add_argument("--jurisdiction", help="'ST' or 'City, ST' (needed unless a manifest row has this url)")
+        p.add_argument("--doc-id", help="supplement doc id (default: next S###)")
 
     api = sub.add_parser("api", help="FastAPI server (default :8000)")
     api.add_argument("--host", default="127.0.0.1")
@@ -80,7 +82,18 @@ def main(argv: list[str] | None = None) -> int:
             for name in PIPELINE:
                 _run_stage(name)
         elif args.stage in ("ingest-doc", "rerun-live"):
-            raise NotImplementedError(f"'{args.stage}' is built in phase 3")
+            from navigator.ingest import incremental
+
+            try:
+                summary = incremental.run(args.doc, live=args.stage == "rerun-live",
+                                          jurisdiction=args.jurisdiction, doc_id=args.doc_id)
+            except incremental.IngestError as exc:
+                print(f"navigator: {args.stage} stopped at {exc}", file=sys.stderr)
+                return 1
+            print(f"{summary['doc_id']} ({summary['jurisdiction']}): rules from this document "
+                  f"{', '.join(summary['rules_from_doc']) or 'none'}; new {len(summary['rules_new'])}, "
+                  f"changed {len(summary['rules_changed'])}, removed {len(summary['rules_removed'])}, "
+                  f"unchanged {summary['rules_unchanged']}")
         elif args.stage == "api":
             import uvicorn
 
