@@ -1,0 +1,27 @@
+# Pings the free Render API so it does not sleep while judges try the live demo.
+# Render free services sleep after ~15 min idle; GitHub cron can run a few minutes late,
+# so ping every 10 minutes. Disable this workflow after judging.
+name: Keep API awake
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Ping /health
+        run: |
+          for i in 1 2 3; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 90 \
+              https://rental-law-navigator-api.onrender.com/health) || code=000
+            echo "attempt $i: HTTP $code"
+            [ "$code" = "200" ] && exit 0
+            sleep 10
+          done
+          exit 1
