@@ -84,10 +84,9 @@ Not legal advice.
 - USER TODO: in the ArcGIS key's Settings, confirm the referrer restriction
   (`https://rental-law-navigator.vercel.app`): on 2026-10-04 a request with no referrer still
   got tiles. Rotate the key after the hackathon (it was shared in a chat session).
-- USER TODO: remove the 16 old agent worktrees in `.claude/worktrees/` (all branches merged
-  into main). Their uncommitted drafts are archived in `../worktree-backup-2026-10-04.tar.gz`
-  and their LLM cache entries were copied into `cache/llm/`. Command:
-  `git worktree list` then `git worktree remove --force <path>` and `git branch -d <branch>`.
+- Old agent worktrees removed (2026-10-04): all 16 worktrees and their 17 merged branches
+  (incl. `fix/medium-city`) are gone. Their 696 LLM cache entries were verified byte-identical
+  in `cache/llm/`; other uncommitted drafts remain in `../worktree-backup-2026-10-04.tar.gz`.
 - Human review of `eval/gold/*.yaml` (set `reviewed_by`) and of the summaries (r-0034
   paraphrase); review `config/test_rule_map.yaml` (set `reviewed: true`). Use
   `eval/REVIEW_CHECKLIST.md` (regenerate: `python -m eval.review_checklist`): each gold rule
