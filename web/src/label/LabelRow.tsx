@@ -40,7 +40,7 @@ export function LabelRow({ row, question, sub = false }: Props) {
       className={cls}
       initial={{ rotateX: 80, opacity: 0.4 }}
       animate={{ rotateX: 0, opacity: 1 }}
-      transition={{ duration: 0.3 }}
+      transition={{ type: 'spring', stiffness: 380, damping: 30 }}
       onClick={() => setOpen((o) => !o)}
       role="button"
       tabIndex={0}

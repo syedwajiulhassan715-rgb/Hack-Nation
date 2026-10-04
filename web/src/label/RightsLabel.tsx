@@ -113,9 +113,9 @@ function CategorySection({ view, index }: { view: CategoryView; index: number })
   return (
     <motion.section
       className="cat"
-      initial={{ opacity: 0, y: 6 }}
+      initial={{ opacity: 0, y: 14 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.04 * index, duration: 0.25 }}
+      transition={{ delay: 0.06 * index, type: 'spring', stiffness: 320, damping: 30 }}
     >
       {winner ? (
         <LabelRow row={winner} question={question} />
@@ -190,7 +190,7 @@ export function RightsLabel({ lookup, loading, error, role, onRole, level, onLev
         initial={{ x: 60, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         exit={{ x: 60, opacity: 0 }}
-        transition={{ duration: 0.35 }}
+        transition={{ type: 'spring', stiffness: 260, damping: 30 }}
         aria-labelledby="label-title"
         aria-busy={loading}
       >

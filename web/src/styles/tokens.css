@@ -37,6 +37,53 @@
   --night-text: #9aa2ad; /* on night-0 7:1 */
 
   --chip-bg: rgba(11, 14, 19, 0.72);
+
+  /* ---- Depth (premium pass) ----
+     Elevation is layered: a tight contact shadow, a mid key shadow and a wide ambient one.
+     Paper keeps its printed look: depth sits under the sheet, never as glass over its text. */
+  --elev-1: 0 1px 1px rgba(0, 0, 0, 0.22), 0 2px 6px rgba(0, 0, 0, 0.22);
+  --elev-2: 0 1px 2px rgba(0, 0, 0, 0.24), 0 4px 10px rgba(0, 0, 0, 0.24), 0 14px 32px rgba(0, 0, 0, 0.26);
+  --elev-3: 0 1px 2px rgba(0, 0, 0, 0.26), 0 6px 14px rgba(0, 0, 0, 0.26), 0 22px 44px rgba(0, 0, 0, 0.3),
+    0 48px 96px rgba(0, 0, 0, 0.26);
+  /* Same stack cast upward, for surfaces anchored to the bottom edge (source drawer). */
+  --elev-3-up: 0 -1px 2px rgba(0, 0, 0, 0.26), 0 -6px 14px rgba(0, 0, 0, 0.24), 0 -22px 44px rgba(0, 0, 0, 0.28),
+    0 -48px 96px rgba(0, 0, 0, 0.22);
+  /* 1px top-edge inner highlight: light catching the top of a sheet or a chip. */
+  --edge-paper: inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  --edge-night: inset 0 1px 0 rgba(255, 255, 255, 0.07);
+  /* Hairlines on the night side: semi-transparent so they sit on any part of the map. */
+  --hairline-night: rgba(255, 255, 255, 0.08);
+  --hairline-night-strong: rgba(255, 255, 255, 0.16);
+  --hairline-paper: rgba(17, 17, 17, 0.14);
+  --chip-bg-hover: rgba(31, 37, 46, 0.86);
+  --night-raised: rgba(20, 25, 33, 0.78); /* control tracks on the map */
+  --text-night: #e8ebf0; /* primary text on night surfaces */
+  --text-night-2: var(--night-text); /* secondary text on night surfaces (7:1 on night-0) */
+
+  /* Focus ring: the one accent, never removed. */
+  --focus-ring: var(--applies);
+  --focus-halo: 0 0 0 4px rgba(79, 124, 255, 0.28);
+
+  /* ---- Craft: radius and spacing (premium pass) ----
+     Nested radius: outer = inner + padding. Paper surfaces stay square (printed label). */
+  --r-xs: 4px;
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --r-pill: 999px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+
+  /* ---- Motion: spring-like curves (fast start, soft landing) ---- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.36, 0.64, 1); /* small overshoot, for presses and pops */
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-1: 120ms;
+  --dur-2: 200ms;
+  --dur-3: 320ms;
   --font-ui: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
   --font-mono: 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;

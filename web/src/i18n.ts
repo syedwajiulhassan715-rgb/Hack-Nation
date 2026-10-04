@@ -166,6 +166,8 @@ const EN = {
   // slab chips
   rules: (n: number) => `${n} ${n === 1 ? 'rule' : 'rules'}`,
   cityNotConfirmed: 'City not confirmed',
+  orbiting: '360° view · click the map to stop',
+  orbitStart: 'Orbit building',
   // ingest
   ingestIntro:
     'Drop a text file in the corpus format: a source line and a retrieved line, a blank line, then the text. The pipeline extracts rules, checks every quote against the text and recomputes the buildings. A run takes a minute or two.',
@@ -406,6 +408,8 @@ const ES: Strings = {
   sourceLangNote: 'El texto legal se muestra en su idioma original (inglés).',
   rules: (n: number) => (n === 1 ? '1 regla' : `${n} reglas`),
   cityNotConfirmed: 'Ciudad no confirmada',
+  orbiting: 'Vista de 360° · haga clic en el mapa para detenerla',
+  orbitStart: 'Girar alrededor del edificio',
   ingestIntro:
     'Suelte un archivo de texto en el formato del corpus: una línea de fuente y una de fecha de consulta, una línea en blanco y luego el texto. El proceso extrae reglas, verifica cada cita contra el texto y recalcula los edificios. Tarda uno o dos minutos.',
   ingestOffline: 'La extracción en vivo necesita la API, y este sitio muestra resultados precalculados.',

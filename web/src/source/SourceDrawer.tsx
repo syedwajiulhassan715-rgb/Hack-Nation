@@ -72,7 +72,7 @@ export function SourceDrawer({ row, asOf, onClose, statusText }: Props) {
       initial={{ y: '100%' }}
       animate={{ y: 0 }}
       exit={{ y: '100%' }}
-      transition={{ duration: 0.3 }}
+      transition={{ type: 'spring', stiffness: 300, damping: 34 }}
     >
       <header className="drawer-head mono">
         <div className="drawer-cite" lang="en">

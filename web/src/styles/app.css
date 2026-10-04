@@ -95,13 +95,15 @@ button:disabled {
   border-radius: 8px;
   font-weight: 700;
   font-size: 14px;
+  box-shadow: var(--edge-paper), var(--elev-2);
 }
 .btn-dark {
   display: inline-flex;
   align-items: center;
   gap: 4px;
   background: transparent;
-  border: 1px solid #39404b;
+  border: 1px solid var(--hairline-night-strong);
+  box-shadow: var(--edge-night);
   color: #d8dce3;
   border-radius: 6px;
   padding: 4px 10px;
@@ -115,8 +117,9 @@ button:disabled {
   display: inline-flex;
 }
 .icon-btn.dark {
-  color: #e8ebf0;
+  color: var(--text-night);
   background: #1c222b;
+  box-shadow: inset 0 0 0 1px var(--hairline-night), var(--edge-night);
   border-radius: 50%;
   width: 36px;
   height: 36px;
@@ -154,6 +157,24 @@ button:disabled {
   position: absolute;
   inset: 0 0 30px 0;
 }
+.map-wrap::after {
+  /* Ambient depth: a cool glow from the top, a soft vignette at the edges and a faint grain.
+     Pointer-transparent and well below 10% so street labels stay readable. */
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    radial-gradient(120% 70% at 50% -10%, rgba(79, 124, 255, 0.07), transparent 60%),
+    radial-gradient(140% 120% at 50% 50%, transparent 58%, rgba(5, 7, 10, 0.42) 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .035 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.shell {
+  background:
+    radial-gradient(90% 60% at 50% 0%, #111723 0%, transparent 70%),
+    var(--night-0);
+}
 .map-loading {
   color: var(--night-label);
   padding: 40px;
@@ -163,7 +184,8 @@ button:disabled {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   color: #d8dce3;
-  border: 0;
+  border: 1px solid var(--hairline-night);
+  box-shadow: var(--edge-night), var(--elev-1);
   border-radius: 8px;
   padding: 6px 11px;
   font-size: 13px;
@@ -258,6 +280,9 @@ button:disabled {
 .search.dark form {
   background: var(--chip-bg);
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--hairline-night);
+  box-shadow: var(--edge-night), var(--elev-2);
   color: #c8ccd4;
 }
 .search.paper form {
@@ -288,6 +313,7 @@ button:disabled {
   max-height: 340px;
   overflow: auto;
   z-index: 20;
+  box-shadow: var(--edge-paper), var(--elev-2);
   padding: 4px 0;
 }
 .search-results p {
@@ -327,7 +353,7 @@ button:disabled {
   pointer-events: auto;
   background: var(--paper);
   border: 3px solid var(--ink);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  box-shadow: var(--edge-paper), var(--elev-3);
   padding: 22px 30px 18px;
   width: min(640px, 100%);
 }
@@ -391,6 +417,9 @@ button:disabled {
   gap: 14px;
   background: var(--chip-bg);
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--hairline-night);
+  box-shadow: var(--edge-night), var(--elev-2);
   border-radius: 8px;
   padding: 30px 18px 10px;
 }
@@ -485,7 +514,7 @@ button:disabled {
   padding: 16px 20px;
   z-index: 40;
   font-size: 15px;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  box-shadow: var(--edge-paper), var(--elev-3);
 }
 .how h3 {
   margin: 0 0 8px;
@@ -506,6 +535,7 @@ button:disabled {
   padding: 8px 14px;
   font-size: 15px;
   z-index: 50;
+  box-shadow: var(--edge-paper), var(--elev-2);
 }
 
 /* ---------- slab chips ---------- */
@@ -523,6 +553,8 @@ button:disabled {
   font-weight: 700;
   color: #fff;
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22), var(--elev-2);
   white-space: nowrap;
 }
 .slab-chip.state {
@@ -545,7 +577,7 @@ button:disabled {
   width: 528px;
   background: var(--paper);
   border: 3px solid var(--ink);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  box-shadow: var(--edge-paper), var(--elev-3);
   overflow-y: auto;
   z-index: 15;
   padding: 18px 22px 0;
@@ -966,7 +998,7 @@ button:disabled {
   z-index: 25;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 -24px 60px rgba(0, 0, 0, 0.45);
+  box-shadow: var(--edge-paper), var(--elev-3-up);
 }
 .drawer-head {
   display: flex;
@@ -1088,7 +1120,7 @@ mark.hl {
   width: min(460px, calc(100vw - 32px));
   background: var(--paper);
   border: 3px solid var(--ink);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  box-shadow: var(--edge-paper), var(--elev-3);
   padding: 14px 18px;
   z-index: 26;
   max-height: calc(100vh - 140px);
@@ -1265,6 +1297,8 @@ mark.hl {
 }
 .change-card {
   border: 3px solid var(--ink);
+  background: var(--paper);
+  box-shadow: var(--edge-paper), 0 1px 0 rgba(17, 17, 17, 0.04), 0 10px 24px -14px rgba(17, 17, 17, 0.35);
   padding: 14px 18px;
   margin-bottom: 14px;
   font-size: 15px;
@@ -1381,6 +1415,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   border: 3px solid var(--ink);
+  box-shadow: var(--edge-paper), var(--elev-3);
   padding: 20px 26px;
   width: min(520px, 100%);
   font-size: 16px;
@@ -1621,5 +1656,195 @@ body {
   }
   .footer-strip {
     font-size: 12px;
+  }
+}
+
+/* ---------- premium pass: craft, tactile states, motion ---------- */
+/* Typography rhythm: display headings tighter, secondary text softer. */
+.intro-line {
+  letter-spacing: -0.028em;
+}
+.intro-sub,
+.intro-or {
+  color: color-mix(in srgb, var(--ink-2) 88%, var(--paper));
+}
+
+/* Nested radius: search results (r = form radius) and the night controls share one scale. */
+.search form {
+  border-radius: var(--r-md);
+}
+.search.paper form {
+  border-radius: 0;
+}
+.slider {
+  border-radius: var(--r-lg);
+}
+.btn-dark {
+  border-radius: var(--r-sm);
+}
+.slab-chip {
+  border-radius: var(--r-pill);
+  padding: 5px 12px;
+}
+
+/* Tactile: every control eases its colors and lifts on hover, presses 2% on click. */
+:where(.btn, .btn-ink, .btn-paper, .btn-dark, .icon-btn, .slab-chip, .orbit-btn, .search-results button, .city-chips button) {
+  transition:
+    transform var(--dur-2) var(--ease-spring),
+    box-shadow var(--dur-2) var(--ease-out),
+    background-color var(--dur-2) var(--ease-out),
+    border-color var(--dur-2) var(--ease-out),
+    color var(--dur-2) var(--ease-out),
+    opacity var(--dur-2) var(--ease-out);
+  -webkit-tap-highlight-color: transparent;
+}
+@media (hover: hover) {
+  :where(.btn, .btn-ink, .btn-paper, .slab-chip, .orbit-btn):not(:disabled):hover {
+    transform: translateY(-1px);
+  }
+  .btn-paper:not(:disabled):hover {
+    box-shadow: var(--edge-paper), var(--elev-3);
+  }
+  .btn-dark:not(:disabled):hover {
+    border-color: rgba(255, 255, 255, 0.32);
+    background: rgba(255, 255, 255, 0.06);
+  }
+  .icon-btn.dark:not(:disabled):hover {
+    background: #262d38;
+    box-shadow: inset 0 0 0 1px var(--hairline-night-strong), var(--edge-night), var(--elev-1);
+  }
+  .slab-chip:hover {
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 0 3px rgba(255, 255, 255, 0.14), var(--elev-2);
+  }
+}
+:where(.btn, .btn-ink, .btn-paper, .btn-dark, .icon-btn, .slab-chip, .orbit-btn, .city-chips button):not(:disabled):active {
+  transform: scale(0.98);
+  transition-duration: var(--dur-1);
+}
+
+/* Focus: the brand ring plus a soft halo, only for keyboard focus. */
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+  box-shadow: var(--focus-halo);
+  transition: outline-offset var(--dur-2) var(--ease-out);
+}
+.lrow:focus-visible {
+  box-shadow: none;
+}
+.search.dark form,
+.search.paper form {
+  transition:
+    box-shadow var(--dur-2) var(--ease-out),
+    outline-color var(--dur-2) var(--ease-out);
+}
+.search.dark form:focus-within {
+  box-shadow: var(--edge-night), var(--elev-2), var(--focus-halo);
+}
+
+/* Row hover in the label and the search list fades instead of snapping. */
+.lrow {
+  transition: background-color var(--dur-2) var(--ease-out);
+}
+
+/* Staggered entrance of the floating controls on first paint. */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+.top-left > *,
+.bottom,
+.orbit-hud {
+  animation: rise-in 560ms var(--ease-out) both;
+}
+.top-left > :nth-child(2) {
+  animation-delay: 80ms;
+}
+.top-left > :nth-child(3) {
+  animation-delay: 160ms;
+}
+.bottom {
+  animation-delay: 240ms;
+}
+
+/* ---------- bird's-eye orbit HUD (map/orbit.ts) ---------- */
+.orbit-hud {
+  position: absolute;
+  left: 16px;
+  bottom: 164px;
+  z-index: 6;
+  pointer-events: none;
+}
+.orbit-pill,
+.orbit-btn {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 7px 14px;
+  border-radius: var(--r-pill);
+  background: var(--chip-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--hairline-night);
+  box-shadow: var(--edge-night), var(--elev-2);
+  color: var(--text-night);
+  font-size: 13px;
+  font-weight: 700;
+}
+.orbit-pill {
+  pointer-events: none;
+}
+.orbit-btn:hover {
+  border-color: var(--hairline-night-strong);
+  background: var(--chip-bg-hover);
+}
+.orbit-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--applies);
+  box-shadow: 0 0 0 0 rgba(79, 124, 255, 0.6);
+  animation: orbit-pulse 1.6s var(--ease-out) infinite;
+}
+@keyframes orbit-pulse {
+  to {
+    box-shadow: 0 0 0 10px rgba(79, 124, 255, 0);
+  }
+}
+
+/* The imagery basemap is light: keep a soft dark falloff at the edges so the night
+   controls stay legible on bright rooftops. */
+.map-wrap::after {
+  background:
+    linear-gradient(to bottom, rgba(5, 7, 10, 0.35), transparent 18%, transparent 72%, rgba(5, 7, 10, 0.45)),
+    radial-gradient(140% 120% at 50% 50%, transparent 62%, rgba(5, 7, 10, 0.32) 100%);
+}
+
+@media (max-width: 820px) {
+  .orbit-hud {
+    bottom: auto;
+    top: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .top-left > *,
+  .bottom,
+  .orbit-hud,
+  .orbit-dot {
+    animation: none;
+  }
+  :where(.btn, .btn-ink, .btn-paper, .btn-dark, .icon-btn, .slab-chip, .orbit-btn, .city-chips button) {
+    transition: none;
+  }
+  :where(.btn, .btn-ink, .btn-paper, .slab-chip, .orbit-btn):hover,
+  :where(.btn, .btn-ink, .btn-paper, .btn-dark, .icon-btn, .slab-chip, .orbit-btn, .city-chips button):active {
+    transform: none;
   }
 }

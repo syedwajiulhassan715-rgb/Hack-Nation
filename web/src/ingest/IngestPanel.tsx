@@ -148,6 +148,7 @@ export function IngestPanel({ mode, asOf, onClose, onDone, onShowRule }: Props) 
       initial={{ opacity: 0, y: -8 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -8 }}
+      transition={{ type: 'spring', stiffness: 340, damping: 30 }}
     >
       <header className="ingest-head">
         <h2 id="ingest-title">{t.addLaw}</h2>

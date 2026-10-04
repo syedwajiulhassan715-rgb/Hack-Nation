@@ -166,7 +166,7 @@ export function AppShell({ mode, defaultAsOf, route }: Props) {
         setDrawerRow(null)
       }
       setSelectedId(id)
-      if (p?.lat != null && p.lng != null) setFly({ lng: p.lng, lat: p.lat, zoom: 17.5, pitch: 60, key: Date.now() })
+      if (p?.lat != null && p.lng != null) setFly({ lng: p.lng, lat: p.lat, zoom: 17.5, pitch: 60, orbit: true, key: Date.now() })
     },
     [byId, selectedId],
   )
@@ -286,9 +286,10 @@ export function AppShell({ mode, defaultAsOf, route }: Props) {
             <motion.section
               className="intro"
               aria-labelledby="intro-title"
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0 }}
+              initial={{ opacity: 0, y: 18, scale: 0.985 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 8, transition: { duration: 0.18 } }}
+              transition={{ type: 'spring', stiffness: 260, damping: 28, delay: 0.15 }}
             >
               <div className="intro-top">
                 <LangSwitch variant="ink" />
