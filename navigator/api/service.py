@@ -8,6 +8,7 @@ from outputs/rules_internal.json.
 from __future__ import annotations
 
 import datetime as dt
+import hashlib
 import math
 import re
 import threading
@@ -98,6 +99,10 @@ def numbers_grounded(answer: str, span: str) -> bool:
 def summary_answer(store: Store, rule: RuleInternal, role: str, lang: str) -> str | None:
     s = store.summaries().get(rule.team_rule_id)
     if not isinstance(s, dict):
+        return None
+    # written for this exact quote? (rule ids can be reassigned by a later verify run)
+    want = s.get("source_quote_sha")
+    if not want or want != hashlib.sha256(rule.quoted_span.encode("utf-8")).hexdigest():
         return None
     key = f"answer_{role}" if lang == "en" else f"answer_{role}_{lang}"
     text = s.get(key)

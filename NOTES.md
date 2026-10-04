@@ -138,6 +138,31 @@
 - **Engine precedence cache** (phase 7). `_REL_CACHE` keyed on `id()` returned stale relations
   when ids were reused (flaky smoke test); the entry now holds the rule list alive.
 
+- **Incremental path** (`ingest-doc` / `rerun-live` / `POST /ingest`). A supplement document is
+  registered in `data/supplement/` (exact bytes; manifest row `official`, `manual`, sha256 of
+  the stored text), then ingest, chunk, extract of that document only, verify, lookups and
+  changes run; geocode is not repeated. Jurisdiction comes from `--jurisdiction` or a manifest
+  row with the same URL, never inferred. Supplement docs are append-only per URL. The API
+  streams NDJSON progress, validates the header before writing (400), runs one at a time
+  (409), and is switched off with `NAVIGATOR_DISABLE_INGEST=1` (403) on public deployments.
+- **Stable rule ids across incremental runs.** Verify numbers by sort order, so the incremental
+  path maps ids back by candidate set: unaffected rules keep id and bytes; new rules get ids
+  after the old maximum. A full `verify` from scratch still renumbers by sort order (the
+  reviewed `config/test_rule_map.yaml` and summaries.json are keyed by id; summaries also carry
+  `source_quote_sha` and the API ignores a summary whose quote no longer matches).
+- **Summaries** (phase 8). `claude-sonnet-5-5`, prompt `summary_v1` (English, repair and
+  translation sections). Cache key: task, rule content sha, prompt version, prompt-file sha,
+  model. The model sees jurisdiction, level, category, status, title, requirement, key_value,
+  coverage_conditions and quoted_span; never exemptions (owner text must not describe them)
+  or effective dates (dates may only come from the quote). Failed rules get no call.
+- **Guard-driven repair** (phase 8). Up to 2 rewrite calls for fixable guard failures
+  (length, form); evasion wording is never repaired, only dropped. Kept: 173 tenant, 161
+  owner, 170/158 Spanish of 184 (run 2026-10-04, ~$4.80).
+- **Guards check form and numbers, not meaning.** Known false positives: Spanish "evitar"
+  (prevent) and "exención" (rent waiver) are dropped; "one" counts as a number. A spot check
+  found r-0034's tenant answer paraphrasing the quote loosely; summaries are UI text shown
+  next to the quote, but deserve one human review pass.
+
 ## Open questions
 
 1. **Berkeley ch. 13.63 effective date.** D001 contains no effective date; the second
@@ -181,3 +206,10 @@
 12. **Arbitrary map clicks** (phase 7). `/resolve` and POST /lookup only resolve sample
    addresses within 30 m (no network geocoding at request time). Decide whether the deployed
    API may call the Census geocoder there (allowed source, but adds a network call per click).
+13. **Manifest-only checks after a supplement.** `precedence._doc_jurisdictions`,
+   `geo.jurisdictions.manifest_jurisdictions`, `changes.matcher` and `eval/run_eval.py` read only
+   the starter manifest, so a city that appears only in the supplement gets no addresses.
+   Switch them to `ingest.corpus.manifest_rows()` if we add a new city live (stretch goal).
+14. **`llm.call_json` prompt version.** It always uses `llm.prompt_version` (extract_v2), so
+   summaries wraps the client itself. Cleaner: a `llm.stages.<stage>.prompt_version` override,
+   keeping the current key layout so the cache still hits.

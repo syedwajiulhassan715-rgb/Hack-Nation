@@ -196,9 +196,14 @@ def test_lookup_unknown_address(synthetic):
 
 def test_summaries_used_and_number_guarded(synthetic):
     client, out = synthetic
+    import hashlib
+
+    quote = next(r.quoted_span for r in RULES if r.team_rule_id == "r-0001")
+    sha = hashlib.sha256(quote.encode("utf-8")).hexdigest()
     _write(out / "summaries.json", {"summaries": {
         "r-0001": {"answer_tenant": "Your rent can rise at most 7 percent a year.",
-                   "answer_owner": "You must keep increases within 9 percent."}}})   # 9 not in span
+                   "answer_owner": "You must keep increases within 9 percent.",    # 9 not in span
+                   "source_quote_sha": sha}}})
     body = client.get("/lookup", params={"address_id": "A0001"}).json()
     row = next(r for c in body["categories"] for r in c["rows"] if r["team_rule_id"] == "r-0001")
     assert row["answer"] == "Your rent can rise at most 7 percent a year."
@@ -208,6 +213,12 @@ def test_summaries_used_and_number_guarded(synthetic):
     body = client.get("/lookup", params={"address_id": "A0001", "lang": "es"}).json()
     row = next(r for c in body["categories"] for r in c["rows"] if r["team_rule_id"] == "r-0001")
     assert row["answer"] is None                          # no Spanish text supplied
+    # a summary written for a different quote (e.g. after rule ids were reassigned) is not used
+    _write(out / "summaries.json", {"summaries": {
+        "r-0001": {"answer_tenant": "Your rent can rise at most 7 percent a year.", "source_quote_sha": "0" * 64}}})
+    body = client.get("/lookup", params={"address_id": "A0001"}).json()
+    row = next(r for c in body["categories"] for r in c["rows"] if r["team_rule_id"] == "r-0001")
+    assert row["answer"] is None
 
 
 def test_numbers_grounded():

@@ -20,9 +20,11 @@ def test_help_runs(capsys):
 
 
 @pytest.mark.smoke
-def test_unbuilt_stage_fails_loudly(capsys):
-    # Fail closed: a stage that does not exist yet must exit non-zero, not print "done".
-    # Update the stage name here when its phase lands.
+def test_unbuilt_stage_fails_loudly(capsys, monkeypatch):
+    # Fail closed: a stage whose module does not exist yet must exit non-zero, not print
+    # "done". Every real stage is built now, so point one at a missing module.
+    monkeypatch.setitem(cli.STAGES, "summaries",
+                        ("navigator.not_built_yet", "run", "placeholder", 99))
     assert cli.main(["summaries"]) == 2
     assert "not implemented" in capsys.readouterr().err
 
