@@ -62,6 +62,9 @@ Not legal advice.
   Show live extraction locally: `python -m navigator rerun-live <file> --jurisdiction "City, ST"`.
 
 ## Open items
+- `.github/workflows/keep-api-awake.yml` pings the Render API `/health` every 10 minutes so the
+  live demo never sleeps during judging. Disable it after judging (Actions tab > Keep API awake
+  > Disable workflow).
 - USER TODO: in the ArcGIS key's Settings, confirm the referrer restriction
   (`https://rental-law-navigator.vercel.app`): on 2026-10-04 a request with no referrer still
   got tiles. Rotate the key after the hackathon (it was shared in a chat session).
