@@ -304,8 +304,50 @@
         }
       },
       "exemptions": "Transient and tourist hotel occupancy; housing in nonprofit hospitals, religious facilities, extended care facilities, licensed residential care facilities for the elderly or adult residential facilities; dormitories owned and operated by higher education institutions or K-12 schools; housing where the tenant shares bathroom or kitchen facilities with an owner who lives there; single-family owner-occupied residences where the owner rents no more than two units or bedrooms, and mobilehomes; owner-occupied two-unit properties in a single structure (neither an ADU/JADU); housing issued a certificate of occupancy within the previous 15 years (unless a mobilehome); separately alienable property not owned by a REIT, corporation, LLC with a corporate member or mobilehome park management, where the tenants received the required written exemption notice; deed-restricted or subsidized affordable housing for very low, low or moderate income households.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0111",
+        "r-0112",
+        "r-0113",
+        "r-0114",
+        "r-0115",
+        "r-0116",
+        "r-0117",
+        "r-0118",
+        "r-0119",
+        "r-0127",
+        "r-0128",
+        "r-0129",
+        "r-0130",
+        "r-0131",
+        "r-0132",
+        "r-0133",
+        "r-0134",
+        "r-0135",
+        "r-0136",
+        "r-0137",
+        "r-0138",
+        "r-0139",
+        "r-0140",
+        "r-0141",
+        "r-0142",
+        "r-0143",
+        "r-0144",
+        "r-0154",
+        "r-0155",
+        "r-0156",
+        "r-0157",
+        "r-0158",
+        "r-0159",
+        "r-0160",
+        "r-0161",
+        "r-0164",
+        "r-0165",
+        "r-0166",
+        "r-0167",
+        "r-0172",
+        "r-0173"
+      ],
+      "interaction": "Possible conflict with r-0111, r-0112, r-0113, r-0114, r-0115, r-0116, r-0117, r-0118, r-0119, r-0127, r-0128, r-0129, r-0130, r-0131, r-0132, r-0133, r-0134, r-0135, r-0136, r-0137, r-0138, r-0139, r-0140, r-0141, r-0142, r-0143, r-0144, r-0154, r-0155, r-0156, r-0157, r-0158, r-0159, r-0160, r-0161, r-0164, r-0165, r-0166, r-0167, r-0172, r-0173; not resolved from the text, flagged for review (source text: \"Residential real property subject to a local ordinance requiring just cause for termination of a residential tenancy adopted on or before September 1, 2019, in which case the local ordinance shall apply.\"). Possible conflict with r-0165; not resolved from the text, flagged for review.",
       "effective_date": null,
       "citation": "Civil Code Section 1946.2",
       "source_doc_id": "D023",
@@ -326,8 +368,10 @@
       "key_value": null,
       "coverage_conditions": "Owners of residential real property subject to the just cause requirement terminating for a curable lease violation.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0165"
+      ],
+      "interaction": "Possible conflict with r-0165; not resolved from the text, flagged for review.",
       "effective_date": null,
       "citation": "Civil Code Section 1946.2(c)",
       "source_doc_id": "D023",
@@ -421,8 +465,10 @@
         }
       },
       "exemptions": "A tenant found by a government agency or court to be at fault for the condition triggering an order to vacate is not entitled to relocation assistance.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0165"
+      ],
+      "interaction": "Possible conflict with r-0165; not resolved from the text, flagged for review.",
       "effective_date": null,
       "citation": "Civil Code Section 1946.2(d)",
       "source_doc_id": "D023",
@@ -443,8 +489,10 @@
       "key_value": null,
       "coverage_conditions": "Owners of residential real property subject to Civil Code Section 1946.2.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0165"
+      ],
+      "interaction": "Possible conflict with r-0165; not resolved from the text, flagged for review.",
       "effective_date": null,
       "citation": "Civil Code Section 1946.2(f)",
       "source_doc_id": "D023",
@@ -465,8 +513,50 @@
       "key_value": null,
       "coverage_conditions": "Residential real property, meaning any dwelling or unit intended for human habitation, including units in a mobilehome park, except property covered by a qualifying local just cause ordinance and homeowners of a mobilehome.",
       "exemptions": "Residential real property subject to a local just cause ordinance adopted on or before September 1, 2019; residential real property subject to a local just cause ordinance adopted or amended after September 1, 2019 that is more protective than this section; a homeowner of a mobilehome as defined in Section 798.9.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0111",
+        "r-0112",
+        "r-0113",
+        "r-0114",
+        "r-0115",
+        "r-0116",
+        "r-0117",
+        "r-0118",
+        "r-0119",
+        "r-0127",
+        "r-0128",
+        "r-0129",
+        "r-0130",
+        "r-0131",
+        "r-0132",
+        "r-0133",
+        "r-0134",
+        "r-0135",
+        "r-0136",
+        "r-0137",
+        "r-0138",
+        "r-0139",
+        "r-0140",
+        "r-0141",
+        "r-0142",
+        "r-0143",
+        "r-0144",
+        "r-0154",
+        "r-0155",
+        "r-0156",
+        "r-0157",
+        "r-0158",
+        "r-0159",
+        "r-0160",
+        "r-0161",
+        "r-0164",
+        "r-0165",
+        "r-0166",
+        "r-0167",
+        "r-0172",
+        "r-0173"
+      ],
+      "interaction": "Yields to r-0111, r-0112, r-0113, r-0114, r-0115, r-0116, r-0117, r-0118, r-0119, r-0127, r-0128, r-0129, r-0130, r-0131, r-0132, r-0133, r-0134, r-0135, r-0136, r-0137, r-0138, r-0139, r-0140, r-0141, r-0142, r-0143, r-0144, r-0154, r-0155, r-0156, r-0157, r-0158, r-0159, r-0160, r-0161, r-0164, r-0165, r-0166, r-0167, r-0172, r-0173 where that local rule covers the unit (source text: \"A residential real property shall not be subject to both a local ordinance requiring just cause for termination of a residential tenancy and this section.\"). Possible conflict with r-0165; not resolved from the text, flagged for review.",
       "effective_date": "2024-04-01",
       "citation": "Civil Code Section 1946.2 (Amended by Stats. 2025, Ch. 203, Sec. 1. (AB 1529))",
       "source_doc_id": "D023",
@@ -487,8 +577,13 @@
       "key_value": "$446.00/day (plus actual moving expenses) per tenant household",
       "coverage_conditions": "Tenants temporarily displaced for less than 20 days for capital improvement work",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0164",
+        "r-0165",
+        "r-0166",
+        "r-0167"
+      ],
+      "interaction": "Possible conflict with r-0164, r-0165, r-0166, r-0167; not resolved from the text, flagged for review (source text: \"*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C.\"). Possible conflict with r-0165; not resolved from the text, flagged for review.",
       "effective_date": "2026-03-01",
       "citation": "California Civil Code Section 1947.9",
       "source_doc_id": "D083",
@@ -573,8 +668,24 @@
         }
       },
       "exemptions": "Deed- or agreement-restricted affordable housing for very low, low, or moderate income households, or housing under an affordable-housing subsidy agreement; dormitories owned and operated by a higher-education institution or K-12 school; housing under local rent or price control that restricts annual increases to less than this section; housing issued a certificate of occupancy within the previous 15 years (unless a mobilehome); separately alienable property (such as a single-family home or condo) whose owner is not a REIT, corporation, LLC with a corporate member, or mobilehome park management, provided tenants received the required written exemption notice; a two-unit property where the owner occupied one unit as principal residence at the start of the tenancy and continues to, and neither unit is an ADU or junior ADU; homeowners of a mobilehome.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0120",
+        "r-0121",
+        "r-0122",
+        "r-0123",
+        "r-0145",
+        "r-0146",
+        "r-0147",
+        "r-0148",
+        "r-0149",
+        "r-0150",
+        "r-0151",
+        "r-0168",
+        "r-0169",
+        "r-0174",
+        "r-0175"
+      ],
+      "interaction": "Yields to r-0120, r-0121, r-0122, r-0123, r-0145, r-0146, r-0147, r-0148, r-0149, r-0150, r-0151, r-0168, r-0169, r-0174, r-0175 where that local rule that is stricter covers the unit (source text: \"Housing subject to rent or price control through a public entity’s valid exercise of its police power consistent with Chapter 2.7 (commencing with Section 1954.50) that restricts annual increases in the rental rate to an amount less than that provided in subdivision (a).\"). Yields to r-0120, r-0121, r-0122, r-0123, r-0145, r-0146, r-0147, r-0148, r-0149, r-0150, r-0151, r-0168, r-0169, r-0174, r-0175 where that local rule that is stricter covers the unit (source text: \"Deed- or agreement-restricted affordable housing for very low, low, or moderate income households, or housing under an affordable-housing subsidy agreement; dormitories owned and operated by a higher-education institution or K-12 school; housing under local rent or price control that restricts annual increases to less than this section; housing issued a certificate of occupancy within the previous 15 years (unless a mobilehome); separately alienable property (such as a single-family home or condo) whose owner is not a REIT, corporation, LLC with a corporate member, or mobilehome park management, provided tenants received the required written exemption notice; a two-unit property where the owner occupied one unit as principal residence at the start of the tenancy and continues to, and neither unit is an ADU or junior ADU; homeowners of a mobilehome.\").",
       "effective_date": "2024-04-01",
       "citation": "Civil Code Section 1947.12 (Stats. 2023, Ch. 290, Sec. 4 (SB 567))",
       "source_doc_id": "D024",
@@ -631,8 +742,16 @@
         }
       },
       "exemptions": "Units constructed within the last 15 years, on a rolling basis. Units deed- or regulatory-restricted as affordable to low or moderate-income households. Certain dormitories. Two-unit properties where an owner occupied the second unit for the entire tenancy. Single-family homes and condominiums not owned by a real estate trust, a corporation, or an LLC with at least one corporate member, where the landlord gave the tenant written notice of exemption; this does not apply if there is more than one dwelling unit on the lot or a non-separable second unit. Units already subject to the City's RSO.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0145",
+        "r-0146",
+        "r-0147",
+        "r-0148",
+        "r-0149",
+        "r-0150",
+        "r-0151"
+      ],
+      "interaction": "Yields to r-0145, r-0146, r-0147, r-0148, r-0149, r-0150, r-0151 where that local rule covers the unit (source text: \"-Units that are already subject to the City’s RSO.\").",
       "effective_date": null,
       "citation": "AB 1482, the California Tenant Protection Act of 2019",
       "source_doc_id": "D040",
@@ -1157,8 +1276,10 @@
       "key_value": null,
       "coverage_conditions": "All cities and towns in Massachusetts; bars local rent control except a limited, voluntary, compensated form in cities or towns that accept the chapter.",
       "exemptions": "A city or town that accepts this chapter may adopt rent control regulation, but such regulation may not regulate occupancy, services, evictions, condominium conversion or removal of properties from regulation, and may not apply to any rental unit owned by a person or entity owning less than ten rental units or that has a fair market rent exceeding $400; after six months from initial adoption, owner compliance must be entirely voluntary; the municipality must compensate owners from its general funds.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0179"
+      ],
+      "interaction": "Possible conflict with r-0179; not resolved from the text, flagged for review (source text: \"No city or town may enact, maintain or enforce rent control of any kind, except that any city or town that accepts this chapter may adopt rent control regulation that provides:\").",
       "effective_date": null,
       "citation": "M.G.L. c. 40P, § 4",
       "source_doc_id": "D048",
@@ -1179,8 +1300,10 @@
       "key_value": null,
       "coverage_conditions": "Owners, lessees, sublessees, licensed real estate brokers, assignees or managing agents of publicly assisted or multiple dwelling or contiguously located housing accommodations, others with the right to rent or lease them, their agents or employees, and condominium or housing cooperative unit owner organizations.",
       "exemptions": "The word 'age' does not apply to minors, to residency in state-aided or federally-aided housing developments for the elderly, to housing assisted under the federal low income housing tax credit intended for persons 55 or over or 62 or over, or to communities built expressly for persons 55 or over or 62 or over if the owner or manager registers biennially with the executive office of housing and livable communities.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0180"
+      ],
+      "interaction": "Possible conflict with r-0180; not resolved from the text, flagged for review.",
       "effective_date": null,
       "citation": "General Laws Chapter 151B, Section 4, subsection 6(c)",
       "source_doc_id": "D049",
@@ -1219,8 +1342,10 @@
         }
       },
       "exemptions": "Does not apply to the leasing of a single apartment or flat in a two family dwelling where the other unit is occupied by the owner as his residence. The word 'age' does not apply to minors, to residency in state-aided or federally-aided housing developments for the elderly, to residency in federal low income housing tax credit developments intended for persons 55 or over or 62 or over, or to communities built expressly for persons 55 or over or 62 or over if the owner or manager registers biennially with the executive office of housing and livable communities.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0180"
+      ],
+      "interaction": "Possible conflict with r-0180; not resolved from the text, flagged for review.",
       "effective_date": null,
       "citation": "Chapter 151B, Section 4, subsection 7(c)",
       "source_doc_id": "D049",
@@ -1241,8 +1366,10 @@
       "key_value": null,
       "coverage_conditions": "Any person furnishing credit, services or rental accommodations.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0180"
+      ],
+      "interaction": "Possible conflict with r-0180; not resolved from the text, flagged for review.",
       "effective_date": null,
       "citation": "Chapter 151B, Section 4, subsection 10",
       "source_doc_id": "D049",
@@ -2334,8 +2461,10 @@
       "key_value": "30 years following completion of construction",
       "coverage_conditions": "Newly constructed multiple dwellings.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0184"
+      ],
+      "interaction": "Possible conflict with r-0184; not resolved from the text, flagged for review (source text: \"newly constructed multiple dwellings shall be exempt from any local rent control ordinances for a period of 30 years following completion of construction of the building\").",
       "effective_date": null,
       "citation": "N.J.S.A. 2A:42-84.5",
       "source_doc_id": "D067",
@@ -2400,8 +2529,10 @@
       "key_value": null,
       "coverage_conditions": "Projects financed by the New Jersey Housing and Mortgage Finance Agency whose rents it fixes and controls.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0184"
+      ],
+      "interaction": "Yields to r-0184 where that local rule covers the unit (source text: \"are not subject to municipal rent control ordinances\").",
       "effective_date": null,
       "citation": "New Jersey Housing and Mortgage Finance Agency (NJHMFA)",
       "source_doc_id": "D067",
@@ -3070,8 +3201,11 @@
       "key_value": "Standard payment $19,413; additional payment for qualifying households $6,471 (effective January 1, 2026)",
       "coverage_conditions": "Tenants evicted for owner move-in under the Rent Stabilization and Good Cause for Eviction Ordinance",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": "2026-01-01",
       "citation": "Rent Stabilization and Good Cause for Eviction Ordinance",
       "source_doc_id": "D004",
@@ -3092,8 +3226,11 @@
       "key_value": "Standard payment $19,413; additional payment for qualifying households $6,471 (effective January 1, 2026)",
       "coverage_conditions": "Tenants evicted so the owner can remove a property from the rental housing market under the Ellis Implementation Ordinance",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": "2026-01-01",
       "citation": "Ellis Implementation Ordinance",
       "source_doc_id": "D004",
@@ -3114,8 +3251,11 @@
       "key_value": "Rental debt >= one month of Fair Market Rent for a unit of equivalent size (Oakland-Fremont, CA HUD Metro FMR)",
       "coverage_conditions": "Tenants in units that are fully or partially covered by the Rent Ordinance.",
       "exemptions": "A unit where the tenant shares kitchen or bath facilities with the landlord is exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": null,
       "citation": "Measure BB (Berkeley Rent Ordinance)",
       "source_doc_id": "D006",
@@ -3136,8 +3276,11 @@
       "key_value": null,
       "coverage_conditions": "Tenants in units that are fully or partially covered by the Rent Ordinance.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": null,
       "citation": "Measure BB (Berkeley Rent Ordinance)",
       "source_doc_id": "D006",
@@ -3158,8 +3301,11 @@
       "key_value": null,
       "coverage_conditions": "Tenants in units that are fully or partially covered by the Rent Ordinance.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": null,
       "citation": "Measure BB (Berkeley Rent Ordinance)",
       "source_doc_id": "D006",
@@ -3180,8 +3326,11 @@
       "key_value": null,
       "coverage_conditions": "Notices terminating tenancies in units covered by the Rent Ordinance.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": null,
       "citation": "Measure BB (Berkeley Rent Ordinance)",
       "source_doc_id": "D006",
@@ -3202,8 +3351,11 @@
       "key_value": "Within three business days of service",
       "coverage_conditions": "Landlords of units covered by the Rent Ordinance who serve eviction notices or eviction lawsuits.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": null,
       "citation": "Measure BB (Berkeley Rent Ordinance)",
       "source_doc_id": "D006",
@@ -3224,8 +3376,11 @@
       "key_value": null,
       "coverage_conditions": "Owner move-in eviction relocation assistance payments under the Rent Ordinance.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": null,
       "citation": "Measure BB (Berkeley Rent Ordinance)",
       "source_doc_id": "D006",
@@ -3266,8 +3421,11 @@
         }
       },
       "exemptions": "Golden Duplexes (duplex owner-occupied on December 31, 1979 and currently with an owner living in one unit); units where the owner shares a kitchen or bath with the tenant if the owner lived on the property when the tenancy started; tenancies started after Nov 7, 2018 on properties where one unit is an ADU and either unit is owner-occupied; university rental units such as dormitories; nonprofit cooperatives.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": null,
       "citation": "Berkeley’s Rent Stabilization and Eviction for Just Cause Ordinance",
       "source_doc_id": "D009",
@@ -3288,8 +3446,10 @@
       "key_value": null,
       "coverage_conditions": "Landlords seeking rent increases through the Rent Board petition process.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0017"
+      ],
+      "interaction": "Supersedes r-0017 where this rule covers the unit.",
       "effective_date": null,
       "citation": "Measure BB (Berkeley Rent Ordinance)",
       "source_doc_id": "D006",
@@ -3310,8 +3470,10 @@
       "key_value": "Maximum AGA is 5%",
       "coverage_conditions": "Fully covered rental units under Berkeley's Rent Ordinance. Government-owned or -subsidized units are now fully or partially covered depending on unit type.",
       "exemptions": "The cap does not prevent a landlord with banked (unused) AGAs from previous years from raising rent by more than 5% up to the rent ceiling. A unit where the tenant shares kitchen or bath facilities with the landlord is exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0017"
+      ],
+      "interaction": "Supersedes r-0017 where this rule covers the unit.",
       "effective_date": null,
       "citation": "Measure BB (Berkeley Rent Ordinance)",
       "source_doc_id": "D006",
@@ -3332,8 +3494,10 @@
       "key_value": "1.0% (65% of the increase in the Consumer Price Index (CPI) for All Urban Consumers in the Bay Area)",
       "coverage_conditions": "Eligible landlords' units subject to 2025 permanent rent ceilings; Regulation 1148 sets the conditions for qualifying and the notice that must be given to tenants.",
       "exemptions": "The 2026 AGA may not adjust rents of tenants whose tenancy began on or after January 1, 2025 and whose rents were set pursuant to the Costa-Hawkins Rental Housing Act.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0017"
+      ],
+      "interaction": "Supersedes r-0017 where this rule covers the unit.",
       "effective_date": "2026-01-01",
       "citation": "Rent Board Regulation 1148; Berkeley Municipal Code section 13.76.110A.",
       "source_doc_id": "D008",
@@ -3379,8 +3543,10 @@
         }
       },
       "exemptions": "Not rent controlled: new construction built with a Certificate of Occupancy after June 1980; single-family homes with tenancies beginning on or after January 1, 1996; most condominiums; units with Section 202 or Section 811 subsidies; units with Rental Supplement Program, Section 8 Loan Management Set Aside or Project-based Section 8 subsidies in a project with a HUD-insured or HUD-held mortgage. Fully exempt: Golden Duplexes (owner-occupied on December 31, 1979 and currently owner-occupied); units where the owner shares a kitchen or bath with the tenant and lived on the property when the tenancy started; tenancies started after Nov 7, 2018 on properties where one unit is an ADU and either unit is owner-occupied; university rental units such as dormitories; nonprofit cooperatives.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0017"
+      ],
+      "interaction": "Supersedes r-0017 where this rule covers the unit.",
       "effective_date": null,
       "citation": "Berkeley’s Rent Stabilization and Eviction for Just Cause Ordinance",
       "source_doc_id": "D009",
@@ -3505,8 +3671,11 @@
         }
       },
       "exemptions": "Transient hotels, licensed care facilities, fraternity or sorority houses and the owner's roommate. Also exempt: cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term substance abuse treatment centers, and some properties owned by HACLA or the government. Units regulated by the RSO are not covered by the JCO.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": null,
       "citation": "Just Cause Ordinance (JCO)",
       "source_doc_id": "D040",
@@ -3527,8 +3696,11 @@
       "key_value": "Amount owed must exceed the Fair Market Rent (FMR) for the unit's bedroom size",
       "coverage_conditions": "All RSO and JCO rental units in the City of Los Angeles.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": "2023-03-27",
       "citation": "Evictions for Non-Payment of Rent (LAHD JCO page)",
       "source_doc_id": "D040",
@@ -3549,8 +3721,11 @@
       "key_value": "three (3) business days",
       "coverage_conditions": "All JCO and RSO rental properties in the City of Los Angeles.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": null,
       "citation": "Eviction Notices Filed with LAHD (LAHD JCO page)",
       "source_doc_id": "D040",
@@ -3578,8 +3753,11 @@
         }
       },
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": null,
       "citation": "Los Angeles Municipal Code 151.09.C.9 & 165.05.B.5",
       "source_doc_id": "D041",
@@ -3607,8 +3785,11 @@
         }
       },
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": null,
       "citation": "Los Angeles Rent Stabilization Ordinance (RSO)",
       "source_doc_id": "D041",
@@ -3629,8 +3810,11 @@
       "key_value": null,
       "coverage_conditions": "Tenant not-at-fault evictions from units covered by the Rent Stabilization Ordinance (RSO) or the Just Cause Ordinance (JCO). Listed no-fault reasons include owner, relative or resident manager occupancy; demolition, commercial conversion or removal from rental use (Ellis Act for RSO units); compliance with a government Order to Vacate; HUD-owned property recovery before sale; Residential Hotel conversion or demolition; conversion to affordable housing; and demolition or conversion to condominiums, stock cooperatives, community apartment projects, hotels and commercial uses regardless of RSO or JCO status.",
       "exemptions": "Landlords are exempt from paying relocation assistance when evicting a resident manager to replace them with another resident manager (a Manager-Tenant receiving free or reduced rent with no other compensation may be entitled to relocation), or when required to evict due to hazardous conditions caused by a natural disaster not caused by the landlord's negligence. A landlord may offset the tenant's accumulated rent against relocation assistance, unless the assistance is owed because termination is required by a governmental agency order to vacate or to comply with an order for an unpermitted dwelling.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": null,
       "citation": "LAMC 151.09.A, 165.03 (Rent Stabilization Ordinance and Just Cause Ordinance)",
       "source_doc_id": "D043",
@@ -3667,8 +3851,11 @@
         }
       },
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": null,
       "citation": "LAMC 165.06.A.(6)",
       "source_doc_id": "D043",
@@ -3700,8 +3887,11 @@
         }
       },
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": "2026-07-01",
       "citation": "LAMC Section 151.30",
       "source_doc_id": "D043",
@@ -3722,8 +3912,11 @@
       "key_value": "Eligible: $11,000 / $14,400; Qualified: $23,150 / $27,400 (Effective July 1, 2026 through June 30, 2027)",
       "coverage_conditions": "Tenants displaced for a no-fault reason from RSO or JCO units. Qualified tenants are those 62 or older, handicapped or disabled, or with minor dependent children on the date of service of the termination notice; all other tenants are eligible tenants. Low income means 80 percent or less of Area Median Income.",
       "exemptions": "The amounts do not apply if the reason for eviction is demolition of a Protected Unit for new construction and the tenant is lower-income (80% AMI or lower).",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": "2026-07-01",
       "citation": "Relocation Assistance Bulletin A, Chart A (LAHD #33A – 07/01/2026)",
       "source_doc_id": "D043",
@@ -3744,8 +3937,11 @@
       "key_value": "Within fifteen (15) days of service of the written notice",
       "coverage_conditions": "Landlords owing relocation assistance for no-fault evictions under the RSO or JCO.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": null,
       "citation": "RAC Regulations, Section 960.00",
       "source_doc_id": "D043",
@@ -3766,8 +3962,11 @@
       "key_value": null,
       "coverage_conditions": "Tenancies in Protected Units covered by the RSO or JCO being terminated for demolition for new construction; all RSO units are Protected Units.",
       "exemptions": "The regular RSO or JCO relocation rules apply if the units to be demolished are not Protected Units or are not occupied by a lower income tenant.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": "2025-02-11",
       "citation": "LAMC Section 165.03.I(1); LAMC 151.22-151.28; Ordinances #188481 and #188482",
       "source_doc_id": "D043",
@@ -3788,8 +3987,11 @@
       "key_value": "6-month notice to move out",
       "coverage_conditions": "Occupants of Protected Units that will be demolished for the purpose of new construction.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": null,
       "citation": "Resident Protections Ordinance (RPO)",
       "source_doc_id": "D043",
@@ -3810,8 +4012,11 @@
       "key_value": "Extremely Low Income $115,480; Very Low Income $96,750; Low Income $87,450 (Effective July 1, 2026 through June 30, 2027)",
       "coverage_conditions": "Protected Units demolished for the purpose of new construction; enhanced standardized payments apply only to Low, Very Low and Extremely Low Income households.",
       "exemptions": "The RPO only applies to Protected Units that will be demolished for the purpose of new construction. Households above low income are paid under Chart A (RSO or JCO amounts).",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": "2026-07-01",
       "citation": "Resident Protections Ordinance (Ordinances #188481 and #188482)",
       "source_doc_id": "D043",
@@ -3832,8 +4037,11 @@
       "key_value": "Eligible Tenant $11,000 / $14,400; Qualified Tenant $23,150 / $27,400",
       "coverage_conditions": "Tenants of units subject to the RSO or JCO being displaced; amounts depend on qualified or eligible status, length of tenancy and income. Paid per unit, not per tenant.",
       "exemptions": "Single family dwellings that are not lower income may be entitled to one month’s equivalent of rent for relocation payment depending on various factors.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": "2026-07-01",
       "citation": "LAHD Relocation Assistance Bulletin, Chart A: RSO or JCO Amounts",
       "source_doc_id": "D043",
@@ -3854,8 +4062,11 @@
       "key_value": "within 15 days of filing",
       "coverage_conditions": "Owners choosing Option 3 (individualized relocation) when filing a Notice of Intent to Withdraw or Declaration of Intent to Evict.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": null,
       "citation": "LAHD Relocation Assistance Bulletin, Option 3: Individualized Relocation",
       "source_doc_id": "D043",
@@ -3876,8 +4087,11 @@
       "key_value": null,
       "coverage_conditions": "Lower income households displaced for the purpose of demolition of their units where the owner will replace the units with new construction.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": null,
       "citation": "Government Code 66300.6(b)(4)(A); Resident Protections Ordinance (RPO)",
       "source_doc_id": "D043",
@@ -3898,8 +4112,11 @@
       "key_value": "within fifteen (15) days of service of the written notice of eviction",
       "coverage_conditions": "Landlords owing relocation assistance under the City Ordinances (RSO/JCO).",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": null,
       "citation": "RAC Regulations, Section 960.00",
       "source_doc_id": "D043",
@@ -3920,8 +4137,11 @@
       "key_value": null,
       "coverage_conditions": "Landlords owing relocation assistance under the RSO or JCO.",
       "exemptions": "No offset where termination of tenancy is required by a governmental agency order to vacate or comply issued for an unpermitted dwelling.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": null,
       "citation": "LAMC 151.09.G,5., 165.06.J.",
       "source_doc_id": "D043",
@@ -3949,8 +4169,11 @@
         }
       },
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0017",
+        "r-0018"
+      ],
+      "interaction": "Supersedes r-0017 where this rule covers the unit. Supersedes r-0018 where this rule covers the unit.",
       "effective_date": null,
       "citation": "Los Angeles Rent Stabilization Ordinance (RSO)",
       "source_doc_id": "D041",
@@ -3978,8 +4201,11 @@
         }
       },
       "exemptions": "For condominiums and townhomes, the rent amount is not regulated for tenancies that commenced after December 31, 1995. A landlord can apply for a luxury exemption from the RSO.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0017",
+        "r-0018"
+      ],
+      "interaction": "Supersedes r-0017 where this rule covers the unit. Supersedes r-0018 where this rule covers the unit.",
       "effective_date": null,
       "citation": "Los Angeles Rent Stabilization Ordinance (RSO)",
       "source_doc_id": "D041",
@@ -4007,8 +4233,11 @@
         }
       },
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0017",
+        "r-0018"
+      ],
+      "interaction": "Supersedes r-0017 where this rule covers the unit. Supersedes r-0018 where this rule covers the unit.",
       "effective_date": "2026-02-02",
       "citation": "Los Angeles Rent Stabilization Ordinance (RSO)",
       "source_doc_id": "D041",
@@ -4036,8 +4265,11 @@
         }
       },
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0017",
+        "r-0018"
+      ],
+      "interaction": "Supersedes r-0017 where this rule covers the unit. Supersedes r-0018 where this rule covers the unit.",
       "effective_date": "2020-03-30",
       "citation": "Los Angeles Rent Stabilization Ordinance (RSO)",
       "source_doc_id": "D041",
@@ -4065,8 +4297,11 @@
         }
       },
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0017",
+        "r-0018"
+      ],
+      "interaction": "Supersedes r-0017 where this rule covers the unit. Supersedes r-0018 where this rule covers the unit.",
       "effective_date": "2026-02-02",
       "citation": "Los Angeles Rent Stabilization Ordinance (RSO)",
       "source_doc_id": "D041",
@@ -4087,8 +4322,11 @@
       "key_value": "3%",
       "coverage_conditions": "Rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO).",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0017",
+        "r-0018"
+      ],
+      "interaction": "Supersedes r-0017 where this rule covers the unit. Supersedes r-0018 where this rule covers the unit.",
       "effective_date": "2025-07-01",
       "citation": "City of Los Angeles Rent Stabilization Ordinance (RSO)",
       "source_doc_id": "D042",
@@ -4109,8 +4347,11 @@
       "key_value": null,
       "coverage_conditions": "Rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO).",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0017",
+        "r-0018"
+      ],
+      "interaction": "Supersedes r-0017 where this rule covers the unit. Supersedes r-0018 where this rule covers the unit.",
       "effective_date": "2026-02-02",
       "citation": "City of Los Angeles Rent Stabilization Ordinance (RSO)",
       "source_doc_id": "D042",
@@ -4218,8 +4459,11 @@
         }
       },
       "exemptions": "Transient and tourist hotel occupancy; short-term residential occupancy; deed- or agreement-restricted affordable housing; housing under subsidy agreements for very low, low or moderate income households (not including Section 8); mobilehomes under the Mobilehome Residency Law; nonprofit hospitals, religious facilities, extended care and residential care facilities and non-profit transitional housing; school dormitories; units where the tenant shares a bathroom or kitchen with a landlord who lives there; a single-family residence that is the landlord's principal residence; a two-unit property where the landlord lives in one unit; housing issued a certificate of occupancy within the previous 15 years (unless a mobilehome); and separately alienable property whose landlord is not a REIT, corporation, LLC with a corporate member or mobilehome park management, if tenants receive the required written exemption notice. Tenancies do not include fixed-term leases of three months or less.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": "2023-06-24",
       "citation": "San Diego Municipal Code §98.0704; §98.0703",
       "source_doc_id": "D073",
@@ -4240,8 +4484,11 @@
       "key_value": "move in within 90 days; occupy at least 12 continuous months",
       "coverage_conditions": "Tenancies subject to San Diego's Residential Tenant Protections where the owner seeks possession for the owner or the owner's spouse, domestic partner, child, grandchild, parent or grandparent.",
       "exemptions": "Does not apply if the intended occupant already occupies a rental unit on the property or if a vacancy of a similar unit already exists at the property.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": null,
       "citation": "San Diego Municipal Code §98.0704(b)(1)",
       "source_doc_id": "D073",
@@ -4262,8 +4509,11 @@
       "key_value": null,
       "coverage_conditions": "Terminations under the demolition or substantial remodel ground. Substantial remodel means permitted replacement or substantial modification of structural, electrical, plumbing or mechanical systems, or hazardous materials abatement, that cannot be done safely with the tenant in place and requires vacating for at least 30 continuous days.",
       "exemptions": "Cosmetic improvements alone, including painting, decorating and minor repairs, or other work that can be performed safely without vacating, do not qualify as substantial remodel.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": "2024-03-28",
       "citation": "San Diego Municipal Code §98.0704(b)(4)",
       "source_doc_id": "D073",
@@ -4284,8 +4534,11 @@
       "key_value": null,
       "coverage_conditions": "Landlords of residential rental property subject to the Division who issue a termination notice for at-fault just cause.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": "2023-06-24",
       "citation": "San Diego Municipal Code §98.0706(a) (O-21647 N.S.)",
       "source_doc_id": "D073",
@@ -4306,8 +4559,11 @@
       "key_value": "at least 30 or 60 days prior to the proposed date of termination",
       "coverage_conditions": "Landlords of residential rental property subject to the Division who issue a termination notice for no-fault just cause.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": "2023-06-24",
       "citation": "San Diego Municipal Code §98.0706(b) (O-21647 N.S.)",
       "source_doc_id": "D073",
@@ -4328,8 +4584,11 @@
       "key_value": "two months of actual rent under the tenant's lease in effect at the date of the notice; three months if the tenant is a senior or disabled",
       "coverage_conditions": "Tenants of residential rental property subject to the Division whose tenancy is terminated for no-fault just cause, regardless of income or length of tenancy.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": "2023-06-24",
       "citation": "San Diego Municipal Code §98.0706(c) (O-21647 N.S.)",
       "source_doc_id": "D073",
@@ -4350,8 +4609,11 @@
       "key_value": "within five years of the date the tenant was evicted",
       "coverage_conditions": "Tenants displaced by a no-fault just cause termination under sections 98.0704(b)(1), (3), or (4) who requested an offer in writing within 30 days of the termination notice.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": "2023-06-24",
       "citation": "San Diego Municipal Code §98.0706(d) (O-21647 N.S.)",
       "source_doc_id": "D073",
@@ -4372,8 +4634,11 @@
       "key_value": "greater than the amount of relocation assistance available to the tenant in section 98.0706(c)",
       "coverage_conditions": "Landlords making buyout offers to tenants in residential rental property.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": "2023-06-24",
       "citation": "San Diego Municipal Code §98.0707 (O-21647 N.S.)",
       "source_doc_id": "D073",
@@ -4438,8 +4703,12 @@
       "key_value": "17 just cause reasons under Ordinance Section 37.9(a)",
       "coverage_conditions": "Rental units covered by the San Francisco Rent Ordinance. This includes some tenancies exempt from the Ordinance's rent increase limits: newly constructed units that first obtained a Certificate of Occupancy after June 13, 1979, tenancies eligible for a rent increase under the Costa-Hawkins Rental Housing Act, and some tenancies where rent is regulated by another government agency.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015",
+        "r-0016"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit. Possible conflict with r-0016; not resolved from the text, flagged for review.",
       "effective_date": null,
       "citation": "San Francisco Rent Ordinance Section 37.9(a)",
       "source_doc_id": "D079",
@@ -4460,8 +4729,15 @@
       "key_value": "Notices served 3/01/26 – 2/28/27: $8,245.00 per tenant; maximum $24,733.00 per unit; plus $5,497.00 for each elderly (60 years or older) or disabled tenant or household with minor child(ren)",
       "coverage_conditions": "Tenants evicted based on owner/relative move-in, demolition/permanent removal of unit from housing use, temporary capital improvement work, or substantial rehabilitation; amounts are set by the date of service of the eviction notice.",
       "exemptions": "Relocation payments for temporary capital improvement evictions for less than 20 days are governed by California Civil Code Section 1947.9, not by Rent Ordinance Section 37.9C.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0012",
+        "r-0013",
+        "r-0014",
+        "r-0015",
+        "r-0016"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit. Possible conflict with r-0016; not resolved from the text, flagged for review. Possible conflict with r-0011, r-0012, r-0013, r-0014, r-0015, r-0016; not resolved from the text, flagged for review (source text: \"*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C.\").",
       "effective_date": null,
       "citation": "Rent Ordinance Section 37.9C",
       "source_doc_id": "D082",
@@ -4482,8 +4758,12 @@
       "key_value": "Notices served 3/01/26 – 2/28/27: $11,110.05 per tenant; maximum $33,330.13 per unit; plus $7,443.90 for each elderly (62 years or older) or disabled tenant",
       "coverage_conditions": "Tenants evicted under the Ellis Act; amounts are set by the date of service of the eviction notice.",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015",
+        "r-0016"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit. Possible conflict with r-0016; not resolved from the text, flagged for review.",
       "effective_date": null,
       "citation": "Ellis Act",
       "source_doc_id": "D082",
@@ -4504,8 +4784,12 @@
       "key_value": "$11,110.05 per tenant; maximum $33,330.13 per unit; plus $7,443.90 per elderly or disabled tenant",
       "coverage_conditions": "Tenants evicted under the Ellis Act",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015",
+        "r-0016"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit. Possible conflict with r-0016; not resolved from the text, flagged for review.",
       "effective_date": "2026-03-01",
       "citation": "Rent Ordinance Section 37.9A",
       "source_doc_id": "D083",
@@ -4526,8 +4810,10 @@
       "key_value": "1.6% (tenant's base rent x .016)",
       "coverage_conditions": "Rent-controlled units in San Francisco",
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0017"
+      ],
+      "interaction": "Supersedes r-0017 where this rule covers the unit.",
       "effective_date": "2026-03-01",
       "citation": "Rent Board: Annual Rent Increase for 3/1/26 - 2/28/27 Announced",
       "source_doc_id": "D080",
@@ -4548,8 +4834,10 @@
       "key_value": "1.6%",
       "coverage_conditions": null,
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0017"
+      ],
+      "interaction": "Supersedes r-0017 where this rule covers the unit.",
       "effective_date": "2026-03-01",
       "citation": "Rent Board 571 Allowable Annual Increases",
       "source_doc_id": "D083",
@@ -4630,8 +4918,11 @@
       "key_value": null,
       "coverage_conditions": null,
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": null,
       "citation": "Rent Stabilization and Just Cause Eviction Ordinance",
       "source_doc_id": "D084",
@@ -4677,8 +4968,11 @@
         }
       },
       "exemptions": "Housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0011",
+        "r-0015"
+      ],
+      "interaction": "Possible conflict with r-0011; not resolved from the text, flagged for review. Supersedes r-0015 where this rule covers the unit.",
       "effective_date": "2021-11-19",
       "citation": "Santa Ana Just Cause Eviction Ordinance",
       "source_doc_id": "D085",
@@ -4699,8 +4993,10 @@
       "key_value": "Lesser of 3% of current rent or 80% of the Consumer Price Index (CPI) change",
       "coverage_conditions": null,
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0017"
+      ],
+      "interaction": "Supersedes r-0017 where this rule covers the unit.",
       "effective_date": null,
       "citation": "Rent Stabilization and Just Cause Eviction Ordinance",
       "source_doc_id": "D084",
@@ -4728,8 +5024,10 @@
         }
       },
       "exemptions": "Residential buildings constructed after February 1, 1995; mobile home spaces offered for rent after January 1, 1990. Owners may petition for relief from the cap to obtain a fair and reasonable return.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0017"
+      ],
+      "interaction": "Supersedes r-0017 where this rule covers the unit.",
       "effective_date": "2021-11-19",
       "citation": "Santa Ana Rent Stabilization Ordinance",
       "source_doc_id": "D085",
@@ -4816,8 +5114,10 @@
       "key_value": null,
       "coverage_conditions": null,
       "exemptions": null,
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0041"
+      ],
+      "interaction": "Possible conflict with r-0041; not resolved from the text, flagged for review.",
       "effective_date": null,
       "citation": "Bill H.3744",
       "source_doc_id": "D011",
@@ -4854,8 +5154,12 @@
         }
       },
       "exemptions": "Does not apply where there is a direct relationship between a conviction and the housing sought and/or unreasonable risk of substantial harm to the safety of others; does not apply to current criminal behavior.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0042",
+        "r-0043",
+        "r-0044"
+      ],
+      "interaction": "Possible conflict with r-0042, r-0043, r-0044; not resolved from the text, flagged for review (source text: \"Where federal or state law imposes a criminal history requirement that conflicts with a requirement of this guidance, the federal or state law preempts this policy.\").",
       "effective_date": null,
       "citation": "Boston Fair Chance Tenant Selection Policy",
       "source_doc_id": "D010",
@@ -4983,8 +5287,11 @@
         }
       },
       "exemptions": "All 1-4 unit properties are exempt from rent control. The ordinance provides other exemptions for owners who meet the criteria for a permitted exemption.",
-      "overrides": [],
-      "interaction": null,
+      "overrides": [
+        "r-0089",
+        "r-0092"
+      ],
+      "interaction": "Possible conflict with r-0089; not resolved from the text, flagged for review. Supersedes r-0092 where this rule covers the unit.",
       "effective_date": null,
       "citation": "Rent Control Ordinance, Chapter 260 of the Jersey City Municipal Code",
       "source_doc_id": "D036",

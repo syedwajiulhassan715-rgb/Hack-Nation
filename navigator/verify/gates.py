@@ -16,6 +16,7 @@ from collections import defaultdict
 from typing import Any
 
 from navigator import audit, settings
+from navigator.engine import precedence
 from navigator.extract import dates
 from navigator.extract.chunk import MAX_CHARS
 from navigator.ingest.corpus import Doc, read_docs
@@ -310,7 +311,11 @@ def run() -> None:
                   effective_date=r.effective_date, date_method=r.effective_date_method,
                   span_match=r.span_match, conflict_flag=r.conflict_flag or None)
 
-    write_rules(rules)
+    # Precedence (overrides + interaction) goes only into the public rules.json. The
+    # engine reads rules_internal.json, whose `interaction` stays the extracted text, so the
+    # generated wording is never fed back into precedence matching.
+    links = precedence.link(rules)
+    write_rules([r.model_copy(update=links[r.team_rule_id]) for r in rules])
     dump_json({"as_of": as_of, "rules": [r.model_dump(mode="json") for r in rules]}, out / "rules_internal.json")
     with (out / "rejects.jsonl").open("w", encoding="utf-8", newline="\n") as fh:
         for rj in rejects:
