@@ -20,8 +20,8 @@ Not legal advice.
 
 ## Live deployment
 - Frontend LIVE: https://rental-law-navigator.vercel.app (Vercel account hassan12go, project
-  `rental-law-navigator`, linked in `web/.vercel`). Runs on bundled data ("Offline data" in
-  the footer) until the API is up.
+  `rental-law-navigator`, linked in `web/.vercel`). Uses the Render API; falls back to bundled
+  data ("Offline data" in the footer) while the API sleeps or is down.
   - Redeploy: `cd web && vercel build --prod && vercel deploy --prebuilt --prod --yes`
     (builds locally because the build reads ../outputs). Env for the build: see
     `web/.env.example` (`VITE_API_BASE`, `VITE_ESRI_API_KEY`).
