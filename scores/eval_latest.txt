@@ -1,5 +1,5 @@
 Self-evaluation (team harness; the pack has no official scoring script). Not legal advice.
-generated_at 2026-10-04T03:40:12Z  commit 93f3cd8  as_of default 2026-10-01
+generated_at 2026-10-04T05:24:35Z  commit 14fb263  as_of default 2026-10-01
 overall hard checks: PASS
 
 [1] Format validity (must be 100%)
@@ -118,6 +118,7 @@ overall hard checks: PASS
   [PASS] lookup rows only from the address's own state and legal city (27814 rows)
 [8] Determinism (two cached runs byte-identical; `python -m eval.determinism`)
   [info] run 2026-10-04T03:40:05Z at commit 93f3cd8 (dirty tree), 130.4s; excluded fields: changes_internal.json:generated_at, summaries.json:generated_at
+  [info] stale: run at commit 93f3cd8, HEAD is 14fb263; re-run it
     identical rules.json
     identical rules_internal.json
     identical rejects.jsonl
@@ -128,4 +129,4 @@ overall hard checks: PASS
     identical changes.json
     identical changes_internal.json
     identical summaries.json
-  [PASS] 10/10 files byte-identical (run 1 = run 2 = committed outputs/)
+  [PASS] 10/10 files byte-identical (run 1 = run 2 = committed outputs/) [stale]

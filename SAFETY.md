@@ -18,7 +18,7 @@ attached to every output:
 | Every API response, including errors and the `POST /ingest` progress stream | `_envelope()` and `_error()` in `navigator/api/main.py`; `build_lookup()` and `rule_detail()` in `navigator/api/service.py` | `tests/test_api.py` (smoke); any response from `python -m navigator api` |
 | CLI | parser description and the final `done.` line in `navigator/cli.py` | `python -m navigator --help` |
 | `changes.json` notes, `scores/changes_report.txt`, `outputs/summaries.json`, `scores/eval_latest.txt` | `navigator/changes/tracker.py`, `navigator/explain/plain.py`, `eval/run_eval.py` | open the files |
-| Web UI: footer, rights label, source drawer, changes page, states page, ingest panel | `web/src/layout/Footer.tsx` (also "not a compliance certification"), `web/src/label/RightsLabel.tsx`, `web/src/source/SourceDrawer.tsx`, `web/src/changes/ChangesPage.tsx`, `web/src/label/StatesPage.tsx`, `web/src/ingest/IngestPanel.tsx` | run the UI |
+| Web UI: footer, Locus panel, source drawer, changes page, states page, ingest panel | `web/src/layout/Footer.tsx` (also "not a compliance certification"), `web/src/label/RightsLabel.tsx`, `web/src/source/SourceDrawer.tsx`, `web/src/changes/ChangesPage.tsx`, `web/src/label/StatesPage.tsx`, `web/src/ingest/IngestPanel.tsx` | run the UI |
 
 Every API answer also carries `as_of` and `generated_at`. Each rule row carries
 `citation`, `source_url` and `retrieved_at` (`_row_out()` in `navigator/api/service.py`).

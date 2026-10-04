@@ -66,6 +66,13 @@ export const FACT_LABEL: Record<string, string> = {
   owner_occupied: 'whether the owner lives there',
   deed_restricted_affordable: 'deed-restricted affordable status',
   government_owned_or_subsidized: 'government ownership or subsidy',
+  separately_alienable: 'whether the unit can be sold separately',
+  tenant_income_source: "tenant's source of income",
+  shared_living_with_owner: 'whether the tenant shares living space with the owner',
+  dormitory_or_institutional: 'dormitory or institutional housing',
+  subject_to_local_rent_control: 'local rent-control status',
+  unit_is_furnished: 'whether the unit is furnished',
+  use_description: 'land-use description',
 }
 
 export function factLabel(key: string): string {

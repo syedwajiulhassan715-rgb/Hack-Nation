@@ -156,7 +156,7 @@ def _routes(app: FastAPI) -> None:  # noqa: C901 (route table)
     @app.get("/lookup", response_model=LookupResult, responses=ERRORS, tags=["lookup"])
     def lookup_get(address_id: str, as_of: str | None = None, role: Role = "tenant",
                    lang: str = Query("en", pattern=r"^[a-z]{2}$"), store: Store = Depends(get_store)):
-        """Rights label for a sample address. Precomputed for the default as_of; other dates run
+        """Locus panel (rights label) for a sample address. Precomputed for the default as_of; other dates run
         the deterministic engine."""
         store.require_real()
         as_of = svc.parse_as_of(as_of, svc.default_as_of())

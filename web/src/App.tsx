@@ -42,7 +42,7 @@ export default function App() {
     return (
       <div className="boot" role={ready ? 'alert' : 'status'} aria-live="polite">
         <div className="boot-card">
-          <p className="boot-title">{t.rightsLabel}</p>
+          <p className="boot-title"><img className="brand-mark" src="/favicon.svg" alt="" aria-hidden="true" />{t.rightsLabel}</p>
           {!ready ? (
             <p>{t.loadingApp}</p>
           ) : (

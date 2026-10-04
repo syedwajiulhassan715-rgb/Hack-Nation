@@ -197,7 +197,7 @@ web/src/
 
 ### 4.5 RightsLabel (the core component)
 Layout, top to bottom:
-1. Title "Rights label" (Archivo 900, 34px) + Tenant | Owner toggle.
+1. Title "Locus" with the Locus mark (Archivo 900, 34px; renamed from "Rights label") + Tenant | Owner toggle.
 2. Building line: `<units or units range> units · built <year or "year unknown"> · <address>`.
    When units come from `use_description` (CONTRACT.md 7), show the range with a small
    "from assessor use code" tag, e.g. "7-30 units". If legal city ≠ postal city, show

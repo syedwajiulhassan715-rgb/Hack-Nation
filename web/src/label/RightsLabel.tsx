@@ -196,6 +196,7 @@ export function RightsLabel({ lookup, loading, error, role, onRole, level, onLev
       >
         <header className="label-head">
           <h1 className="label-title" id="label-title" ref={titleRef} tabIndex={-1}>
+            <img className="brand-mark" src="/favicon.svg" alt="" aria-hidden="true" />
             {t.rightsLabel}
           </h1>
           <div className="role-toggle" role="group" aria-label={t.viewAs}>

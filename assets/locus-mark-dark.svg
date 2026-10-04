@@ -2,7 +2,7 @@
   <title>Locus</title>
   <!-- Locus mark: a map pin holding the stack of law over one building
        (the building at the base, the state layer above it, the city layer on top). -->
-  <path d="M32 3C18.7 3 8 13.4 8 26.4 8 44.2 32 61 32 61s24-16.8 24-34.6C56 13.4 45.3 3 32 3Z" fill="#111111"/>
+  <path d="M32 3C18.7 3 8 13.4 8 26.4 8 44.2 32 61 32 61s24-16.8 24-34.6C56 13.4 45.3 3 32 3Z" fill="#1c222b" stroke="#ffffff" stroke-opacity=".35" stroke-width="1.4"/>
   <!-- building -->
   <path d="M24.5 40 32 36.2 39.5 40 32 43.8Z" fill="#F6F2E9"/>
   <path d="M24.5 40v5.2l7.5 3.8v-5.2Z" fill="#d8cfbd"/>

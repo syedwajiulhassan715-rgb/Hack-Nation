@@ -4,6 +4,9 @@ For the next Claude session or teammate. Read CLAUDE.md first, then this file, t
 Not legal advice.
 
 ## Done (on `main`, pushed to GitHub)
+- Product name is **Locus** (team Locus): the panel title, tab title and favicon/logo
+  (`web/public/favicon.svg`, `assets/locus-*`). README rewritten with logo, badges, mermaid
+  diagram and screenshots from the live site (`assets/screens/`).
 - Phases 0–8: ingest, chunk, extract (Opus, cached, prompt `extract_v6`), verify, geocode,
   engine/lookups, change tracking T1–T5, API (FastAPI), plain-language summaries (EN+ES),
   incremental `ingest-doc` / `rerun-live` / `POST /ingest`.
@@ -45,9 +48,11 @@ Not legal advice.
   and their LLM cache entries were copied into `cache/llm/`. Command:
   `git worktree list` then `git worktree remove --force <path>` and `git branch -d <branch>`.
 - Human review of `eval/gold/*.yaml` (set `reviewed_by`) and of the summaries (r-0034
-  paraphrase); review `config/test_rule_map.yaml` (set `reviewed: true`).
+  paraphrase); review `config/test_rule_map.yaml` (set `reviewed: true`). Use
+  `eval/REVIEW_CHECKLIST.md` (regenerate: `python -m eval.review_checklist`): each gold rule
+  next to its anchor in the source text, each address with a Census Geocoder link.
 - Screening-fee $ figure from a Berkeley page (D005) shown as a CA key_value (flag it).
-- FAIR Act `interaction` empty in the rights label.
+- FAIR Act `interaction` empty in the Locus panel.
 - A0352 Newark geocoder tie; 5 Boston rows without a house number.
 - Demo: rehearse the 90-second path (FRONTEND_PLAN.md section 8) and `rerun-live`.
 - Hour-20 rule: after the freeze, fixes only, no refactors.

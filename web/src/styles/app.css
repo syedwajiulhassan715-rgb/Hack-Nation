@@ -1848,3 +1848,18 @@ body {
     transform: none;
   }
 }
+
+/* ---------- Locus brand mark (public/favicon.svg) ---------- */
+.label-title,
+.boot-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28em;
+}
+.brand-mark {
+  width: 0.95em;
+  height: 0.95em;
+  flex: none;
+  /* optical: the pin's point hangs below the baseline, so lift it slightly */
+  transform: translateY(-0.04em);
+}
