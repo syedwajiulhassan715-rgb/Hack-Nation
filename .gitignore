@@ -33,3 +33,6 @@ Thumbs.db
 
 # Duplicate unpack of the participant pack (identical to data/starter/)
 /MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/
+
+# Claude Code agent worktrees
+/.claude/worktrees/
