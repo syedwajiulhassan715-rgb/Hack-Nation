@@ -1,0 +1,95 @@
+{
+  "ts": "2026-10-04T02:23:57Z",
+  "commit": "a3ab2a5",
+  "tree_dirty": false,
+  "excluded_fields": {
+    "changes_internal.json": [
+      "generated_at"
+    ],
+    "summaries.json": [
+      "generated_at"
+    ]
+  },
+  "runs": [
+    {
+      "seed": "1",
+      "returncode": 0,
+      "misses": [],
+      "timings": {
+        "verify": 5.2,
+        "lookups": 21.6,
+        "changes": 4.3,
+        "summaries": 0.6
+      }
+    },
+    {
+      "seed": "2",
+      "returncode": 0,
+      "misses": [],
+      "timings": {
+        "verify": 5.1,
+        "lookups": 21.9,
+        "changes": 4.5,
+        "summaries": 0.6
+      }
+    }
+  ],
+  "seconds": 64.8,
+  "guarded_paths_touched": [],
+  "files": {
+    "rules.json": "identical",
+    "rules_internal.json": "identical",
+    "rejects.jsonl": "identical",
+    "lookups.json": "identical",
+    "lookups_internal.json": "identical",
+    "timeline.json": "identical",
+    "snapshots.json": "identical",
+    "changes.json": "identical",
+    "changes_internal.json": "identical",
+    "summaries.json": "identical"
+  },
+  "detail": {
+    "rules.json": {
+      "run1_vs_run2": "identical",
+      "run_vs_committed": "identical"
+    },
+    "rules_internal.json": {
+      "run1_vs_run2": "identical",
+      "run_vs_committed": "identical"
+    },
+    "rejects.jsonl": {
+      "run1_vs_run2": "identical",
+      "run_vs_committed": "identical"
+    },
+    "lookups.json": {
+      "run1_vs_run2": "identical",
+      "run_vs_committed": "identical"
+    },
+    "lookups_internal.json": {
+      "run1_vs_run2": "identical",
+      "run_vs_committed": "identical"
+    },
+    "timeline.json": {
+      "run1_vs_run2": "identical",
+      "run_vs_committed": "identical"
+    },
+    "snapshots.json": {
+      "run1_vs_run2": "identical",
+      "run_vs_committed": "identical"
+    },
+    "changes.json": {
+      "run1_vs_run2": "identical",
+      "run_vs_committed": "identical"
+    },
+    "changes_internal.json": {
+      "run1_vs_run2": "identical",
+      "run_vs_committed": "identical"
+    },
+    "summaries.json": {
+      "run1_vs_run2": "identical",
+      "run_vs_committed": "identical"
+    }
+  },
+  "errors": [],
+  "ok": true
+}

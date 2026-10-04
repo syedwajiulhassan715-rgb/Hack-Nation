@@ -1,5 +1,5 @@
 Self-evaluation (team harness; the pack has no official scoring script). Not legal advice.
-generated_at 2026-10-04T01:56:58Z  commit 576f2b6  as_of default 2026-10-01
+generated_at 2026-10-04T02:23:57Z  commit a3ab2a5  as_of default 2026-10-01
 overall hard checks: PASS
 
 [1] Format validity (must be 100%)
@@ -59,6 +59,46 @@ overall hard checks: PASS
     [PASS] measure never appears in lookups - absent
     [PASS] no rent_increase_limits rule from a city ordinance or an unenacted measure reported as applying - none
   [info] checks: 10 pass, 0 fail, 3 not checkable (no source text)
-[4] Gold set (rules + addresses): not measured yet (phase 3)
-[7] Jurisdiction check: not measured yet (phase 4)
-[8] Determinism (two cached runs byte-identical): not measured yet (phase 5)
+[4] Gold set (rules + addresses): not measured yet (eval.gold_eval not built)
+[7] Jurisdiction check (legal city from Census geographies, never postal city)
+  [info] by state: CA 250, MA 110, NJ 140
+  [info] by legal city: (no legal city) 6, Berkeley, CA 40, Boston, MA 55, Cambridge, MA 50, Hoboken, NJ 40, Jersey City, NJ 50, Los Angeles, CA 80, Newark, NJ 49, San Diego, CA 50, San Francisco, CA 80
+  [info] by jurisdiction_confidence: high 315, low 8, medium 177
+  [info] by source: census_batch 477, census_single_line 16, postal_city_fallback 7
+  [PASS] parcel state equals CSV state: 500/500 (100.0%)
+  [    ] legal city differs from postal city (of addresses with a legal city): 33/494 (6.7%)
+    Allston -> Boston, MA: 3 (A0052, A0310, A0356)
+    Brighton -> Boston, MA: 4 (A0048, A0169, A0195, A0423)
+    Dorchester -> Boston, MA: 10 (A0065, A0118, A0134, A0143, A0155, A0220, A0245, A0258, A0332, A0463)
+    East Boston -> Boston, MA: 6 (A0123, A0149, A0198, A0217, A0354, A0366)
+    Hyde Park -> Boston, MA: 1 (A0242)
+    Jamaica Plain -> Boston, MA: 1 (A0093)
+    Mattapan -> Boston, MA: 1 (A0312)
+    Roxbury -> Boston, MA: 5 (A0054, A0083, A0144, A0203, A0464)
+    San Ysidro -> San Diego, CA: 1 (A0322)
+    South Boston -> Boston, MA: 1 (A0036)
+  [info] no legal city: 6 (state rules only)
+    A0098 MA postal 'Dorchester' [postal_city_fallback]: batch geocode: No_Match; street address has no house number, so it cannot be placed on a parcel; address not geocoded and postal city 'Dorchester' is not a city in the corpus; city rules could not be checked
+    A0128 MA postal 'Dorchester' [postal_city_fallback]: batch geocode: No_Match; street address has no house number, so it cannot be placed on a parcel; address not geocoded and postal city 'Dorchester' is not a city in the corpus; city rules could not be checked
+    A0295 MA postal 'Dorchester' [postal_city_fallback]: batch geocode: No_Match; street address has no house number, so it cannot be placed on a parcel; address not geocoded and postal city 'Dorchester' is not a city in the corpus; city rules could not be checked
+    A0352 NJ postal 'Newark' [census_single_line]: batch geocode: Tie; geocoder returned several matches in different jurisdictions: 40 MT PROSPECT AVE, NEWARK, NJ, 07104 -> Newark, NJ; 40 MOUNT PROSPECT AVE, NEWARK, NJ, 07102 -> no place; 40 MOUNT PROSPECT AVE, NEWARK, NJ, 07104 -> Newark, NJ
+    A0376 MA postal 'Roxbury' [postal_city_fallback]: batch geocode: No_Match; street address has no house number, so it cannot be placed on a parcel; address not geocoded and postal city 'Roxbury' is not a city in the corpus; city rules could not be checked
+    A0380 MA postal 'Roxbury' [postal_city_fallback]: batch geocode: No_Match; street address has no house number, so it cannot be placed on a parcel; address not geocoded and postal city 'Roxbury' is not a city in the corpus; city rules could not be checked
+  [PASS] no parcel city outside the manifest jurisdictions
+  [PASS] every address without a legal city is flagged needs_review
+  [PASS] MA/NJ county subdivision agrees with legal city: 244/244 (100.0%)
+    6 MA/NJ addresses have no county subdivision (not geocoded)
+  [PASS] lookup rows only from the address's own state and legal city (22503 rows)
+[8] Determinism (two cached runs byte-identical; `python -m eval.determinism`)
+  [info] run 2026-10-04T02:23:57Z at commit a3ab2a5, 64.8s; excluded fields: changes_internal.json:generated_at, summaries.json:generated_at
+    identical rules.json
+    identical rules_internal.json
+    identical rejects.jsonl
+    identical lookups.json
+    identical lookups_internal.json
+    identical timeline.json
+    identical snapshots.json
+    identical changes.json
+    identical changes_internal.json
+    identical summaries.json
+  [PASS] 10/10 files byte-identical (run 1 = run 2 = committed outputs/)
