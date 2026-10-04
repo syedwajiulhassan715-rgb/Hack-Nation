@@ -1,0 +1,24 @@
+{
+ "key_parts": {
+  "text_sha256": "93835654c3483e7b169677f7a3ccdcf021b6edab4ac81ab7ad3091903de71ff2",
+  "chunk_id": "D011-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   83,
+   3710
+  ],
+  "prompt_version": "extract_v1",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 4837,
+  "output_tokens": 225
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": []
+ }
+}

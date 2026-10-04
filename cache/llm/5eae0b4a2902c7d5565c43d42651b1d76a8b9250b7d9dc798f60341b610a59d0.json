@@ -1,0 +1,79 @@
+{
+ "key_parts": {
+  "text_sha256": "48b1d005fb59f73082dc625d4038272f4bde950d2c93a70ef400a43b630e1511",
+  "chunk_id": "D025-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   139,
+   23768
+  ],
+  "prompt_version": "extract_v1",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 11253,
+  "output_tokens": 3110
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "security_deposits",
+    "status_hint": "enacted",
+    "title": "Security deposit cap of one month's rent (Civil Code 1950.5(c))",
+    "requirement": "A landlord may not demand or receive security, however denominated, of more than one month's rent, in addition to the first month's rent paid on or before initial occupancy. This subdivision does not apply to security collected or demanded before July 1, 2024.",
+    "key_value": "an amount equal to one month’s rent, in addition to any rent for the first month paid on or before initial occupancy",
+    "coverage_text": "Security for a rental agreement for residential property that is used as the dwelling of the tenant.",
+    "predicates_json": null,
+    "exemptions": "An advance payment of not less than six months' rent is allowed if the lease term is six months or longer. A landlord and tenant may agree, at the tenant's request and for a specified fee, to structural, decorative, furnishing or similar alterations other than cleaning or repairing. Qualifying small landlords may collect up to two months' rent under paragraph (5).",
+    "citation": "Cal. Civ. Code § 1950.5(c)(1)",
+    "penalty": null,
+    "quoted_span": "(1) Except as provided in paragraph (2), (3), or (5), a landlord shall not demand or receive security, however denominated, in an amount or value in excess of an amount equal to one month’s rent, in addition to any rent for the first month paid on or before initial occupancy.",
+    "effective_date_phrase": "This subdivision shall not apply to a security collected or demanded by the landlord before July 1, 2024.",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "security_deposits",
+    "status_hint": "enacted",
+    "title": "Small landlord exception: security deposit cap of two months' rent (Civil Code 1950.5(c)(5))",
+    "requirement": "A landlord who is a natural person (or an LLC whose members are all natural persons) and owns no more than two residential rental properties with no more than four dwelling units offered for rent may not demand or receive security of more than two months' rent, in addition to the first month's rent. This exception does not apply if the prospective tenant is a service member, and the landlord may not refuse to rent to a service member because of this limit.",
+    "key_value": "an amount equal to two months’ rent, in addition to any rent for the first month paid on or before initial occupancy",
+    "coverage_text": "Landlords who are natural persons (including settlors or beneficiaries of a family trust) or limited liability companies in which all members are natural persons, and who own no more than two residential rental properties that collectively include no more than four dwelling units offered for rent.",
+    "predicates_json": "{\"all\":[{\"fact\":\"owner_type\",\"op\":\"in\",\"value\":[\"natural person\",\"limited liability company with all natural person members\"]},{\"fact\":\"owner_units_owned\",\"op\":\"<=\",\"value\":4}]}",
+    "exemptions": "Does not apply if the prospective tenant is a service member, as defined in Section 400 of the Military and Veterans Code.",
+    "citation": "Cal. Civ. Code § 1950.5(c)(5)",
+    "penalty": null,
+    "quoted_span": "(5) (A) Notwithstanding paragraph (1), a landlord shall not demand or receive security, however denominated, in an amount or value in excess of an amount equal to two months’ rent, in addition to any rent for the first month paid on or before initial occupancy if the landlord meets both of the following requirements:",
+    "effective_date_phrase": "This subdivision shall not apply to a security collected or demanded by the landlord before July 1, 2024.",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "security_deposits",
+    "status_hint": "enacted",
+    "title": "Higher security charged to service members: written statement and return (Civil Code 1950.5(c)(4))",
+    "requirement": "On or after April 1, 2025, a landlord who charges a service member a higher than standard or advertised security due to credit history, credit score, housing history or another tenant factor must give a written statement, on or before lease signing, of the amount and the reason. The additional security must be returned after no more than six months of residency if the tenant is not in arrears, and the return date must be in the lease.",
+    "key_value": null,
+    "coverage_text": "Service members who rent residential property in which they will reside and are charged higher than standard or advertised security.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "Cal. Civ. Code § 1950.5(c)(4)",
+    "penalty": null,
+    "quoted_span": "(4) On or after April 1, 2025, if a landlord or its agent charges a service member who rents residential property in which the service member will reside a higher than standard or advertised security pursuant to paragraph (1) due to the credit history, credit score, housing history, or other factor related to the tenant, the landlord shall provide the tenant with a written statement, on or before the date the lease is signed, of the amount of the higher security and an explanation why the higher security amount is being charged.",
+    "effective_date_phrase": "On or after April 1, 2025",
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "key_parts": {
+  "text_sha256": "48b1d005fb59f73082dc625d4038272f4bde950d2c93a70ef400a43b630e1511",
+  "chunk_id": "D025-c002",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   21964,
+   27433
+  ],
+  "prompt_version": "extract_v1",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 5300,
+  "output_tokens": 1925
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "security_deposits",
+    "status_hint": "enacted",
+    "title": "Prohibition on nonrefundable security deposits",
+    "requirement": "A lease or rental agreement may not contain a provision characterizing any security as nonrefundable.",
+    "key_value": null,
+    "coverage_text": "Leases and rental agreements of residential premises covered by this section.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "Cal. Civ. Code § 1950.5(n)",
+    "penalty": "Bad faith claim or retention of the security in violation of this section may subject the landlord or successors in interest to statutory damages of up to twice the amount of the security, in addition to actual damages; actions may be maintained in small claims court if within the jurisdictional amount.",
+    "quoted_span": "(n) A lease or rental agreement shall not contain a provision characterizing any security as “nonrefundable.”",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "security_deposits",
+    "status_hint": "enacted",
+    "title": "Handling of security deposit on transfer of landlord's interest",
+    "requirement": "When the landlord's interest in the premises ends (by sale, assignment, death, receivership or otherwise), the landlord must within a reasonable time either transfer the remaining security to the successor in interest and notify the tenant, or return the remaining security to the tenant with an accounting. If the landlord fails to do so, successors in interest are jointly and severally liable for repayment and may not require replacement security until restitution or an accounting is made.",
+    "key_value": null,
+    "coverage_text": "Landlords holding a tenant's security whose interest in the premises terminates, and their successors in interest.",
+    "predicates_json": null,
+    "exemptions": "A successor in interest who, upon inquiry and reasonable investigation, has a good faith belief that the lawfully remaining security deposit was transferred to it or returned to the tenant is not liable for damages under subdivision (m) or for security not transferred.",
+    "citation": "Cal. Civ. Code § 1950.5(i)-(l)",
+    "penalty": "Successors in interest are jointly and severally liable with the landlord for repayment of the security; bad faith claim, retention or demand for replacement security may subject the landlord or successors to statutory damages of up to twice the amount of the security, in addition to actual damages.",
+    "quoted_span": "(i) Upon termination of the landlord’s interest in the premises, whether by sale, assignment, death, appointment of receiver, or otherwise, the landlord or the landlord’s agent shall, within a reasonable time, do one of the following acts, either of which shall relieve the landlord of further liability with respect to the security held:",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

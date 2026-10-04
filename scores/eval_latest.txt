@@ -1,11 +1,11 @@
 *** STUB OUTPUTS: pipeline not run; numbers below say nothing about answers ***
 Self-evaluation (team harness; the pack has no official scoring script). Not legal advice.
-generated_at 2026-10-03T23:33:36Z  commit e1679c3  as_of default 2026-10-01
+generated_at 2026-10-04T00:20:22Z  commit e4109a6  as_of default 2026-10-01
 overall hard checks: PASS
 
 [1] Format validity (must be 100%)
   [PASS] rules.json is {"rules": [...]}
-  [n/a ] rule records valid against official schema: 0/0
+  [PASS] rule records valid against official schema: 176/176 (100.0%)
   [PASS] team_rule_id unique
   [PASS] lookups.json is {"as_of", "lookups"}
   [PASS] as_of is YYYY-MM-DD - 2026-10-01
@@ -19,12 +19,28 @@ overall hard checks: PASS
   [PASS] each test has affected_address_ids, conflict_flag_address_ids, notes
   [PASS] all listed ids are sample address ids - 0 unknown
 [2] Grounding (must be 100%)
-  [n/a ] quoted_span found in its source_doc_id text: 0/0
-  [n/a ] source_url equals manifest url: 0/0
+  [PASS] quoted_span found in its source_doc_id text: 176/176 (100.0%)
+  [PASS] source_url equals manifest url: 176/176 (100.0%)
   [n/a ] rules behind 'applies' rows have span, citation, url, retrieval date: 0/0
-[3] Brief recall checklist: not measured yet (phase 3)
+[3] Brief recall checklist (laws the briefs name; misses count only with text in corpus)
+  [    ] checklist laws found: 18/19 (94.7%)
+  [info] not found: ma-h5222, jc-algorithmic (no text in corpus), hoboken-algorithmic (no text in corpus)
+[6] Coverage matrix (rules per jurisdiction x category; ! = checklist law with text but no rule)
+  jurisdiction          rent  jcause deposit  appfee  screen    algo
+  CA                       1       6      11       7       8       2
+  Berkeley, CA             6       7       1       2       2       2
+  Los Angeles, CA          4      15       0       0       0       0
+  San Diego, CA            0       9       0       0       0       2
+  San Francisco, CA        2       4       1       0       1       2
+  Santa Ana, CA            2       2       0       0       0       0
+  MA                       1       0       7       2       3      1!
+  Boston, MA               0       3       0       0       3       0
+  Cambridge, MA            0       0       0       0       1       0
+  NJ                       3      36       5       1       9       1
+  Hoboken, NJ              0       0       0       0       0       0
+  Jersey City, NJ          1       0       0       0       0       0
+  [info] rules: 176; by status {'in_force': 170, 'not_yet_effective': 1, 'pending': 5}; red cells: 1
 [4] Gold set (rules + addresses): not measured yet (phase 3)
 [5] Change tests T1-T5 expected behavior: not measured yet (phase 6)
-[6] Coverage matrix: not measured yet (phase 3)
 [7] Jurisdiction check: not measured yet (phase 4)
 [8] Determinism (two cached runs byte-identical): not measured yet (phase 5)

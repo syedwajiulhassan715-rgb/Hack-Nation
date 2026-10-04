@@ -1,0 +1,29 @@
+# Brief recall checklist (BACKEND_PLAN.md 4.3). Evaluation data only: the pipeline never
+# reads this file. Laws named in the participant briefs, with the corpus documents that carry
+# their text (from the manifest; link-only documents are not listed). An item is "found"
+# when rules.json has a rule with the same jurisdiction and category whose citation contains
+# `cite` (case- and space-insensitive) or whose source_doc_id is one of `docs`.
+# text_in_corpus: no  -> reported, but not counted as a miss.
+
+items:
+  - {id: ca-rent-cap,        jurisdiction: CA, category: rent_increase_limits,       cite: "1947.12",   docs: [D024]}
+  - {id: ca-just-cause,      jurisdiction: CA, category: just_cause_eviction,        cite: "1946.2",    docs: [D023]}
+  - {id: ca-deposit,         jurisdiction: CA, category: security_deposits,          cite: "1950.5",    docs: [D025]}
+  - {id: ca-screening-fee,   jurisdiction: CA, category: application_screening_fees, cite: "1950.6",    docs: [D026]}
+  - {id: ca-feha-screening,  jurisdiction: CA, category: screening_restrictions,     cite: "12955",     docs: [D027]}
+  - {id: ca-ab325,           jurisdiction: CA, category: algorithmic_rent_setting,   cite: "325",       docs: [D022]}
+  - {id: nj-anti-eviction,   jurisdiction: NJ, category: just_cause_eviction,        cite: "2A:18-61.1", docs: [D067]}
+  - {id: nj-deposit,         jurisdiction: NJ, category: security_deposits,          cite: "46:8-21.2", docs: [D067]}
+  - {id: nj-app-fee,         jurisdiction: NJ, category: application_screening_fees, cite: "405",       docs: [D066]}
+  - {id: nj-fair-chance,     jurisdiction: NJ, category: screening_restrictions,     cite: "110",       docs: [D065]}
+  - {id: nj-fair-act,        jurisdiction: NJ, category: algorithmic_rent_setting,   cite: "",          docs: [D069]}
+  - {id: ma-deposit,         jurisdiction: MA, category: security_deposits,          cite: "15B",       docs: [D052]}
+  - {id: ma-rent-control-ban, jurisdiction: MA, category: rent_increase_limits,      cite: "40P",       docs: [D048]}
+  - {id: ma-broker-fee,      jurisdiction: MA, category: application_screening_fees, cite: "87DDD",     docs: [D057]}
+  - {id: ma-s2983,           jurisdiction: MA, category: algorithmic_rent_setting,   cite: "2983",      docs: [D046, D047]}
+  - {id: ma-h5222,           jurisdiction: MA, category: algorithmic_rent_setting,   cite: "5222",      docs: [D045]}
+  - {id: sf-algorithmic,     jurisdiction: "San Francisco, CA", category: algorithmic_rent_setting, cite: "37.10C", docs: [D081]}
+  - {id: sd-algorithmic,     jurisdiction: "San Diego, CA",     category: algorithmic_rent_setting, cite: "98.110", docs: [D076]}
+  - {id: berkeley-algorithmic, jurisdiction: "Berkeley, CA",    category: algorithmic_rent_setting, cite: "13.63",  docs: [D001]}
+  - {id: jc-algorithmic,     jurisdiction: "Jersey City, NJ",   category: algorithmic_rent_setting, cite: "", docs: [], text_in_corpus: no}
+  - {id: hoboken-algorithmic, jurisdiction: "Hoboken, NJ",      category: algorithmic_rent_setting, cite: "", docs: [], text_in_corpus: no}

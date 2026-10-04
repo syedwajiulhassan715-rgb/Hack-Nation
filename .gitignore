@@ -30,3 +30,6 @@ Thumbs.db
 .idea/
 
 # Note: cache/llm/ and outputs/ are committed on purpose (reproducibility).
+
+# Duplicate unpack of the participant pack (identical to data/starter/)
+/MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/

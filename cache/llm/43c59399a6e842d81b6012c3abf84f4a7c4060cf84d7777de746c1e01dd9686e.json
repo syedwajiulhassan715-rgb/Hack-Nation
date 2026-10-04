@@ -1,0 +1,97 @@
+{
+ "key_parts": {
+  "text_sha256": "396972b4e199efe65ff763eae53ed8a81d99e17ba900c39f16bfb44c16637bed",
+  "chunk_id": "D005-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   165,
+   3736
+  ],
+  "prompt_version": "extract_v1",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 4753,
+  "output_tokens": 2778
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "application_screening_fees",
+    "status_hint": "enacted",
+    "title": "Tenant screening fee cap and receipt/refund duties (Civil Code 1950.6)",
+    "requirement": "The maximum tenant screening fee for 2026 is $68.96. Prospective tenants should receive a copy of their credit report within 7 days of the landlord's receipt, a receipt for the fee with an itemized list of out-of-pocket expenses and time spent, and a refund of any unused portion. If the tenant provides a reusable screening report, the landlord must use it.",
+    "key_value": "$68.96 maximum tenant screening fee for 2026",
+    "coverage_text": "Landlords charging screening fees to prospective tenants.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "California Civil Code Section 1950.6",
+    "penalty": null,
+    "quoted_span": "Prospective tenants should expect to receive a copy of their credit report within 7 days of receipt by the landlord, a receipt for the fee paid and an itemized list of any out-of-pocket expenses and time spent by the landlord on the screening, and a refund of any unused portion of the fee. If the tenant provides a reusable screening report, the landlord must use it.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "application_screening_fees",
+    "status_hint": "enacted",
+    "title": "No screening fee when no unit available; return of fee to unselected applicants (Civil Code 1950.6)",
+    "requirement": "A landlord cannot charge a screening fee if no rental unit is actually available. The landlord must return the fee to any applicant not selected, or use a first-qualified-applicant policy and not charge applicants who are not considered.",
+    "key_value": null,
+    "coverage_text": "Landlords charging screening fees to prospective tenants.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "California Civil Code Section 1950.6",
+    "penalty": null,
+    "quoted_span": "The landlord cannot charge a prospective tenant a screening fee if no rental unit is actually available. The landlord must also return a screening fee to any applicant not selected, or have a policy under which they: (1) review applications in the order received and the first qualified applicant gets the unit, and (2) do not charge a screening fee to any applicant not considered.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "Berkeley, CA",
+    "level": "city",
+    "category": "application_screening_fees",
+    "status_hint": "enacted",
+    "title": "Notification of state law limitation on tenant screening fees",
+    "requirement": "An owner who charges a fee to purchase a consumer credit report and process a rental application must provide, in the application or a separate disclosure before receiving the fee, a clear and conspicuous Tenant Screening Fee Rights Statement and a statement of the maximum fee cap under Civil Code Section 1950.6(b).",
+    "key_value": null,
+    "coverage_text": "Owners or their agents renting residential property in Berkeley who charge applicants a screening/application fee.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "BMC 13.78.010",
+    "penalty": null,
+    "quoted_span": "When an owner or the owner’s agent gets a request to rent residential property in Berkeley from an applicant and the owner charges a fee to purchase a consumer credit report and to validate, review, or otherwise process an application, the owner must provide, either in the rental application or in a separate disclosure before receiving the fee, a clear and conspicuous tenant screening fee rights statement and a statement of the maximum fee cap permitted under",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary."
+   },
+   {
+    "jurisdiction": "Berkeley, CA",
+    "level": "city",
+    "category": "application_screening_fees",
+    "status_hint": "enacted",
+    "title": "Prohibition of non-refundable application fees associated with existing tenancies",
+    "requirement": "An owner or agent cannot charge an existing tenant a non-refundable fee to renew a tenancy, including fees tied to a roommate's departure or a request to add or replace a roommate.",
+    "key_value": null,
+    "coverage_text": "Owners of residential rental property in Berkeley (or their agents) and existing tenants.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "BMC 13.78.016",
+    "penalty": null,
+    "quoted_span": "An owner of residential rental property (or the owner’s agent) cannot charge a non-refundable fee to any existing tenant for the purpose of renewing a tenancy, in whole or in part, including any fee associated with the departure of a roommate or to request to add or replace a roommate in a pre-existing household.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary. Any provision of an existing rental agreement or lease that violates the provisions of this chapter are unenforceable."
+   }
+  ]
+ }
+}

@@ -6,10 +6,13 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import threading
 from pathlib import Path
 from typing import Any
 
 from navigator import settings
+
+_lock = threading.Lock()  # extract calls the model from worker threads
 
 
 def log_path() -> Path:
@@ -24,5 +27,6 @@ def log(stage: str, decision: str, reason: str | None = None, **fields: Any) -> 
     entry.update({k: v for k, v in fields.items() if v is not None})
     path = log_path()
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("a", encoding="utf-8", newline="\n") as fh:
-        fh.write(json.dumps(entry, ensure_ascii=False) + "\n")
+    line = json.dumps(entry, ensure_ascii=False) + "\n"
+    with _lock, path.open("a", encoding="utf-8", newline="\n") as fh:
+        fh.write(line)

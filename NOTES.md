@@ -52,6 +52,33 @@
 - **changes.json** always includes `conflict_flag_address_ids` (CONTRACT.md 4), even though
   the template omits it on T1.
 
+- **Model per stage** (phase 3). Default LLM model is `claude-sonnet-5-5` (half Opus's
+  per-token price); `llm.stages.<stage>` overrides it. Extraction stays on `claude-opus-5-5`
+  because the full-corpus run is cached on it (model is in the cache key, so switching
+  re-calls all 70 chunks). Switch extraction only after `make eval` on the 3-doc slice
+  shows Sonnet matching it.
+- **Determinism** (phase 3). Effort `high`, structured JSON output
+  (`output_config.format`). These models reject `temperature`, so the
+  CLAUDE.md "temperature 0" cannot be sent; determinism comes from the disk cache in
+  `cache/llm/` (commit it). A cached run never calls the API.
+- **Predicates as a JSON string** (phase 3). Structured output gets `predicates_json` as a
+  string because the predicate tree is recursive; verify parses it and checks it against the
+  fact vocabulary in `navigator/schema/facts.py`. Bad predicates are dropped and the rule is
+  marked `needs_review` (coverage then falls back to the text).
+- **Allowed jurisdictions** are derived from the manifest (each document's jurisdiction and
+  its state), never listed in code. A model-proposed county or unknown city is rejected.
+- **Merge policy** (phase 3). Same document: merge only overlapping spans with the same
+  (jurisdiction, category, citation key), i.e. chunk-overlap repeats. Across documents: merge
+  only one-to-one matches on that key; ambiguous cases stay separate rather than collapse
+  distinct obligations. Kept record: official source first, then exact span, then longest.
+- **Number check** (phase 3). `requirement`/`key_value` numbers must appear within 1,500
+  chars of the span; `coverage`/`exemptions`/`penalty` numbers anywhere in the document
+  (statutes put exemptions in other subdivisions). Failures flag review, they don't reject.
+- **Enacted with no stated date** is `in_force` with `needs_review` ("effective date not
+  stated in source text"), per open question 1; status never comes from an invented date.
+- **STUB marker** stays until `lookups` writes real results: rules.json alone being real does
+  not make the empty lookups meaningful.
+
 ## Open questions
 
 1. **Berkeley ch. 13.63 effective date.** D001 contains no effective date; the second
@@ -68,3 +95,13 @@
    pattern is listed and reviewed in `config/unit_parsers.yaml`.
 5. **CA AB 325 effective date** comes only from the CA default (Jan 1 after chaptering
    10/06/25), which is not stated in the corpus text. Lower confidence + `needs_review`.
+6. **Berkeley ch. 13.63 status** (phase 3). D001 (Ordinance 7,992-N.S.) only records the first
+   reading ("passed to print", November 18, 2025); the adoption vote and the guide's March 1,
+   2026 date are not in the supplied text. Extraction marks it `pending` (bill_or_proposal),
+   which is what the text supports. Decide: keep `pending` (text-faithful), or treat the
+   numbered ordinance as enacted with `effective_date: null` + `needs_review`. Not overridden
+   by hand either way (golden rule 1).
+7. **MA H.5222 (D045) not extracted** (phase 3). Same page shape as S.2983 (D046, extracted):
+   a bill page whose only substantive text is its title. The prompt does not say what to do
+   with title-only bill pages, so the model was inconsistent. Fix needs prompt `extract_v2`,
+   which re-extracts all 70 chunks (prompt version is in the cache key).

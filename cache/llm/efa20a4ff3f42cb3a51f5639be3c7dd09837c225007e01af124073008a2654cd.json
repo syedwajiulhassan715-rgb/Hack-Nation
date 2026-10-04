@@ -1,0 +1,43 @@
+{
+ "key_parts": {
+  "text_sha256": "ac42593c79533c25223582de77eb5411d2f8ef501a0d027d2a61042b7e81d7ef",
+  "chunk_id": "D049-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   120,
+   22898
+  ],
+  "prompt_version": "extract_v1",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 10182,
+  "output_tokens": 1861
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "MA",
+    "level": "state",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Unlawful practices in housing accommodations: discriminatory refusal and inquiries (M.G.L. c. 151B, § 4(6))",
+    "requirement": "Owners, lessees, sublessees, brokers, managing agents and others with the right to rent publicly assisted, multiple dwelling or contiguously located housing may not refuse to rent or otherwise discriminate based on protected characteristics. They also may not cause any written or oral inquiry or record about the race, religious creed, color, national origin, sex, gender identity, sexual orientation, age, genetic information, ancestry, marital status, veteran or armed-forces status, or handicap of a person seeking to rent.",
+    "key_value": null,
+    "coverage_text": "Owners, lessees, sublessees, licensed real estate brokers, assignees or managing agents of publicly assisted or multiple dwelling or contiguously located housing accommodations, others with the right to rent or lease such accommodations, their agents or employees, and condominium or housing cooperative unit-owner organizations.",
+    "predicates_json": null,
+    "exemptions": "The word 'age' does not apply to minors, to residency in state-aided or federally-aided elderly housing developments, to residency in federal low income housing tax credit developments intended for persons 55 or over or 62 or over, or to residency in communities built expressly for persons 55 or over or 62 or over if the owner or manager registers biennially with the executive office of housing and livable communities.",
+    "citation": "M.G.L. c. 151B, § 4(6)",
+    "penalty": null,
+    "quoted_span": "6. For the owner, lessee, sublessee, licensed real estate broker, assignee or managing agent of publicly assisted or multiple dwelling or contiguously located housing accommodations or other person having the right of ownership or possession or right to rent or lease, or sell or negotiate for the sale of such accommodations, or any agent or employee of such a person, or any organization of unit owners in a condominium or housing cooperative: (a) to refuse to rent or lease or sell or negotiate for sale or otherwise to deny to or withhold from any person or group of persons such accommodations because of the race, religious creed, color, national origin, sex, gender identity, sexual orientation, which shall not include persons whose sexual orientation involves minor children as the sex object, age, genetic information, ancestry, or marital status of such person or persons or because such person is a veteran or member of the armed forces, or because such person is blind, or hearing impaired or has any other handicap; (b) to discriminate against any person because of his race, religious creed, color, national origin, sex, gender identity, sexual orientation, which shall not include persons whose sexual orientation involves minor children as the sex object, age, ancestry, or marital status or because such person is a veteran or member of the armed forces, or because such person is blind, or hearing impaired or has any other handicap in the terms, conditions or privileges of such accommodations or the acquisitions thereof, or in the furnishings of facilities and services in connection therewith, or because such a person possesses a trained dog guide as a consequence of blindness, or hearing impairment; (c) to cause to be made any written or oral inquiry or record concerning the race, religious creed, color, national origin, sex, gender identity, sexual orientation, which shall not include persons whose sexual orientation involves minor children as the sex object, age, genetic information, ancestry or marital status of the person seeking to rent or lease or buy any such accommodation, or concerning the fact that such person is a veteran or a member of the armed forces or because such person is blind or hearing impaired or has any other handicap.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": "For the purpose of this subsection, housing intended for occupancy by persons fifty-five or over and sixty-two or over shall comply with the provisions set forth in 42 USC 3601 et seq."
+   }
+  ]
+ }
+}

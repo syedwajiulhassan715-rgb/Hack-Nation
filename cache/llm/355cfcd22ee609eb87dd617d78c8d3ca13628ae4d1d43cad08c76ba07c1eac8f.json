@@ -1,0 +1,97 @@
+{
+ "key_parts": {
+  "text_sha256": "fdd8d7fca42103cf630c3a9a4ed217150eb17a6e180edd80c1d845ca5e8aa1fe",
+  "chunk_id": "D023-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   139,
+   24073
+  ],
+  "prompt_version": "extract_v1",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 11452,
+  "output_tokens": 5016
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Tenant Protection Act just cause requirement (Civil Code 1946.2)",
+    "requirement": "After a tenant has continuously and lawfully occupied a residential property for 12 months, the owner may not terminate the tenancy without just cause, which must be stated in the written termination notice. Just cause is either at-fault cause (such as default in rent, material lease breach, nuisance, waste, criminal activity, unlawful use) or no-fault cause (owner or relative move-in, withdrawal from the rental market, compliance with a government order, or intent to demolish or substantially remodel).",
+    "key_value": "Applies after 12 months of continuous and lawful occupancy (or, if adult tenants are added before 24 months, when all tenants have 12 months or one tenant has 24 months)",
+    "coverage_text": "Residential real property where a tenant has continuously and lawfully occupied the unit for 12 months; if additional adult tenants are added before an existing tenant reaches 24 months, it applies only if all tenants have 12 months or more or one or more tenants have 24 months or more.",
+    "predicates_json": "{\"all\":[{\"fact\":\"tenancy_months\",\"op\":\">=\",\"value\":12},{\"not\":{\"fact\":\"dormitory_or_institutional\",\"op\":\"==\",\"value\":true}},{\"not\":{\"fact\":\"shared_living_with_owner\",\"op\":\"==\",\"value\":true}},{\"not\":{\"fact\":\"deed_restricted_affordable\",\"op\":\"==\",\"value\":true}},{\"not\":{\"fact\":\"government_owned_or_subsidized\",\"op\":\"==\",\"value\":true}},{\"not\":{\"all\":[{\"fact\":\"units\",\"op\":\"==\",\"value\":1},{\"fact\":\"owner_occupied\",\"op\":\"==\",\"value\":true}]}},{\"not\":{\"all\":[{\"fact\":\"units\",\"op\":\"==\",\"value\":2},{\"fact\":\"owner_occupied\",\"op\":\"==\",\"value\":true}]}},{\"not\":{\"all\":[{\"fact\":\"separately_alienable\",\"op\":\"==\",\"value\":true},{\"fact\":\"owner_type\",\"op\":\"not_in\",\"value\":[\"real estate investment trust\",\"corporation\",\"limited liability company with a corporate member\"]}]}}]}",
+    "exemptions": "Transient and tourist hotel occupancy; housing in nonprofit hospitals, religious facilities, extended care facilities, licensed residential care facilities for the elderly, or adult residential facilities; dormitories owned and operated by higher education institutions or K-12 schools; housing where the tenant shares bathroom or kitchen with an owner who lives there; single-family owner-occupied residences where the owner rents no more than two units or bedrooms (including ADUs/JADUs) and mobilehomes; a two-unit structure where the owner occupied one unit at the start of the tenancy and continues to live there (neither unit an ADU/JADU); housing issued a certificate of occupancy within the previous 15 years (unless a mobilehome); separately alienable property (including mobilehomes) whose owner is not a REIT, corporation, LLC with a corporate member, or mobilehome park management, if tenants received the required written exemption notice; deed-restricted or subsidized affordable housing for very low, low or moderate income households. Also does not apply to property covered by a local just cause ordinance adopted on or before September 1, 2019, or a more protective local ordinance adopted or amended after that date.",
+    "citation": "Cal. Civ. Code § 1946.2",
+    "penalty": "Failure to comply renders the written termination notice void. An owner who attempts to recover possession in material violation is liable for actual damages, reasonable attorney's fees and costs in the court's discretion, and up to three times actual damages plus possible punitive damages for willful, oppressive, fraudulent or malicious conduct. The Attorney General and city attorney or county counsel may seek injunctive relief.",
+    "quoted_span": "(a) Notwithstanding any other law, after a tenant has continuously and lawfully occupied a residential real property for 12 months, the owner of the residential real property shall not terminate a tenancy without just cause, which shall be stated in the written notice to terminate tenancy.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": "(A) Residential real property subject to a local ordinance requiring just cause for termination of a residential tenancy adopted on or before September 1, 2019, in which case the local ordinance shall apply."
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Opportunity to cure before just cause termination for curable lease violation",
+    "requirement": "Before issuing a termination notice for a curable lease violation, the owner must first give notice of the violation with an opportunity to cure. If the violation is not cured within the time in the notice, a three-day notice to quit without an opportunity to cure may then be served.",
+    "key_value": null,
+    "coverage_text": "Owners of residential real property subject to Section 1946.2 terminating for a curable lease violation.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "Cal. Civ. Code § 1946.2(c)",
+    "penalty": "An owner's failure to comply with any provision of this section renders the written termination notice void.",
+    "quoted_span": "If the violation is not cured within the time period set forth in the notice, a three-day notice to quit without an opportunity to cure may thereafter be served to terminate the tenancy.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "No-fault just cause relocation assistance or rent waiver",
+    "requirement": "For a no-fault just cause termination, the owner must, regardless of tenant income, either make a direct relocation payment or waive in writing the final month's rent, equal to one month of the rent in effect when the notice was issued. Relocation payments must be made within 15 calendar days of service of the notice, and the termination notice must tell the tenant of the right to relocation assistance or rent waiver.",
+    "key_value": "One month of the tenant's rent in effect when the notice to terminate was issued",
+    "coverage_text": "Tenancies for which just cause is required under subdivision (a), when the owner terminates for a no-fault just cause.",
+    "predicates_json": null,
+    "exemptions": "A tenant found by a government agency or court to be at fault for the conditions triggering a government order to vacate is not entitled to relocation assistance.",
+    "citation": "Cal. Civ. Code § 1946.2(d)",
+    "penalty": "An owner's failure to strictly comply with this subdivision renders the notice of termination void. If the tenant fails to vacate after the notice expires, the relocation assistance or rent waiver is recoverable as damages in an action to recover possession.",
+    "quoted_span": "(3) (A) The amount of relocation assistance or rent waiver shall be equal to one month of the tenant’s rent that was in effect when the owner issued the notice to terminate the tenancy.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": "(C) The relocation assistance or rent waiver required by this subdivision shall be credited against any other relocation assistance required by any other law."
+   },
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Required tenant notice of just cause and rent limit protections",
+    "requirement": "Owners of property subject to Section 1946.2 must give tenants a notice, in no less than 12-point type, stating that California law limits rent increases and requires a statement of cause to terminate a tenancy. For tenancies commenced or renewed on or after July 1, 2020, it must be in the lease, an addendum, or a signed written notice; for tenancies existing before July 1, 2020, by written notice no later than August 1, 2020, or as an addendum.",
+    "key_value": null,
+    "coverage_text": "Owners of residential real property subject to Section 1946.2; mobilehome tenancies use July 1, 2022 and August 1, 2022 dates.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "Cal. Civ. Code § 1946.2(f)",
+    "penalty": "An owner's failure to comply with any provision of this section renders the written termination notice void.",
+    "quoted_span": "(3) The notification or lease provision shall be in no less than 12-point type, and shall include the following:",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

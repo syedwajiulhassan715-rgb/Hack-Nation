@@ -1,0 +1,61 @@
+{
+ "key_parts": {
+  "text_sha256": "ac42593c79533c25223582de77eb5411d2f8ef501a0d027d2a61042b7e81d7ef",
+  "chunk_id": "D049-c002",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   21561,
+   44937
+  ],
+  "prompt_version": "extract_v1",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 10367,
+  "output_tokens": 2121
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "MA",
+    "level": "state",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Public assistance and housing subsidy discrimination ban",
+    "requirement": "Anyone furnishing rental accommodations may not discriminate against a person who receives federal, state or local public assistance or housing subsidies, including rental assistance, because the person is such a recipient or because of any requirement of the assistance or subsidy program.",
+    "key_value": null,
+    "coverage_text": "Any person furnishing credit, services or rental accommodations.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "Chapter 151B, Section 4, subsection 10",
+    "penalty": null,
+    "quoted_span": "10. For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "MA",
+    "level": "state",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Ban on inquiries about protected characteristics of rental applicants",
+    "requirement": "Owners, managing agents and others with the right to rent covered housing accommodations may not make any written or oral inquiry or record about the race, color, religious creed, national origin, sex, gender identity, sexual orientation, age, genetic information, ancestry, marital status, veteran status, military membership, blindness, hearing impairment or other handicap, or possession of a trained dog guide, of a person seeking to rent or lease the accommodation.",
+    "key_value": null,
+    "coverage_text": "Owners, lessees, sublessees, real estate brokers, assignees, managing agents and others with the right to rent or lease other covered housing accommodations, their agents and employees, and condominium or housing cooperative unit owner organizations.",
+    "predicates_json": "{\"not\": {\"all\": [{\"fact\": \"units\", \"op\": \"==\", \"value\": 2}, {\"fact\": \"owner_occupied\", \"op\": \"==\", \"value\": true}]}}",
+    "exemptions": "Does not apply to leasing a single apartment or flat in a two family dwelling where the other unit is occupied by the owner as his residence. The word 'age' does not apply to minors, to residency in state-aided or federally-aided elderly housing developments, to federal low income housing tax credit developments for persons 55 or over or 62 or over, or to communities built expressly for persons 55 or over or 62 or over if the owner or manager registers biennially with the executive office of housing and livable communities.",
+    "citation": "Chapter 151B, Section 4, subsection 7",
+    "penalty": null,
+    "quoted_span": "The word ''age'' as used in this subsection shall not apply to persons who are minors nor to residency in state-aided or federally-aided housing developments for the elderly nor to residency in housing developments assisted under the federal low income housing tax credit and intended for use as housing for persons 55 years of age or over or 62 years of age or over, nor to residency in communities consisting of either a structure or structures constructed expressly for use as housing for persons 55 years of age or over or 62 years of age or over if the housing owner or manager register biennially with the executive office of housing and livable communities.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": "For the purpose of this subsection, housing intended for occupancy by persons fifty-five or over and sixty-two or over shall comply with the provisions set forth in 42 USC 3601 et seq."
+   }
+  ]
+ }
+}

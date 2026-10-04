@@ -1,0 +1,43 @@
+{
+ "key_parts": {
+  "text_sha256": "f24c21cb2b32330c0f2f112f066d02b784887a8552cc3777ea96f1d53dd0171f",
+  "chunk_id": "D052-c002",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   20323,
+   26126
+  ],
+  "prompt_version": "extract_v1",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 5301,
+  "output_tokens": 1642
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "MA",
+    "level": "state",
+    "category": "security_deposits",
+    "status_hint": "enacted",
+    "title": "Security deposit return and forfeiture",
+    "requirement": "A lessor must return the security deposit, or the balance owed after allowed deductions, with any interest, within thirty days after the tenancy ends, and must give an itemized list of damages within thirty days. A lessor who fails to deposit the funds as required, does not provide the itemized list, enforces conflicting lease terms or waivers, fails to transfer the deposit to a successor, or fails to return the deposit on time loses the right to keep any part of the deposit.",
+    "key_value": "Return within thirty days after termination of the tenancy; damages of three times the deposit plus interest at five per cent",
+    "coverage_text": "Lessors of residential premises who hold a tenant's security deposit.",
+    "predicates_json": null,
+    "exemptions": "Does not apply to any lease, rental, occupancy or tenancy of one hundred days or less that is for a vacation or recreational purpose.",
+    "citation": "M.G.L. c. 186, § 15B(6)-(7)",
+    "penalty": "Forfeiture of the right to retain any portion of the deposit. For violations of clauses (a), (d) or (e) of subsection 6, the tenant is awarded three times the deposit or balance owed, plus interest at five per cent from the due date, court costs and reasonable attorney's fees.",
+    "quoted_span": "(e) fails to return to the tenant the security deposit or balance thereof to which the tenant is entitled after deducting therefrom any sums in accordance with the provisions of this section, together with any interest thereon, within thirty days after termination of the tenancy.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": "Any provision of a lease which conflicts with any provision of this section and any waiver by a tenant or prospective tenant of any provision of this section shall be deemed to be against public policy and therefore void and unenforceable."
+   }
+  ]
+ }
+}

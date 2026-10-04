@@ -1,0 +1,43 @@
+{
+ "key_parts": {
+  "text_sha256": "21d92128daede668d6f1a824528ead345982ddf043a32e4fb5d80dd8adbcdce9",
+  "chunk_id": "D016-c002",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   22190,
+   26585
+  ],
+  "prompt_version": "extract_v1",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 4891,
+  "output_tokens": 686
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "screening_restrictions",
+    "status_hint": "enacted",
+    "title": "Criminal conviction must be directly related to tenancy",
+    "requirement": "A housing provider may deny an application based on a criminal conviction only if the conviction is directly related to the applicant's ability to be a good tenant and not be a threat to the health and safety of others and the property. In deciding this, the provider should consider the nature and severity of the crime and the time passed since the conduct.",
+    "key_value": null,
+    "coverage_text": "Housing providers deciding whether to deny a rental application based on a criminal conviction.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "California fair housing laws (CRD Fair Housing and Criminal History factsheet)",
+    "penalty": null,
+    "quoted_span": "If a housing provider intends to deny someone’s application based on a criminal conviction, it must be directly-related to someone’s ability to be a good tenant and to not be a threat to the health and safety of others and the property. In determining whether a criminal conviction is directly-related, a housing provider should consider the nature and severity of the crime and the amount of time that has passed since the criminal conduct occurred.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

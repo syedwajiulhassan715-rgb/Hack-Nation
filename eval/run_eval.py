@@ -24,11 +24,14 @@ RESULTS = {"applies", "unknown", "superseded", "not_yet_effective", "pending"}
 LOOKUP_ROW_KEYS = {"team_rule_id", "result", "explanation", "conflict_flag"}
 CHANGE_KEYS = {"affected_address_ids", "conflict_flag_address_ids", "notes"}
 
+CHECKLIST = Path(__file__).parent / "brief_checklist.yaml"
+CATEGORIES = ["rent_increase_limits", "just_cause_eviction", "security_deposits",
+              "application_screening_fees", "screening_restrictions", "algorithmic_rent_setting"]
+CAT_ABBR = ["rent", "jcause", "deposit", "appfee", "screen", "algo"]
+
 NOT_YET = [
-    ("3", "Brief recall checklist", 3),
     ("4", "Gold set (rules + addresses)", 3),
     ("5", "Change tests T1-T5 expected behavior", 6),
-    ("6", "Coverage matrix", 3),
     ("7", "Jurisdiction check", 4),
     ("8", "Determinism (two cached runs byte-identical)", 5),
 ]
@@ -169,9 +172,64 @@ def evaluate(out_dir: Path) -> Report:
     rep.ratio("grounding_applies_backed", "rules behind 'applies' rows have span, citation, url, retrieval date",
               backed, len(applies_ids), True)
 
+    # ---------------------------------------------- 3. brief recall checklist
+    rep.lines.append("[3] Brief recall checklist (laws the briefs name; misses count only with text in corpus)")
+    items = _checklist()
+    hits, den, missing = 0, 0, []
+    for it in items:
+        ok = _checklist_found(it, rules)
+        with_text = it.get("text_in_corpus", "yes") not in ("no", False)
+        if with_text:
+            den += 1
+            hits += ok
+        if not ok:
+            missing.append(it["id"] + ("" if with_text else " (no text in corpus)"))
+    rep.ratio("checklist_recall", "checklist laws found", hits, den, False)
+    if missing:
+        rep.lines.append("  [info] not found: " + ", ".join(missing))
+
+    # ---------------------------------------------------- 6. coverage matrix
+    rep.lines.append("[6] Coverage matrix (rules per jurisdiction x category; ! = checklist law with text but no rule)")
+    counts: dict[tuple[str, str], int] = {}
+    for r in rules:
+        counts[(r.get("jurisdiction"), r.get("category"))] = counts.get((r.get("jurisdiction"), r.get("category")), 0) + 1
+    red = {(it["jurisdiction"], it["category"]) for it in items
+           if it.get("text_in_corpus", "yes") not in ("no", False) and not _checklist_found(it, rules)}
+    jurs = sorted({j for j, _ in counts} | {it["jurisdiction"] for it in items},
+                  key=lambda j: (j.rsplit(", ", 1)[-1], ", " in j, j))
+    rep.lines.append("  " + "jurisdiction".ljust(18) + "".join(a.rjust(8) for a in CAT_ABBR))
+    for j in jurs:
+        cells = [(str(counts.get((j, c), 0)) + ("!" if (j, c) in red else "")).rjust(8) for c in CATEGORIES]
+        rep.lines.append("  " + j.ljust(18) + "".join(cells))
+    rep.metrics["coverage_red_cells"] = len(red)
+    rep.metrics["rules_total"] = len(rules)
+    status_counts: dict[str, int] = {}
+    for r in rules:
+        status_counts[r.get("status")] = status_counts.get(r.get("status"), 0) + 1
+    rep.metrics["rules_by_status"] = status_counts
+    rep.lines.append(f"  [info] rules: {len(rules)}; by status {dict(sorted(status_counts.items()))}; red cells: {len(red)}")
+
     for num, label, phase in NOT_YET:
         rep.lines.append(f"[{num}] {label}: not measured yet (phase {phase})")
     return rep
+
+
+def _checklist() -> list[dict[str, Any]]:
+    import yaml
+
+    return yaml.safe_load(CHECKLIST.read_text(encoding="utf-8"))["items"]
+
+
+def _checklist_found(item: dict[str, Any], rules: list[dict]) -> bool:
+    cite = re.sub(r"\s+", "", str(item.get("cite") or "")).lower()
+    for r in rules:
+        if r.get("jurisdiction") != item["jurisdiction"] or r.get("category") != item["category"]:
+            continue
+        if r.get("source_doc_id") in (item.get("docs") or []):
+            return True
+        if cite and cite in re.sub(r"\s+", "", r.get("citation") or "").lower():
+            return True
+    return False
 
 
 def _git_commit() -> str | None:

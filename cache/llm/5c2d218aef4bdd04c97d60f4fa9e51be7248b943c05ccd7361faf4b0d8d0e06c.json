@@ -1,0 +1,43 @@
+{
+ "key_parts": {
+  "text_sha256": "cf36489eb7db23226ff24eb4a65615b9837c67659221630e0366a4ff4456df00",
+  "chunk_id": "D039-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   111,
+   3086
+  ],
+  "prompt_version": "extract_v1",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 4503,
+  "output_tokens": 1019
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "San Francisco, CA",
+    "level": "city",
+    "category": "algorithmic_rent_setting",
+    "status_hint": "enacted",
+    "title": "San Francisco ban on algorithm-based rent-setting tools",
+    "requirement": "Property owners and managers are banned from using algorithm-based tools that recommend or set rental prices.",
+    "key_value": null,
+    "coverage_text": "Property owners and managers using algorithm-based tools that recommend or set rental prices.",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "San Francisco Board of Supervisors legislation approved July 2024",
+    "penalty": null,
+    "quoted_span": "In July 2024, the San Francisco Board of Supervisors approved legislation to ban property owners and managers from using algorithm-based tools that recommend or set rental prices.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

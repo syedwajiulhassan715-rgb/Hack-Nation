@@ -73,6 +73,7 @@ class RuleInternal(RuleRecord):
     predicates: dict[str, Any] | None = None
     needs_review: bool = False
     review_reasons: list[str] = Field(default_factory=list)
+    notes: list[str] = Field(default_factory=list)   # informational; does not set needs_review
     provenance: list[dict[str, Any]] = Field(default_factory=list)
 
     def to_record(self) -> RuleRecord:

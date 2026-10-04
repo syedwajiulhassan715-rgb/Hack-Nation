@@ -1,0 +1,79 @@
+{
+ "key_parts": {
+  "text_sha256": "d1d4b9874a7c4b51a97cb81809e9ece2658f0f9e52898d904f90d48f3c1a140b",
+  "chunk_id": "D073-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   118,
+   22770
+  ],
+  "prompt_version": "extract_v1",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 11608,
+  "output_tokens": 3614
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "San Diego, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Just Cause Required for Termination of Tenancy",
+    "requirement": "A landlord may not terminate a tenancy without just cause, which is either at-fault just cause (such as nonpayment of rent, material lease breach, nuisance, waste, criminal activity, refusal to renew on similar terms, refusal of lawful entry) or no-fault just cause taken in good faith (owner move-in, withdrawal from the rental market, compliance with a government or court order or local ordinance, or demolition or substantial remodel).",
+    "key_value": null,
+    "coverage_text": "Tenancies of residential rental property (any dwelling or unit intended for human habitation, including mobilehome park units). A tenancy means the right to occupy for more than 30 days and does not include a fixed-term lease of three months or less.",
+    "predicates_json": null,
+    "exemptions": "Transient and tourist hotel occupancy; short-term residential occupancy; deed- or regulatory-restricted affordable housing; housing under affordable housing subsidy agreements (but not Section 8); mobilehomes subject to the Mobilehome Residency Law; nonprofit hospitals, religious facilities, extended care and licensed residential care facilities, adult residential facilities and non-profit transitional housing; school and higher-education dormitories; property where the tenant shares bathroom or kitchen with a landlord who lives there; landlord-occupied single-family residences renting no more than two bedrooms, two ADUs or two JADUs; two-unit structures where the landlord occupies one unit; housing issued a certificate of occupancy within the previous 15 years (unless a mobilehome); separately alienable property where the landlord is not a REIT, corporation, LLC with a corporate member, or mobilehome park management and tenants received the required written exemption notice.",
+    "citation": "San Diego Municipal Code §98.0704; §98.0703 (exemptions); O-21647 N.S.",
+    "penalty": null,
+    "quoted_span": "A landlord shall not terminate a tenancy without just cause. For purposes of this Division, just cause includes at-fault just cause and no-fault just cause.",
+    "effective_date_phrase": "effective 6-24-2023",
+    "effective_date_anchor": null,
+    "interaction_text": "The rights conferred by this Division are in addition to any existing rights provided to tenants by state or federal law."
+   },
+   {
+    "jurisdiction": "San Diego, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Owner move-in no-fault just cause conditions",
+    "requirement": "An owner may recover possession for the owner or specified relatives to occupy as a primary residence for a minimum of 12 continuous months; for leases entered into on or after June 24, 2023 this applies only if the tenant agrees in writing or the lease expressly allows it, and the intended occupant must move in within 90 days after the tenant vacates and occupy for at least 12 continuous months. The notice must name the intended occupant and their relationship to the owner, and the ground does not apply if the intended occupant already occupies a unit on the property or a similar vacant unit exists.",
+    "key_value": "move in within 90 days; occupy at least 12 continuous months",
+    "coverage_text": "Tenancies terminated for owner or relative move-in under section 98.0704(b)(1).",
+    "predicates_json": null,
+    "exemptions": null,
+    "citation": "San Diego Municipal Code §98.0704(b)(1)",
+    "penalty": "If the intended occupant does not move in within 90 days or does not occupy for at least 12 continuous months, the owner must offer the unit back to the displaced tenant at the same rent and lease terms and reimburse reasonable moving expenses in excess of any relocation assistance paid.",
+    "quoted_span": "(E) Section 98.0704(b)(1) applies only if the intended occupant moves into the residential rental property within 90 days after the tenant vacates and occupies the residential rental property for at least 12 continuous months.",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "San Diego, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Demolition or substantial remodel no-fault just cause conditions",
+    "requirement": "A landlord may terminate a tenancy to demolish or substantially remodel only where the work cannot be safely done with the tenant in place and requires the tenant to vacate for at least 30 continuous days; if permits are required the landlord must post the permit application within three business days of submittal and secure the permits before issuing the termination notice. The notice must be certified under penalty of perjury and include the landlord's intent, a right-to-re-rent statement, a description and expected duration of the work with copies of permits (or contractor contract for permitless hazardous material abatement), and why the tenant must vacate.",
+    "key_value": "tenant must be required to vacate for at least 30 continuous days",
+    "coverage_text": "Tenancies terminated for demolition or substantial remodel under section 98.0704(b)(4).",
+    "predicates_json": null,
+    "exemptions": "Cosmetic improvements alone, including painting, decorating, and minor repairs, or other work that can be performed safely without vacating, do not qualify as substantial remodel.",
+    "citation": "San Diego Municipal Code §98.0704(b)(4)",
+    "penalty": null,
+    "quoted_span": "(A) For purposes of section 98.0704(b)(4), substantially remodel means either of the following that cannot be reasonably accomplished in a safe manner with the tenant in place and that requires the tenant to vacate the residential rental property for at least 30 continuous days:",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

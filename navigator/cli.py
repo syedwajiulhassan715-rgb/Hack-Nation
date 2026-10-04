@@ -56,7 +56,11 @@ def main(argv: list[str] | None = None) -> int:
     )
     sub = parser.add_subparsers(dest="stage", required=True)
     for name, (_, _, help_text, _) in STAGES.items():
-        sub.add_parser(name, help=help_text)
+        p = sub.add_parser(name, help=help_text)
+        if name == "extract":
+            p.add_argument("--docs", nargs="+", metavar="DOC_ID",
+                           help="only these documents (vertical slice); others' candidates are kept")
+            p.add_argument("--no-cache", action="store_true", help="ignore the LLM cache (live demo)")
     sub.add_parser("all", help="run " + " > ".join(PIPELINE))
 
     for name, help_text in (
@@ -85,6 +89,8 @@ def main(argv: list[str] | None = None) -> int:
             except ModuleNotFoundError as exc:
                 raise NotImplementedError("'api' is built in phase 7") from exc
             uvicorn.run("navigator.api.main:app", host=args.host, port=args.port)
+        elif args.stage == "extract":
+            _run_stage("extract", docs=args.docs, no_cache=args.no_cache)
         else:
             _run_stage(args.stage)
     except NotImplementedError as exc:
