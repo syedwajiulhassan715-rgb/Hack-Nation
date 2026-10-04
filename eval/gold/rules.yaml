@@ -1,0 +1,549 @@
+# Gold rules (BACKEND_PLAN.md 4.4). EVALUATION DATA ONLY: the pipeline never reads this file.
+#
+# DRAFT. Written from the corpus text (data/starter/corpus/text/*.txt) only, never from
+# outputs/. A human must check every entry against the source document before the numbers
+# count; until `reviewed_by` is set, eval/gold_eval.py labels all numbers
+# "draft gold, unreviewed".
+#
+# Fields per entry:
+#   id              stable gold id (never a team_rule_id; ours are renumbered on each verify)
+#   source_doc_id   manifest doc id the anchor is copied from
+#   jurisdiction    "CA" / "NJ" / "MA" or "City, ST"
+#   level           state | city
+#   category        one of the 6 schema categories
+#   status          expected status on 2026-10-01: in_force | not_yet_effective | pending | failed
+#   effective_date  YYYY-MM-DD if the text states or implies one, else null (see note)
+#   also_ok         optional {field: [alternative values]} where the text supports more than one reading
+#   anchor_quote    verbatim text (>= 20 chars) from source_doc_id; matched by location, whitespace-insensitive
+#   also_match      optional [{source_doc_id, anchor_quote}] for the same rule stated in another document
+#   key_value       optional headline value; its numbers are compared with ours (info only)
+#   basis           where in the text the expectations come from
+#   confidence      author's confidence in the entry: high | medium | low
+status: draft
+reviewed_by: null
+reviewed_at: null
+as_of: '2026-10-01'
+note: >-
+  Draft gold set written from the corpus by the team's agent. Every entry must be verified by
+  a human against the cited document before any number computed from it is reported as a
+  result. Entries with confidence low are the first to check.
+
+rules:
+  # ------------------------------------------------------------------ California (state)
+  - id: g-ca-rent-cap
+    source_doc_id: D024
+    jurisdiction: CA
+    level: state
+    category: rent_increase_limits
+    status: in_force
+    effective_date: '2024-04-01'
+    also_ok: {effective_date: ['2024-01-01']}
+    anchor_quote: 'increase the gross rental rate for a dwelling or a unit more than 5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower'
+    key_value: '5% + CPI or 10%, whichever is lower'
+    basis: 'Civ. Code 1947.12(a)(1); "(n) This section shall become operative on April 1, 2024." History line says Stats. 2023 effective January 1, 2024.'
+    confidence: high
+
+  - id: g-ca-just-cause
+    source_doc_id: D023
+    jurisdiction: CA
+    level: state
+    category: just_cause_eviction
+    status: in_force
+    effective_date: '2024-04-01'
+    also_ok: {effective_date: ['2026-01-01']}
+    anchor_quote: 'the owner of the residential real property shall not terminate a tenancy without just cause, which shall be stated in the written notice to terminate tenancy'
+    basis: 'Civ. Code 1946.2(a); "(m) This section shall become operative on April 1, 2024." History: amended by Stats. 2025 (AB 1529) effective January 1, 2026.'
+    confidence: high
+
+  - id: g-ca-deposit
+    source_doc_id: D025
+    jurisdiction: CA
+    level: state
+    category: security_deposits
+    status: in_force
+    effective_date: '2024-07-01'
+    also_ok: {effective_date: ['2026-01-01']}
+    anchor_quote: 'a landlord shall not demand or receive security, however denominated, in an amount or value in excess of an amount equal to one month’s rent'
+    key_value: "one month's rent"
+    basis: 'Civ. Code 1950.5(c)(1); (c)(6) "This subdivision shall not apply to a security collected or demanded by the landlord before July 1, 2024." Section last amended effective January 1, 2026.'
+    confidence: high
+
+  - id: g-ca-screening-fee
+    source_doc_id: D026
+    jurisdiction: CA
+    level: state
+    category: application_screening_fees
+    status: in_force
+    effective_date: null
+    also_ok: {effective_date: ['2026-01-01', '1998-01-01']}
+    anchor_quote: 'In no case shall the amount of the application screening fee charged by the landlord or their agent be greater than thirty dollars ($30) per applicant.'
+    key_value: '$30 per applicant (CPI-adjusted; the text gives no current figure)'
+    basis: 'Civ. Code 1950.6(b). No effective date for the cap itself; history line says the section was amended effective January 1, 2026.'
+    note: 'effective_date null: the text states no start date for the cap, only the CPI base date and the latest amendment date.'
+    confidence: high
+
+  - id: g-ca-feha
+    source_doc_id: D027
+    jurisdiction: CA
+    level: state
+    category: screening_restrictions
+    status: in_force
+    effective_date: null
+    also_ok: {effective_date: ['2024-01-01']}
+    anchor_quote: 'For the owner of any housing accommodation to discriminate against or harass any person because of the race'
+    basis: 'Gov. Code 12955(a), protected classes include "source of income". History: amended by Stats. 2023 effective January 1, 2024.'
+    note: 'effective_date null: the prohibition long predates the latest amendment date.'
+    confidence: medium
+
+  - id: g-ca-ab325
+    source_doc_id: D022
+    jurisdiction: CA
+    level: state
+    category: algorithmic_rent_setting
+    status: in_force
+    effective_date: '2026-01-01'
+    anchor_quote: 'It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce'
+    basis: 'AB 325, Bus. & Prof. Code 16729(a). Bill history "10/06/25 - Chaptered"; no date in the text, so 2026-01-01 is implied by the California January 1 default (CONTRACT.md 6, NOTES open question 5).'
+    confidence: medium
+
+  # ------------------------------------------------------------------ Berkeley
+  - id: g-berkeley-algorithmic
+    source_doc_id: D001
+    jurisdiction: Berkeley, CA
+    level: city
+    category: algorithmic_rent_setting
+    status: pending
+    also_ok: {status: ['in_force']}
+    effective_date: null
+    anchor_quote: 'It shall be unlawful for a landlord to use a coordinated pricing algorithm described in subsection A when setting rents or occupancy levels'
+    basis: 'Ordinance 7,992-N.S. amending BMC 13.63.030(B). The text only records "passed to print" on November 18, 2025; the adoption vote and an effective date are not in the text.'
+    note: 'Ambiguous: the ordinance AMENDS an existing chapter 13.63, so a ban may already be in force; the amended text itself is only at first reading. NOTES open questions 1 and 6.'
+    confidence: low
+
+  - id: g-berkeley-aga
+    source_doc_id: D008
+    jurisdiction: Berkeley, CA
+    level: city
+    category: rent_increase_limits
+    status: in_force
+    effective_date: '2026-01-01'
+    anchor_quote: 'eligible landlords to increase the 2025 permanent rent ceilings by 1.0% no earlier than January 1, 2026'
+    key_value: '1.0%'
+    basis: 'Rent Board public notice: 2026 AGA of 1.0%, "no earlier than January 1, 2026".'
+    confidence: high
+
+  - id: g-berkeley-just-cause-bb
+    source_doc_id: D006
+    jurisdiction: Berkeley, CA
+    level: city
+    category: just_cause_eviction
+    status: in_force
+    effective_date: null
+    anchor_quote: 'A landlord may no longer evict a tenant for failure to sign a new fixed term lease'
+    also_match:
+      - {source_doc_id: D006, anchor_quote: 'A landlord cannot evict a tenant for failing to sign a substantially similar lease upon expiration of a fixed-term lease.'}
+    basis: 'Measure BB page: passed by voters in the November 2024 election; no effective date stated.'
+    confidence: medium
+
+  - id: g-berkeley-deposit-interest
+    source_doc_id: D007
+    jurisdiction: Berkeley, CA
+    level: city
+    category: security_deposits
+    status: in_force
+    effective_date: null
+    anchor_quote: 'landlords must pay tenants interest on their security deposit at the end of each year'
+    basis: 'Rent Board security deposit page, "Security deposit interest" section; no date stated.'
+    confidence: medium
+
+  - id: g-berkeley-renewal-fee
+    source_doc_id: D005
+    jurisdiction: Berkeley, CA
+    level: city
+    category: application_screening_fees
+    status: in_force
+    effective_date: null
+    anchor_quote: 'cannot charge a non-refundable fee to any existing tenant for the purpose of renewing a tenancy'
+    basis: 'BMC 13.78.016 as summarized on the Rent Board page; no date stated.'
+    confidence: medium
+
+  - id: g-berkeley-fair-chance
+    source_doc_id: D003
+    jurisdiction: Berkeley, CA
+    level: city
+    category: screening_restrictions
+    status: in_force
+    effective_date: null
+    anchor_quote: 'prohibits rental housing providers in Berkeley from asking about and using criminal history'
+    basis: 'BMC 13.106, passed April 14, 2020 per the page; no effective date stated.'
+    confidence: high
+
+  # ------------------------------------------------------------------ Los Angeles
+  - id: g-la-rso-increase
+    source_doc_id: D041
+    jurisdiction: Los Angeles, CA
+    level: city
+    category: rent_increase_limits
+    status: in_force
+    effective_date: null
+    also_ok: {effective_date: ['2026-02-02']}
+    anchor_quote: 'Rent may be increased once every 12 months by the allowable rent increase percentage'
+    basis: 'LAHD RSO overview. RSO covers properties "first built on or before October 1, 1978". The only dated change is "Effective February 2, 2026" (no utility add-on).'
+    note: 'effective_date null for the RSO cap itself; 2026-02-02 accepted because the page dates the new formula from it (NOTES open question 2).'
+    confidence: medium
+
+  - id: g-la-rso-utilities
+    source_doc_id: D042
+    jurisdiction: Los Angeles, CA
+    level: city
+    category: rent_increase_limits
+    status: in_force
+    effective_date: '2026-02-02'
+    anchor_quote: 'Beginning February 2, 2026, a landlord can no longer include any additional percentage increase for utilities.'
+    also_match:
+      - {source_doc_id: D041, anchor_quote: 'Effective February 2, 2026, the landlord can no longer include an additional percentage increase for utilities.'}
+    basis: 'LAHD RSO calculator page and RSO overview, both dated February 2, 2026.'
+    note: 'May legitimately be merged into g-la-rso-increase by the pipeline; then both gold entries match the same rule.'
+    confidence: medium
+
+  - id: g-la-jco
+    source_doc_id: D040
+    jurisdiction: Los Angeles, CA
+    level: city
+    category: just_cause_eviction
+    status: in_force
+    effective_date: null
+    anchor_quote: 'It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.'
+    basis: 'LAHD JCO page; "covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO)". No effective date stated.'
+    confidence: high
+
+  # ------------------------------------------------------------------ San Francisco
+  - id: g-sf-algorithmic
+    source_doc_id: D081
+    jurisdiction: San Francisco, CA
+    level: city
+    category: algorithmic_rent_setting
+    status: in_force
+    effective_date: '2024-10-14'
+    anchor_quote: 'The law prohibits the sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco.'
+    basis: 'Rent Board news: "Legislation adding Section 37.10C to the Rent Ordinance went into effect on October 14, 2024."'
+    confidence: high
+
+  - id: g-sf-annual-increase
+    source_doc_id: D080
+    jurisdiction: San Francisco, CA
+    level: city
+    category: rent_increase_limits
+    status: in_force
+    effective_date: '2026-03-01'
+    anchor_quote: 'the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%'
+    also_match:
+      - {source_doc_id: D083, anchor_quote: '1.6% for March 1, 2026 – February 28, 2027'}
+    key_value: '1.6%'
+    basis: 'Rent Board announcement for 3/1/26 - 2/28/27. Coverage: rent-controlled units; D079 says units first certified after June 13, 1979 are exempt from the rent increase limits.'
+    confidence: high
+
+  - id: g-sf-just-cause
+    source_doc_id: D079
+    jurisdiction: San Francisco, CA
+    level: city
+    category: just_cause_eviction
+    status: in_force
+    effective_date: null
+    anchor_quote: 'a landlord must have a "just cause" reason that is the dominant motive for pursuing the eviction'
+    basis: 'Rent Board overview of Ordinance Section 37.9(a); also covers units first certified after June 13, 1979. No date stated.'
+    confidence: high
+
+  - id: g-sf-deposit-interest
+    source_doc_id: D083
+    jurisdiction: San Francisco, CA
+    level: city
+    category: security_deposits
+    status: in_force
+    effective_date: '2026-03-01'
+    anchor_quote: '4.2% for March 1, 2026 – February 28, 2027'
+    key_value: '4.2%'
+    basis: 'Rent Board current rates: "Security Deposit Interest: 4.2% for March 1, 2026 – February 28, 2027".'
+    note: 'The anchor appears once on the page; the first "4.2% for ..." line follows "Security Deposit Interest:".'
+    confidence: medium
+
+  - id: g-sf-fair-chance
+    source_doc_id: D078
+    jurisdiction: San Francisco, CA
+    level: city
+    category: screening_restrictions
+    status: in_force
+    effective_date: null
+    anchor_quote: 'San Francisco''s Fair Chance Ordinance protects residents with arrest or conviction history in affordable housing decisions.'
+    basis: 'Human Rights Commission page, one sentence; limited to affordable housing.'
+    confidence: medium
+
+  # ------------------------------------------------------------------ San Diego
+  - id: g-sd-just-cause
+    source_doc_id: D073
+    jurisdiction: San Diego, CA
+    level: city
+    category: just_cause_eviction
+    status: in_force
+    effective_date: '2023-06-24'
+    also_ok: {effective_date: ['2024-03-28']}
+    anchor_quote: 'A landlord shall not terminate a tenancy without just cause. For purposes of this Division, just cause includes at-fault just cause and no-fault just cause.'
+    basis: 'SDMC 98.0704, "added 5-25-2023 by O-21647 N.S.; effective 6-24-2023", amended effective 3-28-2024. Exemption 98.0703(k): certificate of occupancy within the previous 15 years.'
+    confidence: high
+
+  - id: g-sd-algorithmic
+    source_doc_id: D076
+    jurisdiction: San Diego, CA
+    level: city
+    category: algorithmic_rent_setting
+    status: pending
+    also_ok: {status: ['in_force']}
+    effective_date: null
+    anchor_quote: 'It is unlawful for a landlord to use an algorithmic device to set rental rates or occupancy levels for residential rental property.'
+    basis: 'Staff report (February 27, 2025) with the proposed SDMC 98.1103; ordinance number blank ("O-____"), adoption certificate unsigned; "take effect ... on the thirtieth day from and after its final passage" with no passage date in the text.'
+    note: 'Text-faithful reading is a proposal (pending). in_force accepted because the document is the adopted-version package on the city site, but no passage date is in the text.'
+    confidence: low
+
+  # ------------------------------------------------------------------ Santa Ana (rules only, no addresses)
+  - id: g-santa-ana-rent-cap
+    source_doc_id: D085
+    jurisdiction: Santa Ana, CA
+    level: city
+    category: rent_increase_limits
+    status: in_force
+    effective_date: '2021-11-19'
+    anchor_quote: 'Increase in residential rents are limited to the lower of 3% per year, or 80% of the percent change in the Consumer Price Index'
+    also_match:
+      - {source_doc_id: D084, anchor_quote: 'The increase cannot be more than 3% of your current rent or 80% of the Consumer Price Index (CPI) change, whichever is less.'}
+    key_value: 'lower of 3% or 80% of CPI'
+    basis: 'City news: "The new ordinances are not effective until November 19, 2021."'
+    confidence: high
+
+  - id: g-santa-ana-just-cause
+    source_doc_id: D085
+    jurisdiction: Santa Ana, CA
+    level: city
+    category: just_cause_eviction
+    status: in_force
+    effective_date: '2021-11-19'
+    anchor_quote: 'After 30 days, an owner shall not terminate a tenancy without just cause, which shall be stated in a written notice.'
+    also_match:
+      - {source_doc_id: D084, anchor_quote: 'Your landlord must have a valid reason to evict you.'}
+    basis: 'Same news release, Just Cause Eviction Ordinance, effective November 19, 2021.'
+    confidence: high
+
+  # ------------------------------------------------------------------ New Jersey (state)
+  - id: g-nj-fair-act
+    source_doc_id: D069
+    jurisdiction: NJ
+    level: state
+    category: algorithmic_rent_setting
+    status: not_yet_effective
+    effective_date: '2027-07-01'
+    anchor_quote: 'a rental property owner, or any agent, representative, or subcontractor thereof, to receive, subscribe to, contract for, or otherwise exchange any form of consideration in return for the use of, the services of a coordinator'
+    basis: 'P.L.2026, c.43 section 4a; "approved July 20, 2026"; section 9 "shall take effect on the first day of the twelfth month next following the date of enactment" = 2027-07-01.'
+    confidence: high
+
+  - id: g-nj-app-fee
+    source_doc_id: D066
+    jurisdiction: NJ
+    level: state
+    category: application_screening_fees
+    status: in_force
+    effective_date: '2026-05-01'
+    anchor_quote: 'shall not require an application or other similar fee to apply to lease or sublease a residential rental property for dwelling purposes, which exceeds $50'
+    key_value: '$50'
+    basis: 'P.L.2025, c.405 section 1a; "Approved January 20, 2026"; section 3 "first day of the fourth month next following the date of enactment" = 2026-05-01. Exempt: one-family or two-family dwelling.'
+    confidence: high
+
+  - id: g-nj-fair-chance
+    source_doc_id: D065
+    jurisdiction: NJ
+    level: state
+    category: screening_restrictions
+    status: in_force
+    effective_date: '2022-01-01'
+    anchor_quote: 'shall not make any oral or written inquiry regarding an applicant’s criminal record prior to making a conditional offer'
+    basis: 'P.L.2021, c.110 (Fair Chance in Housing Act) section 4a(2); "Approved June 18, 2021"; section 14 "first day of the seventh month next following the date of enactment" = 2022-01-01. Exempt: owner-occupied premises of not more than four dwelling units.'
+    confidence: high
+
+  - id: g-nj-deposit
+    source_doc_id: D067
+    jurisdiction: NJ
+    level: state
+    category: security_deposits
+    status: in_force
+    effective_date: null
+    anchor_quote: 'one and one-half times one month’s rent ( N.J.S.A. 46:8-21.2 )'
+    key_value: "1.5 months' rent"
+    basis: 'DCA Truth in Renting, Security Deposits section. Exception: owner-occupied two- or three-family dwelling. No date stated.'
+    confidence: high
+
+  - id: g-nj-anti-eviction
+    source_doc_id: D067
+    jurisdiction: NJ
+    level: state
+    category: just_cause_eviction
+    status: in_force
+    effective_date: null
+    anchor_quote: 'No residential landlord may evict or fail to renew a lease, whether it is a written or an oral lease without good cause.'
+    basis: 'DCA Truth in Renting, Eviction section (Anti-Eviction Act, N.J.S.A. 2A:18-61.1). Exceptions: owner-occupied premises with two or fewer rental units. No date stated.'
+    confidence: high
+
+  - id: g-nj-lad-source-of-income
+    source_doc_id: D068
+    jurisdiction: NJ
+    level: state
+    category: screening_restrictions
+    status: in_force
+    effective_date: null
+    anchor_quote: 'The LAD also prohibits housing discrimination based on the source of lawful income or source of lawful rent'
+    basis: 'DCR Know Your Rights brochure, LAD section; no date stated.'
+    confidence: medium
+
+  # ------------------------------------------------------------------ Jersey City
+  - id: g-jc-rent-control
+    source_doc_id: D036
+    jurisdiction: Jersey City, NJ
+    level: city
+    category: rent_increase_limits
+    status: in_force
+    effective_date: null
+    anchor_quote: '(Please Note: All 1-4 Unit Properties are exempt from rent control)'
+    basis: 'Jersey City landlord/tenant page: Rent Control Ordinance administered by the Office of Landlord Tenant Relations; 1-4 unit properties exempt. No cap figure or date in the text.'
+    note: 'The page describes coverage, not the cap formula; the pipeline may not treat it as a rule. Recall miss here is a judgment call.'
+    confidence: low
+
+  # ------------------------------------------------------------------ Massachusetts (state)
+  - id: g-ma-s2983
+    source_doc_id: D046
+    jurisdiction: MA
+    level: state
+    category: algorithmic_rent_setting
+    status: pending
+    effective_date: null
+    anchor_quote: 'An Act prohibiting algorithmic rent setting'
+    also_match:
+      - {source_doc_id: D047, anchor_quote: 'An Act prohibiting algorithmic rent setting'}
+    basis: 'Bill S.2983 page: reported favorably March 12, 2026 and referred to Senate Ways and Means; not enacted.'
+    confidence: high
+
+  - id: g-ma-h5222
+    source_doc_id: D045
+    jurisdiction: MA
+    level: state
+    category: algorithmic_rent_setting
+    status: pending
+    effective_date: null
+    anchor_quote: 'An Act relative to preventing algorithmic rent fixing in the rental housing market'
+    basis: 'Bill H.5222 page: status "Referred to House Committee on Ways and Means" (3/12/2026); not enacted.'
+    confidence: high
+
+  - id: g-ma-deposit
+    source_doc_id: D052
+    jurisdiction: MA
+    level: state
+    category: security_deposits
+    status: in_force
+    effective_date: '2025-08-01'
+    also_ok: {effective_date: [null]}
+    anchor_quote: 'a security deposit equal to the first month''s rent provided that such security deposit is deposited as required by subsection (3)'
+    key_value: "first month's rent"
+    basis: 'G.L. c.186 s.15B(1)(b)(iii). The page marks the introductory paragraph of (1)(b) "as amended by 2025, 9, Secs. 54 and 55 effective August 1, 2025"; the one-month deposit cap itself is older, so null is also accepted.'
+    confidence: high
+
+  - id: g-ma-rent-control-ban
+    source_doc_id: D048
+    jurisdiction: MA
+    level: state
+    category: rent_increase_limits
+    status: in_force
+    effective_date: null
+    anchor_quote: 'No city or town may enact, maintain or enforce rent control of any kind'
+    basis: 'G.L. c.40P s.4. It bars local rent control; it is not itself a rent cap.'
+    confidence: medium
+
+  - id: g-ma-broker-fee
+    source_doc_id: D057
+    jurisdiction: MA
+    level: state
+    category: application_screening_fees
+    status: in_force
+    effective_date: '2025-08-01'
+    anchor_quote: 'Any fee shall only be paid by the party, lessor or tenant who originally engaged and entered into a contract with the licensed broker or salesperson.'
+    basis: 'G.L. c.112 s.87DDD1/2 "as amended by 2025, 9, Sec. 43 effective August 1, 2025".'
+    note: 'Category is the team checklist''s choice (broker fee as an application fee); a reviewer may prefer to drop it.'
+    confidence: medium
+
+  - id: g-ma-public-assistance
+    source_doc_id: D049
+    jurisdiction: MA
+    level: state
+    category: screening_restrictions
+    status: in_force
+    effective_date: null
+    anchor_quote: 'For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance'
+    basis: 'G.L. c.151B s.4(10); no date stated.'
+    confidence: high
+
+  # ------------------------------------------------------------------ Boston
+  - id: g-boston-hsna
+    source_doc_id: D014
+    jurisdiction: Boston, MA
+    level: city
+    category: just_cause_eviction
+    status: in_force
+    effective_date: '2020-11-06'
+    anchor_quote: 'requires any landlord planning to end a tenancy agreement to provide the tenant with a Notice of Tenants’ Rights and Resources'
+    also_match:
+      - {source_doc_id: D013, anchor_quote: 'The Housing Stability Notification Act requires any landlord to provide renters with a Notice of Tenant’s Rights and Resources when planning to end a tenancy agreement.'}
+    basis: 'HSNA tenant FAQ: "The HSNA becomes effective on November 6, 2020."'
+    note: 'A notice duty at termination, not a just-cause list; category is the closest of the six.'
+    confidence: medium
+
+  - id: g-boston-fair-housing
+    source_doc_id: D012
+    jurisdiction: Boston, MA
+    level: city
+    category: screening_restrictions
+    status: in_force
+    effective_date: null
+    anchor_quote: 'In the City of Boston, it’s illegal to discriminate when renting, buying, selling, or securing financing for any housing.'
+    basis: 'Boston Fair Housing Commission page; protected classes include renters using Section 8 vouchers. No date stated.'
+    confidence: medium
+
+  - id: g-boston-fair-chance-policy
+    source_doc_id: D010
+    jurisdiction: Boston, MA
+    level: city
+    category: screening_restrictions
+    status: in_force
+    effective_date: null
+    anchor_quote: 'will not impose a blanket policy that denies housing to anyone with arrests and or convictions'
+    basis: 'Boston Fair Chance Tenant Selection Policy: applies to providers with DND funding/land or BPDA inclusionary units. No date stated.'
+    confidence: medium
+
+  - id: g-boston-h3744
+    source_doc_id: D011
+    jurisdiction: Boston, MA
+    level: city
+    category: rent_increase_limits
+    status: failed
+    also_ok: {status: ['pending']}
+    effective_date: null
+    anchor_quote: 'authorizing the city of Boston to implement rent stabilization and tenant eviction protections'
+    basis: 'H.3744 (193rd session) home-rule petition; last action "Accompanied a study order". Not enacted; the 193rd session has ended.'
+    note: 'The page marks the bill as sent to a study order, not formally failed. Low confidence that the pipeline should record it at all.'
+    confidence: low
+
+  # ------------------------------------------------------------------ Cambridge
+  - id: g-cambridge-source-of-income
+    source_doc_id: D029
+    jurisdiction: Cambridge, MA
+    level: city
+    category: screening_restrictions
+    status: in_force
+    effective_date: null
+    anchor_quote: 'Source of Income, includes Section 8 and public benefits'
+    basis: 'Cambridge Human Rights Commission page: protected categories under the Human Rights Ordinance (ch. 2.76) and Fair Housing Ordinance (ch. 14.04).'
+    confidence: medium
