@@ -195,7 +195,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -1755,7 +1755,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -2134,7 +2134,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -3583,7 +3583,7 @@
       },
       "A0115": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -3689,7 +3689,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -4511,7 +4511,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -4885,7 +4885,7 @@
       },
       "A0156": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -6118,7 +6118,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -6369,7 +6369,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -6807,7 +6807,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -6898,7 +6898,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -7171,7 +7171,7 @@
       },
       "A0229": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -7587,7 +7587,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -7683,7 +7683,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -9698,7 +9698,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -10264,7 +10264,7 @@
       },
       "A0328": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -11177,7 +11177,7 @@
       },
       "A0357": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -11342,7 +11342,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -11396,7 +11396,7 @@
       },
       "A0364": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -14586,7 +14586,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -15206,7 +15206,7 @@
       },
       "A0484": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -15917,7 +15917,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -17477,7 +17477,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -17856,7 +17856,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -19305,7 +19305,7 @@
       },
       "A0115": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -19411,7 +19411,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -20233,7 +20233,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -20607,7 +20607,7 @@
       },
       "A0156": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -21840,7 +21840,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -22091,7 +22091,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -22529,7 +22529,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -22620,7 +22620,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -22893,7 +22893,7 @@
       },
       "A0229": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -23309,7 +23309,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -23405,7 +23405,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -25420,7 +25420,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -25986,7 +25986,7 @@
       },
       "A0328": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -26899,7 +26899,7 @@
       },
       "A0357": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -27064,7 +27064,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -27118,7 +27118,7 @@
       },
       "A0364": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -30308,7 +30308,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -30928,7 +30928,7 @@
       },
       "A0484": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -31639,7 +31639,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -33199,7 +33199,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -33578,7 +33578,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -35027,7 +35027,7 @@
       },
       "A0115": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -35133,7 +35133,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -35955,7 +35955,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -36329,7 +36329,7 @@
       },
       "A0156": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -37562,7 +37562,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -37813,7 +37813,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -38251,7 +38251,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -38342,7 +38342,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -38615,7 +38615,7 @@
       },
       "A0229": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -39031,7 +39031,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -39127,7 +39127,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -41142,7 +41142,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -41708,7 +41708,7 @@
       },
       "A0328": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -42621,7 +42621,7 @@
       },
       "A0357": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -42786,7 +42786,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -42840,7 +42840,7 @@
       },
       "A0364": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -46030,7 +46030,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -46650,7 +46650,7 @@
       },
       "A0484": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -47361,7 +47361,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -48921,7 +48921,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -49300,7 +49300,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -50749,7 +50749,7 @@
       },
       "A0115": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -50855,7 +50855,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -51677,7 +51677,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -52051,7 +52051,7 @@
       },
       "A0156": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -53284,7 +53284,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -53535,7 +53535,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -53973,7 +53973,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -54064,7 +54064,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -54337,7 +54337,7 @@
       },
       "A0229": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -54753,7 +54753,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -54849,7 +54849,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -56864,7 +56864,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -57430,7 +57430,7 @@
       },
       "A0328": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -58343,7 +58343,7 @@
       },
       "A0357": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -58508,7 +58508,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -58562,7 +58562,7 @@
       },
       "A0364": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -61752,7 +61752,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -62372,7 +62372,7 @@
       },
       "A0484": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -63083,7 +63083,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -64643,7 +64643,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -65022,7 +65022,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -66471,7 +66471,7 @@
       },
       "A0115": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -66577,7 +66577,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -67399,7 +67399,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -67773,7 +67773,7 @@
       },
       "A0156": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -69006,7 +69006,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -69257,7 +69257,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -69695,7 +69695,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -69786,7 +69786,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -70059,7 +70059,7 @@
       },
       "A0229": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -70475,7 +70475,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -70571,7 +70571,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -72586,7 +72586,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -73152,7 +73152,7 @@
       },
       "A0328": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -74065,7 +74065,7 @@
       },
       "A0357": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -74230,7 +74230,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -74284,7 +74284,7 @@
       },
       "A0364": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -77474,7 +77474,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -78094,7 +78094,7 @@
       },
       "A0484": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -78805,7 +78805,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -80365,7 +80365,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -80744,7 +80744,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -82193,7 +82193,7 @@
       },
       "A0115": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -82299,7 +82299,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -83121,7 +83121,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -83495,7 +83495,7 @@
       },
       "A0156": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -84728,7 +84728,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -84979,7 +84979,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -85417,7 +85417,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -85508,7 +85508,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -85781,7 +85781,7 @@
       },
       "A0229": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -86197,7 +86197,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -86293,7 +86293,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -88308,7 +88308,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -88874,7 +88874,7 @@
       },
       "A0328": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -89787,7 +89787,7 @@
       },
       "A0357": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -89952,7 +89952,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -90006,7 +90006,7 @@
       },
       "A0364": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -93196,7 +93196,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -93816,7 +93816,7 @@
       },
       "A0484": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -94527,7 +94527,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -96087,7 +96087,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -96466,7 +96466,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -97915,7 +97915,7 @@
       },
       "A0115": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -98021,7 +98021,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -98843,7 +98843,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -99217,7 +99217,7 @@
       },
       "A0156": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -100450,7 +100450,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -100701,7 +100701,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -101139,7 +101139,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -101230,7 +101230,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -101503,7 +101503,7 @@
       },
       "A0229": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -101919,7 +101919,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -102015,7 +102015,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -104030,7 +104030,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -104596,7 +104596,7 @@
       },
       "A0328": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -105509,7 +105509,7 @@
       },
       "A0357": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -105674,7 +105674,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -105728,7 +105728,7 @@
       },
       "A0364": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -108918,7 +108918,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -109538,7 +109538,7 @@
       },
       "A0484": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -110249,7 +110249,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -111809,7 +111809,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -112188,7 +112188,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -113637,7 +113637,7 @@
       },
       "A0115": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -113743,7 +113743,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -114565,7 +114565,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -114939,7 +114939,7 @@
       },
       "A0156": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -116172,7 +116172,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -116423,7 +116423,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -116861,7 +116861,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -116952,7 +116952,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -117225,7 +117225,7 @@
       },
       "A0229": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -117641,7 +117641,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -117737,7 +117737,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -119752,7 +119752,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -120318,7 +120318,7 @@
       },
       "A0328": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -121231,7 +121231,7 @@
       },
       "A0357": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -121396,7 +121396,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -121450,7 +121450,7 @@
       },
       "A0364": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -124640,7 +124640,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -125260,7 +125260,7 @@
       },
       "A0484": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -125971,7 +125971,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -127531,7 +127531,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -127910,7 +127910,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -129359,7 +129359,7 @@
       },
       "A0115": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -129465,7 +129465,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -130287,7 +130287,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -130661,7 +130661,7 @@
       },
       "A0156": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -131894,7 +131894,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -132145,7 +132145,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -132583,7 +132583,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -132674,7 +132674,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -132947,7 +132947,7 @@
       },
       "A0229": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -133363,7 +133363,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -133459,7 +133459,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -135474,7 +135474,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -136040,7 +136040,7 @@
       },
       "A0328": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -136953,7 +136953,7 @@
       },
       "A0357": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -137118,7 +137118,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -137172,7 +137172,7 @@
       },
       "A0364": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -140362,7 +140362,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -140982,7 +140982,7 @@
       },
       "A0484": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -141693,7 +141693,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -143253,7 +143253,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -143632,7 +143632,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -145081,7 +145081,7 @@
       },
       "A0115": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -145187,7 +145187,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -146009,7 +146009,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -146383,7 +146383,7 @@
       },
       "A0156": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -147616,7 +147616,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -147867,7 +147867,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -148305,7 +148305,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -148396,7 +148396,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -148669,7 +148669,7 @@
       },
       "A0229": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -149085,7 +149085,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -149181,7 +149181,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -151196,7 +151196,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -151762,7 +151762,7 @@
       },
       "A0328": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -152675,7 +152675,7 @@
       },
       "A0357": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -152840,7 +152840,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -152894,7 +152894,7 @@
       },
       "A0364": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -156084,7 +156084,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -156704,7 +156704,7 @@
       },
       "A0484": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -157415,7 +157415,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -158975,7 +158975,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -159354,7 +159354,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -160803,7 +160803,7 @@
       },
       "A0115": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -160909,7 +160909,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -161731,7 +161731,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -162105,7 +162105,7 @@
       },
       "A0156": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -163338,7 +163338,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -163589,7 +163589,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -164027,7 +164027,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -164118,7 +164118,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -164391,7 +164391,7 @@
       },
       "A0229": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -164807,7 +164807,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -164903,7 +164903,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -166918,7 +166918,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -167484,7 +167484,7 @@
       },
       "A0328": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -168397,7 +168397,7 @@
       },
       "A0357": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -168562,7 +168562,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -168616,7 +168616,7 @@
       },
       "A0364": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -171806,7 +171806,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -172426,7 +172426,7 @@
       },
       "A0484": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -173137,7 +173137,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -174697,7 +174697,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -175076,7 +175076,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -176525,7 +176525,7 @@
       },
       "A0115": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -176631,7 +176631,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -177453,7 +177453,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -177827,7 +177827,7 @@
       },
       "A0156": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -179060,7 +179060,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -179311,7 +179311,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -179749,7 +179749,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -179840,7 +179840,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -180113,7 +180113,7 @@
       },
       "A0229": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -180529,7 +180529,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -180625,7 +180625,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -182640,7 +182640,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -183206,7 +183206,7 @@
       },
       "A0328": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -184119,7 +184119,7 @@
       },
       "A0357": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -184284,7 +184284,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -184338,7 +184338,7 @@
       },
       "A0364": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -187528,7 +187528,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -188148,7 +188148,7 @@
       },
       "A0484": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -188859,7 +188859,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -190419,7 +190419,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -190798,7 +190798,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -192247,7 +192247,7 @@
       },
       "A0115": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -192353,7 +192353,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -193175,7 +193175,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -193549,7 +193549,7 @@
       },
       "A0156": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -194782,7 +194782,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -195033,7 +195033,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -195471,7 +195471,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -195562,7 +195562,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -195835,7 +195835,7 @@
       },
       "A0229": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -196251,7 +196251,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -196347,7 +196347,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -198362,7 +198362,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -198928,7 +198928,7 @@
       },
       "A0328": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -199841,7 +199841,7 @@
       },
       "A0357": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -200006,7 +200006,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -200060,7 +200060,7 @@
       },
       "A0364": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -203250,7 +203250,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -203870,7 +203870,7 @@
       },
       "A0484": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -204581,7 +204581,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -206141,7 +206141,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -206520,7 +206520,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -207969,7 +207969,7 @@
       },
       "A0115": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -208075,7 +208075,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -208897,7 +208897,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -209271,7 +209271,7 @@
       },
       "A0156": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -210504,7 +210504,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -210755,7 +210755,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -211193,7 +211193,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -211284,7 +211284,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -211557,7 +211557,7 @@
       },
       "A0229": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -211973,7 +211973,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -212069,7 +212069,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -214084,7 +214084,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -214650,7 +214650,7 @@
       },
       "A0328": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -215563,7 +215563,7 @@
       },
       "A0357": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -215728,7 +215728,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -215782,7 +215782,7 @@
       },
       "A0364": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -218972,7 +218972,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -219592,7 +219592,7 @@
       },
       "A0484": {
         "algorithmic_rent_setting": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 4
         },
@@ -220303,7 +220303,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -221863,7 +221863,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -222242,7 +222242,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -223797,7 +223797,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -224619,7 +224619,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -226226,7 +226226,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -226477,7 +226477,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -226915,7 +226915,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -227006,7 +227006,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -227695,7 +227695,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -227791,7 +227791,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -229806,7 +229806,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -231450,7 +231450,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -234694,7 +234694,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -236025,7 +236025,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -237585,7 +237585,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -237964,7 +237964,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -239519,7 +239519,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -240341,7 +240341,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -241948,7 +241948,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -242199,7 +242199,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -242637,7 +242637,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -242728,7 +242728,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -243417,7 +243417,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -243513,7 +243513,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -245528,7 +245528,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -247172,7 +247172,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -250416,7 +250416,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -251747,7 +251747,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -253307,7 +253307,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -253686,7 +253686,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -255241,7 +255241,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -256063,7 +256063,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -257670,7 +257670,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -257921,7 +257921,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -258359,7 +258359,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -258450,7 +258450,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -259139,7 +259139,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -259235,7 +259235,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -261250,7 +261250,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -262894,7 +262894,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -266138,7 +266138,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -267469,7 +267469,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -269029,7 +269029,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -269408,7 +269408,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -270963,7 +270963,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -271785,7 +271785,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -273392,7 +273392,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -273643,7 +273643,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -274081,7 +274081,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -274172,7 +274172,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -274861,7 +274861,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -274957,7 +274957,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -276972,7 +276972,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -278616,7 +278616,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -281860,7 +281860,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -283191,7 +283191,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -284751,7 +284751,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -285130,7 +285130,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -286685,7 +286685,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -287507,7 +287507,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -289114,7 +289114,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -289365,7 +289365,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -289803,7 +289803,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -289894,7 +289894,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -290583,7 +290583,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -290679,7 +290679,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -292694,7 +292694,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -294338,7 +294338,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -297582,7 +297582,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -298913,7 +298913,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -300473,7 +300473,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -300852,7 +300852,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -302407,7 +302407,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -303229,7 +303229,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -304836,7 +304836,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -305087,7 +305087,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -305525,7 +305525,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -305616,7 +305616,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -306305,7 +306305,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -306401,7 +306401,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -308416,7 +308416,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -310060,7 +310060,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },
@@ -313304,7 +313304,7 @@
           "rules": 1
         },
         "just_cause_eviction": {
-          "result": "unknown",
+          "result": "applies",
           "conflict_flag": false,
           "rules": 3
         },

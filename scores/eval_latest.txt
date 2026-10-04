@@ -1,5 +1,5 @@
 Self-evaluation (team harness; the pack has no official scoring script). Not legal advice.
-generated_at 2026-10-04T02:23:57Z  commit a3ab2a5  as_of default 2026-10-01
+generated_at 2026-10-04T02:32:34Z  commit 31836a2  as_of default 2026-10-01
 overall hard checks: PASS
 
 [1] Format validity (must be 100%)
@@ -59,7 +59,58 @@ overall hard checks: PASS
     [PASS] measure never appears in lookups - absent
     [PASS] no rent_increase_limits rule from a city ordinance or an unenacted measure reported as applying - none
   [info] checks: 10 pass, 0 fail, 3 not checkable (no source text)
-[4] Gold set (rules + addresses): not measured yet (eval.gold_eval not built)
+[4] Gold set (rules + addresses) (not hard checks) - DRAFT GOLD, UNREVIEWED: numbers do not count until a human sets reviewed_by
+  [    ] rule recall [draft gold, unreviewed]: 40/42 (95.2%)
+  [    ] jurisdiction accuracy (matched rules) [draft gold, unreviewed]: 40/40 (100.0%)
+  [    ] level accuracy (matched rules) [draft gold, unreviewed]: 40/40 (100.0%)
+  [    ] category accuracy (matched rules) [draft gold, unreviewed]: 40/40 (100.0%)
+  [    ] status accuracy (matched rules) [draft gold, unreviewed]: 40/40 (100.0%)
+  [    ] effective_date accuracy (matched rules) [draft gold, unreviewed]: 37/40 (92.5%)
+  [info] key_value numbers present (key_value or requirement) [draft gold, unreviewed]: 10/10 (100.0%)
+  [    ] address legal city [draft gold, unreviewed]: 54/56 (96.4%) (unresolved 2, wrong 0, gold uncertain 1, state 57/57 (100.0%))
+  [    ] address results [draft gold, unreviewed]: 96/130 (73.8%) (over-cautious unknown 14, missed rows 2 of which missed applies 1, wrong 18, not checkable 5)
+  [info] mismatches (41) [draft gold, unreviewed]:
+    - rule g-boston-fair-housing (D012, Boston, MA, screening_restrictions): no matching rule
+    - rule g-cambridge-source-of-income (D029, Cambridge, MA, screening_restrictions): no matching rule
+    - rule g-ca-just-cause -> r-0011: effective_date expected '2024-04-01' got None
+    - rule g-nj-app-fee -> r-0055: effective_date expected '2026-05-01' got None
+    - rule g-boston-hsna -> r-0176: effective_date expected '2020-11-06' got None
+    - address A0098: legal city expected 'Boston, MA' got None (unresolved)
+    - address A0376: legal city expected 'Boston, MA' got None (unresolved)
+    - address A0001 x g-la-jco (r-0127): expected absent got applies (wrong)
+    - address A0107 x g-la-rso-increase (r-0146): expected unknown got applies (wrong)
+    - address A0107 x g-la-jco (r-0127): expected unknown got applies (wrong)
+    - address A0107 x g-ca-rent-cap (r-0017): expected unknown got superseded (wrong)
+    - address A0432 x g-la-rso-increase (r-0146): expected unknown got applies (wrong)
+    - address A0432 x g-ca-rent-cap (r-0017): expected unknown got superseded (wrong)
+    - address A0315 x g-ca-rent-cap (r-0017): expected applies got unknown (over_cautious)
+    - address A0045 x g-ca-rent-cap (r-0017): expected applies got unknown (over_cautious)
+    - address A0437 x g-ca-rent-cap (r-0017): expected applies got unknown (over_cautious)
+    - address A0405 x g-ca-rent-cap (r-0017): expected applies got unknown (over_cautious)
+    - address A0022 x g-ca-rent-cap (r-0017): expected absent got unknown (over_cautious)
+    - address A0210 x g-ca-rent-cap (r-0017): expected absent got unknown (over_cautious)
+    - address A0492 x g-ca-rent-cap (r-0017): expected absent got unknown (over_cautious)
+    - address A0156 x g-ca-rent-cap (r-0017): expected superseded got unknown (over_cautious)
+    - address A0156 x g-ca-just-cause (r-0011): expected superseded got unknown (over_cautious)
+    - address A0382 x g-ca-rent-cap (r-0017): expected superseded got unknown (over_cautious)
+    - address A0439 x g-sf-annual-increase (r-0168): expected absent got applies (wrong)
+    - address A0439 x g-ca-rent-cap (r-0017): expected applies got unknown (over_cautious)
+    - address A0357 x g-sf-annual-increase (r-0168): expected absent got applies (wrong)
+    - address A0357 x g-ca-rent-cap (r-0017): expected applies got unknown (over_cautious)
+    - address A0081 x g-ca-rent-cap (r-0017): expected applies got unknown (over_cautious)
+    - address A0105 x g-ca-rent-cap (r-0017): expected absent got unknown (over_cautious)
+    - address A0105 x g-sf-annual-increase (r-0168): expected absent got applies (wrong)
+    - address A0106 x g-sf-annual-increase (r-0168): expected unknown got applies (wrong)
+    - address A0274 x g-ca-rent-cap (r-0017): expected unknown got applies (wrong)
+    - address A0274 x g-sd-just-cause (r-0154): expected unknown got applies (wrong)
+    - address A0322 x g-sd-just-cause (r-0154): expected unknown got applies (wrong)
+    - address A0322 x g-ca-rent-cap (r-0017): expected unknown got applies (wrong)
+    - address A0197 x g-berkeley-aga (r-0122): expected unknown got applies (wrong)
+    - address A0430 x g-berkeley-aga (r-0122): expected unknown got applies (wrong)
+    - address A0091 x g-berkeley-aga (r-0122): expected unknown got applies (wrong)
+    - address A0227 x g-nj-app-fee (r-0055): expected unknown got absent (missed)
+    - address A0020 x g-nj-fair-chance (r-0093): expected unknown got applies (wrong)
+    - address A0098 x g-boston-hsna (r-0176): expected applies got absent (missed)
 [7] Jurisdiction check (legal city from Census geographies, never postal city)
   [info] by state: CA 250, MA 110, NJ 140
   [info] by legal city: (no legal city) 6, Berkeley, CA 40, Boston, MA 55, Cambridge, MA 50, Hoboken, NJ 40, Jersey City, NJ 50, Los Angeles, CA 80, Newark, NJ 49, San Diego, CA 50, San Francisco, CA 80
@@ -91,6 +142,7 @@ overall hard checks: PASS
   [PASS] lookup rows only from the address's own state and legal city (22503 rows)
 [8] Determinism (two cached runs byte-identical; `python -m eval.determinism`)
   [info] run 2026-10-04T02:23:57Z at commit a3ab2a5, 64.8s; excluded fields: changes_internal.json:generated_at, summaries.json:generated_at
+  [info] stale: run at commit a3ab2a5, HEAD is 31836a2; re-run it
     identical rules.json
     identical rules_internal.json
     identical rejects.jsonl
@@ -101,4 +153,4 @@ overall hard checks: PASS
     identical changes.json
     identical changes_internal.json
     identical summaries.json
-  [PASS] 10/10 files byte-identical (run 1 = run 2 = committed outputs/)
+  [PASS] 10/10 files byte-identical (run 1 = run 2 = committed outputs/) [stale]

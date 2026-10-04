@@ -137,6 +137,15 @@ def test_low_jurisdiction_confidence_makes_city_rules_unknown():
     assert row.result == "applies"
 
 
+def test_medium_jurisdiction_confidence_confirms_city_with_penalty():
+    rules = [rule("r-0001", level="city", jur=CITY)]
+    (high,) = lookup.evaluate_address(parcel(conf="high"), rules, AS_OF)
+    (med,) = lookup.evaluate_address(parcel(conf="medium"), rules, AS_OF)
+    assert med.result == "applies"
+    assert med.confidence < high.confidence
+    assert any("non-exact geocoder match" in r for r in med.confidence_reasons)
+
+
 def test_no_predicate_rule_with_exemptions_lowers_confidence():
     plain = lookup.evaluate_address(parcel(), [rule("r-0001")], AS_OF)[0]
     ex = lookup.evaluate_address(parcel(), [rule("r-0001", exemptions="Some units are exempt.")], AS_OF)[0]
