@@ -1,4 +1,4 @@
-# HANDOFF: where the project stands (2026-10-04, later session)
+# HANDOFF: where the project stands (2026-10-04, after Ask Locus + demo video)
 
 For the next Claude session or teammate. Read CLAUDE.md first, then this file, then NOTES.md.
 Not legal advice.
@@ -20,6 +20,28 @@ Not legal advice.
   360° bird's-eye orbit after choosing a building (stops on click/scroll/touch/key, "Orbit
   building" restarts it, off under reduced motion), premium depth/motion pass, EN/ES toggle,
   offline fallback on bundled data.
+- **Ask Locus** (2026-10-04, `4d9c9a9`, `web/src/ask/`): a question box in the building panel
+  with an animated mascot, "Loci" (`Mascot.tsx`; idle/thinking/answer/unsure moods, off under
+  reduced motion). `matcher.ts` + `lexicon.ts` map an EN/ES question to a category or to
+  why-unknown / upcoming / conflict / jurisdiction / overview, then assemble the answer only from
+  that building's lookup rows: verbatim quote excerpt, citation (opens the source drawer),
+  retrieval date, as-of date, "Not legal advice". No LLM, works offline; a question nothing
+  covers gets "I can only answer from the laws Locus has…" plus suggestions (fail closed).
+  Contract in `types.ts`; 18 tests in `matcher.test.ts`.
+- **Panel headline fix** (`web/src/lib/rows.ts`): each category's headline row is the best
+  result tier, then relevance to the category question (`headlineScore`, UI words only), so e.g.
+  the deposit question leads with the maximum-deposit rule, not a penalty rule. Rows are never
+  hidden or reordered across tiers. An `applies` row with no plain answer whose quote is an
+  exemption sentence shows "Why it applies here:" + the engine explanation (`answerText` kind
+  `explanation`).
+- Engine explanation grammar: "meets" for one item (`navigator/engine/explain_lookup.py`);
+  outputs differ only in that text. Eval unchanged (hard checks PASS, gold 119/132).
+- **Demo video**: `assets/demo/locus-demo.mp4` (57 s, 1440×900, voice-over). Recorded with a
+  Playwright script on Edge against the local API + dev server; title/tech/outro cards read their
+  numbers from `scores/eval_latest.txt` and real `extract --docs D001` + `verify` output.
+  Voice: Kokoro TTS (local, Apache-2.0, voice `af_heart`, speed 1.08), mixed with ffmpeg. The
+  build scripts were in a session scratchpad (not in the repo); the TTS venv is at
+  `C:\Users\syedw\kvenv` (can be deleted). Re-recording needs the scripts rewritten.
 
 ## Live deployment
 - Frontend LIVE: https://rental-law-navigator.vercel.app (Vercel account hassan12go, project
@@ -54,7 +76,13 @@ Not legal advice.
 - Screening-fee $ figure from a Berkeley page (D005) shown as a CA key_value (flag it).
 - FAIR Act `interaction` empty in the Locus panel.
 - A0352 Newark geocoder tie; 5 Boston rows without a house number.
-- Demo: rehearse the 90-second path (FRONTEND_PLAN.md section 8) and `rerun-live`.
+- Demo: rehearse the 2-minute path in DEMO.md and `rerun-live`. DEMO.md does not yet include
+  Ask Locus (suggested beat: on 1733 N Cherokee ask "Can I be evicted without a reason?", then
+  an off-topic question to show it refuses to guess).
+- Ask Locus polish: the unsure "?" is slightly clipped in the small pill mascot; long replies
+  scroll inside the thread (max 440px) inside the scrolling panel.
+- Remaining weak headlines: 234 of 3,000 category headlines are still a notice/penalty-type row,
+  because it is the only row in the best result tier (e.g. Newark application fees).
 - Hour-20 rule: after the freeze, fixes only, no refactors.
 
 ## Tooling notes
