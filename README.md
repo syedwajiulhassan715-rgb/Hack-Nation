@@ -25,7 +25,7 @@
 
 <p align="center">
   <a href="https://rental-law-navigator.vercel.app">
-    <img src="assets/screens/02-building-orbit.jpg" alt="Locus: a Los Angeles building in a 3D bird's-eye view, with the Locus panel listing the rules that apply" width="880">
+    <img src="assets/screens/02-building-orbit-v2.jpg" alt="Locus: a Los Angeles building in a 3D bird's-eye view, with the Locus panel listing the rules that apply" width="880">
   </a>
 </p>
 
@@ -64,7 +64,6 @@ bills are never in force.
 - 💡 **Ask Locus** — ask about a building in your own words (EN/ES); answers are assembled
   only from that building's verified rules, each with its quote and citation. No live LLM:
   if no rule covers the question, it says so instead of guessing.
-- 🎬 **Demo video (57 s, with voice-over)** — [assets/demo/locus-demo.mp4](assets/demo/locus-demo.mp4).
 - 🌐 **Live demo** — a 3D satellite map of every sample building:
   **[rental-law-navigator.vercel.app](https://rental-law-navigator.vercel.app)**.
 
@@ -107,24 +106,24 @@ No rule text, citation, threshold or date is typed into code — everything come
 
 <table>
   <tr>
-    <td width="50%"><img src="assets/screens/01-globe.jpg" alt="Start screen: a satellite globe with the sample cities"></td>
-    <td width="50%"><img src="assets/screens/02-building-orbit.jpg" alt="A building in a 3D orbit with the Locus panel"></td>
+    <td width="50%"><img src="assets/screens/01-globe-v2.jpg" alt="Start screen: a satellite globe with the sample cities"></td>
+    <td width="50%"><img src="assets/screens/02-building-orbit-v2.jpg" alt="A building in a 3D orbit with the Locus panel"></td>
   </tr>
   <tr>
     <td><sub><b>Start anywhere.</b> Search an address, pick a city or a random building on the satellite globe.</sub></td>
     <td><sub><b>Bird's-eye view.</b> The camera flies in and orbits the building; the Locus panel lists the rules by question, with state and city layers stacked above the roof.</sub></td>
   </tr>
   <tr>
-    <td><img src="assets/screens/03-source-quote.jpg" alt="Source drawer highlighting the exact quoted sentence of law"></td>
-    <td><img src="assets/screens/04-spanish.jpg" alt="The same building in Spanish"></td>
+    <td><img src="assets/screens/03-source-quote-v2.jpg" alt="Source drawer highlighting the exact quoted sentence of law"></td>
+    <td><img src="assets/screens/04-spanish-v2.jpg" alt="The same building in Spanish"></td>
   </tr>
   <tr>
     <td><sub><b>Traced to the sentence.</b> Tap a citation to open the official text with the quoted span highlighted, plus confidence and the reasoning boundary.</sub></td>
     <td><sub><b>English and Spanish.</b> Answers are translated; legal quotes stay in their original language.</sub></td>
   </tr>
   <tr>
-    <td><img src="assets/screens/06-ask-locus.jpg" alt="Ask Locus: the Loci mascot answering an eviction question with cited rules"></td>
-    <td><img src="assets/screens/05-change-tests.png" alt="Change tests page comparing expected and actual results"></td>
+    <td><img src="assets/screens/06-ask-locus-v2.jpg" alt="Ask Locus: the Loci mascot answering an eviction question with cited rules"></td>
+    <td><img src="assets/screens/05-change-tests-v2.png" alt="Change tests page comparing expected and actual results"></td>
   </tr>
   <tr>
     <td><sub><b>Ask Locus.</b> Ask in your own words. Loci answers only from this building's verified rules, each with its quote and citation, and says so when no rule covers the question.</sub></td>
@@ -298,5 +297,5 @@ OpenStreetMap/OpenFreeMap), as credited on the map.
 
 <p align="center">
   <img src="assets/locus-mark.svg" alt="" width="40"><br/>
-  <sub>Built by <b>Team Locus</b> for the MIT AI Hackathon x RealPage · prototype · not legal advice.</sub>
+  <sub>Built by <b>Team Locus</b> for the <b>Hack-Nation Global Hackathon</b> · prototype · not legal advice.</sub>
 </p>
