@@ -8,6 +8,7 @@ import {
   getRules,
   postLookup,
   resolvePoint,
+  type Lang,
   type Mode,
 } from '../api/client'
 import { loadSnapshots, loadTimelineDates } from '../api/static'
@@ -22,7 +23,8 @@ import {
   type RuleRecord,
   type SearchHit,
 } from '../api/types'
-import { ANCHOR_LINE, CATEGORY_SHORT } from '../copy'
+import { STATE_NAMES } from '../copy'
+import { useI18n } from '../i18n'
 import { CityMap, type FlyRequest } from '../map/CityMap'
 import { ruleAsRow } from '../api/fallback'
 import { RightsLabel } from '../label/RightsLabel'
@@ -32,8 +34,10 @@ import { SearchBox } from '../search/SearchBox'
 import { CityChips } from '../search/CityChips'
 import { IngestPanel } from '../ingest/IngestPanel'
 import { rowDates } from '../lib/rows'
+import { prettyDate } from '../lib/dates'
 import { navigate, type Route } from '../lib/router'
 import { Footer } from './Footer'
+import { LangSwitch } from './LangSwitch'
 
 interface Props {
   mode: Mode
@@ -42,6 +46,7 @@ interface Props {
 }
 
 export function AppShell({ mode, defaultAsOf, route }: Props) {
+  const { t, lang } = useI18n()
   const [parcels, setParcels] = useState<Parcel[]>([])
   const [rulesById, setRulesById] = useState<Map<string, RuleRecord>>(new Map())
   const [snapshots, setSnapshots] = useState<SnapshotIndex | null>(null)
@@ -69,7 +74,7 @@ export function AppShell({ mode, defaultAsOf, route }: Props) {
   const [pulseKey, setPulseKey] = useState(0)
   const [toast, setToast] = useState<string | null>(null)
   const [tilesOnline, setTilesOnline] = useState(true)
-  const [testBanner, setTestBanner] = useState<string | null>(null)
+  const [testBanner, setTestBanner] = useState<{ id: string; affected: number; conflicts: number } | null>(null)
 
   // ---- static data ----
   useEffect(() => {
@@ -106,9 +111,11 @@ export function AppShell({ mode, defaultAsOf, route }: Props) {
         if (!out) return
         setHighlight(new Set([...out.affected_address_ids, ...out.conflict_flag_address_ids]))
         setPulseKey((k) => k + 1)
-        setTestBanner(
-          `${test}: ${out.affected_address_ids.length} affected, ${out.conflict_flag_address_ids.length} conflict-flagged addresses ringed`,
-        )
+        setTestBanner({
+          id: test,
+          affected: out.affected_address_ids.length,
+          conflicts: out.conflict_flag_address_ids.length,
+        })
       })
     }
   }, [route])
@@ -116,7 +123,7 @@ export function AppShell({ mode, defaultAsOf, route }: Props) {
   // ---- lookup fetch ----
   const reqSeq = useRef(0)
   const fetchLookup = useCallback(
-    async (id: string, date: string, r: Role, facts: Record<string, number>) => {
+    async (id: string, date: string, r: Role, facts: Record<string, number>, lg: Lang) => {
       const n = ++reqSeq.current
       setLoading(true)
       setLookupError(null)
@@ -124,8 +131,8 @@ export function AppShell({ mode, defaultAsOf, route }: Props) {
         const p = byId.get(id)
         const res =
           Object.keys(facts).length && p
-            ? await postLookup({ address_id: id, lat: p.lat ?? 0, lng: p.lng ?? 0, facts, as_of: date, role: r })
-            : await getLookup(id, date, r)
+            ? await postLookup({ address_id: id, lat: p.lat ?? 0, lng: p.lng ?? 0, facts, as_of: date, role: r, lang: lg })
+            : await getLookup(id, date, r, lg)
         if (n === reqSeq.current) setLookup(res)
       } catch (e) {
         if (n === reqSeq.current) setLookupError(e instanceof Error ? e.message : String(e))
@@ -137,8 +144,15 @@ export function AppShell({ mode, defaultAsOf, route }: Props) {
   )
 
   useEffect(() => {
-    if (selectedId) fetchLookup(selectedId, asOf, role, userFacts)
-  }, [selectedId, asOf, role, userFacts, fetchLookup, mode])
+    if (selectedId) fetchLookup(selectedId, asOf, role, userFacts, lang)
+  }, [selectedId, asOf, role, userFacts, fetchLookup, mode, lang])
+
+  // ---- the API went away mid-session: say so once and keep working on bundled data ----
+  const prevMode = useRef(mode)
+  useEffect(() => {
+    if (prevMode.current === 'api' && mode === 'offline') setToast(t.offlineTitle)
+    prevMode.current = mode
+  }, [mode, t])
 
   // ---- selection ----
   const select = useCallback(
@@ -192,31 +206,24 @@ export function AppShell({ mode, defaultAsOf, route }: Props) {
       try {
         const r = await resolvePoint(lat, lng)
         if (r.nearest_address_id) return select(r.nearest_address_id)
-        setToast(
-          mode === 'api'
-            ? 'No sample building within 30 m of this point. Pick a lit building to see its rules.'
-            : 'No sample building within 30 m. Lookups for other buildings need the API.',
-        )
+        setToast(mode === 'api' ? t.noBuildingNear : t.noBuildingNearOffline)
       } catch (e) {
         setToast(e instanceof Error ? e.message : String(e))
       }
     },
-    [mode, select],
+    [mode, select, t],
   )
 
   useEffect(() => {
     if (!toast) return
-    const t = setTimeout(() => setToast(null), 4500)
-    return () => clearTimeout(t)
+    const timer = setTimeout(() => setToast(null), 5000)
+    return () => clearTimeout(timer)
   }, [toast])
 
-  const onSubmitFact = useCallback(
-    (fact: string, value: number) => {
-      setFactBusy(true)
-      setUserFacts((f) => ({ ...f, [fact]: value }))
-    },
-    [],
-  )
+  const onSubmitFact = useCallback((fact: string, value: number) => {
+    setFactBusy(true)
+    setUserFacts((f) => ({ ...f, [fact]: value }))
+  }, [])
   useEffect(() => {
     if (!loading) setFactBusy(false)
   }, [loading])
@@ -237,15 +244,79 @@ export function AppShell({ mode, defaultAsOf, route }: Props) {
         setHighlight(new Set(inside.map((p) => p.address_id)))
         setPulseKey((k) => k + 1)
       }
-      if (selectedId) fetchLookup(selectedId, asOf, role, userFacts)
+      if (selectedId) fetchLookup(selectedId, asOf, role, userFacts, lang)
     },
-    [parcels, selectedId, asOf, role, userFacts, fetchLookup],
+    [parcels, selectedId, asOf, role, userFacts, fetchLookup, lang],
   )
 
   const labelOpen = !!selectedId
+  const closeLabel = useCallback(() => {
+    setSelectedId(null)
+    setLookup(null)
+    setDrawerRow(null)
+  }, [])
+
+  // Escape closes the label (the source drawer and the ingest panel handle their own Escape first).
+  useEffect(() => {
+    if (!labelOpen) return
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape' || drawerRow || ingestOpen) return
+      closeLabel()
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [labelOpen, drawerRow, ingestOpen, closeLabel])
+
+  // One line under the anchor sentence, counted from the bundled data (geography, not law).
+  const coverage = useMemo(() => {
+    if (!parcels.length) return null
+    const states = [...new Set(parcels.map((p) => p.state))].sort().map((s) => STATE_NAMES[s] ?? s)
+    const and = lang === 'es' ? ' y ' : ' and '
+    const list =
+      states.length > 1 ? `${states.slice(0, -1).join(', ')}${and}${states[states.length - 1]}` : (states[0] ?? '')
+    return t.introSub(parcels.length, list)
+  }, [parcels, lang, t])
 
   return (
-    <div className={`shell${labelOpen ? ' with-label' : ''}`}>
+    <div className={`shell${labelOpen ? ' with-label' : ''}${intro ? ' with-intro' : ''}`}>
+      {/* First in the DOM so keyboard users reach the anchor card before the map controls. */}
+      <AnimatePresence>
+        {intro && (
+          <div className="intro-wrap" key="intro">
+            <motion.section
+              className="intro"
+              aria-labelledby="intro-title"
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0 }}
+            >
+              <div className="intro-top">
+                <LangSwitch variant="ink" />
+              </div>
+              <h1 id="intro-title" className="intro-line">
+                {t.anchor}
+              </h1>
+              {coverage && <p className="intro-sub">{coverage}</p>}
+              <SearchBox onPick={onPick} onZip={onZip} variant="paper" placeholder={t.searchPlaceholder} />
+              <div className="intro-actions">
+                <button type="button" className="btn btn-ink" onClick={random} disabled={!parcels.length}>
+                  <Shuffle size={16} aria-hidden /> {t.random}
+                </button>
+                <span className="intro-or">{t.orClick}</span>
+              </div>
+              {dataError && (
+                <p className="fact-error" role="alert">
+                  {t.dataMissing} <span className="mono">{dataError}</span>
+                </p>
+              )}
+              <p className="intro-fine">
+                {t.asOf} <span className="mono">{prettyDate(defaultAsOf, lang)}</span> · {t.disclaimer}
+              </p>
+            </motion.section>
+          </div>
+        )}
+      </AnimatePresence>
+
       <div className="map-wrap">
         <CityMap
           parcels={parcels}
@@ -266,7 +337,7 @@ export function AppShell({ mode, defaultAsOf, route }: Props) {
       </div>
 
       <div className="top-left">
-        <SearchBox onPick={onPick} onZip={onZip} />
+        {!intro && <SearchBox onPick={onPick} onZip={onZip} placeholder={t.searchPlaceholder} />}
         <CityChips
           parcels={parcels}
           onCity={(c) => {
@@ -274,10 +345,10 @@ export function AppShell({ mode, defaultAsOf, route }: Props) {
             setFly({ lng: c.lng, lat: c.lat, zoom: 12, pitch: 45, key: Date.now() })
           }}
         />
-        {!tilesOnline && <p className="chip-dark note">Street tiles unavailable. Showing sample buildings only.</p>}
+        {!tilesOnline && <p className="chip-dark note">{t.tilesDown}</p>}
         {testBanner && (
-          <p className="chip-dark note">
-            {testBanner}{' '}
+          <p className="chip-dark note" role="status">
+            {t.testBanner(testBanner.id, testBanner.affected, testBanner.conflicts)}{' '}
             <button
               type="button"
               className="link light"
@@ -287,20 +358,31 @@ export function AppShell({ mode, defaultAsOf, route }: Props) {
                 navigate('/')
               }}
             >
-              Clear
+              {t.clear}
             </button>
           </p>
         )}
       </div>
 
       <div className="top-right">
-        <div className="filters" role="group" aria-label="Category filter">
-          <button type="button" className={`chip-dark${category === 'all' ? ' on' : ''}`} onClick={() => setCategory('all')}>
-            All protections
+        <div className="filters" role="group" aria-label={t.categoryFilter}>
+          <button
+            type="button"
+            className={`chip-dark${category === 'all' ? ' on' : ''}`}
+            aria-pressed={category === 'all'}
+            onClick={() => setCategory('all')}
+          >
+            {t.allProtections}
           </button>
           {CATEGORIES.map((c) => (
-            <button key={c} type="button" className={`chip-dark${category === c ? ' on' : ''}`} onClick={() => setCategory(c)}>
-              {CATEGORY_SHORT[c]}
+            <button
+              key={c}
+              type="button"
+              className={`chip-dark${category === c ? ' on' : ''}`}
+              aria-pressed={category === c}
+              onClick={() => setCategory(c)}
+            >
+              {t.categoryShort[c]}
             </button>
           ))}
         </div>
@@ -313,31 +395,15 @@ export function AppShell({ mode, defaultAsOf, route }: Props) {
               setIngestOpen(true)
             }}
           >
-            <FilePlus2 size={16} /> Add a new law
+            <FilePlus2 size={16} aria-hidden /> {t.addLaw}
           </button>
           <button type="button" className="chip-dark" onClick={() => navigate('/changes')}>
-            Change tests
+            {t.changeTests}
           </button>
         </div>
         <Legend category={category} />
       </div>
 
-      <AnimatePresence>
-        {intro && (
-          <motion.div className="intro" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <p className="intro-line">{ANCHOR_LINE}</p>
-            <SearchBox onPick={onPick} onZip={onZip} variant="paper" autoFocus />
-            <div className="intro-actions">
-              <button type="button" className="btn btn-ink" onClick={random} disabled={!parcels.length}>
-                <Shuffle size={16} /> Random building
-              </button>
-              <span className="muted small">or click any lit building on the map</span>
-            </div>
-            {dataError && <p className="fact-error">{dataError}</p>}
-            <p className="fine">Not legal advice. Every answer links to the sentence of law it comes from.</p>
-          </motion.div>
-        )}
-      </AnimatePresence>
 
       <AnimatePresence>
         {labelOpen && (
@@ -350,11 +416,7 @@ export function AppShell({ mode, defaultAsOf, route }: Props) {
             onRole={setRole}
             level={level}
             onLevel={setLevel}
-            onClose={() => {
-              setSelectedId(null)
-              setLookup(null)
-              setDrawerRow(null)
-            }}
+            onClose={closeLabel}
             onClearUserFacts={() => setUserFacts({})}
             ctx={{
               asOf: lookup?.as_of || asOf,
@@ -366,7 +428,7 @@ export function AppShell({ mode, defaultAsOf, route }: Props) {
               },
               onSubmitFact: mode === 'api' ? onSubmitFact : null,
               factBusy,
-              offlineNote: 'Typing a fact needs the API. The app is running on bundled data.',
+              offlineNote: t.offlineFact,
             }}
           />
         )}
@@ -403,7 +465,7 @@ export function AppShell({ mode, defaultAsOf, route }: Props) {
             onClose={() => setIngestOpen(false)}
             onDone={ingestDone}
             onShowRule={(rule) => {
-              setDrawerStatus(rule.status === 'in_force' ? 'In force' : undefined)
+              setDrawerStatus(rule.status === 'in_force' ? (lang === 'es' ? 'En vigor' : 'In force') : undefined)
               setDrawerRow(ruleAsRow(rule))
             }}
           />
@@ -411,7 +473,7 @@ export function AppShell({ mode, defaultAsOf, route }: Props) {
       </AnimatePresence>
 
       {toast && (
-        <div className="toast" role="status">
+        <div className="toast" role="status" aria-live="polite">
           {toast}
         </div>
       )}
@@ -422,20 +484,33 @@ export function AppShell({ mode, defaultAsOf, route }: Props) {
 }
 
 function Legend({ category }: { category: Category | 'all' }) {
+  const { t } = useI18n()
   if (category === 'all')
     return (
       <div className="legend chip-dark">
-        <span className="ramp" /> fewer → more categories with a rule that applies
+        <span className="ramp" aria-hidden /> {t.legendAll}
       </div>
     )
+  const items: Array<[string, keyof typeof t.status]> = [
+    ['var(--applies)', 'applies'],
+    ['var(--unknown)', 'unknown'],
+    ['var(--not-yet)', 'not_yet_effective'],
+    ['var(--pending)', 'pending'],
+    ['var(--conflict)', 'conflict'],
+    ['var(--none)', 'none'],
+  ]
   return (
     <div className="legend chip-dark">
-      <span className="sw" style={{ background: 'var(--applies)' }} /> Applies
-      <span className="sw" style={{ background: 'var(--unknown)' }} /> Unknown
-      <span className="sw" style={{ background: 'var(--not-yet)' }} /> Starts later
-      <span className="sw" style={{ background: 'var(--pending)' }} /> Proposed
-      <span className="sw" style={{ background: 'var(--conflict)' }} /> Conflict
-      <span className="sw" style={{ background: 'var(--none)', outline: '1px solid #444' }} /> No rule found
+      {items.map(([c, k]) => (
+        <span key={k} className="legend-item">
+          <span
+            className="sw"
+            aria-hidden
+            style={{ background: c, outline: k === 'none' ? '1px solid #5a616c' : undefined }}
+          />
+          {t.status[k]}
+        </span>
+      ))}
     </div>
   )
 }

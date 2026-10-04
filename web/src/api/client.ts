@@ -15,7 +15,14 @@ import {
   type RuleSource,
   type SearchHit,
 } from './types'
-import { buildLookupResult, normalizeSummaries, sortRows, addressLabel, verifiedSummaryIds } from './fallback'
+import {
+  buildLookupResult,
+  normalizeSummaries,
+  numbersGrounded,
+  sortRows,
+  addressLabel,
+  verifiedSummaryIds,
+} from './fallback'
 import {
   loadDocText,
   loadMeta,
@@ -29,6 +36,7 @@ import {
 import { DISCLAIMER, QUESTIONS } from '../copy'
 
 export type Mode = 'api' | 'offline'
+export type Lang = 'en' | 'es'
 
 const envBase = import.meta.env.VITE_API_BASE as string | undefined
 export const API_BASE: string | null = envBase ? envBase.replace(/\/$/, '') : import.meta.env.DEV ? '/api' : null
@@ -91,8 +99,33 @@ export async function detectMode(): Promise<Mode> {
     setMode('api')
   } catch {
     setMode('offline')
+    retryHealth()
   }
   return mode
+}
+
+// A hosted API may be cold-starting. Keep serving bundled data and probe again a few times;
+// switch to the live API only once it answers.
+let retrying = false
+function retryHealth(delays = [4000, 12000, 30000, 60000]) {
+  if (retrying || !API_BASE) return
+  retrying = true
+  const next = (i: number) => {
+    if (i >= delays.length || mode === 'api') {
+      retrying = false
+      return
+    }
+    setTimeout(async () => {
+      try {
+        await api<unknown>('/health', undefined, 8000)
+        setMode('api')
+        retrying = false
+      } catch {
+        next(i + 1)
+      }
+    }, delays[i])
+  }
+  next(0)
 }
 
 function isNetworkError(e: unknown) {
@@ -114,6 +147,9 @@ export const getRules = loadRules
 function str(v: unknown): string | null {
   return typeof v === 'string' ? v : null
 }
+function groundedOrNull(answer: string | null, span: string): string | null {
+  return answer && numbersGrounded(answer, span) ? answer : null
+}
 function arr(v: unknown): string[] {
   return Array.isArray(v) ? v.filter((x) => typeof x === 'string') : []
 }
@@ -129,7 +165,8 @@ export function normalizeLookup(raw: Record<string, unknown>, role: Role): Looku
       result: (r.result as LookupRow['result']) ?? 'unknown',
       level: (r.level as LookupRow['level']) ?? 'state',
       title: str(r.title) ?? '',
-      answer: str(r.answer),
+      // the API already checks source_quote_sha and numbers; re-check numbers here (fail closed)
+      answer: groundedOrNull(str(r.answer), str(r.quoted_span) ?? ''),
       explanation: str(r.explanation) ?? '',
       key_value: str(r.key_value),
       quoted_span: str(r.quoted_span) ?? '',
@@ -193,7 +230,7 @@ async function attachParcel(r: LookupResult): Promise<LookupResult> {
   return r
 }
 
-export async function offlineLookup(addressId: string, asOf: string, role: Role): Promise<LookupResult> {
+export async function offlineLookup(addressId: string, asOf: string, role: Role, lang: Lang = 'en'): Promise<LookupResult> {
   const [parcels, rules, summariesRaw, lookup, defaultAsOf] = await Promise.all([
     loadParcels(),
     loadRules(),
@@ -216,14 +253,15 @@ export async function offlineLookup(addressId: string, asOf: string, role: Role)
     asOf,
     defaultAsOf: lookup.as_of ?? defaultAsOf ?? asOf,
     role,
+    lang,
   })
 }
 
-export async function getLookup(addressId: string, asOf: string, role: Role): Promise<LookupResult> {
+export async function getLookup(addressId: string, asOf: string, role: Role, lang: Lang = 'en'): Promise<LookupResult> {
   if (mode === 'api') {
     try {
       const raw = await api<Record<string, unknown>>(
-        `/lookup?address_id=${encodeURIComponent(addressId)}&as_of=${asOf}&role=${role}&lang=en`,
+        `/lookup?address_id=${encodeURIComponent(addressId)}&as_of=${asOf}&role=${role}&lang=${lang}`,
       )
       return attachParcel(normalizeLookup(raw, role))
     } catch (e) {
@@ -231,7 +269,7 @@ export async function getLookup(addressId: string, asOf: string, role: Role): Pr
       setMode('offline')
     }
   }
-  return offlineLookup(addressId, asOf, role)
+  return offlineLookup(addressId, asOf, role, lang)
 }
 
 /** POST /lookup: live engine run with user-entered facts. API only. */
@@ -241,6 +279,7 @@ export async function postLookup(body: {
   facts: Record<string, number>
   as_of: string
   role: Role
+  lang?: Lang
   address_id?: string | null
 }): Promise<LookupResult> {
   if (mode !== 'api') throw new ApiError(0, 'Live lookups need the API; the app is running on bundled data.')

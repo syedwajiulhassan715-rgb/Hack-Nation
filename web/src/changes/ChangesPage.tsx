@@ -7,19 +7,14 @@ import { navigate } from '../lib/router'
 import { Footer } from '../layout/Footer'
 import type { Mode } from '../api/client'
 import { changeKind, testCategory, testDate, type ChangeKind } from '../lib/changes'
-
-const KIND_TITLE: Record<ChangeKind, string> = {
-  enacted: 'Enacted and in force',
-  not_yet_effective: 'Enacted, not yet effective',
-  pending: 'Pending (proposed, not law)',
-  failed: 'Failed (did not become law)',
-}
+import { useI18n } from '../i18n'
 
 interface Props {
   mode: Mode
 }
 
 export function ChangesPage({ mode }: Props) {
+  const { t, lang } = useI18n()
   const [data, setData] = useState<ChangesBundle | null>(null)
   const [report, setReport] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -46,20 +41,20 @@ export function ChangesPage({ mode }: Props) {
     <div className="page paper-page">
       <header className="page-head">
         <button type="button" className="btn" onClick={() => navigate('/')}>
-          <ArrowLeft size={16} /> Back to the map
+          <ArrowLeft size={16} aria-hidden /> {t.backToMap}
         </button>
-        <h1>Change tests</h1>
+        <h1>{t.changesTitle}</h1>
         <p className="mono">
-          As of {prettyDate(asOf)} · Not legal advice · {mode === 'api' ? 'Live API' : 'Bundled data'}
+          {t.asOf} {prettyDate(asOf, lang)} · {t.disclaimer} · {mode === 'api' ? t.liveApi : t.bundledData}
         </p>
       </header>
       {error && <p className="fact-error">{error}</p>}
-      {!data && !error && <p className="muted">Loading…</p>}
+      {!data && !error && <p className="muted" role="status">{t.loading}</p>}
       {data &&
         (Object.keys(groups) as ChangeKind[]).map((kind) => (
           <section key={kind} className={`change-group kind-${kind}`}>
-            <h2>{KIND_TITLE[kind]}</h2>
-            {groups[kind].length === 0 && <p className="muted">No supplied test of this kind.</p>}
+            <h2>{t.kinds[kind]}</h2>
+            {groups[kind].length === 0 && <p className="muted">{t.noTestOfKind}</p>}
             {groups[kind].map((id) => {
               const def = defs.get(id)
               const out = data.outputs[id]
@@ -75,7 +70,7 @@ export function ChangesPage({ mode }: Props) {
                   </header>
                   <div className="change-cols">
                     <div>
-                      <h4>Expected (from the test file)</h4>
+                      <h4>{t.expected}</h4>
                       <p>{def?.expected_behavior ?? inn.expected_behavior ?? 'Not stated'}</p>
                       {def && (
                         <p className="mono small">
@@ -85,14 +80,13 @@ export function ChangesPage({ mode }: Props) {
                       )}
                     </div>
                     <div>
-                      <h4>Our result</h4>
+                      <h4>{t.ourResult}</h4>
                       {out ? (
                         <p>
-                          <strong>{out.affected_address_ids.length}</strong> affected addresses ·{' '}
-                          <strong>{out.conflict_flag_address_ids.length}</strong> conflict-flagged
+                          <strong>{t.affectedLine(out.affected_address_ids.length, out.conflict_flag_address_ids.length)}</strong>
                         </p>
                       ) : (
-                        <p className="muted">No result in changes.json for this test.</p>
+                        <p className="muted">{t.noResult}</p>
                       )}
                       <ul className="checks">
                         {(inn.checks ?? []).map((c, i) => (
@@ -102,12 +96,12 @@ export function ChangesPage({ mode }: Props) {
                             {c.detail && <span className="muted"> · {c.detail}</span>}
                           </li>
                         ))}
-                        {(inn.checks ?? []).length === 0 && <li className="muted">No checks recorded.</li>}
+                        {(inn.checks ?? []).length === 0 && <li className="muted">{t.noChecks}</li>}
                       </ul>
                     </div>
                   </div>
                   <details>
-                    <summary>Notes: matched rules, dates used, data limits</summary>
+                    <summary>{t.testNotes}</summary>
                     <ul className="notes-list">
                       {(inn.notes?.length ? inn.notes : (out?.notes ?? '').split(' | ')).map((n, i) => (
                         <li key={i}>{n}</li>
@@ -125,7 +119,7 @@ export function ChangesPage({ mode }: Props) {
                       navigate(`/?${q.toString()}`)
                     }}
                   >
-                    <MapPin size={14} /> Show on map
+                    <MapPin size={14} aria-hidden /> {t.showOnMap}
                   </button>
                 </article>
               )
@@ -133,14 +127,12 @@ export function ChangesPage({ mode }: Props) {
           </section>
         ))}
       <section className="change-group">
-        <h2>Self-evaluation report</h2>
-        <p className="muted small">
-          Our own evaluation harness output. The participant pack has no official scoring script.
-        </p>
+        <h2>{t.selfEval}</h2>
+        <p className="muted small">{t.selfEvalNote}</p>
         <button type="button" className="btn" onClick={() => setShowReport((s) => !s)}>
-          {showReport ? 'Hide the report' : 'Show the latest report'}
+          {showReport ? t.hideReport : t.showReport}
         </button>
-        {showReport && <pre className="report">{report ?? 'No report available.'}</pre>}
+        {showReport && <pre className="report">{report ?? t.noReport}</pre>}
       </section>
       <Footer asOf={asOf} mode={mode} />
     </div>

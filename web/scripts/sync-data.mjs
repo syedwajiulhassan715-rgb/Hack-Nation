@@ -71,11 +71,68 @@ function parseCsv(text) {
 const present = {}
 const missing = []
 
-function main() {
-  if (!exists(outputsDir)) {
-    console.error(`[sync-data] outputs directory not found: ${outputsDir}`)
-    process.exit(exists(path.join(dest, 'meta.json')) ? 0 : 1)
+// A production build (Vercel, CI, `npm run build`) must never ship an app with no data.
+const strict = !!(process.env.VERCEL || process.env.CI || process.env.npm_lifecycle_event === 'prebuild')
+const allowMissing = process.env.SYNC_ALLOW_MISSING === '1'
+
+function fail(lines) {
+  const msg = [
+    '',
+    '[sync-data] ERROR: cannot build the offline data bundle.',
+    ...lines.map((l) => `  ${l}`),
+    '',
+    `  repo root:   ${repoRoot}`,
+    `  outputs dir: ${outputsDir}`,
+    '',
+    '  Fixes:',
+    '  - Run `make all` (or at least make lookups / make changes) at the repo root first.',
+    '  - On Vercel with Root Directory "web": keep "Include files outside of the Root Directory',
+    '    in the Build Step" ON (Project Settings > Build & Deployment > Root Directory),',
+    '    so ../outputs, ../data/starter and ../scores are present during the build.',
+    '  - Or point OUTPUTS_DIR / REPO_ROOT at the right folders.',
+    '  - SYNC_ALLOW_MISSING=1 skips this check (not for a public deployment).',
+    '',
+  ].join('\n')
+  if (allowMissing) {
+    console.warn(msg.replace('ERROR', 'WARNING (SYNC_ALLOW_MISSING=1)'))
+    return
   }
+  console.error(msg)
+  process.exit(1)
+}
+
+/** Files the app cannot work without; checked before anything in public/data is touched. */
+function preflight() {
+  if (!exists(outputsDir)) {
+    if (!strict && exists(path.join(dest, 'meta.json'))) {
+      console.warn(`[sync-data] outputs directory not found (${outputsDir}); keeping the existing public/data.`)
+      process.exit(0)
+    }
+    fail([`The outputs directory does not exist.`])
+    if (allowMissing) return
+  }
+  const problems = []
+  const need = (name, check) => {
+    const p = path.join(outputsDir, name)
+    if (!exists(p)) return problems.push(`missing ${name}`)
+    try {
+      const why = check?.(readJson(p))
+      if (why) problems.push(`${name}: ${why}`)
+    } catch (e) {
+      problems.push(`${name}: not valid JSON (${e.message})`)
+    }
+  }
+  need('rules_internal.json', (d) => (!(d.rules ?? []).length ? 'has no rules' : null))
+  need('parcels.json', (d) => (!(d.parcels ?? []).length ? 'has no parcels' : null))
+  const lk = exists(path.join(outputsDir, 'lookups_internal.json')) ? 'lookups_internal.json' : 'lookups.json'
+  need(lk, (d) => (!Object.keys(d.lookups ?? {}).length ? 'has no lookups' : !d.as_of ? 'has no as_of date' : null))
+  need('snapshots.json', (d) => (!Object.keys(d.snapshots ?? {}).length ? 'has no snapshots' : null))
+  need('changes.json')
+  if (problems.length) fail(problems)
+}
+
+function main() {
+  preflight()
   fs.rmSync(dest, { recursive: true, force: true })
   fs.mkdirSync(dest, { recursive: true })
 
@@ -217,6 +274,11 @@ function main() {
   console.log(`[sync-data] wrote ${dest}`)
   console.log(`[sync-data] present: ${JSON.stringify(present)}`)
   if (missing.length) console.log(`[sync-data] missing (handled as empty states): ${missing.join(', ')}`)
+  if (!docCount)
+    console.warn(
+      '[sync-data] WARNING: no source documents copied (data/starter/corpus/text not found). Offline, the source ' +
+        'drawer will show only the verified quote, without the surrounding statute text.',
+    )
 }
 
 main()

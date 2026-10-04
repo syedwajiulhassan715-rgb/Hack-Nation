@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { motion } from 'motion/react'
 import { ExternalLink, X } from 'lucide-react'
 import type { LookupRow, RuleSource } from '../api/types'
 import { getRuleSource } from '../api/client'
-import { STATUS_WORD } from '../copy'
 import { prettyDate } from '../lib/dates'
+import { useI18n } from '../i18n'
 import { AuditTrail } from './AuditTrail'
 import { HighlightedText } from './HighlightedText'
 
@@ -17,17 +17,23 @@ interface Props {
 }
 
 function BoundaryList({ title, items }: { title: string; items: string[] }) {
+  const { t } = useI18n()
   return (
     <div className="boundary-list">
       <h4>{title}</h4>
-      <ul>{items.length ? items.map((t, i) => <li key={i}>{t}</li>) : <li className="muted">Nothing recorded for this row</li>}</ul>
+      <ul lang="en">
+        {items.length ? items.map((x, i) => <li key={i}>{x}</li>) : <li className="muted">{t.nothingRecorded}</li>}
+      </ul>
     </div>
   )
 }
 
 export function SourceDrawer({ row, asOf, onClose, statusText }: Props) {
+  const { t, lang } = useI18n()
   const [src, setSrc] = useState<RuleSource | null>(null)
   const [error, setError] = useState<string | null>(null)
+  const closeRef = useRef<HTMLButtonElement | null>(null)
+  const returnTo = useRef<Element | null>(null)
 
   useEffect(() => {
     let live = true
@@ -41,6 +47,16 @@ export function SourceDrawer({ row, asOf, onClose, statusText }: Props) {
     }
   }, [row.team_rule_id, asOf])
 
+  // Focus the close button on open; give focus back to the citation on close.
+  useEffect(() => {
+    returnTo.current = document.activeElement
+    closeRef.current?.focus({ preventScroll: true })
+    return () => {
+      const el = returnTo.current as HTMLElement | null
+      if (el && document.contains(el)) el.focus({ preventScroll: true })
+    }
+  }, [])
+
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose()
     window.addEventListener('keydown', onKey)
@@ -52,62 +68,90 @@ export function SourceDrawer({ row, asOf, onClose, statusText }: Props) {
     <motion.div
       className="drawer"
       role="dialog"
-      aria-label="Source text"
+      aria-label={t.sourceText}
       initial={{ y: '100%' }}
       animate={{ y: 0 }}
       exit={{ y: '100%' }}
       transition={{ duration: 0.3 }}
     >
       <header className="drawer-head mono">
-        <div className="drawer-cite">{row.citation}</div>
+        <div className="drawer-cite" lang="en">
+          {row.citation}
+        </div>
         <div className="drawer-meta">
           <a href={src?.source_url ?? row.source_url} target="_blank" rel="noreferrer">
-            Open official text <ExternalLink size={12} />
+            {t.openOfficial} <ExternalLink size={12} aria-hidden />
           </a>
-          <span>Retrieved {src?.retrieved_at ?? row.retrieved_at ?? 'date not recorded'}</span>
-          <span>Effective {prettyDate(row.effective_date)}</span>
-          <span>Status {statusText ?? STATUS_WORD[row.result]}</span>
-          {rule?.source_doc_id && <span>Document {rule.source_doc_id}</span>}
-          <span>As of {prettyDate(asOf)}</span>
-          <span className="nla">Not legal advice</span>
+          <span>
+            {t.retrievedOn} {src?.retrieved_at ?? row.retrieved_at ?? t.notRecorded}
+          </span>
+          <span>
+            {t.effective} {prettyDate(row.effective_date, lang)}
+          </span>
+          <span>
+            {t.statusLabel} {statusText ?? t.status[row.result]}
+          </span>
+          {rule?.source_doc_id && (
+            <span>
+              {t.document} {rule.source_doc_id}
+            </span>
+          )}
+          <span>
+            {t.asOf} {prettyDate(asOf, lang)}
+          </span>
+          <span className="nla">{t.disclaimer}</span>
         </div>
-        <button type="button" className="icon-btn" onClick={onClose} aria-label="Close source">
-          <X size={20} />
+        <button ref={closeRef} type="button" className="icon-btn" onClick={onClose} aria-label={t.closeSource}>
+          <X size={20} aria-hidden />
         </button>
       </header>
       <div className="drawer-body">
-        <div className="drawer-text">
-          {error && <p className="fact-error">{error}</p>}
-          {!src && !error && <p className="muted">Loading the source text…</p>}
+        <div className="drawer-text" lang="en">
+          {lang === 'es' && (
+            <p className="lang-note" lang="es">
+              {t.sourceLangNote}
+            </p>
+          )}
+          {error && (
+            <p className="fact-error" role="alert">
+              {error}
+            </p>
+          )}
+          {!src && !error && <p className="muted">{t.loadingSource}</p>}
           {src && src.text && <HighlightedText text={src.text} start={src.span_start} end={src.span_end} />}
           {src && (!src.text || src.span_start == null) && (
             <div>
-              <p className="muted">
-                {src.text
-                  ? 'The quote could not be located in this text window. The verified quote is:'
-                  : 'The source text is not bundled here. The verified quote is:'}
+              <p className="muted" lang={lang}>
+                {src.text ? t.quoteNotLocated : t.textNotBundled}
               </p>
               <blockquote className="statute">
                 <mark className="hl">{row.quoted_span}</mark>
               </blockquote>
             </div>
           )}
+          {error && !src && (
+            <blockquote className="statute">
+              <mark className="hl">{row.quoted_span}</mark>
+            </blockquote>
+          )}
         </div>
         <aside className="drawer-side">
           <div className="conf">
-            <h4>Confidence</h4>
-            <p className="mono">{row.confidence != null ? row.confidence.toFixed(2) : 'not scored'}</p>
-            <ul>
+            <h4>{t.confidence}</h4>
+            <p className="mono">{row.confidence != null ? row.confidence.toFixed(2) : t.notScored}</p>
+            <ul lang="en">
               {row.confidence_reasons.length ? (
                 row.confidence_reasons.map((r, i) => <li key={i}>{r}</li>)
               ) : (
-                <li className="muted">No reasons recorded</li>
+                <li className="muted" lang={lang}>
+                  {t.noReasons}
+                </li>
               )}
             </ul>
             {(rule?.review_reasons?.length ?? 0) > 0 && (
               <>
-                <h4>Flagged for review</h4>
-                <ul>
+                <h4>{t.flagged}</h4>
+                <ul lang="en">
                   {rule!.review_reasons!.map((r, i) => (
                     <li key={i}>{r}</li>
                   ))}
@@ -116,9 +160,9 @@ export function SourceDrawer({ row, asOf, onClose, statusText }: Props) {
             )}
           </div>
           <div className="boundary">
-            <h3>Reasoning boundary</h3>
-            <BoundaryList title="What we checked" items={row.checked} />
-            <BoundaryList title="What we couldn't check" items={row.not_checked} />
+            <h3>{t.boundary}</h3>
+            <BoundaryList title={t.checked} items={row.checked} />
+            <BoundaryList title={t.notChecked} items={row.not_checked} />
           </div>
           {rule && <AuditTrail rule={rule} />}
         </aside>

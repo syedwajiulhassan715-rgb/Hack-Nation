@@ -1,7 +1,9 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import type { Mode } from '../api/client'
 import { prettyDate } from '../lib/dates'
 import { navigate } from '../lib/router'
+import { useI18n } from '../i18n'
+import { LangSwitch } from './LangSwitch'
 
 interface Props {
   asOf: string | null
@@ -9,39 +11,65 @@ interface Props {
 }
 
 export function Footer({ asOf, mode }: Props) {
+  const { t, lang } = useI18n()
   const [how, setHow] = useState(false)
+  const closeRef = useRef<HTMLButtonElement | null>(null)
+
+  useEffect(() => {
+    if (!how) return
+    closeRef.current?.focus()
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setHow(false)
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [how])
+
   return (
     <>
       <footer className="footer-strip">
         <span>
-          As of <span className="mono">{prettyDate(asOf)}</span>
+          {t.asOf} <span className="mono">{prettyDate(asOf, lang)}</span>
         </span>
-        <span className="dot">·</span>
-        <strong>Not legal advice</strong>
-        <span className="dot">·</span>
-        <span>Sources: official statute and ordinance text</span>
-        <span className="dot">·</span>
-        <button type="button" className="link" onClick={() => setHow((h) => !h)}>
-          How this works
+        <span className="dot" aria-hidden>
+          ·
+        </span>
+        <strong>{t.disclaimerShort}</strong>
+        <span className="dot hide-phone" aria-hidden>
+          ·
+        </span>
+        <span className="hide-phone">{t.sources}</span>
+        <span className="dot" aria-hidden>
+          ·
+        </span>
+        <button type="button" className="link" onClick={() => setHow((h) => !h)} aria-expanded={how}>
+          {t.howThisWorks}
         </button>
-        <span className="dot">·</span>
-        <button type="button" className="link" onClick={() => navigate('/changes')}>
-          Change tests
+        <span className="dot hide-phone" aria-hidden>
+          ·
+        </span>
+        <button type="button" className="link hide-phone" onClick={() => navigate('/changes')}>
+          {t.changeTests}
         </button>
-        {mode === 'offline' && <span className="offline">Offline data</span>}
+        <span className="footer-end">
+          {mode === 'offline' && (
+            <span className="offline" title={t.offlineTitle}>
+              {t.offlineData}
+            </span>
+          )}
+          <LangSwitch />
+        </span>
       </footer>
       {how && (
-        <div className="how" role="dialog" aria-label="How this works">
-          <h3>How this works</h3>
+        <div className="how" role="dialog" aria-modal="false" aria-labelledby="how-title">
+          <h3 id="how-title">{t.howThisWorks}</h3>
           <ol>
-            <li>A model reads each source document and proposes rule records. Every quote must be found word for word in the document, or the record is rejected.</li>
-            <li>Each sample address is matched to its legal state and city through the Census address match, not the mailing city.</li>
-            <li>A deterministic engine checks each rule against the building facts and the date. Missing facts give Unknown, never a silent no.</li>
-            <li>Everything on screen comes from those generated files. Tap any citation to see the exact sentence.</li>
+            {t.howSteps.map((s, i) => (
+              <li key={i}>{s}</li>
+            ))}
           </ol>
-          <p className="fine">This is not legal advice and not a compliance certification.</p>
-          <button type="button" className="btn btn-ink" onClick={() => setHow(false)}>
-            Close
+          {mode === 'offline' && <p className="fine">{t.offlineTitle}</p>}
+          <p className="fine">{t.howFine}</p>
+          <button ref={closeRef} type="button" className="btn btn-ink" onClick={() => setHow(false)}>
+            {t.close}
           </button>
         </div>
       )}

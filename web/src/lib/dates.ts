@@ -27,20 +27,26 @@ export function daysBetween(from: string, to: string): number | null {
 }
 
 /** "Starts in 271 days" countdown, computed in the client from effective_date and as_of. */
-export function countdown(asOf: string, effective: string | null): string | null {
+export function countdown(asOf: string, effective: string | null, lang: 'en' | 'es' = 'en'): string | null {
   const n = effective ? daysBetween(asOf, effective) : null
   if (n == null) return null
+  if (lang === 'es') {
+    if (n <= 0) return 'Empieza en su fecha de vigencia'
+    return n === 1 ? 'Empieza en 1 día' : `Empieza en ${n.toLocaleString('es-US')} días`
+  }
   if (n <= 0) return 'Starts on its effective date'
   return n === 1 ? 'Starts in 1 day' : `Starts in ${n.toLocaleString('en-US')} days`
 }
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+const MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sept', 'oct', 'nov', 'dic']
 
-/** "Oct 1, 2026" for full dates; partial dates are shown as written. */
-export function prettyDate(d: string | null | undefined): string {
-  if (!d) return 'date not stated'
+/** "Oct 1, 2026" ("1 oct 2026" in Spanish) for full dates; partial dates are shown as written. */
+export function prettyDate(d: string | null | undefined, lang: 'en' | 'es' = 'en'): string {
+  if (!d) return lang === 'es' ? 'fecha no indicada' : 'date not stated'
   const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(d)
   if (!m) return d
+  if (lang === 'es') return `${Number(m[3])} ${MESES[Number(m[2]) - 1]} ${m[1]}`
   return `${MONTHS[Number(m[2]) - 1]} ${Number(m[3])}, ${m[1]}`
 }
 

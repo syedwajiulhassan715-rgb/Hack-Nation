@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import type { AuditEntry, RuleRecord } from '../api/types'
 import { getAudit, type Mode } from '../api/client'
+import { useI18n } from '../i18n'
 
 export function AuditTrail({ rule }: { rule: RuleRecord }) {
+  const { t } = useI18n()
   const [open, setOpen] = useState(false)
   const [state, setState] = useState<{ entries: AuditEntry[]; source: Mode } | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -22,12 +24,12 @@ export function AuditTrail({ rule }: { rule: RuleRecord }) {
   return (
     <div className="audit">
       <button type="button" className="more" onClick={toggle} aria-expanded={open}>
-        {open ? 'Hide audit trail' : 'Audit trail'}
+        {open ? t.hideAudit : t.auditTrail}
       </button>
       {open && (
-        <div className="audit-body">
+        <div className="audit-body" lang="en">
           {error && <p className="fact-error">{error}</p>}
-          {!state && !error && <p className="muted">Loading…</p>}
+          {!state && !error && <p className="muted">{t.loading}</p>}
           {state && state.entries.length === 0 && <p className="muted">No audit entries recorded for this rule.</p>}
           {state && state.entries.length > 0 && (
             <ol>

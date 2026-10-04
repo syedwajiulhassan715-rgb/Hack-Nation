@@ -40,7 +40,7 @@ button:disabled {
   font-size: 12.5px;
 }
 .muted {
-  color: var(--ink-3);
+  color: var(--ink-3-text);
 }
 .small {
   font-size: 13px;
@@ -170,7 +170,11 @@ button:disabled {
   font-weight: 500;
 }
 .chip-dark.on {
-  background: var(--applies);
+  background: var(--applies-ink);
+  color: #fff;
+}
+.chip-dark:hover:not(.on):not(.note):not(.legend) {
+  background: rgba(31, 37, 46, 0.9);
   color: #fff;
 }
 .chip-dark.note {
@@ -307,30 +311,67 @@ button:disabled {
 }
 
 /* ---------- intro card ---------- */
-.intro {
+/* Centering lives on the wrapper: motion animates `transform` on the card itself. */
+.intro-wrap {
   position: absolute;
-  left: 50%;
-  top: 46%;
-  transform: translate(-50%, -50%);
+  inset: 0 0 150px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 10;
+  pointer-events: none;
+}
+.intro {
+  position: relative;
+  pointer-events: auto;
   background: var(--paper);
   border: 3px solid var(--ink);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
-  padding: 28px 30px 22px;
-  width: min(620px, calc(100vw - 32px));
-  z-index: 10;
+  padding: 22px 30px 18px;
+  width: min(640px, 100%);
+}
+.intro-top {
+  display: flex;
+  justify-content: flex-end;
+  margin: -6px -14px 4px 0;
 }
 .intro-line {
   font-weight: 900;
-  font-size: 30px;
-  line-height: 1.15;
-  margin: 0 0 18px;
-  letter-spacing: -0.01em;
+  font-size: 34px;
+  line-height: 1.08;
+  margin: 0 0 10px;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+.intro-sub {
+  margin: 0 0 16px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--ink-2);
+  max-width: 54ch;
 }
 .intro-actions {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 14px;
-  margin-top: 14px;
+  gap: 8px 14px;
+  margin-top: 12px;
+}
+.intro-actions .btn-ink {
+  padding: 9px 16px;
+  font-size: 16px;
+}
+.intro-or {
+  font-size: 14px;
+  color: var(--ink-2);
+}
+.intro-fine {
+  margin: 14px 0 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--ink);
+  font-size: 13px;
+  font-weight: 700;
 }
 
 /* ---------- bottom slider ---------- */
@@ -401,7 +442,7 @@ button:disabled {
 .slider-ends {
   display: flex;
   justify-content: space-between;
-  color: var(--night-label);
+  color: var(--night-text);
   font-size: 11px;
 }
 
@@ -425,7 +466,7 @@ button:disabled {
   overflow-x: auto;
 }
 .footer-strip .dot {
-  color: var(--ink-3);
+  color: var(--ink-3-text);
 }
 .footer-strip .offline {
   margin-left: auto;
@@ -521,7 +562,12 @@ button:disabled {
   font-size: 34px;
   margin: 0;
   letter-spacing: -0.02em;
+  line-height: 1.05;
   flex: 1;
+}
+.label-head {
+  flex-wrap: wrap;
+  row-gap: 8px;
 }
 .role-toggle {
   display: flex;
@@ -611,7 +657,7 @@ button:disabled {
   text-decoration-thickness: 3px;
 }
 .crumbs .sep {
-  color: var(--ink-3);
+  color: var(--ink-3-text);
 }
 .crumbs .clear-level {
   margin-left: 10px;
@@ -726,7 +772,7 @@ button:disabled {
 }
 .lrow-none {
   cursor: default;
-  color: var(--ink-3);
+  color: var(--ink-3-text);
 }
 .lrow-none:hover {
   background: none;
@@ -791,7 +837,7 @@ button:disabled {
   padding: 1px 7px;
 }
 .chip-applies {
-  background: var(--applies);
+  background: var(--applies-ink);
 }
 .chip-unknown {
   background: transparent;
@@ -804,18 +850,19 @@ button:disabled {
 }
 .chip-not_yet_effective {
   background: var(--not-yet);
+  color: var(--ink);
 }
 .chip-pending {
   background: var(--pending);
   color: var(--ink);
 }
 .chip-conflict {
-  background: var(--conflict);
+  background: var(--conflict-ink);
 }
 .chip-none {
   background: transparent;
   border: 1px solid var(--ink-3);
-  color: var(--ink-3);
+  color: var(--ink-3-text);
 }
 
 /* fact input */
@@ -885,7 +932,7 @@ button:disabled {
   margin: 4px 0;
 }
 .empty {
-  color: var(--ink-3);
+  color: var(--ink-3-text);
   margin: 0;
 }
 .label-foot {
@@ -1100,12 +1147,20 @@ mark.hl {
 .maplibregl-ctrl-bottom-right {
   bottom: 120px !important;
 }
-.maplibregl-ctrl-attrib {
+.maplibregl-ctrl-attrib,
+.maplibregl-ctrl-attrib.maplibregl-compact {
   background: var(--chip-bg) !important;
-  color: #9aa1ab;
+  color: var(--night-text) !important;
+}
+.maplibregl-ctrl-attrib-inner,
+.maplibregl-ctrl-attrib-inner * {
+  color: var(--night-text) !important;
 }
 .maplibregl-ctrl-attrib a {
   color: #c8ccd4 !important;
+}
+.maplibregl-ctrl-attrib-button {
+  filter: invert(1);
 }
 .with-label .maplibregl-ctrl-bottom-right {
   right: 548px;
@@ -1129,7 +1184,7 @@ mark.hl {
   align-items: center;
   gap: 8px;
   padding: 4px 0;
-  color: var(--ink-3);
+  color: var(--ink-3-text);
   font-size: 15px;
 }
 .steps li.done,
@@ -1288,15 +1343,214 @@ mark.hl {
   padding: 12px 16px;
 }
 
+/* ---------- judge pass: states, language, focus ---------- */
+html,
+body {
+  overflow: hidden;
+}
+.search.dark form:focus-within {
+  outline: 2px solid var(--applies);
+  outline-offset: 1px;
+}
+.search.paper form:focus-within {
+  outline: 3px solid var(--applies);
+  outline-offset: 0;
+}
+.lrow:focus-visible {
+  outline-offset: -2px;
+}
+.label-title:focus {
+  outline: none;
+}
+.label-title:focus-visible {
+  outline: 2px solid var(--applies);
+}
+.with-intro .top-left .city-chips {
+  max-width: 420px;
+}
+
+.boot {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.boot-card {
+  background: var(--paper);
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  padding: 20px 26px;
+  width: min(520px, 100%);
+  font-size: 16px;
+}
+.boot-card p {
+  margin: 0 0 10px;
+}
+.boot-title {
+  font-weight: 900;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+}
+
+/* language switch */
+.lang-switch {
+  display: inline-flex;
+  border: 1.5px solid var(--ink);
+  flex: none;
+}
+.lang-switch button {
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 1px 7px;
+  line-height: 1.4;
+}
+.lang-switch button.on {
+  background: var(--ink);
+  color: var(--paper);
+}
+.lang-switch.ink {
+  border-width: 2px;
+}
+.lang-switch.ink button {
+  font-size: 13px;
+  padding: 2px 9px;
+}
+.footer-end {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 12px;
+}
+.footer-strip .offline {
+  margin-left: 0;
+}
+.lang-note {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: var(--ink-2);
+  border-left: 3px solid var(--ink-2);
+  padding-left: 8px;
+}
+.drawer-text .lang-note {
+  margin: 0 0 12px;
+}
+.label-foot-sub {
+  font-weight: 500;
+}
+.low-reasons {
+  color: #7a4f0d;
+}
+.muted-strong {
+  color: var(--ink-2);
+}
+
+/* loading skeleton for the label */
+.label-skeleton {
+  padding-top: 8px;
+}
+.skel-row {
+  height: 54px;
+  margin: 10px 0;
+  background: linear-gradient(90deg, var(--paper-2) 0%, #f1ecdf 50%, var(--paper-2) 100%);
+  background-size: 200% 100%;
+  animation: skel 1.2s linear infinite;
+}
+@keyframes skel {
+  to {
+    background-position: -200% 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .skel-row {
+    animation: none;
+  }
+}
+
+/* ingest: calm "run it locally" note */
+.state-note.calm {
+  border: 2px solid var(--ink);
+  background: var(--paper);
+}
+.cmd {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 8px 10px;
+  margin: 6px 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  user-select: all;
+}
+.ingest-intro {
+  color: var(--ink-2);
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
 /* ---------- phone: label becomes a bottom sheet ---------- */
 @media (max-width: 820px) {
+  .hide-phone {
+    display: none;
+  }
+  .intro-wrap {
+    inset: 0 0 120px 0;
+    padding: 12px;
+  }
+  .intro {
+    padding: 16px 18px 14px;
+  }
+  .with-intro .top-left .city-chips {
+    display: none;
+  }
+  .with-intro .top-right {
+    display: none;
+  }
+  .with-label .top-left .city-chips {
+    display: none;
+  }
+  /* Two-line footer on phones so the as-of date, the disclaimer and EN/ES all stay visible. */
+  .footer-strip {
+    height: 48px;
+    flex-wrap: wrap;
+    align-content: center;
+    row-gap: 2px;
+    white-space: normal;
+    overflow: hidden;
+    padding: 0 10px;
+  }
+  .footer-strip .footer-end {
+    padding-left: 6px;
+  }
+  .map-wrap {
+    bottom: 48px;
+  }
+  .bottom {
+    bottom: 58px;
+  }
+  .drawer {
+    bottom: 48px;
+  }
+  .how {
+    bottom: 58px;
+  }
   .label {
     left: 0;
     right: 0;
     top: auto;
-    bottom: 30px;
+    bottom: 48px;
     width: auto;
-    max-height: 72vh;
+    max-height: 78vh;
     border-width: 3px 0 0;
     padding: 14px 16px 0;
   }

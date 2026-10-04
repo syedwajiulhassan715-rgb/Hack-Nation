@@ -1,9 +1,10 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { motion } from 'motion/react'
 import { AlertTriangle, Check, Circle, Loader2, Upload, X } from 'lucide-react'
 import { ApiError, getRuleSource, ingest, type IngestEvent, type IngestSummary, type Mode } from '../api/client'
 import type { RuleRecord } from '../api/types'
 import { prettyDate } from '../lib/dates'
+import { useI18n } from '../i18n'
 
 interface Props {
   mode: Mode
@@ -27,7 +28,10 @@ const STEP_LABEL: Record<string, string> = {
 }
 const STEP_ORDER = Object.keys(STEP_LABEL)
 
-type Phase = 'idle' | 'running' | 'done' | 'error' | 'unavailable'
+/** The local command that runs the same live extraction (BACKEND_PLAN make rerun-live). */
+const RERUN_COMMAND = 'python -m navigator rerun-live <file> --jurisdiction "City, ST"'
+
+type Phase = 'idle' | 'running' | 'done' | 'error' | 'unavailable' | 'disabled'
 type StepState = { status: 'start' | 'done' | 'error'; message?: string }
 
 const STATUS_WORD: Record<string, string> = {
@@ -37,7 +41,23 @@ const STATUS_WORD: Record<string, string> = {
   failed: 'Did not become law',
 }
 
+/** Shown when live extraction cannot run here (403 from the API, or no API at all). */
+function RunLocally({ lead }: { lead: string }) {
+  const { t } = useI18n()
+  return (
+    <div className="state-note calm" role="status">
+      <p>
+        <strong>{lead}</strong>
+      </p>
+      <p className="small">{t.ingestLocal}</p>
+      <pre className="cmd">{RERUN_COMMAND}</pre>
+      <p className="small">{t.ingestUnchanged}</p>
+    </div>
+  )
+}
+
 export function IngestPanel({ mode, asOf, onClose, onDone, onShowRule }: Props) {
+  const { t, lang } = useI18n()
   const [file, setFile] = useState<File | null>(null)
   const [live, setLive] = useState(true)
   const [jurisdiction, setJurisdiction] = useState('')
@@ -49,8 +69,17 @@ export function IngestPanel({ mode, asOf, onClose, onDone, onShowRule }: Props) 
   const [newRules, setNewRules] = useState<RuleRecord[]>([])
   const [drag, setDrag] = useState(false)
   const input = useRef<HTMLInputElement | null>(null)
+  const closeRef = useRef<HTMLButtonElement | null>(null)
 
   const offline = mode !== 'api'
+  const locked = offline || phase === 'disabled'
+
+  useEffect(() => {
+    closeRef.current?.focus({ preventScroll: true })
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose()
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [onClose])
 
   const run = async () => {
     if (!file) return
@@ -92,7 +121,11 @@ export function IngestPanel({ mode, asOf, onClose, onDone, onShowRule }: Props) 
       setNewRules(recs.filter((r): r is RuleRecord => !!r))
       onDone({ jurisdiction: sum.jurisdiction ?? null, affected: [] })
     } catch (e) {
-      if (e instanceof ApiError && e.status === 501) {
+      if (e instanceof ApiError && e.status === 403) {
+        // POST /ingest is turned off on the public deployment (NAVIGATOR_DISABLE_INGEST).
+        setPhase('disabled')
+        setError(e.message)
+      } else if (e instanceof ApiError && e.status === 501) {
         setPhase('unavailable')
         setError(e.message)
       } else {
@@ -104,35 +137,36 @@ export function IngestPanel({ mode, asOf, onClose, onDone, onShowRule }: Props) 
   }
 
   const seen = STEP_ORDER.filter((s) => steps[s])
-  const shown = phase === 'idle' ? [] : STEP_ORDER
+  const shown = phase === 'idle' || phase === 'disabled' ? [] : STEP_ORDER
+  const pick = () => !locked && input.current?.click()
 
   return (
     <motion.div
       className="ingest"
       role="dialog"
-      aria-label="Add a new law"
+      aria-labelledby="ingest-title"
       initial={{ opacity: 0, y: -8 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -8 }}
     >
       <header className="ingest-head">
-        <h2>Add a new law</h2>
-        <button type="button" className="icon-btn" onClick={onClose} aria-label="Close">
-          <X size={18} />
+        <h2 id="ingest-title">{t.addLaw}</h2>
+        <button ref={closeRef} type="button" className="icon-btn" onClick={onClose} aria-label={t.close}>
+          <X size={18} aria-hidden />
         </button>
       </header>
-      <p className="muted small">
-        Drop a text file in the corpus format (a <span className="mono">SOURCE:</span> line and a{' '}
-        <span className="mono">RETRIEVED:</span> line, a blank line, then the text). The pipeline extracts rules,
-        checks every quote against the text and recomputes the buildings. A run takes a minute or two.
+      <p className="small ingest-intro">
+        {t.ingestIntro} (<span className="mono">SOURCE:</span> / <span className="mono">RETRIEVED:</span>)
       </p>
 
-      {offline && (
-        <p className="state-note">Adding a law needs the API. The app is running on bundled data, so this is turned off.</p>
-      )}
+      {offline && phase !== 'disabled' && <RunLocally lead={t.ingestOffline} />}
+      {phase === 'disabled' && <RunLocally lead={t.ingestDisabled} />}
 
       <div
-        className={`drop${drag ? ' over' : ''}${offline ? ' disabled' : ''}`}
+        className={`drop${drag ? ' over' : ''}${locked ? ' disabled' : ''}`}
+        role="button"
+        tabIndex={locked ? -1 : 0}
+        aria-disabled={locked}
         onDragOver={(e) => {
           e.preventDefault()
           setDrag(true)
@@ -142,46 +176,58 @@ export function IngestPanel({ mode, asOf, onClose, onDone, onShowRule }: Props) 
           e.preventDefault()
           setDrag(false)
           const f = e.dataTransfer.files?.[0]
-          if (f && !offline) setFile(f)
+          if (f && !locked) setFile(f)
         }}
-        onClick={() => !offline && input.current?.click()}
+        onClick={pick}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault()
+            pick()
+          }
+        }}
       >
-        <Upload size={18} />
-        <span>{file ? file.name : 'Drop a .txt file here, or click to choose one'}</span>
-        <input ref={input} type="file" accept=".txt,text/plain" hidden onChange={(e) => setFile(e.target.files?.[0] ?? null)} />
+        <Upload size={18} aria-hidden />
+        <span>{file ? file.name : t.ingestDrop}</span>
+        <input
+          ref={input}
+          type="file"
+          accept=".txt,text/plain"
+          hidden
+          onChange={(e) => setFile(e.target.files?.[0] ?? null)}
+        />
       </div>
       <label className="field">
-        <span>Jurisdiction (needed for a document not in the manifest)</span>
+        <span>{t.ingestJurisdiction}</span>
         <input
           value={jurisdiction}
           onChange={(e) => setJurisdiction(e.target.value)}
           placeholder="ST or City, ST"
-          disabled={offline}
+          disabled={locked}
         />
       </label>
       <label className="check">
-        <input type="checkbox" checked={live} onChange={(e) => setLive(e.target.checked)} disabled={offline} /> Run with the
-        model cache off (live extraction)
+        <input type="checkbox" checked={live} onChange={(e) => setLive(e.target.checked)} disabled={locked} />{' '}
+        {t.ingestLive}
       </label>
       <div className="ingest-actions">
-        <button type="button" className="btn btn-ink" disabled={!file || offline || phase === 'running'} onClick={run}>
-          {phase === 'error' || phase === 'unavailable' ? 'Try again' : phase === 'running' ? 'Running' : 'Run the pipeline'}
+        <button type="button" className="btn btn-ink" disabled={!file || locked || phase === 'running'} onClick={run}>
+          {phase === 'error' || phase === 'unavailable' ? t.retry : phase === 'running' ? t.ingestRunning : t.ingestRun}
         </button>
       </div>
 
       {shown.length > 0 && (
-        <ol className="steps">
+        <ol className="steps" aria-live="polite" lang="en">
           {shown.map((s) => {
             const st = steps[s]
             const icon =
               st?.status === 'done' ? (
-                <Check size={16} />
+                <Check size={16} aria-hidden />
               ) : st?.status === 'error' ? (
-                <AlertTriangle size={16} />
+                <AlertTriangle size={16} aria-hidden />
               ) : st?.status === 'start' ? (
-                <Loader2 size={16} className="spin" />
+                <Loader2 size={16} className="spin" aria-hidden />
               ) : (
-                <Circle size={16} />
+                <Circle size={16} aria-hidden />
               )
             return (
               <li key={s} className={st ? (st.status === 'start' ? 'active' : st.status) : ''}>
@@ -203,11 +249,11 @@ export function IngestPanel({ mode, asOf, onClose, onDone, onShowRule }: Props) 
             <strong>Live ingest is not available on this server.</strong>
           </p>
           {error && <p className="mono small">{error}</p>}
-          <p className="small">Nothing was added. The rules on the map are unchanged.</p>
+          <p className="small">{t.ingestUnchanged}</p>
         </div>
       )}
       {phase === 'error' && (
-        <div className="state-note error">
+        <div className="state-note error" role="alert">
           <p>
             <strong>The run did not finish.</strong> Nothing new is shown.
           </p>
@@ -216,7 +262,7 @@ export function IngestPanel({ mode, asOf, onClose, onDone, onShowRule }: Props) 
       )}
 
       {phase === 'done' && summary && (
-        <div className="result-card">
+        <div className="result-card" lang="en">
           <h3>Result</h3>
           <p className="small">
             Document <span className="mono">{summary.doc_id}</span> ({summary.jurisdiction}) · {summary.n_candidates ?? 0}{' '}
@@ -232,7 +278,7 @@ export function IngestPanel({ mode, asOf, onClose, onDone, onShowRule }: Props) 
                   <span className="mono">{r.citation}</span> · {STATUS_WORD[r.status] ?? r.status} · effective{' '}
                   {prettyDate(r.effective_date)}{' '}
                   <button type="button" className="link" onClick={() => onShowRule(r)}>
-                    Show source
+                    {t.showSource}
                   </button>
                 </li>
               ))}
@@ -247,7 +293,9 @@ export function IngestPanel({ mode, asOf, onClose, onDone, onShowRule }: Props) 
           <pre>{events.map((e) => JSON.stringify(e)).join('\n')}</pre>
         </details>
       )}
-      <p className="fine">As of {prettyDate(asOf)} · Not legal advice.</p>
+      <p className="fine">
+        {t.asOf} {prettyDate(asOf, lang)} · {t.disclaimer}
+      </p>
     </motion.div>
   )
 }

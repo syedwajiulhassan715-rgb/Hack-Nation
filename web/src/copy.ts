@@ -62,6 +62,10 @@ export const FACT_LABEL: Record<string, string> = {
   owner_type: 'owner type',
   certificate_of_occupancy_date: 'certificate of occupancy date',
   rent_amount: 'rent amount',
+  owner_units_owned: 'units the owner holds',
+  owner_occupied: 'whether the owner lives there',
+  deed_restricted_affordable: 'deed-restricted affordable status',
+  government_owned_or_subsidized: 'government ownership or subsidy',
 }
 
 export function factLabel(key: string): string {
