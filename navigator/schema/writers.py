@@ -59,7 +59,9 @@ def check_rules(rules: Iterable[RuleRecord]) -> list[str]:
         if rid in seen:
             problems.append(f"duplicate team_rule_id {rid}")
         seen.add(rid)
-    manifest = starter.manifest()
+    from navigator.ingest.corpus import manifest_rows  # starter + supplement (CONTRACT.md 6)
+
+    manifest = manifest_rows()
     for r in rules:
         rec = r.model_dump(include=set(RuleRecord.model_fields))
         for err in validator.iter_errors(rec):
