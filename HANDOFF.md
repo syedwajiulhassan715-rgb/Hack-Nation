@@ -1,4 +1,4 @@
-# HANDOFF: where the project stands (2026-10-04, after Ask Locus + demo video)
+# HANDOFF: where the project stands (2026-10-04, submitted)
 
 For the next Claude session or teammate. Read CLAUDE.md first, then this file, then NOTES.md.
 Not legal advice.
@@ -42,6 +42,22 @@ Not legal advice.
   Voice: Kokoro TTS (local, Apache-2.0, voice `af_heart`, speed 1.08), mixed with ffmpeg. The
   build scripts were in a session scratchpad (not in the repo); the TTS venv is at
   `C:\Users\syedw\kvenv` (can be deleted). Re-recording needs the scripts rewritten.
+  The README no longer links the video; DEMO.md names it as the Plan B backup.
+- **Submission prep (2026-10-04)**, submitted to the Hack-Nation global submission:
+  - Event name is "Hack-Nation Global Hackathon (RealPage challenge)" in README (disclaimer box
+    and footer), CLAUDE.md, DATA_CARD.md and `deploy/hf-space/README.md`. The organizers' own
+    pack (`data/starter/`, PDF) still says "MIT AI Hackathon" and stays unchanged (read-only).
+  - README screenshots retaken from the live site and renamed `assets/screens/*-v2.*` (same
+    names were served from GitHub's cache); new `06-ask-locus-v2.jpg` in the tour.
+  - DEMO.md: new Beat 1b "Ask Locus" (0:40–0:55; other beats tightened, still 2:00), checklist
+    item, Judge Q&A "Is Ask Locus a chatbot?", Plan B rows.
+  - GitHub repo renamed to **syedwajiulhassan715-rgb/Locus** (old `Hack-Nation` URL
+    redirects); use the new URL in submissions.
+  - Verified: fresh clone from GitHub with no API key/.env reruns `python -m navigator all`
+    offline, 328 tests pass, rules/lookups/changes.json byte-identical; local determinism PASS;
+    scripted walk of every DEMO.md click on the live site + API 38/38 (after the final Vercel
+    redeploy too). `/ingest` on Render returns 403 for a valid request (422 only for a
+    malformed body).
 
 ## Live deployment
 - Frontend LIVE: https://rental-law-navigator.vercel.app (Vercel account hassan12go, project
@@ -79,9 +95,8 @@ Not legal advice.
 - Screening-fee $ figure from a Berkeley page (D005) shown as a CA key_value (flag it).
 - FAIR Act `interaction` empty in the Locus panel.
 - A0352 Newark geocoder tie; 5 Boston rows without a house number.
-- Demo: rehearse the 2-minute path in DEMO.md and `rerun-live`. DEMO.md does not yet include
-  Ask Locus (suggested beat: on 1733 N Cherokee ask "Can I be evicted without a reason?", then
-  an off-topic question to show it refuses to guess).
+- Demo: rehearse the 2-minute path in DEMO.md (now with Ask Locus) and `rerun-live`.
+- Do not rotate the ArcGIS key until judging ends (imagery would fall back to USGS zoom 16).
 - Ask Locus polish: the unsure "?" is slightly clipped in the small pill mascot; long replies
   scroll inside the thread (max 440px) inside the scrolling panel.
 - Remaining weak headlines: 234 of 3,000 category headlines are still a notice/penalty-type row,
@@ -92,6 +107,9 @@ Not legal advice.
 - Windows; no `make`: use `python -m navigator <stage>` or `./run.ps1 <target>`.
 - Browser checks: Node + Playwright scripts in `%TEMP%\livecheck` (`earth.mjs <url>` checks
   the map and orbit) with Chromium at
-  `%LOCALAPPDATA%\ms-playwright\chromium-1234\chrome-win64\chrome.exe`.
+  `%LOCALAPPDATA%\ms-playwright\chromium-1234\chrome-win64\chrome.exe`. Playwright MCP needs
+  Chrome, which is not installed; scripts with `chromium.launch({ channel: 'msedge' })` work.
+- Long pip paths fail on this machine (no long-path support): make venvs at short paths.
+- ffmpeg 9 is installed (winget); it takes `-/filter_complex <file>`, not `-filter_complex_script`.
 - Logged in: GitHub (gh), Vercel CLI, Hugging Face CLI.
 - Heredocs in Git Bash mangle `\n` inside Python strings; use the Write/Edit tools for code.
