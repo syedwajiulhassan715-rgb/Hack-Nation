@@ -279,6 +279,10 @@ def run(out_dir: Path | None = None, scores_dir: Path | None = None) -> Report:
     with (scores_dir / "history.jsonl").open("a", encoding="utf-8", newline="\n") as fh:
         fh.write(json.dumps({"ts": now, "commit": _git_commit(), "stub": stub,
                              "hard_fail": rep.hard_fail, "metrics": rep.metrics}) + "\n")
+    if out_dir == settings.path("outputs") and not stub:
+        from eval import render_docs
+
+        render_docs.update(rep.metrics, {"ts": now, "commit": _git_commit(), "hard_fail": rep.hard_fail}, out_dir)
     print(text, end="")
     if rep.hard_fail:
         sys.exit(1)
