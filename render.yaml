@@ -1,0 +1,17 @@
+# Render Blueprint: the read-only public API on Render's free plan (no card needed).
+# Dashboard > New > Blueprint > pick this repo. Free instances sleep after ~15 min idle;
+# the frontend falls back to its bundled data and retries until the API is awake.
+services:
+  - type: web
+    name: rental-law-navigator-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: NAVIGATOR_DISABLE_INGEST
+        value: "1"
+      - key: NAVIGATOR_CORS_ORIGINS        # set to the Vercel URL after the frontend deploys
+        sync: false
