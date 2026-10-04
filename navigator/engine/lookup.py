@@ -101,7 +101,7 @@ def _base_row(rule: RuleInternal, f: Facts, as_of: str) -> _Row | None:
     st = status_on(rule, as_of)
     if st == "failed":
         return None
-    cov = coverage.evaluate(rule.predicates, f)
+    cov = coverage.evaluate(rule.predicates, f, as_of)
     if cov.value == FALSE:
         return None
     if st == "pending":

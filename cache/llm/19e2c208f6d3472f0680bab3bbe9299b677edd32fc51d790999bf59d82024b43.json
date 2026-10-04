@@ -1,0 +1,43 @@
+{
+ "key_parts": {
+  "text_sha256": "eb9c42af2b9a5c220ca37816f409f0bd3ea92a002a973283e779fdb72de18bd7",
+  "chunk_id": "D024-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   140,
+   15873
+  ],
+  "prompt_version": "extract_v3",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 10226,
+  "output_tokens": 2552
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "CA",
+    "level": "state",
+    "category": "rent_increase_limits",
+    "status_hint": "enacted",
+    "title": "Statewide rent increase cap (Civil Code 1947.12)",
+    "requirement": "Over any 12-month period, an owner may not raise the gross rental rate by more than 5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower, measured from the lowest gross rental rate in the prior 12 months. Increases for a continuing tenant may be taken in no more than two increments over 12 months. Notice of increases must be given under Section 827. The initial rent for a new tenancy is not limited.",
+    "key_value": "5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower",
+    "coverage_text": "Residential real property, meaning any dwelling or unit intended for human habitation, including dwellings or units in a mobilehome park. Applies to rent increases after the initial rental rate of a new tenancy has been established.",
+    "predicates_json": "{\"all\": [{\"not\": {\"fact\": \"deed_restricted_affordable\", \"op\": \"==\", \"value\": true}}, {\"not\": {\"fact\": \"government_owned_or_subsidized\", \"op\": \"==\", \"value\": true}}, {\"not\": {\"fact\": \"dormitory_or_institutional\", \"op\": \"==\", \"value\": true}}, {\"not\": {\"fact\": \"certificate_of_occupancy_date\", \"op\": \">\", \"value\": {\"years_before_query_date\": 15}}}, {\"not\": {\"all\": [{\"fact\": \"separately_alienable\", \"op\": \"==\", \"value\": true}, {\"fact\": \"owner_type\", \"op\": \"not_in\", \"value\": [\"real estate investment trust\", \"corporation\", \"limited liability company with a corporate member\", \"mobilehome park management\"]}]}}, {\"not\": {\"all\": [{\"fact\": \"units\", \"op\": \"==\", \"value\": 2}, {\"fact\": \"owner_occupied\", \"op\": \"==\", \"value\": true}]}}]}",
+    "exemptions": "Deed-restricted or regulatory-agreement affordable housing for very low, low, or moderate income households, or housing under an affordable-housing subsidy agreement; dormitories owned and operated by a higher-education institution or K-12 school; housing under local rent or price control that restricts annual increases to less than this section; housing issued a certificate of occupancy within the previous 15 years, unless it is a mobilehome; separately alienable property (including a mobilehome) whose owner is not a REIT, corporation, LLC with at least one corporate member, or mobilehome park management, provided tenants received the required written exemption notice; a two-unit property in a single structure where the owner occupied one unit as principal residence at the beginning of the tenancy and continues in occupancy, and neither unit is an ADU or junior ADU; a homeowner of a mobilehome as defined in Section 798.9.",
+    "citation": "Civil Code Section 1947.12 (Stats. 2023, Ch. 290, Sec. 4 (SB 567))",
+    "penalty": "An owner who demands, accepts, receives, or retains rent above the maximum is liable in a civil action for injunctive relief, damages equal to the excess, discretionary reasonable attorney's fees and costs, and up to three times the excess upon a showing of willfulness, oppression, fraud, or malice. The Attorney General and the city attorney or county counsel may enforce and seek injunctive relief. Actions must be brought within three years of accrual.",
+    "quoted_span": "Subject to subdivision (b), an owner of residential real property shall not, over the course of any 12-month period, increase the gross rental rate for a dwelling or a unit more than 5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower, of the lowest gross rental rate charged for that dwelling or unit at any time during the 12 months prior to the effective date of the increase.",
+    "effective_date_phrase": "This section shall become operative on April 1, 2024.",
+    "effective_date_anchor": null,
+    "interaction_text": "(3) Housing subject to rent or price control through a public entity’s valid exercise of its police power consistent with Chapter 2.7 (commencing with Section 1954.50) that restricts annual increases in the rental rate to an amount less than that provided in subdivision (a)."
+   }
+  ]
+ }
+}

@@ -1,0 +1,79 @@
+{
+ "key_parts": {
+  "text_sha256": "4d8837313d514bde68624c37ab37622dd950c542bdc74942702641519eae3ece",
+  "chunk_id": "D041-c001",
+  "chunker_version": "chunk_v1",
+  "char_range": [
+   91,
+   10450
+  ],
+  "prompt_version": "extract_v3",
+  "model": "claude-opus-5-5"
+ },
+ "model": "claude-opus-5-5",
+ "served_model": "claude-opus-5-5",
+ "request_id": null,
+ "usage": {
+  "input_tokens": 8481,
+  "output_tokens": 2953
+ },
+ "stop_reason": "end_turn",
+ "response": {
+  "rules": [
+   {
+    "jurisdiction": "Los Angeles, CA",
+    "level": "city",
+    "category": "rent_increase_limits",
+    "status_hint": "enacted",
+    "title": "Rent Stabilization Ordinance (RSO) allowable rent increase",
+    "requirement": "For RSO units, rent may be increased once every 12 months by the allowable rent increase percentage. Effective February 2, 2026, landlords can no longer add an extra percentage increase for utilities, and an additional 10% increase for an added dependent is no longer permitted.",
+    "key_value": "Once every 12 months by the allowable rent increase percentage",
+    "coverage_text": "Rental properties in the City of Los Angeles first built on or before October 1, 1978, and replacement units under LAMC Section 151.28, including apartments, condominiums, townhomes, duplexes, two or more single-family dwelling units on the same parcel, hotel/motel/rooming/boarding house rooms occupied by the same tenant for more than 30 consecutive days, residential units attached to commercial buildings, ADUs, JADUs, and mobile homes and recreational vehicles in mobile home parks.",
+    "predicates_json": "{\"all\":[{\"fact\":\"certificate_of_occupancy_date\",\"op\":\"<=\",\"value\":\"1978-10-01\"}]}",
+    "exemptions": "Rent amount is not regulated for condominium and townhome tenancies that commenced after December 31, 1995. Rent may be increased to market rate when the tenant voluntarily moves out, is evicted for nonpayment, lease violation, failure to comply with a Tenant Habitability Plan or per a City Attorney order, or accepts a Tenant Buyout Agreement. A landlord can apply for a Luxury Exemption based on the monthly rent charged on or before May 31, 1978.",
+    "citation": "Rent Stabilization Ordinance (RSO)",
+    "penalty": null,
+    "quoted_span": "Rent may be increased once every 12 months by the allowable rent increase percentage",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "Los Angeles, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "RSO legal reasons for eviction and no-fault relocation assistance",
+    "requirement": "Tenancies in RSO units may be ended only for listed at-fault or no-fault reasons. No-fault evictions require filing a Landlord Declaration of Intent to Evict with LAHD, giving the tenant a 30-day and 60-day written notice (some require 120-day notice or up to a 1-year extension), and payment of tenant relocation assistance.",
+    "key_value": null,
+    "coverage_text": "Rental units subject to the City of Los Angeles Rent Stabilization Ordinance: properties first built on or before October 1, 1978, and replacement units under LAMC Section 151.28.",
+    "predicates_json": "{\"all\":[{\"fact\":\"certificate_of_occupancy_date\",\"op\":\"<=\",\"value\":\"1978-10-01\"}]}",
+    "exemptions": null,
+    "citation": "Rent Stabilization Ordinance (RSO)",
+    "penalty": null,
+    "quoted_span": "Give the tenant a 30-day and 60-day written notice (some evictions require 120-day notice or up to a 1-year extension).",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   },
+   {
+    "jurisdiction": "Los Angeles, CA",
+    "level": "city",
+    "category": "just_cause_eviction",
+    "status_hint": "enacted",
+    "title": "Filing of eviction notices with LAHD",
+    "requirement": "All notices to terminate a tenancy for rental units subject to the RSO must be filed with LAHD within three (3) business days of service on the tenant.",
+    "key_value": "Within three (3) business days of service on the tenant",
+    "coverage_text": "All rental units subject to the City's Rent Stabilization Ordinance.",
+    "predicates_json": "{\"all\":[{\"fact\":\"certificate_of_occupancy_date\",\"op\":\"<=\",\"value\":\"1978-10-01\"}]}",
+    "exemptions": null,
+    "citation": "Los Angeles Municipal Code 151.09.C.9 & 165.05.B.5",
+    "penalty": null,
+    "quoted_span": "must be filed with the Los Angeles Housing Department (LAHD) within",
+    "effective_date_phrase": null,
+    "effective_date_anchor": null,
+    "interaction_text": null
+   }
+  ]
+ }
+}

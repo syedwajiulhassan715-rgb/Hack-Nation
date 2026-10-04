@@ -58,9 +58,56 @@ def test_numbers_supported():
     ({"fact": "units", "op": "~", "value": 3}, False),
     ({"any": []}, False),
     ({"fact": "use_description", "op": "in", "value": "APT"}, False),
+    ({"fact": "certificate_of_occupancy_date", "op": ">", "value": {"years_before_query_date": 7}}, True),
+    ({"fact": "year_built", "op": "<=", "value": {"years_before_query_date": 7}}, True),
+    ({"fact": "units", "op": ">", "value": {"years_before_query_date": 7}}, False),
+    ({"fact": "certificate_of_occupancy_date", "op": "==", "value": {"years_before_query_date": 7}}, False),
+    ({"fact": "certificate_of_occupancy_date", "op": ">", "value": {"years_before_query_date": 0}}, False),
+    ({"fact": "certificate_of_occupancy_date", "op": ">", "value": {"years_after": 7}}, False),
+    ({"fact": "subject_to_local_rent_control", "op": "==", "value": True}, True),
 ])
 def test_predicate_validation(pred, ok):
     assert (facts.predicate_errors(pred) == []) is ok
+
+
+def test_predicate_numbers_lists_thresholds_years_and_rolling_periods():
+    pred = {"all": [{"fact": "units", "op": ">=", "value": 3},
+                    {"fact": "certificate_of_occupancy_date", "op": "<", "value": "1950-02-03"},
+                    {"not": {"fact": "certificate_of_occupancy_date", "op": ">",
+                             "value": {"years_before_query_date": 7}}},
+                    {"not": {"fact": "owner_occupied", "op": "==", "value": True}},
+                    {"fact": "use_description", "op": "in", "value": ["APT", "CONDO"]}]}
+    assert gates.predicate_numbers(pred) == ["3", "1950", "7"]
+
+
+def _cand(cid, cite, phrase=None, hint="enacted", doc="D1"):
+    c = {"candidate_id": cid, "source_doc_id": doc, "citation": cite, "status_hint": hint,
+         "effective_date_phrase": phrase, "effective_date_anchor": None}
+    return {"c": c, "v": {"jur": "ZZ"}}
+
+
+def test_section_operative_clause_is_inherited_within_the_same_section_only():
+    clause = "This section shall become operative on March 3, 2031."
+    items = [_cand("a", "Test Code 12.3(b)"), _cand("b", "Test Code 12.3", clause),
+             _cand("c", "Test Code 45.6"), _cand("d", "Test Code 12.3(c)", doc="D2"),
+             _cand("e", "Test Code 12.3(d)", hint="bill_or_proposal")]
+    sections = gates.section_dates(items)
+    c, note = gates._inherit_section_date(items[0]["c"], items[0]["v"], sections)
+    assert c["effective_date_phrase"] == clause and "b" in note
+    for it in items[2:]:                      # other section, other document, not enacted
+        c, note = gates._inherit_section_date(it["c"], it["v"], sections)
+        assert c["effective_date_phrase"] is None and note is None
+
+
+def test_section_clause_not_inherited_when_ambiguous_or_not_section_wide():
+    items = [_cand("a", "Test Code 12.3(b)"),
+             _cand("b", "Test Code 12.3", "This section shall become operative on March 3, 2031."),
+             _cand("c", "Test Code 12.3(e)", "This section shall become operative on May 5, 2032.")]
+    c, note = gates._inherit_section_date(items[0]["c"], items[0]["v"], gates.section_dates(items))
+    assert note is None
+    sunset = [_cand("a", "Test Code 12.3(b)"),
+              _cand("b", "Test Code 12.3", "This section shall remain in effect only until 2040.")]
+    assert gates.section_dates(sunset) == {}
 
 
 def test_citation_key_matches_different_spellings():

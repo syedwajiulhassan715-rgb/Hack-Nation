@@ -98,6 +98,57 @@ def test_unavailable_exemption_presumed_absent_but_positive_condition_stays_unkn
     assert c.value == UNKNOWN and c.missing == ["owner_type"]
 
 
+ROLLING_EXEMPT = {"not": {"fact": "certificate_of_occupancy_date", "op": ">",
+                          "value": {"years_before_query_date": 7}}}
+
+
+@pytest.mark.parametrize("year,as_of,expected", [
+    # query 2030-06-01 minus 7 years = 2023-06-01: built 2022 or earlier covered, 2024+ exempt
+    (2022, "2030-06-01", TRUE), (2023, "2030-06-01", UNKNOWN), (2024, "2030-06-01", FALSE),
+    (None, "2030-06-01", UNKNOWN),
+    # rolling: the same building becomes covered on a later query date
+    (2024, "2032-06-01", TRUE), (2024, None, UNKNOWN),
+])
+def test_rolling_certificate_of_occupancy_exemption(year, as_of, expected):
+    c = coverage.evaluate(ROLLING_EXEMPT, parcel_facts(parcel(year=year)), as_of)
+    assert c.value == expected
+    if expected == TRUE:
+        assert coverage.DERIVED_CO in c.derived
+        assert any("rolling cutoff" in d for d in c.derived)
+    if expected == UNKNOWN:
+        assert "certificate_of_occupancy_date" in c.missing
+
+
+def test_rolling_year_built_condition():
+    newer = {"fact": "year_built", "op": ">", "value": {"years_before_query_date": 7}}
+    ev = lambda y: coverage.evaluate(newer, parcel_facts(parcel(year=y)), "2030-06-01").value  # noqa: E731
+    assert (ev(2024), ev(2023), ev(2020), ev(None)) == (TRUE, UNKNOWN, FALSE, UNKNOWN)
+
+
+def test_years_before_handles_leap_day():
+    assert coverage.years_before("2032-02-29", 3) == "2029-02-28"
+
+
+def test_local_rent_control_status_is_never_presumed():
+    only_controlled = {"fact": "subject_to_local_rent_control", "op": "==", "value": True}
+    not_controlled = {"not": only_controlled}
+    for pred in (only_controlled, not_controlled):
+        c = cov(pred, units=4, year=1950)
+        assert c.value == UNKNOWN and c.missing == ["subject_to_local_rent_control"]
+    # stated building facts still decide when they are enough on their own
+    either = {"any": [{"fact": "certificate_of_occupancy_date", "op": ">", "value": "1960-01-01"},
+                      not_controlled]}
+    assert cov(either, year=1990).value == TRUE
+    assert cov(either, year=1950).value == UNKNOWN
+
+
+def test_lookup_passes_query_date_to_coverage():
+    r = rule("r-0001", pred=ROLLING_EXEMPT)
+    p = parcel(year=2024, units=10)
+    assert lookup.evaluate_address(p, [r], "2030-06-01") == []
+    assert [x.result for x in lookup.evaluate_address(p, [r], "2032-06-01")] == ["applies"]
+
+
 def test_malformed_predicate_never_decides():
     assert cov({"fact": "zip", "op": "==", "value": "1"}).value == UNKNOWN
 

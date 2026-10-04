@@ -48,6 +48,32 @@ def known_jurisdictions(docs: list[Doc]) -> set[str]:
 # --------------------------------------------------------------- one candidate
 
 
+def predicate_numbers(node: Any) -> list[str]:
+    """Numbers a predicate tree states: numeric values, the year of a date value and the
+    N of a relative date. Month and day are not checked (texts write dates many ways)."""
+    out: list[str] = []
+    if not isinstance(node, dict):
+        return out
+    for k in ("all", "any"):
+        for item in node.get(k) or []:
+            out += predicate_numbers(item)
+    if "not" in node:
+        out += predicate_numbers(node["not"])
+    if "fact" in node:
+        values = node["value"] if isinstance(node["value"], list) else [node["value"]]
+        for v in values:
+            n = facts.relative_years(v)
+            if n is not None:
+                out.append(str(n))
+            elif isinstance(v, bool) or v is None:
+                continue
+            elif isinstance(v, (int, float)):
+                out.append(str(v))
+            elif isinstance(v, str) and re.fullmatch(r"\d{4}(-\d{2}(-\d{2})?)?", v.strip()):
+                out.append(v.strip()[:4])
+    return out
+
+
 def check_candidate(c: dict[str, Any], doc: Doc, valid_jur: set[str]) -> tuple[dict[str, Any] | None, str | None]:
     """(verified fields, None) or (None, reject reason)."""
     jur = (c.get("jurisdiction") or "").strip()
@@ -119,6 +145,11 @@ def check_candidate(c: dict[str, Any], doc: Doc, valid_jur: set[str]) -> tuple[d
         if errs:
             predicates = None
             reasons.append("coverage predicates dropped: " + "; ".join(errs[:3]))
+        else:
+            # thresholds, cutoff years and rolling periods must come from the document
+            bad = numbers_supported(" ".join(predicate_numbers(predicates)), body)
+            if bad:
+                reasons.append(f"coverage predicates have numbers not found in the document: {', '.join(bad)}")
 
     if jur != doc.jurisdiction and jur != _state(doc.jurisdiction):
         reasons.append(f"rule jurisdiction {jur} differs from document jurisdiction {doc.jurisdiction}")
@@ -207,15 +238,54 @@ def _resolve_date(c: dict[str, Any], v: dict[str, Any]) -> tuple[dates.DateResul
     return res, c.get("effective_date_anchor")
 
 
-def build_rule(group: list[dict[str, Any]], as_of: str) -> RuleInternal:
+# A date phrase about the whole section/act ("This section shall become operative on ...").
+# A long statute can be cut into chunks, so a rule quoted from one chunk may not see the
+# operative clause in another; the clause still governs every rule cited to that section.
+SECTION_WIDE_DATE = re.compile(
+    r"\bth(?:is|e) (?:section|act|chapter|article|division|ordinance|subchapter)\b[^.;]{0,80}?"
+    r"\b(?:become operative|be operative|takes? effect|become effective)\b", re.I)
+
+
+def section_dates(verified: list[dict[str, Any]]) -> dict[tuple, list[dict[str, Any]]]:
+    """(doc, jurisdiction, citation key) -> enacted candidates whose date phrase speaks for
+    the whole section or act."""
+    out: dict[tuple, list[dict[str, Any]]] = defaultdict(list)
+    for it in verified:
+        c = it["c"]
+        phrase = c.get("effective_date_phrase") or ""
+        if c.get("status_hint") == "enacted" and SECTION_WIDE_DATE.search(phrase):
+            out[(c["source_doc_id"], it["v"]["jur"], citation_key(c["citation"]))].append(it)
+    return out
+
+
+def _inherit_section_date(c: dict[str, Any], v: dict[str, Any],
+                          sections: dict[tuple, list[dict[str, Any]]] | None) -> tuple[dict[str, Any], str | None]:
+    """The candidate, with the section's own operative clause if it states no date itself
+    and exactly one such clause exists for its section in the same document."""
+    if not sections or c.get("effective_date_phrase") or c.get("effective_date_anchor") \
+            or c.get("status_hint") != "enacted":
+        return c, None
+    sibs = sections.get((c["source_doc_id"], v["jur"], citation_key(c["citation"])), [])
+    pairs = {(s["c"]["effective_date_phrase"], s["c"].get("effective_date_anchor")) for s in sibs}
+    if len(pairs) != 1:
+        return c, None
+    phrase, anchor = next(iter(pairs))
+    src = sorted(s["c"]["candidate_id"] for s in sibs)[0]
+    return ({**c, "effective_date_phrase": phrase, "effective_date_anchor": anchor},
+            f"effective date from the section's operative clause stated elsewhere in the document ({src})")
+
+
+def build_rule(group: list[dict[str, Any]], as_of: str,
+               sections: dict[tuple, list[dict[str, Any]]] | None = None) -> RuleInternal:
     best = min(group, key=_rank)
     c, v = best["c"], best["v"]
     reasons = list(v["reasons"])
     penalty = v["penalty"]
 
+    c, inherited = _inherit_section_date(c, v, sections)
     res, anchor = _resolve_date(c, v)
     reasons += res.review_reasons
-    notes = list(v["notes"]) + res.notes
+    notes = list(v["notes"]) + res.notes + ([inherited] if inherited else [])
     if anchor != c.get("effective_date_anchor"):
         notes.append(f"date anchor taken from the document's bill history: {anchor!r}")
     penalty += res.confidence_penalty
@@ -320,7 +390,8 @@ def run() -> None:
             verified.append({"c": c, "v": v})
 
     groups = merge(verified)
-    rules = sorted((build_rule(g, as_of) for g in groups), key=_sort_key)
+    sections = section_dates(verified)
+    rules = sorted((build_rule(g, as_of, sections) for g in groups), key=_sort_key)
     for i, r in enumerate(rules, 1):
         r.team_rule_id = f"r-{i:04d}"
         audit.log("verify", "accept", "; ".join(r.review_reasons) or None, team_rule_id=r.team_rule_id,
