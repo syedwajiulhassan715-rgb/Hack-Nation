@@ -132,3 +132,9 @@ def test_chaptering_record_needs_a_date_and_exactly_one_line():
 
 def test_chaptering_anchor_gives_no_date_outside_ca():
     assert r(None, "10/06/25 - Chaptered", jurisdiction="NJ").date is None
+
+
+def test_phrase_with_line_break_inside():
+    res = r("This act shall take effect on the first day of the\nfourth month next following the date "
+            "of enactment", "Approved January 20, 2026.")
+    assert res.date == "2026-05-01"

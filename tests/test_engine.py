@@ -222,3 +222,11 @@ def test_load_parcels_reads_contract_shape(tmp_path):
 def test_contradictory_unit_range_is_unknown():
     f = parcel_facts(parcel(lo=9, hi=2))
     assert f.units_min is None and f.units_max is None
+
+
+def test_units_column_does_not_narrow_a_widened_range():
+    # units column says 2, description says more: the range stays 2-93, so a ">= 3 units"
+    # rule is unknown, never silently left out
+    f = parcel_facts(parcel(units=2, lo=2, hi=93))
+    assert (f.units_min, f.units_max) == (2, 93)
+    assert cov({"fact": "units", "op": ">=", "value": 3}, units=2, lo=2, hi=93).value == UNKNOWN

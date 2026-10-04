@@ -1,5 +1,5 @@
 Self-evaluation (team harness; the pack has no official scoring script). Not legal advice.
-generated_at 2026-10-04T02:33:04Z  commit 31836a2  as_of default 2026-10-01
+generated_at 2026-10-04T02:34:48Z  commit bd0e3a8  as_of default 2026-10-01
 overall hard checks: PASS
 
 [1] Format validity (must be 100%)
@@ -13,7 +13,7 @@ overall hard checks: PASS
   [PASS] every row has exactly {team_rule_id, result, explanation, conflict_flag} - 0 bad
   [PASS] every row's rule is in rules.json - 0 unknown
   [PASS] no failed rule appears in lookups
-  [info] lookup rows: 22503; addresses with no rows: 0
+  [info] lookup rows: 22504; addresses with no rows: 0
   [PASS] has all tests ['T1', 'T2', 'T3', 'T4', 'T5']
   [PASS] each test has affected_address_ids, conflict_flag_address_ids, notes
   [PASS] all listed ids are sample address ids - 0 unknown
@@ -65,15 +65,14 @@ overall hard checks: PASS
   [    ] level accuracy (matched rules) [draft gold, unreviewed]: 40/40 (100.0%)
   [    ] category accuracy (matched rules) [draft gold, unreviewed]: 40/40 (100.0%)
   [    ] status accuracy (matched rules) [draft gold, unreviewed]: 40/40 (100.0%)
-  [    ] effective_date accuracy (matched rules) [draft gold, unreviewed]: 37/40 (92.5%)
+  [    ] effective_date accuracy (matched rules) [draft gold, unreviewed]: 38/40 (95.0%)
   [info] key_value numbers present (key_value or requirement) [draft gold, unreviewed]: 10/10 (100.0%)
   [    ] address legal city [draft gold, unreviewed]: 54/56 (96.4%) (unresolved 2, wrong 0, gold uncertain 1, state 57/57 (100.0%))
-  [    ] address results [draft gold, unreviewed]: 89/130 (68.5%) (over-cautious unknown 27, missed rows 2 of which missed applies 1, wrong 12, not checkable 5)
-  [info] mismatches (48) [draft gold, unreviewed]:
+  [    ] address results [draft gold, unreviewed]: 90/130 (69.2%) (over-cautious unknown 27, missed rows 1 of which missed applies 1, wrong 12, not checkable 5)
+  [info] mismatches (46) [draft gold, unreviewed]:
     - rule g-boston-fair-housing (D012, Boston, MA, screening_restrictions): no matching rule
     - rule g-cambridge-source-of-income (D029, Cambridge, MA, screening_restrictions): no matching rule
     - rule g-ca-just-cause -> r-0011: effective_date expected '2024-04-01' got None
-    - rule g-nj-app-fee -> r-0055: effective_date expected '2026-05-01' got None
     - rule g-boston-hsna -> r-0176: effective_date expected '2020-11-06' got None
     - address A0098: legal city expected 'Boston, MA' got None (unresolved)
     - address A0376: legal city expected 'Boston, MA' got None (unresolved)
@@ -113,7 +112,6 @@ overall hard checks: PASS
     - address A0430 x g-berkeley-aga (r-0122): expected unknown got applies (wrong)
     - address A0091 x g-berkeley-aga (r-0122): expected unknown got applies (wrong)
     - address A0394 x g-jc-rent-control (r-0184): expected applies got unknown (over_cautious)
-    - address A0227 x g-nj-app-fee (r-0055): expected unknown got absent (missed)
     - address A0020 x g-nj-fair-chance (r-0093): expected unknown got applies (wrong)
     - address A0144 x g-boston-hsna (r-0176): expected applies got unknown (over_cautious)
     - address A0242 x g-boston-hsna (r-0176): expected applies got unknown (over_cautious)
@@ -146,10 +144,10 @@ overall hard checks: PASS
   [PASS] every address without a legal city is flagged needs_review
   [PASS] MA/NJ county subdivision agrees with legal city: 244/244 (100.0%)
     6 MA/NJ addresses have no county subdivision (not geocoded)
-  [PASS] lookup rows only from the address's own state and legal city (22503 rows)
+  [PASS] lookup rows only from the address's own state and legal city (22504 rows)
 [8] Determinism (two cached runs byte-identical; `python -m eval.determinism`)
   [info] run 2026-10-04T02:23:57Z at commit a3ab2a5, 64.8s; excluded fields: changes_internal.json:generated_at, summaries.json:generated_at
-  [info] stale: run at commit a3ab2a5, HEAD is 31836a2; re-run it
+  [info] stale: run at commit a3ab2a5, HEAD is bd0e3a8; re-run it
     identical rules.json
     identical rules_internal.json
     identical rejects.jsonl

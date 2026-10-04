@@ -1367,9 +1367,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -2454,9 +2454,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -8013,9 +8013,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -9841,9 +9841,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -10967,9 +10967,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -12084,9 +12084,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -15938,9 +15938,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -19353,9 +19353,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -25494,9 +25494,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -27645,9 +27645,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -28773,9 +28773,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -32260,9 +32260,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -39018,9 +39018,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -40424,7 +40424,7 @@
           "state CA (address data)",
           "rule jurisdiction CA",
           "rule status on 2026-10-01: in_force",
-          "units 15 (from units)"
+          "units 5-15 (from units)"
         ],
         "not_checked": [
           "deed-restricted affordable status (not in the data; exemption that depends on it not checked)",
@@ -40454,7 +40454,7 @@
           "state CA (address data)",
           "rule jurisdiction CA",
           "rule status on 2026-10-01: in_force",
-          "units 15 (from units)"
+          "units 5-15 (from units)"
         ],
         "not_checked": [
           "deed-restricted affordable status (not in the data; exemption that depends on it not checked)",
@@ -41137,9 +41137,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -42607,9 +42607,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -45274,9 +45274,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -46889,9 +46889,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -49008,9 +49008,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -53165,9 +53165,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -55330,9 +55330,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -69051,9 +69051,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -70532,9 +70532,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -78466,9 +78466,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -80585,9 +80585,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -81672,9 +81672,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -89095,9 +89095,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -91217,9 +91217,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -92332,9 +92332,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -94680,9 +94680,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -99213,9 +99213,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -101591,9 +101591,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -108275,9 +108275,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -111223,9 +111223,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -112310,9 +112310,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -116656,9 +116656,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -120465,9 +120465,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -121593,9 +121593,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -122719,9 +122719,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -123834,9 +123834,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -127833,9 +127833,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -128920,9 +128920,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -131373,9 +131373,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -137394,9 +137394,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -139556,9 +139556,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -150194,9 +150194,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -151320,9 +151320,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -152435,9 +152435,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -154730,9 +154730,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -159308,9 +159308,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -162078,9 +162078,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -166936,9 +166936,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -171897,9 +171897,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -172982,9 +172982,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -176655,9 +176655,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -177770,9 +177770,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -178883,9 +178883,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -182522,9 +182522,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -194909,9 +194909,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -199657,9 +199657,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -211584,9 +211584,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -215527,6 +215527,31 @@
         ]
       },
       {
+        "team_rule_id": "r-0055",
+        "result": "unknown",
+        "explanation": "C.46:8-18.1; P.L. 2025, c.405 (A4899 4R) (NJ) may apply, but coverage could not be decided because the unit count is not known. Not checked: the listed exemptions.",
+        "conflict_flag": false,
+        "checked": [
+          "state NJ (address data)",
+          "rule jurisdiction NJ",
+          "rule status on 2026-10-01: in_force",
+          "units 2-93 (from units)"
+        ],
+        "not_checked": [
+          "unit count (missing for this address)",
+          "the rule's listed exemptions (text only, not all checkable)"
+        ],
+        "missing_facts": [
+          "units"
+        ],
+        "superseded_by": null,
+        "confidence": 0.85,
+        "confidence_reasons": [
+          "rule record confidence 0.90",
+          "-0.05 listed exemptions only partly expressed as checkable facts"
+        ]
+      },
+      {
         "team_rule_id": "r-0056",
         "result": "applies",
         "explanation": "N.J.S.A. 2A:18:61.3 (NJ) applies: its coverage conditions are met. Not checked: exemptions based on dormitory or institutional use and owner occupancy and the other listed exemptions.",
@@ -216029,7 +216054,8 @@
         "checked": [
           "state NJ (address data)",
           "rule jurisdiction NJ",
-          "rule status on 2026-10-01: in_force"
+          "rule status on 2026-10-01: in_force",
+          "units 2-93 (from units)"
         ],
         "not_checked": [
           "owner occupancy (not in the data)"
@@ -216071,7 +216097,8 @@
         "checked": [
           "state NJ (address data)",
           "rule jurisdiction NJ",
-          "rule status on 2026-10-01: in_force"
+          "rule status on 2026-10-01: in_force",
+          "units 2-93 (from units)"
         ],
         "not_checked": [
           "owner occupancy (not in the data)"
@@ -216461,7 +216488,7 @@
           "state NJ (address data)",
           "rule jurisdiction NJ",
           "rule status on 2026-10-01: in_force",
-          "units 2 (from units)"
+          "units 2-93 (from units)"
         ],
         "not_checked": [
           "owner occupancy (not in the data; exemption that depends on it not checked)",
@@ -216485,7 +216512,7 @@
           "state NJ (address data)",
           "rule jurisdiction NJ",
           "rule status on 2026-10-01: in_force",
-          "units 2 (from units)"
+          "units 2-93 (from units)"
         ],
         "not_checked": [
           "owner occupancy (not in the data; exemption that depends on it not checked)",
@@ -229282,9 +229309,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -230873,9 +230900,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -231986,9 +232013,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -236980,9 +237007,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -238106,9 +238133,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -242477,9 +242504,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -244889,9 +244916,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -249805,9 +249832,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -253240,9 +253267,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -254366,9 +254393,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -255479,9 +255506,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -258987,9 +259014,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -260072,9 +260099,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -269017,9 +269044,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -276855,9 +276882,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -277940,9 +277967,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -283122,9 +283149,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -284250,9 +284277,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -285731,9 +285758,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -291638,9 +291665,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -292764,9 +292791,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -295684,9 +295711,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -297312,9 +297339,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -305770,9 +305797,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -306855,9 +306882,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -311366,9 +311393,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -312483,9 +312510,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -315979,9 +316006,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -318292,9 +318319,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -323607,9 +323634,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -324735,9 +324762,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -328949,9 +328976,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -330075,9 +330102,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -334600,9 +334627,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -336946,9 +336973,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -339099,9 +339126,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -344853,9 +344880,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -345979,9 +346006,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -347064,9 +347091,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -357540,9 +357567,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -358666,9 +358693,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -363603,9 +363630,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -367113,9 +367140,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -374683,9 +374710,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -375798,9 +375825,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -376885,9 +376912,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -380094,9 +380121,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -381209,9 +381236,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -386690,9 +386717,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -387777,9 +387804,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -391471,9 +391498,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -397986,9 +398013,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -400362,9 +400389,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -403559,9 +403586,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -404672,9 +404699,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -407144,9 +407171,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -412752,9 +412779,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -417095,9 +417122,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -424719,9 +424746,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -425804,9 +425831,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -428069,9 +428096,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -436845,9 +436872,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -437932,9 +437959,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -439060,9 +439087,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -440186,9 +440213,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -445507,9 +445534,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -450020,9 +450047,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -451137,9 +451164,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -453297,9 +453324,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -459650,9 +459677,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -460735,9 +460762,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -463647,9 +463674,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -464734,9 +464761,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -471196,9 +471223,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -477310,9 +477337,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -478395,9 +478422,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -479482,9 +479509,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },
@@ -483856,9 +483883,9 @@
         ],
         "missing_facts": [],
         "superseded_by": null,
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 unit count parsed from the land-use description",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
@@ -487047,9 +487074,9 @@
           "units"
         ],
         "superseded_by": null,
-        "confidence": 0.8,
+        "confidence": 0.85,
         "confidence_reasons": [
-          "rule record confidence 0.85",
+          "rule record confidence 0.90",
           "-0.05 listed exemptions only partly expressed as checkable facts"
         ]
       },

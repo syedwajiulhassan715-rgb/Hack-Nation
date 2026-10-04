@@ -3618,12 +3618,12 @@
       "exemptions": "A dwelling unit in a one-family or two-family dwelling offered for rent. A licensee of the New Jersey Real Estate Commission, unless the licensee is the landlord of the property.",
       "overrides": [],
       "interaction": null,
-      "effective_date": null,
+      "effective_date": "2026-05-01",
       "citation": "C.46:8-18.1; P.L. 2025, c.405 (A4899 4R)",
       "source_doc_id": "D066",
       "source_url": "https://pub.njleg.gov/bills/2024/PL25/405_.HTM",
       "quoted_span": "A landlord, or\nagent thereof, shall not require an application or other similar fee to apply\nto lease or sublease a residential rental property for dwelling purposes, which\nexceeds $50.",
-      "confidence": 0.85,
+      "confidence": 0.9,
       "conflict_flag": false,
       "conflict_note": null,
       "span_start": 427,
@@ -3633,7 +3633,7 @@
       "penalty": "Penalty of up to $500 for a first offense, up to $750 for a second offense, and up to $1,000 for each subsequent offense, enforced by summary proceedings under the Penalty Enforcement Law of 1999. The amount wrongfully charged is taken from the collected penalty and remitted to the applicant or prospective tenant.",
       "effective_date_phrase": "This act shall take effect on the first day of the\nfourth month next following the date of enactment",
       "effective_date_anchor": "Approved January 20, 2026.",
-      "effective_date_method": "unresolved",
+      "effective_date_method": "first_day_of_nth_month_after(anchor, 4)",
       "predicates": {
         "all": [
           {
@@ -3643,10 +3643,8 @@
           }
         ]
       },
-      "needs_review": true,
-      "review_reasons": [
-        "effective-date phrase has no date this parser understands"
-      ],
+      "needs_review": false,
+      "review_reasons": [],
       "notes": [
         "effective-date phrase is more than 1000 chars from the quote"
       ],

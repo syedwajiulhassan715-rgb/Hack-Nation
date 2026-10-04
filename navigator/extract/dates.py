@@ -142,6 +142,9 @@ def _ordinal(word: str) -> int | None:
 def resolve(phrase: str | None, anchor: str | None, *, jurisdiction: str, level: str,
             status_hint: str) -> DateResult:
     """Effective date from the verbatim phrase and anchor. Never raises."""
+    # verbatim phrases keep the source's line breaks ("the\nfourth month"); match on spaces
+    phrase = " ".join(phrase.split()) if phrase else phrase
+    anchor = " ".join(anchor.split()) if anchor else anchor
     anchor_iso = parse_anchor(anchor)
     if phrase:
         if m := NTH_MONTH.search(phrase):

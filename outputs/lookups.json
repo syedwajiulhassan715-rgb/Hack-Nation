@@ -59777,6 +59777,12 @@
         "conflict_flag": false
       },
       {
+        "team_rule_id": "r-0055",
+        "result": "unknown",
+        "explanation": "C.46:8-18.1; P.L. 2025, c.405 (A4899 4R) (NJ) may apply, but coverage could not be decided because the unit count is not known. Not checked: the listed exemptions.",
+        "conflict_flag": false
+      },
+      {
         "team_rule_id": "r-0056",
         "result": "applies",
         "explanation": "N.J.S.A. 2A:18:61.3 (NJ) applies: its coverage conditions are met. Not checked: exemptions based on dormitory or institutional use and owner occupancy and the other listed exemptions.",

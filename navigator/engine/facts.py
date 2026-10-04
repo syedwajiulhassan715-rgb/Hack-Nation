@@ -78,7 +78,10 @@ def parcel_facts(parcel: dict[str, Any]) -> Facts:
     lo, hi = _int(parcel.get("units_min")), _int(parcel.get("units_max"))
     source = _str(parcel.get("units_source"))
     if units is not None:
-        lo = hi = units
+        # The geocode stage widens the range when the units column and the land-use
+        # description disagree; keep that range (fail closed), only widened to hold `units`.
+        lo = units if lo is None else min(lo, units)
+        hi = units if hi is None else max(hi, units)
         source = source or "units"
     if lo is not None and hi is not None and lo > hi:
         lo = hi = None                     # contradictory range: treat as unknown
