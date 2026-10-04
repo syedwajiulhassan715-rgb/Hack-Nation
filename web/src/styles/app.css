@@ -1757,7 +1757,9 @@ body {
 .top-left > *,
 .bottom,
 .orbit-hud {
-  animation: rise-in 560ms var(--ease-out) both;
+  /* `backwards`, not `both`: a transform kept after the entrance would make each control its
+     own stacking context and trap the search dropdown under the city chips. */
+  animation: rise-in 560ms var(--ease-out) backwards;
 }
 .top-left > :nth-child(2) {
   animation-delay: 80ms;

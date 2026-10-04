@@ -276,7 +276,7 @@ data/starter/                       The participant pack (read-only)
 header) and its Census place to `config/jurisdictions.yaml`, then rerun the pipeline. No code
 changes.
 
-**Docs:** [METHOD](METHOD.md) · [SAFETY](SAFETY.md) · [DATA_CARD](DATA_CARD.md) ·
+**Docs:** [DEMO](DEMO.md) · [METHOD](METHOD.md) · [SAFETY](SAFETY.md) · [DATA_CARD](DATA_CARD.md) ·
 [CHALLENGE_TRACEABILITY](CHALLENGE_TRACEABILITY.md) · [NOTES](NOTES.md) ·
 [CONTRACT](docs/CONTRACT.md) · [BACKEND_PLAN](BACKEND_PLAN.md) · [FRONTEND_PLAN](FRONTEND_PLAN.md)
 
